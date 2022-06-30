@@ -1,0 +1,118 @@
+// Buttons
+
+@use '../settings' as *;
+@use '../helper' as *;
+@use '../tools' as *;
+
+// button normal
+.btn {
+    @extend %buttons;
+    color: setcolor('secondary');
+    background: setcolor('primary');
+    &:hover {
+        color: setcolor('secondary');
+        background: setcolor('primary', 'dark');
+    }
+}
+
+// button secondary
+.btn_secondary {
+    @extend %buttons;
+    color: setcolor('white');
+    background: setcolor('secondary');
+    &:hover {
+        color: setcolor('white');
+        background: setcolor('secondary', 'dark');
+    }
+}
+
+// button border
+.btn_border {
+    @extend %buttons;
+    background: transparent;
+    color: setcolor('white');
+    border: 2px solid setcolor('primary');
+    &:hover {
+        color: setcolor('secondary');
+        background: setcolor('primary');
+    }
+}
+
+.btn_border_secondary {
+    @extend %buttons;
+    background: setcolor('white');
+    color: setcolor('secondary');
+    border: 2px solid setcolor('secondary');
+    &:hover {
+        color: setcolor('white');
+        background: setcolor('secondary', 'dark');
+    }
+}
+
+// button border
+.btn_white {
+    @extend %buttons;
+    color: setcolor('secondary');
+    background: setcolor('white');
+    &:hover {
+        color: setcolor('secondary');
+        background: setcolor('primary');
+    }
+}
+
+.btn_border_white {
+    @extend %buttons;
+    background: transparent;
+    color: setcolor('white');
+    border: 2px solid setcolor('white');
+    &:hover {
+        color: setcolor('secondary');
+        background: setcolor('white');
+    }
+}
+
+// link
+.btn_link {
+
+    font-weight: setfont('weight','semibold');
+    font-size: rem(16);
+    line-height: 1em;
+    text-decoration: underline;
+
+    color: setcolor('primary');
+
+    transition: all .3s;
+
+    @include md {
+        font-size: rem(16);
+    }
+
+    @include xl {
+        font-size: rem(18);
+    }
+
+    @include xxl {
+        font-size: rem(20);
+    }
+
+    &:hover {
+        color: setcolor('primary','dark');
+    }
+
+}
+
+.btn_link--secondary {
+    @extend .btn_link;
+    color: setcolor('secondary');
+    &:hover {
+        color: setcolor('secondary','dark');
+    }
+}
+
+.btn_link--white {
+    @extend .btn_link;
+    color: setcolor('white');
+    &:hover {
+        color: setcolor('primary');
+    }
+}

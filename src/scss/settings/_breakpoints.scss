@@ -1,0 +1,57 @@
+// SETTINGS / BREAKPOINTS
+@use "sass:map";
+
+$breakpoints: (
+  xs: 0px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+  xxxl: 1900px,
+);
+
+@mixin sm {
+  @media only screen and (min-width: #{map.get($breakpoints, 'sm')}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media only screen and (min-width: #{map.get($breakpoints, 'md')}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media only screen and (min-width: #{map.get($breakpoints, 'lg')}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media only screen and (min-width: #{map.get($breakpoints, 'xl')}) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media only screen and (min-width: #{map.get($breakpoints, 'xxl')}) {
+    @content;
+  }
+}
+
+@mixin xxxl {
+  @media only screen and (min-width: #{map.get($breakpoints, 'xxxl')}) {
+    @content;
+  }
+}
+
+
+// .title {
+//   font-size: 20px;
+
+//   @include sm {
+//     font-size: 10px;
+//   }
+// }

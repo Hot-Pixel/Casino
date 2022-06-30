@@ -1,0 +1,72 @@
+// SETTINGS /  COLORS
+@use 'sass:map';
+
+// Colores
+$colorsMap: (
+  "p": #FF293E,
+  "p-l": #ff5264,
+  "p-d": #5a1c26,
+  "s": #00D1BC,
+  "s-l": #99e4de,
+  "s-d": #02b5a4,
+  "g": #d4d7da,
+  "g-l": #eaedef,
+  "g-lr": #f4f6f8,
+  "g-d": #a0a2a4,
+  "g-dr": #868B92,
+  "b": #1c2026,
+  "b-l": #25292f,
+  "b-d": #13171d,
+  "w": #ffffff,
+  "danger": #EC0000,
+  "danger-l": #eb9b9c,
+  "warning": #E99C00,
+  "warning-l": #ead19c
+);
+
+$colors: (
+  "primary": (
+    base: #FF293E,
+    light: #ff5264,
+    dark: #5a1c26
+  ),
+  "secondary": (
+    base: #00D1BC,
+    light: #99e4de,
+    dark: #02b5a4
+  ),
+  "gray": (
+    base: #d4d7da,
+    light: #eaedef,
+    lighter: #f4f6f8,
+    dark: #a0a2a4,
+    darker: #868B92
+  ),
+  "black": (
+    base: #1c2026,
+    light: #25292f,
+    dark: #13171d
+  ),
+  "white": (
+    base: #ffffff,
+  ),
+  "danger": (
+    base: #EC0000,
+    light: #eb9b9c,
+  ),
+  "warning": (
+    base: #E99C00,
+    light: #ead19c,
+  ),
+);
+
+// .title {
+//   color: setcolor('gray');
+//   color: setcolor('gray', 'light');
+// }
+
+// Funcion para extraer color y tono
+// Pones 'setcolor("color", variante)';
+@function setcolor($scheme, $tone: base) {
+    @return map.get($colors, $scheme, $tone);
+}

@@ -1,0 +1,195 @@
+@use '../settings' as *;
+
+// Horizontal - main
+%margin_horizontal_main {
+  padding-left: var(--horizontal-main-xs);
+  padding-right: var(--horizontal-main-xs);
+  @include sm {
+    padding-left: var(--horizontal-main-sm);
+    padding-right: var(--horizontal-main-sm);
+  }
+  @include md {
+    padding-left: var(--horizontal-main-md);
+    padding-right: var(--horizontal-main-md);
+  }
+  @include lg {
+    padding-left: var(--horizontal-main-lg);
+    padding-right: var(--horizontal-main-lg);
+  }
+  @include xl {
+    padding-left: var(--horizontal-main-xl);
+    padding-right: var(--horizontal-main-xl);
+  }
+  @include xxl {
+    padding-left: var(--horizontal-main-xxl);
+    padding-right: var(--horizontal-main-xxl);
+  }
+  @include xxxl {
+    max-width: $max_width;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+}
+
+// Horizontal - large
+%margin_horizontal_large {
+  padding-left: var(--horizontal-large-xs);
+  padding-right: var(--horizontal-large-xs);
+  @include sm {
+    padding-left: var(--horizontal-large-sm);
+    padding-right: var(--horizontal-large-sm);
+  }
+  @include md {
+    padding-left: var(--horizontal-large-md);
+    padding-right: var(--horizontal-large-md);
+  }
+  @include lg {
+    padding-left: var(--horizontal-large-lg);
+    padding-right: var(--horizontal-large-lg);
+  }
+  @include xl {
+    padding-left: var(--horizontal-large-xl);
+    padding-right: var(--horizontal-large-xl);
+  }
+  @include xxl {
+    padding-left: var(--horizontal-large-xxl);
+    padding-right: var(--horizontal-large-xxl);
+  }
+}
+
+// margenes verticales - small
+%margin_top_small {
+  padding-top: var(--vertical-small-xs);
+  @include sm {
+    padding-top: var(--vertical-small-sm);
+  }
+  @include md {
+    padding-top: var(--vertical-small-md);
+  }
+  @include lg {
+    padding-top: var(--vertical-small-lg);
+  }
+  @include xl {
+    padding-top: var(--vertical-small-xl);
+  }
+  @include xxl {
+    padding-top: var(--vertical-small-xxl);
+  }
+}
+
+%margin_bottom_small {
+  padding-bottom: var(--vertical-small-xs);
+  @include sm {
+    padding-bottom: var(--vertical-small-sm);
+  }
+  @include md {
+    padding-bottom: var(--vertical-small-md);
+  }
+  @include lg {
+    padding-bottom: var(--vertical-small-lg);
+  }
+  @include xl {
+    padding-bottom: var(--vertical-small-xl);
+  }
+  @include xxl {
+    padding-bottom: var(--vertical-small-xxl);
+  }
+}
+
+// margenes verticaes - medium
+%margin_top_medium {
+  padding-top: var(--vertical-medium-xs);
+  @include sm {
+    padding-top: var(--vertical-medium-sm);
+  }
+  @include md {
+    padding-top: var(--vertical-medium-md);
+  }
+  @include lg {
+    padding-top: var(--vertical-medium-lg);
+  }
+  @include xl {
+    padding-top: var(--vertical-medium-xl);
+  }
+  @include xxl {
+    padding-top: var(--vertical-medium-xxl);
+  }
+}
+
+%margin_bottom_medium {
+  padding-bottom: var(--vertical-medium-xs);
+  @include sm {
+    padding-bottom: var(--vertical-medium-sm);
+  }
+  @include md {
+    padding-bottom: var(--vertical-medium-md);
+  }
+  @include lg {
+    padding-bottom: var(--vertical-medium-lg);
+  }
+  @include xl {
+    padding-bottom: var(--vertical-medium-xl);
+  }
+  @include xxl {
+    padding-bottom: var(--vertical-medium-xxl);
+  }
+}
+
+// margenes verticaes - large
+%margin_top_large {
+  padding-top: var(--vertical-large-xs);
+  @include sm {
+    padding-top: var(--vertical-large-sm);
+  }
+  @include md {
+    padding-top: var(--vertical-large-md);
+  }
+  @include lg {
+    padding-top: var(--vertical-large-lg);
+  }
+  @include xl {
+    padding-top: var(--vertical-large-xl);
+  }
+  @include xxl {
+    padding-top: var(--vertical-large-xxl);
+  }
+}
+
+%margin_bottom_large {
+  padding-bottom: var(--vertical-large-xs);
+  @include sm {
+    padding-bottom: var(--vertical-large-sm);
+  }
+  @include md {
+    padding-bottom: var(--vertical-large-md);
+  }
+  @include lg {
+    padding-bottom: var(--vertical-large-lg);
+  }
+  @include xl {
+    padding-bottom: var(--vertical-large-xl);
+  }
+  @include xxl {
+    padding-bottom: var(--vertical-large-xxl);
+  }
+}
+
+%margin_bottom_negative {
+  margin-bottom: calc(var(--vertical-small-xs) * -1);
+  @include sm {
+    margin-bottom: calc(var(--vertical-small-sm) * -1);
+  }
+  @include md {
+    margin-bottom: calc(var(--vertical-small-md) * -1);
+  }
+  @include lg {
+    margin-bottom: calc(var(--vertical-small-lg) * -1);
+  }
+  @include xl {
+    margin-bottom: calc(var(--vertical-small-xl) * -1);
+  }
+  @include xxl {
+    margin-bottom: calc(var(--vertical-small-xxl) * -1);
+  }
+}

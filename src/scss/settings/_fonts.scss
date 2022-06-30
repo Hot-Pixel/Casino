@@ -1,0 +1,31 @@
+// SETTINGS / FONTS
+@use 'sass:map';
+
+$fonts: (
+    "family": (
+        "primary": 'Gotham',
+    ),
+    "weight": (
+        "light": 300,
+        "book": 400,
+        "medium": 500,
+        "bold": 700,
+    ),
+    "size": (
+        "h1": (40 40 40 40 40 40 ),
+        "h2": (23 23 23 23 23 23 ),
+        "h3": (15 15 15 15 15 15 ),
+        "h4": (10 10 10 10 10 10 ),
+    )
+);
+
+// .list {
+//     font-family: setfont('family', 'primary');
+//     font-size: setfont('size', 'h2');
+// }
+
+// Funcion para extraer familia y grosor
+// Pones 'setfont("carcateristica", "seleccion")' - setfont
+@function setfont($scheme, $tone: base) {
+    @return map.get($fonts, $scheme, $tone);
+}

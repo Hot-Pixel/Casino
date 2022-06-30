@@ -1,0 +1,31 @@
+// SETTINGS
+// variables y config
+@use '../settings';
+
+// TOOLS
+// Mixins, extend and functions
+@use '../tools';
+
+// GENERIC
+// Resets, normalize y genericos
+@use '../base';
+
+//LAYOUT
+@use '../layout/header';
+
+// MODULES
+// @use '../modules/cards/cards';
+
+// OBJECTS
+// Contenedores, wrappers o layouts
+@use '../objects/card';
+
+// COMPONENTS
+// Piezas de UI
+@use '../components/icon__title';
+@use '../components/header__user';
+
+// HELPER
+// Clases de ayuda, textos, colores y demás
+@use '../helper';
+

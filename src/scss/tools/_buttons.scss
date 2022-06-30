@@ -1,0 +1,31 @@
+@use '../settings' as *;
+@use '../helper' as *;
+
+%buttons {
+
+    display: inline-block;
+
+    font-family: $buttons_font_family;
+    font-weight: $buttons_font_weight;
+    font-size: $buttons_font_size;
+
+    line-height: 1em;
+
+    text-decoration: none;
+
+    padding: $buttons_padding;
+    border-radius: $buttons_border_radius;
+
+    transition: all .3s;
+
+    @include md {
+        font-size: $buttons_font_size_ipad;
+        padding: $buttons_padding_ipad;
+    }
+
+    @include lg {
+        font-size: $buttons_font_size_desktop;
+        padding: $buttons_padding_desktop;
+    }
+
+}
