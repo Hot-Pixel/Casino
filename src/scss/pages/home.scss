@@ -12,13 +12,14 @@
 
 //LAYOUT
 @use '../layout/header';
+@use '../layout/footer';
 
 // MODULES
-// @use '../modules/cards/cards';
+@use '../modules/vh';
 
 // OBJECTS
 // Contenedores, wrappers o layouts
-@use '../objects/card';
+// @use '../objects/card';
 
 // COMPONENTS
 // Piezas de UI

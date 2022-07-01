@@ -361,6 +361,49 @@
   }
 }
 
+.m-footer {
+  padding-left: var(--horizontal-main-xs);
+  padding-right: var(--horizontal-main-xs);
+}
+@media only screen and (min-width: 576px) {
+  .m-footer {
+    padding-left: var(--horizontal-main-sm);
+    padding-right: var(--horizontal-main-sm);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .m-footer {
+    padding-left: var(--horizontal-main-md);
+    padding-right: var(--horizontal-main-md);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .m-footer {
+    padding-left: var(--horizontal-main-lg);
+    padding-right: var(--horizontal-main-lg);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .m-footer {
+    padding-left: var(--horizontal-main-xl);
+    padding-right: var(--horizontal-main-xl);
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .m-footer {
+    padding-left: var(--horizontal-main-xxl);
+    padding-right: var(--horizontal-main-xxl);
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .m-footer {
+    max-width: 100rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+}
+
 .u-btn--red, .u-btn--white, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
   font-family: "Gotham";
@@ -644,6 +687,12 @@ h6 {
   box-shadow: 0px -17px 22px 2px rgb(0, 0, 0);
   background-color: #13171d;
   padding: 10px 20px;
+  display: inline-block;
+}
+@media only screen and (min-width: 992px) {
+  .m-header--mobile {
+    display: none;
+  }
 }
 .m-header--mobile button {
   width: 50%;
@@ -653,6 +702,46 @@ h6 {
 }
 .m-header--mobile button:last-of-type {
   margin-left: 5px;
+}
+
+.m-footer .o-footer--grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "casino info follow client";
+  justify-items: center;
+}
+.m-footer .o-footer--grid .o-footer--grid_item:nth-of-type(1) {
+  grid-area: "casino";
+}
+.m-footer .o-footer--grid .o-footer--grid_item:nth-of-type(2) {
+  grid-area: "info";
+}
+.m-footer .o-footer--grid .o-footer--grid_item:nth-of-type(3) {
+  grid-area: "follow";
+}
+.m-footer .o-footer--grid .o-footer--grid_item:nth-of-type(3) li a {
+  display: flex;
+  align-items: center;
+}
+.m-footer .o-footer--grid .o-footer--grid_item:nth-of-type(3) li a img {
+  margin-right: 10px;
+}
+.m-footer .o-footer--grid .o-footer--grid_item:nth-of-type(4) {
+  grid-area: "client";
+}
+.m-footer .o-footer--grid p {
+  font-weight: 700;
+}
+.m-footer .o-footer--grid li {
+  padding-bottom: 10px;
+}
+.m-footer .o-footer--grid li a {
+  color: white;
+}
+
+.wrapper {
+  height: 100vh;
 }
 
 .c-icon__title a {

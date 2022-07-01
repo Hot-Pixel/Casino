@@ -106,6 +106,12 @@
   background-color: setcolor("black", "dark");
   padding: 10px 20px;
 
+  display: inline-block;
+
+  @include lg {
+    display: none;
+  }
+
   button {
     width: 50%;
   }
