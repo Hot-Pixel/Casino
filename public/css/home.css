@@ -361,6 +361,31 @@
   }
 }
 
+.u-btn--red, .u-btn--white, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  display: inline-block;
+  font-family: "Gotham";
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1em;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.625rem 1.25rem;
+  border-radius: 6.25rem;
+  transition: all 0.3s;
+}
+@media only screen and (min-width: 768px) {
+  .u-btn--red, .u-btn--white, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+    font-size: 0.75rem;
+    padding: 0.9375rem 1.5625rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .u-btn--red, .u-btn--white, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+    font-size: 0.75rem;
+    padding: 0.9375rem 1.875rem;
+  }
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -530,14 +555,64 @@ h6 {
   justify-content: space-between;
   box-shadow: 1px 17px 22px 2px rgb(0, 0, 0);
   background-color: #13171d;
-  padding: 20px 60px;
+  padding: 10px 20px;
+}
+@media only screen and (min-width: 992px) {
+  .m-header {
+    padding: 20px 60px;
+  }
 }
 .m-header .o-header--wrapper {
   align-items: center;
 }
 .m-header .o-header--wrapper .header--logo {
+  width: 195px;
   margin-bottom: 10px;
-  margin-right: 30px;
+}
+@media only screen and (min-width: 992px) {
+  .m-header .o-header--wrapper .header--logo {
+    margin-right: 30px;
+    max-width: 100%;
+  }
+}
+.m-header .o-header--wrapper .header--logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.m-header .o-header--wrapper:first-of-type {
+  display: inline-block;
+}
+@media only screen and (min-width: 992px) {
+  .m-header .o-header--wrapper:first-of-type {
+    display: none;
+  }
+}
+.m-header .o-header--wrapper .o-header--nav_bar {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .m-header .o-header--wrapper .o-header--nav_bar {
+    display: inline-block;
+  }
+}
+.m-header .o-header--wrapper .c-icon__title {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .m-header .o-header--wrapper .c-icon__title {
+    display: inline-block;
+  }
+}
+.m-header .o-header--wrapper .c-header--user > div {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .m-header .o-header--wrapper .c-header--user > div {
+    display: inline-block;
+  }
+}
+.m-header .o-header--wrapper button {
+  width: 190px;
 }
 
 .c-icon__title a {
@@ -563,5 +638,112 @@ h6 {
 .c-header--user p {
   margin: 0;
   text-align: right;
+}
+
+.u-btn--red {
+  color: #ffffff;
+  background: #FF293E;
+}
+.u-btn--red:hover {
+  color: #f4f6f8;
+  background: #ff5264;
+}
+
+.u-btn--icon_right {
+  position: relative;
+}
+.u-btn--icon_right img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 7px;
+}
+
+.u-btn--white {
+  color: #25292f;
+  background: #ffffff;
+}
+.u-btn--white:hover {
+  color: #25292f;
+  background: #d4d7da;
+}
+
+.btn_border {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #FF293E;
+}
+.btn_border:hover {
+  color: #00D1BC;
+  background: #FF293E;
+}
+
+.btn_border_secondary {
+  background: #ffffff;
+  color: #00D1BC;
+  border: 2px solid #00D1BC;
+}
+.btn_border_secondary:hover {
+  color: #ffffff;
+  background: #02b5a4;
+}
+
+.btn_white {
+  color: #00D1BC;
+  background: #ffffff;
+}
+.btn_white:hover {
+  color: #00D1BC;
+  background: #FF293E;
+}
+
+.btn_border_white {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.btn_border_white:hover {
+  color: #00D1BC;
+  background: #ffffff;
+}
+
+.btn_link, .btn_link--white, .btn_link--secondary {
+  font-size: 1rem;
+  line-height: 1em;
+  text-decoration: underline;
+  color: #FF293E;
+  transition: all 0.3s;
+}
+@media only screen and (min-width: 768px) {
+  .btn_link, .btn_link--white, .btn_link--secondary {
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .btn_link, .btn_link--white, .btn_link--secondary {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .btn_link, .btn_link--white, .btn_link--secondary {
+    font-size: 1.25rem;
+  }
+}
+.btn_link:hover, .btn_link--white:hover, .btn_link--secondary:hover {
+  color: #5a1c26;
+}
+
+.btn_link--secondary {
+  color: #00D1BC;
+}
+.btn_link--secondary:hover {
+  color: #02b5a4;
+}
+
+.btn_link--white {
+  color: #ffffff;
+}
+.btn_link--white:hover {
+  color: #FF293E;
 }
 /*# sourceMappingURL=home.css.map */
