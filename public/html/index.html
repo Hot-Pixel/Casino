@@ -2,30 +2,102 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <title>Home</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="libraries/accordion-js/accordion.min.css">
-    <link rel="stylesheet" href="libraries/splide/splide.min.css">
-    <link type="text/css" rel="stylesheet" href="libraries/lightgallery/css/lightgallery.css" />
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/home.css">
+    <title>Home</title>
 </head>
-
 <body>
 
-<h1>Home</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<img src="img/alchemist.jpg" alt="">
 
-<h1>About</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<img src="img/inner.jpg" alt="">
+<header class="m-header">
+    <section class="o-header--wrapper">
+        <a href="#">
+            <img src="img/icon-menu-open.svg" alt="Logo Casino Barcelona">
+        </a>
+    </section>
+    <section class="o-header--wrapper u-flex">
+        <div class="header--logo">
+            <a href="#">
+                <img src="img/logo-header.svg" alt="Logo Casino Barcelona">
+            </a>
+        </div>
+        <nav class="o-header--nav_bar">
+            <ul class="u-flex">
+                <li class="c-icon__title">
+                    <a href="">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h2">Slots</p>
+                    </a>
+                </li>
+                <li class="c-icon__title">
+                    <a href="">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h2">Ruleta en vivo</p>
+                    </a>
+                </li>
+                <li class="c-icon__title">
+                    <a href="">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h2">Casino</p>
+                    </a>
+                </li>
+                <li class="c-icon__title">
+                    <a href="">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h2">Apuestas</p>
+                    </a>
+                </li>
+                <li class="c-icon__title">
+                    <a href="">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h2">Poker</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <section class="o-header--wrapper u-flex ">
+        <div class="c-icon__title">
+            <a href="">
+                <img src="img/icon-star.svg" alt="">
+                <p class="u-f--h2">Promociones</p>
+            </a>
+        </div>
+        <button class="u-btn--white u-btn--icon_right">
+            <span>REGÍSTRATE</span>
+            <img src="img/icon-btn-arrow-white.svg" alt="">
+        </button>
+        <button class="u-btn--red u-btn--icon_right">
+            <span>ENTRA</span>
+            <img src="img/icon-user-white-red.svg" alt="">
+        </button>
+    </section>
+    <section class="o-header--wrapper">
+        <div class="c-header--user">
+            <a href="">
+                <img src="img/icon-user-cyan.svg" alt="">
+            </a>
+        </div>
+    </section>
+</header>
+<nav class="m-header--mobile">
+    <section class="o-header--wrapper u-flex ">
+        <button class="u-btn--white u-btn--icon_right">
+            <span>REGÍSTRATE</span>
+            <img src="img/icon-btn-arrow-white.svg" alt="">
+        </button>
+        <button class="u-btn--red u-btn--icon_right">
+            <span>ENTRA</span>
+            <img src="img/icon-user-white-red.svg" alt="">
+        </button>
+    </section>
+</nav>
+
+
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="libraries/splide/splide.min.js"></script>
