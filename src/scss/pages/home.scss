@@ -12,18 +12,20 @@
 
 //LAYOUT
 @use '../layout/header';
+@use '../layout/footer';
 
 // MODULES
-// @use '../modules/cards/cards';
+@use '../modules/banner-w-carousel';
 
 // OBJECTS
 // Contenedores, wrappers o layouts
-@use '../objects/card';
+// @use '../objects/card';
 
 // COMPONENTS
 // Piezas de UI
 @use '../components/icon__title';
 @use '../components/header__user';
+@use '../components/buttons';
 
 // HELPER
 // Clases de ayuda, textos, colores y demás

@@ -1,3 +1,84 @@
-@use '../settings' as *;
-@use '../helper' as *;
-@use '../tools' as *;
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.m-footer {
+  @extend %margin_horizontal_main;
+
+  .o-footer--grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "casino info follow client";
+
+    justify-items: center;
+
+    .o-footer--grid_item:nth-of-type(1) {
+      grid-area: "casino";
+    }
+
+    .o-footer--grid_item:nth-of-type(2) {
+      grid-area: "info";
+    }
+
+    .o-footer--grid_item:nth-of-type(3) {
+      grid-area: "follow";
+
+      li a {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .o-footer--grid_item:nth-of-type(4) {
+      grid-area: "client";
+    }
+
+    p {
+      font-weight: 700;
+    }
+
+    li {
+      padding-bottom: 10px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+  .o-footer--brands {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 120px;
+
+    .o-footer--logo {
+      position: relative;
+
+      hr {
+        position: absolute;
+        top: -15px;
+        left: -25%;
+        width: 150vw;
+        border: none;
+        border-top: 1px solid setcolor('black');
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+
+        margin: 30px 0;
+
+        li {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}

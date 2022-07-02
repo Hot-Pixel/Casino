@@ -5,24 +5,35 @@
 @use '../tools' as *;
 
 // button normal
-.btn {
+.u-btn--red {
     @extend %buttons;
-    color: setcolor('secondary');
+    color: setcolor('white');
     background: setcolor('primary');
     &:hover {
-        color: setcolor('secondary');
-        background: setcolor('primary', 'dark');
+        color: setcolor('gray', 'lighter');
+        background: setcolor('primary', 'light');
+    }
+}
+
+.u-btn--icon_right {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 7px;
     }
 }
 
 // button secondary
-.btn_secondary {
+.u-btn--white {
     @extend %buttons;
-    color: setcolor('white');
-    background: setcolor('secondary');
+    color: setcolor('black', 'light');
+    background: setcolor('white');
     &:hover {
-        color: setcolor('white');
-        background: setcolor('secondary', 'dark');
+        color: setcolor('black', 'light');
+        background: setcolor('gray');
     }
 }
 

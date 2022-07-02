@@ -1,0 +1,68 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.m-banner__car {
+  @extend %margin_horizontal_main;
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  .o-banner__car--wrapper {
+    .o-banner__car--item {
+      display: flex;
+      border-radius: 5px;
+      overflow: hidden;
+
+      .o-banner__car--item-wrapper {
+        width: 50%;
+        height: 470px;
+
+        button {
+          width: 160px;
+
+          img {
+            height: 14px;
+            width: 14px;
+            margin-right: 10px;
+          }
+        }
+
+        img {
+          object-fit: contain;
+          object-position: right;
+          width: auto;
+          height: 100%;
+        }
+
+        p:first-of-type {
+          @extend .u-f--h1;
+          font-weight: 700;
+          line-height: 1em;
+        }
+
+        p:last-of-type {
+          @extend .u-f--h3;
+          font-weight: 700;
+          line-height: 1.2em;
+          color: setcolor("gray");
+        }
+      }
+
+      .o-banner__car--item-wrapper:first-of-type {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        padding: 60px;
+        background-color: setcolor("black", light);
+      }
+    }
+  }
+
+  .splide__arrow--prev {
+    left: -15px;
+  }
+  .splide__arrow--next {
+    right: -15px;
+  }
+}
