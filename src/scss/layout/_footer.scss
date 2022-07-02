@@ -29,7 +29,7 @@
         align-items: center;
 
         img {
-            margin-right: 10px;
+          margin-right: 10px;
         }
       }
     }
@@ -39,7 +39,7 @@
     }
 
     p {
-        font-weight: 700;
+      font-weight: 700;
     }
 
     li {
@@ -47,6 +47,37 @@
 
       a {
         color: white;
+      }
+    }
+  }
+
+  .o-footer--brands {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 120px;
+
+    .o-footer--logo {
+      position: relative;
+
+      hr {
+        position: absolute;
+        top: -15px;
+        left: -25%;
+        width: 150vw;
+        border: none;
+        border-top: 1px solid setcolor('black');
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+
+        margin: 30px 0;
+
+        li {
+          margin: 0 10px;
+        }
       }
     }
   }

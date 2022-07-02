@@ -1,31 +1,4 @@
-@font-face {
-  font-family: "Gotham";
-  src: url("../fonts/Gotham-Light.woff2") format("woff2"), url("../fonts/Gotham-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gotham";
-  src: url("../fonts/Gotham-Book.woff2") format("woff2"), url("../fonts/Gotham-Book.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gotham";
-  src: url("../fonts/Gotham-Medium.woff2") format("woff2"), url("../fonts/Gotham-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Gotham";
-  src: url("../fonts/Gotham-Bold.woff2") format("woff2"), url("../fonts/Gotham-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap");
 :root {
   --horizontal-main-xs: 1.25rem;
   --horizontal-main-sm: 1.25rem;
@@ -215,7 +188,7 @@
 
 /* Font Family Class */
 .u-f--primary {
-  font-family: "Gotham";
+  font-family: "Lexend";
 }
 
 /* Font Weight Class */
@@ -236,99 +209,99 @@
 }
 
 /* Font Size Class */
-.u-f--h1 {
-  font-size: 2.5rem;
+.u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  font-size: 3.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1 {
-    font-size: 2.5rem;
+  .u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+    font-size: 3.625rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h1 {
-    font-size: 2.5rem;
+  .u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+    font-size: 3.625rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h1 {
-    font-size: 2.5rem;
+  .u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+    font-size: 3.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1 {
-    font-size: 2.5rem;
+  .u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+    font-size: 3.625rem;
   }
 }
 
 .u-f--h2 {
-  font-size: 1.4375rem;
+  font-size: 2rem;
 }
 @media only screen and (min-width: 768px) {
   .u-f--h2 {
-    font-size: 1.4375rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .u-f--h2 {
-    font-size: 1.4375rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .u-f--h2 {
-    font-size: 1.4375rem;
+    font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .u-f--h2 {
-    font-size: 1.4375rem;
+    font-size: 2rem;
   }
 }
 
-.u-f--h3 {
-  font-size: 0.9375rem;
+.u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+  font-size: 1.375rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3 {
-    font-size: 0.9375rem;
+  .u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+    font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h3 {
-    font-size: 0.9375rem;
+  .u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+    font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h3 {
-    font-size: 0.9375rem;
+  .u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+    font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3 {
-    font-size: 0.9375rem;
+  .u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+    font-size: 1.375rem;
   }
 }
 
 .u-f--h4 {
-  font-size: 0.625rem;
+  font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
   .u-f--h4 {
-    font-size: 0.625rem;
+    font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .u-f--h4 {
-    font-size: 0.625rem;
+    font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .u-f--h4 {
-    font-size: 0.625rem;
+    font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .u-f--h4 {
-    font-size: 0.625rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -361,42 +334,42 @@
   }
 }
 
-.m-footer {
+.m-banner__car, .m-footer {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-footer {
+  .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-footer {
+  .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-footer {
+  .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .m-footer {
+  .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-footer {
+  .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-xxl);
     padding-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .m-footer {
+  .m-banner__car, .m-footer {
     max-width: 100rem;
     padding-left: 0;
     padding-right: 0;
@@ -406,7 +379,7 @@
 
 .u-btn--red, .u-btn--white, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
-  font-family: "Gotham";
+  font-family: "Lexend";
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 1em;
@@ -489,7 +462,7 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: "Gotham";
+  font-family: "Lexend";
   font-size: 0.875rem;
   background: #13171d;
   color: #ffffff;
@@ -506,7 +479,7 @@ body {
 }
 
 p {
-  font-family: "Gotham";
+  font-family: "Lexend";
   font-size: 0.875rem;
   color: #ffffff;
   margin-bottom: 1.25rem;
@@ -589,22 +562,26 @@ h6 {
   margin-bottom: 2.5rem;
 }
 
+body {
+  top: 8vh;
+}
+
 .m-header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   width: 100%;
+  height: 6vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 1px 17px 22px 2px rgb(0, 0, 0);
   background-color: #13171d;
-  padding: 10px 20px;
 }
 @media only screen and (min-width: 992px) {
   .m-header {
-    padding: 20px 60px;
+    height: 8vh;
   }
 }
 .m-header .o-header--wrapper {
@@ -739,9 +716,79 @@ h6 {
 .m-footer .o-footer--grid li a {
   color: white;
 }
+.m-footer .o-footer--brands {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+}
+.m-footer .o-footer--brands .o-footer--logo {
+  position: relative;
+}
+.m-footer .o-footer--brands .o-footer--logo hr {
+  position: absolute;
+  top: -15px;
+  left: -25%;
+  width: 150vw;
+  border: none;
+  border-top: 1px solid #1c2026;
+}
+.m-footer .o-footer--brands .o-footer--logo ul {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.m-footer .o-footer--brands .o-footer--logo ul li {
+  margin: 0 10px;
+}
 
-.wrapper {
-  height: 100vh;
+.m-banner__car {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.m-banner__car .o-banner__car--wrapper .o-banner__car--item {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper {
+  width: 50%;
+  height: 470px;
+}
+.m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper button {
+  width: 160px;
+}
+.m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper button img {
+  height: 14px;
+  width: 14px;
+  margin-right: 10px;
+}
+.m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper img {
+  object-fit: contain;
+  object-position: right;
+  width: auto;
+  height: 100%;
+}
+.m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  font-weight: 700;
+  line-height: 1em;
+}
+.m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #d4d7da;
+}
+.m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #25292f;
+}
+.m-banner__car .splide__arrow--prev {
+  left: -15px;
+}
+.m-banner__car .splide__arrow--next {
+  right: -15px;
 }
 
 .c-icon__title a {
