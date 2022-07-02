@@ -11,6 +11,7 @@ function sliderBanner() {
     perPage: 1,
   });
 
+
   sliderBanner.mount();
 }
 

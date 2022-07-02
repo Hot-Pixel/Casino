@@ -570,9 +570,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
   width: 100%;
   height: 6vh;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -582,6 +583,7 @@ body {
 @media only screen and (min-width: 992px) {
   .m-header {
     height: 8vh;
+    padding: 0 30px;
   }
 }
 .m-header .o-header--wrapper {
@@ -656,7 +658,7 @@ body {
 
 .m-header--mobile {
   position: fixed;
-  z-index: 1000;
+  z-index: 10;
   bottom: 120px;
   left: 0;
   width: 100%;
