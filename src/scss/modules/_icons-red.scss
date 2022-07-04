@@ -1,0 +1,74 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.m-red__icons {
+  @extend %margin_horizontal_main;
+
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @include lg {
+    flex-direction: row;
+  }
+
+  p {
+    @extend .u-f--bold;
+    color: setcolor("primary");
+  }
+
+  .o-red__icons--wrapper_left {
+    display: flex;
+
+    .o-red__icons--item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        width: 80px;
+
+        @include lg {
+          width: 170px;
+        }
+      }
+
+      p {
+        @extend .u-f--h4;
+        max-width: 90%;
+        text-align: center;
+
+        @include lg {
+          max-width: 70%;
+        }
+      }
+    }
+  }
+
+  .o-red__icons--wrapper_right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    @include lg {
+      margin-left: 60px;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    p:first-of-type {
+      @extend .u-f--h1;
+    }
+    p:last-of-type {
+      @extend .u-f--h3;
+      max-width: 100%;
+
+      @include lg {
+        max-width: 70%;
+      }
+    }
+  }
+}

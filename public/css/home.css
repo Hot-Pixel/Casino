@@ -204,31 +204,31 @@
   font-weight: 500;
 }
 
-.u-f--bold, .m-search .o-search--input input, .m-search .o-search--wrapper p, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .u-f--bold p, .m-search .o-search--input input p {
+.u-f--bold, .m-red__icons p, .m-search .o-search--input input, .m-search .o-search--wrapper p, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .u-f--bold p, .m-search .o-search--input input p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
-  font-size: 1.875rem;
+.u-f--h1, .m-red__icons .o-red__icons--wrapper_right p:first-of-type, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  font-size: 2rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
-    font-size: 2rem;
+  .u-f--h1, .m-red__icons .o-red__icons--wrapper_right p:first-of-type, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+    font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  .u-f--h1, .m-red__icons .o-red__icons--wrapper_right p:first-of-type, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  .u-f--h1, .m-red__icons .o-red__icons--wrapper_right p:first-of-type, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
     font-size: 3.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  .u-f--h1, .m-red__icons .o-red__icons--wrapper_right p:first-of-type, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
     font-size: 3.625rem;
   }
 }
@@ -257,50 +257,50 @@
   }
 }
 
-.u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+.u-f--h3, .m-red__icons .o-red__icons--wrapper_right p:last-of-type, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
   font-size: 1.375rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+  .u-f--h3, .m-red__icons .o-red__icons--wrapper_right p:last-of-type, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+  .u-f--h3, .m-red__icons .o-red__icons--wrapper_right p:last-of-type, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+  .u-f--h3, .m-red__icons .o-red__icons--wrapper_right p:last-of-type, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
+  .u-f--h3, .m-red__icons .o-red__icons--wrapper_right p:last-of-type, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
     font-size: 1.375rem;
   }
 }
 
-.u-f--h4, .m-search .o-search--wrapper p {
-  font-size: 1.125rem;
+.u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
+  font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .m-search .o-search--wrapper p {
-    font-size: 1.125rem;
+  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
+    font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4, .m-search .o-search--wrapper p {
+  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h4, .m-search .o-search--wrapper p {
+  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .m-search .o-search--wrapper p {
+  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
     font-size: 1.125rem;
   }
 }
@@ -358,42 +358,42 @@
   }
 }
 
-.m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+.m-red__icons, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-red__icons, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-red__icons, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-red__icons, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-red__icons, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-red__icons, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-xxl);
     padding-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-red__icons, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     max-width: 100rem;
     padding-left: 0;
     padding-right: 0;
@@ -1038,6 +1038,67 @@ body {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.m-red__icons {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+@media only screen and (min-width: 992px) {
+  .m-red__icons {
+    flex-direction: row;
+  }
+}
+.m-red__icons p {
+  color: #FF293E;
+}
+.m-red__icons .o-red__icons--wrapper_left {
+  display: flex;
+}
+.m-red__icons .o-red__icons--wrapper_left .o-red__icons--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.m-red__icons .o-red__icons--wrapper_left .o-red__icons--item img {
+  width: 80px;
+}
+@media only screen and (min-width: 992px) {
+  .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item img {
+    width: 170px;
+  }
+}
+.m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p {
+  max-width: 90%;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p {
+    max-width: 70%;
+  }
+}
+.m-red__icons .o-red__icons--wrapper_right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+@media only screen and (min-width: 992px) {
+  .m-red__icons .o-red__icons--wrapper_right {
+    margin-left: 60px;
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+.m-red__icons .o-red__icons--wrapper_right p:last-of-type {
+  max-width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .m-red__icons .o-red__icons--wrapper_right p:last-of-type {
+    max-width: 70%;
+  }
 }
 
 .c-icon__title a, .c-icon__title {
