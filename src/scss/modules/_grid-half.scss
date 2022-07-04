@@ -1,0 +1,72 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.m-grid__half {
+  padding: 10px;
+  margin: 0 10px;
+
+  background-color: setcolor("black", "light");
+  border-radius: 5px;
+
+  @include lg {
+    width: 50%;
+    padding: 30px;
+  }
+
+  .o-grid__half--navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    padding: 10px 0;
+
+    .js-arrow__grid {
+      cursor: pointer;
+    }
+
+    .o-grid__half--wrapper {
+      display: flex;
+      align-items: center;
+
+      & > p {
+        color: setcolor("primary");
+        margin: 0;
+        padding-right: 10px;
+      }
+
+      .c-icon__title {
+        margin-left: 20px;
+
+        img {
+          display: none;
+          @include lg {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .o-grid__half--grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+
+    @include lg {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto;
+    }
+
+    .o-grid__half--item {
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+}

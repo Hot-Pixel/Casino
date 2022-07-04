@@ -111,7 +111,7 @@ gulp.task("watch", async () => {
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
   watch(paths.scripts.watcher).on(
     "change",
-    gulp.series("bundle", server.reload)
+    gulp.series("compileJs", server.reload)
   );
   watch(paths.images.watcher).on("add", gulp.series("imageMin", server.reload));
   watch("./**/*.ejs").on("change", server.reload);
