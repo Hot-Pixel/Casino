@@ -13,6 +13,8 @@ import rename from "gulp-rename";
 import babel from "gulp-babel";
 import uglify from "gulp-uglify";
 import ejsCompiler from "gulp-ejs";
+import webpack from "webpack-stream";
+import esbuild from "gulp-esbuild";
 
 const paths = {
   scss: {
@@ -53,7 +55,7 @@ gulp.task("minCss", async () => {
     .src(paths.css.src)
     .pipe(autoprefixer())
     .pipe(cleanCSS())
-    .pipe(rename({ extname: '.min.css' }))
+    .pipe(rename({ extname: ".min.css" }))
     .pipe(gulp.dest(paths.css.dest));
 });
 
@@ -73,6 +75,18 @@ gulp.task("compileJs", async () => {
     .pipe(gulp.dest(paths.scripts.dest));
 });
 
+gulp.task("bundle", function () {
+  return gulp
+    .src("src/js/main.js")
+    .pipe(
+      esbuild({
+        outfile: "script.js",
+        bundle: true
+      })
+    )
+    .pipe(gulp.dest("public/js/"));
+});
+
 /* Gulp task to minify images */
 gulp.task("imageMin", async () => {
   gulp
@@ -81,15 +95,13 @@ gulp.task("imageMin", async () => {
     .pipe(gulp.dest(paths.images.dest));
 });
 
-
 gulp.task("ejs", async () => {
   gulp
     .src("./views/*.ejs")
     .pipe(ejsCompiler())
-    .pipe(rename({ extname: '.html' }))
-    .pipe(gulp.dest("./public/html/"))
+    .pipe(rename({ extname: ".html" }))
+    .pipe(gulp.dest("./public/html/"));
 });
-
 
 /* Gulp Watch */
 gulp.task("watch", async () => {
@@ -99,7 +111,7 @@ gulp.task("watch", async () => {
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
   watch(paths.scripts.watcher).on(
     "change",
-    gulp.series("compileJs", server.reload)
+    gulp.series("bundle", server.reload)
   );
   watch(paths.images.watcher).on("add", gulp.series("imageMin", server.reload));
   watch("./**/*.ejs").on("change", server.reload);

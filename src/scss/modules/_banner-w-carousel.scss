@@ -10,12 +10,21 @@
   .o-banner__car--wrapper {
     .o-banner__car--item {
       display: flex;
+      flex-direction: column-reverse;
       border-radius: 5px;
       overflow: hidden;
 
+      @include lg {
+        flex-direction: row;
+      }
+
       .o-banner__car--item-wrapper {
-        width: 50%;
-        height: 470px;
+        width: 100%;
+
+        @include lg {
+          width: 50%;
+          height: 470px;
+        }
 
         button {
           width: 160px;
@@ -38,31 +47,82 @@
           @extend .u-f--h1;
           font-weight: 700;
           line-height: 1em;
+          text-align: center;
+
+          @include lg {
+            text-align: left;
+          }
         }
 
         p:last-of-type {
           @extend .u-f--h3;
-          font-weight: 700;
-          line-height: 1.2em;
-          color: setcolor("gray");
+          display: none;
+
+          @include lg {
+            display: inline-block;
+            font-weight: 700;
+            line-height: 1.2em;
+            color: setcolor("gray");
+          }
         }
       }
 
       .o-banner__car--item-wrapper:first-of-type {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-between;
 
-        padding: 60px;
+        padding: 30px 10px;
         background-color: setcolor("black", light);
+
+        @include lg {
+          padding: 60px;
+          align-items: flex-start;
+        }
+      }
+
+      .o-banner__car--item-wrapper:last-of-type {
+        height: 250px;
+
+        @include lg {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .splide__arrow {
+    top: 100%;
+
+    @include lg {
+      top: 50%;
+    }
+
+    img {
+      height: 30px;
+      width: 30px;
+
+      @include lg {
+        height: 40px;
+        width: 40px;
       }
     }
   }
 
   .splide__arrow--prev {
-    left: -15px;
+    left: 10%;
+
+    @include lg {
+      left: -15px;
+    }
   }
+
   .splide__arrow--next {
-    right: -15px;
+    right: 10%;
+
+    @include lg {
+      right: -15px;
+    }
   }
 }
