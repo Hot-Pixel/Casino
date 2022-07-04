@@ -16,6 +16,8 @@
 
 // MODULES
 @use '../modules/banner-w-carousel';
+@use '../modules/banner';
+@use '../modules/search-bar';
 
 // OBJECTS
 // Contenedores, wrappers o layouts
@@ -26,6 +28,7 @@
 @use '../components/icon__title';
 @use '../components/header__user';
 @use '../components/buttons';
+@use '../components/breadcrumbs';
 
 // HELPER
 // Clases de ayuda, textos, colores y demás

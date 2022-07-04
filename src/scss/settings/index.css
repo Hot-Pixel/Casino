@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap");
+:root {
+  --horizontal-main-xs: 1.25rem;
+  --horizontal-main-sm: 1.25rem;
+  --horizontal-main-md: 2.5rem;
+  --horizontal-main-lg: 3.75rem;
+  --horizontal-main-xl: 7.5rem;
+  --horizontal-main-xxl: 9.375rem;
+  --horizontal-large-xs: 2.5rem;
+  --horizontal-large-sm: 2.5rem;
+  --horizontal-large-md: 5rem;
+  --horizontal-large-lg: 7.5rem;
+  --horizontal-large-xl: 18.75rem;
+  --horizontal-large-xxl: 18.75rem;
+  --vertical-small-xs: 3.125rem;
+  --vertical-small-sm: 3.125rem;
+  --vertical-small-md: 6.25rem;
+  --vertical-small-lg: 3.125rem;
+  --vertical-small-xl: 6.25rem;
+  --vertical-small-xxl: 6.25rem;
+  --vertical-medium-xs: 5rem;
+  --vertical-medium-sm: 5rem;
+  --vertical-medium-md: 8.75rem;
+  --vertical-medium-lg: 5rem;
+  --vertical-medium-xl: 9.375rem;
+  --vertical-medium-xxl: 9.375rem;
+  --vertical-large-xs: 6.25rem;
+  --vertical-large-sm: 6.25rem;
+  --vertical-large-md: 11.25rem;
+  --vertical-large-lg: 6.25rem;
+  --vertical-large-xl: 15.625rem;
+  --vertical-large-xxl: 15.625rem;
+}/*# sourceMappingURL=index.css.map */

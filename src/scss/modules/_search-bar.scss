@@ -1,0 +1,61 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.m-search {
+    @extend %margin_horizontal_main;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid setcolor('black', 'light');
+
+    .o-search--input {
+        width: 75%;
+        padding-left: 60px;
+
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 10px;
+            height: 45px;
+            width: 45px;
+        }
+
+        input {
+            @extend .u-f--h2, .u-f--bold;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            color: setcolor('gray');
+
+
+            &::placeholder {
+                color: setcolor('gray');
+            }
+        }
+
+    }
+
+    .o-search--wrapper {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        padding-right: 60px;
+
+        img {
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            @extend .u-f--h4, .u-f--bold;
+            max-width: 60%;
+            color: setcolor('gray', 'dark');
+        }
+    }
+}

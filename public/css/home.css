@@ -204,55 +204,55 @@
   font-weight: 500;
 }
 
-.u-f--bold, .u-f--bold p {
+.u-f--bold, .m-search .o-search--input input, .m-search .o-search--wrapper p, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .u-f--bold p, .m-search .o-search--input input p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+.u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
   font-size: 1.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  .u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  .u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  .u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
     font-size: 3.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
+  .u-f--h1, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:first-of-type {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2 {
+.u-f--h2, .m-search .o-search--input input {
   font-size: 2rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2 {
+  .u-f--h2, .m-search .o-search--input input {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2 {
+  .u-f--h2, .m-search .o-search--input input {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h2 {
+  .u-f--h2, .m-search .o-search--input input {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2 {
+  .u-f--h2, .m-search .o-search--input input {
     font-size: 2rem;
   }
 }
@@ -281,27 +281,51 @@
   }
 }
 
-.u-f--h4 {
+.u-f--h4, .m-search .o-search--wrapper p {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4 {
+  .u-f--h4, .m-search .o-search--wrapper p {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4 {
+  .u-f--h4, .m-search .o-search--wrapper p {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h4 {
+  .u-f--h4, .m-search .o-search--wrapper p {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4 {
+  .u-f--h4, .m-search .o-search--wrapper p {
     font-size: 1.125rem;
+  }
+}
+
+.u-f--h5, .c-breadcrumbs span {
+  font-size: 0.875rem;
+}
+@media only screen and (min-width: 768px) {
+  .u-f--h5, .c-breadcrumbs span {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .u-f--h5, .c-breadcrumbs span {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .u-f--h5, .c-breadcrumbs span {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .u-f--h5, .c-breadcrumbs span {
+    font-size: 0.875rem;
   }
 }
 
@@ -334,42 +358,42 @@
   }
 }
 
-.m-banner__car, .m-footer {
+.m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-banner__car, .m-footer {
+  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-banner__car, .m-footer {
+  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-banner__car, .m-footer {
+  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .m-banner__car, .m-footer {
+  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-banner__car, .m-footer {
+  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-xxl);
     padding-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .m-banner__car, .m-footer {
+  .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     max-width: 100rem;
     padding-left: 0;
     padding-right: 0;
@@ -859,6 +883,102 @@ body {
   }
 }
 
+.m-banner {
+  position: relative;
+  width: 100%;
+}
+.m-banner .o-banner--bg {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (min-width: 992px) {
+  .m-banner .o-banner--bg {
+    display: block;
+  }
+}
+.m-banner .o-banner--wrapper {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .m-banner .o-banner--wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+}
+.m-banner .o-banner--wrapper .o-banner--layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.m-banner .o-banner--wrapper .o-banner--layout img {
+  width: 65px;
+  height: 65px;
+}
+@media only screen and (min-width: 992px) {
+  .m-banner .o-banner--wrapper .o-banner--layout img {
+    width: 95px;
+    height: 95px;
+  }
+}
+.m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p {
+  margin: 0;
+  line-height: 1em;
+}
+.m-banner .o-banner--wrapper .o-banner--layout .o-banner--title .c-breadcrumbs {
+  display: none;
+}
+@media only screen and (min-width: 992px) {
+  .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title .c-breadcrumbs {
+    display: block;
+  }
+}
+
+.m-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #25292f;
+}
+.m-search .o-search--input {
+  width: 75%;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+}
+.m-search .o-search--input img {
+  margin-right: 10px;
+  height: 45px;
+  width: 45px;
+}
+.m-search .o-search--input input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #d4d7da;
+}
+.m-search .o-search--input input::placeholder {
+  color: #d4d7da;
+}
+.m-search .o-search--wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 60px;
+}
+.m-search .o-search--wrapper img {
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.m-search .o-search--wrapper p {
+  max-width: 60%;
+  color: #a0a2a4;
+}
+
 .c-icon__title a {
   display: flex;
   align-items: center;
@@ -989,5 +1109,12 @@ body {
 }
 .btn_link--white:hover {
   color: #FF293E;
+}
+
+.c-breadcrumbs span:not(:last-of-type) {
+  margin-right: 5px;
+}
+.c-breadcrumbs span:last-of-type {
+  color: #a0a2a4;
 }
 /*# sourceMappingURL=home.css.map */

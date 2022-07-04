@@ -1,0 +1,67 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.m-banner {
+  position: relative;
+  width: 100%;
+
+  .o-banner--bg {
+    display: none;
+    position: relative;
+    z-index: 1;
+
+    @include lg {
+      display: block;
+    }
+  }
+
+  .o-banner--wrapper {
+    width: 100%;
+    height: 100%;
+
+    @include lg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+
+    .o-banner--layout {
+      @extend %margin_horizontal_main;
+      width: 100%;
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 65px;
+        height: 65px;
+
+        @include lg {
+          width: 95px;
+          height: 95px;
+        }
+      }
+
+      .o-banner--title {
+        p {
+          @extend .u-f--h1, .u-f--bold;
+          margin: 0;
+          line-height: 1em;
+        }
+
+        .c-breadcrumbs {
+            display: none;
+
+            @include lg {
+              display: block;
+            }
+          }
+      }
+
+
+    }
+  }
+}

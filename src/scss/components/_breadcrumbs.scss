@@ -1,0 +1,17 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.c-breadcrumbs {
+  span {
+    @extend .u-f--h5;
+  }
+
+  span:not(:last-of-type) {
+    margin-right: 5px;
+  }
+
+  span:last-of-type {
+    color: setcolor("gray", "dark");
+  }
+}
