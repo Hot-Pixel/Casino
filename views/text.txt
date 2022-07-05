@@ -1,2 +1,0 @@
-<%- include ('layout/footer') %>
-<%- include ('layout/header-noLog') %>

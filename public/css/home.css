@@ -973,6 +973,7 @@ body {
 }
 .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper {
   width: 100%;
+  overflow: hidden;
 }
 @media only screen and (min-width: 992px) {
   .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper {
@@ -1034,7 +1035,7 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper:last-of-type {
-    height: auto;
+    height: 470px;
   }
 }
 .m-banner__car .splide__arrow {
