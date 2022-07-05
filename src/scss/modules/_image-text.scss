@@ -1,0 +1,80 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.m-image_text {
+	@extend %margin_horizontal_main;
+
+	@include lg {
+		display: grid;
+		column-gap: 132px;
+		grid-template-columns: repeat( 2, 1fr );
+	}
+}
+
+
+.o-image_text--image {
+	order: 1;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+.o-image_text--text {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	font-family: "Gotham", sans-serif;
+	text-align: center;
+
+	@include lg {
+		text-align: left;
+	}
+
+	& > * {
+		margin-top: 0;
+		margin-bottom: 0;
+		& + * {
+			margin-top: 20px;
+		}
+	}
+
+	h2 {
+		font-size: 58px;
+	}
+
+	h3 {
+		font-size: 22px;
+		color: setcolor('white', 'light');
+	}
+
+	p {
+		font-size: 14px;
+		font-weight: 300;
+		color: setcolor('white', 'light');
+	}
+}
+
+
+.o-image_text--buttons {
+	margin-top: 30px;
+
+	button {
+		display: block;
+		margin-top: 10px;
+		margin-right: auto;
+		margin-left: auto;
+		// @include md {
+		@include lg {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+}

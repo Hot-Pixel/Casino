@@ -10,6 +10,14 @@
 // Resets, normalize y genericos
 @use '../base';
 
+// COMPONENTS
+// Piezas de UI
+@use '../components/icon__title';
+@use '../components/header__user';
+@use '../components/svg-icon';
+@use '../components/buttons';
+@use '../components/breadcrumbs';
+
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
@@ -20,19 +28,16 @@
 @use '../modules/search-bar';
 @use '../modules/grid-half';
 @use '../modules/icons-red';
+@use '../modules/image-text';
 
 // OBJECTS
 // Contenedores, wrappers o layouts
 // @use '../objects/card';
 
-// COMPONENTS
-// Piezas de UI
-@use '../components/icon__title';
-@use '../components/header__user';
-@use '../components/buttons';
-@use '../components/breadcrumbs';
-
 // HELPER
 // Clases de ayuda, textos, colores y demás
 @use '../helper';
+
+
+// *** NOTA: Por cascada, los componentes se deberían llamar ANTES de los MODULOS, nunca despues
 
