@@ -2,3 +2,15 @@
 @use '../helper' as *;
 @use '../tools' as *;
 
+
+.o-card--title {
+	@extend .u-f--h2, .u-f--bold;
+}
+
+.o-card--subtitle {
+	@extend .u-f--h4, .u-f--bold, .u-c--w-l;
+}
+
+.o-card--content {
+	@extend .u-f--h5, .u-c--w-l;
+}

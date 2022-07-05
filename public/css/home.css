@@ -93,7 +93,7 @@
   color: #ffffff;
 }
 
-.u-c--w-l {
+.u-c--w-l, .o-card--subtitle, .o-card--content {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -212,7 +212,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .m-red__icons p, .m-search .o-search--input input, .m-search .o-search--wrapper p, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .u-f--bold p, .m-search .o-search--input input p {
+.u-f--bold, .m-red__icons p, .m-search .o-search--input input, .m-search .o-search--wrapper p, .m-banner .o-banner--wrapper .o-banner--layout .o-banner--title p, .o-card--title, .o-card--subtitle, .u-f--bold p, .m-search .o-search--input input p, .o-card--title p, .o-card--subtitle p {
   font-weight: 700;
 }
 
@@ -241,26 +241,26 @@
   }
 }
 
-.u-f--h2, .m-search .o-search--input input {
+.u-f--h2, .m-search .o-search--input input, .o-card--title {
   font-size: 2rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .m-search .o-search--input input {
+  .u-f--h2, .m-search .o-search--input input, .o-card--title {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2, .m-search .o-search--input input {
+  .u-f--h2, .m-search .o-search--input input, .o-card--title {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h2, .m-search .o-search--input input {
+  .u-f--h2, .m-search .o-search--input input, .o-card--title {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .m-search .o-search--input input {
+  .u-f--h2, .m-search .o-search--input input, .o-card--title {
     font-size: 2rem;
   }
 }
@@ -289,50 +289,50 @@
   }
 }
 
-.u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
+.u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p, .o-card--subtitle {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
+  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p, .o-card--subtitle {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
+  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p, .o-card--subtitle {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
+  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p, .o-card--subtitle {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p {
+  .u-f--h4, .m-red__icons .o-red__icons--wrapper_left .o-red__icons--item p, .m-search .o-search--wrapper p, .o-card--subtitle {
     font-size: 1.125rem;
   }
 }
 
-.u-f--h5, .c-breadcrumbs span {
+.u-f--h5, .o-card--content, .c-breadcrumbs span {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .c-breadcrumbs span {
+  .u-f--h5, .o-card--content, .c-breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h5, .c-breadcrumbs span {
+  .u-f--h5, .o-card--content, .c-breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h5, .c-breadcrumbs span {
+  .u-f--h5, .o-card--content, .c-breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .c-breadcrumbs span {
+  .u-f--h5, .o-card--content, .c-breadcrumbs span {
     font-size: 0.875rem;
   }
 }
