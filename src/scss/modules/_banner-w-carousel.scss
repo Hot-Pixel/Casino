@@ -20,6 +20,7 @@
 
       .o-banner__car--item-wrapper {
         width: 100%;
+        overflow: hidden;
 
         @include lg {
           width: 50%;
@@ -86,7 +87,7 @@
         height: 250px;
 
         @include lg {
-          height: auto;
+          height: 470px;
         }
       }
     }
