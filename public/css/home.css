@@ -93,6 +93,10 @@
   color: #ffffff;
 }
 
+.u-c--w-l {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .u-c--danger {
   color: #EC0000;
 }
@@ -168,6 +172,10 @@
 
 .u-bg--w {
   background-color: #ffffff;
+}
+
+.u-bg--w-l {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .u-bg--danger {
@@ -1319,18 +1327,6 @@ body {
 }
 .o-image_text--text > * + * {
   margin-top: 20px;
-}
-.o-image_text--text h2 {
-  font-size: 58px;
-}
-.o-image_text--text h3 {
-  font-size: 22px;
-  color: rgba(255, 255, 255, 0.6);
-}
-.o-image_text--text p {
-  font-size: 14px;
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .o-image_text--buttons {

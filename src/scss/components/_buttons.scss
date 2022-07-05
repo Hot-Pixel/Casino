@@ -33,7 +33,6 @@
 	color: setcolor('primary', 'base');
 	background-color: transparent;
 	border: 2px solid setcolor('primary', 'base');
-	// &:hover {}
 	& > * + * {
 		margin-left: .25em;
 	}
