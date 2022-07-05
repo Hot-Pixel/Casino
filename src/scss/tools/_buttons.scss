@@ -9,6 +9,7 @@
   font-size: $buttons_font_size;
 
   line-height: 1em;
+  text-transform: uppercase;
 
   text-decoration: none;
   outline: none;
@@ -29,4 +30,13 @@
     font-size: $buttons_font_size_desktop;
     padding: $buttons_padding_desktop;
   }
+
+
+	& > * {
+		vertical-align: middle;
+	}
+
+	svg {
+		font-size: inherit;
+	}
 }

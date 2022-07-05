@@ -4,7 +4,8 @@
 @use '../helper' as *;
 @use '../tools' as *;
 
-// button normal
+
+// button normal red
 .u-btn--red {
     @extend %buttons;
     color: setcolor('white');
@@ -15,18 +16,7 @@
     }
 }
 
-.u-btn--icon_right {
-    position: relative;
-
-    img {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 7px;
-    }
-}
-
-// button secondary
+// button normal white
 .u-btn--white {
     @extend %buttons;
     color: setcolor('black', 'light');
@@ -36,6 +26,55 @@
         background: setcolor('gray');
     }
 }
+
+// button ghost red
+.u-btn_ghost--red {
+	@extend %buttons;
+	color: setcolor('primary', 'base');
+	background-color: transparent;
+	border: 2px solid setcolor('primary', 'base');
+	// &:hover {}
+	& > * + * {
+		margin-left: .25em;
+	}
+}
+
+
+// button variations ==========
+
+// button size_big
+.u-btn--size_big {
+	padding: 21px 30px;
+	font-size: 14px;
+	@include md {
+		padding: 30px 40px;
+		font-size: 16px;
+	}
+}
+
+// button icon_right
+.u-btn--icon_right {
+	position: relative;
+
+	img {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 7px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 // button border
 .btn_border {
