@@ -4,6 +4,10 @@ window.addEventListener("load", () => {
   }
 });
 
+function add( x, y ) {
+  return x + y;
+}
+
 function sliderBanner() {
   const sliderBanner = new Splide(".m-banner__car", {
     arrow: true,
@@ -18,11 +22,10 @@ function sliderBanner() {
 
 const arrowGrid = document.querySelector(".js-arrow__grid");
 
+
+
 function accGridHalf() {
   arrowGrid.addEventListener("click", () => {
     gsap.to(".o-grid__half--grid", { opacity: 0, duration: 1 });
   });
 }
-
-
-

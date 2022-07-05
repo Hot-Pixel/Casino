@@ -75,8 +75,8 @@ gulp.task("compileJs", async () => {
     .pipe(gulp.dest(paths.scripts.dest));
 });
 
-gulp.task("bundle", function () {
-  return gulp
+gulp.task("bundle", async () => {
+  gulp
     .src("src/js/main.js")
     .pipe(
       esbuild({
