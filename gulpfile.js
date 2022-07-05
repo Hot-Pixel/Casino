@@ -10,11 +10,11 @@ const server = browserSync.create();
 import autoprefixer from "gulp-autoprefixer";
 import cleanCSS from "gulp-clean-css";
 import rename from "gulp-rename";
-import babel from "gulp-babel";
-import uglify from "gulp-uglify";
 import ejsCompiler from "gulp-ejs";
-import webpack from "webpack-stream";
-import esbuild from "gulp-esbuild";
+import rollup from "gulp-better-rollup";
+import babel from "rollup-plugin-babel";
+import resolve from "rollup-plugin-node-resolve";
+import eslint from "@rollup/plugin-eslint";
 
 const paths = {
   scss: {
@@ -59,33 +59,41 @@ gulp.task("minCss", async () => {
     .pipe(gulp.dest(paths.css.dest));
 });
 
-/* Gulp task to Babel and Uglify the Javascript Code */
-gulp.task("compileJs", async () => {
-  gulp
-    .src(paths.scripts.src)
-    .pipe(
-      babel({
-        presets: ["@babel/preset-env"],
-      })
-    )
-    .pipe(rename("script.js"))
-    .pipe(gulp.dest(paths.scripts.dest))
-    .pipe(uglify())
-    .pipe(rename("script.min.js"))
-    .pipe(gulp.dest(paths.scripts.dest));
+gulp.task('bundle', () => {
+  return gulp.src('src/js/main.js')
+    .pipe(rollup({
+        plugins: [babel(), resolve()],
+
+    }, 'umd'))
+    .pipe(gulp.dest('public/js/'));
 });
 
-gulp.task("bundle", async () => {
-  gulp
-    .src("src/js/main.js")
-    .pipe(
-      esbuild({
-        outfile: "script.js",
-        bundle: true
-      })
-    )
-    .pipe(gulp.dest("public/js/"));
-});
+/* Gulp task to Babel and Uglify the Javascript Code */
+// gulp.task("compileJs", async () => {
+//   gulp
+//     .src("src/js/main.js")
+//     .pipe(
+//       babel({
+//         presets: ["@babel/preset-env"],
+//       })
+//     )
+//     .pipe(rename("bundle.js"))
+//     .pipe(gulp.dest("src/js"))
+//     .pipe(uglify())
+//     .pipe(rename("bundle.min.js"))
+//     .pipe(gulp.dest("src/js"));
+// });
+
+// gulp.task("bundle", async () => {
+//   gulp
+//     .src("src/js/main.js")
+//     .pipe(
+//       esbuild({
+//         bundle: true
+//       })
+//     )
+//     .pipe(gulp.dest("public/js/"));
+// });
 
 /* Gulp task to minify images */
 gulp.task("imageMin", async () => {
@@ -111,7 +119,7 @@ gulp.task("watch", async () => {
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
   watch(paths.scripts.watcher).on(
     "change",
-    gulp.series("compileJs", server.reload)
+    gulp.series("bundle", server.reload)
   );
   watch(paths.images.watcher).on("add", gulp.series("imageMin", server.reload));
   watch("./**/*.ejs").on("change", server.reload);

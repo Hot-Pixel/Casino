@@ -6,6 +6,7 @@ import fs from "fs";
 import ejs from "ejs";
 import home from "./routes/home.js";
 import about from "./routes/about.js";
+import layout from "./routes/layout.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -23,6 +24,7 @@ app.use(express.urlencoded());
 // routes
 app.use("/", home);
 app.use("/about", about);
+app.use("/layout", layout);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
