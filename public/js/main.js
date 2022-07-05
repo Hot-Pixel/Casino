@@ -12,16 +12,31 @@
     carousel.mount();
   }
 
-  var carouselJackpot = new Splide('.js--splide--carousel-jackpot', {
-    type: 'loop',
-    perPage: 3,
-    perMove: 1
-  });
-  carouselJackpot.mount();
-  const bannerExist = document.getElementsByClassName("m-banner__car");
+  function carouselJackpot() {
+    var carousel = new Splide('.js--splide--carousel-jackpot', {
+      type: 'loop',
+      pagination: false,
+      perPage: 4,
+      perMove: 1,
+      gap: 15,
+      breakpoints: {
+        1200: {
+          perPage: 2
+        }
+      }
+    });
+    carousel.mount();
+  }
+
+  const carouselBannerExist = document.getElementsByClassName("m-banner__car");
+  const carouselJackpotExist = document.getElementsByClassName("js--splide--carousel-jackpot");
   window.addEventListener("load", () => {
-    if (bannerExist.length > 0) {
+    if (carouselBannerExist.length > 0) {
       carouselBanner();
+    }
+
+    if (carouselJackpotExist.length > 0) {
+      carouselJackpot();
     }
   });
 

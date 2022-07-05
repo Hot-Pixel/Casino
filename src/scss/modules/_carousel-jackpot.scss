@@ -1,0 +1,44 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.m-carousel_jackpot {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	@extend %margin_horizontal_main;
+}
+
+
+.o-carousel_jackpot {
+
+	&--text {
+		width: calc(30% - 60px);
+	}
+
+	&--carousel {
+		width: 70%;
+	}
+}
+
+
+.o-carousel_jackpot--carousel .o-card {
+
+
+	.o-card--image {
+		background-color: setcolor('black','base');
+		border-radius: 5px 5px 0 0;
+	}
+
+
+	.o-card--text {
+		border-radius: 0 0 5px 5px;
+		background-color: setcolor('black','light');
+	}
+
+	.o-card--title {
+		@extend .u-f--h3;
+	}
+}

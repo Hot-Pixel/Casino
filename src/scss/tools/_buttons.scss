@@ -34,6 +34,10 @@
 
 	& > * {
 		vertical-align: middle;
+
+		& + * {
+			margin-left: .25em;
+		}
 	}
 
 	svg {

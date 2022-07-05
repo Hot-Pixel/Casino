@@ -1,21 +1,16 @@
-const hello = "hello";
-
-
-var carouselJackpot = new Splide( '.js--splide--carousel-jackpot', {
-	type   : 'loop',
-	perPage: 3,
-	perMove: 1,
-} );
-carouselJackpot.mount();
 import carouselBanner from "./carouselBanner.js";
+import carouselJackpot from "./carouselJackpot.js";
 
 
-const bannerExist = document.getElementsByClassName("m-banner__car");
+const carouselBannerExist = document.getElementsByClassName("m-banner__car");
+const carouselJackpotExist = document.getElementsByClassName("js--splide--carousel-jackpot");
+
 
 window.addEventListener("load", () => {
-  if (bannerExist.length > 0) {
-    carouselBanner();
-  }
+	if (carouselBannerExist.length > 0) {
+		carouselBanner();
+	}
+	if (carouselJackpotExist.length > 0) {
+		carouselJackpot();
+	}
 });
-
-

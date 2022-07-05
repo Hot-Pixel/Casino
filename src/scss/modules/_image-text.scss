@@ -4,7 +4,14 @@
 
 
 .m-image_text {
+	padding-top: 30px;
+	padding-bottom: 30px;
 	@extend %margin_horizontal_main;
+
+	@include md {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
 
 	@include lg {
 		display: grid;
@@ -45,21 +52,6 @@
 			margin-top: 20px;
 		}
 	}
-
-	// p {
-	// 	font-size: 58px;
-	// }
-
-	// p {
-	// 	font-size: 22px;
-	// 	color: setcolor('white', 'light');
-	// }
-
-	// p {
-	// 	font-size: 14px;
-	// 	font-weight: 300;
-	// 	color: setcolor('white', 'light');
-	// }
 }
 
 
@@ -71,7 +63,6 @@
 		margin-top: 10px;
 		margin-right: auto;
 		margin-left: auto;
-		// @include md {
 		@include lg {
 			margin-right: 0;
 			margin-left: 0;
