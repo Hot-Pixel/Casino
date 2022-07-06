@@ -28,6 +28,22 @@
     carousel.mount();
   }
 
+  function carouselBets() {
+    var carousel = new Splide('.js--splide--carousel-bets', {
+      type: 'loop',
+      pagination: false,
+      perPage: 4,
+      perMove: 1,
+      gap: 15,
+      breakpoints: {
+        1200: {
+          perPage: 2
+        }
+      }
+    });
+    carousel.mount();
+  }
+
   const arrowArr = document.getElementsByClassName("js-arrow__grid");
   const gridArr = document.getElementsByClassName("o-grid__half--grid");
 
@@ -65,6 +81,7 @@
 
   const carouselBannerExist = document.getElementsByClassName("m-banner__car");
   const carouselJackpotExist = document.getElementsByClassName("js--splide--carousel-jackpot");
+  const carouselBetsExist = document.getElementsByClassName("js--splide--carousel-bets");
   const gridHalfExist = document.getElementsByClassName("m-grid__half");
   const arrowArr$1 = document.querySelectorAll(".js-arrow__grid");
   const gridArr$1 = document.querySelectorAll(".o-grid__half--grid");
@@ -75,6 +92,10 @@
 
     if (carouselJackpotExist.length > 0) {
       carouselJackpot();
+    }
+
+    if (carouselBetsExist.length > 0) {
+      carouselBets();
     }
 
     if (gridHalfExist.length > 0) {

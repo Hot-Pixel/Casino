@@ -366,42 +366,42 @@
   }
 }
 
-.m-carousel_jackpot, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+.m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     padding-left: var(--horizontal-main-xxl);
     padding-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text, .m-red__icons, .m-grids__wrapper, .m-search, .m-banner .o-banner--wrapper .o-banner--layout, .m-banner__car, .m-footer {
     max-width: 100rem;
     padding-left: 0;
     padding-right: 0;
@@ -438,31 +438,31 @@
   }
 }
 
-.m-carousel_jackpot, .m-grid-roulette, .m-image_text {
+.m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text {
   padding-bottom: var(--vertical-large-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text {
     padding-bottom: var(--vertical-large-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text {
     padding-bottom: var(--vertical-large-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text {
     padding-bottom: var(--vertical-large-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text {
     padding-bottom: var(--vertical-large-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-carousel_jackpot, .m-grid-roulette, .m-image_text {
+  .m-carousel_jackpot, .m-carousel_bets, .m-grid-roulette, .m-image_text {
     padding-bottom: var(--vertical-large-xxl);
   }
 }

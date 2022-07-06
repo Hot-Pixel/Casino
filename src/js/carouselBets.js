@@ -1,5 +1,5 @@
-function carouselJackpot() {
-	var carousel = new Splide( '.js--splide--carousel-jackpot', {
+function carouselBets() {
+	var carousel = new Splide( '.js--splide--carousel-bets', {
 		type       : 'loop',
 		pagination : false,
 		perPage    : 4,
@@ -14,4 +14,4 @@ function carouselJackpot() {
 	carousel.mount();
 }
 
-export default carouselJackpot;
+export default carouselBets;
