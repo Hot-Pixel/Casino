@@ -1398,22 +1398,57 @@ body {
 }
 
 .m-carousel_jackpot {
-  display: flex;
-  justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-.o-carousel_jackpot--text {
-  width: calc(30% - 60px);
+@media only screen and (min-width: 768px) {
+  .m-carousel_jackpot {
+    display: flex;
+    justify-content: space-between;
+  }
 }
+
+@media only screen and (min-width: 768px) {
+  .o-carousel_jackpot--text {
+    width: calc(30% - 60px);
+  }
+}
+
 .o-carousel_jackpot--carousel {
-  width: 70%;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .o-carousel_jackpot--carousel {
+    margin-top: 0;
+    width: 70%;
+  }
+}
+
+.m-carousel_jackpot .splide__arrows::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 80px;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(19, 23, 29, 0) 0%, #13171d 100%);
+}
+.m-carousel_jackpot .splide__arrow--prev {
+  left: initial;
+  right: 34px;
+}
+.m-carousel_jackpot .splide__arrow--next {
+  right: 0;
 }
 
 .o-carousel_jackpot--carousel .o-card .o-card--image {
+  margin-top: 60px;
   background-color: #1c2026;
   border-radius: 5px 5px 0 0;
+}
+.o-carousel_jackpot--carousel .o-card .o-card--image img {
+  margin-top: -60px;
 }
 .o-carousel_jackpot--carousel .o-card .o-card--text {
   border-radius: 0 0 5px 5px;
