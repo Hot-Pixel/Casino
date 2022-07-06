@@ -6,13 +6,9 @@
 .m-grid-roulette {
 	display: grid;
 	gap: 15px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	@extend %margin_horizontal_main;
+	@extend %margin_horizontal_main, %margin_bottom_large;
 
 	@include md {
-		padding-top: 120px;
-		padding-bottom: 120px;
 		grid-template-columns: repeat( 2, 1fr );
 	}
 }

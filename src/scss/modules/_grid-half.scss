@@ -2,9 +2,15 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+.m-grids__wrapper {
+  @extend %margin_horizontal_main, %margin_bottom_small;
+  display: flex;
+}
+
 .m-grid__half {
   padding: 10px;
   margin: 0 10px;
+  height: 100%;
 
   background-color: setcolor("black", "light");
   border-radius: 5px;

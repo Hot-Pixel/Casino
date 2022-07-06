@@ -1,0 +1,56 @@
+<%
+const gridHalfLeft =
+  {
+    icon: "icon-heart-white",
+    title: "Tus Favoritos",
+    link: "#",
+    grid: [
+      {
+        title: "Finn Golden Tavern",
+        img: "img-gridH-1",
+        link: "#"
+      },
+      {
+        title: "Finn Golden Tavern",
+        img: "img-gridH-2",
+        link: "#"
+      },
+      {
+        title: "Finn Golden Tavern",
+        img: "img-gridH-3",
+        link: "#"
+      },
+      {
+        title: "Finn Golden Tavern",
+        img: "img-gridH-4",
+        link: "#"
+      },
+      {
+        title: "Finn Golden Tavern",
+        img: "img-gridH-5",
+        link: "#"
+      },
+      {
+        title: "Finn Golden Tavern",
+        img: "img-gridH-6",
+        link: "#"
+      },
+      {
+        title: "Finn Golden Tavern",
+        img: "img-gridH-7",
+        link: "#"
+      },
+      {
+        title: "Finn Golden Tavern",
+        img: "img-gridH-8",
+        link: "#"
+      },
+    ]
+  }
+%>
+
+<%- include ('layout/head', {title: "Home" , css: "home" }) %>
+
+<%- include ('modules/grid-half', {data: gridHalfLeft}) %>
+
+<%- include ('layout/scripts') %>

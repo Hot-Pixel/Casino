@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .m-red__icons {
-  @extend %margin_horizontal_main;
+  @extend %margin_horizontal_main, %margin_bottom_small;
 
   display: flex;
   flex-direction: column-reverse;

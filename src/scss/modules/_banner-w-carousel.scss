@@ -5,7 +5,6 @@
 .m-banner__car {
   @extend %margin_horizontal_main;
   margin-top: 60px;
-  margin-bottom: 60px;
 
   .o-banner__car--wrapper {
     .o-banner__car--item {
@@ -25,16 +24,6 @@
         @include lg {
           width: 50%;
           height: 470px;
-        }
-
-        button {
-          width: 160px;
-
-          img {
-            height: 14px;
-            width: 14px;
-            margin-right: 10px;
-          }
         }
 
         img {
