@@ -314,25 +314,49 @@
 }
 
 .u-f--h5, .o-card--desc, .c-breadcrumbs span {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 @media only screen and (min-width: 768px) {
   .u-f--h5, .o-card--desc, .c-breadcrumbs span {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .u-f--h5, .o-card--desc, .c-breadcrumbs span {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .u-f--h5, .o-card--desc, .c-breadcrumbs span {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .u-f--h5, .o-card--desc, .c-breadcrumbs span {
+    font-size: 1rem;
+  }
+}
+
+.u-f--h6 {
+  font-size: 0.875rem;
+}
+@media only screen and (min-width: 768px) {
+  .u-f--h6 {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .u-f--h6 {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .u-f--h6 {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .u-f--h6 {
     font-size: 0.875rem;
   }
 }
@@ -467,7 +491,7 @@
   }
 }
 
-.u-btn--red, .u-btn--white, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+.u-btn--red, .u-btn--white, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
   font-family: "Lexend";
   font-weight: 700;
@@ -483,24 +507,24 @@
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
-  .u-btn--red, .u-btn--white, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .u-btn--red, .u-btn--white, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.5625rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-btn--red, .u-btn--white, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .u-btn--red, .u-btn--white, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.875rem;
   }
 }
-.u-btn--red > *, .u-btn--white > *, .u-btn_ghost--red > *, .u-btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
+.u-btn--red > *, .u-btn--white > *, .u-btn--black_lighter > *, .u-btn_ghost--red > *, .u-btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
   vertical-align: middle;
 }
-.u-btn--red > * + *, .u-btn--white > * + *, .u-btn_ghost--red > * + *, .u-btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
+.u-btn--red > * + *, .u-btn--white > * + *, .u-btn--black_lighter > * + *, .u-btn_ghost--red > * + *, .u-btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
   margin-left: 0.25em;
 }
-.u-btn--red svg, .u-btn--white svg, .u-btn_ghost--red svg, .u-btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
+.u-btn--red svg, .u-btn--white svg, .u-btn--black_lighter svg, .u-btn_ghost--red svg, .u-btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
   font-size: inherit;
 }
 
@@ -704,20 +728,25 @@ h6 {
 
 .u-btn--red {
   color: #ffffff;
-  background: #FF293E;
+  background-color: #FF293E;
 }
 .u-btn--red:hover {
   color: #f4f6f8;
-  background: #ff5264;
+  background-color: #ff5264;
 }
 
 .u-btn--white {
   color: #25292f;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 .u-btn--white:hover {
   color: #25292f;
-  background: #d4d7da;
+  background-color: #d4d7da;
+}
+
+.u-btn--black_lighter {
+  color: #ffffff;
+  background-color: #2D3239;
 }
 
 .u-btn_ghost--red {
@@ -760,26 +789,26 @@ h6 {
 }
 .btn_border:hover {
   color: #00D1BC;
-  background: #FF293E;
+  background-color: #FF293E;
 }
 
 .btn_border_secondary {
-  background: #ffffff;
+  background-color: #ffffff;
   color: #00D1BC;
   border: 2px solid #00D1BC;
 }
 .btn_border_secondary:hover {
   color: #ffffff;
-  background: #02b5a4;
+  background-color: #02b5a4;
 }
 
 .btn_white {
   color: #00D1BC;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 .btn_white:hover {
   color: #00D1BC;
-  background: #FF293E;
+  background-color: #FF293E;
 }
 
 .btn_border_white {
@@ -789,7 +818,7 @@ h6 {
 }
 .btn_border_white:hover {
   color: #00D1BC;
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .btn_link, .btn_link--white, .btn_link--secondary {
