@@ -6,9 +6,9 @@
 // Layout
 
 .m-carousel_jackpot {
+	@extend %margin_horizontal_main, %margin_bottom_large;
 	display: flex;
 	justify-content: space-between;
-	@extend %margin_horizontal_main, %margin_bottom_large;
 }
 
 .o-carousel_jackpot--text {
@@ -30,6 +30,7 @@
 // Navigation
 
 .m-carousel_jackpot {
+
 
 	.splide__arrows::before {
 		content: "";

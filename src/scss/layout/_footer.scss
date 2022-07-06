@@ -7,11 +7,25 @@
 
   .o-footer--grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "casino info follow client";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "casino"
+      "info"
+      "follow"
+      "client";
+    justify-items: flex-start;
 
-    justify-items: center;
+    @include lg {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: "casino info follow client";
+      justify-items: center;
+    }
+
+    .o-footer--grid_item:not(:first-of-type) {
+      margin-top: 30px;
+    }
 
     .o-footer--grid_item:nth-of-type(1) {
       grid-area: "casino";
@@ -29,7 +43,7 @@
         align-items: center;
 
         img {
-          margin-right: 10px;
+          margin-right: rem(10);
         }
       }
     }
@@ -43,7 +57,7 @@
     }
 
     li {
-      padding-bottom: 10px;
+      padding-bottom: rem(10);
 
       a {
         color: white;
@@ -55,28 +69,60 @@
     display: flex;
     flex-direction: column;
 
-    margin-top: 120px;
+    margin-top: rem(120);
 
     .o-footer--logo {
       position: relative;
 
       hr {
         position: absolute;
-        top: -15px;
+        top: rem(-15);
         left: -25%;
         width: 150vw;
         border: none;
-        border-top: 1px solid setcolor('black');
+        border-top: 1px solid setcolor("black");
       }
 
       ul {
-        display: flex;
-        justify-content: center;
+        margin: rem(30) 0;
 
-        margin: 30px 0;
+        @include lg {
+          padding: 0 30px;
+        }
 
         li {
-          margin: 0 10px;
+
+        }
+      }
+    }
+
+    .o-footer--logo:first-of-type {
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        li {
+          margin: rem(15) rem(10);
+        }
+      }
+    }
+
+    .o-footer--logo:last-of-type {
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          width: 100%;
+          margin: rem(15) 0;
+
+          a {
+            display: flex;
+            justify-content: center;
+          }
         }
       }
     }

@@ -2,16 +2,14 @@ import express from "express";
 const app = express();
 import createError from "http-errors";
 import path from "path";
-import fs from "fs";
-import ejs from "ejs";
 import home from "./routes/home.js";
 import about from "./routes/about.js";
 import layout from "./routes/layout.js";
+import slots from "./routes/slots.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 
 // render engine
 app.set("view engine", "ejs");
@@ -25,6 +23,7 @@ app.use(express.urlencoded());
 app.use("/", home);
 app.use("/about", about);
 app.use("/layout", layout);
+app.use("/slots", slots);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
