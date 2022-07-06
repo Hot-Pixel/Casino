@@ -3,33 +3,69 @@
 @use "../tools" as *;
 
 
+// Layout
+
 .m-carousel_jackpot {
 	display: flex;
 	justify-content: space-between;
 	@extend %margin_horizontal_main, %margin_bottom_large;
 }
 
-
-.o-carousel_jackpot {
-
-	&--text {
+.o-carousel_jackpot--text {
+	@include md {
 		width: calc(30% - 60px);
 	}
+}
 
-	&--carousel {
+.o-carousel_jackpot--carousel {
+	margin-top: 30px;
+
+	@include md {
+		margin-top: 0;
 		width: 70%;
 	}
 }
 
 
-.o-carousel_jackpot--carousel .o-card {
+// Navigation
 
+.m-carousel_jackpot {
 
-	.o-card--image {
-		background-color: setcolor('black','base');
-		border-radius: 5px 5px 0 0;
+	.splide__arrows::before {
+		content: "";
+		display: block;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+		width: 80px;
+		height: 100%;
+		background: linear-gradient( 90deg, rgba( setcolor('black','dark'), 0 ) 0%, rgba( setcolor('black','dark'), 1 ) 100%);
 	}
 
+	.splide__arrow--prev {
+		left: initial;
+		right: 34px;
+	}
+
+	.splide__arrow--next {
+		right: 0;
+	}
+}
+
+
+// Navigation
+
+.o-carousel_jackpot--carousel .o-card {
+
+	.o-card--image {
+		margin-top: 60px;
+		background-color: setcolor('black','base');
+		border-radius: 5px 5px 0 0;
+
+		img {
+			margin-top: -60px;
+		}
+	}
 
 	.o-card--text {
 		border-radius: 0 0 5px 5px;
