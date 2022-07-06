@@ -9,6 +9,7 @@
 
 
 	&--image {
+		border-radius: 5px 5px 0 0;
 
 		img {
 			display: block;
@@ -18,12 +19,12 @@
 	}
 
 
-	&--text {
+	&--content {
 		flex: 1;
 		padding: 32px 28px;
 		text-align: center;
 		background-color: setcolor('black','base');
-		border-radius: 5px;
+		border-radius: 0 0 5px 5px;
 	}
 
 	&--title {
@@ -34,12 +35,12 @@
 		@extend .u-f--h4, .u-f--bold, .u-c--w-l;
 	}
 
-	&--content {
+	&--desc {
 		@extend .u-f--h5, .u-c--w-l;
 	}
 
 
-	&--button {
+	&--footer {
 		margin-top: -1.6em;
 		text-align: center;
 	}

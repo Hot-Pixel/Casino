@@ -8,3 +8,13 @@
 .m-carousel_bets {
 	@extend %margin_horizontal_main, %margin_bottom_large;
 }
+
+
+// Card
+
+.o-carousel_bets--carousel .o-card {
+
+	.o-card--image {
+		overflow: hidden;
+	}
+}

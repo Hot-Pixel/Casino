@@ -93,7 +93,7 @@
   color: #ffffff;
 }
 
-.u-c--w-l, .o-card--subtitle, .o-card--content {
+.u-c--w-l, .o-card--subtitle, .o-card--desc {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -313,26 +313,26 @@
   }
 }
 
-.u-f--h5, .o-card--content, .c-breadcrumbs span {
+.u-f--h5, .o-card--desc, .c-breadcrumbs span {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .o-card--content, .c-breadcrumbs span {
+  .u-f--h5, .o-card--desc, .c-breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h5, .o-card--content, .c-breadcrumbs span {
+  .u-f--h5, .o-card--desc, .c-breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h5, .o-card--content, .c-breadcrumbs span {
+  .u-f--h5, .o-card--desc, .c-breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .o-card--content, .c-breadcrumbs span {
+  .u-f--h5, .o-card--desc, .c-breadcrumbs span {
     font-size: 0.875rem;
   }
 }
@@ -861,19 +861,22 @@ h6 {
   display: flex;
   flex-direction: column;
 }
+.o-card--image {
+  border-radius: 5px 5px 0 0;
+}
 .o-card--image img {
   display: block;
   width: 100%;
   height: auto;
 }
-.o-card--text {
+.o-card--content {
   flex: 1;
   padding: 32px 28px;
   text-align: center;
   background-color: #1c2026;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
 }
-.o-card--button {
+.o-card--footer {
   margin-top: -1.6em;
   text-align: center;
 }
@@ -1457,6 +1460,10 @@ body {
   }
 }
 
+.o-carousel_bets--carousel .o-card .o-card--image {
+  overflow: hidden;
+}
+
 .m-carousel_jackpot {
   display: flex;
   justify-content: space-between;
@@ -1481,13 +1488,11 @@ body {
 .o-carousel_jackpot--carousel .o-card .o-card--image {
   margin-top: 60px;
   background-color: #1c2026;
-  border-radius: 5px 5px 0 0;
 }
 .o-carousel_jackpot--carousel .o-card .o-card--image img {
   margin-top: -60px;
 }
-.o-carousel_jackpot--carousel .o-card .o-card--text {
-  border-radius: 0 0 5px 5px;
+.o-carousel_jackpot--carousel .o-card .o-card--content {
   background-color: #25292f;
 }
 /*# sourceMappingURL=home.css.map */

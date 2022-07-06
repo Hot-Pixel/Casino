@@ -34,15 +34,13 @@
 	.o-card--image {
 		margin-top: 60px;
 		background-color: setcolor('black','base');
-		border-radius: 5px 5px 0 0;
 
 		img {
 			margin-top: -60px;
 		}
 	}
 
-	.o-card--text {
-		border-radius: 0 0 5px 5px;
+	.o-card--content {
 		background-color: setcolor('black','light');
 	}
 
