@@ -1,0 +1,69 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+// Layout
+
+.m-carousel_bets {
+	@extend %margin_horizontal_main, %margin_bottom_large;
+}
+
+
+// Card
+
+.o-carousel_bets--carousel .o-card {
+
+	.o-card--image {
+		overflow: hidden;
+	}
+
+
+	.o-card--content {
+		text-align: left;
+	}
+
+	.o-card--title {
+		margin-bottom: 0;
+		@extend .u-f--h5;
+	}
+
+	.o-card--subtitle {
+		@extend .u-f--h5, .u-f--light;
+	}
+
+	.o-card--desc {
+		@extend .u-f--h6, .u-f--light;
+		&:not(:last-child) {
+			margin-bottom: 0;
+		}
+		&:last-child {
+			margin-bottom: 30px;
+		}
+	}
+
+
+	.o-card--footer {
+		margin-top: -2.4em;
+
+		&_w_columns {
+			display: flex;
+			column-gap: 10px;
+			justify-content: center;
+		}
+
+		&_column {
+
+			span {
+				display: block;
+				margin-bottom: 5px;
+				font-size: 13px;
+			}
+
+			button {
+				@extend .u-f--h5;
+				padding: 12px 22px;
+			}
+		}
+	}
+}

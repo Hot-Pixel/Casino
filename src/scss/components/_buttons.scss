@@ -7,24 +7,31 @@
 
 // button normal red
 .u-btn--red {
-    @extend %buttons;
-    color: setcolor('white');
-    background: setcolor('primary');
-    &:hover {
-        color: setcolor('gray', 'lighter');
-        background: setcolor('primary', 'light');
-    }
+	@extend %buttons;
+	color: setcolor('white');
+	background-color: setcolor('primary');
+	&:hover {
+		color: setcolor('gray', 'lighter');
+		background-color: setcolor('primary', 'light');
+	}
 }
 
 // button normal white
 .u-btn--white {
-    @extend %buttons;
-    color: setcolor('black', 'light');
-    background: setcolor('white');
-    &:hover {
-        color: setcolor('black', 'light');
-        background: setcolor('gray');
-    }
+	@extend %buttons;
+	color: setcolor('black', 'light');
+	background-color: setcolor('white');
+	&:hover {
+		color: setcolor('black', 'light');
+		background-color: setcolor('gray');
+	}
+}
+
+// button normal black_lighter
+.u-btn--black_lighter {
+	@extend %buttons;
+	color: setcolor('white');
+	background-color: setcolor('black','lighter');
 }
 
 
@@ -94,18 +101,18 @@
     border: 2px solid setcolor('primary');
     &:hover {
         color: setcolor('secondary');
-        background: setcolor('primary');
+        background-color: setcolor('primary');
     }
 }
 
 .btn_border_secondary {
     @extend %buttons;
-    background: setcolor('white');
+    background-color: setcolor('white');
     color: setcolor('secondary');
     border: 2px solid setcolor('secondary');
     &:hover {
         color: setcolor('white');
-        background: setcolor('secondary', 'dark');
+        background-color: setcolor('secondary', 'dark');
     }
 }
 
@@ -113,10 +120,10 @@
 .btn_white {
     @extend %buttons;
     color: setcolor('secondary');
-    background: setcolor('white');
+    background-color: setcolor('white');
     &:hover {
         color: setcolor('secondary');
-        background: setcolor('primary');
+        background-color: setcolor('primary');
     }
 }
 
@@ -127,7 +134,7 @@
     border: 2px solid setcolor('white');
     &:hover {
         color: setcolor('secondary');
-        background: setcolor('white');
+        background-color: setcolor('white');
     }
 }
 

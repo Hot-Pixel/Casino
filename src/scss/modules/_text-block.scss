@@ -1,0 +1,10 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+// Layout
+
+.m-text-block {
+	@extend %margin_horizontal_main, %margin_bottom_large;
+}

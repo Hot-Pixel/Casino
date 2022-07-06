@@ -1,5 +1,3 @@
-
-
 function carouselJackpot() {
 	var carousel = new Splide( '.js--splide--carousel-jackpot', {
 		type       : 'loop',
