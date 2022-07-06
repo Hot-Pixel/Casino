@@ -27,33 +27,7 @@
 }
 
 
-// Navigation
-
-.m-carousel_jackpot {
-
-	.splide__arrows::before {
-		content: "";
-		display: block;
-		position: absolute;
-		right: 0;
-		z-index: 1;
-		width: 80px;
-		height: 100%;
-		background: linear-gradient( 90deg, rgba( setcolor('black','dark'), 0 ) 0%, rgba( setcolor('black','dark'), 1 ) 100%);
-	}
-
-	.splide__arrow--prev {
-		left: initial;
-		right: 34px;
-	}
-
-	.splide__arrow--next {
-		right: 0;
-	}
-}
-
-
-// Navigation
+// Card
 
 .o-carousel_jackpot--carousel .o-card {
 

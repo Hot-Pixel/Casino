@@ -1444,16 +1444,29 @@ body {
   justify-content: space-between;
 }
 
-.o-carousel_jackpot--text {
-  width: calc(30% - 60px);
+@media only screen and (min-width: 768px) {
+  .o-carousel_jackpot--text {
+    width: calc(30% - 60px);
+  }
 }
+
 .o-carousel_jackpot--carousel {
-  width: 70%;
+  margin-top: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .o-carousel_jackpot--carousel {
+    margin-top: 0;
+    width: 70%;
+  }
 }
 
 .o-carousel_jackpot--carousel .o-card .o-card--image {
+  margin-top: 60px;
   background-color: #1c2026;
   border-radius: 5px 5px 0 0;
+}
+.o-carousel_jackpot--carousel .o-card .o-card--image img {
+  margin-top: -60px;
 }
 .o-carousel_jackpot--carousel .o-card .o-card--text {
   border-radius: 0 0 5px 5px;
