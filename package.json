@@ -25,13 +25,16 @@
     "express": "^4.17.2",
     "helmet": "^5.0.2",
     "http-errors": "~1.6.3",
+    "list.js": "^2.3.1",
     "morgan": "~1.9.1",
     "request": "^2.88.2"
   },
   "devDependencies": {
+    "@rollup/plugin-eslint": "^8.0.2",
     "browser-sync": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
+    "gulp-better-rollup": "^4.0.1",
     "gulp-clean-css": "latest",
     "gulp-ejs": "^5.1.0",
     "gulp-imagemin": "^8.0.0",
@@ -39,13 +42,11 @@
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "latest",
     "gulp-watch": "^5.0.1",
-    "sass": "^1.52.3",
-    "@rollup/plugin-eslint": "^8.0.2",
-    "gulp-better-rollup": "^4.0.1",
     "rollup": "^1.32.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "sass": "^1.52.3"
   },
   "engines": {
     "node": ">=10.0.0"

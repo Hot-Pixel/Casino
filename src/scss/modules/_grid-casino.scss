@@ -1,0 +1,21 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.m-casino__filter {
+    @extend %margin_horizontal_main;
+
+
+    .m-casino__bar {
+
+    }
+
+    .m-casino__grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-flow: row;
+
+
+    }
+}
