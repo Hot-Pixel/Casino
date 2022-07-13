@@ -1,16 +1,125 @@
 <main class="m-casino__filter" id="casino-filter">
 
-    <button id="casino-all">Todo</button>
-    <button id="casino-blackjack">Blackjack</button>
-    <button id="casino-ruleta">Ruleta</button>
+    <div class="m-casino__bar">
+        <div class="o-casino__bar-wrapper">
+            <div class="o-casino__bar-game">
+                <button id="casino-all">Todo</button>
+                <button id="casino-blackjack">Blackjack</button>
+                <button id="casino-ruleta">Ruleta</button>
+            </div>
+
+            <select name="provider" id="casino-provider" class="">
+                <option value="" disabled selected hidden>Proveedor</option>
+                <option value="one">One</option>
+                <option value="two">Two</option>
+                <option value="three">Three</option>
+            </select>
+
+            <button id="casino-fav">
+                <img src="img/icon-heart.svg" alt="">
+                <span>Favoritos</span>
+            </button>
+        </div>
+
+
+    </div>
 
     <ul class="m-casino__grid list">
-        <li class="m-casino__grid-item" data-type="blackjack">
-            <div>
-                <img src="" alt="">
-                <img src="img/img-grid-casino-1.jpg" alt="">
+        <li class="o-casino__grid-item" data-type="ruleta" data-provider="one" data-fav="false">
+            <img src="img/img-grid-casino-1.jpg" alt="">
+            <div class="o-casino__grid-title">
+                <p class="">Finn Golden Tavern</p>
+                <div class="o-casino__grid-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
             </div>
-            <div class=""></div>
+            <div class="o-casino__grid-hover">
+                <button class="u-btn--red u-btn--red-glow">
+                    <span>¡JUEGA!</span>
+                    <img src="img/icon-play-white.svg" alt="">
+                </button>
+                <p class="">PRUÉBALO</p>
+            </div>
+        </li>
+        <li class="o-casino__grid-item" data-type="blackjack" data-provider="two" data-fav="false">
+            <img src="img/img-grid-casino-1.jpg" alt="">
+            <div class="o-casino__grid-title">
+                <p class="">Finn Golden Tavern</p>
+                <div class="o-casino__grid-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="o-casino__grid-hover">
+                <button class="u-btn--red u-btn--red-glow">
+                    <span>¡JUEGA!</span>
+                    <img src="img/icon-play-white.svg" alt="">
+                </button>
+                <p class="">PRUÉBALO</p>
+            </div>
+        </li>
+        <li class="o-casino__grid-item" data-type="ruleta" data-provider="three" data-fav="false">
+            <img src="img/img-grid-casino-1.jpg" alt="">
+            <div class="o-casino__grid-title">
+                <p class="">Finn Golden Tavern</p>
+                <div class="o-casino__grid-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="o-casino__grid-hover">
+                <button class="u-btn--red u-btn--red-glow">
+                    <span>¡JUEGA!</span>
+                    <img src="img/icon-play-white.svg" alt="">
+                </button>
+                <p class="">PRUÉBALO</p>
+            </div>
+        </li>
+        <li class="o-casino__grid-item" data-type="blackjack" data-provider="one" data-fav="false">
+            <img src="img/img-grid-casino-1.jpg" alt="">
+            <div class="o-casino__grid-title">
+                <p class="">Finn Golden Tavern</p>
+                <div class="o-casino__grid-fav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="o-casino__grid-hover">
+                <button class="u-btn--red u-btn--red-glow">
+                    <span>¡JUEGA!</span>
+                    <img src="img/icon-play-white.svg" alt="">
+                </button>
+                <p class="">PRUÉBALO</p>
+            </div>
         </li>
     </ul>
 </main>
