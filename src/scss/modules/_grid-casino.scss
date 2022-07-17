@@ -47,10 +47,27 @@
         }
       }
 
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        background: transparent;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.928' height='6.352' viewBox='0 0 10.928 6.352'%3E%3Cpath d='M12.474,42.648,8.615,46.506a.27.27,0,0,1-.381,0h0L4.375,42.648' transform='translate(-2.961 -41.234)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 5px;
+        border: 1px solid #dfdfdf;
+        border-radius: 2px;
+        margin-right: 2rem;
+        padding: 1rem;
+        padding-right: 2rem;
+      }
+
       select#casino-provider {
         @extend .u-f--h5;
         margin: 0 20px;
-        padding: 12px;
+        // padding: 12px;
         background-color: #25292f;
         color: setcolor("gray");
         font-weight: 700;

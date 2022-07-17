@@ -93,7 +93,7 @@
   color: #ffffff;
 }
 
-.u-c--w-l, .o-card--subtitle, .o-card--desc {
+.u-c--w-l {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -212,7 +212,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .o-card--title, .o-card--subtitle, .u-f--bold p, .o-card--title p, .o-card--subtitle p {
+.u-f--bold, .o-filter--slots-left span, .o-filter--slots-search input, .o-filter--slots-general button, .u-f--bold p, .o-filter--slots-left span p, .o-filter--slots-search input p, .o-filter--slots-general button p {
   font-weight: 700;
 }
 
@@ -241,98 +241,98 @@
   }
 }
 
-.u-f--h2, .o-card--title {
+.u-f--h2 {
   font-size: 2rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .o-card--title {
+  .u-f--h2 {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2, .o-card--title {
+  .u-f--h2 {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h2, .o-card--title {
+  .u-f--h2 {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .o-card--title {
+  .u-f--h2 {
     font-size: 2rem;
   }
 }
 
-.u-f--h3 {
+.u-f--h3, .o-filter--slots-left span {
   font-size: 1.375rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3 {
+  .u-f--h3, .o-filter--slots-left span {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h3 {
+  .u-f--h3, .o-filter--slots-left span {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h3 {
-    font-size: 1.375rem;
+  .u-f--h3, .o-filter--slots-left span {
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3 {
-    font-size: 1.375rem;
+  .u-f--h3, .o-filter--slots-left span {
+    font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .o-card--subtitle {
+.u-f--h4, .o-filter--slots-search input {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .o-card--subtitle {
+  .u-f--h4, .o-filter--slots-search input {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4, .o-card--subtitle {
+  .u-f--h4, .o-filter--slots-search input {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h4, .o-card--subtitle {
+  .u-f--h4, .o-filter--slots-search input {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .o-card--subtitle {
+  .u-f--h4, .o-filter--slots-search input {
     font-size: 1.125rem;
   }
 }
 
-.u-f--h5, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper button#casino-fav, .o-card--desc, .c-breadcrumbs span {
+.u-f--h5, .o-filter--slots-general button, .c-breadcrumbs span {
   font-size: 1rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper button#casino-fav, .o-card--desc, .c-breadcrumbs span {
+  .u-f--h5, .o-filter--slots-general button, .c-breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h5, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper button#casino-fav, .o-card--desc, .c-breadcrumbs span {
+  .u-f--h5, .o-filter--slots-general button, .c-breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h5, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper button#casino-fav, .o-card--desc, .c-breadcrumbs span {
+  .u-f--h5, .o-filter--slots-general button, .c-breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper button#casino-fav, .o-card--desc, .c-breadcrumbs span {
+  .u-f--h5, .o-filter--slots-general button, .c-breadcrumbs span {
     font-size: 1rem;
   }
 }
@@ -390,42 +390,42 @@
   }
 }
 
-.m-casino__filter, .m-footer {
+.m-slots-finder, .m-footer {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-casino__filter, .m-footer {
+  .m-slots-finder, .m-footer {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-casino__filter, .m-footer {
+  .m-slots-finder, .m-footer {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-casino__filter, .m-footer {
+  .m-slots-finder, .m-footer {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .m-casino__filter, .m-footer {
+  .m-slots-finder, .m-footer {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-casino__filter, .m-footer {
+  .m-slots-finder, .m-footer {
     padding-left: var(--horizontal-main-xxl);
     padding-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .m-casino__filter, .m-footer {
+  .m-slots-finder, .m-footer {
     max-width: 100rem;
     padding-left: 0;
     padding-right: 0;
@@ -433,13 +433,12 @@
   }
 }
 
-.u-btn--red, .u-btn--white, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+.u-btn--red, .u-btn--white, .u-btn--gray-red, .u-btn--block, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
   font-family: "Lexend";
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 1em;
-  text-transform: uppercase;
   text-decoration: none;
   outline: none;
   border: none;
@@ -449,24 +448,24 @@
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
-  .u-btn--red, .u-btn--white, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .u-btn--red, .u-btn--white, .u-btn--gray-red, .u-btn--block, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.5625rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-btn--red, .u-btn--white, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .u-btn--red, .u-btn--white, .u-btn--gray-red, .u-btn--block, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.875rem;
   }
 }
-.u-btn--red > *, .u-btn--white > *, .u-btn--black_lighter > *, .u-btn_ghost--red > *, .u-btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
+.u-btn--red > *, .u-btn--white > *, .u-btn--gray-red > *, .u-btn--block > *, .u-btn--black_lighter > *, .u-btn_ghost--red > *, .u-btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
   vertical-align: middle;
 }
-.u-btn--red > * + *, .u-btn--white > * + *, .u-btn--black_lighter > * + *, .u-btn_ghost--red > * + *, .u-btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
+.u-btn--red > * + *, .u-btn--white > * + *, .u-btn--gray-red > * + *, .u-btn--block > * + *, .u-btn--black_lighter > * + *, .u-btn_ghost--red > * + *, .u-btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
   margin-left: 0.25em;
 }
-.u-btn--red svg, .u-btn--white svg, .u-btn--black_lighter svg, .u-btn_ghost--red svg, .u-btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
+.u-btn--red svg, .u-btn--white svg, .u-btn--gray-red svg, .u-btn--block svg, .u-btn--black_lighter svg, .u-btn_ghost--red svg, .u-btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
   font-size: inherit;
 }
 
@@ -518,6 +517,13 @@ a {
 }
 a:focus, a:hover, a:active {
   outline: 0;
+}
+
+fieldset, input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
 }
 
 html {
@@ -690,6 +696,21 @@ h6 {
   background-color: #d4d7da;
 }
 
+/* Button remove filter */
+.u-btn--gray-red {
+  color: #FF293E;
+  background-color: #1c2026;
+  padding: 0.625rem;
+}
+.u-btn--gray-red:hover {
+  background-color: #292929;
+}
+
+.u-btn--block {
+  height: 3.75rem;
+  border-radius: 0.3125rem;
+}
+
 .u-btn--black_lighter {
   color: #ffffff;
   background-color: #2D3239;
@@ -832,28 +853,95 @@ h6 {
   right: 0;
 }
 
-.o-card {
-  display: flex;
-  flex-direction: column;
+.o-filter--slots {
+  width: 25%;
 }
-.o-card--image {
-  border-radius: 5px 5px 0 0;
-}
-.o-card--image img {
-  display: block;
+.o-filter--slots-header {
+  height: 60px;
   width: 100%;
-  height: auto;
+  display: flex;
 }
-.o-card--content {
-  flex: 1;
-  padding: 32px 28px;
-  text-align: center;
+.o-filter--slots-left {
+  width: 33%;
+  height: 100%;
   background-color: #1c2026;
-  border-radius: 0 0 5px 5px;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.o-card--footer {
-  margin-top: -1.6em;
-  text-align: center;
+.o-filter--slots-left span {
+  padding-left: 5px;
+}
+.o-filter--slots-right {
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+.o-filter--slots-right div {
+  cursor: pointer;
+  background-color: #2d3239;
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 100px 100px 0;
+}
+.o-filter--slots-right div img {
+  transform: rotate(180deg);
+}
+.o-filter--slots-container {
+  background-color: #1c2026;
+  padding: 1.875rem 0.9375rem;
+}
+.o-filter--slots-search {
+  position: relative;
+  height: 55px;
+}
+.o-filter--slots-search img {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+.o-filter--slots-search input {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 70px;
+  background-color: #2d3239;
+  border-radius: 30px;
+  color: white;
+}
+.o-filter--slots-search input::placeholder {
+  color: white;
+}
+.o-filter--slots-general {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.o-filter--slots-general button {
+  width: 33%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.o-filter--slots-general button:not(:last-of-type) {
+  background-color: #2d3239;
+}
+.o-filter--slots-general button:nth-of-type(2) {
+  margin: 0 10px;
+}
+.o-filter--slots-general button:last-of-type {
+  background-color: #FF293E;
 }
 
 body {
@@ -1098,145 +1186,5 @@ body {
 .m-footer .o-footer--brands .o-footer--logo:last-of-type ul li a {
   display: flex;
   justify-content: center;
-}
-
-.m-casino__filter .m-casino__bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper {
-  display: flex;
-  align-items: center;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper fieldset {
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 0;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button {
-  margin: 0;
-  padding: 12px;
-  background-color: #25292f;
-  color: #d4d7da;
-  font-weight: 700;
-  border: none;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button.mixitup-control-active {
-  background-color: #2d3239;
-  color: white;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button:first-of-type {
-  border-radius: 5px 0 0 5px;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button:last-of-type {
-  border-radius: 0 5px 5px 0;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider {
-  margin: 0 20px;
-  padding: 12px;
-  background-color: #25292f;
-  color: #d4d7da;
-  font-weight: 700;
-  border: none;
-  border-radius: 5px;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider:focus, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider:active {
-  outline: none;
-  border: none;
-  background-color: #2d3239;
-  color: white;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper button#casino-fav {
-  padding: 12px;
-  background-color: #25292f;
-  color: #d4d7da;
-  font-weight: 700;
-  border: none;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper button#casino-fav img {
-  margin-right: 10px;
-}
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper button#casino-fav:focus, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper button#casino-fav:active {
-  background-color: #2d3239;
-  color: white;
-}
-.m-casino__filter .m-casino__grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-auto-flow: row;
-  gap: 15px;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item {
-  position: relative;
-  z-index: 0;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item:hover .o-casino__grid-title p {
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item:hover .o-casino__grid-hover {
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item > img {
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  border-radius: 7px;
-  overflow: hidden;
-  width: 100%;
-  object-fit: contain;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-title {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  right: 0;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-title p {
-  margin: 0;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-title .o-casino__grid-fav.fav {
-  cursor: pointer;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-title .o-casino__grid-fav.fav svg {
-  cursor: pointer;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-title .o-casino__grid-fav.fav svg g path {
-  fill: #FF293E;
-  opacity: 1;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  padding-top: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-.m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-hover button {
-  margin-bottom: 15px;
 }
 /*# sourceMappingURL=layout.css.map */

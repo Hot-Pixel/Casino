@@ -1,17 +1,22 @@
 <main class="m-casino__filter" id="casino-filter">
 
     <div class="m-casino__bar">
-        <div class="o-casino__bar-wrapper">
+        <form class="o-casino__bar-wrapper">
+
+
 
             <fieldset class="o-casino__bar-game" data-filter-group>
-                <button id="casino-all" data-filter="all">Todos</button>
+                <button type="reset" id="casino-all">Todos</button>
                 <button id="casino-blackjack" data-filter=".blackjack">Blackjack</button>
                 <button id="casino-ruleta" data-filter=".ruleta">Ruleta</button>
             </fieldset>
 
             <fieldset data-filter-group>
-                <select name="provider" id="casino-provider" class="">
-                    <option value="" disabled selected hidden>Proveedor</option>
+                <select name="provider" id="casino-provider">
+                    <option value="" disabled selected hidden>
+                        <span>Proveedor</span>
+                        <img src="img/icon-arrow-down.svg" alt="">
+                    </option>
                     <option value="all">Todos</option>
                     <option value=".one">One</option>
                     <option value=".two">Two</option>
@@ -26,7 +31,7 @@
                 </button>
             </fieldset>
 
-        </div>
+        </form>
 
 
     </div>

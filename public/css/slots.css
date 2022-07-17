@@ -280,12 +280,12 @@
 }
 @media only screen and (min-width: 1200px) {
   .u-f--h3, .o-carousel_jackpot--carousel .o-card .o-card--title, .m-red__icons .o-red__icons--wrapper_right p:last-of-type, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .u-f--h3, .o-carousel_jackpot--carousel .o-card .o-card--title, .m-red__icons .o-red__icons--wrapper_right p:last-of-type, .m-banner__car .o-banner__car--wrapper .o-banner__car--item .o-banner__car--item-wrapper p:last-of-type {
-    font-size: 1.375rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -491,13 +491,12 @@
   }
 }
 
-.u-btn--red, .u-btn--white, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+.u-btn--red, .u-btn--white, .u-btn--gray-red, .u-btn--block, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
   font-family: "Lexend";
   font-weight: 700;
   font-size: 0.75rem;
   line-height: 1em;
-  text-transform: uppercase;
   text-decoration: none;
   outline: none;
   border: none;
@@ -507,24 +506,24 @@
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
-  .u-btn--red, .u-btn--white, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .u-btn--red, .u-btn--white, .u-btn--gray-red, .u-btn--block, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.5625rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-btn--red, .u-btn--white, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .u-btn--red, .u-btn--white, .u-btn--gray-red, .u-btn--block, .u-btn--black_lighter, .u-btn_ghost--red, .u-btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.875rem;
   }
 }
-.u-btn--red > *, .u-btn--white > *, .u-btn--black_lighter > *, .u-btn_ghost--red > *, .u-btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
+.u-btn--red > *, .u-btn--white > *, .u-btn--gray-red > *, .u-btn--block > *, .u-btn--black_lighter > *, .u-btn_ghost--red > *, .u-btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
   vertical-align: middle;
 }
-.u-btn--red > * + *, .u-btn--white > * + *, .u-btn--black_lighter > * + *, .u-btn_ghost--red > * + *, .u-btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
+.u-btn--red > * + *, .u-btn--white > * + *, .u-btn--gray-red > * + *, .u-btn--block > * + *, .u-btn--black_lighter > * + *, .u-btn_ghost--red > * + *, .u-btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
   margin-left: 0.25em;
 }
-.u-btn--red svg, .u-btn--white svg, .u-btn--black_lighter svg, .u-btn_ghost--red svg, .u-btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
+.u-btn--red svg, .u-btn--white svg, .u-btn--gray-red svg, .u-btn--block svg, .u-btn--black_lighter svg, .u-btn_ghost--red svg, .u-btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
   font-size: inherit;
 }
 
@@ -576,6 +575,13 @@ a {
 }
 a:focus, a:hover, a:active {
   outline: 0;
+}
+
+fieldset, input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
 }
 
 html {
@@ -746,6 +752,21 @@ h6 {
 .u-btn--white:hover {
   color: #25292f;
   background-color: #d4d7da;
+}
+
+/* Button remove filter */
+.u-btn--gray-red {
+  color: #FF293E;
+  background-color: #1c2026;
+  padding: 0.625rem;
+}
+.u-btn--gray-red:hover {
+  background-color: #292929;
+}
+
+.u-btn--block {
+  height: 3.75rem;
+  border-radius: 0.3125rem;
 }
 
 .u-btn--black_lighter {

@@ -31,6 +31,24 @@
 	}
 }
 
+/* Button remove filter */
+.u-btn--gray-red {
+	@extend %buttons;
+	color: setcolor('primary');
+	background-color: #1c2026;
+    padding: rem(10);
+	&:hover {
+		background-color: #292929;
+	}
+}
+
+.u-btn--block {
+	@extend %buttons;
+    height: rem(60);
+    border-radius: rem(5);
+}
+
+
 // button normal black_lighter
 .u-btn--black_lighter {
 	@extend %buttons;
