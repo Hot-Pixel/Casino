@@ -16,6 +16,13 @@
       display: flex;
       align-items: center;
 
+      fieldset {
+        border: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+      }
+
       .o-casino__bar-game {
         button {
           @extend .u-f--h5;
@@ -26,17 +33,16 @@
           font-weight: 700;
           border: none;
 
-          &:focus,
-          &:active {
+          &.mixitup-control-active {
             background-color: #2d3239;
             color: white;
           }
 
           &:first-of-type {
-            border-radius: 10px 0 0 10px;
+            border-radius: 5px 0 0 5px;
           }
           &:last-of-type {
-            border-radius: 0 10px 10px 0;
+            border-radius: 0 5px 5px 0;
           }
         }
       }
@@ -49,7 +55,7 @@
         color: setcolor("gray");
         font-weight: 700;
         border: none;
-        border-radius: 10px;
+        border-radius: 5px;
 
         &:focus,
         &:active {
@@ -67,7 +73,7 @@
         color: setcolor("gray");
         font-weight: 700;
         border: none;
-        border-radius: 10px;
+        border-radius: 5px;
 
         display: flex;
         align-items: center;
@@ -93,6 +99,7 @@
 
     .o-casino__grid-item {
       position: relative;
+      z-index: 0;
 
       &:hover {
         .o-casino__grid-title {
@@ -114,7 +121,7 @@
         right: 0;
         z-index: 0;
 
-        border-radius: 10px;
+        border-radius: 7px;
         overflow: hidden;
 
         width: 100%;
@@ -141,6 +148,11 @@
         }
 
         .o-casino__grid-fav.fav {
+          cursor: pointer;
+
+          svg {
+            cursor: pointer;
+          }
           svg g path {
             fill: setcolor("primary");
             opacity: 1;

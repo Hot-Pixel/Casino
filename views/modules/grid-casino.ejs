@@ -2,30 +2,37 @@
 
     <div class="m-casino__bar">
         <div class="o-casino__bar-wrapper">
-            <div class="o-casino__bar-game">
-                <button id="casino-all">Todo</button>
-                <button id="casino-blackjack">Blackjack</button>
-                <button id="casino-ruleta">Ruleta</button>
-            </div>
 
-            <select name="provider" id="casino-provider" class="">
-                <option value="" disabled selected hidden>Proveedor</option>
-                <option value="one">One</option>
-                <option value="two">Two</option>
-                <option value="three">Three</option>
-            </select>
+            <fieldset class="o-casino__bar-game" data-filter-group>
+                <button id="casino-all" data-filter="all">Todos</button>
+                <button id="casino-blackjack" data-filter=".blackjack">Blackjack</button>
+                <button id="casino-ruleta" data-filter=".ruleta">Ruleta</button>
+            </fieldset>
 
-            <button id="casino-fav">
-                <img src="img/icon-heart.svg" alt="">
-                <span>Favoritos</span>
-            </button>
+            <fieldset data-filter-group>
+                <select name="provider" id="casino-provider" class="">
+                    <option value="" disabled selected hidden>Proveedor</option>
+                    <option value="all">Todos</option>
+                    <option value=".one">One</option>
+                    <option value=".two">Two</option>
+                    <option value=".three">Three</option>
+                </select>
+            </fieldset>
+
+            <fieldset data-filter-group>
+                <button id="casino-fav" data-toggle=".favourite">
+                    <img src="img/icon-heart.svg" alt="">
+                    <span>Favoritos</span>
+                </button>
+            </fieldset>
+
         </div>
 
 
     </div>
 
     <ul class="m-casino__grid list">
-        <li class="o-casino__grid-item" data-type="ruleta" data-provider="one" data-fav="false">
+        <li class="o-casino__grid-item blackjack one">
             <img src="img/img-grid-casino-1.jpg" alt="">
             <div class="o-casino__grid-title">
                 <p class="">Finn Golden Tavern</p>
@@ -49,8 +56,8 @@
                 <p class="">PRUÉBALO</p>
             </div>
         </li>
-        <li class="o-casino__grid-item" data-type="blackjack" data-provider="two" data-fav="false">
-            <img src="img/img-grid-casino-1.jpg" alt="">
+        <li class="o-casino__grid-item ruleta two">
+            <img src="img/img-grid-casino-2.jpg" alt="">
             <div class="o-casino__grid-title">
                 <p class="">Finn Golden Tavern</p>
                 <div class="o-casino__grid-fav">
@@ -73,8 +80,8 @@
                 <p class="">PRUÉBALO</p>
             </div>
         </li>
-        <li class="o-casino__grid-item" data-type="ruleta" data-provider="three" data-fav="false">
-            <img src="img/img-grid-casino-1.jpg" alt="">
+        <li class="o-casino__grid-item ruleta one">
+            <img src="img/img-grid-casino-3.jpg" alt="">
             <div class="o-casino__grid-title">
                 <p class="">Finn Golden Tavern</p>
                 <div class="o-casino__grid-fav">
@@ -97,8 +104,8 @@
                 <p class="">PRUÉBALO</p>
             </div>
         </li>
-        <li class="o-casino__grid-item" data-type="blackjack" data-provider="one" data-fav="false">
-            <img src="img/img-grid-casino-1.jpg" alt="">
+        <li class="o-casino__grid-item blackjack three">
+            <img src="img/img-grid-casino-4.jpg" alt="">
             <div class="o-casino__grid-title">
                 <p class="">Finn Golden Tavern</p>
                 <div class="o-casino__grid-fav">

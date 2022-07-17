@@ -1110,6 +1110,12 @@ body {
   display: flex;
   align-items: center;
 }
+.m-casino__filter .m-casino__bar .o-casino__bar-wrapper fieldset {
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
 .m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button {
   margin: 0;
   padding: 12px;
@@ -1118,15 +1124,15 @@ body {
   font-weight: 700;
   border: none;
 }
-.m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button:focus, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button:active {
+.m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button.mixitup-control-active {
   background-color: #2d3239;
   color: white;
 }
 .m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button:first-of-type {
-  border-radius: 10px 0 0 10px;
+  border-radius: 5px 0 0 5px;
 }
 .m-casino__filter .m-casino__bar .o-casino__bar-wrapper .o-casino__bar-game button:last-of-type {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 5px 5px 0;
 }
 .m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider {
   margin: 0 20px;
@@ -1135,7 +1141,7 @@ body {
   color: #d4d7da;
   font-weight: 700;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider:focus, .m-casino__filter .m-casino__bar .o-casino__bar-wrapper select#casino-provider:active {
   outline: none;
@@ -1149,7 +1155,7 @@ body {
   color: #d4d7da;
   font-weight: 700;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   align-items: center;
 }
@@ -1168,6 +1174,7 @@ body {
 }
 .m-casino__filter .m-casino__grid .o-casino__grid-item {
   position: relative;
+  z-index: 0;
 }
 .m-casino__filter .m-casino__grid .o-casino__grid-item:hover .o-casino__grid-title p {
   opacity: 1;
@@ -1182,7 +1189,7 @@ body {
   top: 0;
   right: 0;
   z-index: 0;
-  border-radius: 10px;
+  border-radius: 7px;
   overflow: hidden;
   width: 100%;
   object-fit: contain;
@@ -1202,6 +1209,12 @@ body {
   margin: 0;
   opacity: 0;
   transition: all 0.3s ease;
+}
+.m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-title .o-casino__grid-fav.fav {
+  cursor: pointer;
+}
+.m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-title .o-casino__grid-fav.fav svg {
+  cursor: pointer;
 }
 .m-casino__filter .m-casino__grid .o-casino__grid-item .o-casino__grid-title .o-casino__grid-fav.fav svg g path {
   fill: #FF293E;
