@@ -85,10 +85,76 @@
     }
   }
 
+  const hearts = document.querySelectorAll(".o-grid--games-fav");
+
+  const filterCasino = () => {
+    hearts.forEach(heart => {
+      heart.addEventListener("click", () => {
+        heart.classList.toggle("fav");
+
+        if (heart.classList.contains("fav")) {
+          heart.parentElement.parentElement.classList.add("favorito");
+        } else {
+          heart.parentElement.parentElement.classList.remove("favorito");
+        }
+      });
+    });
+    var mixerCasino = mixitup(".m-casino--finder", {
+      multifilter: {
+        enable: true
+      },
+      controls: {
+        enable: true
+      },
+      animation: {
+        enable: false
+      }
+    });
+  };
+
+  const tags = document.querySelectorAll(".o-filter--slots-tag");
+  const hearts$1 = document.querySelectorAll(".o-grid--games-fav");
+
+  const filterSlotsAll = () => {
+    hearts$1.forEach(heart => {
+      heart.addEventListener("click", () => {
+        heart.classList.toggle("fav");
+
+        if (heart.classList.contains("fav")) {
+          heart.parentElement.parentElement.classList.add("favorito");
+        } else {
+          heart.parentElement.parentElement.classList.remove("favorito");
+        }
+      });
+    });
+    tags.forEach(tag => {
+      tag.addEventListener("click", e => {
+        if (e.currentTarget.classList.contains("mixitup-control-active")) {
+          e.currentTarget.firstElementChild.setAttribute("src", "img/icon-filter-noActive.svg");
+        } else {
+          e.currentTarget.firstElementChild.setAttribute("src", "img/icon-filter-active.svg");
+        }
+      });
+    });
+    const mixerSlots = mixitup(".m-slots--finder", {
+      multifilter: {
+        enable: true
+      },
+      controls: {
+        enable: true
+      },
+      animation: {
+        enable: false
+      }
+    });
+  };
+
   const carouselBannerExist = document.getElementsByClassName("m-banner__car");
   const carouselJackpotExist = document.getElementsByClassName("js--splide--carousel-jackpot");
   const carouselBetsExist = document.getElementsByClassName("js--splide--carousel-bets");
   const gridHalfExist = document.getElementsByClassName("m-grid__half");
+  const casinoFinderExist = document.getElementsByClassName("m-casino--finder");
+  const slotsAllFinderExist = document.getElementsByClassName("m-slots--finder");
   window.addEventListener("load", () => {
     if (carouselBannerExist.length > 0) {
       carouselBanner();
@@ -105,31 +171,13 @@
     if (gridHalfExist.length > 0) {
       collapseGrid();
     }
-  });
-  const hearts = document.querySelectorAll(".o-casino__grid-fav");
-  hearts.forEach(heart => {
-    heart.addEventListener("click", () => {
-      heart.classList.toggle("fav");
 
-      if (heart.classList.contains("fav")) {
-        heart.parentElement.parentElement.classList.add("favourite");
-      } else {
-        heart.parentElement.parentElement.classList.remove("favourite");
-      }
-    });
-  });
-  var mixer = mixitup(".m-casino__filter", {
-    multifilter: {
-      enable: true
-    },
-    selectors: {
-      target: ".o-casino__grid-item"
-    },
-    controls: {
-      enable: true
-    },
-    animation: {
-      enable: false
+    if (casinoFinderExist.length > 0) {
+      filterCasino();
+    }
+
+    if (slotsAllFinderExist.length > 0) {
+      filterSlotsAll();
     }
   });
 

@@ -1,0 +1,21 @@
+<%
+const banner =
+  {
+    img: "casino",
+    icon: "banner-casino",
+    title: "Juegos de Casino",
+    breadcrumb: "Slots"
+  }
+%>
+
+<%- include ('layout/head', {title: "Casino" , css: "casino" }) %>
+
+<%- include ('layout/header-noLog') %>
+
+<%- include ('modules/banner', { data: banner }) %>
+
+<%- include ('modules/finder-casino') %>
+
+<%- include ('layout/footer') %>
+
+<%- include ('layout/scripts') %>

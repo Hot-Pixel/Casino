@@ -1,0 +1,84 @@
+<%
+const gridItems = [
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-tres"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-dos"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-dos"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-dos"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-tres"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-dos"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-dos"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-dos"
+    },
+]
+%>
+
+<main class="m-casino--finder" id="casino-finder">
+
+    <%- include ('../objects/filter-casino.ejs') %>
+
+    <%- include ('../objects/grid-games.ejs', { data: gridItems }) %>
+
+</main>

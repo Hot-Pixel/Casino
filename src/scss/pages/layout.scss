@@ -21,15 +21,17 @@
 
 // OBJECTS
 // Contenedores, wrappers o layouts
-@use '../objects/slots-filter';
-@use '../objects/slots-grid';
+@use '../objects/filter-slotsAll';
+@use '../objects/filter-casino';
+@use '../objects/grid-games';
 
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
 
 // MODULES
-@use '../modules/slots-finder';
+@use '../modules/finder-slotsAll';
+@use '../modules/finder-casino';
 
 
 // HELPER

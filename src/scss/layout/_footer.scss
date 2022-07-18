@@ -4,6 +4,7 @@
 
 .m-footer {
   @extend %margin_horizontal_main;
+  @extend %margin_top_medium;
 
   .o-footer--grid {
     display: grid;

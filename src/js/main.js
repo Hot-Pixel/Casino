@@ -2,6 +2,8 @@ import carouselBanner from "./carouselBanner.js";
 import carouselJackpot from "./carouselJackpot.js";
 import carouselBets from "./carouselBets.js";
 import collapseGrid from "./collapseGridHalf.js";
+import filterCasino from "./filterCasino.js";
+import filterSlotsAll from "./filterSlotsAll.js";
 
 const carouselBannerExist = document.getElementsByClassName("m-banner__car");
 const carouselJackpotExist = document.getElementsByClassName(
@@ -11,6 +13,8 @@ const carouselBetsExist = document.getElementsByClassName(
   "js--splide--carousel-bets"
 );
 const gridHalfExist = document.getElementsByClassName("m-grid__half");
+const casinoFinderExist = document.getElementsByClassName("m-casino--finder");
+const slotsAllFinderExist = document.getElementsByClassName("m-slots--finder");
 
 window.addEventListener("load", () => {
   if (carouselBannerExist.length > 0) {
@@ -25,32 +29,12 @@ window.addEventListener("load", () => {
   if (gridHalfExist.length > 0) {
     collapseGrid();
   }
+  if (casinoFinderExist.length > 0) {
+    filterCasino();
+  }
+  if (slotsAllFinderExist.length > 0) {
+    filterSlotsAll();
+  }
 });
 
-const hearts = document.querySelectorAll(".o-casino__grid-fav");
 
-hearts.forEach((heart) => {
-  heart.addEventListener("click", () => {
-    heart.classList.toggle("fav");
-    if (heart.classList.contains("fav")) {
-      heart.parentElement.parentElement.classList.add("favourite");
-    } else {
-      heart.parentElement.parentElement.classList.remove("favourite");
-    }
-  });
-});
-
-var mixer = mixitup(".m-casino__filter", {
-  multifilter: {
-    enable: true,
-  },
-  selectors: {
-    target: ".o-casino__grid-item",
-  },
-  controls: {
-    enable: true,
-  },
-  animation: {
-    enable: false,
-  },
-});

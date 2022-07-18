@@ -1,0 +1,120 @@
+<%
+const gridItems = [
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "novedad",
+        proveedor: "proveedor-uno",
+        tipo: "tipo-dos",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "novedad",
+        proveedor: "proveedor-dos",
+        tipo: "tipo-uno",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "novedad promo",
+        proveedor: "proveedor-uno",
+        tipo: "tipo-dos",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "promo",
+        proveedor: "proveedor-uno",
+        tipo: "tipo-dos",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "novedad",
+        proveedor: "proveedor-dos",
+        tipo: "tipo-uno",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "promo",
+        proveedor: "proveedor-uno",
+        tipo: "tipo-dos",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "novedad",
+        proveedor: "proveedor-uno",
+        tipo: "tipo-dos",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "novedad promo",
+        proveedor: "proveedor-dos",
+        tipo: "tipo-uno",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "",
+        proveedor: "proveedor-dos",
+        tipo: "tipo-uno",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "",
+        proveedor: "proveedor-uno",
+        tipo: "tipo-dos",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "promo",
+        proveedor: "proveedor-uno",
+        tipo: "tipo-dos",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        general: "novedad promo",
+        proveedor: "proveedor-dos",
+        tipo: "tipo-uno",
+        lineas: "lineas-dos",
+        apuesta: "apuesta-uno"
+    },
+]
+%>
+
+<main class="m-slots--finder">
+
+    <%- include ('../objects/filter-slotsAll.ejs') %>
+
+    <%- include ('../objects/grid-games.ejs', { data: gridItems }) %>
+
+</main>

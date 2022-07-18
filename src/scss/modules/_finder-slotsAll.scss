@@ -1,0 +1,17 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.m-slots--finder {
+  @extend %margin_horizontal_main;
+  display: flex;
+
+  .o-filter--slots {
+    width: 25%;
+  }
+  .o-grid--games {
+    width: 75%;
+    margin-left: 20px;
+  }
+}
+

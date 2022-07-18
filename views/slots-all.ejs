@@ -1,0 +1,21 @@
+<%
+const banner =
+  {
+    img: "slots",
+    icon: "banner-slots",
+    title: "Nuestras Slots",
+    breadcrumb: "Slots"
+  }
+%>
+
+<%- include ('layout/head', {title: "Slots" , css: "slotsAll" }) %>
+
+<%- include ('layout/header-noLog') %>
+
+<%- include ('modules/banner', { data: banner }) %>
+
+<%- include ('modules/finder-slotsAll') %>
+
+<%- include ('layout/footer') %>
+
+<%- include ('layout/scripts') %>

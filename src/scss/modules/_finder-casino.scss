@@ -1,0 +1,8 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.m-casino--finder {
+  @extend %margin_horizontal_main;
+  @extend %margin_top_medium;
+}

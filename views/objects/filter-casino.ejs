@@ -1,0 +1,31 @@
+<form class="o-casino--filter">
+
+    <section class="o-casino--filter-wrapper">
+        <fieldset class=" o-casino--filter-game" data-filter-group>
+            <button type="reset" id="casino-all">Todos</button>
+            <button id="casino-blackjack" data-filter=".blackjack">Blackjack</button>
+            <button id="casino-ruleta" data-filter=".ruleta">Ruleta</button>
+        </fieldset>
+
+        <fieldset data-filter-group>
+            <select name="provider" id="casino-provider">
+                <option value="" disabled selected hidden>
+                    <span>Proveedor</span>
+                    <img src="img/icon-arrow-down.svg" alt="">
+                </option>
+                <option value="all">Todos</option>
+                <option value=".proveedor-uno">One</option>
+                <option value=".proveedor-dos">Two</option>
+                <option value=".proveedor-tres">Three</option>
+            </select>
+        </fieldset>
+
+        <fieldset data-filter-group>
+            <button id="casino-fav" data-toggle=".favorito">
+                <img src="img/icon-heart.svg" alt="">
+                <span>Favoritos</span>
+            </button>
+        </fieldset>
+    </section>
+
+</form>

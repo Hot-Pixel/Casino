@@ -1,0 +1,115 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.o-grid--games {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-flow: row;
+  gap: 15px;
+
+  &-item {
+    position: relative;
+    z-index: 0;
+
+    & > img {
+      position: relative;
+      top: 0;
+      right: 0;
+      z-index: 0;
+
+      border-radius: 7px;
+      overflow: hidden;
+
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .o-grid--games-title {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      right: 0;
+      z-index: 2;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 15px;
+
+      p {
+        margin: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+
+      .o-grid--games-fav.fav {
+        cursor: pointer;
+
+        svg {
+          cursor: pointer;
+        }
+        svg g path {
+          fill: setcolor("primary");
+          opacity: 1;
+        }
+      }
+    }
+
+    &:hover {
+      .o-grid--games-title {
+        p {
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+      }
+
+      .o-grid--games-hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+    }
+
+    .o-grid--games-hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      width: 100%;
+      height: 100%;
+
+      padding-top: 40px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 0;
+      transition: all 0.3s ease;
+
+      button {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+.m-casino--finder {
+  .o-grid--games {
+    grid-template-rows: auto;
+  }
+}
+
+.m-slots--finder {
+  .o-grid--games {
+    grid-template-rows: repeat(6, 225px);
+
+    &-item {
+      height: 225px;
+    }
+  }
+}
