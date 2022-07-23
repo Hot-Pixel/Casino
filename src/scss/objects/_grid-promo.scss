@@ -1,0 +1,39 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.grid__promo {
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    column-gap: rem(15);
+    row-gap: rem(15);
+  }
+
+  &-card {
+    border-radius: 10px;
+
+    &--top img {
+      width: 100%;
+      object-fit: contain;
+    }
+
+    &--bottom {
+        background-color: setcolor('black');
+    }
+
+    p {
+
+    }
+  }
+
+  &-title {
+    @extend .u-f--h3, .u-f--bold;
+  }
+
+  &-subtitle {
+    @extend .u-f--h4, .u-f--bold;
+    color: setcolor('primary');
+  }
+}

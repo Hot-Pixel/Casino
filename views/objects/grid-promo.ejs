@@ -1,0 +1,24 @@
+<section class="grid__promo">
+    <div class="grid__promo-container">
+        <% let i = 1; %>
+        <% data.forEach( e => { %>
+            <div class="grid__promo-card">
+                <div class="grid__promo-card--top">
+                    <img src="img/img-grid-promo<%= i %>.png" alt="">
+                </div>
+                <div class="grid__promo-card--bottom">
+                    <p class="grid__promo-title"><%= e.title %></p>
+                    <p class="grid__promo-subtitle"><%= e.subtitle %></p>
+                    <p class="grid__promo--body"><%= e.body %></p>
+                    <a href="<%= e.link %>">
+                        <button class="grid__promo-btn">
+                            <span>MÁS INFORMACIÓN</span>
+                            <img src="img/icon-round-arrow.svg" alt="">
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <% i = i + 1; %>
+        <% }) %>
+    </div>
+</section>

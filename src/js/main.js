@@ -6,12 +6,8 @@ import filterCasino from "./filterCasino.js";
 import filterSlotsAll from "./filterSlotsAll.js";
 
 const carouselBannerExist = document.getElementsByClassName("m-banner__car");
-const carouselJackpotExist = document.getElementsByClassName(
-  "js--splide--carousel-jackpot"
-);
-const carouselBetsExist = document.getElementsByClassName(
-  "js--splide--carousel-bets"
-);
+const carouselJackpotExist = document.getElementsByClassName("js--splide--carousel-jackpot");
+const carouselBetsExist = document.getElementsByClassName("js--splide--carousel-bets");
 const gridHalfExist = document.getElementsByClassName("m-grid__half");
 const casinoFinderExist = document.getElementsByClassName("m-casino--finder");
 const slotsAllFinderExist = document.getElementsByClassName("m-slots--finder");

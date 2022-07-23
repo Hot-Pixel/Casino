@@ -4,6 +4,8 @@
 
 .m-slots--finder {
   @extend %margin_horizontal_main;
+  @extend %margin_top_medium;
+
   display: flex;
 
   .o-filter--slots {

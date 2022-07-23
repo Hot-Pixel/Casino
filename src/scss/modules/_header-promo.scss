@@ -1,0 +1,68 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.header__promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include lg {
+    top: -55px;
+  }
+
+  &-bg {
+    img {
+      object-fit: contain;
+      object-position: 0;
+    }
+  }
+
+  &-content {
+    height: 100%;
+    position: relative;
+    top: -35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include lg {
+      top: -55px;
+    }
+
+    img {
+      height: 55px;
+      width: 55px;
+
+      @include lg {
+        height: 95px;
+        width: 95px;
+      }
+    }
+
+    p {
+      margin: 0;
+      text-align: center;
+    }
+
+    p:first-of-type {
+      @extend .u-f--h1, .u-f--bold;
+      max-width: 60%;
+
+      @include lg {
+        max-width: 100%;
+      }
+    }
+
+    p:last-of-type {
+      display: none;
+
+      @include lg {
+        display: block;
+      }
+    }
+  }
+}

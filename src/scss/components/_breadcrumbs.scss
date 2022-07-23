@@ -2,7 +2,7 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.c-breadcrumbs {
+.breadcrumbs {
   span {
     @extend .u-f--h5;
   }

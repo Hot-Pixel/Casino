@@ -32,8 +32,8 @@ const paths = {
     dest: "public/js/",
   },
   images: {
-    src: "src/img/**/*",
-    watcher: "src/img/**/*",
+    src: "[src/img/**/*, !src/img/**/*.svg]",
+    watcher: "[src/img/**/*, !src/img/**/*.svg]",
     dest: "public/img/",
   },
 };
@@ -84,17 +84,6 @@ gulp.task('bundle', () => {
 //     .pipe(gulp.dest("src/js"));
 // });
 
-// gulp.task("bundle", async () => {
-//   gulp
-//     .src("src/js/main.js")
-//     .pipe(
-//       esbuild({
-//         bundle: true
-//       })
-//     )
-//     .pipe(gulp.dest("public/js/"));
-// });
-
 /* Gulp task to minify images */
 gulp.task("imageMin", async () => {
   gulp
@@ -117,10 +106,7 @@ gulp.task("watch", async () => {
     proxy: "http://localhost:3000",
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
-  watch(paths.scripts.watcher).on(
-    "change",
-    gulp.series("bundle", server.reload)
-  );
+  watch(paths.scripts.watcher).on("change",gulp.series("bundle", server.reload));
   watch(paths.images.watcher).on("add", gulp.series("imageMin", server.reload));
   watch("./**/*.ejs").on("change", server.reload);
 });

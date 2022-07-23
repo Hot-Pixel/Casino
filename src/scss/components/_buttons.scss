@@ -23,10 +23,10 @@
 // button normal white
 .u-btn--white {
 	@extend %buttons;
-	color: setcolor('black', 'light');
+	color: setcolor('black', 'dark5');
 	background-color: setcolor('white');
 	&:hover {
-		color: setcolor('black', 'light');
+		color: setcolor('black', 'dark5');
 		background-color: setcolor('gray');
 	}
 }
