@@ -1,8 +1,8 @@
-<section class="m-grid__half">
-    <nav class="o-grid__half--navbar">
-        <div class="o-grid__half--wrapper">
+<section class="gridHalf">
+    <nav class="gridHalf__navbar">
+        <div class="gridHalf__navbar-wrapper">
             <img src="img/icon-grid-arrow.svg" alt="" class="js-arrow__grid">
-            <div class="c-icon__title">
+            <div class="icon__title">
                 <img src="img/<%- data.icon %>.svg" alt="">
                 <p class="u-f--bold u-f--h4">
                     <%- data.title %>
@@ -10,15 +10,15 @@
             </div>
         </div>
         <a href="<%- data.link %>">
-            <div class="o-grid__half--wrapper">
+            <div class="gridHalf__navbar-wrapper">
                 <p class="u-f--bold u-f--h5">VER TODAS</p>
                 <img src="img/icon-arrow-red.svg" alt="">
             </div>
         </a>
     </nav>
-    <div class="o-grid__half--grid active">
+    <div class="gridHalf__grid active">
         <% data.grid.forEach( item => { %>
-            <div class="o-grid__half--item">
+            <div class="gridHalf__grid-item">
                 <img src="img/<%- item.img %>.jpg" alt="">
             </div>
         <% }) %>

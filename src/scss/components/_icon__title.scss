@@ -1,14 +1,18 @@
-.c-icon__title a, .c-icon__title {
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.icon__title a, .icon__title {
     display: flex;
     align-items: center;
 
     img {
-      height: 14px;
-      width: 14px;
+      height: rem(14);
+      width: rem(14);
     }
 
     p {
       margin: 0;
-      padding-left: 5px;
+      padding-left: rem(5);
     }
   }

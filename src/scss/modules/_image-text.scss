@@ -2,63 +2,57 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+.imageText {
+  @extend %margin_horizontal_main, %margin_bottom_large;
 
-.m-image_text {
-	@extend %margin_horizontal_main, %margin_bottom_large;
+  @include lg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 132px;
+  }
 
-	@include lg {
-		display: grid;
-		column-gap: 132px;
-		grid-template-columns: repeat( 2, 1fr );
-	}
-}
+  &__image {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 
+  &__content {
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-.o-image_text--image {
-	order: 1;
-	display: grid;
-	justify-content: center;
-	align-items: center;
+    text-align: center;
 
-	img {
-		width: 100%;
-		height: auto;
-	}
-}
+    @include lg {
+      text-align: left;
+    }
 
+    & > * {
+      margin-top: 0;
+      margin-bottom: 0;
+      & + * {
+        margin-top: rem(20);
+      }
+    }
 
-.o-image_text--text {
-	display: grid;
-	justify-content: center;
-	align-items: center;
-	font-family: "Gotham", sans-serif;
-	text-align: center;
+	&-btns {
+		margin-top: rem(30);
 
-	@include lg {
-		text-align: left;
-	}
-
-	& > * {
-		margin-top: 0;
-		margin-bottom: 0;
-		& + * {
-			margin-top: 20px;
-		}
-	}
-}
-
-
-.o-image_text--buttons {
-	margin-top: 30px;
-
-	button {
-		display: block;
-		margin-top: 10px;
-		margin-right: auto;
-		margin-left: auto;
-		@include lg {
+		button {
+		  display: block;
+		  margin-top: 10px;
+		  margin-right: auto;
+		  margin-left: auto;
+		  @include lg {
 			margin-right: 0;
 			margin-left: 0;
+		  }
 		}
-	}
+	  }
+  }
+
+
 }

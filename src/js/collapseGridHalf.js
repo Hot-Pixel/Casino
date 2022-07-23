@@ -1,5 +1,5 @@
 const arrowArr = document.getElementsByClassName("js-arrow__grid");
-const gridArr = document.getElementsByClassName("o-grid__half--grid");
+const gridArr = document.getElementsByClassName("gridHalf__grid");
 
 function collapseGrid() {
   for (let n = 0; n < arrowArr.length; n++) {

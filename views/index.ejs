@@ -1,4 +1,22 @@
 <%
+const carouselData = [
+  {
+    title: "Descubre a Emerald King Rainbow Road",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.",
+    img: "img/img-slider-banner.jpg"
+  },
+  {
+    title: "Descubre a Emerald King Rainbow Road",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.",
+    img: "img/img-slider-banner.jpg"
+  },
+  {
+    title: "Descubre a Emerald King Rainbow Road",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.",
+    img: "img/img-slider-banner.jpg"
+  }
+]
+
 const gridHalfLeft =
   {
     icon: "icon-heart-white",
@@ -96,17 +114,55 @@ const gridHalfRight =
       },
     ]
   }
+
+  const jackpotData = [
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+  ]
 %>
 
 <%- include ('layout/head', {title: "Home" , css: "home" }) %>
 
 <%- include ('layout/header-noLog') %>
 
-<%- include ('modules/banner-w-carousel') %>
+<%- include ('modules/banner-w-carousel', { data: carouselData }) %>
 
 <%- include ('modules/search-bar-game') %>
 
-<section class="m-grids__wrapper">
+<section class="grids__container">
 
   <%- include ('modules/grid-half', {data: gridHalfLeft}) %>
 
@@ -116,7 +172,7 @@ const gridHalfRight =
 
 <%- include ('modules/icons-red') %>
 
-<%- include ('modules/carousel-jackpot') %>
+<%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
 
 <%- include ('modules/image-text') %>
 

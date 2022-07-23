@@ -2,12 +2,11 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.m-red__icons {
+.redIcons {
   @extend %margin_horizontal_main, %margin_bottom_small;
 
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 6fr 5fr;
 
   @include lg {
     flex-direction: row;
@@ -18,20 +17,19 @@
     color: setcolor("primary");
   }
 
-  .o-red__icons--wrapper_left {
-    display: flex;
+  &__wrapper {
 
-    .o-red__icons--item {
+    &-item {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
 
       img {
-        width: 80px;
+        width: rem(80);
 
         @include lg {
-          width: 170px;
+          width: rem(170);
         }
       }
 
@@ -45,30 +43,40 @@
         }
       }
     }
-  }
 
-  .o-red__icons--wrapper_right {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-
-    @include lg {
-      margin-left: 60px;
-      align-items: flex-start;
-      text-align: left;
+    &--left {
+      justify-self: flex-start;
+      display: flex;
     }
 
-    p:first-of-type {
-      @extend .u-f--h1;
-    }
-    p:last-of-type {
-      @extend .u-f--h3;
-      max-width: 100%;
+    &--right {
+      justify-self: flex-end;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
 
       @include lg {
-        max-width: 70%;
+        margin-left: rem(60);
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      p:first-of-type {
+        @extend .u-f--h1;
+      }
+      p:last-of-type {
+        @extend .u-f--h3;
+        max-width: 100%;
+
+        @include lg {
+          max-width: 70%;
+        }
       }
     }
   }
+
+
+
+
 }

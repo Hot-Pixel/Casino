@@ -1,4 +1,12 @@
 <%
+const bannerData =
+  {
+    img: "slots",
+    icon: "slots-banner",
+    title: "Nuestras Slots",
+    breadcrumb: "Slots"
+  }
+
 const gridHalfLeft =
   {
     icon: "icon-heart-white",
@@ -102,11 +110,11 @@ const gridHalfRight =
 
 <%- include ('layout/header-noLog') %>
 
-<%- include ('modules/banner') %>
+<%- include ('modules/banner', { data: bannerData }) %>
 
 <%- include ('modules/search-bar-game') %>
 
-<section class="m-grids__wrapper">
+<section class="grids__container">
 
   <%- include ('modules/grid-half', {data: gridHalfLeft}) %>
 

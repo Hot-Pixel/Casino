@@ -38,7 +38,7 @@
 			margin-bottom: 0;
 		}
 		&:last-child {
-			margin-bottom: 30px;
+			margin-bottom: rem(30);
 		}
 	}
 
@@ -56,7 +56,7 @@
 
 			span {
 				display: block;
-				margin-bottom: 5px;
+				margin-bottom: rem(5);
 				font-size: 13px;
 			}
 

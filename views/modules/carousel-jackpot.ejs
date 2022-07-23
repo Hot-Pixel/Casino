@@ -1,121 +1,43 @@
-<section class="m-carousel_jackpot">
-	<div class="o-carousel_jackpot--text">
+<main class="jackpot">
+	<section class="jackpot__text">
 		<p class="u-f--h1 u-w--bold">1.343.674€</p>
 		<p class="u-f--h3 u-w--bold">en Jackpots</p>
-		<p class="u-f--h3 u-w--l u-c--w-l">Siempre te recomendamos que disfrutes de las tragaperras que más te gusten como la gran forma de ocio que son.</p>
+		<p class="u-f--h3 u-w--l u-c--w-l">Siempre te recomendamos que disfrutes de las tragaperras que más te gusten
+			como la gran forma de ocio que son.</p>
 		<a href="#" class="u-btn_no_button--red">
 			<span>Ver todos</span>
-			<svg class="svg-icon-inline"><use href="img/icon-icons.svg#chevron-circle-right"/></svg>
+			<svg class="svg-icon-inline">
+				<use href="img/icon-icons.svg#chevron-circle-right" />
+			</svg>
 		</a>
-	</div>
-	<div class="o-carousel_jackpot--carousel">
-		<section class="splide arrows-right js--splide--carousel-jackpot">
-			<div class="splide__track">
-				<ul class="splide__list">
+	</section>
+	<section class="jackpot__carousel splide arrows-right">
+		<div class="splide__track">
+			<ul class="splide__list">
+				<% data.forEach( e=> { %>
 					<li class="splide__slide">
-						<article class="o-card">
-							<div class="o-card--image">
-								<img src="img/img-carousel-jackpot-1.png" alt="">
+						<article class="jackpot__card">
+							<div class="jackpot__card-image">
+								<img src="img/<%= e.img %>" alt="">
 							</div>
-							<div class="o-card--content">
-								<p class="o-card--desc">Jackpot Giant</p>
-								<p class="o-card--title">987.654,32 €</p>
-							</div>
-							<div class="o-card--footer">
-								<button class="u-btn--red">
+							<div class="jackpot__card-content">
+								<p>
+									<%= e.title %>
+								</p>
+								<p>
+									<%= e.total %>
+								</p>
+								<button class="btn-red">
 									<span>¡Juega Ahora!</span>
-									<svg class="svg-icon-inline"><use href="img/icon-icons.svg#chevron-circle-right"/></svg>
+									<svg class="svg-icon-inline">
+										<use href="img/icon-icons.svg#chevron-circle-right" />
+									</svg>
 								</button>
 							</div>
 						</article>
 					</li>
-					<li class="splide__slide">
-						<article class="o-card">
-							<div class="o-card--image">
-								<img src="img/img-carousel-jackpot-1.png" alt="">
-							</div>
-							<div class="o-card--content">
-								<p class="o-card--desc">Jackpot Giant</p>
-								<p class="o-card--title">987.654,32 €</p>
-							</div>
-							<div class="o-card--footer">
-								<button class="u-btn--red">
-									<span>¡Juega Ahora!</span>
-									<svg class="svg-icon-inline"><use href="img/icon-icons.svg#chevron-circle-right"/></svg>
-								</button>
-							</div>
-						</article>
-					</li>
-					<li class="splide__slide">
-						<article class="o-card">
-							<div class="o-card--image">
-								<img src="img/img-carousel-jackpot-1.png" alt="">
-							</div>
-							<div class="o-card--content">
-								<p class="o-card--desc">Jackpot Giant</p>
-								<p class="o-card--title">987.654,32 €</p>
-							</div>
-							<div class="o-card--footer">
-								<button class="u-btn--red">
-									<span>¡Juega Ahora!</span>
-									<svg class="svg-icon-inline"><use href="img/icon-icons.svg#chevron-circle-right"/></svg>
-								</button>
-							</div>
-						</article>
-					</li>
-					<li class="splide__slide">
-						<article class="o-card">
-							<div class="o-card--image">
-								<img src="img/img-carousel-jackpot-1.png" alt="">
-							</div>
-							<div class="o-card--content">
-								<p class="o-card--desc">Jackpot Giant</p>
-								<p class="o-card--title">987.654,32 €</p>
-							</div>
-							<div class="o-card--footer">
-								<button class="u-btn--red">
-									<span>¡Juega Ahora!</span>
-									<svg class="svg-icon-inline"><use href="img/icon-icons.svg#chevron-circle-right"/></svg>
-								</button>
-							</div>
-						</article>
-					</li>
-					<li class="splide__slide">
-						<article class="o-card">
-							<div class="o-card--image">
-								<img src="img/img-carousel-jackpot-1.png" alt="">
-							</div>
-							<div class="o-card--content">
-								<p class="o-card--desc">Jackpot Giant</p>
-								<p class="o-card--title">987.654,32 €</p>
-							</div>
-							<div class="o-card--footer">
-								<button class="u-btn--red">
-									<span>¡Juega Ahora!</span>
-									<svg class="svg-icon-inline"><use href="img/icon-icons.svg#chevron-circle-right"/></svg>
-								</button>
-							</div>
-						</article>
-					</li>
-					<li class="splide__slide">
-						<article class="o-card">
-							<div class="o-card--image">
-								<img src="img/img-carousel-jackpot-1.png" alt="">
-							</div>
-							<div class="o-card--content">
-								<p class="o-card--desc">Jackpot Giant</p>
-								<p class="o-card--title">987.654,32 €</p>
-							</div>
-							<div class="o-card--footer">
-								<button class="u-btn--red">
-									<span>¡Juega Ahora!</span>
-									<svg class="svg-icon-inline"><use href="img/icon-icons.svg#chevron-circle-right"/></svg>
-								</button>
-							</div>
-						</article>
-					</li>
-				</ul>
-			</div>
-		</section>
-	</div>
-</section>
+				<% }) %>
+			</ul>
+		</div>
+	</section>
+</main>

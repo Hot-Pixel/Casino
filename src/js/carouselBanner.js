@@ -1,5 +1,5 @@
 function carouselBanner() {
-  var carousel = new Splide(".m-banner__car.splide", {
+  var carousel = new Splide(".banner__car.splide", {
     perPage: 1,
     arrow: true,
     pagination: false,

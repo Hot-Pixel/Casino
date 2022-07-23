@@ -2,25 +2,25 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.m-grids__wrapper {
+.grids__container {
   @extend %margin_horizontal_main, %margin_bottom_small;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
 }
 
-.m-grid__half {
+.gridHalf {
   padding: 10px;
-  margin: 0 10px;
   height: 100%;
 
-  background-color: setcolor("black", "light");
-  border-radius: 5px;
+  background-color: setcolor("black");
+  border-radius: rem(5);
 
   @include lg {
-    width: 50%;
-    padding: 30px;
+    padding: rem(30);
   }
 
-  .o-grid__half--navbar {
+  &__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +32,7 @@
       cursor: pointer;
     }
 
-    .o-grid__half--wrapper {
+    &-wrapper {
       display: flex;
       align-items: center;
 
@@ -42,8 +42,8 @@
         padding-right: 10px;
       }
 
-      .c-icon__title {
-        margin-left: 20px;
+      .icon__title {
+        margin-left: rem(20);
 
         img {
           display: none;
@@ -55,7 +55,7 @@
     }
   }
 
-  .o-grid__half--grid {
+  &__grid {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -67,7 +67,7 @@
       grid-template-rows: auto auto;
     }
 
-    .o-grid__half--item {
+    &-item {
       img {
         width: 100%;
         object-fit: cover;

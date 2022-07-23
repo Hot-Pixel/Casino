@@ -2,77 +2,95 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 // Layout
+.jackpot {
+  @extend %margin_horizontal_main, %margin_bottom_large;
+  display: flex;
+  justify-content: space-between;
 
-.m-carousel_jackpot {
-	@extend %margin_horizontal_main, %margin_bottom_large;
+  .splide__slide {
+	margin-bottom: 25px;
+  }
+
+  &__text {
 	display: flex;
-	justify-content: space-between;
-}
+	flex-direction: column;
+	justify-content: center;
+    @include lg {
+      width: calc(30% - rem(60));
+    }
+  }
 
-.o-carousel_jackpot--text {
-	@include md {
-		width: calc(30% - 60px);
-	}
-}
+  &__carousel {
+    margin-top: rem(30);
 
-.o-carousel_jackpot--carousel {
-	margin-top: 30px;
+    @include lg {
+      margin-top: 0;
+      width: 70%;
+    }
+  }
 
-	@include md {
-		margin-top: 0;
-		width: 70%;
-	}
-}
+  &__card {
+    &-image {
+      margin-top: rem(60);
+      background-color: setcolor("black", "dark2");
+	  border-radius: rem(10) rem(10) 0 0;
 
+      img {
+        margin-top: rem(-60);
+      }
+    }
 
-// Navigation
+    &-content {
+      background-color: setcolor("black");
+	  border-radius: 0 0 rem(10) rem(10);
 
-.m-carousel_jackpot {
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
 
+	  padding: rem(30);
 
-	.splide__arrows::before {
-		content: "";
-		display: block;
-		position: absolute;
-		right: 0;
-		z-index: 1;
-		width: 80px;
-		height: 100%;
-		background: linear-gradient( 90deg, rgba( setcolor('black', 'dark1'), 0 ) 0%, rgba( setcolor('black', 'dark1'), 1 ) 100%);
-	}
-
-	.splide__arrow--prev {
-		left: initial;
-		right: 34px;
-	}
-
-	.splide__arrow--next {
-		right: 0;
-	}
-}
-
-
-// Navigation
-// Card
-
-.o-carousel_jackpot--carousel .o-card {
-
-	.o-card--image {
-		margin-top: 60px;
-		background-color: setcolor('black','base');
-
-		img {
-			margin-top: -60px;
-		}
-	}
-
-	.o-card--content {
-		background-color: setcolor('black','light');
-	}
-
-	.o-card--title {
+	  p:last-of-type {
 		@extend .u-f--h3;
-	}
+	  }
+
+	  button {
+		position: absolute;
+		bottom: rem(-22);
+		left: 50%;
+		transform: translateX(-50%);
+		width: 60%;
+		height: rem(45);
+	  }
+    }
+  }
+}
+
+// Navigation
+.jackpot {
+  .splide__arrows::before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    width: rem(80);
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(setcolor("black", "dark1"), 0) 0%,
+      rgba(setcolor("black", "dark1"), 1) 100%
+    );
+  }
+
+  .splide__arrow--prev {
+    left: initial;
+    right: 34px;
+  }
+
+  .splide__arrow--next {
+    right: 0;
+  }
 }

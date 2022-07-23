@@ -3,14 +3,16 @@ import carouselJackpot from "./carouselJackpot.js";
 import carouselBets from "./carouselBets.js";
 import collapseGrid from "./collapseGridHalf.js";
 import filterCasino from "./filterCasino.js";
+import filterPromo from "./filterPromo.js";
 import filterSlotsAll from "./filterSlotsAll.js";
 
-const carouselBannerExist = document.getElementsByClassName("m-banner__car");
-const carouselJackpotExist = document.getElementsByClassName("js--splide--carousel-jackpot");
+const carouselBannerExist = document.getElementsByClassName("banner__car");
+const carouselJackpotExist = document.getElementsByClassName("jackpot__carousel");
 const carouselBetsExist = document.getElementsByClassName("js--splide--carousel-bets");
-const gridHalfExist = document.getElementsByClassName("m-grid__half");
+const gridHalfExist = document.getElementsByClassName("gridHalf");
 const casinoFinderExist = document.getElementsByClassName("m-casino--finder");
 const slotsAllFinderExist = document.getElementsByClassName("m-slots--finder");
+const promoFinderExist = document.getElementsByClassName("finder__promo");
 
 window.addEventListener("load", () => {
   if (carouselBannerExist.length > 0) {
@@ -30,6 +32,9 @@ window.addEventListener("load", () => {
   }
   if (slotsAllFinderExist.length > 0) {
     filterSlotsAll();
+  }
+  if (promoFinderExist.length > 0) {
+    filterPromo();
   }
 });
 

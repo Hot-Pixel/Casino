@@ -5,7 +5,7 @@
 
 .m-grid-roulette {
 	display: grid;
-	gap: 15px;
+	gap: rem(15);
 	@extend %margin_horizontal_main, %margin_bottom_large;
 
 	@include md {

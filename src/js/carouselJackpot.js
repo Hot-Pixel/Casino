@@ -1,6 +1,5 @@
 function carouselJackpot() {
-	var carousel = new Splide( '.js--splide--carousel-jackpot', {
-		type       : 'loop',
+	var carousel = new Splide( '.jackpot__carousel', {
 		pagination : false,
 		perPage    : 4,
 		perMove    : 1,

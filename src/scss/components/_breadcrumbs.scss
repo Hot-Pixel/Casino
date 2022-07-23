@@ -8,7 +8,7 @@
   }
 
   span:not(:last-of-type) {
-    margin-right: 5px;
+    margin-right: rem(5);
   }
 
   span:last-of-type {

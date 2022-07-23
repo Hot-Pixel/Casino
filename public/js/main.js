@@ -4,7 +4,7 @@
 }((function () { 'use strict';
 
   function carouselBanner() {
-    var carousel = new Splide(".m-banner__car.splide", {
+    var carousel = new Splide(".banner__car.splide", {
       perPage: 1,
       arrow: true,
       pagination: false
@@ -13,8 +13,7 @@
   }
 
   function carouselJackpot() {
-    var carousel = new Splide('.js--splide--carousel-jackpot', {
-      type: 'loop',
+    var carousel = new Splide('.jackpot__carousel', {
       pagination: false,
       perPage: 4,
       perMove: 1,
@@ -51,7 +50,7 @@
   }
 
   const arrowArr = document.getElementsByClassName("js-arrow__grid");
-  const gridArr = document.getElementsByClassName("o-grid__half--grid");
+  const gridArr = document.getElementsByClassName("gridHalf__grid");
 
   function collapseGrid() {
     for (let n = 0; n < arrowArr.length; n++) {
@@ -112,6 +111,17 @@
     });
   };
 
+  const filterPromo = () => {
+    var mixerPromo = mixitup(".finder__promo", {
+      controls: {
+        enable: true
+      },
+      animation: {
+        enable: false
+      }
+    });
+  };
+
   const tags = document.querySelectorAll(".o-filter--slots-tag");
   const hearts$1 = document.querySelectorAll(".o-grid--games-fav");
 
@@ -149,12 +159,13 @@
     });
   };
 
-  const carouselBannerExist = document.getElementsByClassName("m-banner__car");
-  const carouselJackpotExist = document.getElementsByClassName("js--splide--carousel-jackpot");
+  const carouselBannerExist = document.getElementsByClassName("banner__car");
+  const carouselJackpotExist = document.getElementsByClassName("jackpot__carousel");
   const carouselBetsExist = document.getElementsByClassName("js--splide--carousel-bets");
-  const gridHalfExist = document.getElementsByClassName("m-grid__half");
+  const gridHalfExist = document.getElementsByClassName("gridHalf");
   const casinoFinderExist = document.getElementsByClassName("m-casino--finder");
   const slotsAllFinderExist = document.getElementsByClassName("m-slots--finder");
+  const promoFinderExist = document.getElementsByClassName("finder__promo");
   window.addEventListener("load", () => {
     if (carouselBannerExist.length > 0) {
       carouselBanner();
@@ -178,6 +189,10 @@
 
     if (slotsAllFinderExist.length > 0) {
       filterSlotsAll();
+    }
+
+    if (promoFinderExist.length > 0) {
+      filterPromo();
     }
   });
 

@@ -6,7 +6,7 @@
 
 
 // button normal red
-.u-btn--red {
+.btn-red {
 	@extend %buttons;
 	color: setcolor('white');
 	background-color: setcolor('primary');
@@ -16,12 +16,12 @@
 	}
 }
 
-.u-btn--red-glow {
-    box-shadow: 0px 0px 20px 0px setcolor('primary');
+.btn--red-glow {
+    box-shadow: 0px 0px rem(20) 0px setcolor('primary');
 }
 
 // button normal white
-.u-btn--white {
+.btn--white {
 	@extend %buttons;
 	color: setcolor('black', 'dark5');
 	background-color: setcolor('white');
@@ -32,7 +32,7 @@
 }
 
 /* Button remove filter */
-.u-btn--gray-red {
+.btn--gray-red {
 	@extend %buttons;
 	color: setcolor('primary');
 	background-color: #1c2026;
@@ -42,7 +42,7 @@
 	}
 }
 
-.u-btn--block {
+.btn--block {
 	@extend %buttons;
     height: rem(60);
     border-radius: rem(5);
@@ -50,7 +50,7 @@
 
 
 // button normal black_lighter
-.u-btn--black_lighter {
+.btn--black_lighter {
 	@extend %buttons;
 	color: setcolor('white');
 	background-color: setcolor('black','lighter');
@@ -60,7 +60,7 @@
 // button ghost ==========
 
 // button ghost red
-.u-btn_ghost--red {
+.btn_ghost--red {
 	@extend %buttons;
 	color: setcolor('primary', 'base');
 	background-color: transparent;
@@ -71,7 +71,7 @@
 // button no_button ==========
 
 // button no_button red
-.u-btn_no_button--red {
+.btn_no_button--red {
 	@extend %buttons;
 	padding: 0;
 	color: setcolor('primary', 'base');
@@ -82,17 +82,17 @@
 // button variations ==========
 
 // button size_big
-.u-btn--size_big {
-	padding: 21px 30px;
+.btn--size_big {
+	padding: 21px rem(30);
 	font-size: 14px;
 	@include md {
-		padding: 30px 40px;
+		padding: rem(30) rem(40);
 		font-size: 16px;
 	}
 }
 
 // button icon_right
-.u-btn--icon_right {
+.btn--icon_right {
 	position: relative;
 
 	img {

@@ -2,28 +2,27 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.m-banner__car {
+.banner__car {
   @extend %margin_horizontal_main;
-  margin-top: 60px;
+  margin-top: rem(60);
 
-  .o-banner__car--wrapper {
-    .o-banner__car--item {
+    &-item {
       display: flex;
       flex-direction: column-reverse;
-      border-radius: 5px;
+      border-radius: rem(5);
       overflow: hidden;
 
       @include lg {
         flex-direction: row;
       }
 
-      .o-banner__car--item-wrapper {
+      &--wrapper {
         width: 100%;
         overflow: hidden;
 
         @include lg {
           width: 50%;
-          height: 470px;
+          height: rem(470);
         }
 
         img {
@@ -57,29 +56,29 @@
         }
       }
 
-      .o-banner__car--item-wrapper:first-of-type {
+      &--wrapper:first-of-type {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
 
-        padding: 30px 10px;
-        background-color: setcolor("black", light);
+        padding: rem(30) rem(10);
+        background-color: setcolor("black");
 
         @include lg {
-          padding: 60px;
+          padding: rem(60);
           align-items: flex-start;
         }
       }
 
-      .o-banner__car--item-wrapper:last-of-type {
-        height: 250px;
+      &--wrapper:last-of-type {
+        height: rem(250);
 
         @include lg {
-          height: 470px;
+          height: rem(470);
         }
       }
-    }
+
   }
 
   .splide__arrow {
@@ -90,29 +89,31 @@
     }
 
     img {
-      height: 30px;
-      width: 30px;
+      height: rem(30);
+      width: rem(30);
 
       @include lg {
-        height: 40px;
-        width: 40px;
+        height: rem(40);
+        width: rem(40);
+      }
+    }
+
+    &--prev {
+      left: 10%;
+
+      @include lg {
+        left: rem(-15);
+      }
+    }
+
+    &--next {
+      right: 10%;
+
+      @include lg {
+        right: rem(-15);
       }
     }
   }
 
-  .splide__arrow--prev {
-    left: 10%;
 
-    @include lg {
-      left: -15px;
-    }
-  }
-
-  .splide__arrow--next {
-    right: 10%;
-
-    @include lg {
-      right: -15px;
-    }
-  }
 }

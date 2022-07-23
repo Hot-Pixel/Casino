@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-bottom: 15px;
+  margin-bottom: rem(15);
 
   &-wrapper {
     display: flex;
@@ -36,10 +36,10 @@
         }
 
         &:first-of-type {
-          border-radius: 5px 0 0 5px;
+          border-radius: rem(5) 0 0 rem(5);
         }
         &:last-of-type {
-          border-radius: 0 5px 5px 0;
+          border-radius: 0 rem(5) rem(5) 0;
         }
       }
     }
@@ -53,7 +53,7 @@
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.928' height='6.352' viewBox='0 0 10.928 6.352'%3E%3Cpath d='M12.474,42.648,8.615,46.506a.27.27,0,0,1-.381,0h0L4.375,42.648' transform='translate(-2.961 -41.234)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
       background-position-x: 100%;
-      background-position-y: 5px;
+      background-position-y: rem(5);
       border: 1px solid #dfdfdf;
       border-radius: 2px;
       margin-right: 2rem;
@@ -63,13 +63,13 @@
 
     select#casino-provider {
       @extend .u-f--h5;
-      margin: 0 20px;
+      margin: 0 rem(20);
       // padding: 12px;
       background-color: #25292f;
       color: setcolor("gray");
       font-weight: 700;
       border: none;
-      border-radius: 5px;
+      border-radius: rem(5);
 
       &:focus,
       &:active {
@@ -87,7 +87,7 @@
       color: setcolor("gray");
       font-weight: 700;
       border: none;
-      border-radius: 5px;
+      border-radius: rem(5);
 
       display: flex;
       align-items: center;

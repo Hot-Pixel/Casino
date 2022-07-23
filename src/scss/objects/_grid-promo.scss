@@ -8,11 +8,10 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     column-gap: rem(15);
-    row-gap: rem(15);
+    row-gap: rem(50);
   }
 
   &-card {
-    border-radius: 10px;
 
     &--top img {
       width: 100%;
@@ -20,11 +19,10 @@
     }
 
     &--bottom {
+        position: relative;
         background-color: setcolor('black');
-    }
-
-    p {
-
+        padding: rem(40);
+        border-radius: 0 0 rem(10) rem(10);
     }
   }
 
@@ -35,5 +33,19 @@
   &-subtitle {
     @extend .u-f--h4, .u-f--bold;
     color: setcolor('primary');
+  }
+
+  &-body {
+    @extend .u-f--bold;
+    color: setcolor('gray');
+    margin-bottom: rem(30);
+  }
+
+  &-btn {
+    position: absolute;
+    bottom: rem(-22);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
   }
 }

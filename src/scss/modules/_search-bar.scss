@@ -2,10 +2,10 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.m-search {
+.search {
     @extend %margin_horizontal_main;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: rem(30);
+    margin-bottom: rem(30);
 
     display: flex;
     justify-content: space-between;
@@ -13,17 +13,17 @@
 
     border-bottom: 2px solid setcolor('black', 'dark5');
 
-    .o-search--input {
+    .search__input {
         width: 75%;
-        padding-left: 60px;
+        padding-left: rem(60);
 
         display: flex;
         align-items: center;
 
         img {
             margin-right: 10px;
-            height: 45px;
-            width: 45px;
+            height: rem(45);
+            width: rem(45);
         }
 
         input {
@@ -41,16 +41,16 @@
 
     }
 
-    .o-search--wrapper {
+    .search__wrapper {
         display: flex;
         justify-content: flex-end;
         align-items: center;
 
-        padding-right: 60px;
+        padding-right: rem(60);
 
         img {
             margin-right: 10px;
-            margin-bottom: 20px;
+            margin-bottom: rem(20);
         }
 
         p {
