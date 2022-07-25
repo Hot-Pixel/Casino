@@ -1,4 +1,4 @@
-<section class="banner__car splide">
+<section class="bannerCarousel splide">
     <div class="splide__arrows">
         <button class="splide__arrow splide__arrow--prev">
             <img src="img/icon-slider-arrow-left.svg" alt="">
@@ -7,21 +7,21 @@
             <img src="img/icon-slider-arrow-right.svg" alt="">
         </button>
     </div>
-    <div class="banner__car-wrapper splide__track">
+    <div class="bannerCarousel__slider splide__track">
         <ul class="splide__list">
             <% data.forEach( e => { %>
-                <li class="banner__car-item splide__slide">
-                    <div class="banner__car-item--wrapper">
+                <li class="bannerCarousel__slide splide__slide">
+                    <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
                         <div>
                             <p><%= e.title %></p>
                             <p><%= e.body %></p>
                         </div>
-                        <button class="btn__red btn__red--glow">
+                        <button class="btn__red">
                             <span>¡JUEGA AHORA!</span>
                             <img src="img/icon-btn-arrow.svg" alt="">
                         </button>
                     </div>
-                    <div class="banner__car-item--wrapper">
+                    <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
                         <img src="<%= e.img %>" alt="">
                     </div>
                 </li>

@@ -228,79 +228,79 @@
   font-weight: 500;
 }
 
-.u-f--bold, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper p, .banner__wrapper-title p, .o-card--title, .o-card--subtitle, .u-f--bold p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .o-card--title p, .o-card--subtitle p {
+.u-f--bold, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper p, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title, .o-card--subtitle, .u-f--bold p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .bannerCarousel__slide-wrapper p:first-of-type p, .o-card--title p, .o-card--subtitle p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .banner__car-item--wrapper p:first-of-type {
+.u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
   font-size: 2rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .banner__car-item--wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .banner__car-item--wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .banner__car-item--wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
     font-size: 3.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .banner__car-item--wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2, .search .search__input input, .o-card--title {
+.u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
   font-size: 2rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
     font-size: 2rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .banner__car-item--wrapper p:last-of-type {
+.u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
   font-size: 1.375rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .banner__car-item--wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .banner__car-item--wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .banner__car-item--wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .banner__car-item--wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
     font-size: 1.5rem;
   }
 }
@@ -406,42 +406,42 @@
   }
 }
 
-.jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .footer {
+.jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .footer {
+  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .footer {
+  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .footer {
+  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .footer {
+  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .footer {
+  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
     padding-left: var(--horizontal-main-xxl);
     padding-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .footer {
+  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
     max-width: 100rem;
     padding-left: 0;
     padding-right: 0;
@@ -1216,58 +1216,54 @@ body {
   justify-content: center;
 }
 
-.banner__car {
-  margin-top: 3.75rem;
-}
-.banner__car-item {
+.bannerCarousel__slide {
   display: flex;
   flex-direction: column-reverse;
   border-radius: 0.3125rem;
+  margin-bottom: 1.5625rem;
   overflow: hidden;
 }
 @media only screen and (min-width: 992px) {
-  .banner__car-item {
+  .bannerCarousel__slide {
     flex-direction: row;
   }
 }
-.banner__car-item--wrapper {
+.bannerCarousel__slide-wrapper {
   width: 100%;
-  overflow: hidden;
 }
 @media only screen and (min-width: 992px) {
-  .banner__car-item--wrapper {
+  .bannerCarousel__slide-wrapper {
     width: 50%;
     height: 29.375rem;
   }
 }
-.banner__car-item--wrapper img {
+.bannerCarousel__slide-wrapper img {
   object-fit: contain;
   object-position: right;
   width: auto;
   height: 100%;
 }
-.banner__car-item--wrapper p:first-of-type {
-  font-weight: 700;
-  line-height: 1em;
+.bannerCarousel__slide-wrapper p:first-of-type {
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
-  .banner__car-item--wrapper p:first-of-type {
+  .bannerCarousel__slide-wrapper p:first-of-type {
     text-align: left;
   }
 }
-.banner__car-item--wrapper p:last-of-type {
+.bannerCarousel__slide-wrapper p:last-of-type {
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  .banner__car-item--wrapper p:last-of-type {
+  .bannerCarousel__slide-wrapper p:last-of-type {
     display: inline-block;
     font-weight: 700;
     line-height: 1.2em;
     color: #d4d7da;
   }
 }
-.banner__car-item--wrapper:first-of-type {
+.bannerCarousel__slide--left {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1276,50 +1272,71 @@ body {
   background-color: #25292f;
 }
 @media only screen and (min-width: 992px) {
-  .banner__car-item--wrapper:first-of-type {
+  .bannerCarousel__slide--left {
     padding: 3.75rem;
     align-items: flex-start;
   }
 }
-.banner__car-item--wrapper:last-of-type {
+.bannerCarousel__slide--left button {
+  position: absolute;
+  bottom: -1.375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2.8125rem;
+  padding: 0 1.25rem;
+  box-shadow: none;
+  overflow: overlay;
+}
+@media only screen and (min-width: 992px) {
+  .bannerCarousel__slide--left button {
+    position: static;
+    transform: translateX(0);
+    box-shadow: 0px 0px 1.25rem 0px #ff293e;
+  }
+}
+.bannerCarousel__slide--left button img {
+  height: 0.875rem;
+  width: 0.875rem;
+}
+.bannerCarousel__slide--right {
   height: 15.625rem;
 }
 @media only screen and (min-width: 992px) {
-  .banner__car-item--wrapper:last-of-type {
+  .bannerCarousel__slide--right {
     height: 29.375rem;
   }
 }
-.banner__car .splide__arrow {
-  top: 100%;
+.bannerCarousel .splide__arrow {
+  top: calc(100% - 25px);
 }
 @media only screen and (min-width: 992px) {
-  .banner__car .splide__arrow {
+  .bannerCarousel .splide__arrow {
     top: 50%;
   }
 }
-.banner__car .splide__arrow img {
+.bannerCarousel .splide__arrow img {
   height: 1.875rem;
   width: 1.875rem;
 }
 @media only screen and (min-width: 992px) {
-  .banner__car .splide__arrow img {
+  .bannerCarousel .splide__arrow img {
     height: 2.5rem;
     width: 2.5rem;
   }
 }
-.banner__car .splide__arrow--prev {
+.bannerCarousel .splide__arrow--prev {
   left: 10%;
 }
 @media only screen and (min-width: 992px) {
-  .banner__car .splide__arrow--prev {
+  .bannerCarousel .splide__arrow--prev {
     left: -0.9375rem;
   }
 }
-.banner__car .splide__arrow--next {
+.bannerCarousel .splide__arrow--next {
   right: 10%;
 }
 @media only screen and (min-width: 992px) {
-  .banner__car .splide__arrow--next {
+  .bannerCarousel .splide__arrow--next {
     right: -0.9375rem;
   }
 }

@@ -2,87 +2,110 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.banner__car {
+.bannerCarousel {
   @extend %margin_horizontal_main;
-  margin-top: rem(60);
 
-    &-item {
-      display: flex;
-      flex-direction: column-reverse;
-      border-radius: rem(5);
-      overflow: hidden;
+  &__slide {
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: rem(5);
+    margin-bottom: rem(25);
+    overflow: hidden;
+
+    @include lg {
+      flex-direction: row;
+    }
+
+    &-wrapper {
+      width: 100%;
 
       @include lg {
-        flex-direction: row;
+        width: 50%;
+        height: rem(470);
       }
 
-      &--wrapper {
-        width: 100%;
-        overflow: hidden;
+      img {
+        object-fit: contain;
+        object-position: right;
+        width: auto;
+        height: 100%;
+      }
+
+      p:first-of-type {
+        @extend .u-f--h2, .u-f--bold;
+        text-align: center;
 
         @include lg {
-          width: 50%;
-          height: rem(470);
+          text-align: left;
+        }
+      }
+
+      p:last-of-type {
+        @extend .u-f--h3;
+        display: none;
+
+        @include lg {
+          display: inline-block;
+          font-weight: 700;
+          line-height: 1.2em;
+          color: setcolor("gray");
+        }
+      }
+    }
+
+    &--left {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      padding: rem(30) rem(10);
+      background-color: setcolor("black");
+
+      @include lg {
+        padding: rem(60);
+        align-items: flex-start;
+      }
+
+      button {
+        position: absolute;
+        bottom: rem(-22);
+        left: 50%;
+        transform: translateX(-50%);
+
+        height: rem(45);
+        padding: 0 rem(20);
+
+        box-shadow: none;
+
+        overflow: overlay;
+
+        @include lg {
+          position: static;
+          transform: translateX(0);
+          box-shadow: 0px 0px rem(20) 0px setcolor("primary");
         }
 
         img {
-          object-fit: contain;
-          object-position: right;
-          width: auto;
-          height: 100%;
-        }
-
-        p:first-of-type {
-          @extend .u-f--h1;
-          font-weight: 700;
-          line-height: 1em;
-          text-align: center;
-
-          @include lg {
-            text-align: left;
-          }
-        }
-
-        p:last-of-type {
-          @extend .u-f--h3;
-          display: none;
-
-          @include lg {
-            display: inline-block;
-            font-weight: 700;
-            line-height: 1.2em;
-            color: setcolor("gray");
-          }
+          height: rem(14);
+          width: rem(14);
         }
       }
+    }
 
-      &--wrapper:first-of-type {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
+    &--right {
+      height: rem(250);
 
-        padding: rem(30) rem(10);
-        background-color: setcolor("black");
-
-        @include lg {
-          padding: rem(60);
-          align-items: flex-start;
-        }
+      @include lg {
+        height: rem(470);
       }
-
-      &--wrapper:last-of-type {
-        height: rem(250);
-
-        @include lg {
-          height: rem(470);
-        }
-      }
-
+    }
   }
 
   .splide__arrow {
-    top: 100%;
+    top: calc(100% - 25px);
 
     @include lg {
       top: 50%;
@@ -114,6 +137,4 @@
       }
     }
   }
-
-
 }

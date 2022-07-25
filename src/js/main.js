@@ -6,7 +6,7 @@ import filterCasino from "./filterCasino.js";
 import filterPromo from "./filterPromo.js";
 import filterSlotsAll from "./filterSlotsAll.js";
 
-const carouselBannerExist = document.getElementsByClassName("banner__car");
+const carouselBannerExist = document.getElementsByClassName("bannerCarousel");
 const carouselJackpotExist = document.getElementsByClassName("jackpot__carousel");
 const carouselBetsExist = document.getElementsByClassName("carouselBets__carousel");
 const gridHalfExist = document.getElementsByClassName("gridHalf");

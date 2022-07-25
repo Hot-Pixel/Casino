@@ -4,7 +4,7 @@
 }((function () { 'use strict';
 
   function carouselBanner() {
-    var carousel = new Splide(".banner__car.splide", {
+    var carousel = new Splide(".bannerCarousel.splide", {
       perPage: 1,
       arrow: true,
       pagination: false
@@ -158,7 +158,7 @@
     });
   };
 
-  const carouselBannerExist = document.getElementsByClassName("banner__car");
+  const carouselBannerExist = document.getElementsByClassName("bannerCarousel");
   const carouselJackpotExist = document.getElementsByClassName("jackpot__carousel");
   const carouselBetsExist = document.getElementsByClassName("carouselBets__carousel");
   const gridHalfExist = document.getElementsByClassName("gridHalf");
