@@ -32,8 +32,8 @@ const paths = {
     dest: "public/js/",
   },
   images: {
-    src: "[src/img/**/*, !src/img/**/*.svg]",
-    watcher: "[src/img/**/*, !src/img/**/*.svg]",
+    src: "src/img/**/*",
+    watcher: "src/img/**/*",
     dest: "public/img/",
   },
 };

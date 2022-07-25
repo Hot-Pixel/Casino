@@ -211,6 +211,21 @@ const gridHalfRight =
       hora: "22:00h"
     }
   ]
+
+  const rouletteData = [
+    {
+      img: "img-grid-roulette-1.png",
+      title: "Ruleta en vivo",
+      subtitle: "En nuestra web pueden acceder al mayor catálogo de ruletas en vivo del momento.",
+      body: "En ellas, contarás con crupiers las 24 horas del día con un chat al alcance de tu mano para comunicarte con ellos."
+    },
+    {
+      img: "img-grid-roulette-2.png",
+      title: "Juegos de mesa",
+      subtitle: "En CasinoBarcelona.es te ofrecemos juegos de casino online desde los más tradicionales, hasta los más innovadores.",
+      body: "Nuestro objetivo no es otro que el de darte la mejor oferta posible para que siempre tengas opciones para elegir lo que más te guste."
+    }
+  ]
 %>
 
 <%- include ('layout/head', {title: "Home" , css: "home" }) %>
@@ -237,7 +252,7 @@ const gridHalfRight =
 
 <%- include ('modules/carousel-bets', { data: betsData }) %>
 
-<%- include ('modules/grid-roulette') %>
+<%- include ('modules/grid-roulette', { data: rouletteData }) %>
 
 <%- include ('modules/text-block') %>
 

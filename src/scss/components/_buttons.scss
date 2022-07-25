@@ -5,7 +5,7 @@
 @use "../tools" as *;
 
 // button normal red
-.btn-red {
+.btn__red {
   @extend %buttons;
   color: setcolor("white");
   background-color: setcolor("primary");
@@ -15,23 +15,23 @@
   }
 }
 
-.btn--red-glow {
+.btn__red--glow {
   box-shadow: 0px 0px rem(20) 0px setcolor("primary");
 }
 
 // button normal white
-.btn--white {
+.btn__white {
   @extend %buttons;
-  color: setcolor("black", "dark5");
-  background-color: setcolor("white");
+  color: black;
+  background-color: white;
   &:hover {
-    color: setcolor("black", "dark5");
+    color: black;
     background-color: setcolor("gray");
   }
 }
 
 /* Button remove filter */
-.btn--gray-red {
+.btn__gray--red {
   @extend %buttons;
   color: setcolor("primary");
   background-color: #1c2026;
@@ -41,14 +41,14 @@
   }
 }
 
-.btn--block {
+.btn__block {
   @extend %buttons;
   height: rem(60);
   border-radius: rem(5);
 }
 
 // button normal black_lighter
-.btn--black_lighter {
+.btn__black--lighter {
   @extend %buttons;
   color: setcolor("white");
   background-color: setcolor("black", "dark4");
@@ -57,7 +57,7 @@
 // button ghost ==========
 
 // button ghost red
-.btn_ghost--red {
+.btn__ghost--red {
   @extend %buttons;
   color: setcolor("primary");
   background-color: transparent;
@@ -77,7 +77,7 @@
 // button variations ==========
 
 // button size_big
-.btn--size_big {
+.btn__size--big {
   padding: rem(20) rem(30);
   @include lg {
     padding: rem(30) rem(40);
@@ -85,7 +85,7 @@
 }
 
 // button icon_right
-.btn--icon_right {
+.btn__icon--right {
   position: relative;
 
   img {

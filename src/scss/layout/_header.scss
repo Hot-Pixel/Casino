@@ -10,7 +10,7 @@ body {
   }
 }
 
-.m-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -23,8 +23,8 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  box-shadow: 1px 17px 22px 2px rgba(0,0,0,1);
-  background-color: setcolor("black", "dark");
+  box-shadow: rem(1) rem(17) rem(22) rem(2) rgba(0,0,0,1);
+  background-color: setcolor("black", "dark1");
 
   display: none;
 
@@ -33,10 +33,11 @@ body {
     display: flex;
   }
 
-  .o-header--wrapper {
+  &__wrapper {
+    display: flex;
     align-items: center;
 
-    &:first-of-type {
+    &-menuBtn {
       display: inline-block;
 
       @include lg {
@@ -44,7 +45,7 @@ body {
       }
     }
 
-    &:nth-of-type(3) {
+    &-btns {
       display: none;
 
       @include lg {
@@ -52,17 +53,9 @@ body {
       }
     }
 
-    &:last-of-type {
-      display: inline-block;
-
-      @include lg {
-        display: none;
-      }
-    }
-
-    .header--logo {
+    &-logo {
       width: rem(195);
-      margin-bottom: 10px;
+      margin-bottom: rem(10);
 
       @include lg {
         margin-right: rem(30);
@@ -75,7 +68,7 @@ body {
       }
     }
 
-    .o-header--nav_bar {
+    &-navBar {
       display: none;
 
       @include lg {
@@ -83,7 +76,7 @@ body {
       }
     }
 
-    .c-icon__title {
+    .icon__title {
       display: none;
 
       @include lg {
@@ -92,7 +85,7 @@ body {
       }
     }
 
-    .c-header--user > div {
+    .header--user > div {
       display: none;
 
       @include lg {
@@ -102,12 +95,16 @@ body {
 
     button {
       width: rem(190);
-      margin-left: 10px;
+      margin-left: rem(10);
+
+      &:first-of-type span {
+        color: black;
+      }
     }
   }
 }
 
-.m-header--mobile {
+.header__mobile {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -125,19 +122,19 @@ body {
     display: none;
   }
 
-  .o-header--wrapper {
+  &-wrapper {
     background-color: setcolor("black", "dark");
     height: 8vh;
     padding: 0 rem(20);
   }
 
-  .o-header--wrapper:first-of-type {
-    box-shadow: 0px 4px rem(45) rem(30) rgba(0,0,0,1);
+  &-wrapper:first-of-type {
+    box-shadow: 0px rem(5) rem(45) rem(30) rgba(0,0,0,1);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .header--logo {
+    &--logo {
       width: rem(195);
       margin-bottom: rem(10);
 
@@ -148,8 +145,8 @@ body {
     }
   }
 
-  .o-header--wrapper:last-of-type {
-    box-shadow: 0px -4px rem(45) rem(30) rgba(0,0,0,1);
+  &-wrapper:last-of-type {
+    box-shadow: 0px rem(-5) rem(45) rem(30) rgba(0,0,0,1);
     display: flex;
     justify-content: space-between;
     align-items: center;
