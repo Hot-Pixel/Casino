@@ -32,9 +32,14 @@
 			text-align: center;
 
 			background-color: setcolor('black', 'dark4');
-			height: rem(335);
-			padding: rem(60) 0;
+			height: auto;
+			padding: rem(30) rem(20);
 			border-radius: rem(5);
+
+			@include lg {
+				padding: rem(60) 0;
+				height: rem(335);
+			}
 
 			&-title {
 				@extend .u-f--h1, .u-f--bold;
@@ -43,12 +48,20 @@
 			&-subtitle {
 				@extend .u-f--h3, .u-f--bold;
 				color: #a4a6a8;
-				max-width: 75%;
+				max-width: 100%;
+
+				@include lg {
+					max-width: 75%;
+				}
 			}
 
 			&-desc {
 				color: #a4a6a8;
-				max-width: 75%;
+				max-width: 100%;
+
+				@include lg {
+					max-width: 75%;
+				}
 			}
 		}
 

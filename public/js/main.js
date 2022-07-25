@@ -30,8 +30,9 @@
   }
 
   function carouselBets() {
-    var carousel = new Splide('.carouselBets__carousel', {
+    var carousel = new Splide(".carouselBets__carousel", {
       pagination: false,
+      arrows: true,
       perPage: 5,
       perMove: 1,
       gap: 15,
@@ -43,7 +44,12 @@
           perPage: 3
         },
         992: {
-          perPage: 2
+          perPage: 1,
+          padding: {
+            left: 0,
+            right: 50
+          },
+          arrows: false
         }
       }
     });

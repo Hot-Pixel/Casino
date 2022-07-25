@@ -305,26 +305,26 @@
   }
 }
 
-.u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .o-card--subtitle {
-  font-size: 0.875rem;
+.u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  font-size: 1rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .o-card--subtitle {
-    font-size: 0.875rem;
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .o-card--subtitle {
-    font-size: 1.125rem;
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .o-card--subtitle {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .o-card--subtitle {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
     font-size: 1.125rem;
   }
 }
@@ -382,42 +382,42 @@
   }
 }
 
-.m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
+.m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
+  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
+  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
+  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
+  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
+  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
     padding-left: var(--horizontal-main-xxl);
     padding-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer {
+  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
     max-width: 100rem;
     padding-left: 0;
     padding-right: 0;
@@ -1096,6 +1096,9 @@ body {
   margin-left: 0.3125rem;
 }
 
+.footer {
+  width: 100%;
+}
 .footer__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1126,7 +1129,12 @@ body {
 }
 .footer__grid-item:nth-of-type(3) {
   grid-area: "follow";
-  justify-self: center;
+  justify-self: flex-start;
+}
+@media only screen and (min-width: 992px) {
+  .footer__grid-item:nth-of-type(3) {
+    justify-self: center;
+  }
 }
 .footer__grid-item:nth-of-type(3) li a {
   display: flex;
@@ -1140,7 +1148,12 @@ body {
 }
 .footer__grid-item:nth-of-type(4) {
   grid-area: "client";
-  justify-self: flex-end;
+  justify-self: flex-start;
+}
+@media only screen and (min-width: 992px) {
+  .footer__grid-item:nth-of-type(4) {
+    justify-self: flex-end;
+  }
 }
 .footer__grid-item:nth-of-type(4) ul {
   height: 100%;
@@ -1149,8 +1162,13 @@ body {
   justify-content: space-between;
 }
 .footer__grid-item:nth-of-type(4) ul .footer__grid-item--bottom {
-  display: flex;
+  display: none;
   justify-content: flex-end;
+}
+@media only screen and (min-width: 992px) {
+  .footer__grid-item:nth-of-type(4) ul .footer__grid-item--bottom {
+    display: flex;
+  }
 }
 .footer__grid p {
   font-weight: 700;
@@ -1164,7 +1182,12 @@ body {
 .footer__brands {
   display: flex;
   flex-direction: column;
-  margin-top: 7.5rem;
+  margin-top: 1.875rem;
+}
+@media only screen and (min-width: 992px) {
+  .footer__brands {
+    margin-top: 7.5rem;
+  }
 }
 .footer__brands-logo {
   position: relative;
@@ -1178,31 +1201,88 @@ body {
     padding: 0 1.875rem;
   }
 }
-.footer__brands-logo:first-of-type ul {
+.footer__brands .payments ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.footer__brands-logo:first-of-type ul li {
+.footer__brands .payments ul li {
   margin: 0.9375rem 0.625rem;
 }
-.footer__brands-logo:last-of-type ul {
+.footer__brands .certificates ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 992px) {
-  .footer__brands-logo:last-of-type ul {
+  .footer__brands .certificates ul {
     flex-direction: row;
   }
 }
-.footer__brands-logo:last-of-type ul li {
+.footer__brands .certificates ul li {
   margin: 0.9375rem 0.625rem;
 }
-.footer__brands-logo:last-of-type ul li a {
+.footer__brands .certificates ul li a {
   display: flex;
   justify-content: center;
+}
+.footer .footer__casinos {
+  background-color: #1c2026;
+  padding: 1.875rem 0;
+}
+@media only screen and (min-width: 992px) {
+  .footer .footer__casinos {
+    padding: 5rem 0;
+  }
+}
+.footer .footer__casinos > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 992px) {
+  .footer .footer__casinos > ul {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+.footer .footer__casinos > ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 4.0625rem;
+  margin: 0.125rem;
+  background-color: #25292f;
+  border-radius: 0.625rem;
+}
+@media only screen and (min-width: 992px) {
+  .footer .footer__casinos > ul li {
+    background-color: transparent;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    margin: 0 0.625rem;
+  }
+}
+.footer .footer__casinos > ul li img {
+  max-width: 80%;
+  max-height: 70%;
+}
+.footer .footer__casinos > div {
+  margin-top: 1.25rem;
+}
+@media only screen and (min-width: 992px) {
+  .footer .footer__casinos > div {
+    margin-top: 2.5rem;
+  }
+}
+.footer .footer__casinos > div p {
+  color: #a4a5a8;
+  text-align: center;
 }
 
 .bannerCarousel__slide {
@@ -1679,17 +1759,33 @@ body {
   align-items: center;
   text-align: center;
   background-color: #2d3239;
-  height: 20.9375rem;
-  padding: 3.75rem 0;
+  height: auto;
+  padding: 1.875rem 1.25rem;
   border-radius: 0.3125rem;
+}
+@media only screen and (min-width: 992px) {
+  .gridRoulette .card__content {
+    padding: 3.75rem 0;
+    height: 20.9375rem;
+  }
 }
 .gridRoulette .card__content-subtitle {
   color: #a4a6a8;
-  max-width: 75%;
+  max-width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .gridRoulette .card__content-subtitle {
+    max-width: 75%;
+  }
 }
 .gridRoulette .card__content-desc {
   color: #a4a6a8;
-  max-width: 75%;
+  max-width: 100%;
+}
+@media only screen and (min-width: 992px) {
+  .gridRoulette .card__content-desc {
+    max-width: 75%;
+  }
 }
 .gridRoulette .card__footer {
   position: absolute;
