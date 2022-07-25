@@ -1,207 +1,186 @@
 // Buttons
 
-@use '../settings' as *;
-@use '../helper' as *;
-@use '../tools' as *;
-
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
 
 // button normal red
 .btn-red {
-	@extend %buttons;
-	color: setcolor('white');
-	background-color: setcolor('primary');
-	&:hover {
-		color: setcolor('gray', 'lighter');
-		background-color: setcolor('primary', 'light');
-	}
+  @extend %buttons;
+  color: setcolor("white");
+  background-color: setcolor("primary");
+  &:hover {
+    color: setcolor("gray", "lighter");
+    background-color: setcolor("primary", "light");
+  }
 }
 
 .btn--red-glow {
-    box-shadow: 0px 0px rem(20) 0px setcolor('primary');
+  box-shadow: 0px 0px rem(20) 0px setcolor("primary");
 }
 
 // button normal white
 .btn--white {
-	@extend %buttons;
-	color: setcolor('black', 'dark5');
-	background-color: setcolor('white');
-	&:hover {
-		color: setcolor('black', 'dark5');
-		background-color: setcolor('gray');
-	}
+  @extend %buttons;
+  color: setcolor("black", "dark5");
+  background-color: setcolor("white");
+  &:hover {
+    color: setcolor("black", "dark5");
+    background-color: setcolor("gray");
+  }
 }
 
 /* Button remove filter */
 .btn--gray-red {
-	@extend %buttons;
-	color: setcolor('primary');
-	background-color: #1c2026;
-    padding: rem(10);
-	&:hover {
-		background-color: #292929;
-	}
+  @extend %buttons;
+  color: setcolor("primary");
+  background-color: #1c2026;
+  padding: rem(10);
+  &:hover {
+    background-color: #292929;
+  }
 }
 
 .btn--block {
-	@extend %buttons;
-    height: rem(60);
-    border-radius: rem(5);
+  @extend %buttons;
+  height: rem(60);
+  border-radius: rem(5);
 }
-
 
 // button normal black_lighter
 .btn--black_lighter {
-	@extend %buttons;
-	color: setcolor('white');
-	background-color: setcolor('black','lighter');
+  @extend %buttons;
+  color: setcolor("white");
+  background-color: setcolor("black", "dark4");
 }
-
 
 // button ghost ==========
 
 // button ghost red
 .btn_ghost--red {
-	@extend %buttons;
-	color: setcolor('primary', 'base');
-	background-color: transparent;
-	border: 2px solid setcolor('primary', 'base');
+  @extend %buttons;
+  color: setcolor("primary");
+  background-color: transparent;
+  border: 2px solid setcolor("primary");
 }
-
 
 // button no_button ==========
 
 // button no_button red
 .btn_no_button--red {
-	@extend %buttons;
-	padding: 0;
-	color: setcolor('primary', 'base');
-	background-color: transparent;
+  @extend %buttons;
+  padding: 0;
+  color: setcolor("primary");
+  background-color: transparent;
 }
-
 
 // button variations ==========
 
 // button size_big
 .btn--size_big {
-	padding: 21px rem(30);
-	font-size: 14px;
-	@include md {
-		padding: rem(30) rem(40);
-		font-size: 16px;
-	}
+  padding: rem(20) rem(30);
+  @include lg {
+    padding: rem(30) rem(40);
+  }
 }
 
 // button icon_right
 .btn--icon_right {
-	position: relative;
+  position: relative;
 
-	img {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		right: 7px;
-	}
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 // button border
 .btn_border {
-    @extend %buttons;
-    background: transparent;
-    color: setcolor('white');
-    border: 2px solid setcolor('primary');
-    &:hover {
-        color: setcolor('secondary');
-        background-color: setcolor('primary');
-    }
+  @extend %buttons;
+  background: transparent;
+  color: setcolor("white");
+  border: 2px solid setcolor("primary");
+  &:hover {
+    color: setcolor("secondary");
+    background-color: setcolor("primary");
+  }
 }
 
 .btn_border_secondary {
-    @extend %buttons;
-    background-color: setcolor('white');
-    color: setcolor('secondary');
-    border: 2px solid setcolor('secondary');
-    &:hover {
-        color: setcolor('white');
-        background-color: setcolor('secondary', 'dark');
-    }
+  @extend %buttons;
+  background-color: setcolor("white");
+  color: setcolor("secondary");
+  border: 2px solid setcolor("secondary");
+  &:hover {
+    color: setcolor("white");
+    background-color: setcolor("secondary", "dark");
+  }
 }
 
 // button border
 .btn_white {
-    @extend %buttons;
-    color: setcolor('secondary');
-    background-color: setcolor('white');
-    &:hover {
-        color: setcolor('secondary');
-        background-color: setcolor('primary');
-    }
+  @extend %buttons;
+  color: setcolor("secondary");
+  background-color: setcolor("white");
+  &:hover {
+    color: setcolor("secondary");
+    background-color: setcolor("primary");
+  }
 }
 
 .btn_border_white {
-    @extend %buttons;
-    background: transparent;
-    color: setcolor('white');
-    border: 2px solid setcolor('white');
-    &:hover {
-        color: setcolor('secondary');
-        background-color: setcolor('white');
-    }
+  @extend %buttons;
+  background: transparent;
+  color: setcolor("white");
+  border: 2px solid setcolor("white");
+  &:hover {
+    color: setcolor("secondary");
+    background-color: setcolor("white");
+  }
 }
 
 // link
 .btn_link {
+  font-weight: setfont("weight", "semibold");
+  font-size: rem(16);
+  line-height: 1em;
+  text-decoration: underline;
 
-    font-weight: setfont('weight','semibold');
+  color: setcolor("primary");
+
+  transition: all 0.3s;
+
+  @include md {
     font-size: rem(16);
-    line-height: 1em;
-    text-decoration: underline;
+  }
 
-    color: setcolor('primary');
+  @include xl {
+    font-size: rem(18);
+  }
 
-    transition: all .3s;
+  @include xxl {
+    font-size: rem(20);
+  }
 
-    @include md {
-        font-size: rem(16);
-    }
-
-    @include xl {
-        font-size: rem(18);
-    }
-
-    @include xxl {
-        font-size: rem(20);
-    }
-
-    &:hover {
-        color: setcolor('primary','dark');
-    }
-
+  &:hover {
+    color: setcolor("primary", "dark");
+  }
 }
 
 .btn_link--secondary {
-    @extend .btn_link;
-    color: setcolor('secondary');
-    &:hover {
-        color: setcolor('secondary','dark');
-    }
+  @extend .btn_link;
+  color: setcolor("secondary");
+  &:hover {
+    color: setcolor("secondary", "dark");
+  }
 }
 
 .btn_link--white {
-    @extend .btn_link;
-    color: setcolor('white');
-    &:hover {
-        color: setcolor('primary');
-    }
+  @extend .btn_link;
+  color: setcolor("white");
+  &:hover {
+    color: setcolor("primary");
+  }
 }

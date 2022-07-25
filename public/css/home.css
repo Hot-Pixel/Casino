@@ -216,7 +216,7 @@
 }
 
 /* Font Weight Class */
-.u-f--light, .o-carousel_bets--carousel .o-card .o-card--subtitle, .o-carousel_bets--carousel .o-card .o-card--desc, .u-f--light p, .o-carousel_bets--carousel .o-card .o-card--subtitle p, .o-carousel_bets--carousel .o-card .o-card--desc p {
+.u-f--light, .u-f--light p {
   font-weight: 300;
 }
 
@@ -228,7 +228,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .redIcons p, .search .search__input input, .search .search__wrapper p, .banner__wrapper-title p, .o-card--title, .o-card--subtitle, .u-f--bold p, .search .search__input input p, .o-card--title p, .o-card--subtitle p {
+.u-f--bold, .carouselBets__header-link p, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper p, .banner__wrapper-title p, .o-card--title, .o-card--subtitle, .u-f--bold p, .carouselBets__carousel .card__content-title p, .carouselBets__carousel .card__content-subtitle p, .search .search__input input p, .o-card--title p, .o-card--subtitle p {
   font-weight: 700;
 }
 
@@ -329,50 +329,50 @@
   }
 }
 
-.u-f--h5, .o-carousel_bets--carousel .o-card .o-card--title, .o-carousel_bets--carousel .o-card .o-card--subtitle, .o-carousel_bets--carousel .o-card .o-card--footer_column button, .o-card--desc, .breadcrumbs span {
-  font-size: 1rem;
+.u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+  font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .o-carousel_bets--carousel .o-card .o-card--title, .o-carousel_bets--carousel .o-card .o-card--subtitle, .o-carousel_bets--carousel .o-card .o-card--footer_column button, .o-card--desc, .breadcrumbs span {
-    font-size: 1rem;
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+    font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h5, .o-carousel_bets--carousel .o-card .o-card--title, .o-carousel_bets--carousel .o-card .o-card--subtitle, .o-carousel_bets--carousel .o-card .o-card--footer_column button, .o-card--desc, .breadcrumbs span {
-    font-size: 1rem;
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+    font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h5, .o-carousel_bets--carousel .o-card .o-card--title, .o-carousel_bets--carousel .o-card .o-card--subtitle, .o-carousel_bets--carousel .o-card .o-card--footer_column button, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .o-carousel_bets--carousel .o-card .o-card--title, .o-carousel_bets--carousel .o-card .o-card--subtitle, .o-carousel_bets--carousel .o-card .o-card--footer_column button, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 
-.u-f--h6, .o-carousel_bets--carousel .o-card .o-card--desc {
+.u-f--h6 {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h6, .o-carousel_bets--carousel .o-card .o-card--desc {
+  .u-f--h6 {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h6, .o-carousel_bets--carousel .o-card .o-card--desc {
+  .u-f--h6 {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h6, .o-carousel_bets--carousel .o-card .o-card--desc {
+  .u-f--h6 {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h6, .o-carousel_bets--carousel .o-card .o-card--desc {
+  .u-f--h6 {
     font-size: 0.875rem;
   }
 }
@@ -406,42 +406,42 @@
   }
 }
 
-.m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
+.m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
     padding-left: var(--horizontal-main-xxl);
     padding-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .banner__car, .m-footer {
     max-width: 100rem;
     padding-left: 0;
     padding-right: 0;
@@ -507,31 +507,31 @@
   }
 }
 
-.m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText {
+.m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText {
   padding-bottom: var(--vertical-large-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText {
     padding-bottom: var(--vertical-large-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText {
     padding-bottom: var(--vertical-large-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText {
     padding-bottom: var(--vertical-large-lg);
   }
 }
 @media only screen and (min-width: 1200px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText {
     padding-bottom: var(--vertical-large-xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-text-block, .jackpot, .m-carousel_bets, .m-grid-roulette, .imageText {
+  .m-text-block, .jackpot, .carouselBets, .m-grid-roulette, .imageText {
     padding-bottom: var(--vertical-large-xxl);
   }
 }
@@ -816,6 +816,7 @@ h6 {
 
 .btn--black_lighter {
   color: #ffffff;
+  background-color: #2d3239;
 }
 
 .btn_ghost--red {
@@ -831,13 +832,11 @@ h6 {
 }
 
 .btn--size_big {
-  padding: 21px 1.875rem;
-  font-size: 14px;
+  padding: 1.25rem 1.875rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .btn--size_big {
     padding: 1.875rem 2.5rem;
-    font-size: 16px;
   }
 }
 
@@ -1557,7 +1556,7 @@ body {
   .imageText {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 132px;
+    column-gap: 8.125rem;
   }
 }
 .imageText__image img {
@@ -1567,8 +1566,6 @@ body {
 .imageText__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
@@ -1598,6 +1595,9 @@ body {
     margin-left: 0;
   }
 }
+.imageText__content-btns button span {
+  color: #ff293e;
+}
 
 .m-grid-roulette {
   display: grid;
@@ -1609,35 +1609,89 @@ body {
   }
 }
 
-.o-carousel_bets--carousel .o-card .o-card--image {
+.carouselBets__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.carouselBets__header p {
+  margin-bottom: 0;
+}
+.carouselBets__header-title {
+  display: flex;
+  align-items: center;
+}
+.carouselBets__header-title p {
+  margin-left: 0.625rem;
+}
+.carouselBets__header-title img {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+.carouselBets__header-link {
+  display: flex;
+  align-items: center;
+}
+.carouselBets__header-link p {
+  margin-right: 0.3125rem;
+  color: #ff293e;
+}
+.carouselBets__carousel .card {
+  margin-bottom: 1.5625rem;
+}
+.carouselBets__carousel .card__image {
   overflow: hidden;
+  height: 13.4375rem;
+  border-radius: 0.3125rem 0.3125rem 0 0;
 }
-.o-carousel_bets--carousel .o-card .o-card--content {
+.carouselBets__carousel .card__image img {
+  object-fit: cover;
+  height: 100%;
+}
+.carouselBets__carousel .card__content {
+  position: relative;
   text-align: left;
+  background-color: #1c2026;
+  padding: 1.875rem 1.875rem 3.75rem 1.875rem;
+  border-radius: 0 0 0.3125rem 0.3125rem;
 }
-.o-carousel_bets--carousel .o-card .o-card--title {
+.carouselBets__carousel .card__content-title {
   margin-bottom: 0;
 }
-.o-carousel_bets--carousel .o-card .o-card--desc:not(:last-child) {
+.carouselBets__carousel .card__content-subtitle {
+  color: #a4a6a8;
+}
+.carouselBets__carousel .card__content-desc {
+  color: #a4a6a8;
+}
+.carouselBets__carousel .card__content-desc:not(:last-child) {
   margin-bottom: 0;
 }
-.o-carousel_bets--carousel .o-card .o-card--desc:last-child {
+.carouselBets__carousel .card__content-desc:last-child {
   margin-bottom: 1.875rem;
 }
-.o-carousel_bets--carousel .o-card .o-card--footer {
-  margin-top: -2.4em;
+.carouselBets__carousel .card .card__footer {
+  position: absolute;
+  bottom: -1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.o-carousel_bets--carousel .o-card .o-card--footer_w_columns {
+.carouselBets__carousel .card .card__footer-columns {
   display: flex;
-  column-gap: 10px;
+  column-gap: 0.625rem;
   justify-content: center;
 }
-.o-carousel_bets--carousel .o-card .o-card--footer_column span {
+.carouselBets__carousel .card .card__footer-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.carouselBets__carousel .card .card__footer-column span {
   display: block;
   margin-bottom: 0.3125rem;
-  font-size: 13px;
 }
-.o-carousel_bets--carousel .o-card .o-card--footer_column button {
+.carouselBets__carousel .card .card__footer-column button {
   padding: 12px 22px;
 }
 

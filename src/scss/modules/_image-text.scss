@@ -8,7 +8,7 @@
   @include lg {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 132px;
+    column-gap: rem(130);
   }
 
   &__image {
@@ -20,10 +20,7 @@
 
   &__content {
     display: flex;
-	flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    flex-direction: column;
     text-align: center;
 
     @include lg {
@@ -38,21 +35,24 @@
       }
     }
 
-	&-btns {
-		margin-top: rem(30);
+    &-btns {
+      margin-top: rem(30);
 
-		button {
-		  display: block;
-		  margin-top: 10px;
-		  margin-right: auto;
-		  margin-left: auto;
-		  @include lg {
-			margin-right: 0;
-			margin-left: 0;
-		  }
-		}
-	  }
+      button {
+        display: block;
+        margin-top: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        @include lg {
+          margin-right: 0;
+          margin-left: 0;
+        }
+
+        span {
+          @extend .u-f--h5;
+          color: setcolor('primary');
+        }
+      }
+    }
   }
-
-
 }

@@ -150,7 +150,66 @@ const gridHalfRight =
       title: "Jackpot Giant",
       total: "987.654,32 €",
       img: "img-carousel-jackpot-1.png"
+    }
+  ]
+
+  const betsData = [
+    {
+      img: "img-carousel-bets-1.jpg",
+      partido: "Real Madrid - Mallorca",
+      division: "La Liga",
+      dia: "mié, 22 de septiembre",
+      hora: "22:00h"
     },
+    {
+      img: "img-carousel-bets-2.jpg",
+      partido: "F.C. Barcelona - Osasuna",
+      division: "La Liga",
+      dia: "mié, 22 de septiembre",
+      hora: "22:00h"
+    },
+    {
+      img: "img-carousel-bets-3.jpg",
+      partido: "Rayo Vallecano - Sevilla",
+      division: "La Liga",
+      dia: "mié, 22 de septiembre",
+      hora: "22:00h"
+    },
+    {
+      img: "img-carousel-bets-4.jpg",
+      partido: "Valencia - Bestis",
+      division: "La Liga",
+      dia: "mié, 22 de septiembre",
+      hora: "22:00h"
+    },
+    {
+      img: "img-carousel-bets-1.jpg",
+      partido: "Real Madrid - Mallorca",
+      division: "La Liga",
+      dia: "mié, 22 de septiembre",
+      hora: "22:00h"
+    },
+    {
+      img: "img-carousel-bets-2.jpg",
+      partido: "F.C. Barcelona - Osasuna",
+      division: "La Liga",
+      dia: "mié, 22 de septiembre",
+      hora: "22:00h"
+    },
+    {
+      img: "img-carousel-bets-3.jpg",
+      partido: "Rayo Vallecano - Sevilla",
+      division: "La Liga",
+      dia: "mié, 22 de septiembre",
+      hora: "22:00h"
+    },
+    {
+      img: "img-carousel-bets-4.jpg",
+      partido: "Valencia - Bestis",
+      division: "La Liga",
+      dia: "mié, 22 de septiembre",
+      hora: "22:00h"
+    }
   ]
 %>
 
@@ -176,7 +235,7 @@ const gridHalfRight =
 
 <%- include ('modules/image-text') %>
 
-<%- include ('modules/carousel-bets') %>
+<%- include ('modules/carousel-bets', { data: betsData }) %>
 
 <%- include ('modules/grid-roulette') %>
 

@@ -2,68 +2,121 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 // Layout
 
-.m-carousel_bets {
-	@extend %margin_horizontal_main, %margin_bottom_large;
-}
+.carouselBets {
+  @extend %margin_horizontal_main, %margin_bottom_large;
 
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-// Card
+    margin-bottom: rem(20);
 
-.o-carousel_bets--carousel .o-card {
+    p {
+      margin-bottom: 0;
+    }
 
-	.o-card--image {
-		overflow: hidden;
-	}
+    &-title {
+      display: flex;
+      align-items: center;
 
+      p {
+        margin-left: rem(10);
+      }
 
-	.o-card--content {
-		text-align: left;
-	}
+      img {
+        width: rem(25);
+        height: rem(25);
+      }
+    }
 
-	.o-card--title {
-		margin-bottom: 0;
-		@extend .u-f--h5;
-	}
+    &-link {
+      display: flex;
+      align-items: center;
 
-	.o-card--subtitle {
-		@extend .u-f--h5, .u-f--light;
-	}
+      p {
+        margin-right: rem(5);
+        @extend .u-f--bold;
+        color: setcolor("primary");
+      }
+    }
+  }
 
-	.o-card--desc {
-		@extend .u-f--h6, .u-f--light;
-		&:not(:last-child) {
-			margin-bottom: 0;
-		}
-		&:last-child {
-			margin-bottom: rem(30);
-		}
-	}
+  &__carousel {
+    .card {
+      margin-bottom: rem(25);
 
+      &__image {
+        overflow: hidden;
+        height: rem(215);
+        border-radius: rem(5) rem(5) 0 0;
 
-	.o-card--footer {
-		margin-top: -2.4em;
+        img {
+          object-fit: cover;
+          height: 100%;
+        }
+      }
 
-		&_w_columns {
-			display: flex;
-			column-gap: 10px;
-			justify-content: center;
-		}
+      &__content {
+        position: relative;
 
-		&_column {
+        text-align: left;
+        background-color: setcolor("black", "dark2");
+        padding: rem(30) rem(30) rem(60) rem(30);
+        border-radius: 0 0 rem(5) rem(5);
 
-			span {
-				display: block;
-				margin-bottom: rem(5);
-				font-size: 13px;
-			}
+        &-title {
+          margin-bottom: 0;
+          @extend .u-f--h5, .u-f--bold;
+        }
 
-			button {
-				@extend .u-f--h5;
-				padding: 12px 22px;
-			}
-		}
-	}
+        &-subtitle {
+          @extend .u-f--h5, .u-f--bold;
+		  color: #a4a6a8;
+        }
+
+        &-desc {
+          color: #a4a6a8;
+
+          &:not(:last-child) {
+            margin-bottom: 0;
+          }
+          &:last-child {
+            margin-bottom: rem(30);
+          }
+        }
+      }
+
+      .card__footer {
+        position: absolute;
+        bottom: rem(-20);
+        left: 50%;
+        transform: translateX(-50%);
+
+        &-columns {
+          display: flex;
+          column-gap: rem(10);
+          justify-content: center;
+        }
+
+        &-column {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          span {
+            display: block;
+            margin-bottom: rem(5);
+          }
+
+          button {
+            @extend .u-f--h5;
+            padding: 12px 22px;
+          }
+        }
+      }
+    }
+  }
 }

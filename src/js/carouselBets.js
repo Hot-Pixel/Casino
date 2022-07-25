@@ -1,6 +1,5 @@
 function carouselBets() {
-	var carousel = new Splide( '.js--splide--carousel-bets', {
-		type       : 'loop',
+	var carousel = new Splide( '.carouselBets__carousel', {
 		pagination : false,
 		perPage    : 5,
 		perMove    : 1,

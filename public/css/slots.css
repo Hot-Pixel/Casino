@@ -329,26 +329,26 @@
   }
 }
 
-.u-f--h5, .o-card--desc, .breadcrumbs span {
-  font-size: 1rem;
+.u-f--h5, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+  font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
-    font-size: 1rem;
+  .u-f--h5, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+    font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
-    font-size: 1rem;
+  .u-f--h5, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+    font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
   }
 }
@@ -816,6 +816,7 @@ h6 {
 
 .btn--black_lighter {
   color: #ffffff;
+  background-color: #2d3239;
 }
 
 .btn_ghost--red {
@@ -831,13 +832,11 @@ h6 {
 }
 
 .btn--size_big {
-  padding: 21px 1.875rem;
-  font-size: 14px;
+  padding: 1.25rem 1.875rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .btn--size_big {
     padding: 1.875rem 2.5rem;
-    font-size: 16px;
   }
 }
 
@@ -1539,7 +1538,7 @@ body {
   .imageText {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 132px;
+    column-gap: 8.125rem;
   }
 }
 .imageText__image img {
@@ -1549,8 +1548,6 @@ body {
 .imageText__content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 @media only screen and (min-width: 992px) {
@@ -1579,6 +1576,9 @@ body {
     margin-right: 0;
     margin-left: 0;
   }
+}
+.imageText__content-btns button span {
+  color: #ff293e;
 }
 
 .m-grid-roulette {
