@@ -13,14 +13,16 @@
   }
 
   function carouselJackpot() {
-    var carousel = new Splide('.jackpot__carousel', {
+    var carousel = new Splide(".jackpot__carousel", {
       pagination: false,
+      arrows: true,
       perPage: 4,
       perMove: 1,
       gap: 15,
       breakpoints: {
         1200: {
-          perPage: 2
+          perPage: 2,
+          arrows: false
         }
       }
     });

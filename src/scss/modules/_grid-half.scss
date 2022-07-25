@@ -4,12 +4,19 @@
 
 .grids__container {
   @extend %margin_horizontal_main, %margin_bottom_small;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(15);
+
+  @include lg {
+    flex-direction: row;
+    column-gap: rem(15);
+    row-gap: 0;
+  }
 }
 
 .gridHalf {
+  width: 100%;
   padding: 10px;
   height: 100%;
 
@@ -18,6 +25,7 @@
 
   @include lg {
     padding: rem(30);
+    width: 50%;
   }
 
   &__navbar {
@@ -68,10 +76,47 @@
     }
 
     &-item {
+      position: relative;
+
       img {
         width: 100%;
         object-fit: cover;
         border-radius: 10px;
+      }
+
+      &:hover .gridHalf__grid-item--hover {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+
+      &--hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+
+        padding-top: rem(40);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 0;
+        transition: all 0.3s ease;
+
+        button {
+          margin-bottom: rem(15);
+
+          img {
+            height: 12.6px;
+            width: 16px;
+          }
+        }
       }
     }
   }

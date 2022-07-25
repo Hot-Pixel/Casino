@@ -1,26 +1,10 @@
 <%
-    const carouselData = [
-    {
-        title: "Descubre a Emerald King Rainbow Road",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.",
-        img: "img/img-banner-home.jpg"
-    },
-    {
-        title: "Descubre a Emerald King Rainbow Road",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.",
-        img: "img/img-banner-home.jpg"
-    },
-    {
-        title: "Descubre a Emerald King Rainbow Road",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.",
-        img: "img/img-banner-home.jpg"
-    }
-    ]
+
 %>
 
 <%- include ('layout/head', {title: "Layout" , css: "layout" }) %>
 
 <!-- Introducir debajo el modulo a desarrollar -->
-<%- include ('modules/banner-w-carousel', { data: carouselData }) %>
+<%- include ('modules/image-text') %>
 
 <%- include ('layout/scripts') %>

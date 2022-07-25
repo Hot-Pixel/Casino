@@ -228,7 +228,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .carouselBets__header-link p, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper p, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title, .o-card--subtitle, .u-f--bold p, .carouselBets__carousel .card__content-title p, .carouselBets__carousel .card__content-subtitle p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .bannerCarousel__slide-wrapper p:first-of-type p, .o-card--title p, .o-card--subtitle p {
+.u-f--bold, .jackpot__card-content p:last-of-type, .carouselBets__header-link p, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper p, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title, .o-card--subtitle, .u-f--bold p, .jackpot__card-content p:last-of-type p, .carouselBets__carousel .card__content-title p, .carouselBets__carousel .card__content-subtitle p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .bannerCarousel__slide-wrapper p:first-of-type p, .o-card--title p, .o-card--subtitle p {
   font-weight: 700;
 }
 
@@ -258,16 +258,16 @@
 }
 
 .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
-  font-size: 2rem;
+  font-size: 1.375rem;
 }
 @media only screen and (min-width: 768px) {
   .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -282,11 +282,11 @@
 }
 
 .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
   .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -329,51 +329,27 @@
   }
 }
 
-.u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+.u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .imageText__content-btns button span, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
-  }
-}
-
-.u-f--h6 {
-  font-size: 0.875rem;
-}
-@media only screen and (min-width: 768px) {
-  .u-f--h6 {
-    font-size: 0.875rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .u-f--h6 {
-    font-size: 0.875rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .u-f--h6 {
-    font-size: 0.875rem;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .u-f--h6 {
-    font-size: 0.875rem;
   }
 }
 
@@ -540,7 +516,7 @@
   display: inline-block;
   font-family: "Lexend";
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   line-height: 1em;
   text-decoration: none;
   outline: none;
@@ -638,13 +614,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lexend";
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   background: #13171d;
   color: #ffffff;
 }
 @media only screen and (min-width: 768px) {
   body {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -655,13 +631,13 @@ body {
 
 p, span {
   font-family: "Lexend";
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   color: #ffffff;
   margin-bottom: 0.9375rem;
 }
 @media only screen and (min-width: 768px) {
   p, span {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -728,11 +704,6 @@ h4 {
 }
 
 h5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-h6 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
@@ -1456,12 +1427,20 @@ body {
 }
 
 .grids__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9375rem;
+}
+@media only screen and (min-width: 992px) {
+  .grids__container {
+    flex-direction: row;
+    column-gap: 0.9375rem;
+    row-gap: 0;
+  }
 }
 
 .gridHalf {
+  width: 100%;
   padding: 10px;
   height: 100%;
   background-color: #25292f;
@@ -1470,6 +1449,7 @@ body {
 @media only screen and (min-width: 992px) {
   .gridHalf {
     padding: 1.875rem;
+    width: 50%;
   }
 }
 .gridHalf__navbar {
@@ -1515,10 +1495,40 @@ body {
     grid-template-rows: auto auto;
   }
 }
+.gridHalf__grid-item {
+  position: relative;
+}
 .gridHalf__grid-item img {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+.gridHalf__grid-item:hover .gridHalf__grid-item--hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.gridHalf__grid-item--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.gridHalf__grid-item--hover button {
+  margin-bottom: 0.9375rem;
+}
+.gridHalf__grid-item--hover button img {
+  height: 12.6px;
+  width: 16px;
 }
 
 .redIcons {
@@ -1583,18 +1593,29 @@ body {
   }
 }
 
+.imageText {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 8.125rem;
+  grid-template-areas: "img" "content";
+}
 @media only screen and (min-width: 992px) {
   .imageText {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 8.125rem;
+    grid-template-rows: auto;
+    grid-template-areas: "content img";
   }
+}
+.imageText__image {
+  grid-area: img;
 }
 .imageText__image img {
   width: 100%;
   height: auto;
 }
 .imageText__content {
+  grid-area: content;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -1612,21 +1633,25 @@ body {
   margin-top: 1.25rem;
 }
 .imageText__content-btns {
-  margin-top: 1.875rem;
+  margin-top: 0.9375rem;
+}
+@media only screen and (min-width: 992px) {
+  .imageText__content-btns {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
 .imageText__content-btns button {
-  display: block;
   margin-top: 10px;
-  margin-right: auto;
-  margin-left: auto;
 }
 @media only screen and (min-width: 992px) {
   .imageText__content-btns button {
-    margin-right: 0;
-    margin-left: 0;
+    width: fit-content;
   }
 }
 .imageText__content-btns button span {
+  font-size: 0.75rem;
   color: #ff293e;
 }
 
@@ -1761,7 +1786,13 @@ body {
 
 .jackpot {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+@media only screen and (min-width: 992px) {
+  .jackpot {
+    flex-direction: row;
+  }
 }
 .jackpot .splide__slide {
   margin-bottom: 25px;
@@ -1775,6 +1806,18 @@ body {
   .jackpot__text {
     width: calc(30% - 3.75rem);
   }
+}
+.jackpot__text p:last-of-type {
+  color: #a0a2a4;
+}
+.jackpot__text a {
+  display: flex;
+  align-items: center;
+}
+.jackpot__text a span {
+  color: #ff293e;
+  margin: 0;
+  margin-right: 0.3125rem;
 }
 .jackpot__carousel {
   margin-top: 1.875rem;
@@ -1792,6 +1835,8 @@ body {
 }
 .jackpot__card-image img {
   margin-top: -3.75rem;
+  object-fit: cover;
+  width: 100%;
 }
 .jackpot__card-content {
   background-color: #25292f;
@@ -1800,15 +1845,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.875rem;
+  padding: 0.625rem;
+  height: 7.5rem;
+}
+@media only screen and (min-width: 992px) {
+  .jackpot__card-content {
+    padding: 1.875rem;
+    height: auto;
+  }
 }
 .jackpot__card-content button {
   position: absolute;
   bottom: -1.375rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
-  height: 2.8125rem;
+  width: 85%;
+  height: 2.5rem;
+}
+@media only screen and (min-width: 992px) {
+  .jackpot__card-content button {
+    width: 70%;
+    height: 2.8125rem;
+  }
 }
 
 .jackpot .splide__arrows::before {

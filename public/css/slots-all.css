@@ -258,16 +258,16 @@
 }
 
 .u-f--h2 {
-  font-size: 2rem;
+  font-size: 1.375rem;
 }
 @media only screen and (min-width: 768px) {
   .u-f--h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .u-f--h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -282,11 +282,11 @@
 }
 
 .u-f--h3, .o-filter--slots-left span {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
   .u-f--h3, .o-filter--slots-left span {
-    font-size: 1.375rem;
+    font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -350,30 +350,6 @@
 @media only screen and (min-width: 1600px) {
   .u-f--h5, .o-filter--slots-general button, .o-filter--slots-title p, .breadcrumbs span {
     font-size: 1rem;
-  }
-}
-
-.u-f--h6 {
-  font-size: 0.875rem;
-}
-@media only screen and (min-width: 768px) {
-  .u-f--h6 {
-    font-size: 0.875rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .u-f--h6 {
-    font-size: 0.875rem;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .u-f--h6 {
-    font-size: 0.875rem;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .u-f--h6 {
-    font-size: 0.875rem;
   }
 }
 
@@ -511,7 +487,7 @@
   display: inline-block;
   font-family: "Lexend";
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   line-height: 1em;
   text-decoration: none;
   outline: none;
@@ -609,13 +585,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Lexend";
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   background: #13171d;
   color: #ffffff;
 }
 @media only screen and (min-width: 768px) {
   body {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -626,13 +602,13 @@ body {
 
 p, span {
   font-family: "Lexend";
-  font-size: 0.75rem;
+  font-size: 0.625rem;
   color: #ffffff;
   margin-bottom: 0.9375rem;
 }
 @media only screen and (min-width: 768px) {
   p, span {
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -699,11 +675,6 @@ h4 {
 }
 
 h5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
-h6 {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
