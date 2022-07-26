@@ -2,39 +2,25 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.o-casino--filter {
+.casinoFilter {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   margin-bottom: rem(15);
 
-  &-wrapper {
+  &__wrapper {
     display: flex;
     align-items: center;
 
-    fieldset {
-      border: none;
-      outline: none;
-      margin: 0;
-      padding: 0;
-    }
+    &-game {
+      display: none;
 
-    .o-casino--filter-game {
+      @include lg {
+        display: block;
+      }
+
       button {
-        @extend .u-f--h5;
-        margin: 0;
-        padding: 12px;
-        background-color: #25292f;
-        color: setcolor("gray");
-        font-weight: 700;
-        border: none;
-
-        &.mixitup-control-active {
-          background-color: #2d3239;
-          color: white;
-        }
-
         &:first-of-type {
           border-radius: rem(5) 0 0 rem(5);
         }
@@ -44,62 +30,160 @@
       }
     }
 
-    select {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      text-indent: 1px;
-      text-overflow: "";
-      background: transparent;
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.928' height='6.352' viewBox='0 0 10.928 6.352'%3E%3Cpath d='M12.474,42.648,8.615,46.506a.27.27,0,0,1-.381,0h0L4.375,42.648' transform='translate(-2.961 -41.234)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position-x: 100%;
-      background-position-y: rem(5);
-      border: 1px solid #dfdfdf;
-      border-radius: 2px;
-      margin-right: 2rem;
-      padding: 1rem;
-      padding-right: 2rem;
-    }
-
-    select#casino-provider {
-      @extend .u-f--h5;
-      margin: 0 rem(20);
-      // padding: 12px;
-      background-color: #25292f;
-      color: setcolor("gray");
-      font-weight: 700;
-      border: none;
-      border-radius: rem(5);
-
-      &:focus,
-      &:active {
-        outline: none;
+    &--left {
+      fieldset {
         border: none;
-        background-color: #2d3239;
-        color: white;
+        outline: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      button,
+      select {
+        @extend .u-f--h5;
+        background-color: #25292f;
+        color: setcolor("gray");
+        font-weight: 700;
+        border: none;
+        height: rem(40);
+      }
+
+      button {
+        margin: 0;
+        padding: 12px;
+
+        &.mixitup-control-active {
+          background-color: #2d3239;
+          color: white;
+        }
+      }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: "";
+        background: transparent;
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.928' height='6.352' viewBox='0 0 10.928 6.352'%3E%3Cpath d='M12.474,42.648,8.615,46.506a.27.27,0,0,1-.381,0h0L4.375,42.648' transform='translate(-2.961 -41.234)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position-x: 90%;
+        background-position-y: 50%;
+        border: 1px solid #dfdfdf;
+        border-radius: rem(5);
+        padding: rem(10);
+
+        @include lg {
+          padding: rem(16);
+          margin-right: rem(32);
+        }
+      }
+
+      #casino-provider, #casino-game {
+        @extend .u-f--h5;
+        margin-right: rem(5);
+        background-color: #25292f;
+        color: setcolor("gray");
+        font-weight: 700;
+        border: none;
+        border-radius: rem(5);
+
+        @include lg {
+          margin: 0 rem(20);
+        }
+
+        &:focus,
+        &:active {
+          outline: none;
+          border: none;
+          background-color: #2d3239;
+          color: white;
+        }
+      }
+
+      #casino-provider {
+        margin-right: rem(5);
+        padding-right: rem(32);
+
+        @include lg {
+          margin: 0 rem(20);
+          padding-right: rem(32);
+        }
+      }
+
+      #casino-game {
+        display: block;
+        padding-right: rem(5);
+
+        @include lg {
+          display: none;
+        }
+      }
+
+      #casino-fav {
+        border-radius: rem(5);
+
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 0;
+
+          @include lg {
+            margin-right: 10px;
+          }
+        }
+
+        span {
+          margin: 0;
+          display: none;
+
+          @include lg {
+            display: block;
+          }
+        }
+
+        &.mixitup-control-active {
+          svg path {
+            fill: setcolor("primary");
+          }
+        }
       }
     }
 
-    button#casino-fav {
-      @extend .u-f--h5;
-      padding: 12px;
-      background-color: #25292f;
-      color: setcolor("gray");
-      font-weight: 700;
-      border: none;
-      border-radius: rem(5);
+    &--right {
+      .is-showing {
+        @extend .u-f--bold;
+        margin: 0;
+        margin-right: rem(10);
+        display: none;
 
-      display: flex;
-      align-items: center;
+        @include lg {
+          display: block;
+        }
 
-      img {
-        margin-right: 10px;
+        span {
+          @extend .u-f--h4;
+        }
       }
 
-      &:focus,
-      &:active {
-        background-color: #2d3239;
-        color: white;
+      button {
+
+        svg path {
+          fill: white;
+
+          @include lg {
+            fill: setcolor("primary");
+          }
+        }
+
+        span {
+          color: setcolor("primary");
+          display: none;
+
+          @include lg {
+            display: block;
+          }
+        }
       }
     }
   }

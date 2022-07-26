@@ -1007,17 +1007,24 @@ h5 {
   margin-right: 10px;
 }
 
-.o-grid--games {
+.gridGames {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: row;
-  gap: 0.9375rem;
+  gap: 0.3125rem;
+  width: 100%;
 }
-.o-grid--games-item {
+@media only screen and (min-width: 992px) {
+  .gridGames {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.9375rem;
+  }
+}
+.gridGames__item {
   position: relative;
   z-index: 0;
 }
-.o-grid--games-item > img {
+.gridGames__item > img {
   position: relative;
   top: 0;
   right: 0;
@@ -1027,7 +1034,7 @@ h5 {
   width: 100%;
   object-fit: contain;
 }
-.o-grid--games-item .o-grid--games-title {
+.gridGames__item-title {
   position: absolute;
   width: 100%;
   top: 0;
@@ -1038,30 +1045,30 @@ h5 {
   align-items: center;
   padding: 0.9375rem;
 }
-.o-grid--games-item .o-grid--games-title p {
+.gridGames__item-title p {
   margin: 0;
   opacity: 0;
   transition: all 0.3s ease;
 }
-.o-grid--games-item .o-grid--games-title .o-grid--games-fav.fav {
+.gridGames__item-title .is-favourite.fav {
   cursor: pointer;
 }
-.o-grid--games-item .o-grid--games-title .o-grid--games-fav.fav svg {
+.gridGames__item-title .is-favourite.fav svg {
   cursor: pointer;
 }
-.o-grid--games-item .o-grid--games-title .o-grid--games-fav.fav svg g path {
+.gridGames__item-title .is-favourite.fav svg g path {
   fill: #ff293e;
   opacity: 1;
 }
-.o-grid--games-item:hover .o-grid--games-title p {
+.gridGames__item:hover .gridGames__item-title p {
   opacity: 1;
   transition: all 0.3s ease;
 }
-.o-grid--games-item:hover .o-grid--games-hover {
+.gridGames__item:hover .gridGames__item-hover {
   opacity: 1;
   transition: all 0.3s ease;
 }
-.o-grid--games-item .o-grid--games-hover {
+.gridGames__item-hover {
   position: absolute;
   top: 0;
   left: 0;
@@ -1077,19 +1084,8 @@ h5 {
   opacity: 0;
   transition: all 0.3s ease;
 }
-.o-grid--games-item .o-grid--games-hover button {
+.gridGames__item-hover button {
   margin-bottom: 0.9375rem;
-}
-
-.m-casino--finder .o-grid--games {
-  grid-template-rows: auto;
-}
-
-.m-slots--finder .o-grid--games {
-  grid-template-rows: repeat(6, 14.0625rem);
-}
-.m-slots--finder .o-grid--games-item {
-  height: 14.0625rem;
 }
 
 body {

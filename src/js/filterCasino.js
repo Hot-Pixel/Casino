@@ -1,4 +1,4 @@
-const hearts = document.querySelectorAll(".o-grid--games-fav");
+const hearts = document.querySelectorAll(".is-favourite");
 
 const filterCasino = () => {
   hearts.forEach((heart) => {
@@ -12,7 +12,7 @@ const filterCasino = () => {
     });
   });
 
-  var mixerCasino = mixitup(".m-casino--finder", {
+  var mixerCasino = mixitup(".casinoFinder", {
     multifilter: {
       enable: true,
     },

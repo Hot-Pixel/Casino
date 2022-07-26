@@ -1,13 +1,13 @@
-<ul class="o-grid--games">
+<ul class="gridGames">
     <% let i = 1; %>
         <% data.forEach( e=> { %>
-            <li class="o-grid--games-item mix <%= e.general %> <%= e.proveedor %> <%= e.tipo %> <%= e.apuesta %> <%= e.lineas %> <%= e.juego %>">
+            <li class="gridGames__item mix <%= e.general %> <%= e.proveedor %> <%= e.tipo %> <%= e.apuesta %> <%= e.lineas %> <%= e.juego %>">
                 <img src="img/img-grid-casino-<%= i %>.jpg" alt="">
-                <div class="o-grid--games-title">
+                <div class="gridGames__item-title">
                     <p class="">
                         <%= e.title %>
                     </p>
-                    <div class="o-grid--games-fav">
+                    <div class="is-favourite">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
                             <g transform="translate(6.977 -2.109)">
                                 <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
@@ -19,9 +19,9 @@
                         </svg>
                     </div>
                 </div>
-                <div class="o-grid--games-hover">
+                <div class="gridGames__item-hover">
                     <a href="<%= e.link %>">
-                        <button class="u-btn--red u-btn--red-glow">
+                        <button class="btn__red btn__red--glow">
                             <span>¡JUEGA!</span>
                             <img src="img/icon-play-white.svg" alt="">
                         </button>

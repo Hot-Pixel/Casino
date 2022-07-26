@@ -2,13 +2,19 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.o-grid--games {
+.gridGames {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-auto-flow: row;
-  gap: rem(15);
+  gap: rem(5);
+  width: 100%;
 
-  &-item {
+  @include lg {
+    grid-template-columns: repeat(5, 1fr);
+    gap: rem(15);
+  }
+
+  &__item {
     position: relative;
     z-index: 0;
 
@@ -25,7 +31,7 @@
       object-fit: contain;
     }
 
-    .o-grid--games-title {
+    &-title {
       position: absolute;
       width: 100%;
       top: 0;
@@ -44,7 +50,7 @@
         transition: all 0.3s ease;
       }
 
-      .o-grid--games-fav.fav {
+      .is-favourite.fav {
         cursor: pointer;
 
         svg {
@@ -58,20 +64,20 @@
     }
 
     &:hover {
-      .o-grid--games-title {
+      .gridGames__item-title {
         p {
           opacity: 1;
           transition: all 0.3s ease;
         }
       }
 
-      .o-grid--games-hover {
+      .gridGames__item-hover {
         opacity: 1;
         transition: all 0.3s ease;
       }
     }
 
-    .o-grid--games-hover {
+    &-hover {
       position: absolute;
       top: 0;
       left: 0;
@@ -94,22 +100,6 @@
       button {
         margin-bottom: rem(15);
       }
-    }
-  }
-}
-
-.m-casino--finder {
-  .o-grid--games {
-    grid-template-rows: auto;
-  }
-}
-
-.m-slots--finder {
-  .o-grid--games {
-    grid-template-rows: repeat(6, rem(225));
-
-    &-item {
-      height: rem(225);
     }
   }
 }
