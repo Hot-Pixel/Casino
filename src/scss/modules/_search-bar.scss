@@ -7,11 +7,15 @@
     margin-top: rem(30);
     margin-bottom: rem(30);
 
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
 
     border-bottom: 2px solid setcolor('black', 'dark5');
+
+    @include lg {
+        display: flex;
+    }
 
     .search__input {
         width: 75%;

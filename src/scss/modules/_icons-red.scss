@@ -6,10 +6,16 @@
   @extend %margin_horizontal_main, %margin_bottom_small;
 
   display: grid;
-  grid-template-columns: 6fr 5fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title"
+    "icons";
 
   @include lg {
-    flex-direction: row;
+    grid-template-columns: 6fr 5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "icons title";
   }
 
   p {
@@ -26,7 +32,7 @@
       align-items: center;
 
       img {
-        width: rem(80);
+        width: 60px;
 
         @include lg {
           width: rem(170);
@@ -34,23 +40,40 @@
       }
 
       p {
-        @extend .u-f--h4;
-        max-width: 90%;
+        font-size: rem(12);
+        font-weight: 400;
+        max-width: 80%;
         text-align: center;
+        margin-top: rem(5);
 
         @include lg {
+          font-size: rem(18);
+          font-weight: 700;
           max-width: 70%;
+          margin-top: rem(10);
         }
       }
     }
 
     &--left {
+      grid-area: icons;
       justify-self: flex-start;
+
       display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      @include lg {
+        width: auto;
+        justify-self: flex-start;
+      }
     }
 
     &--right {
+      grid-area: title;
       justify-self: flex-end;
+
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -65,6 +88,7 @@
       p:first-of-type {
         @extend .u-f--h1;
       }
+
       p:last-of-type {
         @extend .u-f--h3;
         max-width: 100%;
@@ -75,8 +99,4 @@
       }
     }
   }
-
-
-
-
 }

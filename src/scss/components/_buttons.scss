@@ -88,6 +88,10 @@
 .btn__icon--right {
   position: relative;
 
+  span {
+    padding-right: rem(10);
+  }
+
   img {
     position: absolute;
     top: 50%;
