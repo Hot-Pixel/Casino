@@ -26,6 +26,16 @@
   }
 
   @include lg {
+    font-size: 12px;
+    padding: $buttons_padding_ipad;
+  }
+
+  @include xl {
+    font-size: 12px;
+    padding: $buttons_padding_desktop;
+  }
+
+  @include xxl {
     font-size: $buttons_font_size_desktop;
     padding: $buttons_padding_desktop;
   }

@@ -2,13 +2,13 @@
 @use "sass:map";
 
 $breakpoints: (
-  xs: 0px,
   sm: 576px,
   md: 768px,
   lg: 992px,
-  xl: 1200px,
-  xxl: 1600px,
-  xxxl: 1900px,
+  xl: 1280px,
+  xxl: 1440px,
+  xxxl: 1600px,
+  xxxxl: 1900px,
 );
 
 @mixin sm {
@@ -46,6 +46,13 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin xxxxl {
+  @media only screen and (min-width: #{map.get($breakpoints, 'xxxxl')}) {
+    @content;
+  }
+}
+
 
 
 // .title {

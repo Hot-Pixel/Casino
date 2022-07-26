@@ -23,9 +23,31 @@
   background-color: setcolor("black");
   border-radius: rem(5);
 
+  @include md {
+    padding: rem(30);
+  }
   @include lg {
+    padding: rem(15);
+  }
+  @include xxl {
     padding: rem(30);
     width: 50%;
+  }
+
+  &:first-of-type {
+    margin-bottom: rem(10);
+
+    @include lg {
+        margin-right: rem(5);
+        margin-bottom: 0;
+    }
+  }
+
+  &:last-of-type {
+
+    @include lg {
+      margin-left: rem(5);
+    }
   }
 
   &__navbar {
@@ -70,6 +92,10 @@
     grid-template-rows: auto auto auto auto;
     gap: 10px;
 
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto auto;
+    }
     @include lg {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto auto;

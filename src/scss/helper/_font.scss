@@ -34,6 +34,12 @@
         @include xxl {
             font-size: rem(list.nth($family, 5));
         }
+        @include xxxl {
+            font-size: rem(list.nth($family, 6));
+        }
+        @include xxxl {
+            font-size: rem(list.nth($family, 7));
+        }
     }
 }
 

@@ -2,6 +2,41 @@
 
 // Horizontal - main
 %margin_horizontal_main {
+  margin-left: var(--horizontal-main-xs);
+  margin-right: var(--horizontal-main-xs);
+  @include sm {
+    margin-left: var(--horizontal-main-sm);
+    margin-right: var(--horizontal-main-sm);
+  }
+  @include md {
+    margin-left: var(--horizontal-main-md);
+    margin-right: var(--horizontal-main-md);
+  }
+  @include lg {
+    margin-left: var(--horizontal-main-lg);
+    margin-right: var(--horizontal-main-lg);
+  }
+  @include xl {
+    margin-left: var(--horizontal-main-xl);
+    margin-right: var(--horizontal-main-xl);
+  }
+  @include xxl {
+    margin-left: var(--horizontal-main-xxl);
+    margin-right: var(--horizontal-main-xxl);
+  }
+  @include xxxl {
+    margin-left: var(--horizontal-main-xxxl);
+    margin-right: var(--horizontal-main-xxxl);
+  }
+  @include xxxxl {
+    max-width: $max_width;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+}
+
+%padding_horizontal_main {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
   @include sm {
@@ -25,6 +60,10 @@
     padding-right: var(--horizontal-main-xxl);
   }
   @include xxxl {
+    padding-left: var(--horizontal-main-xxxl);
+    padding-right: var(--horizontal-main-xxxl);
+  }
+  @include xxxxl {
     max-width: $max_width;
     padding-left: 0;
     padding-right: 0;

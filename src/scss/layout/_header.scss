@@ -97,6 +97,16 @@ body {
       width: rem(190);
       margin-left: rem(10);
 
+
+      @include xl {
+        width: rem(120);
+        margin-left: rem(5);
+      }
+      @include xxl {
+        width: rem(190);
+        margin-left: rem(10);
+      }
+
       &:first-of-type span {
         color: black;
       }
