@@ -6,14 +6,19 @@
     @extend .u-f--bold;
     display: inline-block;
     border-radius: rem(1000);
-    width: rem(30);
-    height: rem(30);
+    width: rem(25);
+    height: rem(25);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     margin: 0;
+
+    @include md {
+        width: rem(30);
+        height: rem(30);
+    }
 }
 .ruletaResult--red {
     background-color: setcolor('primary');
