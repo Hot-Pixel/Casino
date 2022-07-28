@@ -18,26 +18,19 @@
 @use '../components/buttons';
 @use '../components/breadcrumbs';
 @use '../components/splide-arrows-right';
+@use '../components/ruleta-result';
 
 // OBJECTS
 // Contenedores, wrappers o layouts
-@use '../objects/card';
+@use '../objects/grid-ruleta';
+@use '../objects/filter-basic';
 
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
 
 // MODULES
-@use '../modules/banner-w-carousel';
-@use '../modules/banner';
-@use '../modules/search-bar';
-@use '../modules/grid-half';
-@use '../modules/icons-red';
-@use '../modules/image-text';
-@use '../modules/grid-roulette';
-@use '../modules/carousel-bets';
-@use '../modules/carousel-jackpot';
-@use '../modules/text-block';
+@use '../modules/finder-ruleta';
 
 // HELPER
 // Clases de ayuda, textos, colores y demás

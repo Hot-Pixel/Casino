@@ -1,0 +1,26 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.ruletaResult {
+    @extend .u-f--bold;
+    display: inline-block;
+    border-radius: rem(1000);
+    width: rem(30);
+    height: rem(30);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+}
+.ruletaResult--red {
+    background-color: setcolor('primary');
+    border: 3px solid #ff7f8b;
+
+}
+.ruletaResult--black {
+    background-color: black;
+    border: 3px solid #717477;
+}

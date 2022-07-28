@@ -1,0 +1,85 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.gridRuleta {
+  @extend %margin_horizontal_main;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  column-gap: rem(30);
+
+  .card {
+    &__img img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      background-color: setcolor("black", "dark4");
+
+      width: 100%;
+      border-radius: 0 0 rem(10) rem(10);
+
+      &--top {
+        padding: rem(10) rem(20);
+        border-bottom: 1px solid setcolor("black", "dark2");
+
+        display: flex;
+        justify-content: space-between;
+
+        p:first-of-type {
+          @extend .u-f--h2, .u-f--bold;
+        }
+
+        svg {
+          align-self: flex-start;
+        }
+      }
+
+      &--bottom {
+        padding: rem(10) rem(20);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > div:first-of-type {
+          display: flex;
+          p {
+            margin-right: rem(10);
+          }
+        }
+
+        & > div:last-of-type {
+            display: flex;
+            p, span {
+                @extend .u-f--bold;
+                color: #a7a9ab;
+            }
+
+            p:first-of-type {
+                margin-right: rem(15);
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: rem(14);
+                }
+
+                span {
+                    margin: 0;
+                    margin-left: rem(5);
+                }
+            }
+        }
+      }
+    }
+  }
+}
