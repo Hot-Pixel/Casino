@@ -113,7 +113,14 @@
 
           button {
             @extend .u-f--h5;
-            padding: 12px 22px;
+            padding: 8px 15px;
+
+            @include lg {
+              padding: 10px 18px;
+            }
+            @include xxl {
+              padding: 12px 22px;
+            }
           }
         }
       }

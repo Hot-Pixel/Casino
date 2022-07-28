@@ -337,26 +337,26 @@
 }
 
 .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
-  font-size: 1rem;
+  font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 1280px) {
   .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
     font-size: 0.8125rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 992px) {
   .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
     font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
+    font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
@@ -408,6 +408,40 @@
   .u-f--h5, .casinoFilter__wrapper--left button,
 .casinoFilter__wrapper--left select, .casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game, .breadcrumbs span {
     font-size: 1rem;
+  }
+}
+
+.u-f--p, p, span {
+  font-size: 0.625rem;
+}
+@media only screen and (min-width: 768px) {
+  .u-f--p, p, span {
+    font-size: 0.6875rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .u-f--p, p, span {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .u-f--p, p, span {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .u-f--p, p, span {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .u-f--p, p, span {
+    font-size: 0.8125rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .u-f--p, p, span {
+    font-size: 0.875rem;
   }
 }
 
@@ -678,19 +712,8 @@ body {
 
 p, span {
   font-family: "Lexend";
-  font-size: 0.625rem;
   color: #ffffff;
   margin-bottom: 0.9375rem;
-}
-@media only screen and (min-width: 768px) {
-  p, span {
-    font-size: 0.75rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  p, span {
-    font-size: 0.875rem;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -77,7 +77,11 @@
       height: rem(120);
 
       @include lg {
-        padding: rem(30);
+        padding: rem(15);
+        height: auto;
+      }
+      @include xxl {
+        padding: rem(20);
         height: auto;
       }
 
@@ -90,12 +94,21 @@
         bottom: rem(-22);
         left: 50%;
         transform: translateX(-50%);
-        width: 85%;
+        width: 80%;
         height: rem(40);
 
-        @include lg {
+        @include md {
           width: 70%;
           height: rem(45);
+        }
+
+        img {
+          display: none;
+
+          @include sm {
+            display: inline-block;
+          }
+
         }
       }
     }

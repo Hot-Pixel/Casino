@@ -6,6 +6,9 @@ function carouselJackpot() {
     perMove: 1,
     gap: 15,
     breakpoints: {
+      1600: {
+        perPage: 3,
+      },
       1200: {
         perPage: 2,
         arrows: false,

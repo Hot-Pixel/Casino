@@ -336,36 +336,36 @@
   }
 }
 
-.u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
-  font-size: 1rem;
+.u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
-    font-size: 1rem;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
     font-size: 0.8125rem;
   }
 }
-@media only screen and (min-width: 1440px) {
-  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+@media only screen and (min-width: 992px) {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
     font-size: 0.875rem;
   }
 }
+@media only screen and (min-width: 1280px) {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+    font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+    font-size: 0.9375rem;
+  }
+}
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
     font-size: 1.125rem;
   }
 }
@@ -401,6 +401,40 @@
 @media only screen and (min-width: 1600px) {
   .u-f--h5, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
+  }
+}
+
+.u-f--p, p, span {
+  font-size: 0.625rem;
+}
+@media only screen and (min-width: 768px) {
+  .u-f--p, p, span {
+    font-size: 0.6875rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .u-f--p, p, span {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .u-f--p, p, span {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .u-f--p, p, span {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .u-f--p, p, span {
+    font-size: 0.8125rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .u-f--p, p, span {
+    font-size: 0.875rem;
   }
 }
 
@@ -700,19 +734,8 @@ body {
 
 p, span {
   font-family: "Lexend";
-  font-size: 0.625rem;
   color: #ffffff;
   margin-bottom: 0.9375rem;
-}
-@media only screen and (min-width: 768px) {
-  p, span {
-    font-size: 0.75rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  p, span {
-    font-size: 0.875rem;
-  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1756,15 +1779,24 @@ body {
   align-items: center;
 }
 .redIcons__wrapper-item img {
-  width: 60px;
+  width: 3.75rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
+  .redIcons__wrapper-item img {
+    width: 6.25rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .redIcons__wrapper-item img {
+    width: 9.375rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
   .redIcons__wrapper-item img {
     width: 10.625rem;
   }
 }
 .redIcons__wrapper-item p {
-  font-size: 0.75rem;
   font-weight: 400;
   max-width: 80%;
   text-align: center;
@@ -1772,7 +1804,6 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .redIcons__wrapper-item p {
-    font-size: 1.125rem;
     font-weight: 700;
     max-width: 70%;
     margin-top: 0.625rem;
@@ -1800,8 +1831,15 @@ body {
   flex-direction: column;
   text-align: center;
 }
+@media only screen and (min-width: 768px) {
+  .redIcons__wrapper--right {
+    justify-self: center;
+    margin-bottom: 1.875rem;
+  }
+}
 @media only screen and (min-width: 992px) {
   .redIcons__wrapper--right {
+    margin-bottom: 0;
     margin-left: 3.75rem;
     align-items: flex-start;
     text-align: left;
@@ -2003,7 +2041,13 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .jackpot__card-content {
-    padding: 1.875rem;
+    padding: 0.9375rem;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .jackpot__card-content {
+    padding: 1.25rem;
     height: auto;
   }
 }
@@ -2012,13 +2056,21 @@ body {
   bottom: -1.375rem;
   left: 50%;
   transform: translateX(-50%);
-  width: 85%;
+  width: 80%;
   height: 2.5rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .jackpot__card-content button {
     width: 70%;
     height: 2.8125rem;
+  }
+}
+.jackpot__card-content button img {
+  display: none;
+}
+@media only screen and (min-width: 576px) {
+  .jackpot__card-content button img {
+    display: inline-block;
   }
 }
 

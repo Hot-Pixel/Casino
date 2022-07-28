@@ -13,6 +13,11 @@ function carouselBets() {
         perPage: 3,
       },
       992: {
+        perPage: 2,
+        padding: { left: 0, right: 50 },
+        arrows: false,
+      },
+      767: {
         perPage: 1,
         padding: { left: 0, right: 50 },
         arrows: false,

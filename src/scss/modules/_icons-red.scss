@@ -32,22 +32,27 @@
       align-items: center;
 
       img {
-        width: 60px;
+        width: rem(60);
 
-        @include lg {
+        @include md {
+          width: rem(100);
+        }
+        @include xxxl {
+          width: rem(150);
+        }
+        @include xxxxl {
           width: rem(170);
         }
       }
 
       p {
-        font-size: rem(12);
+        @extend .u-f--h4;
         font-weight: 400;
         max-width: 80%;
         text-align: center;
         margin-top: rem(5);
 
         @include lg {
-          font-size: rem(18);
           font-weight: 700;
           max-width: 70%;
           margin-top: rem(10);
@@ -79,7 +84,12 @@
       flex-direction: column;
       text-align: center;
 
+      @include md {
+        justify-self: center;
+        margin-bottom: rem(30);
+      }
       @include lg {
+        margin-bottom: 0;
         margin-left: rem(60);
         align-items: flex-start;
         text-align: left;
