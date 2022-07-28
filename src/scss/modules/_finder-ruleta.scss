@@ -1,0 +1,8 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.ruletaFinder {
+  @extend %margin_horizontal_main;
+  @extend %margin_top_medium;
+}

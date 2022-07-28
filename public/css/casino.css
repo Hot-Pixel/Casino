@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .banner__wrapper-title p, .casinoFilter__wrapper--right .is-showing, .u-f--bold p, .casinoFilter__wrapper--right .is-showing p {
+.u-f--bold, .banner__wrapper-title p, .baseFilter__wrapper--right .is-showing, .u-f--bold p, .baseFilter__wrapper--right .is-showing p {
   font-weight: 700;
 }
 
@@ -336,77 +336,77 @@
   }
 }
 
-.u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
+.u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .casinoFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 1.125rem;
   }
 }
 
-.u-f--h5, .casinoFilter__wrapper--left button,
-.casinoFilter__wrapper--left select, .casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game, .breadcrumbs span {
+.u-f--h5, .baseFilter__wrapper--left button,
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .casinoFilter__wrapper--left button,
-.casinoFilter__wrapper--left select, .casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game, .breadcrumbs span {
+  .u-f--h5, .baseFilter__wrapper--left button,
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h5, .casinoFilter__wrapper--left button,
-.casinoFilter__wrapper--left select, .casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game, .breadcrumbs span {
+  .u-f--h5, .baseFilter__wrapper--left button,
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h5, .casinoFilter__wrapper--left button,
-.casinoFilter__wrapper--left select, .casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game, .breadcrumbs span {
+  .u-f--h5, .baseFilter__wrapper--left button,
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h5, .casinoFilter__wrapper--left button,
-.casinoFilter__wrapper--left select, .casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game, .breadcrumbs span {
+  .u-f--h5, .baseFilter__wrapper--left button,
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .casinoFilter__wrapper--left button,
-.casinoFilter__wrapper--left select, .casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game, .breadcrumbs span {
+  .u-f--h5, .baseFilter__wrapper--left button,
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .casinoFilter__wrapper--left button,
-.casinoFilter__wrapper--left select, .casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game, .breadcrumbs span {
+  .u-f--h5, .baseFilter__wrapper--left button,
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 1rem;
   }
 }
@@ -992,53 +992,53 @@ h5 {
   color: #a0a2a4;
 }
 
-.casinoFilter {
+.baseFilter {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0.9375rem;
 }
-.casinoFilter__wrapper {
+.baseFilter__wrapper {
   display: flex;
   align-items: center;
 }
-.casinoFilter__wrapper-game {
+.baseFilter__wrapper-game, .baseFilter__wrapper-cruppier {
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper-game {
+  .baseFilter__wrapper-game, .baseFilter__wrapper-cruppier {
     display: block;
   }
 }
-.casinoFilter__wrapper-game button:first-of-type {
+.baseFilter__wrapper-game button:first-of-type, .baseFilter__wrapper-cruppier button:first-of-type {
   border-radius: 0.3125rem 0 0 0.3125rem;
 }
-.casinoFilter__wrapper-game button:last-of-type {
+.baseFilter__wrapper-game button:last-of-type, .baseFilter__wrapper-cruppier button:last-of-type {
   border-radius: 0 0.3125rem 0.3125rem 0;
 }
-.casinoFilter__wrapper--left fieldset {
+.baseFilter__wrapper--left fieldset {
   border: none;
   outline: none;
   margin: 0;
   padding: 0;
 }
-.casinoFilter__wrapper--left button,
-.casinoFilter__wrapper--left select {
+.baseFilter__wrapper--left button,
+.baseFilter__wrapper--left select {
   background-color: #25292f;
   color: #d4d7da;
   font-weight: 700;
   border: none;
-  height: 2.5rem;
+  height: 3.125rem;
 }
-.casinoFilter__wrapper--left button {
+.baseFilter__wrapper--left button {
   margin: 0;
   padding: 12px;
 }
-.casinoFilter__wrapper--left button.mixitup-control-active {
+.baseFilter__wrapper--left button.mixitup-control-active {
   background-color: #2d3239;
   color: white;
 }
-.casinoFilter__wrapper--left select {
+.baseFilter__wrapper--left select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
@@ -1053,12 +1053,12 @@ h5 {
   padding: 0.625rem;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper--left select {
+  .baseFilter__wrapper--left select {
     padding: 1rem;
     margin-right: 2rem;
   }
 }
-.casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game {
+.baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider {
   margin-right: 0.3125rem;
   background-color: #25292f;
   color: #d4d7da;
@@ -1067,85 +1067,86 @@ h5 {
   border-radius: 0.3125rem;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper--left #casino-provider, .casinoFilter__wrapper--left #casino-game {
+  .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider {
     margin: 0 1.25rem;
   }
 }
-.casinoFilter__wrapper--left #casino-provider:focus, .casinoFilter__wrapper--left #casino-provider:active, .casinoFilter__wrapper--left #casino-game:focus, .casinoFilter__wrapper--left #casino-game:active {
+.baseFilter__wrapper--left #casino-provider:focus, .baseFilter__wrapper--left #casino-provider:active, .baseFilter__wrapper--left #casino-game:focus, .baseFilter__wrapper--left #casino-game:active, .baseFilter__wrapper--left #ruleta-cruppier:focus, .baseFilter__wrapper--left #ruleta-cruppier:active, .baseFilter__wrapper--left #ruleta-provider:focus, .baseFilter__wrapper--left #ruleta-provider:active {
   outline: none;
   border: none;
   background-color: #2d3239;
   color: white;
 }
-.casinoFilter__wrapper--left #casino-provider {
+.baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #ruleta-provider {
   margin-right: 0.3125rem;
   padding-right: 2rem;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper--left #casino-provider {
+  .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #ruleta-provider {
     margin: 0 1.25rem;
     padding-right: 2rem;
   }
 }
-.casinoFilter__wrapper--left #casino-game {
+.baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier {
   display: block;
   padding-right: 0.3125rem;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper--left #casino-game {
+  .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier {
     display: none;
   }
 }
-.casinoFilter__wrapper--left #casino-fav {
+.baseFilter__wrapper--left #base-fav {
   border-radius: 0.3125rem;
   display: flex;
   align-items: center;
 }
-.casinoFilter__wrapper--left #casino-fav svg {
+.baseFilter__wrapper--left #base-fav svg {
   margin-right: 0;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper--left #casino-fav svg {
+  .baseFilter__wrapper--left #base-fav svg {
     margin-right: 10px;
   }
 }
-.casinoFilter__wrapper--left #casino-fav span {
+.baseFilter__wrapper--left #base-fav span {
   margin: 0;
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper--left #casino-fav span {
+  .baseFilter__wrapper--left #base-fav span {
     display: block;
   }
 }
-.casinoFilter__wrapper--left #casino-fav.mixitup-control-active svg path {
+.baseFilter__wrapper--left #base-fav.mixitup-control-active svg path {
   fill: #ff293e;
 }
-.casinoFilter__wrapper--right .is-showing {
+.baseFilter__wrapper--right .is-showing {
   margin: 0;
   margin-right: 0.625rem;
   display: none;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper--right .is-showing {
+  .baseFilter__wrapper--right .is-showing {
     display: block;
   }
 }
-.casinoFilter__wrapper--right button svg path {
+.baseFilter__wrapper--right button svg path {
   fill: white;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper--right button svg path {
+  .baseFilter__wrapper--right button svg path {
     fill: #ff293e;
   }
 }
-.casinoFilter__wrapper--right button span {
+.baseFilter__wrapper--right button span {
   color: #ff293e;
   display: none;
+  margin: 0;
 }
 @media only screen and (min-width: 992px) {
-  .casinoFilter__wrapper--right button span {
-    display: block;
+  .baseFilter__wrapper--right button span {
+    display: inline-block;
   }
 }
 
