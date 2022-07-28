@@ -9,6 +9,8 @@
   &__grid {
     @extend %margin_horizontal_main;
     display: grid;
+    row-gap: rem(30);
+    align-items: flex-start;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
@@ -17,18 +19,18 @@
       "follow"
       "client";
 
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+      grid-template-areas:
+      "casino info"
+      "follow client";
+    }
+
     @include lg {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
       grid-template-areas: "casino info follow client";
-    }
-
-    &-item:not(:first-of-type) {
-      margin-top: rem(30);
-
-      @include lg {
-        margin-top: 0;
-      }
     }
 
     &-item:nth-of-type(1) {
@@ -37,7 +39,11 @@
 
     &-item:nth-of-type(2) {
       grid-area: "info";
-      justify-self: center;
+      justify-self: flex-start;
+
+      @include lg {
+        justify-self: center;
+      }
     }
 
     &-item:nth-of-type(3) {
