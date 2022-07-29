@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .baseFilter__wrapper--right .is-showing, .gridRuleta .card__content--top p:first-of-type, .gridRuleta .card__content--bottom > div:last-of-type p, .gridRuleta .card__content--bottom > div:last-of-type span, .ruletaResult, .u-f--bold p, .baseFilter__wrapper--right .is-showing p, .gridRuleta .card__content--top p:first-of-type p, .ruletaResult p {
+.u-f--bold, .menuPoker__btn span, .ruletaResult, .u-f--bold p, .menuPoker__btn span p, .ruletaResult p {
   font-weight: 700;
 }
 
@@ -268,36 +268,36 @@
   }
 }
 
-.u-f--h2, .gridRuleta .card__content--top p:first-of-type {
+.u-f--h2 {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2 {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2 {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2 {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2 {
     font-size: 2rem;
   }
 }
@@ -336,77 +336,70 @@
   }
 }
 
-.u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
+.u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 1.125rem;
   }
 }
 
-.u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+.u-f--h5, .breadcrumbs span {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
@@ -519,55 +512,6 @@
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
-    margin: 0 auto;
-  }
-}
-
-.ruletaFinder {
-  padding-left: var(--horizontal-main-xs);
-  padding-right: var(--horizontal-main-xs);
-}
-@media only screen and (min-width: 576px) {
-  .ruletaFinder {
-    padding-left: var(--horizontal-main-sm);
-    padding-right: var(--horizontal-main-sm);
-  }
-}
-@media only screen and (min-width: 768px) {
-  .ruletaFinder {
-    padding-left: var(--horizontal-main-md);
-    padding-right: var(--horizontal-main-md);
-  }
-}
-@media only screen and (min-width: 992px) {
-  .ruletaFinder {
-    padding-left: var(--horizontal-main-lg);
-    padding-right: var(--horizontal-main-lg);
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .ruletaFinder {
-    padding-left: var(--horizontal-main-xl);
-    padding-right: var(--horizontal-main-xl);
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .ruletaFinder {
-    padding-left: var(--horizontal-main-xxl);
-    padding-right: var(--horizontal-main-xxl);
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .ruletaFinder {
-    padding-left: var(--horizontal-main-xxxl);
-    padding-right: var(--horizontal-main-xxxl);
-  }
-}
-@media only screen and (min-width: 1900px) {
-  .ruletaFinder {
-    max-width: 100rem;
-    padding-left: 0;
-    padding-right: 0;
     margin: 0 auto;
   }
 }
@@ -1057,252 +1001,64 @@ h5 {
   border: 3px solid #717477;
 }
 
-.gridRuleta {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: auto;
-  grid-auto-flow: row;
-  width: 100%;
-  row-gap: 0.625rem;
+.menuPoker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5625rem;
+  background-color: #1c2026;
+  box-shadow: 0.0625rem 1.0625rem 1.375rem 0.125rem rgb(0, 0, 0);
+  border-top: 1px solid #3b424b;
 }
-@media only screen and (min-width: 768px) {
-  .gridRuleta {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .gridRuleta {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.875rem;
-  }
-}
-.gridRuleta .card__img {
-  width: 100%;
-}
-.gridRuleta .card__img img {
-  width: 100%;
-  object-fit: cover;
-}
-.gridRuleta .card__content {
+.menuPoker__btn {
+  position: relative;
   display: flex;
   align-items: center;
-  flex-direction: column;
-  background-color: #2d3239;
-  border-radius: 0 0 0.3125rem 0.3125rem;
+  background-color: transparent;
+  padding: 0 4.375rem;
+  cursor: pointer;
 }
-@media only screen and (min-width: 768px) {
-  .gridRuleta .card__content {
-    border-radius: 0 0 0.625rem 0.625rem;
-  }
+.menuPoker__btn:not(:last-of-type) {
+  border-right: 1px solid #3b424b;
 }
-.gridRuleta .card__content--top {
-  width: 100%;
-  padding: 0.625rem 1.25rem;
-  border-bottom: 1px solid #1c2026;
-  display: flex;
-  justify-content: space-between;
-}
-.gridRuleta .card__content--top p:last-of-type {
-  margin: 0;
-}
-.gridRuleta .card__content--top svg {
-  align-self: flex-start;
-}
-.gridRuleta .card__content--bottom {
-  padding: 0.625rem 1.25rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.gridRuleta .card__content--bottom > div:first-of-type {
-  display: flex;
-}
-.gridRuleta .card__content--bottom > div:first-of-type p {
-  margin-right: 0.3125rem;
-}
-@media only screen and (min-width: 768px) {
-  .gridRuleta .card__content--bottom > div:first-of-type p {
-    margin-right: 0.625rem;
-  }
-}
-.gridRuleta .card__content--bottom > div:last-of-type {
-  display: flex;
-}
-.gridRuleta .card__content--bottom > div:last-of-type p, .gridRuleta .card__content--bottom > div:last-of-type span {
-  color: #a7a9ab;
-  margin: 0;
-}
-.gridRuleta .card__content--bottom > div:last-of-type p:first-of-type {
-  margin-right: 0.9375rem;
-}
-.gridRuleta .card__content--bottom > div:last-of-type p {
-  display: flex;
-  align-items: center;
-}
-.gridRuleta .card__content--bottom > div:last-of-type p img {
-  height: 0.875rem;
-}
-.gridRuleta .card__content--bottom > div:last-of-type p span {
-  margin-left: 0.3125rem;
-}
-
-.baseFilter {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.9375rem;
-}
-.baseFilter__wrapper {
-  display: flex;
-  align-items: center;
-}
-.baseFilter__wrapper-game, .baseFilter__wrapper-cruppier {
-  display: none;
-}
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper-game, .baseFilter__wrapper-cruppier {
-    display: block;
-  }
-}
-.baseFilter__wrapper-game button:first-of-type, .baseFilter__wrapper-cruppier button:first-of-type {
-  border-radius: 0.3125rem 0 0 0.3125rem;
-}
-.baseFilter__wrapper-game button:last-of-type, .baseFilter__wrapper-cruppier button:last-of-type {
-  border-radius: 0 0.3125rem 0.3125rem 0;
-}
-.baseFilter__wrapper--left fieldset {
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 0;
-}
-.baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select {
-  background-color: #25292f;
-  color: #d4d7da;
-  font-weight: 700;
-  border: none;
-  height: 3.125rem;
-}
-.baseFilter__wrapper--left button {
-  margin: 0;
-  padding: 12px;
-}
-.baseFilter__wrapper--left button.mixitup-control-active {
-  background-color: #2d3239;
-  color: white;
-}
-.baseFilter__wrapper--left select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: "";
-  background: transparent;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.928' height='6.352' viewBox='0 0 10.928 6.352'%3E%3Cpath d='M12.474,42.648,8.615,46.506a.27.27,0,0,1-.381,0h0L4.375,42.648' transform='translate(-2.961 -41.234)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position-x: 90%;
-  background-position-y: 50%;
-  border: 1px solid #dfdfdf;
-  border-radius: 0.3125rem;
-  padding: 0.625rem;
-}
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper--left select {
-    padding: 1rem;
-    margin-right: 2rem;
-  }
-}
-.baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider {
-  margin-right: 0.3125rem;
-  background-color: #25292f;
-  color: #d4d7da;
-  font-weight: 700;
-  border: none;
-  border-radius: 0.3125rem;
-}
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider {
-    margin: 0 1.25rem;
-  }
-}
-.baseFilter__wrapper--left #casino-provider:focus, .baseFilter__wrapper--left #casino-provider:active, .baseFilter__wrapper--left #casino-game:focus, .baseFilter__wrapper--left #casino-game:active, .baseFilter__wrapper--left #ruleta-cruppier:focus, .baseFilter__wrapper--left #ruleta-cruppier:active, .baseFilter__wrapper--left #ruleta-provider:focus, .baseFilter__wrapper--left #ruleta-provider:active {
-  outline: none;
-  border: none;
-  background-color: #2d3239;
-  color: white;
-}
-.baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #ruleta-provider {
-  margin-right: 0.3125rem;
-  padding-right: 2rem;
-}
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #ruleta-provider {
-    margin: 0 1.25rem;
-    padding-right: 2rem;
-  }
-}
-.baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier {
-  display: block;
-  padding-right: 0.3125rem;
-}
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier {
-    display: none;
-  }
-}
-.baseFilter__wrapper--left #base-fav {
-  border-radius: 0.3125rem;
-  display: flex;
-  align-items: center;
-}
-.baseFilter__wrapper--left #base-fav svg {
-  margin-right: 0;
-}
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper--left #base-fav svg {
-    margin-right: 10px;
-  }
-}
-.baseFilter__wrapper--left #base-fav span {
-  margin: 0;
-  display: none;
-}
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper--left #base-fav span {
-    display: block;
-  }
-}
-.baseFilter__wrapper--left #base-fav.mixitup-control-active svg path {
-  fill: #ff293e;
-}
-.baseFilter__wrapper--right .is-showing {
-  margin: 0;
-  margin-right: 0.625rem;
-  display: none;
-}
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper--right .is-showing {
-    display: block;
-  }
-}
-.baseFilter__wrapper--right button svg path {
-  fill: white;
-}
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper--right button svg path {
-    fill: #ff293e;
-  }
-}
-.baseFilter__wrapper--right button span {
+.menuPoker__btn:hover span, .menuPoker__btn:active span, .menuPoker__btn:focus span, .menuPoker__btn.is-active span {
   color: #ff293e;
-  display: none;
-  margin: 0;
+  transition: all 0.5s ease;
 }
-@media only screen and (min-width: 992px) {
-  .baseFilter__wrapper--right button span {
-    display: inline-block;
-  }
+.menuPoker__btn:hover img, .menuPoker__btn:active img, .menuPoker__btn:focus img, .menuPoker__btn.is-active img {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.menuPoker__btn:hover svg g path,
+.menuPoker__btn:hover svg g line,
+.menuPoker__btn:hover svg g rect,
+.menuPoker__btn:hover svg g circle, .menuPoker__btn:active svg g path,
+.menuPoker__btn:active svg g line,
+.menuPoker__btn:active svg g rect,
+.menuPoker__btn:active svg g circle, .menuPoker__btn:focus svg g path,
+.menuPoker__btn:focus svg g line,
+.menuPoker__btn:focus svg g rect,
+.menuPoker__btn:focus svg g circle, .menuPoker__btn.is-active svg g path,
+.menuPoker__btn.is-active svg g line,
+.menuPoker__btn.is-active svg g rect,
+.menuPoker__btn.is-active svg g circle {
+  stroke: #ff293e;
+  transition: all 0.5s ease;
+}
+.menuPoker__btn svg {
+  height: 1.625rem;
+}
+.menuPoker__btn span {
+  color: #a0a2a4;
+  margin: 0;
+  padding-left: 0.625rem;
+}
+.menuPoker__btn img {
+  position: absolute;
+  bottom: -1.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
 }
 
 body {

@@ -1,0 +1,72 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.menuPoker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: rem(25);
+  background-color: setcolor("black", "dark2");
+  box-shadow: rem(1) rem(17) rem(22) rem(2) rgba(0, 0, 0, 1);
+  border-top: 1px solid setcolor("black", "dark5");
+
+  &__btn {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background-color: transparent;
+    padding: 0 rem(70);
+
+    cursor: pointer;
+
+    &:not(:last-of-type) {
+      border-right: 1px solid setcolor("black", "dark5");
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &.is-active {
+      span {
+        color: setcolor("primary");
+        transition: all 0.5s ease;
+      }
+
+      img {
+        opacity: 1;
+        transition: all 0.5s ease;
+      }
+
+      svg g path,
+      svg g line,
+      svg g rect,
+      svg g circle {
+        stroke: setcolor("primary");
+        transition: all 0.5s ease;
+      }
+    }
+
+    svg {
+        height: rem(26);
+      }
+
+    span {
+      @extend .u-f--bold;
+      color: #a0a2a4;
+      margin: 0;
+      padding-left: rem(10);
+    }
+
+    img {
+        position: absolute;
+        bottom: rem(-30);
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+  }
+}

@@ -7,12 +7,16 @@ import filterPromo from "./filterPromo.js";
 import filterSlotsAll from "./filterSlotsAll.js";
 
 const carouselBannerExist = document.getElementsByClassName("bannerCarousel");
-const carouselJackpotExist = document.getElementsByClassName("jackpot__carousel");
-const carouselBetsExist = document.getElementsByClassName("carouselBets__carousel");
+const carouselJackpotExist =
+  document.getElementsByClassName("jackpot__carousel");
+const carouselBetsExist = document.getElementsByClassName(
+  "carouselBets__carousel"
+);
 const gridHalfExist = document.getElementsByClassName("gridHalf");
 const casinoFinderExist = document.getElementsByClassName("casinoFinder");
 const slotsAllFinderExist = document.getElementsByClassName("m-slots--finder");
 const promoFinderExist = document.getElementsByClassName("finder__promo");
+const menuPokerExist = document.getElementsByClassName("menuPoker");
 
 window.addEventListener("load", () => {
   if (carouselBannerExist.length > 0) {
@@ -36,6 +40,19 @@ window.addEventListener("load", () => {
   if (promoFinderExist.length > 0) {
     filterPromo();
   }
+  if (menuPokerExist.length > 0) {
+    menuPoker();
+  }
 });
 
-
+function menuPoker() {
+  const menuBtns = document.querySelectorAll(".menuPoker__btn");
+  menuBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      menuBtns.forEach((btn) => {
+        btn.classList.remove("is-active");
+      });
+      e.currentTarget.classList.toggle("is-active");
+    });
+  });
+}

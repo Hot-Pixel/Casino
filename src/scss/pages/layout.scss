@@ -22,15 +22,14 @@
 
 // OBJECTS
 // Contenedores, wrappers o layouts
-@use '../objects/grid-ruleta';
-@use '../objects/filter-base';
+@use '../objects/menu-poker';
 
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
 
 // MODULES
-@use '../modules/finder-ruleta';
+// @use '../modules/finder-ruleta';
 
 // HELPER
 // Clases de ayuda, textos, colores y demás

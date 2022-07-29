@@ -11,10 +11,11 @@ import autoprefixer from "gulp-autoprefixer";
 import cleanCSS from "gulp-clean-css";
 import rename from "gulp-rename";
 import ejsCompiler from "gulp-ejs";
-import rollup from "gulp-better-rollup";
-import babel from "rollup-plugin-babel";
-import resolve from "rollup-plugin-node-resolve";
+// import rollup from "rollup";
+import * as rollup from 'rollup';
+import { babel } from "@rollup/plugin-babel";
 import eslint from "@rollup/plugin-eslint";
+import { terser } from "rollup-plugin-terser";
 
 const paths = {
   scss: {
@@ -59,30 +60,38 @@ gulp.task("minCss", async () => {
     .pipe(gulp.dest(paths.css.dest));
 });
 
-gulp.task('bundle', () => {
-  return gulp.src('src/js/main.js')
-    .pipe(rollup({
-        plugins: [babel(), resolve()],
-
-    }, 'umd'))
-    .pipe(gulp.dest('public/js/'));
-});
-
 /* Gulp task to Babel and Uglify the Javascript Code */
-// gulp.task("compileJs", async () => {
-//   gulp
-//     .src("src/js/main.js")
-//     .pipe(
-//       babel({
-//         presets: ["@babel/preset-env"],
-//       })
-//     )
-//     .pipe(rename("bundle.js"))
-//     .pipe(gulp.dest("src/js"))
-//     .pipe(uglify())
-//     .pipe(rename("bundle.min.js"))
-//     .pipe(gulp.dest("src/js"));
-// });
+gulp.task("build", async () => {
+  const bundleJs = await rollup.rollup({
+    input: paths.scripts.src,
+    plugins: [
+      babel({
+        babelHelpers: "bundled"
+      }),
+      // eslint({
+      //   throwOnError: true,
+      // }),
+    ],
+  });
+
+  await bundleJs.write({
+    file: `${paths.scripts.dest}script.js`,
+    format: "es",
+    name: "base",
+    sourcemap: true,
+    plugins: [
+    ],
+  });
+
+  await bundleJs.write({
+    file: `${paths.scripts.dest}script.min.js`,
+    format: "es",
+    name: "minified",
+    plugins: [
+      terser(),
+    ],
+  });
+});
 
 /* Gulp task to minify images */
 gulp.task("imageMin", async () => {
@@ -106,7 +115,10 @@ gulp.task("watch", async () => {
     proxy: "http://localhost:3000",
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
-  watch(paths.scripts.watcher).on("change",gulp.series("bundle", server.reload));
+  watch(paths.scripts.watcher).on(
+    "change",
+    gulp.series("build", server.reload)
+  );
   watch(paths.images.watcher).on("add", gulp.series("imageMin", server.reload));
   watch("./**/*.ejs").on("change", server.reload);
 });
