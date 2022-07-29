@@ -21,7 +21,6 @@
 @use '../components/ruleta-result';
 
 // OBJECTS
-// Contenedores, wrappers o layouts
 @use '../objects/menu-poker';
 
 //LAYOUT
@@ -29,7 +28,7 @@
 @use '../layout/footer';
 
 // MODULES
-// @use '../modules/finder-ruleta';
+@use '../modules/one-col';
 
 // HELPER
 // Clases de ayuda, textos, colores y demás

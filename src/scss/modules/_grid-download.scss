@@ -1,0 +1,96 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.gridDownload {
+  @extend %margin_horizontal_main;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: rem(30);
+
+  .card {
+    border-radius: rem(10);
+
+    &__top {
+      position: relative;
+      background-color: setcolor("black", "dark2");
+      border-radius: rem(10) rem(10) 0 0;
+      height: 30vh;
+
+       img {
+        position: absolute;
+        top: rem(-80);
+        left: 50%;
+        transform: translateX(-50%);
+       }
+    }
+
+    &__bottom {
+      position: relative;
+      background-color: setcolor("black");
+      border-radius: 0 0 rem(10) rem(10);
+      height: 35vh;
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        padding-top: rem(60);
+        max-width: 70%;
+        text-align: center;
+        margin: 0 auto;
+
+        p:first-of-type {
+          @extend .u-f--h2, .u-f--bold;
+        }
+        p:nth-of-type(2) {
+          @extend .u-f--h4, .u-f--bold;
+          color: #a7a9ab;
+        }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            @extend .u-f--bold;
+            font-size: rem(12);
+            color: setcolor("primary");
+            margin: 0;
+            padding-right: rem(5);
+          }
+
+          img {
+            height: rem(12);
+          }
+        }
+      }
+
+      &-btns {
+        position: absolute;
+        bottom: rem(-30);
+        left: 0;
+
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        button {
+          width: 40%;
+          height: rem(65);
+
+          img {
+            width: rem(35);
+            height: rem(35);
+          }
+        }
+
+        button:first-of-type {
+          margin-bottom: rem(10);
+        }
+      }
+    }
+  }
+}

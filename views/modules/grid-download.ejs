@@ -1,0 +1,25 @@
+<section class="card">
+    <div class="card__top">
+        <img src="img/<%= data.img %>.png" alt="">
+    </div>
+    <div class="card__bottom">
+        <div class="card__bottom-content">
+            <p><%= data.title %></p>
+            <p><%= data.body %></p>
+            <a href="<%= data.link %>" class="">
+                <span>MÁS INFORMACIÓN</span>
+                <img src="img/icon-arrow-circle-red.svg" alt="">
+            </a>
+        </div>
+        <div class="card__bottom-btns">
+            <button class="btn__red btn__icon--right">
+                <span><%= data.btn[0].txt %></span>
+                <img src="img/<%= data.btn[0].icon %>.svg" alt="">
+            </button>
+            <button class="btn__red btn__icon--right">
+                <span><%= data.btn[1].txt %></span>
+                <img src="img/<%= data.btn[1].icon %>.svg" alt="">
+            </button>
+        </div>
+    </div>
+</section>
