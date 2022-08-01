@@ -58,6 +58,10 @@ body {
       margin-bottom: rem(10);
 
       @include lg {
+        width: rem(130);
+        margin-right: rem(15);
+      }
+      @include xl {
         margin-right: rem(30);
         width: auto;
       }
@@ -98,6 +102,10 @@ body {
       margin-left: rem(10);
 
 
+      @include lg {
+        width: rem(100);
+        margin-left: rem(5);
+      }
       @include xl {
         width: rem(120);
         margin-left: rem(5);
@@ -115,22 +123,16 @@ body {
 }
 
 .header__mobile {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 
   @include lg {
     display: none;
   }
 
   &-wrapper {
+    z-index: 10;
+    left: 0;
     background-color: setcolor("black");
 
     &--logo {
@@ -144,6 +146,10 @@ body {
   }
 
   &-wrapper:first-of-type {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
     box-shadow: 0px rem(5) rem(45) rem(30) rgba(0,0,0,1);
     display: flex;
     justify-content: space-between;
@@ -156,6 +162,10 @@ body {
   }
 
   &-wrapper:last-of-type {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
     box-shadow: 0px rem(-5) rem(45) rem(30) rgba(0,0,0,1);
     display: flex;
     justify-content: space-between;

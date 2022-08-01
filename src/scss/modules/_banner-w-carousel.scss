@@ -61,17 +61,26 @@
       align-items: center;
       justify-content: space-between;
 
-      padding: rem(30) rem(10);
-      background-color: setcolor("black");
-
       @include lg {
-        padding: rem(60);
         align-items: flex-start;
+      }
+
+      & > div {
+        padding: rem(30) rem(10);
+        background-color: setcolor("black");
+        overflow: hidden;
+        border-radius: 0 0 5px 5px;
+        margin-bottom: 23px;
+
+        @include lg {
+          padding: rem(60);
+          border-radius: 0;
+        }
       }
 
       button {
         position: absolute;
-        bottom: rem(-22);
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
 
@@ -105,7 +114,7 @@
   }
 
   .splide__arrow {
-    top: calc(100% - 25px);
+    top: calc(100% - 48px);
 
     @include lg {
       top: 50%;

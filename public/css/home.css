@@ -1112,6 +1112,12 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .header__wrapper-logo {
+    width: 8.125rem;
+    margin-right: 0.9375rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .header__wrapper-logo {
     margin-right: 1.875rem;
     width: auto;
   }
@@ -1149,6 +1155,12 @@ body {
   width: 11.875rem;
   margin-left: 0.625rem;
 }
+@media only screen and (min-width: 992px) {
+  .header__wrapper button {
+    width: 6.25rem;
+    margin-left: 0.3125rem;
+  }
+}
 @media only screen and (min-width: 1280px) {
   .header__wrapper button {
     width: 7.5rem;
@@ -1166,15 +1178,8 @@ body {
 }
 
 .header__mobile {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 @media only screen and (min-width: 992px) {
   .header__mobile {
@@ -1182,6 +1187,8 @@ body {
   }
 }
 .header__mobile-wrapper {
+  z-index: 10;
+  left: 0;
   background-color: #25292f;
 }
 .header__mobile-wrapper--logo {
@@ -1192,6 +1199,9 @@ body {
   object-fit: contain;
 }
 .header__mobile-wrapper:first-of-type {
+  position: fixed;
+  top: 0;
+  width: 100%;
   box-shadow: 0px 0.3125rem 2.8125rem 1.875rem rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
@@ -1200,6 +1210,9 @@ body {
   padding: 0.625rem 1.25rem;
 }
 .header__mobile-wrapper:last-of-type {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   box-shadow: 0px -0.3125rem 2.8125rem 1.875rem rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
@@ -1471,18 +1484,28 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 1.875rem 0.625rem;
-  background-color: #25292f;
 }
 @media only screen and (min-width: 992px) {
   .bannerCarousel__slide--left {
-    padding: 3.75rem;
     align-items: flex-start;
+  }
+}
+.bannerCarousel__slide--left > div {
+  padding: 1.875rem 0.625rem;
+  background-color: #25292f;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 23px;
+}
+@media only screen and (min-width: 992px) {
+  .bannerCarousel__slide--left > div {
+    padding: 3.75rem;
+    border-radius: 0;
   }
 }
 .bannerCarousel__slide--left button {
   position: absolute;
-  bottom: -1.375rem;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   height: 2.8125rem;
@@ -1510,7 +1533,7 @@ body {
   }
 }
 .bannerCarousel .splide__arrow {
-  top: calc(100% - 25px);
+  top: calc(100% - 48px);
 }
 @media only screen and (min-width: 992px) {
   .bannerCarousel .splide__arrow {
