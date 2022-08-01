@@ -33,7 +33,7 @@
       }
 
       p:first-of-type {
-        @extend .u-f--h2, .u-f--bold;
+        @extend .u-f--h1, .u-f--bold;
         text-align: center;
 
         @include lg {

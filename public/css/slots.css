@@ -234,70 +234,70 @@
 }
 
 /* Font Size Class */
-.u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
+.u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
+.u-f--h2, .search .search__input input, .o-card--title {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
+  .u-f--h2, .search .search__input input, .o-card--title {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
+  .u-f--h2, .search .search__input input, .o-card--title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
+  .u-f--h2, .search .search__input input, .o-card--title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
+  .u-f--h2, .search .search__input input, .o-card--title {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
+  .u-f--h2, .search .search__input input, .o-card--title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .search .search__input input, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title {
+  .u-f--h2, .search .search__input input, .o-card--title {
     font-size: 2rem;
   }
 }

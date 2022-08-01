@@ -1,0 +1,7 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.faq {
+    @extend %margin_horizontal_main;
+}

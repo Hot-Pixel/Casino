@@ -1,0 +1,72 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.gridPc {
+  @extend %margin_horizontal_main;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: rem(10);
+
+  &__container {
+    position: relative;
+    background-color: setcolor("black", "dark2");
+    border-radius: rem(10);
+    padding: rem(60);
+
+    p {
+      margin: 0;
+    }
+
+    & > img {
+      object-fit: contain;
+      width: 100%;
+    }
+
+    &-title {
+      @extend .u-f--bold, .u-f--h2;
+      padding-bottom: rem(40);
+    }
+
+    &-step {
+      display: flex;
+      align-items: center;
+
+      padding-bottom: rem(15);
+
+      & > p:first-of-type {
+        @extend .u-f--bold, .u-f--h3;
+        width: rem(50);
+        height: rem(50);
+        background-color: setcolor("black", "dark5");
+        border: rem(6) solid setcolor("black", "dark4");
+        border-radius: rem(100);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: rem(15);
+      }
+
+      & > div {
+        p:first-of-type {
+          @extend .u-f--bold, .u-f--h3;
+        }
+      }
+    }
+
+    &-body {
+      color: #a4a5a8;
+    }
+
+    button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: rem(-35);
+        height: rem(70);
+        width: 70%;
+    }
+  }
+}
