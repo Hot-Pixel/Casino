@@ -22,7 +22,10 @@
                         </button>
                     </div>
                     <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
-                        <img src="<%= e.img %>" alt="">
+                        <picture>
+                            <source media="(min-width: 992px)" srcset="img/img-banner-home.png">
+                            <img src="img/img-banner-home-mobile.png" alt="">
+                        </picture>
                     </div>
                 </li>
             <% }) %>

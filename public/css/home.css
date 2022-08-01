@@ -545,31 +545,31 @@
   }
 }
 
-.footer {
+.bannerCarousel, .footer {
   padding-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer {
+  .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer {
+  .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .footer {
+  .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer {
+  .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer {
+  .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-xxl);
   }
 }
@@ -1487,6 +1487,8 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .bannerCarousel__slide--left {
+    padding: 3.75rem;
+    background-color: #25292f;
     align-items: flex-start;
   }
 }
@@ -1499,7 +1501,6 @@ body {
 }
 @media only screen and (min-width: 992px) {
   .bannerCarousel__slide--left > div {
-    padding: 3.75rem;
     border-radius: 0;
   }
 }
@@ -1526,6 +1527,7 @@ body {
 }
 .bannerCarousel__slide--right {
   height: 15.625rem;
+  background-color: #25292f;
 }
 @media only screen and (min-width: 992px) {
   .bannerCarousel__slide--right {

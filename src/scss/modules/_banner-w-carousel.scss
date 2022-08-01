@@ -4,6 +4,7 @@
 
 .bannerCarousel {
   @extend %margin_horizontal_main;
+  @extend %margin_top_medium;
 
   &__slide {
     display: flex;
@@ -62,6 +63,8 @@
       justify-content: space-between;
 
       @include lg {
+        padding: rem(60);
+        background-color: setcolor("black");
         align-items: flex-start;
       }
 
@@ -73,7 +76,6 @@
         margin-bottom: 23px;
 
         @include lg {
-          padding: rem(60);
           border-radius: 0;
         }
       }
@@ -106,6 +108,7 @@
 
     &--right {
       height: rem(250);
+      background-color: setcolor("black");
 
       @include lg {
         height: rem(470);
