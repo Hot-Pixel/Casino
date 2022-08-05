@@ -229,109 +229,109 @@
   font-weight: 500;
 }
 
-.u-f--bold, .gridPoker .card__content-title, .gridPoker .card__content-row p:last-of-type span:last-of-type, .menuPoker__btn span, .ruletaResult, .u-f--bold p, .gridPoker .card__content-title p, .gridPoker .card__content-row p:last-of-type span:last-of-type p, .menuPoker__btn span p, .ruletaResult p {
+.u-f--bold, .banner__wrapper-title p, .menuPoker__btn span, .ruletaResult, .u-f--bold p, .menuPoker__btn span p, .ruletaResult p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1 {
+.u-f--h1, .banner__wrapper-title p {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1 {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h1 {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1 {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1 {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1 {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1 {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2, .gridPoker .card__content-title {
+.u-f--h2 {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .gridPoker .card__content-title {
+  .u-f--h2 {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2, .gridPoker .card__content-title {
+  .u-f--h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .gridPoker .card__content-title {
+  .u-f--h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .gridPoker .card__content-title {
+  .u-f--h2 {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .gridPoker .card__content-title {
+  .u-f--h2 {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .gridPoker .card__content-title {
+  .u-f--h2 {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type {
+.u-f--h3 {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type {
+  .u-f--h3 {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type {
+  .u-f--h3 {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type {
+  .u-f--h3 {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type {
+  .u-f--h3 {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type {
+  .u-f--h3 {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type {
+  .u-f--h3 {
     font-size: 1.5rem;
   }
 }
@@ -467,48 +467,48 @@
   }
 }
 
-.gridPoker, .footer__grid, .footer__brands {
+.banner__wrapper, .footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .gridPoker, .footer__grid, .footer__brands {
+  .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .gridPoker, .footer__grid, .footer__brands {
+  .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .gridPoker, .footer__grid, .footer__brands {
+  .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .gridPoker, .footer__grid, .footer__brands {
+  .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .gridPoker, .footer__grid, .footer__brands {
+  .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxl);
     margin-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .gridPoker, .footer__grid, .footer__brands {
+  .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxxl);
     margin-right: var(--horizontal-main-xxxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .gridPoker, .footer__grid, .footer__brands {
+  .banner__wrapper, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -1437,62 +1437,56 @@ body {
   text-align: center;
 }
 
-.gridPoker {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-flow: row;
-  row-gap: 9.375rem;
-  column-gap: 1.875rem;
-  margin-top: 9.375rem;
-}
-.gridPoker .card {
+.banner {
   position: relative;
-  background-color: #1c2026;
-  padding: 10rem 3.125rem 3.125rem 3.125rem;
-  border-radius: 0.625rem;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
 }
-.gridPoker .card__img {
-  position: absolute;
-  top: -7.9375rem;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 15.9375rem;
-  width: 15.9375rem;
-  background-color: #13171d;
-  border-radius: 62.5rem;
-  border: 1.25rem solid #25292f;
+.banner__bg {
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (min-width: 992px) {
+  .banner__bg {
+    display: block;
+  }
+}
+.banner__wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
-.gridPoker .card__img img {
-  width: 80%;
+@media only screen and (min-width: 992px) {
+  .banner__wrapper {
+    position: absolute;
+    top: 0;
+    left: 9.375rem;
+    z-index: 2;
+  }
 }
-.gridPoker .card__content-title {
-  text-align: center;
-  margin-bottom: 1.875rem;
-}
-.gridPoker .card__content-table hr {
-  margin: 0.625rem 0;
-  border-color: #3b424b;
-}
-.gridPoker .card__content-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.gridPoker .card__content-row p,
-.gridPoker .card__content-row span {
+.banner__wrapper-title p {
   margin: 0;
+  line-height: 1em;
 }
-.gridPoker .card__content-row p span:first-of-type {
-  margin-right: 0.625rem;
+.banner__wrapper-title .breadcrumbs {
+  display: none;
 }
-.gridPoker .card__content-row p:last-of-type span {
-  color: #ff293e;
+@media only screen and (min-width: 992px) {
+  .banner__wrapper-title .breadcrumbs {
+    display: block;
+  }
 }
-.gridPoker .card__content-row p:last-of-type {
-  display: flex;
-  align-items: center;
+.banner__wrapper img {
+  width: 4.0625rem;
+  height: 4.0625rem;
+}
+@media only screen and (min-width: 992px) {
+  .banner__wrapper img {
+    width: 95px;
+    height: 95px;
+  }
 }
 /*# sourceMappingURL=layout.css.map */

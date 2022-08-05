@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="124.679" height="127.062" viewBox="0 0 124.679 127.062">
+  <g id="icon-banner-casino" transform="translate(15.146 18.086)">
+    <circle id="Elipse_715" data-name="Elipse 715" cx="55" cy="55" r="55" transform="translate(-8 -8)" fill="#ff293e" opacity="0.65"/>
+    <path id="Star" d="M124.679,63.531h0c0-.794-1.588-1.191-1.588-1.191C95.3,54,71.869,31.765,64.722,5.559L63.531,1.191S63.134,0,62.34,0s-1.191,1.191-1.191,1.191L59.957,5.559C52.81,31.765,29.383,54,1.588,62.34c0,0-1.588.4-1.588,1.191s1.588,1.191,1.588,1.191C29.383,73.06,52.81,95.3,59.957,121.5l1.191,4.368s.4,1.191,1.191,1.191,1.191-1.191,1.191-1.191l1.191-4.368C71.869,95.3,95.3,73.06,123.091,64.722c-.4.4,1.191,0,1.588-1.191" transform="translate(-15.146 -18.086)" fill="#ff293e"/>
+    <g id="Icon" transform="translate(4.303 3.814)">
+      <g id="Grupo_393" data-name="Grupo 393" transform="translate(18.624 17.365)">
+        <path id="Trazado_5091" data-name="Trazado 5091" d="M65.625,76.236A10.611,10.611,0,1,0,76.236,65.625,10.611,10.611,0,0,0,65.625,76.236Z" transform="translate(-42.685 -42.684)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_5092" data-name="Trazado 5092" d="M87.5,91.479A3.979,3.979,0,1,0,91.479,87.5,3.979,3.979,0,0,0,87.5,91.479Z" transform="translate(-57.928 -57.927)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_5093" data-name="Trazado 5093" d="M100.625,72.257V65.625" transform="translate(-67.074 -42.684)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_5094" data-name="Trazado 5094" d="M111.994,86.441l5.742-3.316" transform="translate(-74.996 -54.879)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_5095" data-name="Trazado 5095" d="M76.057,86.441l-5.742-3.316" transform="translate(-45.953 -54.879)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_5096" data-name="Trazado 5096" d="M100.625,113.75v6.632" transform="translate(-67.074 -76.219)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_5097" data-name="Trazado 5097" d="M111.994,107.188l5.742,3.316" transform="translate(-74.996 -71.646)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_5098" data-name="Trazado 5098" d="M76.057,107.188,70.315,110.5" transform="translate(-45.953 -71.646)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_5099" data-name="Trazado 5099" d="M20.287,65.9H14.861A10.491,10.491,0,0,1,6.546,49.013c5.992-6.947,8.436-9.638,8.436-9.638H25.593s.545.8,2.011,2.653" transform="translate(0 -24.392)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Trazado_5100" data-name="Trazado 5100" d="M42.266,14.983l3.221-8.117a1.326,1.326,0,0,0-1.779-1.779l-3.36,1.677a1.326,1.326,0,0,1-1.7-.451L37.588,4.706a.755.755,0,0,0-1.256,0l-1.07,1.6a1.326,1.326,0,0,1-1.7.451l-3.36-1.677a1.326,1.326,0,0,0-1.772,1.781l3.22,8.117" transform="translate(-16.673)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -523,61 +523,32 @@
   }
 }
 
-.casinoFinder, .footer {
+.m-text-block, .casinoFinder, .footer {
   padding-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .casinoFinder, .footer {
+  .m-text-block, .casinoFinder, .footer {
     padding-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .casinoFinder, .footer {
+  .m-text-block, .casinoFinder, .footer {
     padding-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .casinoFinder, .footer {
+  .m-text-block, .casinoFinder, .footer {
     padding-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .casinoFinder, .footer {
+  .m-text-block, .casinoFinder, .footer {
     padding-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .casinoFinder, .footer {
+  .m-text-block, .casinoFinder, .footer {
     padding-top: var(--vertical-medium-xxl);
-  }
-}
-
-.m-text-block {
-  padding-bottom: var(--vertical-large-xs);
-}
-@media only screen and (min-width: 576px) {
-  .m-text-block {
-    padding-bottom: var(--vertical-large-sm);
-  }
-}
-@media only screen and (min-width: 768px) {
-  .m-text-block {
-    padding-bottom: var(--vertical-large-md);
-  }
-}
-@media only screen and (min-width: 992px) {
-  .m-text-block {
-    padding-bottom: var(--vertical-large-lg);
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .m-text-block {
-    padding-bottom: var(--vertical-large-xl);
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .m-text-block {
-    padding-bottom: var(--vertical-large-xxl);
   }
 }
 

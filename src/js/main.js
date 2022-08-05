@@ -46,6 +46,7 @@ window.addEventListener("load", () => {
   accorPoker();
 });
 
+
 function menuPoker() {
   const menuBtns = document.querySelectorAll(".menuPoker__btn");
   menuBtns.forEach((btn) => {

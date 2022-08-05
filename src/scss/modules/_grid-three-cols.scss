@@ -2,7 +2,7 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.gridPc {
+.grid3Cols {
   @extend %margin_horizontal_main;
 
   display: grid;
@@ -36,7 +36,7 @@
 
       padding-bottom: rem(15);
 
-      & > p:first-of-type {
+      .step {
         @extend .u-f--bold, .u-f--h3;
         width: rem(50);
         height: rem(50);
@@ -47,6 +47,11 @@
         justify-content: center;
         align-items: center;
         margin-right: rem(15);
+      }
+
+      .title {
+        @extend .u-f--bold, .u-f--h4;
+        padding-left: rem(10);
       }
 
       & > div {
@@ -60,13 +65,23 @@
       color: #a4a5a8;
     }
 
-    button {
+    .grid3Cols__btn--absolute {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         bottom: rem(-35);
         height: rem(70);
         width: 70%;
+    }
+
+    .grid3Cols__btn {
+      height: rem(70);
+      width: 100%;
+      margin-bottom: rem(10);
+
+      &:first-of-type {
+        margin-top: rem(30);
+      }
     }
   }
 }

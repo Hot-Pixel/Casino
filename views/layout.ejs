@@ -1,9 +1,16 @@
 <%
+const banner =
+  {
+    img: "casino",
+    icon: "banner-casino",
+    title: "Juegos de Casino",
+    breadcrumb: "Slots"
+  }
 %>
 
 <%- include ('layout/head', {title: "Layout" , css: "layout" }) %>
 
 <!-- Introducir debajo el modulo a desarrollar -->
-<%- include ('modules/grid-poker')%>
+<%- include ('modules/banner', {data: banner})%>
 
 <%- include ('layout/scripts') %>

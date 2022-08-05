@@ -545,60 +545,60 @@
   }
 }
 
-.bannerCarousel, .footer {
+.m-text-block, .bannerCarousel, .footer {
   padding-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .bannerCarousel, .footer {
     padding-top: var(--vertical-medium-xxl);
   }
 }
 
-.m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText {
+.jackpot, .carouselBets, .gridRoulette, .imageText {
   padding-bottom: var(--vertical-large-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText {
+  .jackpot, .carouselBets, .gridRoulette, .imageText {
     padding-bottom: var(--vertical-large-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText {
+  .jackpot, .carouselBets, .gridRoulette, .imageText {
     padding-bottom: var(--vertical-large-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText {
+  .jackpot, .carouselBets, .gridRoulette, .imageText {
     padding-bottom: var(--vertical-large-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText {
+  .jackpot, .carouselBets, .gridRoulette, .imageText {
     padding-bottom: var(--vertical-large-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText {
+  .jackpot, .carouselBets, .gridRoulette, .imageText {
     padding-bottom: var(--vertical-large-xxl);
   }
 }
