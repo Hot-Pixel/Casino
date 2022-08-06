@@ -229,41 +229,41 @@
   font-weight: 500;
 }
 
-.u-f--bold, .banner__wrapper-title p, .menuPoker__btn span, .ruletaResult, .u-f--bold p, .menuPoker__btn span p, .ruletaResult p {
+.u-f--bold, .menuPoker__btn span, .ruletaResult, .u-f--bold p, .menuPoker__btn span p, .ruletaResult p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .banner__wrapper-title p {
+.u-f--h1 {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1 {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1 {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1 {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1 {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1 {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1 {
     font-size: 3.625rem;
   }
 }
@@ -467,48 +467,48 @@
   }
 }
 
-.banner__wrapper, .footer__grid, .footer__brands {
+.gridFull, .footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .banner__wrapper, .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .banner__wrapper, .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .banner__wrapper, .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .banner__wrapper, .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .banner__wrapper, .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxl);
     margin-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .banner__wrapper, .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxxl);
     margin-right: var(--horizontal-main-xxxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .banner__wrapper, .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -1437,56 +1437,12 @@ body {
   text-align: center;
 }
 
-.banner {
-  position: relative;
-  width: 100%;
-  max-height: 400px;
+.gridFull .item {
+  border-radius: 0.625rem;
   overflow: hidden;
 }
-.banner__bg {
-  display: none;
-  position: relative;
-  z-index: 1;
-}
-@media only screen and (min-width: 992px) {
-  .banner__bg {
-    display: block;
-  }
-}
-.banner__wrapper {
+.gridFull .item img {
+  object-fit: contain;
   width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-@media only screen and (min-width: 992px) {
-  .banner__wrapper {
-    position: absolute;
-    top: 0;
-    left: 9.375rem;
-    z-index: 2;
-  }
-}
-.banner__wrapper-title p {
-  margin: 0;
-  line-height: 1em;
-}
-.banner__wrapper-title .breadcrumbs {
-  display: none;
-}
-@media only screen and (min-width: 992px) {
-  .banner__wrapper-title .breadcrumbs {
-    display: block;
-  }
-}
-.banner__wrapper img {
-  width: 4.0625rem;
-  height: 4.0625rem;
-}
-@media only screen and (min-width: 992px) {
-  .banner__wrapper img {
-    width: 95px;
-    height: 95px;
-  }
 }
 /*# sourceMappingURL=layout.css.map */

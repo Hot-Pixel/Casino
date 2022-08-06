@@ -11,11 +11,11 @@ import autoprefixer from "gulp-autoprefixer";
 import cleanCSS from "gulp-clean-css";
 import rename from "gulp-rename";
 import ejsCompiler from "gulp-ejs";
-// import rollup from "rollup";
+
 import * as rollup from 'rollup';
 import { babel } from "@rollup/plugin-babel";
-import eslint from "@rollup/plugin-eslint";
 import { terser } from "rollup-plugin-terser";
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 const paths = {
   scss: {
@@ -68,9 +68,7 @@ gulp.task("build", async () => {
       babel({
         babelHelpers: "bundled"
       }),
-      // eslint({
-      //   throwOnError: true,
-      // }),
+      nodeResolve()
     ],
   });
 

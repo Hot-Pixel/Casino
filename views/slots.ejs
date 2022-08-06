@@ -1,8 +1,8 @@
 <%
 const bannerData =
   {
-    img: "slots",
-    icon: "slots-banner",
+    img: "slot",
+    icon: "banner-slots",
     title: "Nuestras Slots",
     breadcrumb: "Slots"
   }
@@ -104,6 +104,44 @@ const gridHalfRight =
       },
     ]
   }
+
+  const jackpotData = [
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-1.png"
+    }
+  ]
 %>
 
 <%- include ('layout/head', {title: "Slots" , css: "slots" }) %>
@@ -122,7 +160,9 @@ const gridHalfRight =
 
 </section>
 
-<%- include ('modules/carousel-jackpot') %>
+<%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
+
+<%- include ('modules/text-block') %>
 
 <%- include ('layout/footer') %>
 

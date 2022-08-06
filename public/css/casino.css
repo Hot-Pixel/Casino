@@ -1621,6 +1621,7 @@ body {
   }
 }
 .banner__wrapper img {
+  margin-right: 0.9375rem;
   width: 4.0625rem;
   height: 4.0625rem;
 }

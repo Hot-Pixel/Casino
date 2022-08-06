@@ -14,27 +14,22 @@
 // Piezas de UI
 @use '../components/icon__title';
 @use '../components/header__user';
-@use '../components/svg-icon';
 @use '../components/buttons';
 @use '../components/breadcrumbs';
+@use '../components/splide-arrows-right';
 
 // OBJECTS
-// Contenedores, wrappers o layouts
-@use '../objects/card';
 
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
 
 // MODULES
-@use '../modules/banner-w-carousel';
 @use '../modules/banner';
 @use '../modules/search-bar';
 @use '../modules/grid-half';
-@use '../modules/icons-red';
-@use '../modules/image-text';
-@use '../modules/grid-roulette';
 @use '../modules/carousel-jackpot';
+@use '../modules/text-block';
 
 // HELPER
 // Clases de ayuda, textos, colores y demás

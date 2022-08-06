@@ -17,6 +17,8 @@
   "author": "Hot Pixel",
   "license": "ISC",
   "dependencies": {
+    "@splidejs/splide": "^4.0.7",
+    "@splidejs/splide-extension-grid": "^0.4.1",
     "cookie-parser": "~1.4.4",
     "crossenv": "^0.0.2-security",
     "debug": "~2.6.9",
@@ -31,6 +33,7 @@
   "devDependencies": {
     "@rollup/plugin-babel": "^5.3.1",
     "@rollup/plugin-eslint": "^8.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
     "browser-sync": "latest",
     "dotenv": "^16.0.1",
     "gulp": "latest",

@@ -102,7 +102,7 @@
   color: #ffffff;
 }
 
-.u-c--w-l, .o-card--subtitle, .o-card--desc {
+.u-c--w-l {
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -229,177 +229,177 @@
   font-weight: 500;
 }
 
-.u-f--bold, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper p, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title, .o-card--subtitle, .u-f--bold p, .jackpot__card-content p:last-of-type p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .bannerCarousel__slide-wrapper p:first-of-type p, .o-card--title p, .o-card--subtitle p {
+.u-f--bold, .jackpot__card-content p:last-of-type, .search .search__input input, .search .search__wrapper p, .banner__wrapper-title p, .u-f--bold p, .jackpot__card-content p:last-of-type p, .search .search__input input p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
+.u-f--h1, .banner__wrapper-title p {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .banner__wrapper-title p, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .banner__wrapper-title p {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2, .search .search__input input, .o-card--title {
+.u-f--h2, .search .search__input input {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .search .search__input input, .o-card--title {
+  .u-f--h2, .search .search__input input {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+.u-f--h3, .jackpot__card-content p:last-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type {
     font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+.u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle {
+  .u-f--h4, .search .search__wrapper p, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 1.125rem;
   }
 }
 
-.u-f--h5, .o-card--desc, .breadcrumbs span {
+.u-f--h5, .breadcrumbs span {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
@@ -467,48 +467,48 @@
   }
 }
 
-.jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
+.m-text-block, .jackpot, .grids__container, .search, .banner__wrapper, .footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
+  .m-text-block, .jackpot, .grids__container, .search, .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
+  .m-text-block, .jackpot, .grids__container, .search, .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
+  .m-text-block, .jackpot, .grids__container, .search, .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
+  .m-text-block, .jackpot, .grids__container, .search, .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
+  .m-text-block, .jackpot, .grids__container, .search, .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxl);
     margin-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
+  .m-text-block, .jackpot, .grids__container, .search, .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxxl);
     margin-right: var(--horizontal-main-xxxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .jackpot, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .banner__wrapper, .bannerCarousel, .footer__grid, .footer__brands {
+  .m-text-block, .jackpot, .grids__container, .search, .banner__wrapper, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -516,89 +516,89 @@
   }
 }
 
-.redIcons, .grids__container {
+.grids__container {
   padding-bottom: var(--vertical-small-xs);
 }
 @media only screen and (min-width: 576px) {
-  .redIcons, .grids__container {
+  .grids__container {
     padding-bottom: var(--vertical-small-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .redIcons, .grids__container {
+  .grids__container {
     padding-bottom: var(--vertical-small-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .redIcons, .grids__container {
+  .grids__container {
     padding-bottom: var(--vertical-small-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .redIcons, .grids__container {
+  .grids__container {
     padding-bottom: var(--vertical-small-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .redIcons, .grids__container {
+  .grids__container {
     padding-bottom: var(--vertical-small-xxl);
   }
 }
 
-.bannerCarousel, .footer {
+.m-text-block, .footer {
   padding-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .bannerCarousel, .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-xxl);
   }
 }
 
-.jackpot, .gridRoulette, .imageText {
+.jackpot {
   padding-bottom: var(--vertical-large-xs);
 }
 @media only screen and (min-width: 576px) {
-  .jackpot, .gridRoulette, .imageText {
+  .jackpot {
     padding-bottom: var(--vertical-large-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .jackpot, .gridRoulette, .imageText {
+  .jackpot {
     padding-bottom: var(--vertical-large-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .jackpot, .gridRoulette, .imageText {
+  .jackpot {
     padding-bottom: var(--vertical-large-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .jackpot, .gridRoulette, .imageText {
+  .jackpot {
     padding-bottom: var(--vertical-large-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .jackpot, .gridRoulette, .imageText {
+  .jackpot {
     padding-bottom: var(--vertical-large-xxl);
   }
 }
@@ -824,22 +824,6 @@ h5 {
   text-align: right;
 }
 
-.svg-icon-inline, .svg-icon {
-  align-items: center;
-  width: 1em;
-  height: 1em;
-  background-color: transparent;
-  fill: currentColor;
-}
-
-.svg-icon {
-  display: flex;
-}
-
-.svg-icon-inline {
-  display: inline-flex;
-}
-
 .btn__red {
   color: #ffffff;
   background-color: #ff293e;
@@ -1014,28 +998,22 @@ h5 {
   color: #a0a2a4;
 }
 
-.o-card {
-  display: flex;
-  flex-direction: column;
-}
-.o-card--image {
-  border-radius: 0.3125rem 0.3125rem 0 0;
-}
-.o-card--image img {
+.splide.arrows-right .splide__arrows::before {
+  content: "";
   display: block;
-  width: 100%;
-  height: auto;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 5rem;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(19, 23, 29, 0) 0%, #13171d 100%);
 }
-.o-card--content {
-  flex: 1;
-  padding: 32px 28px;
-  text-align: center;
-  background-color: #25292f;
-  border-radius: 0 0 0.3125rem 0.3125rem;
+.splide.arrows-right .splide__arrow--prev {
+  left: initial;
+  right: 34px;
 }
-.o-card--footer {
-  margin-top: -1.6em;
-  text-align: center;
+.splide.arrows-right .splide__arrow--next {
+  right: 0;
 }
 
 body {
@@ -1414,143 +1392,6 @@ body {
   text-align: center;
 }
 
-.bannerCarousel__slide {
-  display: flex;
-  flex-direction: column-reverse;
-  border-radius: 0.3125rem;
-  margin-bottom: 1.5625rem;
-  overflow: hidden;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel__slide {
-    flex-direction: row;
-  }
-}
-.bannerCarousel__slide-wrapper {
-  width: 100%;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel__slide-wrapper {
-    width: 50%;
-    height: 29.375rem;
-  }
-}
-.bannerCarousel__slide-wrapper img {
-  object-fit: contain;
-  object-position: right;
-  width: auto;
-  height: 100%;
-}
-.bannerCarousel__slide-wrapper p:first-of-type {
-  text-align: center;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel__slide-wrapper p:first-of-type {
-    text-align: left;
-  }
-}
-.bannerCarousel__slide-wrapper p:last-of-type {
-  display: none;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel__slide-wrapper p:last-of-type {
-    display: inline-block;
-    font-weight: 700;
-    line-height: 1.2em;
-    color: #d4d7da;
-  }
-}
-.bannerCarousel__slide--left {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel__slide--left {
-    padding: 3.75rem;
-    background-color: #25292f;
-    align-items: flex-start;
-  }
-}
-.bannerCarousel__slide--left > div {
-  padding: 1.875rem 0.625rem;
-  background-color: #25292f;
-  overflow: hidden;
-  border-radius: 0 0 5px 5px;
-  margin-bottom: 23px;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel__slide--left > div {
-    border-radius: 0;
-  }
-}
-.bannerCarousel__slide--left button {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2.8125rem;
-  padding: 0 1.25rem;
-  box-shadow: none;
-  overflow: overlay;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel__slide--left button {
-    position: static;
-    transform: translateX(0);
-    box-shadow: 0px 0px 1.25rem 0px #ff293e;
-  }
-}
-.bannerCarousel__slide--left button img {
-  height: 0.875rem;
-  width: 0.875rem;
-}
-.bannerCarousel__slide--right {
-  height: 15.625rem;
-  background-color: #25292f;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel__slide--right {
-    height: 29.375rem;
-  }
-}
-.bannerCarousel .splide__arrow {
-  top: calc(100% - 48px);
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel .splide__arrow {
-    top: 50%;
-  }
-}
-.bannerCarousel .splide__arrow img {
-  height: 1.875rem;
-  width: 1.875rem;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel .splide__arrow img {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-}
-.bannerCarousel .splide__arrow--prev {
-  left: 10%;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel .splide__arrow--prev {
-    left: -0.9375rem;
-  }
-}
-.bannerCarousel .splide__arrow--next {
-  right: 10%;
-}
-@media only screen and (min-width: 992px) {
-  .bannerCarousel .splide__arrow--next {
-    right: -0.9375rem;
-  }
-}
-
 .banner {
   position: relative;
   width: 100%;
@@ -1594,6 +1435,7 @@ body {
   }
 }
 .banner__wrapper img {
+  margin-right: 0.9375rem;
   width: 4.0625rem;
   height: 4.0625rem;
 }
@@ -1785,225 +1627,6 @@ body {
 .gridHalf__grid-item--hover button img {
   height: 12.6px;
   width: 16px;
-}
-
-.redIcons {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "title" "icons";
-}
-@media only screen and (min-width: 992px) {
-  .redIcons {
-    grid-template-columns: 6fr 5fr;
-    grid-template-rows: auto;
-    grid-template-areas: "icons title";
-  }
-}
-.redIcons p {
-  color: #ff293e;
-}
-.redIcons__wrapper-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-.redIcons__wrapper-item img {
-  width: 3.75rem;
-}
-@media only screen and (min-width: 768px) {
-  .redIcons__wrapper-item img {
-    width: 6.25rem;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .redIcons__wrapper-item img {
-    width: 9.375rem;
-  }
-}
-@media only screen and (min-width: 1900px) {
-  .redIcons__wrapper-item img {
-    width: 10.625rem;
-  }
-}
-.redIcons__wrapper-item p {
-  font-weight: 400;
-  max-width: 80%;
-  text-align: center;
-  margin-top: 0.3125rem;
-}
-@media only screen and (min-width: 992px) {
-  .redIcons__wrapper-item p {
-    font-weight: 700;
-    max-width: 70%;
-    margin-top: 0.625rem;
-  }
-}
-.redIcons__wrapper--left {
-  grid-area: icons;
-  justify-self: flex-start;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-@media only screen and (min-width: 992px) {
-  .redIcons__wrapper--left {
-    width: auto;
-    justify-self: flex-start;
-  }
-}
-.redIcons__wrapper--right {
-  grid-area: title;
-  justify-self: flex-end;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-@media only screen and (min-width: 768px) {
-  .redIcons__wrapper--right {
-    justify-self: center;
-    margin-bottom: 1.875rem;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .redIcons__wrapper--right {
-    margin-bottom: 0;
-    margin-left: 3.75rem;
-    align-items: flex-start;
-    text-align: left;
-  }
-}
-.redIcons__wrapper--right p:last-of-type {
-  max-width: 100%;
-}
-@media only screen and (min-width: 992px) {
-  .redIcons__wrapper--right p:last-of-type {
-    max-width: 70%;
-  }
-}
-
-.imageText {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  column-gap: 8.125rem;
-  grid-template-areas: "img" "content";
-}
-@media only screen and (min-width: 992px) {
-  .imageText {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "content img";
-  }
-}
-.imageText__image {
-  grid-area: img;
-}
-.imageText__image img {
-  width: 100%;
-  height: auto;
-}
-.imageText__content {
-  grid-area: content;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-@media only screen and (min-width: 992px) {
-  .imageText__content {
-    text-align: left;
-  }
-}
-.imageText__content > * {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.imageText__content > * + * {
-  margin-top: 1.25rem;
-}
-.imageText__content-btns {
-  margin-top: 0.9375rem;
-}
-@media only screen and (min-width: 992px) {
-  .imageText__content-btns {
-    margin-top: 1.875rem;
-    display: flex;
-    flex-direction: column;
-  }
-}
-.imageText__content-btns button {
-  margin-top: 10px;
-}
-@media only screen and (min-width: 992px) {
-  .imageText__content-btns button {
-    width: fit-content;
-  }
-}
-.imageText__content-btns button span {
-  font-size: 0.75rem;
-  color: #ff293e;
-}
-
-.gridRoulette {
-  display: grid;
-  gap: 0.9375rem;
-}
-@media only screen and (min-width: 992px) {
-  .gridRoulette {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-.gridRoulette .card__image {
-  margin-bottom: -0.3125rem;
-}
-.gridRoulette .card__image img {
-  object-fit: contain;
-  width: 100%;
-}
-.gridRoulette .card__content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  background-color: #2d3239;
-  height: auto;
-  padding: 1.875rem 1.25rem;
-  border-radius: 0.3125rem;
-}
-@media only screen and (min-width: 992px) {
-  .gridRoulette .card__content {
-    padding: 3.75rem 0;
-    height: 20.9375rem;
-  }
-}
-.gridRoulette .card__content-subtitle {
-  color: #a4a6a8;
-  max-width: 100%;
-}
-@media only screen and (min-width: 992px) {
-  .gridRoulette .card__content-subtitle {
-    max-width: 75%;
-  }
-}
-.gridRoulette .card__content-desc {
-  color: #a4a6a8;
-  max-width: 100%;
-}
-@media only screen and (min-width: 992px) {
-  .gridRoulette .card__content-desc {
-    max-width: 75%;
-  }
-}
-.gridRoulette .card__footer {
-  position: absolute;
-  bottom: -1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .jackpot {
