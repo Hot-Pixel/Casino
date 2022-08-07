@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .menuPoker__btn span, .ruletaResult, .u-f--bold p, .menuPoker__btn span p, .ruletaResult p {
+.u-f--bold, .menuPoker__btn span, .headerModule-link p, .ruletaResult, .u-f--bold p, .menuPoker__btn span p, .ruletaResult p {
   font-weight: 700;
 }
 
@@ -956,22 +956,37 @@ h5 {
   color: #a0a2a4;
 }
 
-.splide.arrows-right .splide__arrows::before {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  width: 5rem;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(19, 23, 29, 0) 0%, #13171d 100%);
+.splideArrows--right .splide__arrow {
+  background: none;
+  border-radius: 0;
+  opacity: 1;
+  z-index: 10;
 }
-.splide.arrows-right .splide__arrow--prev {
-  left: initial;
-  right: 34px;
+.splideArrows--right .splide__arrow svg {
+  height: 1.25rem;
+  width: 1.25rem;
 }
-.splide.arrows-right .splide__arrow--next {
-  right: 0;
+@media only screen and (min-width: 1600px) {
+  .splideArrows--right .splide__arrow svg {
+    height: 1.875rem;
+    width: 1.875rem;
+  }
+}
+.splideArrows--right .splide__arrow--prev {
+  left: 94%;
+}
+@media only screen and (min-width: 1600px) {
+  .splideArrows--right .splide__arrow--prev {
+    left: 93%;
+  }
+}
+.splideArrows--right .splide__arrow--next {
+  right: 1%;
+}
+@media only screen and (min-width: 1600px) {
+  .splideArrows--right .splide__arrow--next {
+    right: 2%;
+  }
 }
 
 .ruletaResult {
@@ -999,6 +1014,45 @@ h5 {
 .ruletaResult--black {
   background-color: black;
   border: 3px solid #717477;
+}
+
+.splide__gradient {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.9));
+}
+
+.headerModule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.headerModule p {
+  margin-bottom: 0;
+}
+.headerModule-title {
+  display: flex;
+  align-items: center;
+}
+.headerModule-title p {
+  margin-left: 0.625rem;
+}
+.headerModule-title img {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+.headerModule-link {
+  display: flex;
+  align-items: center;
+}
+.headerModule-link p {
+  margin-right: 0.3125rem;
+  color: #ff293e;
 }
 
 .menuPoker {
@@ -1437,6 +1491,10 @@ body {
   text-align: center;
 }
 
+.gridFull {
+  position: relative;
+  overflow: hidden;
+}
 .gridFull .item {
   border-radius: 0.625rem;
   overflow: hidden;

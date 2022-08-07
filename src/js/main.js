@@ -1,6 +1,3 @@
-import { Splide } from "@splidejs/splide";
-import { Grid } from "@splidejs/splide-extension-grid";
-
 import carouselBanner from "./carouselBanner.js";
 import carouselJackpot from "./carouselJackpot.js";
 import carouselBets from "./carouselBets.js";
@@ -11,6 +8,7 @@ import filterSlotsAll from "./filterSlotsAll.js";
 import menuPoker from "./menuPoker.js";
 import accorPoker from "./accordionPoker.js";
 import carouselFull from "./carouselFull.js";
+
 
 const carouselBannerExist = document.getElementsByClassName("bannerCarousel");
 const carouselJackpotExist =
@@ -55,5 +53,7 @@ window.addEventListener("load", () => {
     carouselFull();
   }
 });
+
+
 
 

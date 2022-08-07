@@ -1,0 +1,11 @@
+.splide__gradient {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+
+    width: 20%;
+    height: 100%;
+
+    background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.9));
+}

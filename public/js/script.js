@@ -1,3 +1,244 @@
+function carouselBanner() {
+  var carousel = new Splide(".bannerCarousel.splide", {
+    perPage: 1,
+    arrow: true,
+    pagination: false
+  });
+  carousel.mount();
+}
+
+function carouselJackpot() {
+  var carousel = new Splide(".jackpot__carousel", {
+    pagination: false,
+    arrows: true,
+    perPage: 4,
+    perMove: 1,
+    gap: 15,
+    breakpoints: {
+      1600: {
+        perPage: 3
+      },
+      1200: {
+        perPage: 2,
+        arrows: false
+      }
+    }
+  });
+  carousel.mount();
+}
+
+function carouselBets() {
+  var carousel = new Splide(".carouselBets__carousel", {
+    pagination: false,
+    arrows: true,
+    perPage: 5,
+    perMove: 1,
+    gap: 15,
+    breakpoints: {
+      1600: {
+        perPage: 4
+      },
+      1200: {
+        perPage: 3
+      },
+      992: {
+        perPage: 2,
+        padding: {
+          left: 0,
+          right: 50
+        },
+        arrows: false
+      },
+      767: {
+        perPage: 1,
+        padding: {
+          left: 0,
+          right: 50
+        },
+        arrows: false
+      }
+    }
+  });
+  carousel.mount();
+}
+
+const arrowArr = document.getElementsByClassName("js-arrow__grid");
+const gridArr = document.getElementsByClassName("gridHalf__grid");
+
+function collapseGrid() {
+  for (let n = 0; n < arrowArr.length; n++) {
+    arrowArr[n].addEventListener("click", () => {
+      if (gridArr[n].classList.contains("active")) {
+        gsap.timeline().to(arrowArr[n], {
+          rotation: -90,
+          duration: 0.3
+        }).to(gridArr[n], {
+          opacity: 0,
+          duration: 0.6
+        }).to(gridArr[n], {
+          height: 0,
+          duration: 0.3
+        });
+        gridArr[n].classList.remove("active");
+      } else {
+        gsap.timeline().to(arrowArr[n], {
+          rotation: 0,
+          duration: 0.3
+        }).to(gridArr[n], {
+          height: "auto",
+          duration: 0.3
+        }).to(gridArr[n], {
+          opacity: 1,
+          duration: 0.6
+        });
+        gridArr[n].classList.add("active");
+      }
+    });
+  }
+}
+
+const hearts$1 = document.querySelectorAll(".is-favourite");
+
+const filterCasino = () => {
+  hearts$1.forEach(heart => {
+    heart.addEventListener("click", () => {
+      heart.classList.toggle("fav");
+
+      if (heart.classList.contains("fav")) {
+        heart.parentElement.parentElement.classList.add("favorito");
+      } else {
+        heart.parentElement.parentElement.classList.remove("favorito");
+      }
+    });
+  });
+  var mixerCasino = mixitup(".casinoFinder", {
+    multifilter: {
+      enable: true
+    },
+    controls: {
+      enable: true
+    },
+    animation: {
+      enable: false
+    }
+  });
+  const container = document.querySelector(".casinoFinder");
+  let totalContainer = document.querySelector("#is-showing");
+  let items = document.querySelectorAll(".mix");
+  let itemsHidden = document.querySelectorAll('.mix[style="display: none;"]');
+  let itemsLeft = items.length - itemsHidden.length;
+  document.querySelector('#removeFilters');
+  totalContainer.innerText = items.length;
+  console.log(mixerCasino.isMixing());
+  container.addEventListener("mixEnd", () => {
+    totalContainer.innerText = itemsLeft;
+    console.log(mixerCasino.isMixing());
+  }); // container.addEventListener("mixStart", () => {
+  //   if (!mixerCasino.isMixing()) {
+  //     removeBtn.style.display = "none";
+  //   } else if (mixerCasino.isMixing()) {
+  //     removeBtn.style.display = "inline-block";
+  //   }
+  // });
+};
+
+const filterPromo = () => {
+  mixitup(".finder__promo", {
+    controls: {
+      enable: true
+    },
+    animation: {
+      enable: false
+    }
+  });
+};
+
+const tags = document.querySelectorAll(".o-filter--slots-tag");
+const hearts = document.querySelectorAll(".o-grid--games-fav");
+
+const filterSlotsAll = () => {
+  hearts.forEach(heart => {
+    heart.addEventListener("click", () => {
+      heart.classList.toggle("fav");
+
+      if (heart.classList.contains("fav")) {
+        heart.parentElement.parentElement.classList.add("favorito");
+      } else {
+        heart.parentElement.parentElement.classList.remove("favorito");
+      }
+    });
+  });
+  tags.forEach(tag => {
+    tag.addEventListener("click", e => {
+      if (e.currentTarget.classList.contains("mixitup-control-active")) {
+        e.currentTarget.firstElementChild.setAttribute("src", "img/icon-filter-noActive.svg");
+      } else {
+        e.currentTarget.firstElementChild.setAttribute("src", "img/icon-filter-active.svg");
+      }
+    });
+  });
+  mixitup(".m-slots--finder", {
+    multifilter: {
+      enable: true
+    },
+    controls: {
+      enable: true
+    },
+    animation: {
+      enable: false
+    }
+  });
+};
+
+function menuPoker() {
+  const menuBtns = document.querySelectorAll(".menuPoker__btn");
+  menuBtns.forEach(btn => {
+    btn.addEventListener("click", e => {
+      menuBtns.forEach(btn => {
+        btn.classList.remove("is-active");
+      });
+      e.currentTarget.classList.toggle("is-active");
+    });
+  });
+}
+
+function accorPoker() {
+  const accorArrows = document.getElementsByClassName("accorArrow");
+  const accorBody = document.getElementsByClassName("body");
+
+  for (let n = 0; n < accorArrows.length; n++) {
+    accorArrows[n].addEventListener("click", () => {
+      if (accorBody[n].classList.contains("active")) {
+        gsap.timeline().to(accorArrows[n], {
+          rotation: -90,
+          duration: 0.3
+        }).to(accorBody[n], {
+          opacity: 0,
+          duration: 0.3
+        }).to(accorBody[n], {
+          height: 0,
+          padding: 0,
+          duration: 0.3
+        });
+        accorBody[n].classList.remove("active");
+      } else {
+        gsap.timeline().to(accorArrows[n], {
+          rotation: 0,
+          duration: 0.3
+        }).to(accorBody[n], {
+          height: "auto",
+          padding: 15,
+          duration: 0.3
+        }).to(accorBody[n], {
+          opacity: 1,
+          duration: 0.3
+        });
+        accorBody[n].classList.add("active");
+      }
+    });
+  }
+}
+
 function _defineProperties(target, props) {
   for (var i = 0; i < props.length; i++) {
     var descriptor = props[i];
@@ -3807,245 +4048,39 @@ function Grid(Splide2, Components2, options) {
   };
 }
 
-function carouselBanner() {
-  var carousel = new Splide(".bannerCarousel.splide", {
-    perPage: 1,
-    arrow: true,
-    pagination: false
-  });
-  carousel.mount();
-}
-
-function carouselJackpot() {
-  var carousel = new Splide(".jackpot__carousel", {
-    pagination: false,
-    arrows: true,
+function carouselFull() {
+  const gridFull = document.querySelector(".gridFull .splide");
+  const order = gridFull.dataset.order - 1;
+  const item = [1, 1];
+  const arrDim = [[2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]];
+  arrDim.splice(order, 0, item);
+  const splideGrid = new Splide$1(gridFull, {
     perPage: 4,
     perMove: 1,
-    gap: 15,
-    breakpoints: {
-      1600: {
-        perPage: 3
-      },
-      1200: {
-        perPage: 2,
-        arrows: false
-      }
-    }
-  });
-  carousel.mount();
-}
-
-function carouselBets() {
-  var carousel = new Splide(".carouselBets__carousel", {
     pagination: false,
-    arrows: true,
-    perPage: 5,
-    perMove: 1,
-    gap: 15,
+    gap: 6,
+    grid: {
+      dimensions: arrDim,
+      gap: {
+        row: 6,
+        col: 6
+      }
+    },
     breakpoints: {
-      1600: {
-        perPage: 4
-      },
-      1200: {
-        perPage: 3
-      },
-      992: {
-        perPage: 2,
-        padding: {
-          left: 0,
-          right: 50
-        },
-        arrows: false
-      },
-      767: {
+      991: {
         perPage: 1,
-        padding: {
-          left: 0,
-          right: 50
-        },
-        arrows: false
+        arrows: false,
+        drag: 'free',
+        grid: {
+          rows: 2,
+          cols: 2
+        }
       }
     }
   });
-  carousel.mount();
-}
-
-const arrowArr = document.getElementsByClassName("js-arrow__grid");
-const gridArr = document.getElementsByClassName("gridHalf__grid");
-
-function collapseGrid() {
-  for (let n = 0; n < arrowArr.length; n++) {
-    arrowArr[n].addEventListener("click", () => {
-      if (gridArr[n].classList.contains("active")) {
-        gsap.timeline().to(arrowArr[n], {
-          rotation: -90,
-          duration: 0.3
-        }).to(gridArr[n], {
-          opacity: 0,
-          duration: 0.6
-        }).to(gridArr[n], {
-          height: 0,
-          duration: 0.3
-        });
-        gridArr[n].classList.remove("active");
-      } else {
-        gsap.timeline().to(arrowArr[n], {
-          rotation: 0,
-          duration: 0.3
-        }).to(gridArr[n], {
-          height: "auto",
-          duration: 0.3
-        }).to(gridArr[n], {
-          opacity: 1,
-          duration: 0.6
-        });
-        gridArr[n].classList.add("active");
-      }
-    });
-  }
-}
-
-const hearts$1 = document.querySelectorAll(".is-favourite");
-
-const filterCasino = () => {
-  hearts$1.forEach(heart => {
-    heart.addEventListener("click", () => {
-      heart.classList.toggle("fav");
-
-      if (heart.classList.contains("fav")) {
-        heart.parentElement.parentElement.classList.add("favorito");
-      } else {
-        heart.parentElement.parentElement.classList.remove("favorito");
-      }
-    });
+  splideGrid.mount({
+    Grid
   });
-  var mixerCasino = mixitup(".casinoFinder", {
-    multifilter: {
-      enable: true
-    },
-    controls: {
-      enable: true
-    },
-    animation: {
-      enable: false
-    }
-  });
-  const container = document.querySelector(".casinoFinder");
-  let totalContainer = document.querySelector("#is-showing");
-  let items = document.querySelectorAll(".mix");
-  let itemsHidden = document.querySelectorAll('.mix[style="display: none;"]');
-  let itemsLeft = items.length - itemsHidden.length;
-  document.querySelector('#removeFilters');
-  totalContainer.innerText = items.length;
-  console.log(mixerCasino.isMixing());
-  container.addEventListener("mixEnd", () => {
-    totalContainer.innerText = itemsLeft;
-    console.log(mixerCasino.isMixing());
-  }); // container.addEventListener("mixStart", () => {
-  //   if (!mixerCasino.isMixing()) {
-  //     removeBtn.style.display = "none";
-  //   } else if (mixerCasino.isMixing()) {
-  //     removeBtn.style.display = "inline-block";
-  //   }
-  // });
-};
-
-const filterPromo = () => {
-  mixitup(".finder__promo", {
-    controls: {
-      enable: true
-    },
-    animation: {
-      enable: false
-    }
-  });
-};
-
-const tags = document.querySelectorAll(".o-filter--slots-tag");
-const hearts = document.querySelectorAll(".o-grid--games-fav");
-
-const filterSlotsAll = () => {
-  hearts.forEach(heart => {
-    heart.addEventListener("click", () => {
-      heart.classList.toggle("fav");
-
-      if (heart.classList.contains("fav")) {
-        heart.parentElement.parentElement.classList.add("favorito");
-      } else {
-        heart.parentElement.parentElement.classList.remove("favorito");
-      }
-    });
-  });
-  tags.forEach(tag => {
-    tag.addEventListener("click", e => {
-      if (e.currentTarget.classList.contains("mixitup-control-active")) {
-        e.currentTarget.firstElementChild.setAttribute("src", "img/icon-filter-noActive.svg");
-      } else {
-        e.currentTarget.firstElementChild.setAttribute("src", "img/icon-filter-active.svg");
-      }
-    });
-  });
-  mixitup(".m-slots--finder", {
-    multifilter: {
-      enable: true
-    },
-    controls: {
-      enable: true
-    },
-    animation: {
-      enable: false
-    }
-  });
-};
-
-function menuPoker() {
-  const menuBtns = document.querySelectorAll(".menuPoker__btn");
-  menuBtns.forEach(btn => {
-    btn.addEventListener("click", e => {
-      menuBtns.forEach(btn => {
-        btn.classList.remove("is-active");
-      });
-      e.currentTarget.classList.toggle("is-active");
-    });
-  });
-}
-
-function accorPoker() {
-  const accorArrows = document.getElementsByClassName("accorArrow");
-  const accorBody = document.getElementsByClassName("body");
-
-  for (let n = 0; n < accorArrows.length; n++) {
-    accorArrows[n].addEventListener("click", () => {
-      if (accorBody[n].classList.contains("active")) {
-        gsap.timeline().to(accorArrows[n], {
-          rotation: -90,
-          duration: 0.3
-        }).to(accorBody[n], {
-          opacity: 0,
-          duration: 0.3
-        }).to(accorBody[n], {
-          height: 0,
-          padding: 0,
-          duration: 0.3
-        });
-        accorBody[n].classList.remove("active");
-      } else {
-        gsap.timeline().to(accorArrows[n], {
-          rotation: 0,
-          duration: 0.3
-        }).to(accorBody[n], {
-          height: "auto",
-          padding: 15,
-          duration: 0.3
-        }).to(accorBody[n], {
-          opacity: 1,
-          duration: 0.3
-        });
-        accorBody[n].classList.add("active");
-      }
-    });
-  }
 }
 
 const carouselBannerExist = document.getElementsByClassName("bannerCarousel");
@@ -4056,6 +4091,7 @@ const casinoFinderExist = document.getElementsByClassName("casinoFinder");
 const slotsAllFinderExist = document.getElementsByClassName("m-slots--finder");
 const promoFinderExist = document.getElementsByClassName("finder__promo");
 const menuPokerExist = document.getElementsByClassName("menuPoker");
+const carouselFullExist = document.getElementsByClassName("gridFull");
 window.addEventListener("load", () => {
   if (carouselBannerExist.length > 0) {
     carouselBanner();
@@ -4089,27 +4125,9 @@ window.addEventListener("load", () => {
     menuPoker();
     accorPoker();
   }
-});
-const gridFull = document.querySelector(".gridFull.splide");
-const order = gridFull.dataset.order - 1;
-console.log(order);
-const arrDim = [[2, 2], [2, 2], [2, 2], [2, 2], [2, 2], [2, 2]];
-const item = [1, 1];
-arrDim.splice(order, 0, item);
-const splideGrid = new Splide$1(gridFull, {
-  perPage: 4,
-  perMove: 1,
-  pagination: false,
-  gap: 6,
-  grid: {
-    dimensions: arrDim,
-    gap: {
-      row: "6px",
-      col: "6px"
-    }
+
+  if (carouselFullExist.length > 0) {
+    carouselFull();
   }
-});
-splideGrid.mount({
-  Grid
 });
 //# sourceMappingURL=script.js.map

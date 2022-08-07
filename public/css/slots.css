@@ -998,22 +998,37 @@ h5 {
   color: #a0a2a4;
 }
 
-.splide.arrows-right .splide__arrows::before {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  width: 5rem;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(19, 23, 29, 0) 0%, #13171d 100%);
+.splideArrows--right .splide__arrow {
+  background: none;
+  border-radius: 0;
+  opacity: 1;
+  z-index: 10;
 }
-.splide.arrows-right .splide__arrow--prev {
-  left: initial;
-  right: 34px;
+.splideArrows--right .splide__arrow svg {
+  height: 1.25rem;
+  width: 1.25rem;
 }
-.splide.arrows-right .splide__arrow--next {
-  right: 0;
+@media only screen and (min-width: 1600px) {
+  .splideArrows--right .splide__arrow svg {
+    height: 1.875rem;
+    width: 1.875rem;
+  }
+}
+.splideArrows--right .splide__arrow--prev {
+  left: 94%;
+}
+@media only screen and (min-width: 1600px) {
+  .splideArrows--right .splide__arrow--prev {
+    left: 93%;
+  }
+}
+.splideArrows--right .splide__arrow--next {
+  right: 1%;
+}
+@media only screen and (min-width: 1600px) {
+  .splideArrows--right .splide__arrow--next {
+    right: 2%;
+  }
 }
 
 body {

@@ -7,43 +7,6 @@
 .carouselBets {
   @extend %margin_horizontal_main, %margin_bottom_large;
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: rem(20);
-
-    p {
-      margin-bottom: 0;
-    }
-
-    &-title {
-      display: flex;
-      align-items: center;
-
-      p {
-        margin-left: rem(10);
-      }
-
-      img {
-        width: rem(25);
-        height: rem(25);
-      }
-    }
-
-    &-link {
-      display: flex;
-      align-items: center;
-
-      p {
-        margin-right: rem(5);
-        @extend .u-f--bold;
-        color: setcolor("primary");
-      }
-    }
-  }
-
   &__carousel {
     .card {
       margin-bottom: rem(25);

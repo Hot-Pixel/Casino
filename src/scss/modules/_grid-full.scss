@@ -4,6 +4,8 @@
 
 .gridFull {
     @extend %margin_horizontal_main;
+    position: relative;
+    overflow: hidden;
 
     .item {
         border-radius: rem(10);
