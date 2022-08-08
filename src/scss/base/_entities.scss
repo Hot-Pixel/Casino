@@ -41,6 +41,18 @@ p, span {
     margin-bottom: $paragraph_margin;
 }
 
+input {
+    @extend .u-f--p;
+    padding: $inputs_padding_desktop;
+    font-weight: $inputs_font_weight;
+    font-family: $inputs_font_family;
+    border-radius: $inputs_border_radius;
+
+    &::placeholder {
+        font-weight: $inputs_font_weight;
+    }
+}
+
 // strong
 strong {
     font-weight: setfont('weight', 'regular');

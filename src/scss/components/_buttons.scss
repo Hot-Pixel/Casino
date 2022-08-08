@@ -15,6 +15,16 @@
   }
 }
 
+.btn__blue {
+  @extend %buttons;
+  color: setcolor("white");
+  background-color: setcolor("secondary");
+  &:hover {
+    color: setcolor("gray", "lighter");
+    background-color: setcolor("secondary", "light");
+  }
+}
+
 .btn__red--glow {
   box-shadow: 0px 0px rem(20) 0px setcolor("primary");
 }

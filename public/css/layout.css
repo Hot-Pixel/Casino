@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .menuPoker__btn span, .headerModule-link p, .ruletaResult, .u-f--bold p, .menuPoker__btn span p, .ruletaResult p {
+.u-f--bold, .registerSteps__form h2, .registerSteps__step p span, .registerSteps__sign_up p a, .menuPoker__btn span, .headerModule-link p, .ruletaResult, .u-f--bold p, .registerSteps__form h2 p, .registerSteps__step p span p, .registerSteps__sign_up p a p, .menuPoker__btn span p, .ruletaResult p {
   font-weight: 700;
 }
 
@@ -268,36 +268,36 @@
   }
 }
 
-.u-f--h2 {
+.u-f--h2, .registerSteps__form h2 {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2 {
+  .u-f--h2, .registerSteps__form h2 {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2 {
+  .u-f--h2, .registerSteps__form h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2 {
+  .u-f--h2, .registerSteps__form h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2 {
+  .u-f--h2, .registerSteps__form h2 {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2 {
+  .u-f--h2, .registerSteps__form h2 {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2 {
+  .u-f--h2, .registerSteps__form h2 {
     font-size: 2rem;
   }
 }
@@ -404,36 +404,36 @@
   }
 }
 
-.u-f--p, p, span {
+.u-f--p, p, span, input {
   font-size: 0.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.6875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.875rem;
   }
 }
@@ -467,48 +467,48 @@
   }
 }
 
-.gridFull, .footer__grid, .footer__brands {
+.footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .gridFull, .footer__grid, .footer__brands {
+  .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .gridFull, .footer__grid, .footer__brands {
+  .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .gridFull, .footer__grid, .footer__brands {
+  .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .gridFull, .footer__grid, .footer__brands {
+  .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .gridFull, .footer__grid, .footer__brands {
+  .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxl);
     margin-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .gridFull, .footer__grid, .footer__brands {
+  .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxxl);
     margin-right: var(--horizontal-main-xxxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .gridFull, .footer__grid, .footer__brands {
+  .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -545,7 +545,7 @@
   }
 }
 
-.btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+.btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
   font-family: "Lexend";
   font-weight: 700;
@@ -560,36 +560,36 @@
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
-  .btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 0.9375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
     padding: 0.9375rem 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
     padding: 0.9375rem 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.25rem;
   }
 }
-.btn__red > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
+.btn__red > *, .btn__blue > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
   vertical-align: middle;
 }
-.btn__red > * + *, .btn__white > * + *, .btn__gray--red > * + *, .btn__block > * + *, .btn__black--lighter > * + *, .btn__ghost--red > * + *, .btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
+.btn__red > * + *, .btn__blue > * + *, .btn__white > * + *, .btn__gray--red > * + *, .btn__block > * + *, .btn__black--lighter > * + *, .btn__ghost--red > * + *, .btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
   margin-left: 0.25em;
 }
-.btn__red svg, .btn__white svg, .btn__gray--red svg, .btn__block svg, .btn__black--lighter svg, .btn__ghost--red svg, .btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
+.btn__red svg, .btn__blue svg, .btn__white svg, .btn__gray--red svg, .btn__block svg, .btn__black--lighter svg, .btn__ghost--red svg, .btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
   font-size: inherit;
 }
 
@@ -678,6 +678,16 @@ p, span {
   font-family: "Lexend";
   color: #ffffff;
   margin-bottom: 0.9375rem;
+}
+
+input {
+  padding: 0 1.25rem;
+  font-weight: 700;
+  font-family: "Lexend";
+  border-radius: 1.25rem;
+}
+input::placeholder {
+  font-weight: 700;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -789,6 +799,15 @@ h5 {
 .btn__red:hover {
   color: #f4f6f8;
   background-color: #ff5264;
+}
+
+.btn__blue {
+  color: #ffffff;
+  background-color: #00d1bc;
+}
+.btn__blue:hover {
+  color: #f4f6f8;
+  background-color: #99e4de;
 }
 
 .btn__red--glow {
@@ -1115,11 +1134,11 @@ h5 {
   opacity: 0;
 }
 
-body {
+.has-header {
   top: 6vh;
 }
 @media only screen and (min-width: 992px) {
-  body {
+  .has-header {
     top: 8vh;
   }
 }
@@ -1491,16 +1510,131 @@ body {
   text-align: center;
 }
 
-.gridFull {
-  position: relative;
-  overflow: hidden;
-}
-.gridFull .item {
-  border-radius: 0.625rem;
-  overflow: hidden;
-}
-.gridFull .item img {
-  object-fit: contain;
+.registerSteps {
+  height: 100vh;
   width: 100%;
+  overflow: hidden;
+  background-color: #f4f6f8;
+  background-image: url("../img/img-bg-step1.jpg");
+}
+.registerSteps__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.6875rem;
+  padding: 0 2.5rem;
+}
+.registerSteps__layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 4.6875rem);
+}
+.registerSteps__form {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registerSteps__form h2 {
+  color: #13171d;
+  max-width: 40%;
+  text-align: center;
+}
+.registerSteps__container {
+  position: relative;
+  background-color: #f4f6f8;
+  box-shadow: 0px 30px 80px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 1.875rem;
+  margin-top: 3.75rem;
+  padding: 3.75rem 5rem 5rem;
+}
+.registerSteps__steps {
+  position: absolute;
+  top: -2.375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registerSteps__step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5rem solid #f4f6f8;
+  border-radius: 6.25rem;
+}
+.registerSteps__step:not(:last-of-type) {
+  margin-right: 0.3125rem;
+}
+.registerSteps__step p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  border: 0.5rem solid #eaedef;
+  border-radius: 6.25rem;
+  margin: 0;
+}
+.registerSteps__step p span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  color: #6f7a8c;
+  border: 0.25rem solid #f4f6f8;
+  border-radius: 6.25rem;
+  background-color: #eaedef;
+  margin: 0;
+}
+.registerSteps__input {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: row;
+  gap: 1.25rem;
+}
+.registerSteps__input input {
+  flex: 50%;
+  background-color: #eaedef;
+  color: #868b92;
+  height: 2.8125rem;
+}
+.registerSteps__input input::placeholder {
+  color: #868b92;
+}
+.registerSteps__accept {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1.25rem;
+}
+.registerSteps__accept input[type=checkbox] {
+  margin-right: 0.625rem;
+}
+.registerSteps__accept p {
+  color: #868b92;
+}
+.registerSteps button {
+  position: absolute;
+  bottom: -1.375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3.125rem;
+  padding: 0 3.75rem;
+}
+.registerSteps__sign_up {
+  margin-top: 2.8125rem;
+}
+.registerSteps__sign_up p {
+  color: black;
+  font-weight: 400;
+}
+.registerSteps__sign_up p a {
+  color: #00d1bc;
+  margin-left: 0.625rem;
 }
 /*# sourceMappingURL=layout.css.map */

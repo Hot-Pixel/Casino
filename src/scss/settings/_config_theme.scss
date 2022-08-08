@@ -39,18 +39,18 @@ $buttons_padding_desktop: rem(15) rem(20);
 
 // inputs
 $inputs_font_family: setfont("family", "primary");
-$inputs_font_weight: setfont('weight', 'regular');
+$inputs_font_weight: setfont('weight', 'bold');
 $inputs_color: setcolor('secondary', 'dark');
 
-$inputs_border_radius: 0;
+$inputs_border_radius: rem(20);
 
 $inputs_font_size: rem(14);
 $inputs_font_size_ipad: rem(16);
-$inputs_font_size_desktop: rem(16);
+$inputs_font_size_desktop: rem(14);
 
-$inputs_padding: rem(10) 0;
-$inputs_padding_ipad: rem(10) 0;
-$inputs_padding_desktop: rem(10) 0;
+$inputs_padding: 0 rem(10);
+$inputs_padding_ipad: 0 rem(15);
+$inputs_padding_desktop: 0 rem(20);
 
 // dark layer
 $dark_layer_opacity: 0.25;

@@ -404,36 +404,36 @@
   }
 }
 
-.u-f--p, p, span {
+.u-f--p, p, span, input {
   font-size: 0.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.6875rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--p, p, span {
+  .u-f--p, p, span, input {
     font-size: 0.875rem;
   }
 }
@@ -545,7 +545,7 @@
   }
 }
 
-.btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+.btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
   font-family: "Lexend";
   font-weight: 700;
@@ -560,36 +560,36 @@
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
-  .btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 0.9375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
     padding: 0.9375rem 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
     padding: 0.9375rem 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .btn__red, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.25rem;
   }
 }
-.btn__red > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
+.btn__red > *, .btn__blue > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
   vertical-align: middle;
 }
-.btn__red > * + *, .btn__white > * + *, .btn__gray--red > * + *, .btn__block > * + *, .btn__black--lighter > * + *, .btn__ghost--red > * + *, .btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
+.btn__red > * + *, .btn__blue > * + *, .btn__white > * + *, .btn__gray--red > * + *, .btn__block > * + *, .btn__black--lighter > * + *, .btn__ghost--red > * + *, .btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
   margin-left: 0.25em;
 }
-.btn__red svg, .btn__white svg, .btn__gray--red svg, .btn__block svg, .btn__black--lighter svg, .btn__ghost--red svg, .btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
+.btn__red svg, .btn__blue svg, .btn__white svg, .btn__gray--red svg, .btn__block svg, .btn__black--lighter svg, .btn__ghost--red svg, .btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
   font-size: inherit;
 }
 
@@ -678,6 +678,16 @@ p, span {
   font-family: "Lexend";
   color: #ffffff;
   margin-bottom: 0.9375rem;
+}
+
+input {
+  padding: 0 1.25rem;
+  font-weight: 700;
+  font-family: "Lexend";
+  border-radius: 1.25rem;
+}
+input::placeholder {
+  font-weight: 700;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -789,6 +799,15 @@ h5 {
 .btn__red:hover {
   color: #f4f6f8;
   background-color: #ff5264;
+}
+
+.btn__blue {
+  color: #ffffff;
+  background-color: #00d1bc;
+}
+.btn__blue:hover {
+  color: #f4f6f8;
+  background-color: #99e4de;
 }
 
 .btn__red--glow {
@@ -1163,11 +1182,11 @@ h5 {
   margin-bottom: 0.9375rem;
 }
 
-body {
+.has-header {
   top: 6vh;
 }
 @media only screen and (min-width: 992px) {
-  body {
+  .has-header {
     top: 8vh;
   }
 }
