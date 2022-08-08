@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .registerSteps__form h2, .registerSteps__step p span, .registerSteps__sign_up p a, .menuPoker__btn span, .headerModule-link p, .ruletaResult, .u-f--bold p, .registerSteps__form h2 p, .registerSteps__step p span p, .registerSteps__sign_up p a p, .menuPoker__btn span p, .ruletaResult p {
+.u-f--bold, .registerLogin__form h2, .registerLogin__step p span, .registerLogin__sign_up p a, .menuPoker__btn span, .headerModule-link p, .ruletaResult, .u-f--bold p, .registerLogin__form h2 p, .registerLogin__step p span p, .registerLogin__sign_up p a p, .menuPoker__btn span p, .ruletaResult p {
   font-weight: 700;
 }
 
@@ -268,36 +268,36 @@
   }
 }
 
-.u-f--h2, .registerSteps__form h2 {
+.u-f--h2, .registerLogin__form h2 {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .registerSteps__form h2 {
+  .u-f--h2, .registerLogin__form h2 {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2, .registerSteps__form h2 {
+  .u-f--h2, .registerLogin__form h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .registerSteps__form h2 {
+  .u-f--h2, .registerLogin__form h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .registerSteps__form h2 {
+  .u-f--h2, .registerLogin__form h2 {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .registerSteps__form h2 {
+  .u-f--h2, .registerLogin__form h2 {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .registerSteps__form h2 {
+  .u-f--h2, .registerLogin__form h2 {
     font-size: 2rem;
   }
 }
@@ -801,6 +801,10 @@ h5 {
   background-color: #ff5264;
 }
 
+.btn__red--glow {
+  box-shadow: 0px 0px 1.25rem 0px #ff293e;
+}
+
 .btn__blue {
   color: #ffffff;
   background-color: #00d1bc;
@@ -810,17 +814,14 @@ h5 {
   background-color: #99e4de;
 }
 
-.btn__red--glow {
-  box-shadow: 0px 0px 1.25rem 0px #ff293e;
-}
-
 .btn__white {
-  color: black;
   background-color: white;
 }
 .btn__white:hover {
-  color: black;
   background-color: #d4d7da;
+}
+.btn__white span {
+  color: black;
 }
 
 /* Button remove filter */
@@ -1510,47 +1511,45 @@ h5 {
   text-align: center;
 }
 
-.registerSteps {
+.registerLogin {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background-color: #f4f6f8;
-  background-image: url("../img/img-bg-step1.jpg");
 }
-.registerSteps__header {
+.registerLogin__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 4.6875rem;
   padding: 0 2.5rem;
 }
-.registerSteps__layout {
+.registerLogin__layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: calc(100% - 4.6875rem);
 }
-.registerSteps__form {
-  max-width: 60%;
+.registerLogin__form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.registerSteps__form h2 {
+.registerLogin__form h2 {
   color: #13171d;
   max-width: 40%;
   text-align: center;
 }
-.registerSteps__container {
+.registerLogin__container {
   position: relative;
   background-color: #f4f6f8;
   box-shadow: 0px 30px 80px 15px rgba(0, 0, 0, 0.2);
   border-radius: 1.875rem;
+  width: 100%;
   margin-top: 3.75rem;
   padding: 3.75rem 5rem 5rem;
 }
-.registerSteps__steps {
+.registerLogin__steps {
   position: absolute;
   top: -2.375rem;
   left: 50%;
@@ -1559,17 +1558,17 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-.registerSteps__step {
+.registerLogin__step {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0.5rem solid #f4f6f8;
   border-radius: 6.25rem;
 }
-.registerSteps__step:not(:last-of-type) {
+.registerLogin__step:not(:last-of-type) {
   margin-right: 0.3125rem;
 }
-.registerSteps__step p {
+.registerLogin__step p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1578,7 +1577,7 @@ h5 {
   border-radius: 6.25rem;
   margin: 0;
 }
-.registerSteps__step p span {
+.registerLogin__step p span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1591,50 +1590,102 @@ h5 {
   background-color: #eaedef;
   margin: 0;
 }
-.registerSteps__input {
+.registerLogin__btns {
+  position: absolute;
+  bottom: -1.375rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.registerLogin__btns .btn__back img {
+  transform: rotate(90deg);
+}
+.registerLogin__btns button {
+  height: 3.125rem;
+  padding: 0 3.75rem;
+}
+.registerLogin__btns button:last-of-type {
+  margin-left: 0.625rem;
+}
+.registerLogin__sign_up {
+  margin-top: 2.8125rem;
+}
+.registerLogin__sign_up p {
+  color: black;
+  font-weight: 400;
+}
+.registerLogin__sign_up p a {
+  color: #00d1bc;
+  margin-left: 0.625rem;
+}
+
+.stepOne, .stepThree {
+  background-color: #f4f6f8;
+  background-image: url("../img/img-bg-step1.jpg");
+}
+.stepOne .registerLogin__form, .stepThree .registerLogin__form {
+  max-width: 60%;
+}
+.stepOne__input, .stepThree__input {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
   gap: 1.25rem;
 }
-.registerSteps__input input {
+.stepOne__input input, .stepThree__input input {
   flex: 50%;
   background-color: #eaedef;
   color: #868b92;
   height: 2.8125rem;
 }
-.registerSteps__input input::placeholder {
+.stepOne__input input::placeholder, .stepThree__input input::placeholder {
   color: #868b92;
 }
-.registerSteps__accept {
+.stepOne__accept, .stepThree__accept {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin-top: 1.25rem;
 }
-.registerSteps__accept input[type=checkbox] {
+.stepOne__accept input[type=checkbox], .stepThree__accept input[type=checkbox] {
   margin-right: 0.625rem;
 }
-.registerSteps__accept p {
+.stepOne__accept p, .stepThree__accept p {
   color: #868b92;
 }
-.registerSteps button {
+
+.login {
+  background-color: #eaedef;
+}
+.login h2 {
+  max-width: 100%;
+  margin-top: 0;
+}
+.login .registerLogin__form {
+  width: 30%;
+}
+.login .registerLogin__container {
+  padding: 7.5rem 5rem 3.75rem;
+}
+.login .login__header {
   position: absolute;
-  bottom: -1.375rem;
+  top: -3.75rem;
   left: 50%;
   transform: translateX(-50%);
-  height: 3.125rem;
-  padding: 0 3.75rem;
 }
-.registerSteps__sign_up {
-  margin-top: 2.8125rem;
+.login .login__input {
+  display: flex;
+  flex-direction: column;
 }
-.registerSteps__sign_up p {
-  color: black;
-  font-weight: 400;
+.login .login__input input {
+  background-color: #eaedef;
+  color: #868b92;
+  height: 2.8125rem;
 }
-.registerSteps__sign_up p a {
-  color: #00d1bc;
-  margin-left: 0.625rem;
+.login .login__input input::placeholder {
+  color: #868b92;
+}
+.login .login__input input:last-of-type {
+  margin-top: 0.625rem;
 }
 /*# sourceMappingURL=layout.css.map */

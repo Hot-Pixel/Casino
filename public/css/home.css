@@ -859,6 +859,10 @@ h5 {
   background-color: #ff5264;
 }
 
+.btn__red--glow {
+  box-shadow: 0px 0px 1.25rem 0px #ff293e;
+}
+
 .btn__blue {
   color: #ffffff;
   background-color: #00d1bc;
@@ -868,17 +872,14 @@ h5 {
   background-color: #99e4de;
 }
 
-.btn__red--glow {
-  box-shadow: 0px 0px 1.25rem 0px #ff293e;
-}
-
 .btn__white {
-  color: black;
   background-color: white;
 }
 .btn__white:hover {
-  color: black;
   background-color: #d4d7da;
+}
+.btn__white span {
+  color: black;
 }
 
 /* Button remove filter */

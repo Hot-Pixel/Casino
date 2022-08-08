@@ -2,13 +2,10 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.registerSteps {
+.registerLogin {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-
-  background-color: #f4f6f8;
-  background-image: url("../img/img-bg-step1.jpg");
 
   &__header {
     display: flex;
@@ -29,8 +26,6 @@
   }
 
   &__form {
-    max-width: 60%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,6 +45,7 @@
     box-shadow: 0px 30px 80px 15px rgba(0, 0, 0, 0.2);
     border-radius: rem(30);
 
+    width: 100%;
     margin-top: rem(60);
     padding: rem(60) rem(80) rem(80);
   }
@@ -74,7 +70,7 @@
     border-radius: rem(100);
 
     &:not(:last-of-type) {
-        margin-right: rem(5);
+      margin-right: rem(5);
     }
 
     p {
@@ -110,6 +106,53 @@
     }
   }
 
+  &__btns {
+    position: absolute;
+    bottom: rem(-22);
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+
+    .btn__back img {
+      transform: rotate(90deg);
+    }
+
+    button {
+      height: rem(50);
+      padding: 0 rem(60);
+
+      &:last-of-type {
+        margin-left: rem(10);
+      }
+    }
+
+  }
+
+  &__sign_up {
+    margin-top: rem(45);
+
+    p {
+      color: black;
+      font-weight: 400;
+
+      a {
+        @extend .u-f--bold;
+        color: setcolor("secondary");
+        margin-left: rem(10);
+      }
+    }
+  }
+}
+
+.stepOne, .stepThree {
+  background-color: #f4f6f8;
+  background-image: url("../img/img-bg-step1.jpg");
+
+  .registerLogin__form {
+    max-width: 60%;
+  }
+
   &__input {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -117,19 +160,17 @@
     gap: rem(20);
 
     input {
-        flex: 50%;
+      flex: 50%;
 
-        background-color: #eaedef;
+      background-color: #eaedef;
+      color: #868b92;
+
+      height: rem(45);
+
+      &::placeholder {
         color: #868b92;
-
-        height: rem(45);
-
-        &::placeholder {
-            color: #868b92;
-
-        }
+      }
     }
-
   }
 
   &__accept {
@@ -140,36 +181,54 @@
     margin-top: rem(20);
 
     input[type="checkbox"] {
-        margin-right: rem(10);
+      margin-right: rem(10);
     }
 
     p {
-        color: #868b92;
+      color: #868b92;
     }
   }
+}
 
-  button {
+.login {
+  background-color: #eaedef;
+
+  h2 {
+    max-width: 100%;
+    margin-top: 0;
+  }
+
+  .registerLogin__form {
+    width: 30%;
+  }
+  .registerLogin__container {
+    padding: rem(120) rem(80) rem(60);
+  }
+
+  .login__header {
     position: absolute;
-    bottom: rem(-22);
+    top: rem(-60);
     left: 50%;
     transform: translateX(-50%);
-    height: rem(50);
-    padding: 0 rem(60);
-
   }
 
-  &__sign_up {
-    margin-top: rem(45);
+  .login__input {
+    display: flex;
+    flex-direction: column;
 
-    p {
-        color: black;
-        font-weight: 400;
+    input {
+      background-color: #eaedef;
+      color: #868b92;
 
-        a {
-            @extend .u-f--bold;
-            color: setcolor('secondary');
-            margin-left: rem(10);
-        }
+      height: rem(45);
+
+      &::placeholder {
+        color: #868b92;
+      }
+
+      &:last-of-type {
+        margin-top: rem(10);
+      }
     }
   }
 }
