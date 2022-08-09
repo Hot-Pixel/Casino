@@ -336,36 +336,36 @@
   }
 }
 
-.u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+.u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 1.125rem;
   }
 }
@@ -1593,14 +1593,16 @@ h5 {
 .registerLogin__btns {
   position: absolute;
   bottom: -1.375rem;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  width: 100%;
   display: flex;
+  justify-content: center;
 }
 .registerLogin__btns .btn__back img {
   transform: rotate(90deg);
 }
 .registerLogin__btns button {
+  display: inline-block;
   height: 3.125rem;
   padding: 0 3.75rem;
 }
@@ -1613,6 +1615,8 @@ h5 {
 .registerLogin__sign_up p {
   color: black;
   font-weight: 400;
+  margin: 0.3125rem;
+  text-align: center;
 }
 .registerLogin__sign_up p a {
   color: #00d1bc;
@@ -1654,19 +1658,20 @@ h5 {
   color: #868b92;
 }
 
-.login {
+.login, .password {
   background-color: #eaedef;
 }
-.login h2 {
+.login h2, .password h2 {
   max-width: 100%;
   margin-top: 0;
 }
-.login .registerLogin__form {
+.login .registerLogin__form, .password .registerLogin__form {
   width: 30%;
 }
-.login .registerLogin__container {
+.login .registerLogin__form .registerLogin__container, .password .registerLogin__form .registerLogin__container {
   padding: 7.5rem 5rem 3.75rem;
 }
+
 .login .login__header {
   position: absolute;
   top: -3.75rem;
@@ -1687,5 +1692,39 @@ h5 {
 }
 .login .login__input input:last-of-type {
   margin-top: 0.625rem;
+}
+
+.password .password__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.password .password__container .password__header {
+  height: 5.625rem;
+  width: 5.625rem;
+  margin-bottom: 1.875rem;
+}
+.password .password__container h4 {
+  color: black;
+  text-align: center;
+  max-width: 90%;
+}
+.password .password__container p {
+  color: #868b92;
+  text-align: center;
+  max-width: 90%;
+}
+.password .password__container .password__input {
+  width: 90%;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+.password .password__container .password__input input[type=text] {
+  height: 2.8125rem;
+  width: 100%;
+  background-color: transparent;
+  border: 0.125rem solid #868b92;
+  text-align: center;
 }
 /*# sourceMappingURL=layout.css.map */

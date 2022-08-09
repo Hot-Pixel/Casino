@@ -109,16 +109,18 @@
   &__btns {
     position: absolute;
     bottom: rem(-22);
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    width: 100%;
 
     display: flex;
+    justify-content: center;
 
     .btn__back img {
       transform: rotate(90deg);
     }
 
     button {
+      display: inline-block;
       height: rem(50);
       padding: 0 rem(60);
 
@@ -135,6 +137,8 @@
     p {
       color: black;
       font-weight: 400;
+      margin: rem(5);
+      text-align: center;
 
       a {
         @extend .u-f--bold;
@@ -190,7 +194,7 @@
   }
 }
 
-.login {
+.login, .password {
   background-color: #eaedef;
 
   h2 {
@@ -200,11 +204,17 @@
 
   .registerLogin__form {
     width: 30%;
-  }
-  .registerLogin__container {
-    padding: rem(120) rem(80) rem(60);
+
+    .registerLogin__container {
+      padding: rem(120) rem(80) rem(60);
+    }
   }
 
+
+
+}
+
+.login {
   .login__header {
     position: absolute;
     top: rem(-60);
@@ -228,6 +238,52 @@
 
       &:last-of-type {
         margin-top: rem(10);
+      }
+    }
+  }
+}
+
+.password {
+  .password__container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .password__header {
+      height: rem(90);
+      width: rem(90);
+
+      margin-bottom: rem(30);
+    }
+
+    h4 {
+      @extend .u-f--h4;
+      color: black;
+      text-align: center;
+      max-width: 90%;
+    }
+
+    p {
+      color: #868b92;
+      text-align: center;
+      max-width: 90%;
+    }
+
+    .password__input {
+      width: 90%;
+      margin-top: rem(30);
+      margin-bottom: rem(10);
+
+      input[type="text"] {
+        height: rem(45);
+        width: 100%;
+
+        background-color: transparent;
+        border: rem(2) solid #868b92;
+
+        text-align: center;
       }
     }
   }
