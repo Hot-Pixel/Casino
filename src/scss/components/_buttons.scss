@@ -106,7 +106,6 @@
   }
 
   img {
-    display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -115,7 +114,6 @@
       font-size: rem(12);
     }
     @include screen-md {
-      display: block;
       right: 7px;
       font-size: rem(14);
     }

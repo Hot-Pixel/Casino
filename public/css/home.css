@@ -930,7 +930,6 @@ h5 {
   padding-right: 0.625rem;
 }
 .btn__icon--right img {
-  display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -942,7 +941,6 @@ h5 {
 }
 @media only screen and (min-width: ) {
   .btn__icon--right img {
-    display: block;
     right: 7px;
     font-size: 0.875rem;
   }
@@ -1247,7 +1245,7 @@ h5 {
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0px 0.3125rem 2.8125rem 1.875rem rgb(0, 0, 0);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1258,7 +1256,7 @@ h5 {
   position: fixed;
   bottom: 0;
   width: 100%;
-  box-shadow: 0px -0.3125rem 2.8125rem 1.875rem rgb(0, 0, 0);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;

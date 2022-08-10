@@ -3,7 +3,6 @@
 @use "../tools" as *;
 
 .grid__promo {
-  @extend %margin_horizontal_main;
 
   &-container {
     display: grid;
