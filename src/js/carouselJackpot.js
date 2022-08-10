@@ -1,3 +1,5 @@
+import { Splide } from "@splidejs/splide";
+
 function carouselJackpot() {
   var carousel = new Splide(".jackpot__carousel", {
     pagination: false,

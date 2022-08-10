@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .registerLogin__form h2, .registerLogin__step p span, .registerLogin__sign_up p a, .menuPoker__btn span, .headerModule-link p, .ruletaResult, .u-f--bold p, .registerLogin__form h2 p, .registerLogin__step p span p, .registerLogin__sign_up p a p, .menuPoker__btn span p, .ruletaResult p {
+.u-f--bold, .menuPoker__btn span, .headerModule-link p, .ruletaResult, .u-f--bold p, .menuPoker__btn span p, .ruletaResult p {
   font-weight: 700;
 }
 
@@ -268,36 +268,36 @@
   }
 }
 
-.u-f--h2, .registerLogin__form h2 {
+.u-f--h2 {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .registerLogin__form h2 {
+  .u-f--h2 {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h2, .registerLogin__form h2 {
+  .u-f--h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .registerLogin__form h2 {
+  .u-f--h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .registerLogin__form h2 {
+  .u-f--h2 {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .registerLogin__form h2 {
+  .u-f--h2 {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .registerLogin__form h2 {
+  .u-f--h2 {
     font-size: 2rem;
   }
 }
@@ -336,36 +336,36 @@
   }
 }
 
-.u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
+.u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .password .password__container h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
     font-size: 1.125rem;
   }
 }
@@ -467,48 +467,48 @@
   }
 }
 
-.footer__grid, .footer__brands {
+.gridFull, .footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 992px) {
-  .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxl);
     margin-right: var(--horizontal-main-xxl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xxxl);
     margin-right: var(--horizontal-main-xxxl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .footer__grid, .footer__brands {
+  .gridFull, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -1511,220 +1511,16 @@ h5 {
   text-align: center;
 }
 
-.registerLogin {
-  height: 100vh;
-  width: 100%;
+.gridFull {
+  position: relative;
   overflow: hidden;
 }
-.registerLogin__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 4.6875rem;
-  padding: 0 2.5rem;
+.gridFull .item {
+  border-radius: 0.625rem;
+  overflow: hidden;
 }
-.registerLogin__layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: calc(100% - 4.6875rem);
-}
-.registerLogin__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.registerLogin__form h2 {
-  color: #13171d;
-  max-width: 40%;
-  text-align: center;
-}
-.registerLogin__container {
-  position: relative;
-  background-color: #f4f6f8;
-  box-shadow: 0px 30px 80px 15px rgba(0, 0, 0, 0.2);
-  border-radius: 1.875rem;
+.gridFull .item img {
+  object-fit: contain;
   width: 100%;
-  margin-top: 3.75rem;
-  padding: 3.75rem 5rem 5rem;
-}
-.registerLogin__steps {
-  position: absolute;
-  top: -2.375rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.registerLogin__step {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.5rem solid #f4f6f8;
-  border-radius: 6.25rem;
-}
-.registerLogin__step:not(:last-of-type) {
-  margin-right: 0.3125rem;
-}
-.registerLogin__step p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: content-box;
-  border: 0.5rem solid #eaedef;
-  border-radius: 6.25rem;
-  margin: 0;
-}
-.registerLogin__step p span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: content-box;
-  width: 2.1875rem;
-  height: 2.1875rem;
-  color: #6f7a8c;
-  border: 0.25rem solid #f4f6f8;
-  border-radius: 6.25rem;
-  background-color: #eaedef;
-  margin: 0;
-}
-.registerLogin__btns {
-  position: absolute;
-  bottom: -1.375rem;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.registerLogin__btns .btn__back img {
-  transform: rotate(90deg);
-}
-.registerLogin__btns button {
-  display: inline-block;
-  height: 3.125rem;
-  padding: 0 3.75rem;
-}
-.registerLogin__btns button:last-of-type {
-  margin-left: 0.625rem;
-}
-.registerLogin__sign_up {
-  margin-top: 2.8125rem;
-}
-.registerLogin__sign_up p {
-  color: black;
-  font-weight: 400;
-  margin: 0.3125rem;
-  text-align: center;
-}
-.registerLogin__sign_up p a {
-  color: #00d1bc;
-  margin-left: 0.625rem;
-}
-
-.stepOne, .stepThree {
-  background-color: #f4f6f8;
-  background-image: url("../img/img-bg-step1.jpg");
-}
-.stepOne .registerLogin__form, .stepThree .registerLogin__form {
-  max-width: 60%;
-}
-.stepOne__input, .stepThree__input {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-  gap: 1.25rem;
-}
-.stepOne__input input, .stepThree__input input {
-  flex: 50%;
-  background-color: #eaedef;
-  color: #868b92;
-  height: 2.8125rem;
-}
-.stepOne__input input::placeholder, .stepThree__input input::placeholder {
-  color: #868b92;
-}
-.stepOne__accept, .stepThree__accept {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: 1.25rem;
-}
-.stepOne__accept input[type=checkbox], .stepThree__accept input[type=checkbox] {
-  margin-right: 0.625rem;
-}
-.stepOne__accept p, .stepThree__accept p {
-  color: #868b92;
-}
-
-.login, .password {
-  background-color: #eaedef;
-}
-.login h2, .password h2 {
-  max-width: 100%;
-  margin-top: 0;
-}
-.login .registerLogin__form, .password .registerLogin__form {
-  width: 30%;
-}
-.login .registerLogin__form .registerLogin__container, .password .registerLogin__form .registerLogin__container {
-  padding: 7.5rem 5rem 3.75rem;
-}
-
-.login .login__header {
-  position: absolute;
-  top: -3.75rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.login .login__input {
-  display: flex;
-  flex-direction: column;
-}
-.login .login__input input {
-  background-color: #eaedef;
-  color: #868b92;
-  height: 2.8125rem;
-}
-.login .login__input input::placeholder {
-  color: #868b92;
-}
-.login .login__input input:last-of-type {
-  margin-top: 0.625rem;
-}
-
-.password .password__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.password .password__container .password__header {
-  height: 5.625rem;
-  width: 5.625rem;
-  margin-bottom: 1.875rem;
-}
-.password .password__container h4 {
-  color: black;
-  text-align: center;
-  max-width: 90%;
-}
-.password .password__container p {
-  color: #868b92;
-  text-align: center;
-  max-width: 90%;
-}
-.password .password__container .password__input {
-  width: 90%;
-  margin-top: 1.875rem;
-  margin-bottom: 0.625rem;
-}
-.password .password__container .password__input input[type=text] {
-  height: 2.8125rem;
-  width: 100%;
-  background-color: transparent;
-  border: 0.125rem solid #868b92;
-  text-align: center;
 }
 /*# sourceMappingURL=layout.css.map */

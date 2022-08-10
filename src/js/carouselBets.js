@@ -1,3 +1,5 @@
+import { Splide } from "@splidejs/splide";
+
 function carouselBets() {
   var carousel = new Splide(".carouselBets__carousel", {
     pagination: false,

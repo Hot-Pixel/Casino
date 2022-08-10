@@ -1,3 +1,5 @@
+import { Splide } from "@splidejs/splide";
+
 function carouselBanner() {
   var carousel = new Splide(".bannerCarousel.splide", {
     perPage: 1,
