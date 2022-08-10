@@ -8,7 +8,7 @@
   flex-direction: column;
   row-gap: rem(15);
 
-  @include tabletH {
+  @include screen-sm {
     flex-direction: row;
     column-gap: rem(15);
     row-gap: 0;
@@ -26,7 +26,7 @@
   @include tablet {
     padding: rem(30);
   }
-  @include tabletH {
+  @include screen-sm {
     padding: rem(15);
   }
   @include screen-md {
@@ -37,7 +37,7 @@
   &:first-of-type {
     margin-bottom: rem(10);
 
-    @include tabletH {
+    @include screen-sm {
         margin-right: rem(5);
         margin-bottom: 0;
     }
@@ -45,7 +45,7 @@
 
   &:last-of-type {
 
-    @include tabletH {
+    @include screen-sm {
       margin-left: rem(5);
     }
   }
@@ -77,7 +77,7 @@
 
         img {
           display: none;
-          @include tabletH {
+          @include screen-sm {
             display: inline-block;
           }
         }
@@ -96,7 +96,7 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto auto;
     }
-    @include tabletH {
+    @include screen-sm {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto auto;
     }

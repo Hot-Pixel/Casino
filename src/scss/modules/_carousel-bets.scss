@@ -78,7 +78,7 @@
             @extend .u-f--h5;
             padding: 8px 15px;
 
-            @include tabletH {
+            @include screen-sm {
               padding: 10px 18px;
             }
             @include screen-md {

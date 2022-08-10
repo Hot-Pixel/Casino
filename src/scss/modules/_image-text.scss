@@ -13,7 +13,7 @@
   "img"
   "content";
 
-  @include tabletH {
+  @include screen-sm {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "content img";
@@ -35,7 +35,7 @@
     flex-direction: column;
     text-align: center;
 
-    @include tabletH {
+    @include screen-sm {
       text-align: left;
     }
 
@@ -50,7 +50,7 @@
     &-btns {
       margin-top: rem(15);
 
-      @include tabletH {
+      @include screen-sm {
         margin-top: rem(30);
 
         display: flex;
@@ -60,7 +60,7 @@
       button {
         margin-top: 10px;
 
-        @include tabletH {
+        @include screen-sm {
           width: fit-content;
         }
 

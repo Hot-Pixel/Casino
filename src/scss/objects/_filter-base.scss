@@ -16,7 +16,7 @@
     &-game, &-cruppier {
       display: none;
 
-      @include tabletH {
+      @include screen-sm {
         display: block;
       }
 
@@ -72,7 +72,7 @@
         border-radius: rem(5);
         padding: rem(10);
 
-        @include tabletH {
+        @include screen-sm {
           padding: rem(16);
           margin-right: rem(32);
         }
@@ -87,7 +87,7 @@
         border: none;
         border-radius: rem(5);
 
-        @include tabletH {
+        @include screen-sm {
           margin: 0 rem(20);
         }
 
@@ -104,7 +104,7 @@
         margin-right: rem(5);
         padding-right: rem(32);
 
-        @include tabletH {
+        @include screen-sm {
           margin: 0 rem(20);
           padding-right: rem(32);
         }
@@ -114,7 +114,7 @@
         display: block;
         padding-right: rem(5);
 
-        @include tabletH {
+        @include screen-sm {
           display: none;
         }
       }
@@ -128,7 +128,7 @@
         svg {
           margin-right: 0;
 
-          @include tabletH {
+          @include screen-sm {
             margin-right: 10px;
           }
         }
@@ -137,7 +137,7 @@
           margin: 0;
           display: none;
 
-          @include tabletH {
+          @include screen-sm {
             display: block;
           }
         }
@@ -157,7 +157,7 @@
         margin-right: rem(10);
         display: none;
 
-        @include tabletH {
+        @include screen-sm {
           display: block;
         }
 
@@ -171,7 +171,7 @@
         svg path {
           fill: white;
 
-          @include tabletH {
+          @include screen-sm {
             fill: setcolor("primary");
           }
         }
@@ -181,7 +181,7 @@
           display: none;
           margin: 0;
 
-          @include tabletH {
+          @include screen-sm {
             display: inline-block;
           }
         }

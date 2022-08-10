@@ -27,7 +27,7 @@
       "follow client";
     }
 
-    @include tabletH {
+    @include screen-sm {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
       grid-template-areas: "casino info follow client";
@@ -41,7 +41,7 @@
       grid-area: "info";
       justify-self: flex-start;
 
-      @include tabletH {
+      @include screen-sm {
         justify-self: center;
       }
     }
@@ -50,7 +50,7 @@
       grid-area: "follow";
       justify-self: flex-start;
 
-      @include tabletH {
+      @include screen-sm {
         justify-self: center;
       }
 
@@ -73,7 +73,7 @@
       grid-area: "client";
       justify-self: flex-start;
 
-      @include tabletH {
+      @include screen-sm {
         justify-self: flex-end;
       }
 
@@ -88,7 +88,7 @@
           display: none;
           justify-content: flex-end;
 
-          @include tabletH {
+          @include screen-sm {
             display: flex;
           }
         }
@@ -116,7 +116,7 @@
 
     margin-top: rem(30);
 
-    @include tabletH {
+    @include screen-sm {
       margin-top: rem(120);
     }
 
@@ -127,7 +127,7 @@
       ul {
         margin: rem(15) 0;
 
-        @include tabletH {
+        @include screen-sm {
           padding: 0 rem(30);
         }
       }
@@ -153,7 +153,7 @@
         justify-content: center;
         align-items: center;
 
-        @include tabletH {
+        @include screen-sm {
           flex-direction: row;
         }
 
@@ -173,7 +173,7 @@
     background-color: setcolor("black", "dark2");
     padding: rem(30) 0;
 
-    @include tabletH {
+    @include screen-sm {
       padding: rem(80) 0;
     }
 
@@ -183,7 +183,7 @@
       justify-content: center;
       align-items: center;
 
-      @include tabletH {
+      @include screen-sm {
         flex-direction: row;
         flex-wrap: nowrap;
       }
@@ -200,7 +200,7 @@
         background-color: setcolor('black');
         border-radius: rem(10);
 
-        @include tabletH {
+        @include screen-sm {
           background-color: transparent;
           border-radius: 0;
           width: auto;
@@ -218,7 +218,7 @@
     & > div {
       margin-top: rem(20);
 
-      @include tabletH {
+      @include screen-sm {
         margin-top: rem(40);
       }
 

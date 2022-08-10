@@ -25,7 +25,7 @@
     margin-bottom: rem(30);
     width: 100%;
     vertical-align: top;
-    @include tabletH {
+    @include screen-sm {
         margin-bottom: rem(60)
     }
 }
@@ -47,7 +47,7 @@ select, textarea, input {
         padding: $inputs_padding_ipad;
     }
 
-    @include tabletH {
+    @include screen-sm {
         font-size: $inputs_font_size_desktop;
         padding: $inputs_padding_desktop;
     }

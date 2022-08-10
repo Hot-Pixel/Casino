@@ -26,7 +26,7 @@
     justify-content: flex-end;
     align-items: center;
 
-    @include tabletH {
+    @include screen-sm {
       top: rem(-60);
       margin-bottom: rem(-60);
     }
@@ -38,7 +38,7 @@
       width: rem(55);
 
 
-      @include tabletH {
+      @include screen-sm {
         height: 95px;
         width: 95px;
       }
@@ -50,7 +50,7 @@
       margin: 0;
       text-align: center;
 
-      @include tabletH {
+      @include screen-sm {
         max-width: 100%;
       }
     }

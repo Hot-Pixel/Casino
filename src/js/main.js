@@ -9,7 +9,6 @@ import menuPoker from "./menuPoker.js";
 import accorPoker from "./accordionPoker.js";
 import carouselFull from "./carouselFull.js";
 
-
 const carouselBannerExist = document.getElementsByClassName("bannerCarousel");
 const carouselJackpotExist =
   document.getElementsByClassName("jackpot__carousel");
@@ -53,7 +52,3 @@ window.addEventListener("load", () => {
     carouselFull();
   }
 });
-
-
-
-

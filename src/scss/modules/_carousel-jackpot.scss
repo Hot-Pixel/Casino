@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @include tabletH {
+  @include screen-sm {
     flex-direction: row;
   }
 
@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
 
-    @include tabletH {
+    @include screen-sm {
       width: calc(30% - rem(60));
     }
 
@@ -45,7 +45,7 @@
   &__carousel {
     margin-top: rem(30);
 
-    @include tabletH {
+    @include screen-sm {
       margin-top: 0;
       width: 70%;
     }
@@ -76,7 +76,7 @@
       padding: rem(10);
       height: rem(120);
 
-      @include tabletH {
+      @include screen-sm {
         padding: rem(15);
         height: auto;
       }

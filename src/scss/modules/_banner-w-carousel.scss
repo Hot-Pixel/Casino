@@ -13,14 +13,14 @@
     margin-bottom: rem(25);
     overflow: hidden;
 
-    @include tabletH {
+    @include screen-sm {
       flex-direction: row;
     }
 
     &-wrapper {
       width: 100%;
 
-      @include tabletH {
+      @include screen-sm {
         width: 50%;
         height: rem(470);
       }
@@ -36,7 +36,7 @@
         @extend .u-f--h1, .u-f--bold;
         text-align: center;
 
-        @include tabletH {
+        @include screen-sm {
           text-align: left;
         }
       }
@@ -45,7 +45,7 @@
         @extend .u-f--h3;
         display: none;
 
-        @include tabletH {
+        @include screen-sm {
           display: inline-block;
           font-weight: 700;
           line-height: 1.2em;
@@ -62,7 +62,7 @@
       align-items: center;
       justify-content: space-between;
 
-      @include tabletH {
+      @include screen-sm {
         padding: rem(60);
         background-color: setcolor("black");
         align-items: flex-start;
@@ -75,7 +75,7 @@
         border-radius: 0 0 5px 5px;
         margin-bottom: 23px;
 
-        @include tabletH {
+        @include screen-sm {
           border-radius: 0;
         }
       }
@@ -93,7 +93,7 @@
 
         overflow: overlay;
 
-        @include tabletH {
+        @include screen-sm {
           position: static;
           transform: translateX(0);
           box-shadow: 0px 0px rem(20) 0px setcolor("primary");
@@ -110,7 +110,7 @@
       height: rem(250);
       background-color: setcolor("black");
 
-      @include tabletH {
+      @include screen-sm {
         height: rem(470);
       }
     }
@@ -119,7 +119,7 @@
   .splide__arrow {
     top: calc(100% - 48px);
 
-    @include tabletH {
+    @include screen-sm {
       top: 50%;
     }
 
@@ -127,7 +127,7 @@
       height: rem(30);
       width: rem(30);
 
-      @include tabletH {
+      @include screen-sm {
         height: rem(40);
         width: rem(40);
       }
@@ -136,7 +136,7 @@
     &--prev {
       left: 10%;
 
-      @include tabletH {
+      @include screen-sm {
         left: rem(-15);
       }
     }
@@ -144,7 +144,7 @@
     &--next {
       right: 10%;
 
-      @include tabletH {
+      @include screen-sm {
         right: rem(-15);
       }
     }

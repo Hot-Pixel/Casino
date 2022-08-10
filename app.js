@@ -8,6 +8,7 @@ import layout from "./routes/layout.js";
 import slots from "./routes/slots.js";
 import slotsAll from "./routes/slotsAll.js";
 import casino from "./routes/casino.js";
+import promo from "./routes/promociones.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -28,6 +29,7 @@ app.use("/layout", layout);
 app.use("/slots", slots);
 app.use("/slots-all", slotsAll);
 app.use("/casino", casino);
+app.use("/promociones", promo);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

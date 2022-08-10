@@ -5,32 +5,32 @@
   --horizontal-main-md: 3.75rem;
   --horizontal-main-lg: 5rem;
   --horizontal-main-xl: 7.5rem;
-  --horizontal-main-xxl: 8.75rem;
-  --horizontal-main-xxxl: 9.375rem;
+  --horizontal-main-2xl: 8.75rem;
+  --horizontal-main-3xl: 9.375rem;
   --horizontal-large-xs: 2.5rem;
   --horizontal-large-sm: 2.5rem;
   --horizontal-large-md: 5rem;
   --horizontal-large-lg: 7.5rem;
   --horizontal-large-xl: 18.75rem;
-  --horizontal-large-xxl: 18.75rem;
+  --horizontal-large-2xl: 18.75rem;
   --vertical-small-xs: 1.25rem;
   --vertical-small-sm: 1.25rem;
   --vertical-small-md: 1.25rem;
   --vertical-small-lg: 1.875rem;
   --vertical-small-xl: 1.875rem;
-  --vertical-small-xxl: 1.875rem;
+  --vertical-small-2xl: 1.875rem;
   --vertical-medium-xs: 1.875rem;
   --vertical-medium-sm: 1.875rem;
   --vertical-medium-md: 1.875rem;
   --vertical-medium-lg: 3.75rem;
   --vertical-medium-xl: 3.75rem;
-  --vertical-medium-xxl: 3.75rem;
+  --vertical-medium-2xl: 3.75rem;
   --vertical-large-xs: 1.875rem;
   --vertical-large-sm: 1.875rem;
   --vertical-large-md: 1.875rem;
   --vertical-large-lg: 7.5rem;
   --vertical-large-xl: 7.5rem;
-  --vertical-large-xxl: 7.5rem;
+  --vertical-large-2xl: 7.5rem;
 }
 
 /* Color Class */
@@ -242,7 +242,7 @@
     font-size: 1.875rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .u-f--h1, .banner__wrapper-title p {
     font-size: 2.125rem;
   }
@@ -252,17 +252,17 @@
     font-size: 2.75rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .u-f--h1, .banner__wrapper-title p {
     font-size: 3rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h1, .banner__wrapper-title p {
     font-size: 3.375rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h1, .banner__wrapper-title p {
     font-size: 3.625rem;
   }
@@ -276,7 +276,7 @@
     font-size: 1.375rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .u-f--h2 {
     font-size: 1.5rem;
   }
@@ -286,17 +286,17 @@
     font-size: 1.5rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .u-f--h2 {
     font-size: 1.625rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h2 {
     font-size: 1.875rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h2 {
     font-size: 2rem;
   }
@@ -310,7 +310,7 @@
     font-size: 1.125rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .u-f--h3 {
     font-size: 1.125rem;
   }
@@ -320,17 +320,17 @@
     font-size: 1.25rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .u-f--h3 {
     font-size: 1.25rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h3 {
     font-size: 1.375rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h3 {
     font-size: 1.5rem;
   }
@@ -344,7 +344,7 @@
     font-size: 0.8125rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 0.875rem;
   }
@@ -354,17 +354,17 @@
     font-size: 0.875rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 0.9375rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .baseFilter__wrapper--right .is-showing span {
     font-size: 1.125rem;
   }
@@ -380,7 +380,7 @@
     font-size: 0.875rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .u-f--h5, .baseFilter__wrapper--left button,
 .baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 0.875rem;
@@ -392,55 +392,55 @@
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .u-f--h5, .baseFilter__wrapper--left button,
 .baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h5, .baseFilter__wrapper--left button,
 .baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .u-f--h5, .baseFilter__wrapper--left button,
 .baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 
-.u-f--p, p, span, input {
+.u-f--p, p, span, button, input {
   font-size: 0.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--p, p, span, input {
+  .u-f--p, p, span, button, input {
     font-size: 0.6875rem;
   }
 }
-@media only screen and (min-width: 992px) {
-  .u-f--p, p, span, input {
+@media only screen and (min-width: 1024px) {
+  .u-f--p, p, span, button, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--p, p, span, input {
+  .u-f--p, p, span, button, input {
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: 1440px) {
-  .u-f--p, p, span, input {
+@media only screen and (min-width: ) {
+  .u-f--p, p, span, button, input {
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: 1600px) {
-  .u-f--p, p, span, input {
+@media only screen and (min-width: ) {
+  .u-f--p, p, span, button, input {
     font-size: 0.8125rem;
   }
 }
-@media only screen and (min-width: 1600px) {
-  .u-f--p, p, span, input {
+@media only screen and (min-width: ) {
+  .u-f--p, p, span, button, input {
     font-size: 0.875rem;
   }
 }
@@ -458,7 +458,7 @@
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .u-flex--lg {
     flex-direction: row;
   }
@@ -468,7 +468,7 @@
   display: flex;
   flex-direction: row;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .u-flex__col--lg {
     flex-direction: column;
   }
@@ -490,7 +490,7 @@
     margin-right: var(--horizontal-main-md);
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .m-text-block, .casinoFinder, .banner__wrapper, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
@@ -502,19 +502,19 @@
     margin-right: var(--horizontal-main-xl);
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .m-text-block, .casinoFinder, .banner__wrapper, .footer__grid, .footer__brands {
-    margin-left: var(--horizontal-main-xxl);
-    margin-right: var(--horizontal-main-xxl);
+    margin-left: var(--horizontal-main-2xl);
+    margin-right: var(--horizontal-main-2xl);
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: ) {
   .m-text-block, .casinoFinder, .banner__wrapper, .footer__grid, .footer__brands {
-    margin-left: var(--horizontal-main-xxxl);
-    margin-right: var(--horizontal-main-xxxl);
+    margin-left: var(--horizontal-main-3xl);
+    margin-right: var(--horizontal-main-3xl);
   }
 }
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: ) {
   .m-text-block, .casinoFinder, .banner__wrapper, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
@@ -536,7 +536,7 @@
     padding-top: var(--vertical-medium-md);
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .m-text-block, .casinoFinder, .footer {
     padding-top: var(--vertical-medium-lg);
   }
@@ -546,9 +546,9 @@
     padding-top: var(--vertical-medium-xl);
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .m-text-block, .casinoFinder, .footer {
-    padding-top: var(--vertical-medium-xxl);
+    padding-top: var(--vertical-medium-2xl);
   }
 }
 
@@ -572,7 +572,7 @@
     padding: 0.9375rem 0.9375rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
     padding: 0.9375rem 0.9375rem;
@@ -584,7 +584,7 @@
     padding: 0.9375rem 1.25rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.25rem;
@@ -675,13 +675,13 @@ body {
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   body {
     font-size: 0.875rem;
   }
 }
 
-p, span {
+p, span, button {
   font-family: "Lexend";
   color: #ffffff;
   margin-bottom: 0.9375rem;
@@ -866,7 +866,7 @@ h5 {
 .btn__size--big {
   padding: 1.25rem 1.875rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .btn__size--big {
     padding: 1.875rem 2.5rem;
   }
@@ -889,7 +889,7 @@ h5 {
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .btn__icon--right img {
     display: block;
     right: 7px;
@@ -953,7 +953,7 @@ h5 {
     font-size: 1.125rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .btn_link, .btn_link--white, .btn_link--secondary {
     font-size: 1.25rem;
   }
@@ -999,7 +999,7 @@ h5 {
 .baseFilter__wrapper-game, .baseFilter__wrapper-cruppier {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper-game, .baseFilter__wrapper-cruppier {
     display: block;
   }
@@ -1046,7 +1046,7 @@ h5 {
   border-radius: 0.3125rem;
   padding: 0.625rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--left select {
     padding: 1rem;
     margin-right: 2rem;
@@ -1060,7 +1060,7 @@ h5 {
   border: none;
   border-radius: 0.3125rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider {
     margin: 0 1.25rem;
   }
@@ -1075,7 +1075,7 @@ h5 {
   margin-right: 0.3125rem;
   padding-right: 2rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #ruleta-provider {
     margin: 0 1.25rem;
     padding-right: 2rem;
@@ -1085,7 +1085,7 @@ h5 {
   display: block;
   padding-right: 0.3125rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier {
     display: none;
   }
@@ -1098,7 +1098,7 @@ h5 {
 .baseFilter__wrapper--left #base-fav svg {
   margin-right: 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--left #base-fav svg {
     margin-right: 10px;
   }
@@ -1107,7 +1107,7 @@ h5 {
   margin: 0;
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--left #base-fav span {
     display: block;
   }
@@ -1120,7 +1120,7 @@ h5 {
   margin-right: 0.625rem;
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--right .is-showing {
     display: block;
   }
@@ -1128,7 +1128,7 @@ h5 {
 .baseFilter__wrapper--right button svg path {
   fill: white;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--right button svg path {
     fill: #ff293e;
   }
@@ -1138,7 +1138,7 @@ h5 {
   display: none;
   margin: 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--right button span {
     display: inline-block;
   }
@@ -1151,7 +1151,7 @@ h5 {
   gap: 0.3125rem;
   width: 100%;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .gridGames {
     grid-template-columns: repeat(5, 1fr);
     gap: 0.9375rem;
@@ -1228,7 +1228,7 @@ h5 {
 .has-header {
   top: 6vh;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .has-header {
     top: 8vh;
   }
@@ -1245,11 +1245,11 @@ h5 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0.0625rem 1.0625rem 1.375rem 0.125rem rgb(0, 0, 0);
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
   background-color: #13171d;
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .header {
     padding: 0 1.875rem;
     display: flex;
@@ -1262,7 +1262,7 @@ h5 {
 .header__wrapper-menuBtn {
   display: inline-block;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .header__wrapper-menuBtn {
     display: none;
   }
@@ -1270,7 +1270,7 @@ h5 {
 .header__wrapper-btns {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .header__wrapper-btns {
     display: inline-block;
   }
@@ -1279,16 +1279,15 @@ h5 {
   width: 12.1875rem;
   margin-bottom: 0.625rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .header__wrapper-logo {
-    width: 8.125rem;
+    width: auto;
     margin-right: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .header__wrapper-logo {
     margin-right: 1.875rem;
-    width: auto;
   }
 }
 .header__wrapper-logo img {
@@ -1298,7 +1297,7 @@ h5 {
 .header__wrapper-navBar {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .header__wrapper-navBar {
     display: inline-block;
   }
@@ -1306,16 +1305,24 @@ h5 {
 .header__wrapper .icon__title {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .header__wrapper .icon__title {
     display: inline-block;
     padding-right: 0.9375rem;
   }
 }
+.header__wrapper .icon__title a {
+  display: flex;
+  align-items: center;
+}
+.header__wrapper .icon__title a p {
+  margin: 0;
+  margin-left: 0.3125rem;
+}
 .header__wrapper .header--user > div {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .header__wrapper .header--user > div {
     display: inline-block;
   }
@@ -1324,7 +1331,7 @@ h5 {
   width: 11.875rem;
   margin-left: 0.625rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .header__wrapper button {
     width: 6.25rem;
     margin-left: 0.3125rem;
@@ -1336,7 +1343,7 @@ h5 {
     margin-left: 0.3125rem;
   }
 }
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: ) {
   .header__wrapper button {
     width: 11.875rem;
     margin-left: 0.625rem;
@@ -1350,7 +1357,7 @@ h5 {
   position: relative;
   width: 100%;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .header__mobile {
     display: none;
   }
@@ -1424,7 +1431,7 @@ h5 {
     grid-template-areas: "casino info" "follow client";
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer__grid {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -1438,7 +1445,7 @@ h5 {
   grid-area: "info";
   justify-self: flex-start;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer__grid-item:nth-of-type(2) {
     justify-self: center;
   }
@@ -1447,7 +1454,7 @@ h5 {
   grid-area: "follow";
   justify-self: flex-start;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer__grid-item:nth-of-type(3) {
     justify-self: center;
   }
@@ -1466,7 +1473,7 @@ h5 {
   grid-area: "client";
   justify-self: flex-start;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer__grid-item:nth-of-type(4) {
     justify-self: flex-end;
   }
@@ -1481,7 +1488,7 @@ h5 {
   display: none;
   justify-content: flex-end;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer__grid-item:nth-of-type(4) ul .footer__grid-item--bottom {
     display: flex;
   }
@@ -1500,7 +1507,7 @@ h5 {
   flex-direction: column;
   margin-top: 1.875rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer__brands {
     margin-top: 7.5rem;
   }
@@ -1512,7 +1519,7 @@ h5 {
 .footer__brands-logo ul {
   margin: 0.9375rem 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer__brands-logo ul {
     padding: 0 1.875rem;
   }
@@ -1532,7 +1539,7 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer__brands .certificates ul {
     flex-direction: row;
   }
@@ -1548,7 +1555,7 @@ h5 {
   background-color: #1c2026;
   padding: 1.875rem 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer .footer__casinos {
     padding: 5rem 0;
   }
@@ -1559,7 +1566,7 @@ h5 {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer .footer__casinos > ul {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1575,7 +1582,7 @@ h5 {
   background-color: #25292f;
   border-radius: 0.625rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer .footer__casinos > ul li {
     background-color: transparent;
     border-radius: 0;
@@ -1591,7 +1598,7 @@ h5 {
 .footer .footer__casinos > div {
   margin-top: 1.25rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .footer .footer__casinos > div {
     margin-top: 2.5rem;
   }
@@ -1612,7 +1619,7 @@ h5 {
   position: relative;
   z-index: 1;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .banner__bg {
     display: block;
   }
@@ -1623,7 +1630,7 @@ h5 {
   display: flex;
   align-items: center;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .banner__wrapper {
     position: absolute;
     top: 0;
@@ -1638,7 +1645,7 @@ h5 {
 .banner__wrapper-title .breadcrumbs {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .banner__wrapper-title .breadcrumbs {
     display: block;
   }
@@ -1648,7 +1655,7 @@ h5 {
   width: 4.0625rem;
   height: 4.0625rem;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1280px) {
   .banner__wrapper img {
     width: 95px;
     height: 95px;

@@ -24,6 +24,8 @@
 
 // OBJECTS
 @use '../objects/menu-poker';
+@use '../objects/grid-promo';
+@use '../objects/filter-promo';
 
 //LAYOUT
 @use '../layout/header';
@@ -31,8 +33,7 @@
 
 // MODULES
 @use '../modules/header-promo';
-@use '../modules/grid-promo';
-@use '../modules/filter-promo';
+
 
 // HELPER
 // Clases de ayuda, textos, colores y demás

@@ -5,7 +5,7 @@
 .has-header {
   top: 6vh;
 
-  @include tabletH {
+  @include screen-sm {
     top: 8vh;
   }
 }
@@ -23,12 +23,12 @@
   align-items: center;
   justify-content: space-between;
 
-  box-shadow: rem(1) rem(17) rem(22) rem(2) rgba(0,0,0,1);
+  box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.9);
   background-color: setcolor("black", "dark1");
 
   display: none;
 
-  @include tabletH {
+  @include screen-sm {
     padding: 0 rem(30);
     display: flex;
   }
@@ -40,7 +40,7 @@
     &-menuBtn {
       display: inline-block;
 
-      @include tabletH {
+      @include screen-sm {
         display: none;
       }
     }
@@ -48,7 +48,7 @@
     &-btns {
       display: none;
 
-      @include tabletH {
+      @include screen-sm {
         display: inline-block;
       }
     }
@@ -57,13 +57,12 @@
       width: rem(195);
       margin-bottom: rem(10);
 
-      @include tabletH {
-        width: rem(130);
+      @include screen-sm {
+        width: auto;
         margin-right: rem(15);
       }
       @include screen-sm {
         margin-right: rem(30);
-        width: auto;
       }
 
       img {
@@ -75,7 +74,7 @@
     &-navBar {
       display: none;
 
-      @include tabletH {
+      @include screen-sm {
         display: inline-block;
       }
     }
@@ -83,16 +82,26 @@
     .icon__title {
       display: none;
 
-      @include tabletH {
+      @include screen-sm {
         display: inline-block;
         padding-right: rem(15);
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0;
+          margin-left: rem(5);
+        }
       }
     }
 
     .header--user > div {
       display: none;
 
-      @include tabletH {
+      @include screen-sm {
         display: inline-block;
       }
     }
@@ -102,7 +111,7 @@
       margin-left: rem(10);
 
 
-      @include tabletH {
+      @include screen-sm {
         width: rem(100);
         margin-left: rem(5);
       }
@@ -126,7 +135,7 @@
   position: relative;
   width: 100%;
 
-  @include tabletH {
+  @include screen-sm {
     display: none;
   }
 

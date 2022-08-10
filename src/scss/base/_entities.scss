@@ -31,7 +31,7 @@ body {
 }
 
 // paragrapgh
-p, span {
+p, span, button {
     @extend .u-f--p;
     font-family: $body_font_family;
     font-weight: $body_font_weight;
