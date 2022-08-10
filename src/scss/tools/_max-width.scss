@@ -4,15 +4,15 @@
 %max-width {
     padding-left: $max_width_padding;
     padding-right: $max_width_padding;
-    @include md {
+    @include tablet {
         padding-left: $max_width_padding_medium;
         padding-right: $max_width_padding_medium;
     }
-    @include lg {
+    @include tabletH {
         padding-left: $max_width_padding_large;
         padding-right: $max_width_padding_large;
     }
-    @include xl {
+    @include screen-sm {
         max-width: $max_width;
         padding-left: 0;
         padding-right: 0;
@@ -22,7 +22,7 @@
 
 %max-width-big {
     // @extend .max-width;
-    @include xl {
+    @include screen-sm {
         max-width: $max_width_large;
     }
 }

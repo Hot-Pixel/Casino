@@ -13,7 +13,7 @@
 
     border-bottom: 2px solid setcolor('black', 'dark5');
 
-    @include lg {
+    @include tabletH {
         display: flex;
     }
 

@@ -5,7 +5,7 @@
 .has-header {
   top: 6vh;
 
-  @include lg {
+  @include tabletH {
     top: 8vh;
   }
 }
@@ -28,7 +28,7 @@
 
   display: none;
 
-  @include lg {
+  @include tabletH {
     padding: 0 rem(30);
     display: flex;
   }
@@ -40,7 +40,7 @@
     &-menuBtn {
       display: inline-block;
 
-      @include lg {
+      @include tabletH {
         display: none;
       }
     }
@@ -48,7 +48,7 @@
     &-btns {
       display: none;
 
-      @include lg {
+      @include tabletH {
         display: inline-block;
       }
     }
@@ -57,11 +57,11 @@
       width: rem(195);
       margin-bottom: rem(10);
 
-      @include lg {
+      @include tabletH {
         width: rem(130);
         margin-right: rem(15);
       }
-      @include xl {
+      @include screen-sm {
         margin-right: rem(30);
         width: auto;
       }
@@ -75,7 +75,7 @@
     &-navBar {
       display: none;
 
-      @include lg {
+      @include tabletH {
         display: inline-block;
       }
     }
@@ -83,7 +83,7 @@
     .icon__title {
       display: none;
 
-      @include lg {
+      @include tabletH {
         display: inline-block;
         padding-right: rem(15);
       }
@@ -92,7 +92,7 @@
     .header--user > div {
       display: none;
 
-      @include lg {
+      @include tabletH {
         display: inline-block;
       }
     }
@@ -102,15 +102,15 @@
       margin-left: rem(10);
 
 
-      @include lg {
+      @include tabletH {
         width: rem(100);
         margin-left: rem(5);
       }
-      @include xl {
+      @include screen-sm {
         width: rem(120);
         margin-left: rem(5);
       }
-      @include xxl {
+      @include screen-md {
         width: rem(190);
         margin-left: rem(10);
       }
@@ -126,7 +126,7 @@
   position: relative;
   width: 100%;
 
-  @include lg {
+  @include tabletH {
     display: none;
   }
 

@@ -3,12 +3,15 @@
 @use "../tools" as *;
 
 .grid__promo {
+  @extend %margin_horizontal_main;
+
   &-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     column-gap: rem(15);
     row-gap: rem(50);
+
   }
 
   &-card {

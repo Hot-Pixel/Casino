@@ -30,7 +30,9 @@
 @use '../layout/footer';
 
 // MODULES
-@use '../modules/grid-full';
+@use '../modules/header-promo';
+@use '../modules/grid-promo';
+@use '../modules/filter-promo';
 
 // HELPER
 // Clases de ayuda, textos, colores y demás

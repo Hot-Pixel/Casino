@@ -1027,8 +1027,11 @@ h5 {
   color: #ff293e;
 }
 
-.breadcrumbs span:not(:last-of-type) {
-  margin-right: 0.3125rem;
+.breadcrumbs {
+  margin-top: 0.9375rem;
+}
+.breadcrumbs svg {
+  margin: 0 0.3125rem;
 }
 .breadcrumbs span:last-of-type {
   color: #a0a2a4;

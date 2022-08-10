@@ -5,11 +5,11 @@
 
     margin-top: rem(70);
 
-    @include md {
+    @include tablet {
         margin-top: rem(80);
     }
 
-    @include lg {
+    @include tabletH {
         margin-top: rem(100);
     }
 

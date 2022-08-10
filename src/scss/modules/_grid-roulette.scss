@@ -9,7 +9,7 @@
 	display: grid;
 	gap: rem(15);
 
-	@include lg {
+	@include tabletH {
 		grid-template-columns: repeat( 2, 1fr );
 	}
 
@@ -36,7 +36,7 @@
 			padding: rem(30) rem(20);
 			border-radius: rem(5);
 
-			@include lg {
+			@include tabletH {
 				padding: rem(60) 0;
 				height: rem(335);
 			}
@@ -50,7 +50,7 @@
 				color: #a4a6a8;
 				max-width: 100%;
 
-				@include lg {
+				@include tabletH {
 					max-width: 75%;
 				}
 			}
@@ -59,7 +59,7 @@
 				color: #a4a6a8;
 				max-width: 100%;
 
-				@include lg {
+				@include tabletH {
 					max-width: 75%;
 				}
 			}

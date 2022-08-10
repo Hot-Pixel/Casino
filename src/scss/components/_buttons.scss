@@ -92,7 +92,7 @@
 // button size_big
 .btn__size--big {
   padding: rem(20) rem(30);
-  @include lg {
+  @include tabletH {
     padding: rem(30) rem(40);
   }
 }
@@ -111,10 +111,10 @@
     top: 50%;
     transform: translateY(-50%);
 
-    @include xl {
+    @include screen-sm {
       font-size: rem(12);
     }
-    @include xxl {
+    @include screen-md {
       display: block;
       right: 7px;
       font-size: rem(14);
@@ -178,15 +178,15 @@
 
   transition: all 0.3s;
 
-  @include md {
+  @include tablet {
     font-size: rem(16);
   }
 
-  @include xl {
+  @include screen-sm {
     font-size: rem(18);
   }
 
-  @include xxl {
+  @include screen-md {
     font-size: rem(20);
   }
 

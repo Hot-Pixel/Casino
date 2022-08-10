@@ -12,7 +12,7 @@
     "title"
     "icons";
 
-  @include lg {
+  @include tabletH {
     grid-template-columns: 6fr 5fr;
     grid-template-rows: auto;
     grid-template-areas: "icons title";
@@ -34,13 +34,13 @@
       img {
         width: rem(60);
 
-        @include md {
+        @include tablet {
           width: rem(100);
         }
-        @include xxxl {
+        @include screen-lg {
           width: rem(150);
         }
-        @include xxxxl {
+        @include screen-xl {
           width: rem(170);
         }
       }
@@ -52,7 +52,7 @@
         text-align: center;
         margin-top: rem(5);
 
-        @include lg {
+        @include tabletH {
           font-weight: 700;
           max-width: 70%;
           margin-top: rem(10);
@@ -69,7 +69,7 @@
       justify-content: space-between;
       width: 100%;
 
-      @include lg {
+      @include tabletH {
         width: auto;
         justify-self: flex-start;
       }
@@ -84,11 +84,11 @@
       flex-direction: column;
       text-align: center;
 
-      @include md {
+      @include tablet {
         justify-self: center;
         margin-bottom: rem(30);
       }
-      @include lg {
+      @include tabletH {
         margin-bottom: 0;
         margin-left: rem(60);
         align-items: flex-start;
@@ -103,7 +103,7 @@
         @extend .u-f--h3;
         max-width: 100%;
 
-        @include lg {
+        @include tabletH {
           max-width: 70%;
         }
       }

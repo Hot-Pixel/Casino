@@ -2,20 +2,20 @@
 
 @mixin distance($property) {
     #{$property}: var(--horizontal-main-xs);
-    @include sm {
+    @include mobile {
         #{$property}: var(--horizontal-main-sm);
     }
-    @include md {
+    @include tablet {
         #{$property}: var(--horizontal-main-md);
     }
-    @include lg {
+    @include tabletH {
         #{$property}: var(--horizontal-main-lg);
     }
-    @include xl {
+    @include screen-sm {
         #{$property}: var(--horizontal-main-xl);
     }
-    @include xxl {
-        #{$property}: var(--horizontal-main-xxl);
+    @include screen-md {
+        #{$property}: var(--horizontal-main-2xl);
     }
 }
 

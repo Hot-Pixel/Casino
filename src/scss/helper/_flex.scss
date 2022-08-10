@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
 
-    @include lg {
+    @include tabletH {
         flex-direction: row;
     }
 }
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: row;
 
-    @include lg {
+    @include tabletH {
         flex-direction: column;
     }
 }

@@ -20,11 +20,11 @@ body {
     background: $body_bg;
     color: $body_color;
 
-    @include md {
+    @include tablet {
         font-size: $body_font_size_ipad;
     }
 
-    @include lg {
+    @include tabletH {
         font-size: $body_font_size_desktop;
     }
 
@@ -72,10 +72,10 @@ h2 {
     margin-top: $h2_margin;
     margin-bottom: $h2_margin;
     font-size: rem(24);
-    @include md {
+    @include tablet {
         font-size: rem(32);
     }
-    @include md {
+    @include tablet {
         font-size: rem(42);
     }
 }
@@ -84,10 +84,10 @@ h3 {
     margin-top: $h3_margin;
     margin-bottom: $h3_margin;
     font-size: rem(20);
-    @include md {
+    @include tablet {
         font-size: rem(24);
     }
-    @include md {
+    @include tablet {
         font-size: rem(30);
     }
 }
@@ -96,10 +96,10 @@ h4 {
     margin-top: $h4_margin;
     margin-bottom: $h4_margin;
     font-size: rem(20);
-    @include md {
+    @include tablet {
         font-size: rem(24);
     }
-    @include md {
+    @include tablet {
         font-size: rem(30);
     }
 }

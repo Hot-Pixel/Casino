@@ -22,22 +22,22 @@
 @each $name-font, $family in map.get($fonts, "size") {
     .u-f--#{$name-font}{
         font-size: rem( list.nth($family, 1) );
-        @include md {
+        @include tablet {
             font-size: rem(list.nth($family, 2));
         }
-        @include lg {
+        @include tabletH {
             font-size: rem(list.nth($family, 3));
         }
-        @include xl {
+        @include screen-sm {
             font-size: rem(list.nth($family, 4));
         }
-        @include xxl {
+        @include screen-md {
             font-size: rem(list.nth($family, 5));
         }
-        @include xxxl {
+        @include screen-lg {
             font-size: rem(list.nth($family, 6));
         }
-        @include xxxl {
+        @include screen-lg {
             font-size: rem(list.nth($family, 7));
         }
     }

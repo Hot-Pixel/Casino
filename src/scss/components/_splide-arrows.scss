@@ -19,7 +19,7 @@
 			height: rem(20);
 			width: rem(20);
 
-			@include xxxl {
+			@include screen-lg {
 				height: rem(30);
 				width: rem(30);
 			}
@@ -29,7 +29,7 @@
 	.splide__arrow--prev {
 		left: 94%;
 
-		@include xxxl {
+		@include screen-lg {
 			left: 93%;
 		}
 	}
@@ -37,7 +37,7 @@
 	.splide__arrow--next {
 		right: 1%;
 
-		@include xxxl {
+		@include screen-lg {
 			right: 2%;
 		}
 	}

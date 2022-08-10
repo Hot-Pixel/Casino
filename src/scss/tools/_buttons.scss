@@ -20,22 +20,22 @@
 
   transition: all 0.3s;
 
-  @include md {
+  @include tablet {
     font-size: $buttons_font_size_ipad;
     padding: $buttons_padding_ipad;
   }
 
-  @include lg {
+  @include tabletH {
     font-size: 12px;
     padding: $buttons_padding_ipad;
   }
 
-  @include xl {
+  @include screen-sm {
     font-size: 12px;
     padding: $buttons_padding_desktop;
   }
 
-  @include xxl {
+  @include screen-md {
     font-size: $buttons_font_size_desktop;
     padding: $buttons_padding_desktop;
   }

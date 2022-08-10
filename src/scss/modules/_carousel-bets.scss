@@ -78,10 +78,10 @@
             @extend .u-f--h5;
             padding: 8px 15px;
 
-            @include lg {
+            @include tabletH {
               padding: 10px 18px;
             }
-            @include xxl {
+            @include screen-md {
               padding: 12px 22px;
             }
           }

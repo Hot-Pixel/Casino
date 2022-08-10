@@ -15,7 +15,7 @@
 
     margin: 0;
 
-    @include md {
+    @include tablet {
         width: rem(30);
         height: rem(30);
     }

@@ -8,60 +8,50 @@
   justify-content: center;
   align-items: center;
 
-  @include lg {
-    top: rem(-55);
-  }
-
   &-bg {
     img {
-      object-fit: contain;
-      object-position: 0;
+      object-fit: cover;
+      width: 100%;
     }
   }
 
   &-content {
     height: 100%;
     position: relative;
-    top: -rem(35);
+    top: rem(-30);
+    margin-bottom: rem(-30);
 
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
 
-    @include lg {
-      top: rem(-55);
+    @include tabletH {
+      top: rem(-60);
+      margin-bottom: rem(-60);
     }
 
     img {
+      box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.5);
+      border-radius: rem(100);
       height: rem(55);
       width: rem(55);
 
-      @include lg {
+
+      @include tabletH {
         height: 95px;
         width: 95px;
       }
     }
 
-    p {
-      margin: 0;
-      text-align: center;
-    }
-
     p:first-of-type {
       @extend .u-f--h1, .u-f--bold;
       max-width: 60%;
+      margin: 0;
+      text-align: center;
 
-      @include lg {
+      @include tabletH {
         max-width: 100%;
-      }
-    }
-
-    p:last-of-type {
-      display: none;
-
-      @include lg {
-        display: block;
       }
     }
   }

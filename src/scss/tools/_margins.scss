@@ -4,31 +4,31 @@
 %margin_horizontal_main {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
-  @include sm {
+  @include mobile {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
-  @include md {
+  @include tablet {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
-  @include lg {
+  @include tabletH {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
-  @include xl {
+  @include screen-sm {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
-  @include xxl {
-    margin-left: var(--horizontal-main-xxl);
-    margin-right: var(--horizontal-main-xxl);
+  @include screen-md {
+    margin-left: var(--horizontal-main-2xl);
+    margin-right: var(--horizontal-main-2xl);
   }
-  @include xxxl {
-    margin-left: var(--horizontal-main-xxxl);
-    margin-right: var(--horizontal-main-xxxl);
+  @include screen-lg {
+    margin-left: var(--horizontal-main-3xl);
+    margin-right: var(--horizontal-main-3xl);
   }
-  @include xxxxl {
+  @include screen-xl {
     max-width: $max_width;
     margin-left: 0;
     margin-right: 0;
@@ -39,31 +39,31 @@
 %padding_horizontal_main {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
-  @include sm {
+  @include mobile {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
-  @include md {
+  @include tablet {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
-  @include lg {
+  @include tabletH {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
-  @include xl {
+  @include screen-sm {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
-  @include xxl {
-    padding-left: var(--horizontal-main-xxl);
-    padding-right: var(--horizontal-main-xxl);
+  @include screen-md {
+    padding-left: var(--horizontal-main-2xl);
+    padding-right: var(--horizontal-main-2xl);
   }
-  @include xxxl {
-    padding-left: var(--horizontal-main-xxxl);
-    padding-right: var(--horizontal-main-xxxl);
+  @include screen-lg {
+    padding-left: var(--horizontal-main-3xl);
+    padding-right: var(--horizontal-main-3xl);
   }
-  @include xxxxl {
+  @include screen-xl {
     max-width: $max_width;
     padding-left: 0;
     padding-right: 0;
@@ -75,160 +75,160 @@
 %margin_horizontal_large {
   padding-left: var(--horizontal-large-xs);
   padding-right: var(--horizontal-large-xs);
-  @include sm {
+  @include mobile {
     padding-left: var(--horizontal-large-sm);
     padding-right: var(--horizontal-large-sm);
   }
-  @include md {
+  @include tablet {
     padding-left: var(--horizontal-large-md);
     padding-right: var(--horizontal-large-md);
   }
-  @include lg {
+  @include tabletH {
     padding-left: var(--horizontal-large-lg);
     padding-right: var(--horizontal-large-lg);
   }
-  @include xl {
+  @include screen-sm {
     padding-left: var(--horizontal-large-xl);
     padding-right: var(--horizontal-large-xl);
   }
-  @include xxl {
-    padding-left: var(--horizontal-large-xxl);
-    padding-right: var(--horizontal-large-xxl);
+  @include screen-md {
+    padding-left: var(--horizontal-large-2xl);
+    padding-right: var(--horizontal-large-2xl);
   }
 }
 
 // margenes verticales - small
 %margin_top_small {
   padding-top: var(--vertical-small-xs);
-  @include sm {
+  @include mobile {
     padding-top: var(--vertical-small-sm);
   }
-  @include md {
+  @include tablet {
     padding-top: var(--vertical-small-md);
   }
-  @include lg {
+  @include tabletH {
     padding-top: var(--vertical-small-lg);
   }
-  @include xl {
+  @include screen-sm {
     padding-top: var(--vertical-small-xl);
   }
-  @include xxl {
-    padding-top: var(--vertical-small-xxl);
+  @include screen-md {
+    padding-top: var(--vertical-small-2xl);
   }
 }
 
 %margin_bottom_small {
   padding-bottom: var(--vertical-small-xs);
-  @include sm {
+  @include mobile {
     padding-bottom: var(--vertical-small-sm);
   }
-  @include md {
+  @include tablet {
     padding-bottom: var(--vertical-small-md);
   }
-  @include lg {
+  @include tabletH {
     padding-bottom: var(--vertical-small-lg);
   }
-  @include xl {
+  @include screen-sm {
     padding-bottom: var(--vertical-small-xl);
   }
-  @include xxl {
-    padding-bottom: var(--vertical-small-xxl);
+  @include screen-md {
+    padding-bottom: var(--vertical-small-2xl);
   }
 }
 
 // margenes verticaes - medium
 %margin_top_medium {
   padding-top: var(--vertical-medium-xs);
-  @include sm {
+  @include mobile {
     padding-top: var(--vertical-medium-sm);
   }
-  @include md {
+  @include tablet {
     padding-top: var(--vertical-medium-md);
   }
-  @include lg {
+  @include tabletH {
     padding-top: var(--vertical-medium-lg);
   }
-  @include xl {
+  @include screen-sm {
     padding-top: var(--vertical-medium-xl);
   }
-  @include xxl {
-    padding-top: var(--vertical-medium-xxl);
+  @include screen-md {
+    padding-top: var(--vertical-medium-2xl);
   }
 }
 
 %margin_bottom_medium {
   padding-bottom: var(--vertical-medium-xs);
-  @include sm {
+  @include mobile {
     padding-bottom: var(--vertical-medium-sm);
   }
-  @include md {
+  @include tablet {
     padding-bottom: var(--vertical-medium-md);
   }
-  @include lg {
+  @include tabletH {
     padding-bottom: var(--vertical-medium-lg);
   }
-  @include xl {
+  @include screen-sm {
     padding-bottom: var(--vertical-medium-xl);
   }
-  @include xxl {
-    padding-bottom: var(--vertical-medium-xxl);
+  @include screen-md {
+    padding-bottom: var(--vertical-medium-2xl);
   }
 }
 
 // margenes verticaes - large
 %margin_top_large {
   padding-top: var(--vertical-large-xs);
-  @include sm {
+  @include mobile {
     padding-top: var(--vertical-large-sm);
   }
-  @include md {
+  @include tablet {
     padding-top: var(--vertical-large-md);
   }
-  @include lg {
+  @include tabletH {
     padding-top: var(--vertical-large-lg);
   }
-  @include xl {
+  @include screen-sm {
     padding-top: var(--vertical-large-xl);
   }
-  @include xxl {
-    padding-top: var(--vertical-large-xxl);
+  @include screen-md {
+    padding-top: var(--vertical-large-2xl);
   }
 }
 
 %margin_bottom_large {
   padding-bottom: var(--vertical-large-xs);
-  @include sm {
+  @include mobile {
     padding-bottom: var(--vertical-large-sm);
   }
-  @include md {
+  @include tablet {
     padding-bottom: var(--vertical-large-md);
   }
-  @include lg {
+  @include tabletH {
     padding-bottom: var(--vertical-large-lg);
   }
-  @include xl {
+  @include screen-sm {
     padding-bottom: var(--vertical-large-xl);
   }
-  @include xxl {
-    padding-bottom: var(--vertical-large-xxl);
+  @include screen-md {
+    padding-bottom: var(--vertical-large-2xl);
   }
 }
 
 %margin_bottom_negative {
   margin-bottom: calc(var(--vertical-small-xs) * -1);
-  @include sm {
+  @include mobile {
     margin-bottom: calc(var(--vertical-small-sm) * -1);
   }
-  @include md {
+  @include tablet {
     margin-bottom: calc(var(--vertical-small-md) * -1);
   }
-  @include lg {
+  @include tabletH {
     margin-bottom: calc(var(--vertical-small-lg) * -1);
   }
-  @include xl {
+  @include screen-sm {
     margin-bottom: calc(var(--vertical-small-xl) * -1);
   }
-  @include xxl {
-    margin-bottom: calc(var(--vertical-small-xxl) * -1);
+  @include screen-md {
+    margin-bottom: calc(var(--vertical-small-2xl) * -1);
   }
 }

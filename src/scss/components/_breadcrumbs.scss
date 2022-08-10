@@ -3,12 +3,14 @@
 @use "../tools" as *;
 
 .breadcrumbs {
+  margin-top: rem(15);
+
   span {
     @extend .u-f--h5;
   }
 
-  span:not(:last-of-type) {
-    margin-right: rem(5);
+  svg {
+    margin: 0 rem(5);
   }
 
   span:last-of-type {

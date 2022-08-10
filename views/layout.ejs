@@ -1,9 +1,75 @@
 <%
+const promoData = [
+    {
+        title: "Elige tu primer gran bono",
+        img: "1"
+    },
+    {
+        title: "Calendario Black Friday",
+        img: "2"
+    },
+    {
+        title: "Bonos Supersónicos",
+        img: "3"
+    },
+    {
+        title: "La Estela del Campeón",
+        img: "4"
+    },
+    {
+        title: "Freebet de 3€ de regalo",
+        img: "5"
+    },
+    {
+        title: "Elige tu primer gran bono",
+        img: "6"
+    },
+    {
+        title: "Freebets de récord",
+        img: "7"
+    },
+    {
+        title: "Descubre nuestras promociones",
+        img: "8"
+    },
+    {
+        title: "Polos...¿opuestos?",
+        img: "5"
+    },
+    {
+        title: "Triple Bono de Casino del 50% hasta 200€",
+        img: "1"
+    },
+    {
+        title: "Sprinter de Noviembre",
+        img: "2"
+    },
+    {
+        title: "Superdía de Ruleta",
+        img: "3"
+    },
+    {
+        title: "Recargas de alta velocidad",
+        img: "4"
+    },
+    {
+        title: "La estela del campeón",
+        img: "5"
+    },
+    {
+        title: "La estela del campeón",
+        img: "6"
+    },
+]
 %>
 
 <%- include ('layout/head', {title: "Layout" , css: "layout" }) %>
 
 <!-- Introducir debajo el modulo a desarrollar -->
-<%- include ('modules/grid-full')%>
+<%- include ('modules/header-promo')%>
+
+<%- include ('modules/filter-promo')%>
+
+<%- include ('modules/grid-promo', { data: promoData })%>
 
 <%- include ('layout/scripts') %>

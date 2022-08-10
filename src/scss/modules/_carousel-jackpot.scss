@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @include lg {
+  @include tabletH {
     flex-direction: row;
   }
 
@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
 
-    @include lg {
+    @include tabletH {
       width: calc(30% - rem(60));
     }
 
@@ -45,7 +45,7 @@
   &__carousel {
     margin-top: rem(30);
 
-    @include lg {
+    @include tabletH {
       margin-top: 0;
       width: 70%;
     }
@@ -76,11 +76,11 @@
       padding: rem(10);
       height: rem(120);
 
-      @include lg {
+      @include tabletH {
         padding: rem(15);
         height: auto;
       }
-      @include xxl {
+      @include screen-md {
         padding: rem(20);
         height: auto;
       }
@@ -97,7 +97,7 @@
         width: 80%;
         height: rem(40);
 
-        @include md {
+        @include tablet {
           width: 70%;
           height: rem(45);
         }
@@ -105,7 +105,7 @@
         img {
           display: none;
 
-          @include sm {
+          @include mobile {
             display: inline-block;
           }
 
