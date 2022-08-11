@@ -1,38 +1,31 @@
 // SETTINGS
-// variables y config
 @use '../settings';
 
 // TOOLS
-// Mixins, extend and functions
 @use '../tools';
 
 // GENERIC
-// Resets, normalize y genericos
 @use '../base';
 
 // COMPONENTS
-// Piezas de UI
-@use '../components/icon__title';
-@use '../components/header__user';
-@use '../components/svg-icon';
 @use '../components/buttons';
 @use '../components/breadcrumbs';
-@use '../components/splide-arrows';
-@use '../components/ruleta-result';
 @use '../components/gradients';
-@use '../components/header-module';
 
 // OBJECTS
-@use '../objects/grid-ruleta';
 @use '../objects/filter-base';
+@use '../objects/grid-ruleta';
+@use '../objects/banner-ruleta-addon';
 
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
 
 // MODULES
+@use '../modules/header-promo';
+@use '../modules/banner';
 @use '../modules/finder-ruleta';
-
+@use '../modules/text-block';
 
 // HELPER
 @use '../helper';

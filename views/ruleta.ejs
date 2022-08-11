@@ -1,0 +1,25 @@
+<%
+const bannerData =
+  {
+    img: "ruleta",
+    icon: "banner-ruleta",
+    title: "Ruleta en vivo",
+    breadcrumb: "Ruleta en vivo"
+  }
+%>
+
+<%- include ('layout/head', {title: "Ruleta en Vivo" , css: "ruleta", header: "has-header" }) %>
+
+<%- include ('layout/header-noLog') %>
+
+<%- include ('modules/banner', { data: bannerData }) %>
+
+<%- include ('objects/banner-ruleta-addon') %>
+
+<%- include ('modules/finder-ruleta') %>
+
+<%- include ('modules/text-block') %>
+
+<%- include ('layout/footer') %>
+
+<%- include ('layout/scripts') %>

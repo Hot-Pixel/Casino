@@ -3,7 +3,6 @@
 @use "../tools" as *;
 
 .breadcrumbs {
-  margin-top: rem(15);
 
   span {
     @extend .u-f--h5;
