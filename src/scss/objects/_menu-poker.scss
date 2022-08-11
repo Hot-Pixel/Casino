@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .menuPoker {
-  padding: rem(25);
+  padding: rem(25) 0;
   background-color: setcolor("black", "dark2");
   box-shadow: rem(1) rem(17) rem(22) rem(2) rgba(0, 0, 0, 1);
   border-top: 1px solid setcolor("black", "dark5");
@@ -15,16 +15,36 @@
     &:first-of-type {
       display: none;
 
-      @include screen-sm {
+      @include tablet-h {
         display: flex;
+      }
+
+      .menuPoker__btn {
+        padding: 0 rem(30);
+
+        @include screen-lg {
+          padding: 0 rem(80);
+        }
       }
     }
 
     &:last-of-type {
       display: flex;
 
-      @include screen-sm {
+      @include tablet-h {
         display: none;
+      }
+
+      .menuPoker__btn {
+        padding: 0 rem(15);
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+
+        img {
+          display: none;
+        }
       }
     }
   }
@@ -36,8 +56,6 @@
     align-items: center;
 
     background-color: transparent;
-    padding: 0 rem(70);
-
     cursor: pointer;
 
     &:not(:last-of-type) {
@@ -58,17 +76,15 @@
         transition: all 0.5s ease;
       }
 
-      svg g path,
-      svg g line,
-      svg g rect,
-      svg g circle {
+      .icon {
         stroke: setcolor("primary");
         transition: all 0.5s ease;
       }
     }
 
-    svg {
-      height: rem(26);
+    .icon {
+      stroke: #a0a2a4;
+      fill: none
     }
 
     span {

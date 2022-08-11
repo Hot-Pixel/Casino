@@ -8,7 +8,7 @@
         padding-left: $max_width_padding_medium;
         padding-right: $max_width_padding_medium;
     }
-    @include tabletH {
+    @include tablet-h {
         padding-left: $max_width_padding_large;
         padding-right: $max_width_padding_large;
     }

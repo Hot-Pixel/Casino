@@ -2,53 +2,53 @@
 @use "sass:map";
 
 $breakpoints: (
-  sm: 576px,
-  md: 768px,
-  lg: 1024px,
-  xl: 1280px,
-  2xl: 1440px,
-  3xl: 1600px,
-  4xl: 1900px,
+  mobile: 576px,
+  tablet: 768px,
+  tablet-h: 1024px,
+  screen-sm: 1280px,
+  screen-md: 1440px,
+  screen-lg: 1600px,
+  screen-xl: 1900px,
 );
 
 @mixin mobile {
-  @media only screen and (min-width: #{map.get($breakpoints, 'sm')}) {
+  @media only screen and (min-width: #{map.get($breakpoints, 'mobile')}) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media only screen and (min-width: #{map.get($breakpoints, 'md')}) {
+  @media only screen and (min-width: #{map.get($breakpoints, 'tablet')}) {
     @content;
   }
 }
 
-@mixin tabletH {
-  @media only screen and (min-width: #{map.get($breakpoints, 'lg')}) {
+@mixin tablet-h {
+  @media only screen and (min-width: #{map.get($breakpoints, 'tablet-h')}) {
     @content;
   }
 }
 
 @mixin screen-sm {
-  @media only screen and (min-width: #{map.get($breakpoints, 'xl')}) {
+  @media only screen and (min-width: #{map.get($breakpoints, 'screen-sm')}) {
     @content;
   }
 }
 
 @mixin screen-md {
-  @media only screen and (min-width: #{map.get($breakpoints, '2xl')}) {
+  @media only screen and (min-width: #{map.get($breakpoints, 'screen-md')}) {
     @content;
   }
 }
 
 @mixin screen-lg {
-  @media only screen and (min-width: #{map.get($breakpoints, '3xl')}) {
+  @media only screen and (min-width: #{map.get($breakpoints, 'screen-lg')}) {
     @content;
   }
 }
 
 @mixin screen-xl {
-  @media only screen and (min-width: #{map.get($breakpoints, '4xl')}) {
+  @media only screen and (min-width: #{map.get($breakpoints, 'screen-xl')}) {
     @content;
   }
 }

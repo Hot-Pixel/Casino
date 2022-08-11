@@ -8,7 +8,7 @@
     @include tablet {
         #{$property}: var(--horizontal-main-md);
     }
-    @include tabletH {
+    @include tablet-h {
         #{$property}: var(--horizontal-main-lg);
     }
     @include screen-sm {

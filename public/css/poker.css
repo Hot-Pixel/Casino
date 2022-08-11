@@ -252,17 +252,17 @@
     font-size: 2.75rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
     font-size: 3rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
     font-size: 3.375rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
     font-size: 3.625rem;
   }
@@ -286,17 +286,17 @@
     font-size: 1.5rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
     font-size: 1.625rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
     font-size: 1.875rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
     font-size: 2rem;
   }
@@ -320,17 +320,17 @@
     font-size: 1.25rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h3 {
     font-size: 1.25rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h3 {
     font-size: 1.375rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h3 {
     font-size: 1.5rem;
   }
@@ -354,17 +354,17 @@
     font-size: 0.875rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
     font-size: 0.9375rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
     font-size: 1.125rem;
   }
@@ -388,17 +388,17 @@
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
@@ -422,17 +422,17 @@
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--p, p, span, button, input {
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--p, p, span, button, input {
     font-size: 0.8125rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--p, p, span, button, input {
     font-size: 0.875rem;
   }
@@ -495,19 +495,19 @@
     margin-right: var(--horizontal-main-xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1900px) {
   .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
@@ -544,19 +544,19 @@
     padding-right: var(--horizontal-main-xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .banner__wrapper, .addon {
     padding-left: var(--horizontal-main-2xl);
     padding-right: var(--horizontal-main-2xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .banner__wrapper, .addon {
     padding-left: var(--horizontal-main-3xl);
     padding-right: var(--horizontal-main-3xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1900px) {
   .banner__wrapper, .addon {
     max-width: 100rem;
     padding-left: 0;
@@ -588,7 +588,7 @@
     padding-top: var(--vertical-medium-xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .m-text-block, .footer {
     padding-top: var(--vertical-medium-2xl);
   }
@@ -626,7 +626,7 @@
     padding: 0.9375rem 1.25rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.25rem;
@@ -890,7 +890,7 @@ h5 {
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .btn__icon--right img {
     right: 7px;
     font-size: 0.875rem;
@@ -953,7 +953,7 @@ h5 {
     font-size: 1.125rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .btn_link, .btn_link--white, .btn_link--secondary {
     font-size: 1.25rem;
   }
@@ -994,7 +994,7 @@ h5 {
 }
 
 .menuPoker {
-  padding: 1.5625rem;
+  padding: 1.5625rem 0;
   background-color: #1c2026;
   box-shadow: 0.0625rem 1.0625rem 1.375rem 0.125rem rgb(0, 0, 0);
   border-top: 1px solid #3b424b;
@@ -1006,25 +1006,41 @@ h5 {
 .menuPoker__wrapper:first-of-type {
   display: none;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .menuPoker__wrapper:first-of-type {
     display: flex;
+  }
+}
+.menuPoker__wrapper:first-of-type .menuPoker__btn {
+  padding: 0 1.875rem;
+}
+@media only screen and (min-width: 1600px) {
+  .menuPoker__wrapper:first-of-type .menuPoker__btn {
+    padding: 0 5rem;
   }
 }
 .menuPoker__wrapper:last-of-type {
   display: flex;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   .menuPoker__wrapper:last-of-type {
     display: none;
   }
+}
+.menuPoker__wrapper:last-of-type .menuPoker__btn {
+  padding: 0 0.9375rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.menuPoker__wrapper:last-of-type .menuPoker__btn img {
+  display: none;
 }
 .menuPoker__btn {
   position: relative;
   display: flex;
   align-items: center;
   background-color: transparent;
-  padding: 0 4.375rem;
   cursor: pointer;
 }
 .menuPoker__btn:not(:last-of-type) {
@@ -1038,24 +1054,13 @@ h5 {
   opacity: 1;
   transition: all 0.5s ease;
 }
-.menuPoker__btn:hover svg g path,
-.menuPoker__btn:hover svg g line,
-.menuPoker__btn:hover svg g rect,
-.menuPoker__btn:hover svg g circle, .menuPoker__btn:active svg g path,
-.menuPoker__btn:active svg g line,
-.menuPoker__btn:active svg g rect,
-.menuPoker__btn:active svg g circle, .menuPoker__btn:focus svg g path,
-.menuPoker__btn:focus svg g line,
-.menuPoker__btn:focus svg g rect,
-.menuPoker__btn:focus svg g circle, .menuPoker__btn.is-active svg g path,
-.menuPoker__btn.is-active svg g line,
-.menuPoker__btn.is-active svg g rect,
-.menuPoker__btn.is-active svg g circle {
+.menuPoker__btn:hover .icon, .menuPoker__btn:active .icon, .menuPoker__btn:focus .icon, .menuPoker__btn.is-active .icon {
   stroke: #ff293e;
   transition: all 0.5s ease;
 }
-.menuPoker__btn svg {
-  height: 1.625rem;
+.menuPoker__btn .icon {
+  stroke: #a0a2a4;
+  fill: none;
 }
 .menuPoker__btn span {
   color: #a0a2a4;
@@ -1312,7 +1317,7 @@ h5 {
     margin-left: 0.3125rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .header__wrapper button {
     width: 11.875rem;
     margin-left: 0.625rem;

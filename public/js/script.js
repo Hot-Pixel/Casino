@@ -4145,12 +4145,20 @@ window.addEventListener("load", () => {
 var carouselPoker = new Splide(".menuPoker .splide", {
   pagination: false,
   arrows: false,
-  perPage: 3,
+  perPage: 4,
   padding: {
     left: 0,
-    right: 30
+    right: 100
   },
-  perMove: 1
+  perMove: 1,
+  breakpoints: {
+    768: {
+      perPage: 3
+    },
+    576: {
+      perPage: 2
+    }
+  }
 });
 carouselPoker.mount();
 //# sourceMappingURL=script.js.map

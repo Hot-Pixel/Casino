@@ -252,17 +252,17 @@
     font-size: 2.75rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h1, .header__promo-content p:first-of-type {
     font-size: 3rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h1, .header__promo-content p:first-of-type {
     font-size: 3.375rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h1, .header__promo-content p:first-of-type {
     font-size: 3.625rem;
   }
@@ -286,17 +286,17 @@
     font-size: 1.5rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h2 {
     font-size: 1.625rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h2 {
     font-size: 1.875rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h2 {
     font-size: 2rem;
   }
@@ -320,17 +320,17 @@
     font-size: 1.25rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h3, .grid__promo-title {
     font-size: 1.25rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h3, .grid__promo-title {
     font-size: 1.375rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h3, .grid__promo-title {
     font-size: 1.5rem;
   }
@@ -354,17 +354,17 @@
     font-size: 0.875rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .grid__promo-subtitle {
     font-size: 0.9375rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .grid__promo-subtitle {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .grid__promo-subtitle {
     font-size: 1.125rem;
   }
@@ -388,17 +388,17 @@
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--h5, .breadcrumbs span {
     font-size: 1rem;
   }
@@ -422,17 +422,17 @@
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .u-f--p, p, span, button, input {
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--p, p, span, button, input {
     font-size: 0.8125rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .u-f--p, p, span, button, input {
     font-size: 0.875rem;
   }
@@ -495,19 +495,19 @@
     margin-right: var(--horizontal-main-xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .m-text-block, .finder__promo, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1600px) {
   .m-text-block, .finder__promo, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1900px) {
   .m-text-block, .finder__promo, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
@@ -539,7 +539,7 @@
     padding-top: var(--vertical-small-xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .finder__promo .grid__promo {
     padding-top: var(--vertical-small-2xl);
   }
@@ -568,7 +568,7 @@
     padding-top: var(--vertical-medium-xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .m-text-block, .footer {
     padding-top: var(--vertical-medium-2xl);
   }
@@ -597,7 +597,7 @@
     padding-bottom: var(--vertical-large-xl);
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .finder__promo .grid__promo {
     padding-bottom: var(--vertical-large-2xl);
   }
@@ -635,7 +635,7 @@
     padding: 0.9375rem 1.25rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.25rem;
@@ -899,7 +899,7 @@ h5 {
     font-size: 0.75rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .btn__icon--right img {
     right: 7px;
     font-size: 0.875rem;
@@ -962,7 +962,7 @@ h5 {
     font-size: 1.125rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .btn_link, .btn_link--white, .btn_link--secondary {
     font-size: 1.25rem;
   }
@@ -1223,7 +1223,7 @@ h5 {
     margin-left: 0.3125rem;
   }
 }
-@media only screen and (min-width: ) {
+@media only screen and (min-width: 1440px) {
   .header__wrapper button {
     width: 11.875rem;
     margin-left: 0.625rem;

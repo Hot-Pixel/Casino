@@ -25,7 +25,7 @@
         @include tablet {
             font-size: rem(list.nth($family, 2));
         }
-        @include tabletH {
+        @include tablet-h {
             font-size: rem(list.nth($family, 3));
         }
         @include screen-sm {

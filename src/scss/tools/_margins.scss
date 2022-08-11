@@ -12,7 +12,7 @@
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
-  @include tabletH {
+  @include tablet-h {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
@@ -44,7 +44,7 @@
   @include tablet {
     margin-left: var(--horizontal-main-md);
   }
-  @include tabletH {
+  @include tablet-h {
     margin-left: var(--horizontal-main-lg);
   }
   @include screen-sm {
@@ -75,7 +75,7 @@
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
-  @include tabletH {
+  @include tablet-h {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
@@ -111,7 +111,7 @@
     padding-left: var(--horizontal-large-md);
     padding-right: var(--horizontal-large-md);
   }
-  @include tabletH {
+  @include tablet-h {
     padding-left: var(--horizontal-large-lg);
     padding-right: var(--horizontal-large-lg);
   }
@@ -134,7 +134,7 @@
   @include tablet {
     padding-top: var(--vertical-small-md);
   }
-  @include tabletH {
+  @include tablet-h {
     padding-top: var(--vertical-small-lg);
   }
   @include screen-sm {
@@ -153,7 +153,7 @@
   @include tablet {
     padding-bottom: var(--vertical-small-md);
   }
-  @include tabletH {
+  @include tablet-h {
     padding-bottom: var(--vertical-small-lg);
   }
   @include screen-sm {
@@ -173,7 +173,7 @@
   @include tablet {
     padding-top: var(--vertical-medium-md);
   }
-  @include tabletH {
+  @include tablet-h {
     padding-top: var(--vertical-medium-lg);
   }
   @include screen-sm {
@@ -192,7 +192,7 @@
   @include tablet {
     padding-bottom: var(--vertical-medium-md);
   }
-  @include tabletH {
+  @include tablet-h {
     padding-bottom: var(--vertical-medium-lg);
   }
   @include screen-sm {
@@ -212,7 +212,7 @@
   @include tablet {
     padding-top: var(--vertical-large-md);
   }
-  @include tabletH {
+  @include tablet-h {
     padding-top: var(--vertical-large-lg);
   }
   @include screen-sm {
@@ -231,7 +231,7 @@
   @include tablet {
     padding-bottom: var(--vertical-large-md);
   }
-  @include tabletH {
+  @include tablet-h {
     padding-bottom: var(--vertical-large-lg);
   }
   @include screen-sm {
@@ -250,7 +250,7 @@
   @include tablet {
     margin-bottom: calc(var(--vertical-small-md) * -1);
   }
-  @include tabletH {
+  @include tablet-h {
     margin-bottom: calc(var(--vertical-small-lg) * -1);
   }
   @include screen-sm {

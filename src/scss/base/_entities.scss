@@ -24,7 +24,7 @@ body {
         font-size: $body_font_size_ipad;
     }
 
-    @include tabletH {
+    @include tablet-h {
         font-size: $body_font_size_desktop;
     }
 

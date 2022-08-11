@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26">
+  <g opacity=".6" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+    <path data-name="Línea 211" d="M13 17.615V25" />
+    <path data-name="Línea 212" d="M6.538 25h12.923" />
+    <path data-name="Trazado 5476" d="M6.538 2.846H1v3.692a5.538 5.538 0 0 0 5.538 5.538Z" />
+    <path data-name="Trazado 5477" d="M19.462 2.846H25v3.692a5.538 5.538 0 0 1-5.538 5.539Z" />
+    <path data-name="Trazado 5478" d="M6.538 1v10.154a6.462 6.462 0 1 0 12.923 0V1Z" />
+  </g>
+</svg>

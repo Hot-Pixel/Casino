@@ -92,7 +92,7 @@
 // button size_big
 .btn__size--big {
   padding: rem(20) rem(30);
-  @include tabletH {
+  @include tablet-h {
     padding: rem(30) rem(40);
   }
 }
