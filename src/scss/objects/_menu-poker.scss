@@ -3,14 +3,31 @@
 @use "../tools" as *;
 
 .menuPoker {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   padding: rem(25);
   background-color: setcolor("black", "dark2");
   box-shadow: rem(1) rem(17) rem(22) rem(2) rgba(0, 0, 0, 1);
   border-top: 1px solid setcolor("black", "dark5");
+
+  &__wrapper {
+    justify-content: center;
+    align-items: center;
+
+    &:first-of-type {
+      display: none;
+
+      @include screen-sm {
+        display: flex;
+      }
+    }
+
+    &:last-of-type {
+      display: flex;
+
+      @include screen-sm {
+        display: none;
+      }
+    }
+  }
 
   &__btn {
     position: relative;
@@ -51,8 +68,8 @@
     }
 
     svg {
-        height: rem(26);
-      }
+      height: rem(26);
+    }
 
     span {
       @extend .u-f--bold;
@@ -62,11 +79,11 @@
     }
 
     img {
-        position: absolute;
-        bottom: rem(-30);
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
+      position: absolute;
+      bottom: rem(-30);
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
     }
   }
 }

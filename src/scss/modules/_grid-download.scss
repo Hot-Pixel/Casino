@@ -2,8 +2,9 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.gridDownload {
+.gridDl {
   @extend %margin_horizontal_main;
+  margin-top: rem(180);
 
   display: grid;
   grid-template-columns: 1fr 1fr;

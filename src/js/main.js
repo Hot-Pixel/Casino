@@ -9,6 +9,8 @@ import menuPoker from "./menuPoker.js";
 import accorPoker from "./accordionPoker.js";
 import carouselFull from "./carouselFull.js";
 
+import { Splide } from "@splidejs/splide";
+
 const carouselBannerExist = document.getElementsByClassName("bannerCarousel");
 const carouselJackpotExist =
   document.getElementsByClassName("jackpot__carousel");
@@ -52,3 +54,12 @@ window.addEventListener("load", () => {
     carouselFull();
   }
 });
+
+var carouselPoker = new Splide(".menuPoker .splide", {
+  pagination: false,
+  arrows: false,
+  perPage: 3,
+  padding: { left: 0, right: 30 },
+  perMove: 1,
+});
+carouselPoker.mount();

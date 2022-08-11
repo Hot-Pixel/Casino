@@ -4142,4 +4142,15 @@ window.addEventListener("load", () => {
     carouselFull();
   }
 });
+var carouselPoker = new Splide(".menuPoker .splide", {
+  pagination: false,
+  arrows: false,
+  perPage: 3,
+  padding: {
+    left: 0,
+    right: 30
+  },
+  perMove: 1
+});
+carouselPoker.mount();
 //# sourceMappingURL=script.js.map

@@ -35,6 +35,7 @@
       }
 
       .breadcrumbs {
+        margin-top: rem(10);
         display: none;
 
         @include screen-sm {

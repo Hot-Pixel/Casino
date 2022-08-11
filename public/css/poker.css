@@ -229,75 +229,75 @@
   font-weight: 500;
 }
 
-.u-f--bold, .banner__wrapper-title p, .menuPoker__btn span, .headerModule-link p, .ruletaResult, .u-f--bold p, .menuPoker__btn span p, .ruletaResult p {
+.u-f--bold, .oneCol p, .oneCol a span, .imageTextTorneo__content a span, .gridDl .card__bottom-content p:first-of-type, .gridDl .card__bottom-content p:nth-of-type(2), .gridDl .card__bottom-content a span, .banner__wrapper-title p, .header__promo-content p:first-of-type, .addon__item p, .gridRuleta .card__content--top p:first-of-type, .gridRuleta .card__content--bottom > div:last-of-type p, .gridRuleta .card__content--bottom > div:last-of-type span, .menuPoker__btn span, .u-f--bold p, .oneCol a span p, .imageTextTorneo__content a span p, .gridDl .card__bottom-content p:first-of-type p, .gridDl .card__bottom-content p:nth-of-type(2) p, .gridDl .card__bottom-content a span p, .header__promo-content p:first-of-type p, .gridRuleta .card__content--top p:first-of-type p, .menuPoker__btn span p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .banner__wrapper-title p {
+.u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: ) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: ) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: ) {
-  .u-f--h1, .banner__wrapper-title p {
+  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2 {
+.u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2 {
+  .u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2 {
+  .u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2 {
+  .u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: ) {
-  .u-f--h2 {
+  .u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: ) {
-  .u-f--h2 {
+  .u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: ) {
-  .u-f--h2 {
+  .u-f--h2, .oneCol__subtitle, .gridDl .card__bottom-content p:first-of-type, .gridRuleta .card__content--top p:first-of-type {
     font-size: 2rem;
   }
 }
@@ -336,36 +336,36 @@
   }
 }
 
-.u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+.u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: ) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: ) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: ) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span {
+  .u-f--h4, .oneCol__body, .gridDl .card__bottom-content p:nth-of-type(2), .footer__grid-item:nth-of-type(3) li a span, .addon__item p {
     font-size: 1.125rem;
   }
 }
@@ -467,48 +467,48 @@
   }
 }
 
-.footer__grid, .footer__brands {
+.oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer__grid, .footer__brands {
+  .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__grid, .footer__brands {
+  .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer__grid, .footer__brands {
+  .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer__grid, .footer__brands {
+  .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: ) {
-  .footer__grid, .footer__brands {
+  .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: ) {
-  .footer__grid, .footer__brands {
+  .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: ) {
-  .footer__grid, .footer__brands {
+  .oneCol, .imageTextTorneo, .gridDl, .m-text-block, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -516,48 +516,48 @@
   }
 }
 
-.banner__wrapper {
+.banner__wrapper, .addon {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .banner__wrapper {
+  .banner__wrapper, .addon {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .banner__wrapper {
+  .banner__wrapper, .addon {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .banner__wrapper {
+  .banner__wrapper, .addon {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .banner__wrapper {
+  .banner__wrapper, .addon {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: ) {
-  .banner__wrapper {
+  .banner__wrapper, .addon {
     padding-left: var(--horizontal-main-2xl);
     padding-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: ) {
-  .banner__wrapper {
+  .banner__wrapper, .addon {
     padding-left: var(--horizontal-main-3xl);
     padding-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: ) {
-  .banner__wrapper {
+  .banner__wrapper, .addon {
     max-width: 100rem;
     padding-left: 0;
     padding-right: 0;
@@ -565,31 +565,31 @@
   }
 }
 
-.footer {
+.m-text-block, .footer {
   padding-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: ) {
-  .footer {
+  .m-text-block, .footer {
     padding-top: var(--vertical-medium-2xl);
   }
 }
@@ -801,46 +801,6 @@ h5 {
   margin-bottom: 1.25rem;
 }
 
-.icon__title a, .icon__title {
-  display: flex;
-  align-items: center;
-}
-.icon__title a img, .icon__title img {
-  height: 0.875rem;
-  width: 0.875rem;
-}
-.icon__title a p, .icon__title p {
-  margin: 0;
-  padding-left: 0.3125rem;
-}
-
-.c-header--user {
-  align-items: center;
-}
-.c-header--user div {
-  padding-right: 10px;
-}
-.c-header--user p {
-  margin: 0;
-  text-align: right;
-}
-
-.svg-icon-inline, .svg-icon {
-  align-items: center;
-  width: 1em;
-  height: 1em;
-  background-color: transparent;
-  fill: currentColor;
-}
-
-.svg-icon {
-  display: flex;
-}
-
-.svg-icon-inline {
-  display: inline-flex;
-}
-
 .btn__red {
   color: #ffffff;
   background-color: #ff293e;
@@ -1023,66 +983,6 @@ h5 {
   color: #a0a2a4;
 }
 
-.splideArrows--right .splide__arrow {
-  background: none;
-  border-radius: 0;
-  opacity: 1;
-  z-index: 10;
-}
-.splideArrows--right .splide__arrow svg {
-  height: 1.25rem;
-  width: 1.25rem;
-}
-@media only screen and (min-width: ) {
-  .splideArrows--right .splide__arrow svg {
-    height: 1.875rem;
-    width: 1.875rem;
-  }
-}
-.splideArrows--right .splide__arrow--prev {
-  left: 94%;
-}
-@media only screen and (min-width: ) {
-  .splideArrows--right .splide__arrow--prev {
-    left: 93%;
-  }
-}
-.splideArrows--right .splide__arrow--next {
-  right: 1%;
-}
-@media only screen and (min-width: ) {
-  .splideArrows--right .splide__arrow--next {
-    right: 2%;
-  }
-}
-
-.ruletaResult {
-  display: inline-block;
-  border-radius: 62.5rem;
-  width: 1.5625rem;
-  height: 1.5625rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-}
-@media only screen and (min-width: 768px) {
-  .ruletaResult {
-    width: 1.875rem;
-    height: 1.875rem;
-  }
-}
-
-.ruletaResult--red {
-  background-color: #ff293e;
-  border: 3px solid #ff7f8b;
-}
-
-.ruletaResult--black {
-  background-color: black;
-  border: 3px solid #717477;
-}
-
 .splide__gradient {
   position: absolute;
   z-index: 5;
@@ -1091,35 +991,6 @@ h5 {
   width: 20%;
   height: 100%;
   background-image: linear-gradient(to right, transparent, #13171d);
-}
-
-.headerModule {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1.25rem;
-}
-.headerModule p {
-  margin-bottom: 0;
-}
-.headerModule-title {
-  display: flex;
-  align-items: center;
-}
-.headerModule-title p {
-  margin-left: 0.625rem;
-}
-.headerModule-title img {
-  width: 1.5625rem;
-  height: 1.5625rem;
-}
-.headerModule-link {
-  display: flex;
-  align-items: center;
-}
-.headerModule-link p {
-  margin-right: 0.3125rem;
-  color: #ff293e;
 }
 
 .menuPoker {
@@ -1197,6 +1068,130 @@ h5 {
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
+}
+
+.gridRuleta {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  width: 100%;
+  row-gap: 0.625rem;
+}
+@media only screen and (min-width: 768px) {
+  .gridRuleta {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gridRuleta {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+  }
+}
+.gridRuleta .card__img {
+  width: 100%;
+}
+.gridRuleta .card__img img {
+  width: 100%;
+  object-fit: cover;
+}
+.gridRuleta .card__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2d3239;
+  border-radius: 0 0 0.3125rem 0.3125rem;
+}
+@media only screen and (min-width: 768px) {
+  .gridRuleta .card__content {
+    border-radius: 0 0 0.625rem 0.625rem;
+  }
+}
+.gridRuleta .card__content--top {
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  border-bottom: 1px solid #1c2026;
+  display: flex;
+  justify-content: space-between;
+}
+.gridRuleta .card__content--top p:last-of-type {
+  margin: 0;
+}
+.gridRuleta .card__content--top svg {
+  align-self: flex-start;
+}
+.gridRuleta .card__content--bottom {
+  width: 100%;
+  padding: 0.625rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gridRuleta .card__content--bottom > div:first-of-type {
+  display: flex;
+}
+.gridRuleta .card__content--bottom > div:first-of-type p {
+  margin-right: 0.3125rem;
+}
+@media only screen and (min-width: 768px) {
+  .gridRuleta .card__content--bottom > div:first-of-type p {
+    margin-right: 0.625rem;
+  }
+}
+.gridRuleta .card__content--bottom > div:last-of-type {
+  display: flex;
+}
+.gridRuleta .card__content--bottom > div:last-of-type p, .gridRuleta .card__content--bottom > div:last-of-type span {
+  color: #a7a9ab;
+  margin: 0;
+}
+.gridRuleta .card__content--bottom > div:last-of-type p:first-of-type {
+  margin-right: 0.9375rem;
+}
+.gridRuleta .card__content--bottom > div:last-of-type p {
+  display: flex;
+  align-items: center;
+}
+.gridRuleta .card__content--bottom > div:last-of-type p img {
+  height: 0.875rem;
+}
+.gridRuleta .card__content--bottom > div:last-of-type p span {
+  margin-left: 0.3125rem;
+}
+
+.addon {
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
+}
+.addon .addon__wrapper:first-of-type {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  .addon .addon__wrapper:first-of-type {
+    display: flex;
+  }
+}
+.addon .addon__wrapper:last-of-type {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 1280px) {
+  .addon .addon__wrapper:last-of-type {
+    display: none;
+  }
+}
+.addon__item {
+  display: flex;
+  align-items: center;
+  margin-right: 1.875rem;
+}
+.addon__item p {
+  margin: 0;
+  padding-left: 0.3125rem;
+  color: #a0a2a4;
 }
 
 .has-header {
@@ -1582,6 +1577,55 @@ h5 {
   text-align: center;
 }
 
+.header__promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__promo-bg img {
+  object-fit: cover;
+  width: 100%;
+}
+.header__promo-content {
+  height: 100%;
+  position: relative;
+  top: -1.875rem;
+  margin-bottom: -1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media only screen and (min-width: 1280px) {
+  .header__promo-content {
+    top: -3.75rem;
+    margin-bottom: -3.75rem;
+  }
+}
+.header__promo-content img {
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 6.25rem;
+  height: 3.4375rem;
+  width: 3.4375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .header__promo-content img {
+    height: 95px;
+    width: 95px;
+  }
+}
+.header__promo-content p:first-of-type {
+  max-width: 60%;
+  margin: 0;
+  text-align: center;
+}
+@media only screen and (min-width: 1280px) {
+  .header__promo-content p:first-of-type {
+    max-width: 100%;
+  }
+}
+
 .banner {
   background-position: right;
   background-repeat: no-repeat;
@@ -1630,4 +1674,141 @@ h5 {
     margin-right: 0.9375rem;
   }
 }
-/*# sourceMappingURL=layout.css.map */
+
+.gridDl {
+  margin-top: 11.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.875rem;
+}
+.gridDl .card {
+  border-radius: 0.625rem;
+}
+.gridDl .card__top {
+  position: relative;
+  background-color: #1c2026;
+  border-radius: 0.625rem 0.625rem 0 0;
+  height: 30vh;
+}
+.gridDl .card__top img {
+  position: absolute;
+  top: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gridDl .card__bottom {
+  position: relative;
+  background-color: #25292f;
+  border-radius: 0 0 0.625rem 0.625rem;
+  height: 35vh;
+}
+.gridDl .card__bottom-content {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3.75rem;
+  max-width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+.gridDl .card__bottom-content p:nth-of-type(2) {
+  color: #a7a9ab;
+}
+.gridDl .card__bottom-content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridDl .card__bottom-content a span {
+  font-size: 0.75rem;
+  color: #ff293e;
+  margin: 0;
+  padding-right: 0.3125rem;
+}
+.gridDl .card__bottom-content a img {
+  height: 0.75rem;
+}
+.gridDl .card__bottom-btns {
+  position: absolute;
+  bottom: -1.875rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.gridDl .card__bottom-btns button {
+  width: 40%;
+  height: 4.0625rem;
+}
+.gridDl .card__bottom-btns button img {
+  width: 2.1875rem;
+  height: 2.1875rem;
+}
+.gridDl .card__bottom-btns button:first-of-type {
+  margin-bottom: 0.625rem;
+}
+
+.imageTextTorneo {
+  margin-top: 180px;
+  position: relative;
+  z-index: 0;
+  background-image: linear-gradient(to right, #13171d, #25292f);
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imageTextTorneo__content {
+  width: 33%;
+  padding: 3.125rem;
+}
+.imageTextTorneo__content p:last-of-type {
+  color: #a0a2a4;
+}
+.imageTextTorneo__content a span {
+  font-size: 0.75rem;
+  color: #ff293e;
+  margin: 0;
+  padding-right: 0.3125rem;
+}
+.imageTextTorneo__content a img {
+  height: 0.75rem;
+}
+.imageTextTorneo__image {
+  position: absolute;
+  right: 0;
+  top: -80px;
+  z-index: 1;
+  width: 67%;
+}
+
+.oneCol {
+  margin-top: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9.375rem 0;
+  background-color: #1c2026;
+}
+.oneCol__wrapper {
+  text-align: center;
+  max-width: 50%;
+}
+.oneCol__body {
+  color: #a4a5a8;
+}
+.oneCol a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.oneCol a span {
+  font-size: 0.75rem;
+  color: #ff293e;
+  margin: 0;
+  padding-right: 0.3125rem;
+}
+.oneCol a img {
+  height: 0.75rem;
+}
+/*# sourceMappingURL=poker.css.map */

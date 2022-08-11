@@ -11,6 +11,7 @@ import casino from "./routes/casino.js";
 import promociones from "./routes/promociones.js";
 import promocion from "./routes/promocion.js";
 import ruleta from "./routes/ruleta.js";
+import poker from "./routes/poker.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -34,6 +35,7 @@ app.use("/casino", casino);
 app.use("/promociones", promociones);
 app.use("/promocion", promocion);
 app.use("/ruleta", ruleta);
+app.use("/poker", poker);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

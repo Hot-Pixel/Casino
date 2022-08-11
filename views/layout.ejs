@@ -1,9 +1,18 @@
 <%
+const bannerData =
+  {
+    img: "poker",
+    icon: "banner-poker",
+    title: "¡Bienvenido al Póker!",
+    breadcrumb: "Poker"
+  }
 %>
 
 <%- include ('layout/head', {title: "Layout" , css: "layout", header:"has-header" }) %>
 
 <!-- Introducir debajo el modulo a desarrollar -->
-<%- include ('modules/finder-ruleta',) %>
+<%- include ('modules/banner',  { data: bannerData }) %>
+
+<%- include ('objects/menu-poker',) %>
 
 <%- include ('layout/scripts') %>
