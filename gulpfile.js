@@ -27,7 +27,7 @@ const paths = {
   },
   css: {
     src: "public/css/*.css",
-    dest: "dist/",
+    dest: "dist/css/",
   },
   scripts: {
     src: "src/js/main.js",
@@ -141,7 +141,7 @@ gulp.task("bundleJs", async () => {
       })
       .then((bundle) => {
         return bundle.write({
-          file: `dist/${e}.js`,
+          file: `dist/js/${e}.js`,
           format: "iife",
           plugins: [terser()],
         });
@@ -154,6 +154,13 @@ gulp.task("bundleCss", async () => {
     .src(paths.css.src)
     .pipe(autoprefixer())
     .pipe(cleanCSS())
-    .pipe(rename({ extname: ".min.css" }))
+    .pipe(rename({ extname: ".css" }))
     .pipe(gulp.dest(paths.css.dest));
 });
+
+gulp.task('copyImg', async () => {
+  gulp.src('public/img/**/*.*')
+      .pipe(gulp.dest('dist/img/'));
+});
+
+gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss", "copyImg"));

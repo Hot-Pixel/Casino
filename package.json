@@ -11,7 +11,7 @@
     "sass": "gulp sass",
     "min": "gulp minCss",
     "js": "gulp compileJs",
-    "bundle": "gulp bundle",
+    "build": "gulp build",
     "images": "gulp imageMin"
   },
   "author": "Hot Pixel",
@@ -36,7 +36,7 @@
     "dotenv": "^16.0.1",
     "ejs": "^3.1.6",
     "express": "^4.17.2",
-    "gulp": "latest",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "latest",
     "gulp-clean-css": "latest",
     "gulp-ejs": "^5.1.0",
@@ -54,6 +54,7 @@
     "request": "^2.88.2",
     "rollup": "^2.77.2",
     "rollup-plugin-terser": "^7.0.2",
+    "run-sequence": "^2.2.1",
     "sass": "^1.52.3"
   },
   "engines": {
