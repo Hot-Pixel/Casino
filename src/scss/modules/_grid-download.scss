@@ -33,7 +33,12 @@
         left: 50%;
         transform: translateX(-50%);
         object-fit: cover;
-        width: 70%;
+
+        // width: 90%;
+
+        @include screen-md {
+          width: auto;
+        }
        }
     }
 

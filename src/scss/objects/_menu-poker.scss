@@ -2,6 +2,18 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+.poker {
+  &__section {
+    transition: all 0.3s ease;
+    display: none;
+
+    &.is-on {
+      transition: all 0.3s ease;
+      display: block;
+    }
+  }
+}
+
 .menuPoker {
   padding: rem(25) 0;
   background-color: setcolor("black", "dark2");

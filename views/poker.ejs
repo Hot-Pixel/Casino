@@ -20,7 +20,7 @@ const bannerData =
 
 <main class="poker">
 
-    <section class="poker__home">
+    <section class="poker__home poker__section is-on">
 
         <%- include ('modules/grid-download') %>
 
@@ -30,11 +30,23 @@ const bannerData =
 
     </section>
 
-    <section class="poker__pc"></section>
+    <section class="poker__pc poker__section">
 
-    <section class="poker__mobile"></section>
+      <%- include ('modules/grid-pc') %>
 
-    <section class="poker__tournament"></section>
+    </section>
+
+    <section class="poker__mobile poker__section">
+
+      <%- include ('modules/grid-mobile') %>
+
+    </section>
+
+    <section class="poker__tour poker__section">
+
+      <%- include ('modules/grid-poker') %>
+
+    </section>
 
 </main>
 
@@ -42,5 +54,5 @@ const bannerData =
 
 <%- include ('layout/footer') %>
 
-<%- include ('layout/scripts') %>
+<%- include ('layout/scripts', { script: 'poker' }) %>
 

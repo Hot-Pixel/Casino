@@ -244,6 +244,8 @@ const gridHalfRight =
 
 </section>
 
+<%- include ('modules/grid-full') %>
+
 <%- include ('modules/icons-red') %>
 
 <%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
@@ -258,4 +260,4 @@ const gridHalfRight =
 
 <%- include ('layout/footer') %>
 
-<%- include ('layout/scripts') %>
+<%- include ('layout/scripts', { script: 'home' }) %>

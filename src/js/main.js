@@ -1,13 +1,13 @@
-import carouselBanner from "./carouselBanner.js";
-import carouselJackpot from "./carouselJackpot.js";
-import carouselBets from "./carouselBets.js";
-import collapseGrid from "./collapseGridHalf.js";
-import filterCasino from "./filterCasino.js";
-import filterPromo from "./filterPromo.js";
-import filterSlotsAll from "./filterSlotsAll.js";
-import menuPoker from "./menuPoker.js";
-import accorPoker from "./accordionPoker.js";
-import carouselFull from "./carouselFull.js";
+import carouselBanner from "./modules/carouselBanner.js";
+import carouselJackpot from "./modules/carouselJackpot.js";
+import carouselBets from "./modules/carouselBets.js";
+import collapseGrid from "./modules/collapseGridHalf.js";
+import filterCasino from "./modules/filterCasino.js";
+import filterPromo from "./modules/filterPromo.js";
+import filterSlotsAll from "./modules/filterSlotsAll.js";
+import menuPoker from "./modules/menuPoker.js";
+import accordion from "./modules/accordion.js";
+import carouselFull from "./modules/carouselFull.js";
 
 import { Splide } from "@splidejs/splide";
 
@@ -71,3 +71,4 @@ var carouselPoker = new Splide(".menuPoker .splide", {
   }
 });
 carouselPoker.mount();
+

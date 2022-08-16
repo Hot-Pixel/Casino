@@ -11,11 +11,13 @@ import autoprefixer from "gulp-autoprefixer";
 import cleanCSS from "gulp-clean-css";
 import rename from "gulp-rename";
 import ejsCompiler from "gulp-ejs";
+import esbuild from "esbuild";
 
-import * as rollup from 'rollup';
+import * as rollup from "rollup";
 import { babel } from "@rollup/plugin-babel";
 import { terser } from "rollup-plugin-terser";
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
 
 const paths = {
   scss: {
@@ -25,7 +27,7 @@ const paths = {
   },
   css: {
     src: "public/css/*.css",
-    dest: "public/css/min/",
+    dest: "dist/",
   },
   scripts: {
     src: "src/js/main.js",
@@ -50,47 +52,6 @@ gulp.task("sass", async () => {
     .pipe(server.stream());
 });
 
-/* Gulp Pipe for minifying CSS main file */
-gulp.task("minCss", async () => {
-  gulp
-    .src(paths.css.src)
-    .pipe(autoprefixer())
-    .pipe(cleanCSS())
-    .pipe(rename({ extname: ".min.css" }))
-    .pipe(gulp.dest(paths.css.dest));
-});
-
-/* Gulp task to Babel and Uglify the Javascript Code */
-gulp.task("build", async () => {
-  const bundleJs = await rollup.rollup({
-    input: paths.scripts.src,
-    plugins: [
-      babel({
-        babelHelpers: "bundled"
-      }),
-      nodeResolve()
-    ],
-  });
-
-  await bundleJs.write({
-    file: `${paths.scripts.dest}script.js`,
-    format: "es",
-    name: "base",
-    sourcemap: true,
-    plugins: [
-    ],
-  });
-
-  await bundleJs.write({
-    file: `${paths.scripts.dest}script.min.js`,
-    format: "es",
-    name: "minified",
-    plugins: [
-      terser(),
-    ],
-  });
-});
-
 /* Gulp task to minify images */
 gulp.task("imageMin", async () => {
   gulp
@@ -99,25 +60,100 @@ gulp.task("imageMin", async () => {
     .pipe(gulp.dest(paths.images.dest));
 });
 
-gulp.task("ejs", async () => {
-  gulp
-    .src("./views/*.ejs")
-    .pipe(ejsCompiler())
-    .pipe(rename({ extname: ".html" }))
-    .pipe(gulp.dest("./public/html/"));
+gulp.task("js", async () => {
+  return rollup
+    .rollup({
+      input: [
+        "src/js/casino",
+        "src/js/home",
+        "src/js/slots",
+        "src/js/slotsAll",
+        "src/js/ruleta",
+        "src/js/poker",
+        "src/js/promociones",
+        "src/js/layout",
+      ],
+      plugins: [
+        commonjs({
+          include: [
+            "node_modules/mixitup/dist/mixitup.js",
+            "src/js/mixitup-multifilter.js",
+          ],
+        }),
+        nodeResolve(),
+      ],
+    })
+    .then((bundle) => {
+      return bundle.write({
+        dir: "public/js/",
+        format: "esm",
+        sourcemap: true,
+      });
+    });
 });
 
 /* Gulp Watch */
 gulp.task("watch", async () => {
   server.init({
     proxy: "http://localhost:3000",
-    browser: "chrome"
+    browser: "chrome",
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
-  watch(paths.scripts.watcher).on(
-    "change",
-    gulp.series("build", server.reload)
-  );
   watch(paths.images.watcher).on("add", gulp.series("imageMin", server.reload));
   watch("./**/*.ejs").on("change", server.reload);
+});
+
+/*---------------------------------------------------*/
+
+/* Bundle Tasks */
+gulp.task("bundleEjs", async () => {
+  gulp
+    .src("./views/*.ejs")
+    .pipe(ejsCompiler())
+    .pipe(rename({ extname: ".html" }))
+    .pipe(gulp.dest("dist/"));
+});
+
+gulp.task("bundleJs", async () => {
+  const pagesArr = [
+    "casino",
+    "home",
+    "slots",
+    "slotsAll",
+    "ruleta",
+    "poker",
+    "promociones",
+    "layout",
+  ];
+  pagesArr.forEach((e) => {
+    return rollup
+      .rollup({
+        input: [`src/js/${e}.js`],
+        plugins: [
+          commonjs({
+            include: [
+              "node_modules/mixitup/dist/mixitup.js",
+              "src/js/mixitup-multifilter.js",
+            ],
+          }),
+          nodeResolve(),
+        ],
+      })
+      .then((bundle) => {
+        return bundle.write({
+          file: `dist/${e}.js`,
+          format: "iife",
+          plugins: [terser()],
+        });
+      });
+  });
+});
+
+gulp.task("bundleCss", async () => {
+  gulp
+    .src(paths.css.src)
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(rename({ extname: ".min.css" }))
+    .pipe(gulp.dest(paths.css.dest));
 });

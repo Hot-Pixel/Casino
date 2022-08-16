@@ -1,0 +1,146 @@
+@use '../settings' as *;
+
+%padding_horizontal_main {
+  padding-left: var(--horizontal-main-xs);
+  padding-right: var(--horizontal-main-xs);
+  @include mobile {
+    padding-left: var(--horizontal-main-sm);
+    padding-right: var(--horizontal-main-sm);
+  }
+  @include tablet {
+    padding-left: var(--horizontal-main-md);
+    padding-right: var(--horizontal-main-md);
+  }
+  @include tablet-h {
+    padding-left: var(--horizontal-main-lg);
+    padding-right: var(--horizontal-main-lg);
+  }
+  @include screen-sm {
+    padding-left: var(--horizontal-main-xl);
+    padding-right: var(--horizontal-main-xl);
+  }
+  @include screen-md {
+    padding-left: var(--horizontal-main-2xl);
+    padding-right: var(--horizontal-main-2xl);
+  }
+  @include screen-lg {
+    padding-left: var(--horizontal-main-3xl);
+    padding-right: var(--horizontal-main-3xl);
+  }
+}
+
+%padding_horizontal_large {
+  padding-left: var(--horizontal-large-xs);
+  padding-right: var(--horizontal-large-xs);
+  @include mobile {
+    padding-left: var(--horizontal-large-sm);
+    padding-right: var(--horizontal-large-sm);
+  }
+  @include tablet {
+    padding-left: var(--horizontal-large-md);
+    padding-right: var(--horizontal-large-md);
+  }
+  @include tablet-h {
+    padding-left: var(--horizontal-large-lg);
+    padding-right: var(--horizontal-large-lg);
+  }
+  @include screen-sm {
+    padding-left: var(--horizontal-large-xl);
+    padding-right: var(--horizontal-large-xl);
+  }
+  @include screen-md {
+    padding-left: var(--horizontal-large-2xl);
+    padding-right: var(--horizontal-large-2xl);
+  }
+  @include screen-lg {
+    padding-left: var(--horizontal-large-3xl);
+    padding-right: var(--horizontal-large-3xl);
+  }
+}
+
+%padding_small {
+  padding-top: var(--vertical-small-xs);
+  padding-bottom: var(--vertical-small-xs);
+  @include mobile {
+    padding-top: var(--vertical-small-sm);
+    padding-bottom: var(--vertical-small-sm);
+  }
+  @include tablet {
+    padding-top: var(--vertical-small-md);
+    padding-bottom: var(--vertical-small-md);
+  }
+  @include tablet-h {
+    padding-top: var(--vertical-small-lg);
+    padding-bottom: var(--vertical-small-lg);
+  }
+  @include screen-sm {
+    padding-top: var(--vertical-small-xl);
+    padding-bottom: var(--vertical-small-xl);
+  }
+  @include screen-md {
+    padding-top: var(--vertical-small-2xl);
+    padding-bottom: var(--vertical-small-2xl);
+  }
+  @include screen-lg {
+    padding-top: var(--vertical-small-3xl);
+    padding-bottom: var(--vertical-small-3xl);
+  }
+}
+
+%padding_medium {
+  padding-top: var(--vertical-medium-xs);
+  padding-bottom: var(--vertical-medium-xs);
+  @include mobile {
+    padding-top: var(--vertical-medium-sm);
+    padding-bottom: var(--vertical-medium-sm);
+  }
+  @include tablet {
+    padding-top: var(--vertical-medium-md);
+    padding-bottom: var(--vertical-medium-md);
+  }
+  @include tablet-h {
+    padding-top: var(--vertical-medium-lg);
+    padding-bottom: var(--vertical-medium-lg);
+  }
+  @include screen-sm {
+    padding-top: var(--vertical-medium-xl);
+    padding-bottom: var(--vertical-medium-xl);
+  }
+  @include screen-md {
+    padding-top: var(--vertical-medium-2xl);
+    padding-bottom: var(--vertical-medium-2xl);
+  }
+  @include screen-lg {
+    padding-top: var(--vertical-small-3xl);
+    padding-bottom: var(--vertical-small-3xl);
+  }
+}
+
+%padding_large {
+  padding-top: var(--vertical-large-xs);
+  padding-bottom: var(--vertical-large-xs);
+  @include mobile {
+    padding-top: var(--vertical-large-sm);
+    padding-bottom: var(--vertical-large-sm);
+  }
+  @include tablet {
+    padding-top: var(--vertical-large-md);
+    padding-bottom: var(--vertical-large-md);
+  }
+  @include tablet-h {
+    padding-top: var(--vertical-large-lg);
+    padding-bottom: var(--vertical-large-lg);
+  }
+  @include screen-sm {
+    padding-top: var(--vertical-large-xl);
+    padding-bottom: var(--vertical-large-xl);
+  }
+  @include screen-md {
+    padding-top: var(--vertical-large-2xl);
+    padding-bottom: var(--vertical-large-2xl);
+  }
+  @include screen-lg {
+    padding-top: var(--vertical-large-3xl);
+    padding-bottom: var(--vertical-large-3xl);
+  }
+}

@@ -1,0 +1,343 @@
+import gulp from "gulp";
+import imagemin from "gulp-imagemin";
+import watch from "gulp-watch";
+import dartSass from "sass";
+import gulpSass from "gulp-sass";
+const sassCompiler = gulpSass(dartSass);
+import maps from "gulp-sourcemaps";
+import browserSync from "browser-sync";
+const server = browserSync.create();
+import autoprefixer from "gulp-autoprefixer";
+import cleanCSS from "gulp-clean-css";
+import rename from "gulp-rename";
+import ejsCompiler from "gulp-ejs";
+
+import * as rollup from "rollup";
+import { babel } from "@rollup/plugin-babel";
+import { terser } from "rollup-plugin-terser";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import path from 'path';
+
+const paths = {
+  scss: {
+    src: "src/scss/pages/*.scss",
+    watcher: "src/scss/**/*.scss",
+    dest: "public/css/",
+  },
+  css: {
+    src: "public/css/*.css",
+    dest: "public/css/min/",
+  },
+  scripts: {
+    src: "src/js/main.js",
+    watcher: "src/js/**/*.js",
+    dest: "public/js/",
+  },
+  images: {
+    src: "src/img/**/*",
+    watcher: "src/img/**/*",
+    dest: "public/img/",
+  },
+};
+
+/* Gulp Pipe for compiling SASS main file */
+gulp.task("sass", async () => {
+  gulp
+    .src(paths.scss.src)
+    .pipe(maps.init())
+    .pipe(sassCompiler().on("Error compiling!", sassCompiler.logError))
+    .pipe(maps.write("./"))
+    .pipe(gulp.dest(paths.scss.dest))
+    .pipe(server.stream());
+});
+
+/* Gulp Pipe for minifying CSS main file */
+gulp.task("minCss", async () => {
+  gulp
+    .src(paths.css.src)
+    .pipe(autoprefixer())
+    .pipe(cleanCSS())
+    .pipe(rename({ extname: ".min.css" }))
+    .pipe(gulp.dest(paths.css.dest));
+});
+
+/* Gulp task to Babel and Uglify the Javascript Code */
+gulp.task("home", async () => {
+  const home = await rollup.rollup({
+    input: "src/js/home.js",
+    plugins: [
+      babel({
+        babelHelpers: "bundled",
+      }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  });
+
+  await home.write({
+    dir: "public/js/",
+    format: "iife",
+    name: "base",
+    inlineDynamicImports: true,
+  });
+
+  await home.write({
+    dir: "public/js/min/",
+    format: "iife",
+    name: "minified",
+    plugins: [terser()],
+  });
+});
+
+
+const externalId = path.resolve( __dirname, 'public/libraries/mixitUp/mixitup-multifilter' );
+
+gulp.task("casino", async () => {
+  const casino = await rollup.rollup({
+    input: "src/js/casino.js",
+    plugins: [
+      babel({
+        babelHelpers: "bundled",
+      }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  });
+
+  await casino.write({
+    dir: "public/js/",
+    external: [externalId],
+    format: "iife",
+    name: "base",
+    globals: {
+      [externalId]: 'globalVariable'
+    }
+  });
+
+  await casino.write({
+    dir: "public/js/min/",
+    format: "iife",
+    name: "minified",
+    plugins: [terser()],
+  });
+});
+gulp.task("slots", async () => {
+  const slots = await rollup.rollup({
+    input: "src/js/slots.js",
+    plugins: [
+      babel({
+        babelHelpers: "bundled",
+      }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  });
+
+  await slots.write({
+    dir: "public/js/",
+    format: "iife",
+    name: "base",
+    inlineDynamicImports: true,
+  });
+
+  await slots.write({
+    dir: "public/js/min/",
+    format: "iife",
+    name: "minified",
+    plugins: [terser()],
+  });
+});
+gulp.task("slotsAll", async () => {
+  const slotsAll = await rollup.rollup({
+    input: "src/js/slotsAll.js",
+    plugins: [
+      babel({
+        babelHelpers: "bundled",
+      }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  });
+
+  await slotsAll.write({
+    dir: "public/js/",
+    format: "iife",
+    name: "base",
+    inlineDynamicImports: true,
+  });
+
+  await slotsAll.write({
+    dir: "public/js/min/",
+    format: "iife",
+    name: "minified",
+    plugins: [terser()],
+  });
+});
+
+gulp.task("ruleta", async () => {
+  const ruleta = await rollup.rollup({
+    input: "src/js/ruleta.js",
+    plugins: [
+      babel({
+        babelHelpers: "bundled",
+      }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  });
+
+  await ruleta.write({
+    dir: "public/js/",
+    format: "iife",
+    name: "base",
+    inlineDynamicImports: true,
+  });
+
+  await ruleta.write({
+    dir: "public/js/min/",
+    format: "iife",
+    name: "minified",
+    plugins: [terser()],
+  });
+});
+
+gulp.task("promociones", async () => {
+  const promociones = await rollup.rollup({
+    input: "src/js/promociones.js",
+    plugins: [
+      babel({
+        babelHelpers: "bundled",
+      }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  });
+
+  await promociones.write({
+    dir: "public/js/",
+    format: "iife",
+    name: "base",
+    inlineDynamicImports: true,
+  });
+
+  await promociones.write({
+    dir: "public/js/min/",
+    format: "iife",
+    name: "minified",
+    plugins: [terser()],
+  });
+});
+
+gulp.task("poker", async () => {
+  const poker = await rollup.rollup({
+    input:       "src/js/poker.js",
+    plugins: [
+      babel({
+        babelHelpers: "bundled",
+      }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  });
+
+  await poker.write({
+    dir: "public/js/",
+    format: "iife",
+    name: "base",
+    inlineDynamicImports: true,
+  });
+
+  await poker.write({
+    dir: "public/js/min/",
+    format: "iife",
+    name: "minified",
+    plugins: [terser()],
+  });
+});
+
+gulp.task("layout", async () => {
+  const layout = await rollup.rollup({
+    input:       "src/js/layout.js",
+    plugins: [
+      babel({
+        babelHelpers: "bundled",
+      }),
+      nodeResolve(),
+      commonjs(),
+    ],
+  });
+
+  await layout.write({
+    dir: "public/js/",
+    format: "iife",
+    name: "base",
+    inlineDynamicImports: true,
+  });
+
+  await layout.write({
+    dir: "public/js/min/",
+    format: "iife",
+    name: "minified",
+    plugins: [terser()],
+  });
+});
+
+/* Gulp task to minify images */
+gulp.task("imageMin", async () => {
+  gulp
+    .src(paths.images.src)
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.images.dest));
+});
+
+gulp.task("ejs", async () => {
+  gulp
+    .src("./views/*.ejs")
+    .pipe(ejsCompiler())
+    .pipe(rename({ extname: ".html" }))
+    .pipe(gulp.dest("./public/html/"));
+});
+
+/* Gulp Watch */
+gulp.task("watch", async () => {
+  server.init({
+    proxy: "http://localhost:3000",
+    browser: "chrome",
+  });
+  watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
+  watch("src/js/home.js").on(
+    "change",
+    gulp.series("home", server.reload)
+  );
+  watch("src/js/casino.js").on(
+    "change",
+    gulp.series("casino", server.reload)
+  );
+  watch("src/js/poker.js").on(
+    "change",
+    gulp.series("poker", server.reload)
+  );
+  watch("src/js/promociones.js").on(
+    "change",
+    gulp.series("promociones", server.reload)
+  );
+  watch("src/js/slots.js").on(
+    "change",
+    gulp.series("slots", server.reload)
+  );
+  watch("src/js/ruleta.js").on(
+    "change",
+    gulp.series("ruleta", server.reload)
+  );
+  watch("src/js/layout.js").on(
+    "change",
+    gulp.series("layout", server.reload)
+  );
+  watch("src/js/slotsAll.js").on(
+    "change",
+    gulp.series("slotsAll", server.reload)
+  );
+  watch(paths.images.watcher).on("add", gulp.series("imageMin", server.reload));
+  watch("./**/*.ejs").on("change", server.reload);
+});

@@ -160,10 +160,12 @@ const gridHalfRight =
 
 </section>
 
+<%- include ('modules/grid-full') %>
+
 <%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
 
 <%- include ('modules/text-block') %>
 
 <%- include ('layout/footer') %>
 
-<%- include ('layout/scripts') %>
+<%- include ('layout/scripts', { script: 'slots' }) %>
