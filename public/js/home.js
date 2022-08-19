@@ -3,7 +3,7 @@ import { G as Grid } from './splide-extension-grid.esm-caa3d1e5.js';
 import { g as gsapWithCSS } from './index-92880765.js';
 
 //CAROUSEL BANNER
-var carouselBanner = new Splide(".bannerCarousel.splide", {
+var carouselBanner = new Splide(".bannerCarousel .splide", {
   perPage: 1,
   arrow: true,
   pagination: false,

@@ -632,7 +632,6 @@
 
 .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
-  height: 2.8125rem;
   font-family: "Lexend";
   font-weight: 700;
   font-size: 0.625rem;

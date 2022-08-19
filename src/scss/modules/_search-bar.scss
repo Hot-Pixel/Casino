@@ -3,64 +3,83 @@
 @use "../tools" as *;
 
 .search {
-    @extend %margin_horizontal_main;
-    margin-top: $lg;
-    margin-bottom: $lg;
+  @extend %margin_horizontal_main;
+  margin-top: $lg;
+  margin-bottom: $lg;
 
-    display: none;
-    justify-content: space-between;
+  padding-bottom: $sm;
+
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 2px solid setcolor("black", "dark5");
+
+  @include screen-sm {
+    display: flex;
+  }
+
+  .search__input {
+    width: 50%;
+    padding-left: $lg;
+
+    display: flex;
     align-items: center;
 
-    border-bottom: 2px solid setcolor('black', 'dark5');
-
-    @include screen-sm {
-        display: flex;
+    img {
+      margin-right: $sm;
+      height: rem(45);
+      width: rem(45);
     }
 
-    .search__input {
-        width: 75%;
-        padding-left: rem(60);
+    input {
+      @extend .u-f--h2, .u-f--bold;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      color: setcolor("gray");
 
-        display: flex;
-        align-items: center;
+      &::placeholder {
+        color: setcolor("gray");
+      }
+    }
+  }
 
-        img {
-            margin-right: 10px;
-            height: rem(45);
-            width: rem(45);
-        }
+  .search__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
-        input {
-            @extend .u-f--h2, .u-f--bold;
-            border: none;
-            background-color: transparent;
-            outline: none;
-            color: setcolor('gray');
+    padding-right: $lg;
 
+    &--home {
+      img {
+        margin-right: $sm;
+      }
 
-            &::placeholder {
-                color: setcolor('gray');
-            }
-        }
-
+      p {
+        @extend .u-f--h4, .u-f--bold;
+        max-width: 60%;
+        color: setcolor("gray", "dark");
+        margin: 0;
+      }
     }
 
-    .search__wrapper {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    &--slots {
+      display: flex;
+      align-items: center;
 
-        padding-right: rem(60);
+      button {
+        margin: 0;
+      }
 
-        img {
-            margin-right: 10px;
-            margin-bottom: rem(20);
-        }
-
-        p {
-            @extend .u-f--h4, .u-f--bold;
-            max-width: 60%;
-            color: setcolor('gray', 'dark');
-        }
+      p {
+        @extend .u-f--h4, .u-f--bold;
+        color: setcolor("primary");
+        text-align: right;
+        margin: 0;
+        margin-right: $sm;
+      }
     }
+  }
 }
