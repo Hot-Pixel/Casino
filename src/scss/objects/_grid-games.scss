@@ -11,7 +11,7 @@
 
   @include screen-sm {
     grid-template-columns: repeat(5, 1fr);
-    gap: rem(15);
+    gap: $sm;
   }
 
   &__item {
@@ -42,7 +42,7 @@
       justify-content: space-between;
       align-items: center;
 
-      padding: rem(15);
+      padding: $sm;
 
       p {
         margin: 0;
@@ -98,7 +98,7 @@
       transition: all 0.3s ease;
 
       button {
-        margin-bottom: rem(15);
+        margin-bottom: $sm;
       }
     }
   }

@@ -1,7 +1,5 @@
-
-
 function carouselBanner() {
-  var carousel = new Splide(".bannerCarousel.splide", {
+  var carousel = new Splide(".bannerCarousel .splide", {
     perPage: 1,
     arrow: true,
     pagination: false,
@@ -9,5 +7,6 @@ function carouselBanner() {
 
   carousel.mount();
 }
+
 
 export default carouselBanner;

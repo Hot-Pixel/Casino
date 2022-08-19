@@ -34,7 +34,7 @@
       display: flex;
       align-items: center;
 
-      padding-bottom: rem(15);
+      padding-bottom: $sm;
 
       .step {
         @extend .u-f--bold, .u-f--h3;
@@ -46,7 +46,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: rem(15);
+        margin-right: $sm;
       }
 
       .title {
@@ -80,7 +80,7 @@
       margin-bottom: rem(10);
 
       &:first-of-type {
-        margin-top: rem(30);
+        margin-top: $lg;
       }
     }
   }

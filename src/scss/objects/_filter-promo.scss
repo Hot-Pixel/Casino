@@ -3,9 +3,9 @@
 @use "../tools" as *;
 
 .filter__promo {
-  margin-top: rem(30);
-  margin-bottom: rem(30);
-  margin-left: rem(30);
+  margin-top: $lg;
+  margin-bottom: $lg;
+  margin-left: $lg;
 
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@
       display: flex;
 
       button {
-        padding: 0 rem(15);
+        padding: 0 $sm;
         margin: 0 rem(2);
       }
     }

@@ -255,7 +255,7 @@
       height: rem(90);
       width: rem(90);
 
-      margin-bottom: rem(30);
+      margin-bottom: $lg;
     }
 
     h4 {
@@ -273,7 +273,7 @@
 
     .password__input {
       width: 90%;
-      margin-top: rem(30);
+      margin-top: $lg;
       margin-bottom: rem(10);
 
       input[type="text"] {

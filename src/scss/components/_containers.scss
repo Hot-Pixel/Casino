@@ -10,7 +10,7 @@
     }
 
     @include tablet-h {
-        margin-top: rem(100);
+        margin-top: $xl;
     }
 
 }

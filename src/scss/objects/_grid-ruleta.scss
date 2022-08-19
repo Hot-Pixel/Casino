@@ -17,7 +17,7 @@
   }
   @include screen-sm {
     grid-template-columns: repeat(3, 1fr);
-    gap: rem(30);
+    gap: $lg;
   }
 
   .card {
@@ -92,7 +92,7 @@
             }
 
             p:first-of-type {
-                margin-right: rem(15);
+                margin-right: $sm;
             }
 
             p {

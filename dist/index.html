@@ -15,87 +15,129 @@
 
 <header class="header">
 
-    <section class="header__wrapper header__wrapper-menuBtn">
-    <a href="#">
-        <img src="img/icon-menu-open.svg" alt="Logo Casino Barcelona">
-    </a>
-</section>
-<section class="header__wrapper">
-    <div class="header__wrapper-logo">
-        <a href="#">
-            <img src="img/logo-header.svg" alt="Logo Casino Barcelona">
-        </a>
-    </div>
-    <nav class="header__wrapper-navBar">
-        <ul>
-            <li class="icon__title">
-                <a href="/slots">
-                    <img src="img/icon-diamond.svg" alt="">
-                    <p class="u-f--h4">Slots</p>
-                </a>
-            </li>
-            <li class="icon__title">
-                <a href="/ruleta">
-                    <img src="img/icon-diamond.svg" alt="">
-                    <p class="u-f--h4">Ruleta en vivo</p>
-                </a>
-            </li>
-            <li class="icon__title">
-                <a href="/casino">
-                    <img src="img/icon-diamond.svg" alt="">
-                    <p class="u-f--h4">Casino</p>
-                </a>
-            </li>
-            <li class="icon__title">
-                <a href="/apuestas">
-                    <img src="img/icon-diamond.svg" alt="">
-                    <p class="u-f--h4">Apuestas</p>
-                </a>
-            </li>
-            <li class="icon__title">
-                <a href="/poker">
-                    <img src="img/icon-diamond.svg" alt="">
-                    <p class="u-f--h4">Poker</p>
-                </a>
-            </li>
-        </ul>
-    </nav>
-</section>
+    <section class="header__wrapper">
 
-    <section class="header__wrapper header__wrapper-btns">
+        <div class="header__logo">
+            <a href="/">
+                <img src="img/logo-header.svg" alt="Logo Casino Barcelona">
+            </a>
+        </div>
+
+        <nav class="header__navBar">
+            <ul>
+                <li class="icon__title">
+                    <a href="/slots">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h4">Slots</p>
+                    </a>
+                </li>
+                <li class="icon__title">
+                    <a href="/ruleta">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h4">Ruleta en vivo</p>
+                    </a>
+                </li>
+                <li class="icon__title">
+                    <a href="/casino">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h4">Casino</p>
+                    </a>
+                </li>
+                <li class="icon__title">
+                    <a href="/apuestas">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h4">Apuestas</p>
+                    </a>
+                </li>
+                <li class="icon__title">
+                    <a href="/poker">
+                        <img src="img/icon-diamond.svg" alt="">
+                        <p class="u-f--h4">Poker</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <section class="header__wrapper header__noLog">
+
         <div class="icon__title">
             <a href="#">
                 <img src="img/icon-star.svg" alt="">
                 <p class="u-f--h4">Promociones</p>
             </a>
         </div>
-        <button class="btn__white btn__icon--right">
+
+        <button class="header__noLog-btn btn__white btn__icon--right">
             <span>REGÍSTRATE</span>
             <img src="img/icon-btn-arrow-white.svg" alt="">
         </button>
-        <button class="btn__red btn__icon--right">
+        <button class="header__noLog-btn btn__red btn__icon--right">
             <span>ENTRA</span>
             <img src="img/icon-user-white-red.svg" alt="">
         </button>
+
     </section>
+
+    <section class="header__wrapper header__logged is-active">
+
+        <div class="header__logged-item icon__title">
+            <a href="#">
+                <img src="img/icon-star.svg" alt="">
+                <p class="u-f--h4">Promociones</p>
+            </a>
+        </div>
+
+        <div class="header__logged-item deposits">
+            <div class="deposits__total">
+                <img src="img/icon-coins-header.svg" alt="">
+                <span>21.419.723</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="5.414" height="9.017" viewBox="0 0 5.414 9.017">
+                <g id="icon-arrow-breadcrumb" transform="translate(1.414 1.414)">
+                    <path id="Trazado_5068" data-name="Trazado 5068"
+                        d="M0,0,2.928,2.928a.229.229,0,0,1,.01.323l-.01.01L0,6.189" fill="none" stroke="#fff"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </g>
+            </svg>
+            <button class="deposits__btn btn__red btn__red--glow">
+                <img src="img/icon-plus-btn.svg" alt="">
+                <span>DEPOSITAR</span>
+            </button>
+        </div>
+
+        <div class="header__logged-item user">
+            <div class="user__wrapper">
+                <p>Roberto</p>
+                <p>00:16:57</p>
+            </div>
+            <img src="img/icon-user-header.svg" alt="">
+        </div>
+
+    </section>
+
 </header>
-<nav class="header__mobile">
-    <section class="header__mobile-wrapper">
+
+
+<header class="header__mobile">
+    <section class="header__mobile-wrapper header__mobile--top">
         <a href="#">
             <img src="img/icon-menu-open.svg" alt="Logo Casino Barcelona">
         </a>
-        <div class="header__mobile-wrapper--logo">
+        <div class="header__mobile-logo">
             <a href="#">
                 <img src="img/logo-header.svg" alt="Logo Casino Barcelona">
             </a>
         </div>
-        <div class="header__mobile-wrapper--user">
+        <div class="header__mobile-user">
             <a href="">
                 <img src="img/icon-user-cyan.svg" alt="">
             </a>
         </div>
     </section>
-    <section class="header__mobile-wrapper">
+
+    <section class="header__mobile-wrapper header__mobile-noLog">
         <button class="btn__white btn__icon--right">
             <span>REGÍSTRATE</span>
             <img src="img/icon-btn-arrow-white.svg" alt="">
@@ -105,80 +147,111 @@
             <img src="img/icon-user-white-red.svg" alt="">
         </button>
     </section>
-</nav>
 
+    <section class="header__mobile-wrapper header__mobile-logged is-active">
+        <div class="deposits">
+            <div class="deposits__total">
+                <img src="img/icon-coins-header.svg" alt="">
+                <span>21.419.723</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="5.414" height="9.017" viewBox="0 0 5.414 9.017">
+                <g id="icon-arrow-breadcrumb" transform="translate(1.414 1.414)">
+                    <path id="Trazado_5068" data-name="Trazado 5068"
+                        d="M0,0,2.928,2.928a.229.229,0,0,1,.01.323l-.01.01L0,6.189" fill="none" stroke="#fff"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+                </g>
+            </svg>
+            <button class="deposits__btn btn__red btn__red--glow">
+                <img src="img/icon-plus-btn.svg" alt="">
+                <span>DEPOSITAR</span>
+            </button>
+        </div>
 
-<section class="bannerCarousel splide">
-    <div class="splide__arrows">
-        <button class="splide__arrow splide__arrow--prev">
-            <img src="img/icon-slider-arrow-left.svg" alt="">
-        </button>
-        <button class="splide__arrow splide__arrow--next">
-            <img src="img/icon-slider-arrow-right.svg" alt="">
-        </button>
+        <div class="user">
+            <div class="user__wrapper">
+                <p>Roberto</p>
+                <p>00:16:57</p>
+            </div>
+            <img src="img/icon-user-header.svg" alt="">
+        </div>
+    </section>
+
+</header>
+
+<section class="bannerCarousel">
+    <div class="splide">
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                <img src="img/icon-slider-arrow-left.svg" alt="">
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <img src="img/icon-slider-arrow-right.svg" alt="">
+            </button>
+        </div>
+        <div class="bannerCarousel__slider splide__track">
+            <ul class="splide__list">
+                
+                    <li class="bannerCarousel__slide splide__slide">
+                        <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
+                            <div>
+                                <p>Descubre a Emerald King Rainbow Road</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.</p>
+                            </div>
+                            <button class="btn__red">
+                                <span>¡JUEGA AHORA!</span>
+                                <img src="img/icon-btn-arrow.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="img/img-banner-home.png">
+                                <img src="img/img-banner-home-mobile.png" alt="">
+                            </picture>
+                        </div>
+                    </li>
+                
+                    <li class="bannerCarousel__slide splide__slide">
+                        <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
+                            <div>
+                                <p>Descubre a Emerald King Rainbow Road</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.</p>
+                            </div>
+                            <button class="btn__red">
+                                <span>¡JUEGA AHORA!</span>
+                                <img src="img/icon-btn-arrow.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="img/img-banner-home.png">
+                                <img src="img/img-banner-home-mobile.png" alt="">
+                            </picture>
+                        </div>
+                    </li>
+                
+                    <li class="bannerCarousel__slide splide__slide">
+                        <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
+                            <div>
+                                <p>Descubre a Emerald King Rainbow Road</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.</p>
+                            </div>
+                            <button class="btn__red">
+                                <span>¡JUEGA AHORA!</span>
+                                <img src="img/icon-btn-arrow.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="img/img-banner-home.png">
+                                <img src="img/img-banner-home-mobile.png" alt="">
+                            </picture>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
     </div>
-    <div class="bannerCarousel__slider splide__track">
-        <ul class="splide__list">
-            
-                <li class="bannerCarousel__slide splide__slide">
-                    <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
-                        <div>
-                            <p>Descubre a Emerald King Rainbow Road</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.</p>
-                        </div>
-                        <button class="btn__red">
-                            <span>¡JUEGA AHORA!</span>
-                            <img src="img/icon-btn-arrow.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="img/img-banner-home.png">
-                            <img src="img/img-banner-home-mobile.png" alt="">
-                        </picture>
-                    </div>
-                </li>
-            
-                <li class="bannerCarousel__slide splide__slide">
-                    <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
-                        <div>
-                            <p>Descubre a Emerald King Rainbow Road</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.</p>
-                        </div>
-                        <button class="btn__red">
-                            <span>¡JUEGA AHORA!</span>
-                            <img src="img/icon-btn-arrow.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="img/img-banner-home.png">
-                            <img src="img/img-banner-home-mobile.png" alt="">
-                        </picture>
-                    </div>
-                </li>
-            
-                <li class="bannerCarousel__slide splide__slide">
-                    <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
-                        <div>
-                            <p>Descubre a Emerald King Rainbow Road</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor.</p>
-                        </div>
-                        <button class="btn__red">
-                            <span>¡JUEGA AHORA!</span>
-                            <img src="img/icon-btn-arrow.svg" alt="">
-                        </button>
-                    </div>
-                    <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
-                        <picture>
-                            <source media="(min-width: 992px)" srcset="img/img-banner-home.png">
-                            <img src="img/img-banner-home-mobile.png" alt="">
-                        </picture>
-                    </div>
-                </li>
-            
-        </ul>
-    </div>
+
 </section>
 
 <section class="search">
@@ -1186,6 +1259,9 @@
 </section>
 
 <footer class="footer">
+    <section class="footer__trama">
+        <img src="img/img-trama-footer.png" alt="">
+    </section>
     <section class="footer__grid">
         <div class="footer__grid-item">
             <p class="u-f--h3">Casino Barcelona</p>
@@ -1278,12 +1354,6 @@
                     <li >
                         <a href="">900 354 354</a>
                     </li>
-                </div>
-                <div class="footer__grid-item--bottom">
-                    <button class="btn__red">
-                        <span>¡JUGAR!</span>
-                        <img src="img/icon-play-white.svg" alt="">
-                    </button>
                 </div>
             </ul>
         </div>
@@ -1391,6 +1461,7 @@
     </section>
 </footer>
 
+<script src="libraries/splide/splide.min.js"></script>
 <script type="module" src="js/home.js"></script>
 
 </body>

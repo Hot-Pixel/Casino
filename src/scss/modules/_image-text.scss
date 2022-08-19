@@ -48,10 +48,10 @@
     }
 
     &-btns {
-      margin-top: rem(15);
+      margin-top: $sm;
 
       @include screen-sm {
-        margin-top: rem(30);
+        margin-top: $lg;
 
         display: flex;
         flex-direction: column;

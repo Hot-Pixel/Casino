@@ -27,7 +27,7 @@
 
         text-align: left;
         background-color: setcolor("black", "dark2");
-        padding: rem(30) rem(30) rem(60) rem(30);
+        padding: $lg $lg rem(60) $lg;
         border-radius: 0 0 rem(5) rem(5);
 
         &-title {
@@ -47,7 +47,7 @@
             margin-bottom: 0;
           }
           &:last-child {
-            margin-bottom: rem(30);
+            margin-bottom: $lg;
           }
         }
       }

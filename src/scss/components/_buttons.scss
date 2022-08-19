@@ -91,29 +91,40 @@
 
 // button size_big
 .btn__size--big {
-  padding: rem(20) rem(30);
+  padding: rem(20) $lg;
   @include tablet-h {
-    padding: rem(30) rem(40);
+    padding: $lg rem(40);
   }
 }
 
 // button icon_right
 .btn__icon--right {
   position: relative;
+  padding: 0 $sm;
 
   span {
-    padding-right: rem(10);
+
+    @include screen-md {
+      padding-right: rem(10);
+    }
   }
 
   img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    right: 7px;
+    font-size: rem(14);
 
     @include screen-sm {
+      position: static;
+      transform: translateY(0);
       font-size: rem(12);
     }
     @include screen-md {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
       right: 7px;
       font-size: rem(14);
     }

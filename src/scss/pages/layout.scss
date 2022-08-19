@@ -21,6 +21,8 @@
 @use '../components/ruleta-result';
 @use '../components/gradients';
 @use '../components/header-module';
+@use '../components/deposits';
+@use '../components/user';
 
 // OBJECTS
 // @use '../objects/menu-poker';
@@ -29,8 +31,9 @@
 @use '../layout/header';
 @use '../layout/footer';
 
+
 // MODULES
-@use '../modules/image-text-torneos';
+@use '../modules/banner-w-carousel';
 
 
 // HELPER

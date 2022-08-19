@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .slot__bar {
-    padding-left: rem(30);
+    padding-left: $lg;
     height: rem(60);
 
     display: flex;
@@ -16,7 +16,7 @@
 
     &-item {
         display: flex;
-        margin-right: rem(15);
+        margin-right: $sm;
 
         P:first-of-type {
             padding-right: rem(5);

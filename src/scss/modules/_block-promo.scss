@@ -26,8 +26,8 @@
     text-align: center;
 
     img {
-      width: rem(100);
-      height: rem(100);
+      width: $xl;
+      height: $xl;
       margin-bottom: rem(40);
     }
 
@@ -45,7 +45,7 @@
       display: flex;
       align-items: center;
 
-      padding: 0 rem(30);
+      padding: 0 $lg;
 
       &:nth-of-type(2) {
         border-left: 1px solid setcolor("primary");
@@ -70,7 +70,7 @@
     }
 
     button {
-      height: rem(100);
+      height: $xl;
       width: 100%;
       margin: rem(60) 0;
     }

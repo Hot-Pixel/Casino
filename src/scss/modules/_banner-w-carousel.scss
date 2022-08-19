@@ -3,8 +3,17 @@
 @use "../tools" as *;
 
 .bannerCarousel {
-  @extend %margin_horizontal_main;
+
   @extend %margin_top_medium;
+
+  background-image: url('../img/img-stars-bg.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .splide {
+    @extend %margin_horizontal_main;
+  }
 
   &__slide {
     display: flex;
@@ -69,7 +78,7 @@
       }
 
       & > div {
-        padding: rem(30) rem(10);
+        padding: $lg rem(10);
         background-color: setcolor("black");
         overflow: hidden;
         border-radius: 0 0 5px 5px;
@@ -124,8 +133,8 @@
     }
 
     img {
-      height: rem(30);
-      width: rem(30);
+      height: $lg;
+      width: $lg;
 
       @include screen-sm {
         height: rem(40);

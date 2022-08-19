@@ -10,7 +10,7 @@
   justify-items: center;
   grid-template-columns: 1fr;
   grid-auto-flow: row;
-  column-gap: rem(30);
+  column-gap: $lg;
   row-gap: rem(180);
 
   @include screen-sm {

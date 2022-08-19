@@ -32,7 +32,7 @@
       }
 
       .menuPoker__btn {
-        padding: 0 rem(30);
+        padding: 0 $lg;
 
         @include screen-lg {
           padding: 0 rem(80);
@@ -48,7 +48,7 @@
       }
 
       .menuPoker__btn {
-        padding: 0 rem(15);
+        padding: 0 $sm;
         margin: 0;
 
         display: flex;

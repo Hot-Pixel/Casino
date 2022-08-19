@@ -6,11 +6,11 @@
   @extend %margin_horizontal_main, %margin_bottom_small;
   display: flex;
   flex-direction: column;
-  row-gap: rem(15);
+  row-gap: $sm;
 
   @include screen-sm {
     flex-direction: row;
-    column-gap: rem(15);
+    column-gap: $sm;
     row-gap: 0;
   }
 }
@@ -24,13 +24,13 @@
   border-radius: rem(5);
 
   @include tablet {
-    padding: rem(30);
+    padding: $lg;
   }
   @include screen-sm {
-    padding: rem(15);
+    padding: $sm;
   }
   @include screen-md {
-    padding: rem(30);
+    padding: $lg;
     width: 50%;
   }
 
@@ -136,7 +136,7 @@
         transition: all 0.3s ease;
 
         button {
-          margin-bottom: rem(15);
+          margin-bottom: $sm;
 
           img {
             height: 12.6px;

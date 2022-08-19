@@ -7,7 +7,7 @@
 	@extend %margin_horizontal_main, %margin_bottom_large;
 
 	display: grid;
-	gap: rem(15);
+	gap: $sm;
 
 	@include screen-sm {
 		grid-template-columns: repeat( 2, 1fr );
@@ -33,7 +33,7 @@
 
 			background-color: setcolor('black', 'dark4');
 			height: auto;
-			padding: rem(30) rem(20);
+			padding: $lg rem(20);
 			border-radius: rem(5);
 
 			@include screen-sm {

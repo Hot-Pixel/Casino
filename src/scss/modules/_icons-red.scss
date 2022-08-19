@@ -35,7 +35,7 @@
         width: rem(60);
 
         @include tablet {
-          width: rem(100);
+          width: $xl;
         }
         @include screen-lg {
           width: rem(150);
@@ -86,7 +86,7 @@
 
       @include tablet {
         justify-self: center;
-        margin-bottom: rem(30);
+        margin-bottom: $lg;
       }
       @include screen-sm {
         margin-bottom: 0;

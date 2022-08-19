@@ -15,8 +15,14 @@ $body_font_size_desktop: rem(14);
 $body_font_family: setfont("family", "primary");
 $body_font_weight: setfont("weight", "regular");
 
+// space sizes
+$sm: rem(15);
+$md: rem(30);
+$lg: rem(60);
+$xl: rem(100);
+
 // paragraph and headings
-$paragraph_margin: rem(15);
+$paragraph_margin: $sm;
 $h1_margin: rem(20);
 $h2_margin: rem(20);
 $h3_margin: rem(20);
@@ -34,8 +40,8 @@ $buttons_font_size_ipad: rem(12);
 $buttons_font_size_desktop: rem(12);
 
 $buttons_padding: rem(10) rem(10) ;
-$buttons_padding_ipad: rem(15) rem(15);
-$buttons_padding_desktop: rem(15) rem(20);
+$buttons_padding_ipad: $sm $sm;
+$buttons_padding_desktop: $sm rem(20);
 
 // inputs
 $inputs_font_family: setfont("family", "primary");
@@ -49,7 +55,7 @@ $inputs_font_size_ipad: rem(16);
 $inputs_font_size_desktop: rem(14);
 
 $inputs_padding: 0 rem(10);
-$inputs_padding_ipad: 0 rem(15);
+$inputs_padding_ipad: 0 $sm;
 $inputs_padding_desktop: 0 rem(20);
 
 // dark layer
@@ -58,6 +64,6 @@ $dark_layer_opacity: 0.25;
 // max-width
 $max_width: rem(1600);
 $max_width_large: rem(1400);
-$max_width_padding: rem(15);
+$max_width_padding: $sm;
 $max_width_padding_medium: rem(50);
 $max_width_padding_large: 0;

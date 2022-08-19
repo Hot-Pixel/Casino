@@ -4,7 +4,7 @@
 
 .oneCol {
     @extend %margin_horizontal_main;
-    margin-top: rem(100);
+    margin-top: $xl;
     display: flex;
     align-items: center;
     justify-content: center;

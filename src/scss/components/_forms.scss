@@ -5,7 +5,7 @@
 @use 'tools' as *;
 
 .wpcf7 {
-    margin-top: rem(30);
+    margin-top: $lg;
     @include tablet {
         margin-top: rem(50);
     }
@@ -22,7 +22,7 @@
     position: relative;
     z-index: 1;
     display: inline-block;
-    margin-bottom: rem(30);
+    margin-bottom: $lg;
     width: 100%;
     vertical-align: top;
     @include screen-sm {
@@ -145,7 +145,7 @@ select, textarea, input {
 
 // textarea
 textarea {
-    height: rem(100);
+    height: $xl;
     overflow: hidden;
     background-color: transparent;
     border: 1px solid setcolor('gray','dark');

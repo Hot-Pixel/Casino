@@ -39,6 +39,11 @@ const paths = {
     watcher: "src/img/**/*",
     dest: "public/img/",
   },
+  ejs: {
+    src: ['views/*.ejs', '!views/error.ejs'],
+    watcher: "views/**/*.ejs",
+    dest: "dist/",
+  },
 };
 
 /* Gulp Pipe for compiling SASS main file */
@@ -99,8 +104,9 @@ gulp.task("watch", async () => {
     browser: "chrome",
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
+  watch(paths.scripts.watcher).on("change", gulp.series("js", server.reload));
   watch(paths.images.watcher).on("add", gulp.series("imageMin", server.reload));
-  watch("./**/*.ejs").on("change", server.reload);
+  watch(paths.ejs.watcher).on("change", server.reload);
 });
 
 /*---------------------------------------------------*/
@@ -108,10 +114,10 @@ gulp.task("watch", async () => {
 /* Bundle Tasks */
 gulp.task("bundleEjs", async () => {
   gulp
-    .src("./views/*.ejs")
+    .src(paths.ejs.src)
     .pipe(ejsCompiler())
     .pipe(rename({ extname: ".html" }))
-    .pipe(gulp.dest("dist/"));
+    .pipe(gulp.dest(paths.ejs.dest));
 });
 
 gulp.task("bundleJs", async () => {

@@ -20,8 +20,8 @@
 			width: rem(20);
 
 			@include screen-lg {
-				height: rem(30);
-				width: rem(30);
+				height: $lg;
+				width: $lg;
 			}
 		}
 	}
