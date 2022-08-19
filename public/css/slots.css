@@ -594,61 +594,61 @@
   }
 }
 
-.m-text-block, .footer__grid {
+.jackpot, .gridFull, .footer__grid {
   padding-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-text-block, .footer__grid {
+  .jackpot, .gridFull, .footer__grid {
     padding-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-text-block, .footer__grid {
+  .jackpot, .gridFull, .footer__grid {
     padding-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .m-text-block, .footer__grid {
+  .jackpot, .gridFull, .footer__grid {
     padding-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .m-text-block, .footer__grid {
+  .jackpot, .gridFull, .footer__grid {
     padding-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .m-text-block, .footer__grid {
+  .jackpot, .gridFull, .footer__grid {
     padding-top: var(--vertical-medium-2xl);
   }
 }
 
-.jackpot {
-  padding-bottom: var(--vertical-large-xs);
+.m-text-block {
+  padding-top: var(--vertical-large-xs);
 }
 @media only screen and (min-width: 576px) {
-  .jackpot {
-    padding-bottom: var(--vertical-large-sm);
+  .m-text-block {
+    padding-top: var(--vertical-large-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .jackpot {
-    padding-bottom: var(--vertical-large-md);
+  .m-text-block {
+    padding-top: var(--vertical-large-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .jackpot {
-    padding-bottom: var(--vertical-large-lg);
+  .m-text-block {
+    padding-top: var(--vertical-large-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .jackpot {
-    padding-bottom: var(--vertical-large-xl);
+  .m-text-block {
+    padding-top: var(--vertical-large-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .jackpot {
-    padding-bottom: var(--vertical-large-2xl);
+  .m-text-block {
+    padding-top: var(--vertical-large-2xl);
   }
 }
 
@@ -1117,7 +1117,7 @@ h5 {
   }
 }
 
-.is-active {
+.is-on {
   display: flex !important;
 }
 
@@ -1683,7 +1683,7 @@ h5 {
 .gridHalf__grid-item {
   position: relative;
 }
-.gridHalf__grid-item img {
+.gridHalf__grid-item > img {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -1711,22 +1711,23 @@ h5 {
 .gridHalf__grid-item--hover button {
   margin-bottom: 0.9375rem;
 }
-.gridHalf__grid-item--hover button img {
-  height: 12.6px;
-  width: 16px;
-}
 
 .gridFull {
   position: relative;
   overflow: hidden;
 }
 .gridFull .item {
+  position: relative;
   border-radius: 0.625rem;
   overflow: hidden;
 }
-.gridFull .item img {
+.gridFull .item > img {
   object-fit: contain;
   width: 100%;
+}
+.gridFull .item:hover .gridHover {
+  opacity: 1;
+  transition: all 0.3s ease;
 }
 
 .jackpot {

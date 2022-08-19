@@ -4,15 +4,15 @@ import mixitupMultifilter from './mixitup-multifilter.js';
 mixitup.use(mixitupMultifilter);
 
 
-const hearts = document.querySelectorAll(".is-favourite");
+const hearts = document.querySelectorAll(".gridGames__item-favourite");
 
 hearts.forEach((heart) => {
   heart.addEventListener("click", () => {
     heart.classList.toggle("fav");
     if (heart.classList.contains("fav")) {
-      heart.parentElement.parentElement.classList.add("favorito");
+      heart.parentElement.classList.add("favorito");
     } else {
-      heart.parentElement.parentElement.classList.remove("favorito");
+      heart.parentElement.classList.remove("favorito");
     }
   });
 });

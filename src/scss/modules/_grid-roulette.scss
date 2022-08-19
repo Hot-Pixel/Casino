@@ -4,7 +4,7 @@
 
 
 .gridRoulette {
-	@extend %margin_horizontal_main, %margin_bottom_large;
+	@extend %margin_horizontal_main, %margin_top_medium;
 
 	display: grid;
 	gap: $sm;

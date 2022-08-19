@@ -1159,6 +1159,38 @@ h5 {
   color: #00d1bc;
   margin: 0;
 }
+.gridHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 1.875rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.gridHover p {
+  justify-self: flex-start;
+}
+.gridHover a {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gridHover a button {
+  margin-bottom: 0.9375rem;
+}
+.gridHover a p {
+  margin: 0;
+}
+
 .has-header {
   top: 6vh;
 }
@@ -1168,7 +1200,7 @@ h5 {
   }
 }
 
-.is-active {
+.is-on {
   display: flex !important;
 }
 

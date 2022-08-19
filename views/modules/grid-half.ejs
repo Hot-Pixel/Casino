@@ -3,13 +3,13 @@
         <div class="gridHalf__navbar-wrapper">
             <img src="img/icon-grid-arrow.svg" alt="" class="js-arrow__grid">
             <div class="icon__title">
-                <img src="img/<%- data.icon %>.svg" alt="">
+                <img src="img/<%= data.icon %>.svg" alt="">
                 <p class="u-f--bold u-f--h4">
-                    <%- data.title %>
+                    <%= data.title %>
                 </p>
             </div>
         </div>
-        <a href="<%- data.link %>">
+        <a href="<%= data.link %>">
             <div class="gridHalf__navbar-wrapper">
                 <p class="u-f--bold">VER TODOS</p>
                 <img src="img/icon-arrow-red.svg" alt="">
@@ -17,9 +17,10 @@
         </a>
     </nav>
     <div class="gridHalf__grid active">
+        <% let n = 1; %>
         <% data.grid.forEach( item => { %>
             <div class="gridHalf__grid-item">
-                <img src="img/<%- item.img %>.jpg" alt="">
+                <img src="img/img-grid-<%= n %>.jpg" alt="">
                 <div class="gridHalf__grid-item--hover">
                     <a href="#">
                         <button class="btn__red btn__red--glow">
@@ -30,7 +31,7 @@
                     <p>PRUÉBALO</p>
                 </div>
             </div>
-
+            <% n++ %>
         <% }) %>
     </div>
 </section>

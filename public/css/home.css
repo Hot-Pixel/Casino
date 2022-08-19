@@ -545,90 +545,61 @@
   }
 }
 
-.redIcons {
-  padding-bottom: var(--vertical-small-xs);
-}
-@media only screen and (min-width: 576px) {
-  .redIcons {
-    padding-bottom: var(--vertical-small-sm);
-  }
-}
-@media only screen and (min-width: 768px) {
-  .redIcons {
-    padding-bottom: var(--vertical-small-md);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .redIcons {
-    padding-bottom: var(--vertical-small-lg);
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .redIcons {
-    padding-bottom: var(--vertical-small-xl);
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .redIcons {
-    padding-bottom: var(--vertical-small-2xl);
-  }
-}
-
-.m-text-block, .bannerCarousel, .footer__grid {
+.gridFull, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .bannerCarousel, .footer__grid {
   padding-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-text-block, .bannerCarousel, .footer__grid {
+  .gridFull, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .bannerCarousel, .footer__grid {
     padding-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-text-block, .bannerCarousel, .footer__grid {
+  .gridFull, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .bannerCarousel, .footer__grid {
     padding-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .m-text-block, .bannerCarousel, .footer__grid {
+  .gridFull, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .bannerCarousel, .footer__grid {
     padding-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .m-text-block, .bannerCarousel, .footer__grid {
+  .gridFull, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .bannerCarousel, .footer__grid {
     padding-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .m-text-block, .bannerCarousel, .footer__grid {
+  .gridFull, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .bannerCarousel, .footer__grid {
     padding-top: var(--vertical-medium-2xl);
   }
 }
 
-.jackpot, .carouselBets, .gridRoulette, .imageText {
-  padding-bottom: var(--vertical-large-xs);
+.m-text-block {
+  padding-top: var(--vertical-large-xs);
 }
 @media only screen and (min-width: 576px) {
-  .jackpot, .carouselBets, .gridRoulette, .imageText {
-    padding-bottom: var(--vertical-large-sm);
+  .m-text-block {
+    padding-top: var(--vertical-large-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .jackpot, .carouselBets, .gridRoulette, .imageText {
-    padding-bottom: var(--vertical-large-md);
+  .m-text-block {
+    padding-top: var(--vertical-large-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .jackpot, .carouselBets, .gridRoulette, .imageText {
-    padding-bottom: var(--vertical-large-lg);
+  .m-text-block {
+    padding-top: var(--vertical-large-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .jackpot, .carouselBets, .gridRoulette, .imageText {
-    padding-bottom: var(--vertical-large-xl);
+  .m-text-block {
+    padding-top: var(--vertical-large-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .jackpot, .carouselBets, .gridRoulette, .imageText {
-    padding-bottom: var(--vertical-large-2xl);
+  .m-text-block {
+    padding-top: var(--vertical-large-2xl);
   }
 }
 
@@ -1190,6 +1161,38 @@ h5 {
   color: #00d1bc;
   margin: 0;
 }
+.gridHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 1.875rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.gridHover p {
+  justify-self: flex-start;
+}
+.gridHover a {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gridHover a button {
+  margin-bottom: 0.9375rem;
+}
+.gridHover a p {
+  margin: 0;
+}
+
 .o-card {
   display: flex;
   flex-direction: column;
@@ -1223,7 +1226,7 @@ h5 {
   }
 }
 
-.is-active {
+.is-on {
   display: flex !important;
 }
 
@@ -1883,7 +1886,7 @@ h5 {
 .gridHalf__grid-item {
   position: relative;
 }
-.gridHalf__grid-item img {
+.gridHalf__grid-item > img {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -1910,10 +1913,6 @@ h5 {
 }
 .gridHalf__grid-item--hover button {
   margin-bottom: 0.9375rem;
-}
-.gridHalf__grid-item--hover button img {
-  height: 12.6px;
-  width: 16px;
 }
 
 .redIcons {
@@ -2331,11 +2330,16 @@ h5 {
   overflow: hidden;
 }
 .gridFull .item {
+  position: relative;
   border-radius: 0.625rem;
   overflow: hidden;
 }
-.gridFull .item img {
+.gridFull .item > img {
   object-fit: contain;
   width: 100%;
+}
+.gridFull .item:hover .gridHover {
+  opacity: 1;
+  transition: all 0.3s ease;
 }
 /*# sourceMappingURL=home.css.map */

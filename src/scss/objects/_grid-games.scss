@@ -31,31 +31,16 @@
       object-fit: contain;
     }
 
-    &-title {
+    &-favourite {
+      cursor: pointer;
+
       position: absolute;
-      width: 100%;
-      top: 0;
-      right: 0;
-      z-index: 2;
+      top: 7%;
+      right: 7%;
+      z-index: 10;
 
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      &.fav {
 
-      padding: $sm;
-
-      p {
-        margin: 0;
-        opacity: 0;
-        transition: all 0.3s ease;
-      }
-
-      .is-favourite.fav {
-        cursor: pointer;
-
-        svg {
-          cursor: pointer;
-        }
         svg g path {
           fill: setcolor("primary");
           opacity: 1;
@@ -64,41 +49,9 @@
     }
 
     &:hover {
-      .gridGames__item-title {
-        p {
-          opacity: 1;
-          transition: all 0.3s ease;
-        }
-      }
-
-      .gridGames__item-hover {
+      .gridHover {
         opacity: 1;
         transition: all 0.3s ease;
-      }
-    }
-
-    &-hover {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 1;
-
-      width: 100%;
-      height: 100%;
-
-      padding-top: rem(40);
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      background-color: rgba(0, 0, 0, 0.7);
-      opacity: 0;
-      transition: all 0.3s ease;
-
-      button {
-        margin-bottom: $sm;
       }
     }
   }
