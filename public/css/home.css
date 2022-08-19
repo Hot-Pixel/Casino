@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .jackpot__card-content p:last-of-type, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper--home p, .search .search__wrapper--slots p, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title, .o-card--subtitle, .user__wrapper p:first-of-type, .u-f--bold p, .jackpot__card-content p:last-of-type p, .carouselBets__carousel .card__content-title p, .carouselBets__carousel .card__content-subtitle p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .bannerCarousel__slide-wrapper p:first-of-type p, .o-card--title p, .o-card--subtitle p, .user__wrapper p:first-of-type p {
+.u-f--bold, .jackpot__card-content p:last-of-type, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper--home p, .search .search__wrapper--slots p, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title, .o-card--subtitle, .user__wrapper p:first-of-type, .headerModule-link p, .u-f--bold p, .jackpot__card-content p:last-of-type p, .carouselBets__carousel .card__content-title p, .carouselBets__carousel .card__content-subtitle p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .bannerCarousel__slide-wrapper p:first-of-type p, .o-card--title p, .o-card--subtitle p, .user__wrapper p:first-of-type p {
   font-weight: 700;
 }
 
@@ -516,60 +516,60 @@
   }
 }
 
-.footer {
+.grids__container, .footer {
   padding-top: var(--vertical-small-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-2xl);
   }
 }
 
-.redIcons, .grids__container {
+.redIcons {
   padding-bottom: var(--vertical-small-xs);
 }
 @media only screen and (min-width: 576px) {
-  .redIcons, .grids__container {
+  .redIcons {
     padding-bottom: var(--vertical-small-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .redIcons, .grids__container {
+  .redIcons {
     padding-bottom: var(--vertical-small-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .redIcons, .grids__container {
+  .redIcons {
     padding-bottom: var(--vertical-small-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .redIcons, .grids__container {
+  .redIcons {
     padding-bottom: var(--vertical-small-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .redIcons, .grids__container {
+  .redIcons {
     padding-bottom: var(--vertical-small-2xl);
   }
 }
@@ -944,11 +944,11 @@ h5 {
 }
 
 .btn__size--big {
-  padding: 1.25rem 3.75rem;
+  padding: 0.9375rem 1.875rem;
 }
 @media only screen and (min-width: 1024px) {
   .btn__size--big {
-    padding: 3.75rem 2.5rem;
+    padding: 1.875rem 2.5rem;
   }
 }
 
@@ -1102,6 +1102,45 @@ h5 {
   .splideArrows--right .splide__arrow--next {
     right: 2%;
   }
+}
+
+.splide__gradient {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent, #13171d);
+}
+
+.headerModule {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.headerModule p {
+  margin-bottom: 0;
+}
+.headerModule-title {
+  display: flex;
+  align-items: center;
+}
+.headerModule-title p {
+  margin-left: 0.625rem;
+}
+.headerModule-title img {
+  width: 1.5625rem;
+  height: 1.5625rem;
+}
+.headerModule-link {
+  display: flex;
+  align-items: center;
+}
+.headerModule-link p {
+  margin-right: 0.3125rem;
+  color: #ff293e;
 }
 
 .deposits {
@@ -1349,6 +1388,10 @@ h5 {
 }
 
 .footer {
+  width: 100%;
+}
+.footer__trama img {
+  object-fit: cover;
   width: 100%;
 }
 .footer__grid {
@@ -1679,8 +1722,6 @@ h5 {
 }
 
 .search {
-  margin-top: 3.75rem;
-  margin-bottom: 3.75rem;
   padding-bottom: 0.9375rem;
   display: none;
   justify-content: space-between;
@@ -1772,7 +1813,7 @@ h5 {
 }
 @media only screen and (min-width: 1440px) {
   .gridHalf {
-    padding: 3.75rem;
+    padding: 0.9375rem;
     width: 50%;
   }
 }
@@ -2010,7 +2051,7 @@ h5 {
   margin-bottom: 0;
 }
 .imageText__content > * + * {
-  margin-top: 1.25rem;
+  margin-top: 0.9375rem;
 }
 .imageText__content-btns {
   margin-top: 0.9375rem;
@@ -2023,7 +2064,7 @@ h5 {
   }
 }
 .imageText__content-btns button {
-  margin-top: 10px;
+  margin-top: 0.9375rem;
 }
 @media only screen and (min-width: 1280px) {
   .imageText__content-btns button {
@@ -2095,7 +2136,9 @@ h5 {
 }
 
 .carouselBets__carousel .card {
-  margin-bottom: 1.5625rem;
+  display: grid;
+  grid-template-rows: 12.5rem 1fr;
+  margin-bottom: 1.875rem;
 }
 .carouselBets__carousel .card__image {
   overflow: hidden;
@@ -2110,7 +2153,7 @@ h5 {
   position: relative;
   text-align: left;
   background-color: #1c2026;
-  padding: 3.75rem 3.75rem 3.75rem 3.75rem;
+  padding: 1.875rem 1.875rem 6.25rem;
   border-radius: 0 0 0.3125rem 0.3125rem;
 }
 .carouselBets__carousel .card__content-title {
@@ -2130,7 +2173,7 @@ h5 {
 }
 .carouselBets__carousel .card .card__footer {
   position: absolute;
-  bottom: -1.25rem;
+  bottom: -1.875rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -2160,6 +2203,10 @@ h5 {
   .carouselBets__carousel .card .card__footer-column button {
     padding: 12px 22px;
   }
+}
+.carouselBets__carousel .splide__arrow--prev {
+  left: unset;
+  right: 3%;
 }
 
 .jackpot {

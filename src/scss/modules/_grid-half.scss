@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .grids__container {
-  @extend %margin_horizontal_main, %margin_bottom_small;
+  @extend %margin_horizontal_main, %margin_top_small;
   display: flex;
   flex-direction: column;
   row-gap: $sm;
@@ -30,7 +30,7 @@
     padding: $sm;
   }
   @include screen-md {
-    padding: $lg;
+    padding: $sm;
     width: 50%;
   }
 

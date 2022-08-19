@@ -9,8 +9,8 @@
   &__wrapper {
     width: 100%;
     height: 100%;
-    padding-top: rem(60);
-    padding-bottom: rem(60);
+    padding-top: $lg;
+    padding-bottom: $lg;
 
     @extend %padding_horizontal_main;
 

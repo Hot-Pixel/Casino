@@ -23,7 +23,7 @@
     justify-content: center;
 
     @include screen-sm {
-      width: calc(30% - rem(60));
+      width: calc(30% - $lg);
     }
 
     p:last-of-type {
@@ -53,7 +53,7 @@
 
   &__card {
     &-image {
-      margin-top: rem(60);
+      margin-top: $lg;
       background-color: setcolor("black", "dark2");
       border-radius: rem(10) rem(10) 0 0;
 

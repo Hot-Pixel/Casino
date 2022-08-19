@@ -56,7 +56,7 @@
 
 .btn__block {
   @extend %buttons;
-  height: rem(60);
+  height: $lg;
   border-radius: rem(5);
 }
 
@@ -91,9 +91,9 @@
 
 // button size_big
 .btn__size--big {
-  padding: rem(20) $lg;
+  padding: $sm $md;
   @include tablet-h {
-    padding: $lg rem(40);
+    padding: $md rem(40);
   }
 }
 

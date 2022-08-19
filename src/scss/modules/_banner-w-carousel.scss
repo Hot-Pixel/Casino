@@ -72,7 +72,7 @@
       justify-content: space-between;
 
       @include screen-sm {
-        padding: rem(60);
+        padding: $lg;
         background-color: setcolor("black");
         align-items: flex-start;
       }

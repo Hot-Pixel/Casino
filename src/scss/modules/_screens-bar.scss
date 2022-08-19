@@ -2,19 +2,21 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.slot__bar {
+.screensBar {
     padding-left: $lg;
-    height: rem(60);
+    height: $lg;
 
     display: flex;
     justify-content: space-between;
 
-    &-wrapper {
+    background-color: setcolor('black', 'dark2');
+
+    &__wrapper {
         display: flex;
         align-items: center;
     }
 
-    &-item {
+    &__item {
         display: flex;
         margin-right: $sm;
 
@@ -34,7 +36,7 @@
             cursor: pointer;
         }
 
-        button:not(.slot__bar-btn--last) {
+        button:not(.screensBar__btn--last) {
             margin: 0 rem(10);
             img {
                 width: rem(20);
@@ -42,10 +44,11 @@
             }
         }
 
-        .slot__bar-btn--last {
+        .screensBar__btn--last {
             height: 100%;
-            width: rem(60);
-            background-color: setcolor('black', light);
+            margin: 0;
+            width: $lg;
+            background-color: setcolor('black');
         }
     }
 }

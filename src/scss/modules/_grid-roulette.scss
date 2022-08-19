@@ -37,7 +37,7 @@
 			border-radius: rem(5);
 
 			@include screen-sm {
-				padding: rem(60) 0;
+				padding: $lg 0;
 				height: rem(335);
 			}
 

@@ -565,61 +565,32 @@
   }
 }
 
-.footer {
+.grids__container, .footer {
   padding-top: var(--vertical-small-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer {
+  .grids__container, .footer {
     padding-top: var(--vertical-small-2xl);
-  }
-}
-
-.grids__container {
-  padding-bottom: var(--vertical-small-xs);
-}
-@media only screen and (min-width: 576px) {
-  .grids__container {
-    padding-bottom: var(--vertical-small-sm);
-  }
-}
-@media only screen and (min-width: 768px) {
-  .grids__container {
-    padding-bottom: var(--vertical-small-md);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .grids__container {
-    padding-bottom: var(--vertical-small-lg);
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .grids__container {
-    padding-bottom: var(--vertical-small-xl);
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .grids__container {
-    padding-bottom: var(--vertical-small-2xl);
   }
 }
 
@@ -977,11 +948,11 @@ h5 {
 }
 
 .btn__size--big {
-  padding: 1.25rem 3.75rem;
+  padding: 0.9375rem 1.875rem;
 }
 @media only screen and (min-width: 1024px) {
   .btn__size--big {
-    padding: 3.75rem 2.5rem;
+    padding: 1.875rem 2.5rem;
   }
 }
 
@@ -1313,6 +1284,10 @@ h5 {
 .footer {
   width: 100%;
 }
+.footer__trama img {
+  object-fit: cover;
+  width: 100%;
+}
 .footer__grid {
   display: grid;
   column-gap: 3.75rem;
@@ -1547,8 +1522,6 @@ h5 {
 }
 
 .search {
-  margin-top: 3.75rem;
-  margin-bottom: 3.75rem;
   padding-bottom: 0.9375rem;
   display: none;
   justify-content: space-between;
@@ -1640,7 +1613,7 @@ h5 {
 }
 @media only screen and (min-width: 1440px) {
   .gridHalf {
-    padding: 3.75rem;
+    padding: 0.9375rem;
     width: 50%;
   }
 }

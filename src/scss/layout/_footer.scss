@@ -6,6 +6,13 @@
   @extend %margin_top_small;
   width: 100%;
 
+  &__trama {
+    img {
+      object-fit: cover;
+      width: 100%
+    }
+  }
+
   &__grid {
     @extend %margin_horizontal_main, %margin_top_medium;
     display: grid;

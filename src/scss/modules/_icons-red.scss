@@ -32,7 +32,7 @@
       align-items: center;
 
       img {
-        width: rem(60);
+        width: $lg;
 
         @include tablet {
           width: $xl;
@@ -90,7 +90,7 @@
       }
       @include screen-sm {
         margin-bottom: 0;
-        margin-left: rem(60);
+        margin-left: $lg;
         align-items: flex-start;
         text-align: left;
       }

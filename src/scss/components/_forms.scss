@@ -26,7 +26,7 @@
     width: 100%;
     vertical-align: top;
     @include screen-sm {
-        margin-bottom: rem(60)
+        margin-bottom: $lg
     }
 }
 

@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
 
-    padding: rem(60) 0;
+    padding: $lg 0;
     background-color: setcolor('black', 'dark2');
 
     @include screen-sm {

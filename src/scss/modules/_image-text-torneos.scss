@@ -34,7 +34,7 @@
 
     @include screen-sm {
       width: 40%;
-      padding: rem(60);
+      padding: $lg;
       text-align: left;
     }
 

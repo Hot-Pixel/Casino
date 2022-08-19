@@ -38,7 +38,7 @@
         border-radius: 0 0 rem(10) rem(10);
 
         @include screen-sm {
-          padding: $lg $lg rem(60);
+          padding: $lg $lg $lg;
         }
     }
   }
