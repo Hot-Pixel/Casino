@@ -114,7 +114,17 @@ const gridHalfRight =
     {
       title: "Jackpot Giant",
       total: "987.654,32 €",
-      img: "img-carousel-jackpot-1.png"
+      img: "img-carousel-jackpot-2.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-3.png"
+    },
+    {
+      title: "Jackpot Giant",
+      total: "987.654,32 €",
+      img: "img-carousel-jackpot-4.png"
     },
     {
       title: "Jackpot Giant",
@@ -124,22 +134,12 @@ const gridHalfRight =
     {
       title: "Jackpot Giant",
       total: "987.654,32 €",
-      img: "img-carousel-jackpot-1.png"
+      img: "img-carousel-jackpot-2.png"
     },
     {
       title: "Jackpot Giant",
       total: "987.654,32 €",
-      img: "img-carousel-jackpot-1.png"
-    },
-    {
-      title: "Jackpot Giant",
-      total: "987.654,32 €",
-      img: "img-carousel-jackpot-1.png"
-    },
-    {
-      title: "Jackpot Giant",
-      total: "987.654,32 €",
-      img: "img-carousel-jackpot-1.png"
+      img: "img-carousel-jackpot-3.png"
     }
   ]
 %>
@@ -150,7 +150,7 @@ const gridHalfRight =
 
 <%- include ('modules/banner', { data: bannerData }) %>
 
-<%- include ('modules/search-bar-game') %>
+<%- include ('modules/search-bar-slots') %>
 
 <section class="grids__container">
 
@@ -160,9 +160,18 @@ const gridHalfRight =
 
 </section>
 
-<%- include ('modules/grid-full') %>
-
 <%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
+
+<section>
+
+  <%- include ('modules/grid-full') %>
+
+  <button class="btn__red btn__red--glow">
+    <span>VER TODOS LOS SLOTS ONLINE</span>
+    <img src="img/icon-btn-arrow.svg" alt="">
+  </button>
+
+</section>
 
 <%- include ('modules/text-block') %>
 
