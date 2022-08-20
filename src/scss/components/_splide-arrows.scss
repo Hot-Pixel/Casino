@@ -2,12 +2,6 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
-// Layout
-
-
-// Navigation
-
 .splideArrows--right {
 	.splide__arrow {
 		background: none;
@@ -20,25 +14,18 @@
 			width: rem(20);
 
 			@include screen-lg {
-				height: $lg;
-				width: $lg;
+				height: rem(30);
+				width: rem(30);
 			}
 		}
 	}
 
 	.splide__arrow--prev {
-		left: 94%;
-
-		@include screen-lg {
-			left: 93%;
-		}
+		left: unset;
+		right: 35px;
 	}
 
 	.splide__arrow--next {
-		right: 1%;
-
-		@include screen-lg {
-			right: 2%;
-		}
+		right: 0;
 	}
 }

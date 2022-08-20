@@ -1,5 +1,4 @@
 import { g as gsapWithCSS } from './index-92880765.js';
-import { f as filterCasino } from './filterCasino-9da575ad.js';
 import { S as Splide$1 } from './splide.esm-20cd2e1c.js';
 import { m as mixitup$1 } from './mixitup-b8d39d7d.js';
 import { m as menuPoker } from './menuPoker-b06fa1c8.js';
@@ -87,6 +86,57 @@ function collapseGrid() {
     });
   }
 }
+
+const hearts$1 = document.querySelectorAll(".is-favourite");
+
+const filterCasino = () => {
+  hearts$1.forEach((heart) => {
+    heart.addEventListener("click", () => {
+      heart.classList.toggle("fav");
+      if (heart.classList.contains("fav")) {
+        heart.parentElement.parentElement.classList.add("favorito");
+      } else {
+        heart.parentElement.parentElement.classList.remove("favorito");
+      }
+    });
+  });
+
+  var mixerCasino = mixitup(".casinoFinder", {
+    multifilter: {
+      enable: true,
+    },
+    controls: {
+      enable: true,
+    },
+    animation: {
+      enable: false,
+    },
+  });
+
+  const container = document.querySelector(".casinoFinder");
+  let totalContainer = document.querySelector("#is-showing");
+  let items = document.querySelectorAll(".mix");
+  let itemsHidden = document.querySelectorAll('.mix[style="display: none;"]');
+  let itemsLeft = items.length - itemsHidden.length;
+  document.querySelector('#removeFilters');
+
+  totalContainer.innerText = items.length;
+  console.log(mixerCasino.isMixing());
+
+  container.addEventListener("mixEnd", () => {
+    totalContainer.innerText = itemsLeft;
+    console.log(mixerCasino.isMixing());
+  });
+
+  // container.addEventListener("mixStart", () => {
+  //   if (!mixerCasino.isMixing()) {
+  //     removeBtn.style.display = "none";
+  //   } else if (mixerCasino.isMixing()) {
+  //     removeBtn.style.display = "inline-block";
+  //   }
+  // });
+
+};
 
 const filterPromo = () => {
   mixitup$1(".finder__promo", {

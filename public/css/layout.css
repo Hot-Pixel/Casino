@@ -1025,25 +1025,16 @@ h5 {
 }
 @media only screen and (min-width: 1600px) {
   .splideArrows--right .splide__arrow svg {
-    height: 3.75rem;
-    width: 3.75rem;
+    height: 1.875rem;
+    width: 1.875rem;
   }
 }
 .splideArrows--right .splide__arrow--prev {
-  left: 94%;
-}
-@media only screen and (min-width: 1600px) {
-  .splideArrows--right .splide__arrow--prev {
-    left: 93%;
-  }
+  left: unset;
+  right: 35px;
 }
 .splideArrows--right .splide__arrow--next {
-  right: 1%;
-}
-@media only screen and (min-width: 1600px) {
-  .splideArrows--right .splide__arrow--next {
-    right: 2%;
-  }
+  right: 0;
 }
 
 .ruletaResult {
@@ -1058,8 +1049,8 @@ h5 {
 }
 @media only screen and (min-width: 768px) {
   .ruletaResult {
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 1.875rem;
+    height: 1.875rem;
   }
 }
 
@@ -1169,6 +1160,7 @@ h5 {
   left: 0;
   z-index: 1;
   width: 100%;
+  height: inherit;
   padding: 1.875rem;
   display: grid;
   grid-template-columns: 1fr;

@@ -1144,6 +1144,7 @@ h5 {
   left: 0;
   z-index: 1;
   width: 100%;
+  height: inherit;
   padding: 1.875rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -1334,6 +1335,7 @@ h5 {
 .gridGames__item {
   position: relative;
   z-index: 0;
+  height: 100%;
 }
 .gridGames__item > img {
   position: relative;

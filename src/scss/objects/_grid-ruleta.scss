@@ -60,7 +60,13 @@
         }
 
         svg {
+          transition: all 0.4s ease;
           align-self: flex-start;
+
+          &.fav path {
+            transition: all 0.4s ease;
+            fill: setcolor('primary');
+          }
         }
       }
 

@@ -39,7 +39,7 @@
 
         &-subtitle {
           @extend .u-f--h5, .u-f--bold;
-		  color: #a4a6a8;
+          color: #a4a6a8;
         }
 
         &-desc {
@@ -89,11 +89,6 @@
           }
         }
       }
-    }
-
-    .splide__arrow--prev {
-      left: unset;
-      right: 3%;
     }
   }
 }

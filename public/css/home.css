@@ -1054,25 +1054,16 @@ h5 {
 }
 @media only screen and (min-width: 1600px) {
   .splideArrows--right .splide__arrow svg {
-    height: 3.75rem;
-    width: 3.75rem;
+    height: 1.875rem;
+    width: 1.875rem;
   }
 }
 .splideArrows--right .splide__arrow--prev {
-  left: 94%;
-}
-@media only screen and (min-width: 1600px) {
-  .splideArrows--right .splide__arrow--prev {
-    left: 93%;
-  }
+  left: unset;
+  right: 35px;
 }
 .splideArrows--right .splide__arrow--next {
-  right: 1%;
-}
-@media only screen and (min-width: 1600px) {
-  .splideArrows--right .splide__arrow--next {
-    right: 2%;
-  }
+  right: 0;
 }
 
 .splide__gradient {
@@ -1171,6 +1162,7 @@ h5 {
   left: 0;
   z-index: 1;
   width: 100%;
+  height: inherit;
   padding: 1.875rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -2206,10 +2198,6 @@ h5 {
     padding: 12px 22px;
   }
 }
-.carouselBets__carousel .splide__arrow--prev {
-  left: unset;
-  right: 3%;
-}
 
 .jackpot {
   display: flex;
@@ -2289,7 +2277,7 @@ h5 {
 }
 .jackpot__card-content button {
   position: absolute;
-  bottom: -1.375rem;
+  bottom: -1.875rem;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
@@ -2310,24 +2298,6 @@ h5 {
   }
 }
 
-.jackpot .splide__arrows::before {
-  content: "";
-  display: block;
-  position: absolute;
-  right: 0;
-  z-index: 1;
-  width: 5rem;
-  height: 100%;
-  background: linear-gradient(90deg, rgba(19, 23, 29, 0) 0%, #13171d 100%);
-}
-.jackpot .splide__arrow--prev {
-  left: initial;
-  right: 34px;
-}
-.jackpot .splide__arrow--next {
-  right: 0;
-}
-
 .gridFull {
   position: relative;
   overflow: hidden;
@@ -2336,6 +2306,7 @@ h5 {
   position: relative;
   border-radius: 0.625rem;
   overflow: hidden;
+  height: 100%;
 }
 .gridFull .item > img {
   object-fit: contain;

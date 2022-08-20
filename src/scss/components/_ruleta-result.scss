@@ -16,8 +16,8 @@
     margin: 0;
 
     @include tablet {
-        width: $lg;
-        height: $lg;
+        width: $md;
+        height: $md;
     }
 }
 .ruletaResult--red {
