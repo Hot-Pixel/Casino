@@ -1,114 +1,114 @@
-<form class="o-filter--slots">
+<form class="filterSlots">
 
-    <div class="o-filter--slots-header">
-        <div class="o-filter--slots-left">
+    <div class="filterSlots__header">
+        <div class="filterSlots--left">
             <img src="img/icon-funnel-red.svg" alt="">
             <span>Filtro</span>
         </div>
-        <div class="o-filter--slots-right">
+        <div class="filterSlots--right">
             <div>
                 <img src="img/icon-arrow-left.svg" alt="">
             </div>
 
-            <button class="u-btn--gray-red" type="reset">
+            <button class="btn__gray--red" type="reset">
                 <span>Eliminar filtros</span>
                 <img src="img/icon-cross-red.svg" alt="">
             </button>
         </div>
     </div>
 
-    <div class="o-filter--slots-container">
-        <fieldset data-filter-group class="o-filter--slots-search">
+    <div class="filterSlots__container">
+        <fieldset data-filter-group class="filterSlots__search">
             <img src="img/icon-lupa-big.svg" alt="">
-            <input type="text" name="" id="" placeholder="Busca por nombre...">
+            <input type="text" id="nameSearch" data-search-attribute="data-name" placeholder="Busca por nombre...">
         </fieldset>
 
-        <fieldset data-filter-group class="o-filter--slots-general">
-            <button class="u-btn--block" data-filter=".novedad">Novedad</button>
-            <button class="u-btn--block" data-filter=".promo">Promoción</button>
-            <button class="u-btn--block" data-toggle=".favoritos">
+        <fieldset data-filter-group class="filterSlots__general">
+            <button class="btn__block" data-toggle=".novedad">Novedad</button>
+            <button class="btn__block" data-toggle=".promo">Promoción</button>
+            <button class="btn__block" data-toggle=".favorito">
                 <img src="img/icon-heart-white-big.svg" alt="">
             </button>
         </fieldset>
 
-        <div class="o-filter--slots-filter">
-            <div class="o-filter--slots-title">
+        <div class="filterSlots__filter">
+            <div class="filterSlots__title head">
                 <p>Proveedor</p>
-                <img src="img/icon-arrow-down-grey.svg" alt="">
+                <img class="accorArrow" src="img/icon-arrow-down-grey.svg" alt="">
             </div>
-            <fieldset class="o-filter--slots-wrapper" data-filter-group>
-                <div class="o-filter--slots-tag" data-toggle=".proveedor-uno">
+            <fieldset class="filterSlots__wrapper body active" data-filter-group>
+                <div class="filterSlots__tag" data-toggle=".proveedor-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Proveedor Uno</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".proveedor-dos">
+                <div class="filterSlots__tag" data-toggle=".proveedor-dos">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Proveedor Dos</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".proveedor-tres">
+                <div class="filterSlots__tag" data-toggle=".proveedor-tres">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Proveedor Tres</span>
                 </div>
             </fieldset>
         </div>
 
-        <div class="o-filter--slots-filter">
-            <div class="o-filter--slots-title">
+        <div class="filterSlots__filter">
+            <div class="filterSlots__title head">
                 <p>Tipo</p>
-                <img src="img/icon-arrow-down-grey.svg" alt="">
+                <img class="accorArrow" src="img/icon-arrow-down-grey.svg" alt="">
             </div>
-            <fieldset class="o-filter--slots-wrapper" data-filter-group>
-                <div class="o-filter--slots-tag" data-toggle=".tipo-uno">
+            <fieldset class="filterSlots__wrapper body active" data-filter-group>
+                <div class="filterSlots__tag" data-toggle=".tipo-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Tipo Uno</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".tipo-uno">
+                <div class="filterSlots__tag" data-toggle=".tipo-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Tipo Dos</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".tipo-uno">
+                <div class="filterSlots__tag" data-toggle=".tipo-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Tipo Tres</span>
                 </div>
             </fieldset>
         </div>
 
-        <div class="o-filter--slots-filter">
-            <div class="o-filter--slots-title">
+        <div class="filterSlots__filter">
+            <div class="filterSlots__title head">
                 <p>Líneas</p>
-                <img src="img/icon-arrow-down-grey.svg" alt="">
+                <img class="accorArrow" src="img/icon-arrow-down-grey.svg" alt="">
             </div>
-            <fieldset class="o-filter--slots-wrapper" data-filter-group>
-                <div class="o-filter--slots-tag" data-toggle=".linea-uno">
+            <fieldset class="filterSlots__wrapper body active" data-filter-group>
+                <div class="filterSlots__tag" data-toggle=".linea-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Línea Uno</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".linea-uno">
+                <div class="filterSlots__tag" data-toggle=".linea-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Línea Dos</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".linea-uno">
+                <div class="filterSlots__tag" data-toggle=".linea-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Línea Tres</span>
                 </div>
             </fieldset>
         </div>
 
-        <div class="o-filter--slots-filter">
-            <div class="o-filter--slots-title">
+        <div class="filterSlots__filter">
+            <div class="filterSlots__title head">
                 <p>Apuesta mínima</p>
-                <img src="img/icon-arrow-down-grey.svg" alt="">
+                <img class="accorArrow" src="img/icon-arrow-down-grey.svg" alt="">
             </div>
-            <fieldset class="o-filter--slots-wrapper" data-filter-group>
-                <div class="o-filter--slots-tag" data-toggle=".apuesta-uno">
+            <fieldset class="filterSlots__wrapper body active" data-filter-group>
+                <div class="filterSlots__tag" data-toggle=".apuesta-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Apuesta Uno</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".apuesta-uno">
+                <div class="filterSlots__tag" data-toggle=".apuesta-dos">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Apuesta Dos</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".apuesta-uno">
+                <div class="filterSlots__tag" data-toggle=".apuesta-tres">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Apuesta Tres</span>
                 </div>

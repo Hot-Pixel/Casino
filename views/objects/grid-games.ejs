@@ -1,8 +1,7 @@
-<ul class="gridGames container">
-    <% let i = 1; %>
+<ul class="gridGames container" data-ref="container">
         <% data.forEach( e=> { %>
-            <li class="gridGames__item mix <%= e.general %> <%= e.proveedor %> <%= e.tipo %> <%= e.apuesta %> <%= e.lineas %> <%= e.juego %>">
-                <img src="img/img-grid-<%= i %>.jpg" alt="">
+            <li data-name="<%= e.name %>" class="gridGames__item mix <%= e.general %> <%= e.proveedor %> <%= e.tipo %> <%= e.apuesta %> <%= e.lineas %> <%= e.juego %>">
+                <img src="img/img-grid-<%= e.img %>.jpg" alt="">
                 <div class="gridGames__item-favourite">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
                         <g transform="translate(6.977 -2.109)">
@@ -16,6 +15,5 @@
                 </div>
                 <%- include ('../components/hover') %>
             </li>
-        <% i = i + 1; %>
     <% }) %>
 </ul>

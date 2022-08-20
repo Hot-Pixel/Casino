@@ -1041,6 +1041,10 @@ h5 {
   background-image: linear-gradient(to right, transparent, #13171d);
 }
 
+.banner__gradient {
+  background-image: linear-gradient(to right, #13171d 30%, transparent);
+}
+
 .filter__promo {
   margin-top: 3.75rem;
   margin-bottom: 3.75rem;

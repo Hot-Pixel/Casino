@@ -2,18 +2,18 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.m-slots--finder {
+.slotsFinder {
   @extend %margin_horizontal_main;
   @extend %margin_top_medium;
 
   display: flex;
 
-  .o-filter--slots {
+  .filterSlots {
     width: 25%;
   }
-  .o-grid--games {
+  .gridGames {
     width: 75%;
-    margin-left: rem(20);
+    margin-left: $md;
   }
 }
 

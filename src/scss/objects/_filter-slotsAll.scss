@@ -2,18 +2,22 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.o-filter--slots {
+.filterSlots {
 
-  &-header {
+  span {
+    margin: 0;
+  }
+
+  &__header {
     height: $lg;
     width: 100%;
     display: flex;
   }
 
-  &-left {
+  &--left {
     width: 33%;
     height: 100%;
-    background-color: #1c2026;
+    background-color: setcolor("black", "dark2");
     border-radius: rem(5) rem(5) 0 0;
 
     display: flex;
@@ -26,7 +30,7 @@
     }
   }
 
-  &-right {
+  &--right {
     width: 67%;
     display: flex;
     justify-content: space-between;
@@ -37,7 +41,7 @@
     div {
       cursor: pointer;
 
-      background-color: #2d3239;
+      background-color: setcolor("black", "dark4");
       height: 34px;
       width: 34px;
 
@@ -53,12 +57,12 @@
     }
   }
 
-  &-container {
-    background-color: #1c2026;
-    padding: $lg $sm;
+  &__container {
+    background-color: setcolor("black", "dark2");
+    padding: $sm;
   }
 
-  &-search {
+  &__search {
     position: relative;
     height: rem(55);
 
@@ -78,7 +82,7 @@
       height: 100%;
       padding-left: rem(70);
 
-      background-color: #2d3239;
+      background-color: setcolor("black", "dark4");
       border-radius: rem(30);
 
       color: white;
@@ -90,10 +94,14 @@
     }
   }
 
-  &-general {
+  &__general {
     display: flex;
     align-items: center;
-    margin: rem(20) 0;
+    margin: $sm 0;
+
+    .btn__block {
+      margin: 0;
+    }
 
     button {
       @extend .u-f--bold, .u-f--h5;
@@ -105,26 +113,42 @@
       padding: 0;
     }
 
-    button:not(:last-of-type) {
-      background-color: #2d3239;
+    button {
+      transition: all 0.4s ease;
+      background-color: setcolor("black");
+      color: #a8a9ac;
+    }
+
+    button:not(:last-of-type).mixitup-control-active {
+      transition: all 0.4s ease;
+      background-color: setcolor("black", "dark4");
+      color: white;
     }
 
     button:nth-of-type(2) {
-      margin: 0 10px;
+      margin-left: $sm;
+      margin-right: $sm;
     }
 
     button:last-of-type {
-      background-color: setcolor("primary");
+      transition: all 0.4s ease;
+      background-color: setcolor("black");
+
+      &.mixitup-control-active {
+        transition: all 0.4s ease;
+        background-color: setcolor("primary");
+      }
+
     }
   }
 
-  &-filter {
+  &__filter {
     margin: $sm 0;
   }
 
-  &-title {
+  &__title {
     height: rem(45);
-    background-color: #2d3239;
+    background-color: setcolor("black");
 
     display: flex;
     justify-content: space-between;
@@ -138,11 +162,12 @@
     }
 
     img {
+      cursor: pointer;
       transform: rotate(90deg);
     }
   }
 
-  &-wrapper {
+  &__wrapper {
     margin: 10px 0;
 
     display: grid;
@@ -151,11 +176,11 @@
     gap: 10px;
   }
 
-  &-tag {
+  &__tag {
     cursor: pointer;
     width: 100%;
     height: rem(35);
-    background-color: #2d3239;
+    background-color: setcolor("black");
     border-radius: rem(5);
 
     display: flex;
@@ -164,6 +189,10 @@
 
     img {
       margin-right: 10px;
+    }
+
+    span {
+      color: #a8a9ac;
     }
   }
 }

@@ -1151,7 +1151,6 @@ h5 {
   left: 0;
   z-index: 1;
   width: 100%;
-  height: 100%;
   padding: 1.875rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -1743,10 +1742,24 @@ h5 {
 }
 
 .banner {
+  position: relative;
+  z-index: 1;
   background-position: right;
   background-repeat: no-repeat;
 }
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(19, 23, 29, 0.6823529412) 20%, transparent);
+}
 .banner__wrapper {
+  position: relative;
+  z-index: 3;
   width: 100%;
   height: 100%;
   padding-top: 3.75rem;
