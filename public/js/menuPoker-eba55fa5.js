@@ -17,16 +17,16 @@ function menuPoker() {
 
       if(e.currentTarget.classList.contains("menuPoker-home")) {
         const homeSect = document.querySelector(".poker__home");
-        homeSect.classList.add("tab-on")
+        homeSect.classList.add("tab-on");
       } else if(e.currentTarget.classList.contains("menuPoker-pc")) {
         const pcSect = document.querySelector(".poker__pc");
-        pcSect.classList.add("tab-on")
+        pcSect.classList.add("tab-on");
       } else if(e.currentTarget.classList.contains("menuPoker-mobile")) {
         const mobileSect = document.querySelector(".poker__mobile");
-        mobileSect.classList.add("tab-on")
+        mobileSect.classList.add("tab-on");
       } else if(e.currentTarget.classList.contains("menuPoker-tour")) {
         const tourSect = document.querySelector(".poker__tour");
-        tourSect.classList.add("tab-on")
+        tourSect.classList.add("tab-on");
       }
 
     });
@@ -35,4 +35,5 @@ function menuPoker() {
   });
 }
 
-export default menuPoker;
+export { menuPoker as m };
+//# sourceMappingURL=menuPoker-eba55fa5.js.map

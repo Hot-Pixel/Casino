@@ -64,181 +64,181 @@
   }
 }
 
-%padding_horizontal_main {
-  padding-left: var(--horizontal-main-xs);
-  padding-right: var(--horizontal-main-xs);
+%margin_horizontal_main {
+  margin-left: var(--horizontal-main-xs);
+  margin-right: var(--horizontal-main-xs);
   @include mobile {
-    padding-left: var(--horizontal-main-sm);
-    padding-right: var(--horizontal-main-sm);
+    margin-left: var(--horizontal-main-sm);
+    margin-right: var(--horizontal-main-sm);
   }
   @include tablet {
-    padding-left: var(--horizontal-main-md);
-    padding-right: var(--horizontal-main-md);
+    margin-left: var(--horizontal-main-md);
+    margin-right: var(--horizontal-main-md);
   }
   @include tablet-h {
-    padding-left: var(--horizontal-main-lg);
-    padding-right: var(--horizontal-main-lg);
+    margin-left: var(--horizontal-main-lg);
+    margin-right: var(--horizontal-main-lg);
   }
   @include screen-sm {
-    padding-left: var(--horizontal-main-xl);
-    padding-right: var(--horizontal-main-xl);
+    margin-left: var(--horizontal-main-xl);
+    margin-right: var(--horizontal-main-xl);
   }
   @include screen-md {
-    padding-left: var(--horizontal-main-2xl);
-    padding-right: var(--horizontal-main-2xl);
+    margin-left: var(--horizontal-main-2xl);
+    margin-right: var(--horizontal-main-2xl);
   }
   @include screen-lg {
-    padding-left: var(--horizontal-main-3xl);
-    padding-right: var(--horizontal-main-3xl);
+    margin-left: var(--horizontal-main-3xl);
+    margin-right: var(--horizontal-main-3xl);
   }
   @include screen-xl {
     max-width: $max_width;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
     margin: 0 auto;
   }
 }
 
 // Horizontal - large
 %margin_horizontal_large {
-  padding-left: var(--horizontal-large-xs);
-  padding-right: var(--horizontal-large-xs);
+  margin-left: var(--horizontal-large-xs);
+  margin-right: var(--horizontal-large-xs);
   @include mobile {
-    padding-left: var(--horizontal-large-sm);
-    padding-right: var(--horizontal-large-sm);
+    margin-left: var(--horizontal-large-sm);
+    margin-right: var(--horizontal-large-sm);
   }
   @include tablet {
-    padding-left: var(--horizontal-large-md);
-    padding-right: var(--horizontal-large-md);
+    margin-left: var(--horizontal-large-md);
+    margin-right: var(--horizontal-large-md);
   }
   @include tablet-h {
-    padding-left: var(--horizontal-large-lg);
-    padding-right: var(--horizontal-large-lg);
+    margin-left: var(--horizontal-large-lg);
+    margin-right: var(--horizontal-large-lg);
   }
   @include screen-sm {
-    padding-left: var(--horizontal-large-xl);
-    padding-right: var(--horizontal-large-xl);
+    margin-left: var(--horizontal-large-xl);
+    margin-right: var(--horizontal-large-xl);
   }
   @include screen-md {
-    padding-left: var(--horizontal-large-2xl);
-    padding-right: var(--horizontal-large-2xl);
+    margin-left: var(--horizontal-large-2xl);
+    margin-right: var(--horizontal-large-2xl);
   }
 }
 
 // margenes verticales - small
 %margin_top_small {
-  padding-top: var(--vertical-small-xs);
+  margin-top: var(--vertical-small-xs);
   @include mobile {
-    padding-top: var(--vertical-small-sm);
+    margin-top: var(--vertical-small-sm);
   }
   @include tablet {
-    padding-top: var(--vertical-small-md);
+    margin-top: var(--vertical-small-md);
   }
   @include tablet-h {
-    padding-top: var(--vertical-small-lg);
+    margin-top: var(--vertical-small-lg);
   }
   @include screen-sm {
-    padding-top: var(--vertical-small-xl);
+    margin-top: var(--vertical-small-xl);
   }
   @include screen-md {
-    padding-top: var(--vertical-small-2xl);
+    margin-top: var(--vertical-small-2xl);
   }
 }
 
 %margin_bottom_small {
-  padding-bottom: var(--vertical-small-xs);
+  margin-bottom: var(--vertical-small-xs);
   @include mobile {
-    padding-bottom: var(--vertical-small-sm);
+    margin-bottom: var(--vertical-small-sm);
   }
   @include tablet {
-    padding-bottom: var(--vertical-small-md);
+    margin-bottom: var(--vertical-small-md);
   }
   @include tablet-h {
-    padding-bottom: var(--vertical-small-lg);
+    margin-bottom: var(--vertical-small-lg);
   }
   @include screen-sm {
-    padding-bottom: var(--vertical-small-xl);
+    margin-bottom: var(--vertical-small-xl);
   }
   @include screen-md {
-    padding-bottom: var(--vertical-small-2xl);
+    margin-bottom: var(--vertical-small-2xl);
   }
 }
 
 // margenes verticaes - medium
 %margin_top_medium {
-  padding-top: var(--vertical-medium-xs);
+  margin-top: var(--vertical-medium-xs);
   @include mobile {
-    padding-top: var(--vertical-medium-sm);
+    margin-top: var(--vertical-medium-sm);
   }
   @include tablet {
-    padding-top: var(--vertical-medium-md);
+    margin-top: var(--vertical-medium-md);
   }
   @include tablet-h {
-    padding-top: var(--vertical-medium-lg);
+    margin-top: var(--vertical-medium-lg);
   }
   @include screen-sm {
-    padding-top: var(--vertical-medium-xl);
+    margin-top: var(--vertical-medium-xl);
   }
   @include screen-md {
-    padding-top: var(--vertical-medium-2xl);
+    margin-top: var(--vertical-medium-2xl);
   }
 }
 
 %margin_bottom_medium {
-  padding-bottom: var(--vertical-medium-xs);
+  margin-bottom: var(--vertical-medium-xs);
   @include mobile {
-    padding-bottom: var(--vertical-medium-sm);
+    margin-bottom: var(--vertical-medium-sm);
   }
   @include tablet {
-    padding-bottom: var(--vertical-medium-md);
+    margin-bottom: var(--vertical-medium-md);
   }
   @include tablet-h {
-    padding-bottom: var(--vertical-medium-lg);
+    margin-bottom: var(--vertical-medium-lg);
   }
   @include screen-sm {
-    padding-bottom: var(--vertical-medium-xl);
+    margin-bottom: var(--vertical-medium-xl);
   }
   @include screen-md {
-    padding-bottom: var(--vertical-medium-2xl);
+    margin-bottom: var(--vertical-medium-2xl);
   }
 }
 
 // margenes verticaes - large
 %margin_top_large {
-  padding-top: var(--vertical-large-xs);
+  margin-top: var(--vertical-large-xs);
   @include mobile {
-    padding-top: var(--vertical-large-sm);
+    margin-top: var(--vertical-large-sm);
   }
   @include tablet {
-    padding-top: var(--vertical-large-md);
+    margin-top: var(--vertical-large-md);
   }
   @include tablet-h {
-    padding-top: var(--vertical-large-lg);
+    margin-top: var(--vertical-large-lg);
   }
   @include screen-sm {
-    padding-top: var(--vertical-large-xl);
+    margin-top: var(--vertical-large-xl);
   }
   @include screen-md {
-    padding-top: var(--vertical-large-2xl);
+    margin-top: var(--vertical-large-2xl);
   }
 }
 
 %margin_bottom_large {
-  padding-bottom: var(--vertical-large-xs);
+  margin-bottom: var(--vertical-large-xs);
   @include mobile {
-    padding-bottom: var(--vertical-large-sm);
+    margin-bottom: var(--vertical-large-sm);
   }
   @include tablet {
-    padding-bottom: var(--vertical-large-md);
+    margin-bottom: var(--vertical-large-md);
   }
   @include tablet-h {
-    padding-bottom: var(--vertical-large-lg);
+    margin-bottom: var(--vertical-large-lg);
   }
   @include screen-sm {
-    padding-bottom: var(--vertical-large-xl);
+    margin-bottom: var(--vertical-large-xl);
   }
   @include screen-md {
-    padding-bottom: var(--vertical-large-2xl);
+    margin-bottom: var(--vertical-large-2xl);
   }
 }
 

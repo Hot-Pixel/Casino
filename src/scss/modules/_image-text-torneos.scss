@@ -3,8 +3,8 @@
 @use "../tools" as *;
 
 .imageTextTorneo {
-  @extend %margin_horizontal_main;
-  margin-top: 180px;
+  @extend %margin_horizontal_main, %margin_top_large;
+
   padding: $lg;
 
   position: relative;
