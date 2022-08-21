@@ -3,7 +3,9 @@
 @use "../tools" as *;
 
 .gridDl {
-  @extend %margin_horizontal_main, %margin_top_small;
+  @extend %margin_horizontal_main;
+  margin-top: rem(60);
+  margin-bottom: rem(100);
 
   display: grid;
   justify-content: center;
@@ -13,10 +15,12 @@
   grid-template-columns: 1fr;
   grid-auto-flow: row;
   column-gap: $lg;
-  row-gap: rem(180);
+  row-gap: rem(100);
 
   @include screen-sm {
     grid-template-columns: 1fr 1fr;
+    margin-top: rem(100);
+    margin-bottom: rem(140);
   }
 
   .card {
@@ -51,12 +55,18 @@
       position: relative;
       background-color: setcolor("black");
       border-radius: 0 0 rem(10) rem(10);
-      height: 35vh;
+      padding: $md $sm rem(120);
+
+
+      @include tablet-h {
+        padding: 0;
+        padding-top: $lg;
+        height: 35vh;
+      }
 
       &-content {
         display: flex;
         flex-direction: column;
-        padding-top: $lg;
         max-width: 80%;
         text-align: center;
         margin: 0 auto;
@@ -89,7 +99,7 @@
 
       &-btns {
         position: absolute;
-        bottom: rem(-50);
+        bottom: rem(-30);
         left: 0;
 
         width: 100%;
@@ -98,11 +108,15 @@
         align-items: center;
         flex-direction: column;
 
+        @include tablet {
+          bottom: rem(-50);
+        }
+
         button {
           width: 60%;
           padding: $sm;
 
-          @include tablet {
+          @include screen-md {
             width: 50%;
             height: rem(65);
           }

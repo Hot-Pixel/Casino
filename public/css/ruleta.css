@@ -25,9 +25,9 @@
   --vertical-medium-lg: 3.75rem;
   --vertical-medium-xl: 3.75rem;
   --vertical-medium-2xl: 3.75rem;
-  --vertical-large-xs: 1.875rem;
-  --vertical-large-sm: 1.875rem;
-  --vertical-large-md: 1.875rem;
+  --vertical-large-xs: 2.5rem;
+  --vertical-large-sm: 3.125rem;
+  --vertical-large-md: 3.75rem;
   --vertical-large-lg: 7.5rem;
   --vertical-large-xl: 7.5rem;
   --vertical-large-2xl: 7.5rem;
@@ -995,13 +995,6 @@ h5 {
   transform: translateY(-50%);
   right: 7px;
   font-size: 0.875rem;
-}
-@media only screen and (min-width: 1280px) {
-  .btn__icon--right img {
-    position: static;
-    transform: translateY(0);
-    font-size: 0.75rem;
-  }
 }
 @media only screen and (min-width: 1440px) {
   .btn__icon--right img {

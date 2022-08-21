@@ -25,9 +25,9 @@
   --vertical-medium-lg: 3.75rem;
   --vertical-medium-xl: 3.75rem;
   --vertical-medium-2xl: 3.75rem;
-  --vertical-large-xs: 1.875rem;
-  --vertical-large-sm: 1.875rem;
-  --vertical-large-md: 1.875rem;
+  --vertical-large-xs: 2.5rem;
+  --vertical-large-sm: 3.125rem;
+  --vertical-large-md: 3.75rem;
   --vertical-large-lg: 7.5rem;
   --vertical-large-xl: 7.5rem;
   --vertical-large-2xl: 7.5rem;
@@ -565,31 +565,31 @@
   }
 }
 
-.gridDl, .footer {
+.footer {
   margin-top: var(--vertical-small-xs);
 }
 @media only screen and (min-width: 576px) {
-  .gridDl, .footer {
+  .footer {
     margin-top: var(--vertical-small-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .gridDl, .footer {
+  .footer {
     margin-top: var(--vertical-small-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .gridDl, .footer {
+  .footer {
     margin-top: var(--vertical-small-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .gridDl, .footer {
+  .footer {
     margin-top: var(--vertical-small-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .gridDl, .footer {
+  .footer {
     margin-top: var(--vertical-small-2xl);
   }
 }
@@ -958,13 +958,6 @@ h5 {
   transform: translateY(-50%);
   right: 7px;
   font-size: 0.875rem;
-}
-@media only screen and (min-width: 1280px) {
-  .btn__icon--right img {
-    position: static;
-    transform: translateY(0);
-    font-size: 0.75rem;
-  }
 }
 @media only screen and (min-width: 1440px) {
   .btn__icon--right img {
@@ -1600,6 +1593,8 @@ h5 {
 }
 
 .gridDl {
+  margin-top: 3.75rem;
+  margin-bottom: 6.25rem;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -1607,11 +1602,13 @@ h5 {
   grid-template-columns: 1fr;
   grid-auto-flow: row;
   column-gap: 3.75rem;
-  row-gap: 11.25rem;
+  row-gap: 6.25rem;
 }
 @media only screen and (min-width: 1280px) {
   .gridDl {
     grid-template-columns: 1fr 1fr;
+    margin-top: 6.25rem;
+    margin-bottom: 8.75rem;
   }
 }
 .gridDl .card {
@@ -1645,12 +1642,18 @@ h5 {
   position: relative;
   background-color: #25292f;
   border-radius: 0 0 0.625rem 0.625rem;
-  height: 35vh;
+  padding: 1.875rem 0.9375rem 7.5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .gridDl .card__bottom {
+    padding: 0;
+    padding-top: 3.75rem;
+    height: 35vh;
+  }
 }
 .gridDl .card__bottom-content {
   display: flex;
   flex-direction: column;
-  padding-top: 3.75rem;
   max-width: 80%;
   text-align: center;
   margin: 0 auto;
@@ -1674,18 +1677,23 @@ h5 {
 }
 .gridDl .card__bottom-btns {
   position: absolute;
-  bottom: -3.125rem;
+  bottom: -1.875rem;
   left: 0;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
+@media only screen and (min-width: 768px) {
+  .gridDl .card__bottom-btns {
+    bottom: -3.125rem;
+  }
+}
 .gridDl .card__bottom-btns button {
   width: 60%;
   padding: 0.9375rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
   .gridDl .card__bottom-btns button {
     width: 50%;
     height: 4.0625rem;
