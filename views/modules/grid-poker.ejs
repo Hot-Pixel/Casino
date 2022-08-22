@@ -68,25 +68,33 @@ const data = [
 %>
 
 <section class="gridPoker">
-    <% data.forEach( e => { %>
-        <div class="card">
-            <div class="card__img">
-                <img src="img/img-grid-poker-<%= e.img %>.png" alt="">
-            </div>
-            <div class="card__content">
-                <p class="card__content-title"><%= e.title %></p>
-                <div class="card__content-table">
-                    <div class="card__content-row">
-                        <p><span>Lunes</span><span>17:00h</span></p>
-                        <p><span>Buy-in</span><span>20€</span></p>
-                    </div>
-                    <hr>
-                    <div class="card__content-row">
-                        <p><span>Lunes</span><span>17:00h</span></p>
-                        <p><span>Buy-in</span><span>20€</span></p>
+    <div class="gridPoker__grid">
+        <% data.forEach( e => { %>
+            <div class="card">
+                <div class="card__img">
+                    <img src="img/images/img-grid-poker-<%= e.img %>.png" alt="">
+                </div>
+                <div class="card__content">
+                    <p class="card__content-title"><%= e.title %></p>
+                    <div class="card__content-table">
+                        <div class="card__content-row">
+                            <p><span>Lunes</span><span>17:00h</span></p>
+                            <p><span>Buy-in</span><span>20€</span></p>
+                        </div>
+                        <hr>
+                        <div class="card__content-row">
+                            <p><span>Lunes</span><span>17:00h</span></p>
+                            <p><span>Buy-in</span><span>20€</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <% }) %>
+        <% }) %>
+    </div>
+    <div class="gridPoker__btn">
+        <button class="btn__red btn__red--glow">
+            <span>JUGAR AHORA</span>
+            <img src="img/icons/icon-round-arrow.svg" alt="">
+        </button>
+    </div>
 </section>

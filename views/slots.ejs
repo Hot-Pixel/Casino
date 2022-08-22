@@ -148,6 +148,8 @@ const gridHalfRight =
 
 <%- include ('layout/header') %>
 
+<main class="has-header">
+
 <%- include ('modules/banner', { data: bannerData }) %>
 
 <%- include ('modules/search-bar-slots') %>
@@ -168,7 +170,7 @@ const gridHalfRight =
 
   <button class="btn__red btn__red--glow">
     <span>VER TODOS LOS SLOTS ONLINE</span>
-    <img src="img/icon-btn-arrow.svg" alt="">
+    <img src="img/icons/icon-btn-arrow.svg" alt="">
   </button>
 
 </section>
@@ -178,3 +180,5 @@ const gridHalfRight =
 <%- include ('layout/footer') %>
 
 <%- include ('layout/scripts', { script: 'slots' }) %>
+
+</main>

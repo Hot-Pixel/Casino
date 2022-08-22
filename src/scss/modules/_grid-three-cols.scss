@@ -3,18 +3,34 @@
 @use "../tools" as *;
 
 .grid3Cols {
-  @extend %margin_horizontal_main;
+  @extend %margin_horizontal_main, %margin_top_large;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: rem(10);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  row-gap: $md;
+
+  @include tablet {
+    row-gap: $lg;
+  }
+  @include screen-sm {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: rem(10);
+  }
+
 
   &__container {
     position: relative;
     background-color: setcolor("black", "dark2");
     border-radius: rem(10);
     padding: $lg;
+
+    &:first-of-type {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     p {
       margin: 0;
@@ -70,8 +86,20 @@
         left: 50%;
         transform: translateX(-50%);
         bottom: rem(-35);
-        height: rem(70);
+        height: rem(45);
         width: 70%;
+
+        @include tablet {
+          height: rem(70);
+        }
+
+        img {
+          display: none;
+
+          @include tablet {
+            display: block;
+          }
+        }
     }
 
     .grid3Cols__btn {

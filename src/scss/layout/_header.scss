@@ -3,10 +3,10 @@
 @use "../tools" as *;
 
 .has-header {
-  top: 6vh;
+  transform: translateY(6vh);
 
   @include screen-sm {
-    top: 8vh;
+    transform: translateY(8vh);
   }
 }
 
@@ -69,7 +69,7 @@
       margin-right: $lg;
     }
 
-    img {
+    svg {
       width: 100%;
       object-fit: contain;
     }
@@ -89,7 +89,7 @@
       display: flex;
       align-items: center;
 
-      img {
+      svg {
         display: none;
 
         @include screen-md {
@@ -98,6 +98,7 @@
       }
 
       p {
+        @extend .u-f--h4;
         margin: 0;
         margin-left: rem(5);
       }
@@ -199,5 +200,25 @@
 
     height: auto;
     padding: rem(10) rem(20);
+  }
+}
+
+header.header.header--light {
+  transition: all 0.4s ease;
+  background-color: setcolor("gray", "light1");
+
+  .header__logo svg g path:not(#Trazado_1, #Trazado_2) {
+    fill: setcolor('black', 'dark1');
+  }
+
+  .icon__title a {
+
+    svg path, svg g path {
+      fill: setcolor('black', 'dark1');
+    }
+
+    p {
+      color: setcolor('black', 'dark1');
+    }
   }
 }

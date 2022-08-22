@@ -336,36 +336,36 @@
   }
 }
 
-.u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type {
+.u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .user__wrapper p:first-of-type {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type {
+  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .user__wrapper p:first-of-type {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type {
+  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .user__wrapper p:first-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type {
+  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .user__wrapper p:first-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type {
+  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .user__wrapper p:first-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type {
+  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .user__wrapper p:first-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type {
+  .u-f--h4, .screens .iconsScreen__item p:first-of-type, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .user__wrapper p:first-of-type {
     font-size: 1.125rem;
   }
 }
@@ -866,6 +866,7 @@ h5 {
 .user {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .user__wrapper {
   display: flex;
@@ -882,7 +883,6 @@ h5 {
   background-color: #ff293e;
 }
 .btn__red:hover {
-  color: #f4f6f8;
   background-color: #ff5264;
 }
 
@@ -895,15 +895,11 @@ h5 {
   background-color: #00d1bc;
 }
 .btn__blue:hover {
-  color: #f4f6f8;
   background-color: #99e4de;
 }
 
 .btn__white {
   background-color: white;
-}
-.btn__white:hover {
-  background-color: #d4d7da;
 }
 .btn__white span {
   color: black;
@@ -1056,11 +1052,11 @@ h5 {
 }
 
 .has-header {
-  top: 6vh;
+  transform: translateY(6vh);
 }
 @media only screen and (min-width: 1280px) {
   .has-header {
-    top: 8vh;
+    transform: translateY(8vh);
   }
 }
 
@@ -1122,7 +1118,7 @@ h5 {
     margin-right: 3.75rem;
   }
 }
-.header__logo img {
+.header__logo svg {
   width: 100%;
   object-fit: contain;
 }
@@ -1138,11 +1134,11 @@ h5 {
   display: flex;
   align-items: center;
 }
-.header .icon__title a img {
+.header .icon__title a svg {
   display: none;
 }
 @media only screen and (min-width: 1440px) {
-  .header .icon__title a img {
+  .header .icon__title a svg {
     display: inline-block;
   }
 }
@@ -1226,6 +1222,20 @@ h5 {
   align-items: center;
   height: auto;
   padding: 0.625rem 1.25rem;
+}
+
+header.header.header--light {
+  transition: all 0.4s ease;
+  background-color: #F4F6F8;
+}
+header.header.header--light .header__logo svg g path:not(#Trazado_1, #Trazado_2) {
+  fill: #13171d;
+}
+header.header.header--light .icon__title a svg path, header.header.header--light .icon__title a svg g path {
+  fill: #13171d;
+}
+header.header.header--light .icon__title a p {
+  color: #13171d;
 }
 
 .footer {

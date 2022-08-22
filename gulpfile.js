@@ -77,6 +77,7 @@ gulp.task("js", async () => {
         "src/js/poker",
         "src/js/promociones",
         "src/js/layout",
+        "src/js/user",
       ],
       plugins: [
         commonjs({
