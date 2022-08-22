@@ -23,10 +23,27 @@
   @extend %buttons;
   color: setcolor("white");
   background-color: setcolor("secondary");
+  padding: 0;
+  height: rem(45);
 
   &:hover {
     color: setcolor("gray", "lighter");
     background-color: setcolor("secondary", "light");
+  }
+}
+
+.btn__blue--2Icons {
+  position: relative;
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  img:first-of-type {
+    left: rem(7);
+  }
+  img:last-of-type {
+    right: $sm;
   }
 }
 

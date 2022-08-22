@@ -3,7 +3,7 @@ import { g as gsapWithCSS } from './index-92880765.js';
 const userBtn = document.querySelector(".user");
 const header = document.querySelector("header.header");
 const userScreen = document.querySelector(".userScreen");
-const userScreenAside = document.querySelector(".userScreen__aside");
+const userMenu = document.querySelector(".userMenu");
 
 userBtn.addEventListener("click", () => {
   header.classList.toggle("header--light");
@@ -12,11 +12,11 @@ userBtn.addEventListener("click", () => {
     gsapWithCSS
       .timeline()
       .to(userScreen, { opacity: 1, duration: 0.4 })
-      .to(userScreenAside, { left: 0, opacity: 1, duration: 0.4 });
+      .to(userMenu, { left: 0, opacity: 1, duration: 0.4 });
   } else {
     gsapWithCSS
       .timeline()
-      .to(userScreenAside, { left: "-15%", opacity: 0, duration: 0.4 })
+      .to(userMenu, { left: "-15%", opacity: 0, duration: 0.4 })
       .to(userScreen, { opacity: 0, duration: 0.4 });
   }
 });

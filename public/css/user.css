@@ -229,109 +229,109 @@
   font-weight: 500;
 }
 
-.u-f--bold, .user__wrapper p:first-of-type, .u-f--bold p, .user__wrapper p:first-of-type p {
+.u-f--bold, .userScreen.user-on .userContent .userTitle p, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenu .nav__title-verify p, .userScreen.user-on .userMenu .nav__item--left p, .data__screen .data__card > p, .data__screen .data__wrapper span, .data__screen .data__tc .data__row .data__col-date p, .user__wrapper p:first-of-type, .u-f--bold p, .userScreen.user-on .userMenu .nav__title > p p, .data__screen .data__card > p p, .data__screen .data__wrapper span p, .user__wrapper p:first-of-type p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1 {
+.u-f--h1, .userScreen.user-on .userContent .userTitle p {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1 {
+  .u-f--h1, .userScreen.user-on .userContent .userTitle p {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1 {
+  .u-f--h1, .userScreen.user-on .userContent .userTitle p {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1 {
+  .u-f--h1, .userScreen.user-on .userContent .userTitle p {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1 {
+  .u-f--h1, .userScreen.user-on .userContent .userTitle p {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1 {
+  .u-f--h1, .userScreen.user-on .userContent .userTitle p {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1 {
+  .u-f--h1, .userScreen.user-on .userContent .userTitle p {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2 {
+.u-f--h2, .data__screen .data__card > p {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2 {
+  .u-f--h2, .data__screen .data__card > p {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2 {
+  .u-f--h2, .data__screen .data__card > p {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2 {
+  .u-f--h2, .data__screen .data__card > p {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2 {
+  .u-f--h2, .data__screen .data__card > p {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2 {
+  .u-f--h2, .data__screen .data__card > p {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2 {
+  .u-f--h2, .data__screen .data__card > p {
     font-size: 2rem;
   }
 }
 
-.u-f--h3 {
+.u-f--h3, .userScreen.user-on .userMenu .nav__title > p {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3 {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3 {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3 {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3 {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3 {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3 {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p {
     font-size: 1.5rem;
   }
 }
@@ -755,7 +755,7 @@ body {
 p, span, button {
   font-family: "Lexend";
   color: #ffffff;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0;
 }
 
 input {
@@ -869,9 +869,26 @@ h5 {
 .btn__blue {
   color: #ffffff;
   background-color: #00d1bc;
+  padding: 0;
+  height: 2.8125rem;
 }
 .btn__blue:hover {
   background-color: #99e4de;
+}
+
+.btn__blue--2Icons {
+  position: relative;
+}
+.btn__blue--2Icons img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn__blue--2Icons img:first-of-type {
+  left: 0.4375rem;
+}
+.btn__blue--2Icons img:last-of-type {
+  right: 0.9375rem;
 }
 
 .btn__white {
@@ -1075,6 +1092,79 @@ h5 {
   color: #00d1bc;
   margin: 0;
 }
+.data__screen {
+  width: 100%;
+  margin-top: 1.875rem;
+  display: flex;
+}
+.data__screen--left, .data__screen--right {
+  width: 50%;
+}
+.data__screen--right {
+  margin-left: 1.875rem;
+}
+.data__screen .data__card {
+  padding: 0.9375rem;
+  border-radius: 0.625rem;
+  box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+  background-color: #F4F6F8;
+}
+.data__screen .data__card:not(:last-of-type) {
+  margin-bottom: 0.9375rem;
+}
+.data__screen .data__card > p {
+  color: #13171d;
+}
+.data__screen .data__wrapper {
+  margin-top: 0.9375rem;
+}
+.data__screen .data__wrapper p {
+  padding-bottom: 0.3125rem;
+}
+.data__screen .data__wrapper p,
+.data__screen .data__wrapper span {
+  color: #868b92;
+}
+.data__screen button {
+  width: 50%;
+}
+.data__screen .data__tc {
+  border-top: 1px solid #c9cdd0;
+  margin-top: 1.875rem;
+  padding-top: 1.875rem;
+}
+.data__screen .data__tc > p {
+  color: #13171d;
+}
+.data__screen .data__tc .data__table {
+  margin-top: 0.9375rem;
+}
+.data__screen .data__tc .data__row {
+  width: 100%;
+  background-color: #F4F6F8;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.data__screen .data__tc .data__row:not(:last-of-type) {
+  margin-bottom: 0.3125rem;
+}
+.data__screen .data__tc .data__row .data__col:first-of-type {
+  display: flex;
+}
+.data__screen .data__tc .data__row .data__col-date {
+  margin-right: 0.9375rem;
+}
+.data__screen .data__tc .data__row .data__col-date p {
+  color: #13171d;
+}
+.data__screen .data__tc .data__row .data__col-tc p {
+  color: #868b92;
+  font-weight: 400;
+}
+
 .has-header {
   transform: translateY(6vh);
 }
@@ -1458,20 +1548,92 @@ header.header.header--light .icon__title a p {
 }
 
 .userScreen.user-on {
+  position: relative;
   display: block;
   opacity: 0;
   background-color: #EAEDEF;
   width: 100vw;
   height: 100%;
 }
-.userScreen.user-on .userScreen__aside {
+.userScreen.user-on .userContent {
+  position: absolute;
+  left: 15%;
+  top: 0;
+  width: 85%;
+  height: 92vh;
+  padding: 3.75rem;
+  overflow: hidden;
+}
+.userScreen.user-on .userContent .userTitle {
+  display: flex;
+  align-items: center;
+}
+.userScreen.user-on .userContent .userTitle img {
+  height: 2.375rem;
+  width: 2.25rem;
+  margin-right: 0.9375rem;
+}
+.userScreen.user-on .userContent .userTitle p {
+  color: #13171d;
+}
+.userScreen.user-on .userMenu {
   position: fixed;
   width: 15%;
-  height: 100%;
-  top: 0;
+  height: 92vh;
+  top: 8vh;
   left: -15%;
   opacity: 0;
+  overflow: hidden;
   background-color: #F4F6F8;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 3.75rem 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.userScreen.user-on .userMenu .nav {
+  margin-top: 1.875rem;
+}
+.userScreen.user-on .userMenu .nav__title > p {
+  color: #13171d;
+  margin-bottom: 0.625rem;
+}
+.userScreen.user-on .userMenu .nav__title-verify {
+  display: flex;
+}
+.userScreen.user-on .userMenu .nav__title-verify img {
+  margin-right: 0.625rem;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.userScreen.user-on .userMenu .nav__title-verify p {
+  color: #00d1bc;
+}
+.userScreen.user-on .userMenu .nav__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9375rem 0.9375rem;
+  border-bottom: 1px solid #EAEDEF;
+  cursor: pointer;
+}
+.userScreen.user-on .userMenu .nav__item--left {
+  display: flex;
+  align-items: center;
+}
+.userScreen.user-on .userMenu .nav__item--left p {
+  margin: 0;
+  margin-left: 0.9375rem;
+  color: #13171d;
+}
+.userScreen.user-on .userMenu .nav__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.9375rem;
+}
+.userScreen.user-on .userMenu .nav__btn button {
+  height: 2.8125rem;
+  padding: 0;
+  width: 90%;
 }
 /*# sourceMappingURL=user.css.map */

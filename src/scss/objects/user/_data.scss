@@ -1,0 +1,106 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.data {
+  &__screen {
+    width: 100%;
+    margin-top: $md;
+
+    display: flex;
+
+    &--left,
+    &--right {
+      width: 50%;
+    }
+
+    &--right {
+      margin-left: $md;
+    }
+
+    .data__card {
+      padding: $sm;
+
+      border-radius: rem(10);
+      box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+      background-color: setcolor("gray", "light1");
+
+      &:not(:last-of-type) {
+        margin-bottom: $sm;
+      }
+
+      & > p {
+        @extend .u-f--h2, .u-f--bold;
+        color: setcolor("black", "dark1");
+      }
+    }
+
+    .data__wrapper {
+      margin-top: $sm;
+
+      p {
+        padding-bottom: rem(5);
+      }
+
+      p,
+      span {
+        color: #868b92;
+      }
+
+      span {
+        @extend .u-f--bold;
+      }
+    }
+
+    button {
+      width: 50%;
+    }
+
+    .data__tc {
+      border-top: 1px solid #c9cdd0;
+      margin-top: $md;
+      padding-top: $md;
+
+      & > p {
+        color: setcolor("black", "dark1");
+      }
+
+      .data__table {
+        margin-top: $sm;
+      }
+
+      .data__row {
+        width: 100%;
+        background-color: setcolor("gray", "light1");
+        border-radius: rem(5);
+        padding: $sm;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:not(:last-of-type) {
+          margin-bottom: rem(5);
+        }
+
+        .data__col:first-of-type {
+          display: flex;
+        }
+
+        .data__col {
+          &-date {
+            margin-right: $sm;
+            p {
+              @extend .u-f--bold;
+              color: setcolor("black", "dark1");
+            }
+          }
+          &-tc p {
+            color: #868b92;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}

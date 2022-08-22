@@ -832,7 +832,7 @@ body {
 p, span, button {
   font-family: "Lexend";
   color: #ffffff;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0;
 }
 
 input {
@@ -962,9 +962,26 @@ h5 {
 .btn__blue {
   color: #ffffff;
   background-color: #00d1bc;
+  padding: 0;
+  height: 2.8125rem;
 }
 .btn__blue:hover {
   background-color: #99e4de;
+}
+
+.btn__blue--2Icons {
+  position: relative;
+}
+.btn__blue--2Icons img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn__blue--2Icons img:first-of-type {
+  left: 0.4375rem;
+}
+.btn__blue--2Icons img:last-of-type {
+  right: 0.9375rem;
 }
 
 .btn__white {
