@@ -20,6 +20,8 @@
 
 // OBJECTS
 @use '../objects/user/data';
+@use '../objects/user/wallet';
+@use '../objects/user/common';
 
 //LAYOUT
 @use '../layout/header';

@@ -652,7 +652,7 @@
   }
 }
 
-.btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+.btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
   font-family: "Lexend";
   font-weight: 700;
@@ -667,36 +667,36 @@
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
-  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
     padding: 0.9375rem 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
     padding: 0.9375rem 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .btn__red, .btn__blue, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.25rem;
   }
 }
-.btn__red > *, .btn__blue > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
+.btn__red > *, .btn__blue > *, .btn__grey > *, .btn__grey--ghost > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
   vertical-align: middle;
 }
-.btn__red > * + *, .btn__blue > * + *, .btn__white > * + *, .btn__gray--red > * + *, .btn__block > * + *, .btn__black--lighter > * + *, .btn__ghost--red > * + *, .btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
+.btn__red > * + *, .btn__blue > * + *, .btn__grey > * + *, .btn__grey--ghost > * + *, .btn__white > * + *, .btn__gray--red > * + *, .btn__block > * + *, .btn__black--lighter > * + *, .btn__ghost--red > * + *, .btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
   margin-left: 0.25em;
 }
-.btn__red svg, .btn__blue svg, .btn__white svg, .btn__gray--red svg, .btn__block svg, .btn__black--lighter svg, .btn__ghost--red svg, .btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
+.btn__red svg, .btn__blue svg, .btn__grey svg, .btn__grey--ghost svg, .btn__white svg, .btn__gray--red svg, .btn__block svg, .btn__black--lighter svg, .btn__ghost--red svg, .btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
   font-size: inherit;
 }
 
@@ -915,25 +915,41 @@ h5 {
   color: #ffffff;
   background-color: #00d1bc;
   padding: 0;
-  height: 2.8125rem;
 }
 .btn__blue:hover {
   background-color: #99e4de;
 }
 
-.btn__blue--2Icons {
+.btn__grey {
+  background-color: #EAEDEF;
+}
+.btn__grey:hover {
+  background-color: #868B92;
+}
+.btn__grey span {
+  color: #13171d;
+}
+.btn__icons {
   position: relative;
 }
-.btn__blue--2Icons img {
+.btn__icons img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.btn__blue--2Icons img:first-of-type {
+.btn__icons img:first-of-type {
   left: 0.4375rem;
 }
-.btn__blue--2Icons img:last-of-type {
+.btn__icons img:last-of-type {
   right: 0.9375rem;
+}
+
+.btn__grey--ghost {
+  background-color: transparent;
+  border: 1px solid #868b92;
+}
+.btn__grey--ghost span {
+  color: #13171d;
 }
 
 .btn__white {
@@ -1267,11 +1283,11 @@ h5 {
 }
 
 .has-header {
-  transform: translateY(6vh);
+  margin-top: 6vh;
 }
 @media only screen and (min-width: 1280px) {
   .has-header {
-    transform: translateY(8vh);
+    margin-top: 8vh;
   }
 }
 

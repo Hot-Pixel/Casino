@@ -3,10 +3,10 @@
 @use "../tools" as *;
 
 .has-header {
-  transform: translateY(6vh);
+  margin-top: 6vh;
 
   @include screen-sm {
-    transform: translateY(8vh);
+    margin-top: 8vh;
   }
 }
 

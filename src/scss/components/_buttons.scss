@@ -24,7 +24,6 @@
   color: setcolor("white");
   background-color: setcolor("secondary");
   padding: 0;
-  height: rem(45);
 
   &:hover {
     color: setcolor("gray", "lighter");
@@ -32,7 +31,24 @@
   }
 }
 
-.btn__blue--2Icons {
+.btn__grey {
+  @extend %buttons;
+  background-color: setcolor("gray", "light2");
+
+  &:hover {
+    background-color: setcolor("gray", "mid");
+  }
+
+  span {
+    color: setcolor("black", "dark1");
+
+    &:hover {
+      color: setcolor("black", "dark3");
+    }
+  }
+}
+
+.btn__icons {
   position: relative;
   img {
     position: absolute;
@@ -44,6 +60,15 @@
   }
   img:last-of-type {
     right: $sm;
+  }
+}
+
+.btn__grey--ghost {
+  @extend %buttons;
+  background-color: transparent;
+  border: 1px solid #868b92;
+  span {
+    color: setcolor("black", "dark1");
   }
 }
 

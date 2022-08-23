@@ -3,6 +3,7 @@
 @use "../tools" as *;
 
 .data {
+
   &__screen {
     width: 100%;
     margin-top: $md;
@@ -102,5 +103,60 @@
         }
       }
     }
+
+    form {
+      width: 50%;
+
+      .data__form {
+
+        padding: $sm 0 !important;
+
+        p {
+          color: setcolor('black', 'dark1');
+        }
+
+        &-title {
+          padding: 0 $md $sm;
+
+          p {
+            @extend .u-f--h2, .u-f--bold;
+
+          }
+        }
+
+        &-input {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          padding: $md;
+          border-top: 1px solid #d2d4d7;
+
+          p {
+            padding-bottom: rem(5);
+          }
+
+          input {
+            margin-bottom: rem(5);
+          }
+
+          button {
+            width: fit-content !important;
+            padding: 0 $sm;
+          }
+        }
+      }
+
+      & > button {
+        width: 100%;
+        margin-top: $md;
+
+        img {
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+
   }
 }
