@@ -21,6 +21,8 @@
 // OBJECTS
 @use '../objects/user/data';
 @use '../objects/user/wallet';
+@use '../objects/user/history';
+@use '../objects/user/docs';
 @use '../objects/user/common';
 
 //LAYOUT

@@ -1,0 +1,120 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.history {
+  .history__navbar {
+    display: flex;
+    margin: $md 0;
+
+    .history__nav {
+      @extend .u-f--bold;
+      color: setcolor("secondary");
+      padding: rem(5) rem(10);
+      margin-right: rem(10);
+      border-radius: rem(30);
+      transition: all 0.4s ease;
+      cursor: pointer;
+
+      &:hover {
+        transition: all 0.4s ease;
+        color: setcolor("black", "dark1");
+      }
+
+      &.is-active {
+        color: setcolor("black", "dark1");
+      }
+    }
+  }
+
+  .history__grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: $md;
+
+    .history__filter {
+        position: relative;
+
+      .history__content {
+        padding: $md $sm;
+
+        p:first-of-type {
+          @extend .u-f--h3, .u-f--bold;
+          color: setcolor("black", "dark1");
+          padding-bottom: $sm;
+        }
+        p:last-of-type {
+          color: #868b92;
+        }
+      }
+
+      .history__inputs {
+        padding: $md $sm;
+        border-top: 1px solid #dddfe2;
+
+        input,
+        select {
+          background-color: transparent;
+          border: 1px solid #d2d4d7;
+          border-radius: rem(30);
+
+          width: 100%;
+          height: rem(45);
+          margin-bottom: rem(10);
+
+          color: #868b92;
+
+          &::placeholder {
+            color: #868b92;
+          }
+        }
+
+        select:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      .history__submit {
+          position: absolute;
+          width: 100%;
+          left: 50%;
+          bottom: rem(-20);
+
+          button {
+              padding: rem(10);
+              transform: translateX(-50%);
+          }
+      }
+    }
+
+    .history__activity {
+        .history__table {
+            padding: 0 !important;
+            overflow: hidden;
+
+            &-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr 4fr 1fr 1fr 1fr 1fr;
+                align-items: center;
+
+                padding: $sm;
+            }
+            p {
+                color: #868b92;
+            }
+
+            .bold {
+                @extend .u-f--bold;
+                color: setcolor("black", "dark1");
+            }
+
+            &-row:nth-of-type(odd) {
+                background-color: #fafafb;
+            }
+            &-row:nth-of-type(even) {
+                background-color: #f4f6f7;
+            }
+        }
+    }
+  }
+}
