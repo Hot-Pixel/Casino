@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="libraries/splide/splide.min.css">
     <link rel="stylesheet" href="css/slots-all.css">
-    <title>Slots</title>
+    <title>Slots All</title>
 </head>
 <body class="has-header">
 
@@ -63,7 +63,7 @@
     <section class="header__wrapper header__noLog">
 
         <div class="icon__title">
-            <a href="#">
+            <a href="/promociones">
                 <img src="img/icon-star.svg" alt="">
                 <p class="u-f--h4">Promociones</p>
             </a>
@@ -80,10 +80,10 @@
 
     </section>
 
-    <section class="header__wrapper header__logged is-active">
+    <section class="header__wrapper header__logged is-on">
 
         <div class="header__logged-item icon__title">
-            <a href="#">
+            <a href="/promociones">
                 <img src="img/icon-star.svg" alt="">
                 <p class="u-f--h4">Promociones</p>
             </a>
@@ -180,7 +180,7 @@
 
 <section class="banner" style="background-image: url('../img/img-banner-slots.jpg');">
     <div class="banner__wrapper">
-        <img src="img/icon-slots-banner.svg" alt="">
+        <img src="img/icon-banner-slotsAll.svg" alt="">
         <div class="banner__wrapper-title">
             <p class="">Nuestras Slots</p>
             <div class="breadcrumbs">
@@ -199,119 +199,119 @@
 
 
 
-<main class="m-slots--finder">
+<main class="slotsFinder">
 
-    <form class="o-filter--slots">
+    <form class="filterSlots">
 
-    <div class="o-filter--slots-header">
-        <div class="o-filter--slots-left">
+    <div class="filterSlots__header">
+        <div class="filterSlots--left">
             <img src="img/icon-funnel-red.svg" alt="">
             <span>Filtro</span>
         </div>
-        <div class="o-filter--slots-right">
+        <div class="filterSlots--right">
             <div>
                 <img src="img/icon-arrow-left.svg" alt="">
             </div>
 
-            <button class="u-btn--gray-red" type="reset">
+            <button class="btn__gray--red" type="reset">
                 <span>Eliminar filtros</span>
                 <img src="img/icon-cross-red.svg" alt="">
             </button>
         </div>
     </div>
 
-    <div class="o-filter--slots-container">
-        <fieldset data-filter-group class="o-filter--slots-search">
+    <div class="filterSlots__container">
+        <fieldset data-filter-group class="filterSlots__search">
             <img src="img/icon-lupa-big.svg" alt="">
-            <input type="text" name="" id="" placeholder="Busca por nombre...">
+            <input type="text" id="nameSearch" data-search-attribute="data-name" placeholder="Busca por nombre...">
         </fieldset>
 
-        <fieldset data-filter-group class="o-filter--slots-general">
-            <button class="u-btn--block" data-filter=".novedad">Novedad</button>
-            <button class="u-btn--block" data-filter=".promo">Promoción</button>
-            <button class="u-btn--block" data-toggle=".favoritos">
+        <fieldset data-filter-group class="filterSlots__general">
+            <button class="btn__block" data-toggle=".novedad">Novedad</button>
+            <button class="btn__block" data-toggle=".promo">Promoción</button>
+            <button class="btn__block" data-toggle=".favorito">
                 <img src="img/icon-heart-white-big.svg" alt="">
             </button>
         </fieldset>
 
-        <div class="o-filter--slots-filter">
-            <div class="o-filter--slots-title">
+        <div class="filterSlots__filter">
+            <div class="filterSlots__title head">
                 <p>Proveedor</p>
-                <img src="img/icon-arrow-down-grey.svg" alt="">
+                <img class="accorArrow" src="img/icon-arrow-down-grey.svg" alt="">
             </div>
-            <fieldset class="o-filter--slots-wrapper" data-filter-group>
-                <div class="o-filter--slots-tag" data-toggle=".proveedor-uno">
+            <fieldset class="filterSlots__wrapper body active" data-filter-group>
+                <div class="filterSlots__tag" data-toggle=".proveedor-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Proveedor Uno</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".proveedor-dos">
+                <div class="filterSlots__tag" data-toggle=".proveedor-dos">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Proveedor Dos</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".proveedor-tres">
+                <div class="filterSlots__tag" data-toggle=".proveedor-tres">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Proveedor Tres</span>
                 </div>
             </fieldset>
         </div>
 
-        <div class="o-filter--slots-filter">
-            <div class="o-filter--slots-title">
+        <div class="filterSlots__filter">
+            <div class="filterSlots__title head">
                 <p>Tipo</p>
-                <img src="img/icon-arrow-down-grey.svg" alt="">
+                <img class="accorArrow" src="img/icon-arrow-down-grey.svg" alt="">
             </div>
-            <fieldset class="o-filter--slots-wrapper" data-filter-group>
-                <div class="o-filter--slots-tag" data-toggle=".tipo-uno">
+            <fieldset class="filterSlots__wrapper body active" data-filter-group>
+                <div class="filterSlots__tag" data-toggle=".tipo-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Tipo Uno</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".tipo-uno">
+                <div class="filterSlots__tag" data-toggle=".tipo-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Tipo Dos</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".tipo-uno">
+                <div class="filterSlots__tag" data-toggle=".tipo-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Tipo Tres</span>
                 </div>
             </fieldset>
         </div>
 
-        <div class="o-filter--slots-filter">
-            <div class="o-filter--slots-title">
+        <div class="filterSlots__filter">
+            <div class="filterSlots__title head">
                 <p>Líneas</p>
-                <img src="img/icon-arrow-down-grey.svg" alt="">
+                <img class="accorArrow" src="img/icon-arrow-down-grey.svg" alt="">
             </div>
-            <fieldset class="o-filter--slots-wrapper" data-filter-group>
-                <div class="o-filter--slots-tag" data-toggle=".linea-uno">
+            <fieldset class="filterSlots__wrapper body active" data-filter-group>
+                <div class="filterSlots__tag" data-toggle=".linea-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Línea Uno</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".linea-uno">
+                <div class="filterSlots__tag" data-toggle=".linea-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Línea Dos</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".linea-uno">
+                <div class="filterSlots__tag" data-toggle=".linea-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Línea Tres</span>
                 </div>
             </fieldset>
         </div>
 
-        <div class="o-filter--slots-filter">
-            <div class="o-filter--slots-title">
+        <div class="filterSlots__filter">
+            <div class="filterSlots__title head">
                 <p>Apuesta mínima</p>
-                <img src="img/icon-arrow-down-grey.svg" alt="">
+                <img class="accorArrow" src="img/icon-arrow-down-grey.svg" alt="">
             </div>
-            <fieldset class="o-filter--slots-wrapper" data-filter-group>
-                <div class="o-filter--slots-tag" data-toggle=".apuesta-uno">
+            <fieldset class="filterSlots__wrapper body active" data-filter-group>
+                <div class="filterSlots__tag" data-toggle=".apuesta-uno">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Apuesta Uno</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".apuesta-uno">
+                <div class="filterSlots__tag" data-toggle=".apuesta-dos">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Apuesta Dos</span>
                 </div>
-                <div class="o-filter--slots-tag" data-toggle=".apuesta-uno">
+                <div class="filterSlots__tag" data-toggle=".apuesta-tres">
                     <img src="img/icon-filter-noActive.svg" alt="">
                     <span>Apuesta Tres</span>
                 </div>
@@ -321,368 +321,605 @@
 
 </form>
 
-    <ul class="gridGames container">
-    
+    <ul class="gridGames container" data-ref="container">
         
-            <li class="gridGames__item mix novedad proveedor-uno tipo-dos apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-1.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="bermuda, riches" class="gridGames__item mix novedad proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-1.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix novedad proveedor-dos tipo-uno apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-2.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="pirates" class="gridGames__item mix novedad proveedor-dos tipo-uno apuesta-uno lineas-dos ">
+                <img src="img/img-grid-2.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix novedad promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-3.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="bonanza" class="gridGames__item mix novedad promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-3.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-4.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="mystic" class="gridGames__item mix promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-4.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix novedad proveedor-dos tipo-uno apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-5.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="piggy" class="gridGames__item mix novedad proveedor-dos tipo-uno apuesta-uno lineas-dos ">
+                <img src="img/img-grid-5.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-6.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="treasure" class="gridGames__item mix promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-6.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix novedad proveedor-uno tipo-dos apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-7.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="bass" class="gridGames__item mix novedad proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-7.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix novedad promo proveedor-dos tipo-uno apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-8.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="yum" class="gridGames__item mix novedad promo proveedor-dos tipo-uno apuesta-uno lineas-dos ">
+                <img src="img/img-grid-8.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix  proveedor-dos tipo-uno apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-9.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="giza" class="gridGames__item mix  proveedor-dos tipo-uno apuesta-uno lineas-dos ">
+                <img src="img/img-grid-9.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix  proveedor-uno tipo-dos apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-10.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="party" class="gridGames__item mix  proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-11.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-11.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="chicken" class="gridGames__item mix promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-12.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
     
-            <li class="gridGames__item mix novedad promo proveedor-dos tipo-uno apuesta-uno lineas-dos ">
-                <img src="img/img-grid-casino-12.jpg" alt="">
-                <div class="gridGames__item-title">
-                    <p class="">
-                        Finn Golden Tavern
-                    </p>
-                    <div class="is-favourite">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-                            <g transform="translate(6.977 -2.109)">
-                                <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
-                                    fill="#13171d" />
-                                <path data-name="Trazado 99"
-                                    d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
-                                    fill="#fff" opacity=".5" />
-                            </g>
-                        </svg>
-                    </div>
+            <li data-name="bonanza, chicle" class="gridGames__item mix novedad promo proveedor-dos tipo-uno apuesta-uno lineas-dos ">
+                <img src="img/img-grid-1.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
                 </div>
-                <div class="gridGames__item-hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
             </li>
-        
+    
+            <li data-name="bermuda" class="gridGames__item mix novedad proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-2.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Pirates Code" class="gridGames__item mix novedad proveedor-dos tipo-uno apuesta-uno lineas-dos ">
+                <img src="img/img-grid-3.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Cash Bonanza" class="gridGames__item mix novedad promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-4.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Mystic Chief" class="gridGames__item mix promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-5.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Piggy Bank" class="gridGames__item mix novedad proveedor-dos tipo-uno apuesta-uno lineas-dos ">
+                <img src="img/img-grid-6.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Treasure Wild" class="gridGames__item mix promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-7.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Bigger Bass" class="gridGames__item mix novedad proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-8.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Yum Yum" class="gridGames__item mix novedad promo proveedor-dos tipo-uno apuesta-uno lineas-dos ">
+                <img src="img/img-grid-9.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Rise of Giza" class="gridGames__item mix  proveedor-dos tipo-uno apuesta-uno lineas-dos ">
+                <img src="img/img-grid-10.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Friut Party" class="gridGames__item mix  proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-11.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
+    
+            <li data-name="Chicken Drop" class="gridGames__item mix promo proveedor-uno tipo-dos apuesta-uno lineas-dos ">
+                <img src="img/img-grid-12.jpg" alt="">
+                <div class="gridGames__item-favourite">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28">
+                        <g transform="translate(6.977 -2.109)">
+                            <circle data-name="Elipse 3" cx="14" cy="14" r="14" transform="translate(-6.977 2.109)"
+                                fill="#13171d" />
+                            <path data-name="Trazado 99"
+                                d="M13.856 14.015a4 4 0 0 0-2.839-2.829 4.168 4.168 0 0 0-3.828 1.289.25.25 0 0 1-.34 0 4.168 4.168 0 0 0-3.829-1.289 4 4 0 0 0-2.838 2.829 3.9 3.9 0 0 0 1 3.868L6.7 22.971a.51.51 0 0 0 .68 0l5.528-5.108a3.868 3.868 0 0 0 .948-3.848Z"
+                                fill="#fff" opacity=".5" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="gridHover">
+    <p class="gridHover__title">Finn Golden Tavern</p>
+    <a href="#" class="gridHover__btn">
+        <button class="btn__red btn__red--glow">
+            <span>¡JUEGA!</span>
+            <img src="img/icon-play-white.svg" alt="">
+        </button>
+        <p>PRUÉBALO</p>
+    </a>
+    <div></div>
+</div>
+            </li>
     
 </ul>
 
