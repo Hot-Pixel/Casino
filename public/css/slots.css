@@ -404,36 +404,36 @@
   }
 }
 
-.u-f--p, p, span, button, input {
+.u-f--p, p, span, button, textarea, select, input {
   font-size: 0.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.6875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.875rem;
   }
 }
@@ -822,7 +822,7 @@ body {
   }
 }
 
-p, span, button {
+p, span, button, textarea, select {
   font-family: "Lexend";
   color: #ffffff;
   margin-bottom: 0;
@@ -1163,12 +1163,13 @@ h5 {
   left: 0;
   z-index: 1;
   width: 100%;
-  height: inherit;
+  height: 100%;
   padding: 1.875rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.3125rem;
   opacity: 0;
   transition: all 0.3s ease;
 }

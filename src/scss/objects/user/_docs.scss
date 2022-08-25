@@ -167,6 +167,10 @@
     margin-top: $lg;
   }
 
+  .docsVerify2__header {
+    margin-bottom: $md !important;
+  }
+
   &__header {
     position: relative;
     padding: $lg $md !important;
@@ -247,5 +251,80 @@
     img {
       transform: rotate(90deg);
     }
+  }
+
+  .idForm {
+    padding: 0 !important;
+
+    &__select {
+      padding: $md;
+      border-bottom: 1px solid #c6c9cc;
+
+      & > p {
+        color: setcolor("black", "dark1");
+        padding-bottom: $md;
+      }
+    }
+
+    &__radio {
+      margin-bottom: rem(20);
+
+      .radioBtn {
+        transform: translateY(rem(-8));
+      }
+
+      p {
+        @extend .u-f--bold;
+        padding-left: rem(45);
+        color: #868b92;
+      }
+    }
+
+    &__upload {
+      padding: $md;
+      border-bottom: 1px solid #c6c9cc;
+
+      & > p {
+        color: setcolor("black", "dark1");
+      }
+
+      button {
+        width: auto;
+        margin-top: $sm;
+        padding: $sm;
+      }
+    }
+
+    &__message {
+      padding: $md;
+
+      textarea {
+        @extend .u-f--bold;
+        width: 100%;
+        padding: $sm;
+
+        border-radius: rem(20);
+        background-color: setcolor("gray", "light2");
+        border: none;
+        color: #868b92;
+
+        &::placeholder {
+          color: #868b92;
+        }
+
+        &:active,
+        &:focus {
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .idForm__submit {
+    margin-left: $md;
+    margin-top: $md;
+    width: auto;
+    padding: rem(10) $sm rem(10) rem(10);
   }
 }

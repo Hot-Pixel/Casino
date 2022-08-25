@@ -17,12 +17,16 @@
 @use '../components/buttons';
 @use '../components/deposits';
 @use '../components/user';
+@use '../components/checkboxes';
+@use '../components/radios';
 
 // OBJECTS
 @use '../objects/user/data';
 @use '../objects/user/wallet';
 @use '../objects/user/history';
 @use '../objects/user/docs';
+@use '../objects/user/preferences';
+@use '../objects/user/support';
 @use '../objects/user/common';
 
 //LAYOUT

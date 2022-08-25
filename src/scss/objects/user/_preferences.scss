@@ -1,0 +1,32 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.preferences {
+  &__wrapper {
+    width: 50%;
+    margin-top: $lg;
+
+    & > p {
+      color: #868b92;
+    }
+  }
+
+  &__table {
+    margin-top: $md;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: $sm 0;
+    border-top: 1px solid #c9cdd0;
+
+    p {
+      @extend .u-f--bold;
+      color: setcolor("black", "dark1");
+    }
+  }
+}

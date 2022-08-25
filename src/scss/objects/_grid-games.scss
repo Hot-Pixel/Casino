@@ -5,9 +5,8 @@
 .gridGames {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-flow: row;
   gap: rem(5);
-  width: 100%;
+  height: fit-content;
 
   @include screen-sm {
     grid-template-columns: repeat(5, 1fr);
@@ -15,9 +14,11 @@
   }
 
   &__item {
+    display: inline-block;
     position: relative;
     z-index: 0;
-    height: 100%;
+    overflow: hidden;
+
 
     & > img {
       position: relative;
@@ -53,7 +54,6 @@
       .gridHover {
         opacity: 1;
         transition: all 0.3s ease;
-
       }
     }
   }

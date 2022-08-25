@@ -229,7 +229,9 @@
   font-weight: 500;
 }
 
-.u-f--bold, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenu .nav__title-verify p, .userScreen.user-on .userMenu .nav__item--left p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .preferences__row p, .docs__state > div p:first-of-type, .docs__content-card .docs__text-title, .docs__content .docs__sent .docs__grid--top p:first-of-type, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2), .docs__content .docs__sent .docs__grid-stripe p, .docsVerify__header-text p, .docsVerify .docsVerify__steps p, .history .history__navbar .history__nav, .history .history__grid .history__filter .history__content p:first-of-type, .history .history__grid .history__activity .history__table .bold, .wallet .wallet__grid .wallet__brief-row:first-of-type p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .data__screen .data__card > p, .data__screen .data__wrapper span, .data__screen .data__tc .data__row .data__col-date p, .data__screen form .data__form-title p, .user__wrapper p:first-of-type, .u-f--bold p, .userScreen.user-on .userMenu .nav__title > p p, .user__card-title p, .docs__state > div p:first-of-type p, .docs__content-card .docs__text-title p, .docs__content .docs__sent .docs__grid--top p:first-of-type p, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2) p, .docs__content .docs__sent .docs__grid-stripe p p, .history .history__navbar .history__nav p, .history .history__grid .history__filter .history__content p:first-of-type p, .history .history__grid .history__activity .history__table .bold p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type p, .data__screen .data__card > p p, .data__screen .data__wrapper span p, .user__wrapper p:first-of-type p {
+.u-f--bold, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenu .nav__title-verify p, .userScreen.user-on .userMenu .nav__item--left p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .support__content > p, .support span, .support__form p:first-of-type, .support__form input,
+.support__form textarea, .support__text p:first-of-type, .preferences__row p, .docs__state > div p:first-of-type, .docs__content-card .docs__text-title, .docs__content .docs__sent .docs__grid--top p:first-of-type, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2), .docs__content .docs__sent .docs__grid-stripe p, .docsVerify__header-text p, .docsVerify .docsVerify__steps p, .docsVerify .idForm__radio p, .docsVerify .idForm__message textarea, .history .history__navbar .history__nav, .history .history__grid .history__filter .history__content p:first-of-type, .history .history__grid .history__activity .history__table .bold, .wallet .wallet__grid .wallet__brief-row:first-of-type p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .data__screen .data__card > p, .data__screen .data__wrapper span, .data__screen .data__tc .data__row .data__col-date p, .data__screen form .data__form-title p, .user__wrapper p:first-of-type, .u-f--bold p, .userScreen.user-on .userMenu .nav__title > p p, .user__card-title p, .support__content > p p, .support span p, .support__form p:first-of-type p, .support__form input p,
+.support__form textarea p, .support__text p:first-of-type p, .docs__state > div p:first-of-type p, .docs__content-card .docs__text-title p, .docs__content .docs__sent .docs__grid--top p:first-of-type p, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2) p, .docs__content .docs__sent .docs__grid-stripe p p, .docsVerify .idForm__message textarea p, .history .history__navbar .history__nav p, .history .history__grid .history__filter .history__content p:first-of-type p, .history .history__grid .history__activity .history__table .bold p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type p, .data__screen .data__card > p p, .data__screen .data__wrapper span p, .user__wrapper p:first-of-type p {
   font-weight: 700;
 }
 
@@ -268,36 +270,36 @@
   }
 }
 
-.u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
+.u-f--h2, .user__card-title, .support__form p:first-of-type, .support__text p:first-of-type, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .support__form p:first-of-type, .support__text p:first-of-type, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .support__form p:first-of-type, .support__text p:first-of-type, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .support__form p:first-of-type, .support__text p:first-of-type, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .support__form p:first-of-type, .support__text p:first-of-type, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .support__form p:first-of-type, .support__text p:first-of-type, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .support__form p:first-of-type, .support__text p:first-of-type, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 2rem;
   }
 }
@@ -404,36 +406,36 @@
   }
 }
 
-.u-f--p, p, span, button, input {
+.u-f--p, p, span, button, textarea, select, input {
   font-size: 0.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.6875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--p, p, span, button, input {
+  .u-f--p, p, span, button, textarea, select, input {
     font-size: 0.875rem;
   }
 }
@@ -752,7 +754,7 @@ body {
   }
 }
 
-p, span, button {
+p, span, button, textarea, select {
   font-family: "Lexend";
   color: #ffffff;
   margin-bottom: 0;
@@ -1158,6 +1160,55 @@ h5 {
   left: 1.375rem;
   background-color: #00d1bc;
   transition: all 0.3s ease;
+}
+
+.radioBtn {
+  position: relative;
+}
+.radioBtn input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  appearance: none;
+  margin: 0;
+  background-color: transparent;
+  height: 2rem;
+  width: 2rem;
+}
+.radioBtn .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  border: 2px solid #868b92;
+  background-color: transparent;
+  border-radius: 1000px;
+  height: 2rem;
+  width: 2rem;
+  transition: all 0.3s ease;
+}
+.radioBtn .container span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: none;
+  background-color: #868b92;
+  border-radius: 1000px;
+  height: 1rem;
+  width: 1rem;
+  transition: all 0.3s ease;
+}
+.radioBtn input:checked ~ .container {
+  transition: all 0.3s ease;
+  border: 2px solid #13171d;
+}
+.radioBtn input:checked ~ .container span {
+  transition: all 0.3s ease;
+  border: 4px solid #13171d;
+  background-color: transparent;
 }
 
 .data__screen {
@@ -1570,6 +1621,9 @@ h5 {
   width: 50%;
   margin-top: 3.75rem;
 }
+.docsVerify .docsVerify2__header {
+  margin-bottom: 1.875rem !important;
+}
 .docsVerify__header {
   position: relative;
   padding: 3.75rem 1.875rem !important;
@@ -1631,6 +1685,63 @@ h5 {
 .docsVerify button img {
   transform: rotate(90deg);
 }
+.docsVerify .idForm {
+  padding: 0 !important;
+}
+.docsVerify .idForm__select {
+  padding: 1.875rem;
+  border-bottom: 1px solid #c6c9cc;
+}
+.docsVerify .idForm__select > p {
+  color: #13171d;
+  padding-bottom: 1.875rem;
+}
+.docsVerify .idForm__radio {
+  margin-bottom: 1.25rem;
+}
+.docsVerify .idForm__radio .radioBtn {
+  transform: translateY(-0.5rem);
+}
+.docsVerify .idForm__radio p {
+  padding-left: 2.8125rem;
+  color: #868b92;
+}
+.docsVerify .idForm__upload {
+  padding: 1.875rem;
+  border-bottom: 1px solid #c6c9cc;
+}
+.docsVerify .idForm__upload > p {
+  color: #13171d;
+}
+.docsVerify .idForm__upload button {
+  width: auto;
+  margin-top: 0.9375rem;
+  padding: 0.9375rem;
+}
+.docsVerify .idForm__message {
+  padding: 1.875rem;
+}
+.docsVerify .idForm__message textarea {
+  width: 100%;
+  padding: 0.9375rem;
+  border-radius: 1.25rem;
+  background-color: #EAEDEF;
+  border: none;
+  color: #868b92;
+}
+.docsVerify .idForm__message textarea::placeholder {
+  color: #868b92;
+}
+.docsVerify .idForm__message textarea:active, .docsVerify .idForm__message textarea:focus {
+  outline: none;
+  border: none;
+}
+.docsVerify .idForm__submit {
+  margin-left: 1.875rem;
+  margin-top: 1.875rem;
+  width: auto;
+  padding: 0.625rem 0.9375rem 0.625rem 0.625rem;
+}
 
 .preferences__wrapper {
   width: 50%;
@@ -1651,6 +1762,77 @@ h5 {
 }
 .preferences__row p {
   color: #13171d;
+}
+
+.support__content {
+  width: 50%;
+  margin-top: 1.875rem;
+}
+.support__content > p {
+  color: #13171d;
+}
+.support span {
+  color: black;
+}
+.support button {
+  padding: 0.625rem 0.9375rem 0.625rem 0.625rem !important;
+}
+.support button span {
+  color: white !important;
+}
+.support__form {
+  position: relative;
+  margin-bottom: 3.75rem;
+  margin-top: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.875rem 1.875rem 3.75rem !important;
+}
+.support__form p {
+  color: #13171d;
+  margin-bottom: 0.625rem;
+}
+.support__form input {
+  margin-bottom: 0.625rem;
+}
+.support__form input,
+.support__form textarea {
+  width: 100%;
+  padding: 0.9375rem;
+  border-radius: 1.25rem;
+  background-color: #EAEDEF;
+  border: none;
+  color: #868b92;
+}
+.support__form input::placeholder,
+.support__form textarea::placeholder {
+  color: #868b92;
+}
+.support__form input:active, .support__form input:focus,
+.support__form textarea:active,
+.support__form textarea:focus {
+  outline: none;
+  border: none;
+}
+.support__card {
+  position: relative;
+  padding: 1.875rem 1.875rem 3.75rem !important;
+}
+.support__card:not(:last-of-type) {
+  margin-bottom: 3.75rem;
+}
+.support__text p {
+  color: #13171d;
+  margin-bottom: 0.625rem;
+}
+.support__btn {
+  position: absolute;
+  bottom: -1.375rem;
+  left: 1.875rem;
+}
+.support__btn button {
+  padding: 0.9375rem 1.875rem;
+  box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
 }
 
 .user__card {
