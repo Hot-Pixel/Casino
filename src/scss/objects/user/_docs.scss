@@ -1,0 +1,251 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.docs {
+  &__state {
+    margin: $lg 0 $md;
+
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: $sm;
+    }
+
+    & > div {
+      p {
+        color: setcolor("secondary");
+      }
+      p:first-of-type {
+        @extend .u-f--h2, .u-f--bold;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+
+    &-card {
+      position: relative;
+      width: 50%;
+      padding-bottom: $lg !important;
+
+      .docs__text {
+        p {
+          color: #868b92;
+        }
+
+        p:not(.docs__text-title) {
+          margin-bottom: $sm;
+        }
+
+        p:first-of-type {
+          color: setcolor("black", "dark1");
+        }
+
+        &-title {
+          @extend .u-f--bold;
+          color: setcolor("black", "dark1") !important;
+        }
+      }
+
+      .docs__btn {
+        position: absolute;
+        bottom: rem(-50);
+        left: 50%;
+
+        button {
+          transform: translateX(-50%);
+          display: flex;
+          align-items: center;
+
+          img {
+            padding: rem(20) rem(25);
+          }
+
+          & > div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            border-left: 1px solid white;
+
+            padding: rem(20) rem(25);
+
+            span:not(:last-of-type) {
+              margin-bottom: rem(5);
+            }
+          }
+        }
+      }
+    }
+
+    .docs__sent {
+      margin-left: $md;
+      width: 50%;
+      .docs__grid {
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: rem(10);
+
+        &-item {
+          padding: $sm;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          p {
+            color: #868b92;
+          }
+        }
+
+        &--top {
+          p:first-of-type {
+            @extend .u-f--bold;
+            color: setcolor("black", "dark1");
+            margin-bottom: rem(10);
+          }
+          p:nth-of-type(2) {
+            @extend .u-f--bold;
+          }
+        }
+
+        &--bottom {
+          margin-top: $md;
+        }
+
+        &-stripe {
+          display: flex;
+          align-items: center;
+
+          padding: rem(5);
+          border-radius: rem(100) 0 0 rem(100);
+          background: linear-gradient(to right, white, transparent 70%);
+
+          p {
+            margin-left: rem(5);
+            @extend .u-f--bold;
+          }
+        }
+
+        &-state {
+          margin-bottom: rem(5);
+        }
+
+        .sent--pass {
+          background-color: setcolor("gray", "light1");
+          border-radius: rem(5);
+
+          .docs__grid-state {
+            p {
+              color: setcolor("secondary");
+            }
+          }
+        }
+
+        .sent--denied {
+          .docs__grid-state {
+            p {
+              color: setcolor("primary");
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.docsVerify {
+  &__content {
+    width: 50%;
+    margin-top: $lg;
+  }
+
+  &__header {
+    position: relative;
+    padding: $lg $md !important;
+    border-radius: rem(20) !important;
+    margin-bottom: $lg;
+
+    &-icon {
+      position: absolute;
+      top: rem(-32);
+      left: $md;
+    }
+
+    &-text {
+      p {
+        @extend .u-f--bold;
+      }
+      p:first-of-type {
+        @extend .u-f--h2;
+        color: setcolor("black", "dark1");
+        margin-bottom: $sm;
+      }
+      p:last-of-type {
+        @extend .u-f--h4;
+        color: #868b92;
+      }
+    }
+
+    &-start {
+      position: absolute;
+      bottom: rem(-22);
+      left: $md;
+      button {
+        padding: $sm $md;
+        box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+      }
+    }
+  }
+
+  .docsVerify__steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    background-color: setcolor("gray", "light1");
+    box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+    border-radius: rem(100);
+    margin-bottom: rem(10);
+
+    p {
+      @extend .u-f--bold;
+      color: setcolor("black", "dark1");
+    }
+
+    p:first-of-type {
+      @extend .u-f--h3;
+      padding: $sm $md;
+      border-right: 2px solid #dddfe2;
+    }
+    p:last-of-type {
+      padding-left: $sm;
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+    }
+
+    img {
+      padding-right: $sm;
+    }
+  }
+
+  button {
+    height: (45);
+    width: 100%;
+
+    img {
+      transform: rotate(90deg);
+    }
+  }
+}

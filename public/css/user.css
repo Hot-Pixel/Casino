@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenu .nav__title-verify p, .userScreen.user-on .userMenu .nav__item--left p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .history .history__navbar .history__nav, .history .history__grid .history__filter .history__content p:first-of-type, .history .history__grid .history__activity .history__table .bold, .wallet .wallet__grid .wallet__brief-row:first-of-type p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .data__screen .data__card > p, .data__screen .data__wrapper span, .data__screen .data__tc .data__row .data__col-date p, .data__screen form .data__form-title p, .user__wrapper p:first-of-type, .u-f--bold p, .userScreen.user-on .userMenu .nav__title > p p, .user__card-title p, .history .history__navbar .history__nav p, .history .history__grid .history__filter .history__content p:first-of-type p, .history .history__grid .history__activity .history__table .bold p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type p, .data__screen .data__card > p p, .data__screen .data__wrapper span p, .user__wrapper p:first-of-type p {
+.u-f--bold, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenu .nav__title-verify p, .userScreen.user-on .userMenu .nav__item--left p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .preferences__row p, .docs__state > div p:first-of-type, .docs__content-card .docs__text-title, .docs__content .docs__sent .docs__grid--top p:first-of-type, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2), .docs__content .docs__sent .docs__grid-stripe p, .docsVerify__header-text p, .docsVerify .docsVerify__steps p, .history .history__navbar .history__nav, .history .history__grid .history__filter .history__content p:first-of-type, .history .history__grid .history__activity .history__table .bold, .wallet .wallet__grid .wallet__brief-row:first-of-type p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .data__screen .data__card > p, .data__screen .data__wrapper span, .data__screen .data__tc .data__row .data__col-date p, .data__screen form .data__form-title p, .user__wrapper p:first-of-type, .u-f--bold p, .userScreen.user-on .userMenu .nav__title > p p, .user__card-title p, .docs__state > div p:first-of-type p, .docs__content-card .docs__text-title p, .docs__content .docs__sent .docs__grid--top p:first-of-type p, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2) p, .docs__content .docs__sent .docs__grid-stripe p p, .history .history__navbar .history__nav p, .history .history__grid .history__filter .history__content p:first-of-type p, .history .history__grid .history__activity .history__table .bold p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type p, .data__screen .data__card > p p, .data__screen .data__wrapper span p, .user__wrapper p:first-of-type p {
   font-weight: 700;
 }
 
@@ -268,104 +268,104 @@
   }
 }
 
-.u-f--h2, .user__card-title, .data__screen .data__card > p, .data__screen form .data__form-title p {
+.u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .user__card-title, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .user__card-title, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .user__card-title, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .user__card-title, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .user__card-title, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .user__card-title, .data__screen .data__card > p, .data__screen form .data__form-title p {
+  .u-f--h2, .user__card-title, .docs__state > div p:first-of-type, .docsVerify__header-text p:first-of-type, .data__screen .data__card > p, .data__screen form .data__form-title p {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+.u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
+.u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .docsVerify__header-text p:last-of-type, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .docsVerify__header-text p:last-of-type, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .docsVerify__header-text p:last-of-type, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .docsVerify__header-text p:last-of-type, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .docsVerify__header-text p:last-of-type, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .docsVerify__header-text p:last-of-type, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
+  .u-f--h4, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .docsVerify__header-text p:last-of-type, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .user__wrapper p:first-of-type {
     font-size: 1.125rem;
   }
 }
@@ -1108,6 +1108,58 @@ h5 {
   color: #00d1bc;
   margin: 0;
 }
+.checkRound {
+  position: relative;
+  transition: all 0.3s ease;
+  transform: translateX(-22px);
+}
+.checkRound input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 1.375rem;
+  width: 2.75rem;
+}
+.checkRound .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  height: 1.375rem;
+  width: 2.75rem;
+  background-color: #b7bcc0;
+  border-radius: 1.875rem;
+  transition: all 0.3s ease;
+}
+.checkRound .container .circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  height: 1.375rem;
+  width: 1.375rem;
+  background-color: #72787f;
+  border-radius: 62.5rem;
+  transition: all 0.3s ease;
+}
+.checkRound input:checked ~ .container {
+  background-color: #74dfd5;
+  transition: all 0.3s ease;
+}
+.checkRound input:checked ~ .container .circle {
+  left: 1.375rem;
+  background-color: #00d1bc;
+  transition: all 0.3s ease;
+}
+
 .data__screen {
   width: 100%;
   margin-top: 1.875rem;
@@ -1406,6 +1458,199 @@ h5 {
 }
 .history .history__grid .history__activity .history__table-row:nth-of-type(even) {
   background-color: #f4f6f7;
+}
+
+.docs__state {
+  margin: 3.75rem 0 1.875rem;
+  display: flex;
+  align-items: center;
+}
+.docs__state img {
+  margin-right: 0.9375rem;
+}
+.docs__state > div p {
+  color: #00d1bc;
+}
+.docs__content {
+  display: flex;
+  flex-direction: row;
+}
+.docs__content-card {
+  position: relative;
+  width: 50%;
+  padding-bottom: 3.75rem !important;
+}
+.docs__content-card .docs__text p {
+  color: #868b92;
+}
+.docs__content-card .docs__text p:not(.docs__text-title) {
+  margin-bottom: 0.9375rem;
+}
+.docs__content-card .docs__text p:first-of-type {
+  color: #13171d;
+}
+.docs__content-card .docs__text-title {
+  color: #13171d !important;
+}
+.docs__content-card .docs__btn {
+  position: absolute;
+  bottom: -3.125rem;
+  left: 50%;
+}
+.docs__content-card .docs__btn button {
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+}
+.docs__content-card .docs__btn button img {
+  padding: 1.25rem 1.5625rem;
+}
+.docs__content-card .docs__btn button > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid white;
+  padding: 1.25rem 1.5625rem;
+}
+.docs__content-card .docs__btn button > div span:not(:last-of-type) {
+  margin-bottom: 0.3125rem;
+}
+.docs__content .docs__sent {
+  margin-left: 1.875rem;
+  width: 50%;
+}
+.docs__content .docs__sent .docs__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.625rem;
+}
+.docs__content .docs__sent .docs__grid-item {
+  padding: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.docs__content .docs__sent .docs__grid-item p {
+  color: #868b92;
+}
+.docs__content .docs__sent .docs__grid--top p:first-of-type {
+  color: #13171d;
+  margin-bottom: 0.625rem;
+}
+.docs__content .docs__sent .docs__grid--bottom {
+  margin-top: 1.875rem;
+}
+.docs__content .docs__sent .docs__grid-stripe {
+  display: flex;
+  align-items: center;
+  padding: 0.3125rem;
+  border-radius: 6.25rem 0 0 6.25rem;
+  background: linear-gradient(to right, white, transparent 70%);
+}
+.docs__content .docs__sent .docs__grid-stripe p {
+  margin-left: 0.3125rem;
+}
+.docs__content .docs__sent .docs__grid-state {
+  margin-bottom: 0.3125rem;
+}
+.docs__content .docs__sent .docs__grid .sent--pass {
+  background-color: #F4F6F8;
+  border-radius: 0.3125rem;
+}
+.docs__content .docs__sent .docs__grid .sent--pass .docs__grid-state p {
+  color: #00d1bc;
+}
+.docs__content .docs__sent .docs__grid .sent--denied .docs__grid-state p {
+  color: #ff293e;
+}
+
+.docsVerify__content {
+  width: 50%;
+  margin-top: 3.75rem;
+}
+.docsVerify__header {
+  position: relative;
+  padding: 3.75rem 1.875rem !important;
+  border-radius: 1.25rem !important;
+  margin-bottom: 3.75rem;
+}
+.docsVerify__header-icon {
+  position: absolute;
+  top: -2rem;
+  left: 1.875rem;
+}
+.docsVerify__header-text p:first-of-type {
+  color: #13171d;
+  margin-bottom: 0.9375rem;
+}
+.docsVerify__header-text p:last-of-type {
+  color: #868b92;
+}
+.docsVerify__header-start {
+  position: absolute;
+  bottom: -1.375rem;
+  left: 1.875rem;
+}
+.docsVerify__header-start button {
+  padding: 0.9375rem 1.875rem;
+  box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+}
+.docsVerify .docsVerify__steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #F4F6F8;
+  box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+  border-radius: 6.25rem;
+  margin-bottom: 0.625rem;
+}
+.docsVerify .docsVerify__steps p {
+  color: #13171d;
+}
+.docsVerify .docsVerify__steps p:first-of-type {
+  padding: 0.9375rem 1.875rem;
+  border-right: 2px solid #dddfe2;
+}
+.docsVerify .docsVerify__steps p:last-of-type {
+  padding-left: 0.9375rem;
+}
+.docsVerify .docsVerify__steps > div {
+  display: flex;
+  align-items: center;
+}
+.docsVerify .docsVerify__steps img {
+  padding-right: 0.9375rem;
+}
+.docsVerify button {
+  height: 45;
+  width: 100%;
+}
+.docsVerify button img {
+  transform: rotate(90deg);
+}
+
+.preferences__wrapper {
+  width: 50%;
+  margin-top: 3.75rem;
+}
+.preferences__wrapper > p {
+  color: #868b92;
+}
+.preferences__table {
+  margin-top: 1.875rem;
+}
+.preferences__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9375rem 0;
+  border-top: 1px solid #c9cdd0;
+}
+.preferences__row p {
+  color: #13171d;
 }
 
 .user__card {
