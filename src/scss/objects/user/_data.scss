@@ -3,20 +3,33 @@
 @use "../tools" as *;
 
 .data {
-
   &__screen {
     width: 100%;
     margin-top: $md;
 
     display: flex;
+    flex-direction: column;
+
+    @include screen-sm {
+      flex-direction: row;
+    }
 
     &--left,
     &--right {
-      width: 50%;
+      width: 100%;
+
+      @include screen-sm {
+        width: 50%;
+      }
     }
 
     &--right {
-      margin-left: $md;
+      margin-left: 0;
+      margin-top: $md;
+      @include screen-sm {
+        margin-left: $md;
+        margin-top: 0;
+      }
     }
 
     .data__card {
@@ -53,8 +66,13 @@
       }
     }
 
-    button {
-      width: 50%;
+    .data__modify-open {
+      width: 100%;
+      padding: $sm;
+
+      @include screen-sm {
+        width: 50%;
+      }
     }
 
     .data__tc {
@@ -104,15 +122,32 @@
       }
     }
 
+    .data__last {
+      border-top: 1px solid #c9cdd0;
+      margin-top: $md;
+      padding-top: $md;
+
+      p {
+        color: setcolor("black", "dark1");
+      }
+
+      p:last-of-type {
+        @extend .u-f--bold;
+      }
+    }
+
     form {
-      width: 50%;
+      width: 100%;
+
+      @include screen-sm {
+        width: 50%;
+      }
 
       .data__form {
-
         padding: $sm 0 !important;
 
         p {
-          color: setcolor('black', 'dark1');
+          color: setcolor("black", "dark1");
         }
 
         &-title {
@@ -120,7 +155,6 @@
 
           p {
             @extend .u-f--h2, .u-f--bold;
-
           }
         }
 
@@ -136,13 +170,22 @@
             padding-bottom: rem(5);
           }
 
-          input {
-            margin-bottom: rem(5);
+          .user__input {
+            margin-bottom: rem(10);
           }
 
-          button {
-            width: fit-content !important;
-            padding: 0 $sm;
+          select {
+            @extend .u-f--bold;
+            padding-left: $sm;
+          }
+
+          .data__saveBtn {
+            width: fit-content;
+            padding: rem(5) $sm;
+
+            @include screen-sm {
+              padding: rem(10) $sm;
+            }
           }
         }
       }
@@ -156,7 +199,5 @@
         }
       }
     }
-
-
   }
 }

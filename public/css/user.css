@@ -229,9 +229,9 @@
   font-weight: 500;
 }
 
-.u-f--bold, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenu .nav__title-verify p, .userScreen.user-on .userMenu .nav__item--left p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .support__content > p, .support span, .support__form p:first-of-type, .support__form input,
-.support__form textarea, .support__text p:first-of-type, .preferences__row p, .docs__state > div p:first-of-type, .docs__content-card .docs__text-title, .docs__content .docs__sent .docs__grid--top p:first-of-type, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2), .docs__content .docs__sent .docs__grid-stripe p, .docsVerify__header-text p, .docsVerify .docsVerify__steps p, .docsVerify .idForm__radio p, .docsVerify .idForm__message textarea, .history .history__navbar .history__nav, .history .history__grid .history__filter .history__content p:first-of-type, .history .history__grid .history__activity .history__table .bold, .wallet .wallet__grid .wallet__brief-row:first-of-type p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .data__screen .data__card > p, .data__screen .data__wrapper span, .data__screen .data__tc .data__row .data__col-date p, .data__screen form .data__form-title p, .user__wrapper p:first-of-type, .u-f--bold p, .userScreen.user-on .userMenu .nav__title > p p, .user__card-title p, .support__content > p p, .support span p, .support__form p:first-of-type p, .support__form input p,
-.support__form textarea p, .support__text p:first-of-type p, .docs__state > div p:first-of-type p, .docs__content-card .docs__text-title p, .docs__content .docs__sent .docs__grid--top p:first-of-type p, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2) p, .docs__content .docs__sent .docs__grid-stripe p p, .docsVerify .idForm__message textarea p, .history .history__navbar .history__nav p, .history .history__grid .history__filter .history__content p:first-of-type p, .history .history__grid .history__activity .history__table .bold p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type p, .data__screen .data__card > p p, .data__screen .data__wrapper span p, .user__wrapper p:first-of-type p {
+.u-f--bold, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenu .nav__title-verify p, .userScreen.user-on .userMenu .nav__item--left p, .userScreen.user-on .userMenuMobile .nav__title--left > p, .userScreen.user-on .userMenuMobile .nav__title--left .nav__title-verify p, .userScreen.user-on .userMenuMobile .nav__item--left p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .support__content > p, .support span, .support__form p:first-of-type, .support__form input,
+.support__form textarea, .support__text p:first-of-type, .preferences__row p, .docs__state > div p:first-of-type, .docs__content-card .docs__text-title, .docs__content .docs__sent .docs__grid--top p:first-of-type, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2), .docs__content .docs__sent .docs__grid-stripe p, .docsVerify__header-text p, .docsVerify .docsVerify__steps p, .docsVerify .idForm__radio p, .docsVerify .idForm__message textarea, .history .history__navbar .history__nav, .history .history__grid .history__filter .history__content p:first-of-type, .history .history__grid .history__activity .history__table .bold, .wallet .wallet__grid .wallet__brief-row:first-of-type p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .data__screen .data__card > p, .data__screen .data__wrapper span, .data__screen .data__tc .data__row .data__col-date p, .data__screen .data__last p:last-of-type, .data__screen form .data__form-title p, .data__screen form .data__form-input select, .user__wrapper p:first-of-type, .u-f--bold p, .userScreen.user-on .userMenu .nav__title > p p, .userScreen.user-on .userMenuMobile .nav__title--left > p p, .user__card-title p, .support__content > p p, .support span p, .support__form p:first-of-type p, .support__form input p,
+.support__form textarea p, .support__text p:first-of-type p, .docs__state > div p:first-of-type p, .docs__content-card .docs__text-title p, .docs__content .docs__sent .docs__grid--top p:first-of-type p, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2) p, .docs__content .docs__sent .docs__grid-stripe p p, .docsVerify .idForm__message textarea p, .history .history__navbar .history__nav p, .history .history__grid .history__filter .history__content p:first-of-type p, .history .history__grid .history__activity .history__table .bold p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type p, .data__screen .data__card > p p, .data__screen .data__wrapper span p, .data__screen .data__last p:last-of-type p, .data__screen form .data__form-input select p, .user__wrapper p:first-of-type p {
   font-weight: 700;
 }
 
@@ -304,36 +304,36 @@
   }
 }
 
-.u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+.u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenuMobile .nav__title--left > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenuMobile .nav__title--left > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenuMobile .nav__title--left > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenuMobile .nav__title--left > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenuMobile .nav__title--left > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenuMobile .nav__title--left > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
+  .u-f--h3, .userScreen.user-on .userMenu .nav__title > p, .userScreen.user-on .userMenuMobile .nav__title--left > p, .bar__ammount p:last-of-type, .docsVerify .docsVerify__steps p:first-of-type, .history .history__grid .history__filter .history__content p:first-of-type {
     font-size: 1.5rem;
   }
 }
@@ -1215,12 +1215,30 @@ h5 {
   width: 100%;
   margin-top: 1.875rem;
   display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1280px) {
+  .data__screen {
+    flex-direction: row;
+  }
 }
 .data__screen--left, .data__screen--right {
-  width: 50%;
+  width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .data__screen--left, .data__screen--right {
+    width: 50%;
+  }
 }
 .data__screen--right {
-  margin-left: 1.875rem;
+  margin-left: 0;
+  margin-top: 1.875rem;
+}
+@media only screen and (min-width: 1280px) {
+  .data__screen--right {
+    margin-left: 1.875rem;
+    margin-top: 0;
+  }
 }
 .data__screen .data__card {
   padding: 0.9375rem;
@@ -1244,8 +1262,14 @@ h5 {
 .data__screen .data__wrapper span {
   color: #868b92;
 }
-.data__screen button {
-  width: 50%;
+.data__screen .data__modify-open {
+  width: 100%;
+  padding: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .data__screen .data__modify-open {
+    width: 50%;
+  }
 }
 .data__screen .data__tc {
   border-top: 1px solid #c9cdd0;
@@ -1283,8 +1307,21 @@ h5 {
   color: #868b92;
   font-weight: 400;
 }
+.data__screen .data__last {
+  border-top: 1px solid #c9cdd0;
+  margin-top: 1.875rem;
+  padding-top: 1.875rem;
+}
+.data__screen .data__last p {
+  color: #13171d;
+}
 .data__screen form {
-  width: 50%;
+  width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .data__screen form {
+    width: 50%;
+  }
 }
 .data__screen form .data__form {
   padding: 0.9375rem 0 !important;
@@ -1305,12 +1342,20 @@ h5 {
 .data__screen form .data__form-input p {
   padding-bottom: 0.3125rem;
 }
-.data__screen form .data__form-input input {
-  margin-bottom: 0.3125rem;
+.data__screen form .data__form-input .user__input {
+  margin-bottom: 0.625rem;
 }
-.data__screen form .data__form-input button {
-  width: fit-content !important;
-  padding: 0 0.9375rem;
+.data__screen form .data__form-input select {
+  padding-left: 0.9375rem;
+}
+.data__screen form .data__form-input .data__saveBtn {
+  width: fit-content;
+  padding: 0.3125rem 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .data__screen form .data__form-input .data__saveBtn {
+    padding: 0.625rem 0.9375rem;
+  }
 }
 .data__screen form > button {
   width: 100%;
@@ -1851,9 +1896,15 @@ h5 {
   align-items: center;
 }
 .user__title img {
-  height: 2.375rem;
-  width: 2.25rem;
+  height: 1.75rem;
+  width: 1.625rem;
   margin-right: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .user__title img {
+    height: 2.375rem;
+    width: 2.25rem;
+  }
 }
 .user__title p {
   color: #13171d;
@@ -1862,6 +1913,7 @@ h5 {
 .user__input {
   height: 2.8125rem;
   color: #868b92;
+  border-radius: 6.25rem;
 }
 .user__input::placeholder {
   color: #868b92;
@@ -2292,36 +2344,65 @@ header.header.header--light .icon__title a p {
   text-align: center;
 }
 
+.userScreen {
+  display: none;
+}
+
 .userScreen.user-on {
   position: relative;
   display: block;
-  opacity: 1;
+  opacity: 0;
   background-color: #EAEDEF;
   width: 100vw;
   min-height: 100%;
 }
 .userScreen.user-on .userContent {
-  width: 85%;
-  margin-left: 15%;
-  padding: 3.75rem;
+  width: 100%;
+  margin-left: 0;
+  padding: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .userScreen.user-on .userContent {
+    width: 80%;
+    margin-left: 20%;
+    padding: 1.875rem;
+  }
+}
+.userScreen.user-on .userContent__block {
+  display: none;
+}
+.userScreen.user-on .userContent__block .dataBlock {
+  display: none;
+}
+.userScreen.user-on .userContent__block .dataModifyBlock {
+  display: none;
+}
+.userScreen.user-on .userContent .block-active {
+  display: block !important;
 }
 .userScreen.user-on .userMenu {
   position: fixed;
-  width: 15%;
+  width: 20%;
   height: 92vh;
   top: 8vh;
-  left: 0;
-  opacity: 1;
+  left: -20%;
+  opacity: 0;
   overflow: hidden;
   background-color: #F4F6F8;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  padding: 3.75rem 0.9375rem;
-  display: flex;
+  padding: 1.875rem 0.9375rem;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
 }
-.userScreen.user-on .userMenu .nav {
-  margin-top: 1.875rem;
+@media only screen and (min-width: 1280px) {
+  .userScreen.user-on .userMenu {
+    display: flex;
+  }
+}
+.userScreen.user-on .userMenu .nav__title {
+  margin-bottom: 1.875rem;
+  padding-left: 0.9375rem;
 }
 .userScreen.user-on .userMenu .nav__title > p {
   color: #13171d;
@@ -2346,6 +2427,12 @@ header.header.header--light .icon__title a p {
   border-bottom: 1px solid #EAEDEF;
   cursor: pointer;
 }
+.userScreen.user-on .userMenu .nav__item.nav-active p {
+  color: #00d1bc;
+}
+.userScreen.user-on .userMenu .nav__item.nav-active svg, .userScreen.user-on .userMenu .nav__item.nav-active svg g, .userScreen.user-on .userMenu .nav__item.nav-active svg path, .userScreen.user-on .userMenu .nav__item.nav-active svg g path, .userScreen.user-on .userMenu .nav__item.nav-active svg g circle {
+  stroke: #00d1bc;
+}
 .userScreen.user-on .userMenu .nav__item--left {
   display: flex;
   align-items: center;
@@ -2361,6 +2448,99 @@ header.header.header--light .icon__title a p {
   margin-top: 0.9375rem;
 }
 .userScreen.user-on .userMenu .nav__btn button {
+  height: 2.8125rem;
+  padding: 0;
+  width: 90%;
+  box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+}
+.userScreen.user-on .userMenu .userMenu__session {
+  display: flex;
+  align-items: center;
+  margin-left: 0.9375rem;
+}
+.userScreen.user-on .userMenu .userMenu__session span {
+  color: #13171d;
+  margin-left: 0.9375rem;
+}
+.userScreen.user-on .userMenuMobile {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  height: 94vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  background-color: #F4F6F8;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .userScreen.user-on .userMenuMobile {
+    display: none;
+  }
+}
+.userScreen.user-on .userMenuMobile .userMenuMobile__tab {
+  position: absolute;
+  top: 0.9375rem;
+  left: -2.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1000px 0 0 1000px;
+  background-color: #F4F6F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.userScreen.user-on .userMenuMobile .userMenuMobile__tab img {
+  transform: rotate(90deg);
+}
+.userScreen.user-on .userMenuMobile .nav__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0.9375rem 1.875rem;
+}
+.userScreen.user-on .userMenuMobile .nav__title--left > p {
+  color: #13171d;
+  margin-bottom: 0.625rem;
+}
+.userScreen.user-on .userMenuMobile .nav__title--left .nav__title-verify {
+  display: flex;
+}
+.userScreen.user-on .userMenuMobile .nav__title--left .nav__title-verify img {
+  margin-right: 0.625rem;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.userScreen.user-on .userMenuMobile .nav__title--left .nav__title-verify p {
+  color: #00d1bc;
+}
+.userScreen.user-on .userMenuMobile .nav__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9375rem 0.9375rem;
+  border-bottom: 1px solid #EAEDEF;
+  cursor: pointer;
+}
+.userScreen.user-on .userMenuMobile .nav__item--left {
+  display: flex;
+  align-items: center;
+}
+.userScreen.user-on .userMenuMobile .nav__item--left p {
+  margin: 0;
+  margin-left: 0.9375rem;
+  color: #13171d;
+}
+.userScreen.user-on .userMenuMobile .nav__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.9375rem;
+}
+.userScreen.user-on .userMenuMobile .nav__btn button {
   height: 2.8125rem;
   padding: 0;
   width: 90%;

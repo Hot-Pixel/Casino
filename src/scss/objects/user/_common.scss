@@ -22,9 +22,14 @@
   align-items: center;
 
   img {
-    height: rem(38);
-    width: rem(36);
+    height: rem(28);
+    width: rem(26);
     margin-right: $sm;
+
+    @include screen-sm {
+      height: rem(38);
+      width: rem(36);
+    }
   }
 
   p {
@@ -36,6 +41,7 @@
 .user__input {
   height: rem(45);
   color: #868b92;
+  border-radius: rem(100);
 
   &::placeholder {
     color: #868b92;
@@ -70,7 +76,7 @@
     width: 100%;
     height: rem(25);
 
-    background-color:#bcc0c4;
+    background-color: #bcc0c4;
     border-radius: rem(30);
     overflow: hidden;
 
@@ -86,7 +92,7 @@
     &--gradient {
       z-index: 3;
       width: 80%;
-      background: linear-gradient(to right, #2074fe, setcolor('secondary'));
+      background: linear-gradient(to right, #2074fe, setcolor("secondary"));
     }
     &--dark {
       z-index: 2;

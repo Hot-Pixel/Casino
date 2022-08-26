@@ -2,14 +2,14 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-// .userScreen {
-//   display: none;
-// }
+.userScreen {
+  display: none;
+}
 
 .userScreen.user-on {
   position: relative;
   display: block;
-  opacity: 1;
+  opacity: 0;
 
   background-color: setcolor("gray", "light2");
 
@@ -17,38 +17,64 @@
   min-height: 100%;
 
   .userContent {
-    width: 85%;
-    margin-left: 15%;
+    width: 100%;
+    margin-left: 0;
 
-    padding: $lg;
+    padding: $sm;
+
+    @include screen-sm {
+      width: 80%;
+      margin-left: 20%;
+
+      padding: $md;
+    }
+
+    &__block {
+      display: none;
+
+      .dataBlock {
+        display: none;
+      }
+      .dataModifyBlock {
+        display: none;
+      }
+    }
+
+    .block-active {
+      display: block !important;
+    }
   }
 
   .userMenu {
     position: fixed;
-    width: 15%;
+    width: 20%;
     height: 92vh;
     top: 8vh;
-    left: 0;
-    opacity: 1;
+    left: -20%;
+    opacity: 0;
 
     overflow: hidden;
 
     background-color: setcolor("gray", "light1");
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 
-    padding: $lg $sm;
+    padding: $md $sm;
 
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 
-    .nav {
-      margin-top: $md;
+    @include screen-sm {
+      display: flex;
+    }
 
+    .nav {
       &__title {
+        margin-bottom: $md;
+        padding-left: $sm;
         & > p {
           @extend .u-f--h3, .u-f--bold;
-          color: setcolor('black', 'dark1');
+          color: setcolor("black", "dark1");
           margin-bottom: rem(10);
         }
 
@@ -60,7 +86,7 @@
             height: rem(18);
           }
           p {
-            color: setcolor('secondary');
+            color: setcolor("secondary");
             @extend .u-f--bold;
           }
         }
@@ -72,9 +98,19 @@
         align-items: center;
 
         padding: $sm $sm;
-        border-bottom: 1px solid setcolor('gray', 'light2');
+        border-bottom: 1px solid setcolor("gray", "light2");
 
         cursor: pointer;
+
+        &.nav-active {
+          p {
+            color: setcolor("secondary");
+          }
+
+          svg, svg g, svg path, svg g path, svg g circle {
+            stroke: setcolor("secondary");
+          }
+        }
 
         &--left {
           display: flex;
@@ -83,7 +119,7 @@
           p {
             margin: 0;
             margin-left: $sm;
-            color: setcolor('black', 'dark1');
+            color: setcolor("black", "dark1");
             @extend .u-f--bold;
           }
         }
@@ -95,6 +131,130 @@
 
         margin-top: $sm;
 
+        button {
+          height: rem(45);
+          padding: 0;
+          width: 90%;
+          box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+        }
+      }
+    }
+
+    .userMenu__session {
+      display: flex;
+      align-items: center;
+
+      margin-left: $sm;
+
+      span {
+        color: setcolor('black', 'dark1');
+        margin-left: $sm;
+      }
+    }
+  }
+
+  .userMenuMobile {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+
+    height: 94vh;
+    width: 80vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    opacity: 0;
+
+    background-color: setcolor("gray", "light1");
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+
+    padding: $sm;
+
+    @include screen-sm {
+      display: none;
+    }
+
+    .userMenuMobile__tab {
+      position: absolute;
+      top: $sm;
+      left: rem(-40);
+
+      height: rem(40);
+      width: rem(40);
+
+      border-radius: 1000px 0 0 1000px;
+      background-color: setcolor("gray", "light1");
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        transform: rotate(90deg);
+      }
+    }
+
+    .nav {
+      &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        padding: 0 $sm $md;
+
+        &--left {
+          & > p {
+            @extend .u-f--h3, .u-f--bold;
+            color: setcolor("black", "dark1");
+            margin-bottom: rem(10);
+          }
+
+          .nav__title-verify {
+            display: flex;
+            img {
+              margin-right: rem(10);
+              width: rem(18);
+              height: rem(18);
+            }
+            p {
+              color: setcolor("secondary");
+              @extend .u-f--bold;
+            }
+          }
+        }
+      }
+
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: $sm $sm;
+        border-bottom: 1px solid setcolor("gray", "light2");
+
+        cursor: pointer;
+
+        &--left {
+          display: flex;
+          align-items: center;
+
+          p {
+            margin: 0;
+            margin-left: $sm;
+            color: setcolor("black", "dark1");
+            @extend .u-f--bold;
+          }
+        }
+      }
+
+      &__btn {
+        display: flex;
+        justify-content: center;
+
+        margin-top: $sm;
 
         button {
           height: rem(45);
