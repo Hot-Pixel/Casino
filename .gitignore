@@ -115,7 +115,7 @@ out
 .vscode
 
 public/*
-dist/*
+dist
 
 # yarn v2
 .yarn/cache
