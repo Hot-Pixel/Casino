@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
-  <g id="icon-minscreen" transform="translate(1 1)">
-    <path id="Trazado_5069" data-name="Trazado 5069" d="M5,11.923h6.154a.769.769,0,0,0,.769-.769V5" transform="translate(-5 -5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Trazado_5070" data-name="Trazado 5070" d="M90,5v6.154a.769.769,0,0,0,.769.769h6.154" transform="translate(-76.923 -5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Trazado_5071" data-name="Trazado 5071" d="M96.923,90H90.769a.769.769,0,0,0-.769.769v6.154" transform="translate(-76.923 -76.923)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Trazado_5072" data-name="Trazado 5072" d="M11.923,96.923V90.769A.769.769,0,0,0,11.154,90H5" transform="translate(-5 -76.923)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  </g>
-</svg>

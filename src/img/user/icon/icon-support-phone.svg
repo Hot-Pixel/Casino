@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <g id="icon-support-phone" transform="translate(-7.5)">
-    <circle id="Elipse_778" data-name="Elipse 778" cx="15" cy="15" r="15" transform="translate(7.5)" fill="#13171d" opacity="0.2"/>
-    <circle id="Elipse_779" data-name="Elipse 779" cx="11" cy="11" r="11" transform="translate(11.5 4)" fill="#fff"/>
-    <path id="Trazado_5483" data-name="Trazado 5483" d="M7.617,11.512a2.938,2.938,0,0,0,3.685-.405l.415-.405a.995.995,0,0,0,0-1.391L9.957,7.57a.986.986,0,0,0-1.382,0,.995.995,0,0,1-1.391,0L4.421,4.806a.976.976,0,0,1,0-1.391.986.986,0,0,0,0-1.382L2.671.283a.995.995,0,0,0-1.391,0L.874.7A2.938,2.938,0,0,0,.469,4.383a26.658,26.658,0,0,0,7.148,7.13" transform="translate(16.5 9.009)" fill="#00d1bc"/>
-  </g>
-</svg>

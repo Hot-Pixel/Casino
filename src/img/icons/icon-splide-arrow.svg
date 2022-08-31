@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
-  <g id="icon-splide-arrow" transform="translate(28 28) rotate(180)">
-    <path id="indicator-left__grey-circle__big" d="M28,14A14,14,0,1,0,14,28,14,14,0,0,0,28,14ZM10.58,21.42a2,2,0,0,1-.012-2.828l.012-.012,4.24-4.22a.5.5,0,0,0,.013-.707l-.013-.013L10.58,9.42a2.008,2.008,0,0,1,2.84-2.84l6,6a2,2,0,0,1,.012,2.828l-.012.012-6,6a2,2,0,0,1-2.828.012Z" fill="#707070"/>
-  </g>
-</svg>

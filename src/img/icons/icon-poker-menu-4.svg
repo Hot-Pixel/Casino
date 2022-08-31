@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
-  <g id="icon-poker-menu-4" transform="translate(-27.571 -27.571)" opacity="0.6">
-    <line id="Línea_211" data-name="Línea 211" y2="7.385" transform="translate(40.571 45.186)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_212" data-name="Línea 212" x2="12.923" transform="translate(34.109 52.571)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Trazado_5476" data-name="Trazado 5476" d="M34.109,85.714H28.571v3.692a5.538,5.538,0,0,0,5.538,5.538Z" transform="translate(0 -55.297)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Trazado_5477" data-name="Trazado 5477" d="M600,85.714h5.538v3.692A5.538,5.538,0,0,1,600,94.945Z" transform="translate(-552.967 -55.297)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <path id="Trazado_5478" data-name="Trazado 5478" d="M200,28.571V38.725a6.462,6.462,0,1,0,12.923,0V28.571Z" transform="translate(-165.891)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  </g>
-</svg>

@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
-  <g id="icon-wallet-plus" transform="translate(0.339)">
-    <circle id="Elipse_752" data-name="Elipse 752" cx="15" cy="15" r="15" transform="translate(-0.339)" fill="#13171d" opacity="0.2"/>
-    <path id="Trazado_44" data-name="Trazado 44" d="M10,20A10,10,0,1,0,0,10,10,10,0,0,0,10,20ZM5,9.167H8.958a.208.208,0,0,0,.208-.208V5a.833.833,0,1,1,1.667,0V8.958a.208.208,0,0,0,.208.208H15a.833.833,0,1,1,0,1.667H11.042a.208.208,0,0,0-.208.208V15a.833.833,0,1,1-1.667,0V11.042a.208.208,0,0,0-.208-.208H5A.833.833,0,1,1,5,9.167Z" transform="translate(5 5)" fill="#fff"/>
-  </g>
-</svg>

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
-  <g id="icon-download-windows" transform="translate(-360 6.017)">
-    <g id="Elipse_766" data-name="Elipse 766" transform="translate(365 -1.017)" fill="#fff" stroke="rgba(15,19,25,0.2)" stroke-width="5">
-      <circle cx="19.5" cy="19.5" r="19.5" stroke="none"/>
-      <circle cx="19.5" cy="19.5" r="22" fill="none"/>
-    </g>
-    <path id="Trazado_5386" data-name="Trazado 5386" d="M18.723,7.446,11.5.243a.821.821,0,0,0-1.4.583V3.933a.205.205,0,0,1-.205.205H2.821A.821.821,0,0,0,2,4.96v6.107a.821.821,0,0,0,.821.821H9.886a.205.205,0,0,1,.205.205V15.2a.821.821,0,0,0,1.4.583l7.227-7.228a.821.821,0,0,0,0-1.158Z" transform="translate(392.513 8.002) rotate(90)" fill="#ff293e"/>
-  </g>
-</svg>

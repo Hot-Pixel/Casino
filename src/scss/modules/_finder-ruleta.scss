@@ -1,7 +1,0 @@
-@use "../settings" as *;
-@use "../helper" as *;
-@use "../tools" as *;
-
-.ruletaFinder {
-  @extend %padding_horizontal_main, %margin_top_medium;
-}

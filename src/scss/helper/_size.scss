@@ -1,6 +1,0 @@
-// HELPERS / SIZES px to rem
-@use "sass:math";
-
-@function rem($size) {
-  @return #{math.div($size, 16)}rem;
-}

@@ -1,7 +1,0 @@
-@use "../settings" as *;
-@use "../helper" as *;
-@use "../tools" as *;
-
-.m-slots-finder {
-    @extend %margin_horizontal_main;
-}
