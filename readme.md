@@ -2,4 +2,4 @@
 
 1. `npm install`
 2. `npm run dev`
-3. En un terminal nuevo `npm run watch`,
+3. En un terminal nuevo `npm run watch`
