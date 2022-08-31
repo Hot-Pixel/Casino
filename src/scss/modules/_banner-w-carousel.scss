@@ -1,0 +1,161 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.bannerCarousel {
+
+  @extend %margin_top_large;
+
+  background-image: url('../img/img-stars-bg.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .splide {
+    @extend %margin_horizontal_main;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: rem(5);
+    // margin-bottom: rem(25);
+    overflow: hidden;
+
+    @include screen-sm {
+      flex-direction: row;
+    }
+
+    &-wrapper {
+      width: 100%;
+
+      @include screen-sm {
+        width: 50%;
+        height: rem(470);
+      }
+
+      img {
+        object-fit: contain;
+        object-position: right;
+        width: auto;
+        height: 100%;
+      }
+
+      p:first-of-type {
+        @extend .u-f--h1, .u-f--bold;
+        text-align: center;
+
+        @include screen-sm {
+          text-align: left;
+        }
+      }
+
+      p:last-of-type {
+        @extend .u-f--h3;
+        display: none;
+
+        @include screen-sm {
+          display: inline-block;
+          font-weight: 700;
+          line-height: 1.2em;
+          color: setcolor("gray");
+        }
+      }
+    }
+
+    &--left {
+      position: relative;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      @include screen-sm {
+        padding: $lg;
+        background-color: setcolor("black");
+        align-items: flex-start;
+      }
+
+      & > div {
+        padding: $lg rem(10);
+        background-color: setcolor("black");
+        overflow: hidden;
+        border-radius: 0 0 5px 5px;
+        margin-bottom: 23px;
+
+        @include screen-sm {
+          border-radius: 0;
+        }
+      }
+
+      button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        height: rem(45);
+        padding: 0 rem(20);
+
+        box-shadow: none;
+
+        overflow: overlay;
+
+        @include screen-sm {
+          position: static;
+          transform: translateX(0);
+          box-shadow: 0px 0px rem(20) 0px setcolor("primary");
+        }
+
+        img {
+          height: rem(14);
+          width: rem(14);
+        }
+      }
+    }
+
+    &--right {
+      height: rem(250);
+      background-color: setcolor("black");
+
+      @include screen-sm {
+        height: rem(470);
+      }
+    }
+  }
+
+  .splide__arrow {
+    top: calc(100% - 48px);
+
+    @include screen-sm {
+      top: 50%;
+    }
+
+    img {
+      height: $lg;
+      width: $lg;
+
+      @include screen-sm {
+        height: rem(40);
+        width: rem(40);
+      }
+    }
+
+    &--prev {
+      left: 10%;
+
+      @include screen-sm {
+        left: rem(-15);
+      }
+    }
+
+    &--next {
+      right: 10%;
+
+      @include screen-sm {
+        right: rem(-15);
+      }
+    }
+  }
+}

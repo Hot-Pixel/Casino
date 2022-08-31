@@ -1,0 +1,79 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.blockPromo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &__bg {
+    max-width: 60%;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    position: relative;
+    top: rem(-60);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: $xl;
+      height: $xl;
+      margin-bottom: rem(40);
+    }
+
+    p {
+      @extend .u-f--h1, .u-f--bold;
+    }
+  }
+
+  &__features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      padding: 0 $lg;
+
+      &:nth-of-type(2) {
+        border-left: 1px solid setcolor("primary");
+        border-right: 1px solid setcolor("primary");
+      }
+
+      span {
+        @extend .u-f--h4, .u-f--bold;
+        color: setcolor("primary");
+        margin: 0;
+        padding-left: rem(10);
+      }
+    }
+  }
+
+  &__tc {
+    @extend %margin_top_small;
+    max-width: 50%;
+
+    p {
+      color: #a0a2a4;
+    }
+
+    button {
+      height: $xl;
+      width: 100%;
+      margin: $lg 0;
+    }
+  }
+}

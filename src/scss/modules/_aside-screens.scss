@@ -1,0 +1,108 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.screens {
+  display: flex;
+
+  .screen {
+    width: 70%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  aside {
+    width: 30%;
+    padding: $md $lg;
+
+    .aside__title {
+        @extend .u-f--h2, .u-f--bold;
+      }
+  }
+
+  .iconsScreen {
+
+    &__grid {
+      margin-top: $md;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: $md;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        margin-bottom: $sm;
+      }
+
+      p {
+        text-align: center;
+        margin: 0;
+
+        &:first-of-type {
+          @extend .u-f--h4, .u-f--bold;
+          color: white;
+          padding-bottom: rem(5);
+        }
+
+        &:last-of-type {
+          color: #a4a5a8;
+        }
+      }
+    }
+  }
+
+  .tableScreen {
+    &__grid {
+      display: flex;
+      flex-direction: column;
+
+      margin-top: $md;
+      border-radius: rem(5);
+      overflow: hidden;
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: 2fr 2fr 1fr;
+
+      padding: $sm;
+
+      &:nth-of-type(odd) {
+        background-color: #282b31;
+      }
+
+      &:nth-of-type(even) {
+        background-color: #23272d;
+      }
+
+      &:first-of-type {
+        background-color: #30343a;
+      }
+
+      p {
+        margin: 0;
+
+        &:nth-child(2), &:nth-child(3) {
+          text-align: right;
+          justify-self: flex-end;
+        }
+      }
+    }
+  }
+
+  .termsScreen {
+    margin-top: $md;
+
+    p {
+      color: #a4a5a8;
+    }
+  }
+}

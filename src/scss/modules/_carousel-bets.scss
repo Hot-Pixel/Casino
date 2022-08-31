@@ -1,0 +1,94 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+// Layout
+
+.carouselBets {
+  @extend %margin_horizontal_main, %margin_top_medium;
+
+  &__carousel {
+    .card {
+      display: grid;
+      grid-template-rows: rem(200) 1fr;
+      margin-bottom: $md;
+
+      &__image {
+        overflow: hidden;
+        height: rem(215);
+        border-radius: rem(5) rem(5) 0 0;
+
+        img {
+          object-fit: cover;
+          height: 100%;
+        }
+      }
+
+      &__content {
+        position: relative;
+
+        text-align: left;
+        background-color: setcolor("black", "dark2");
+        padding: $md $md $xl;
+        border-radius: 0 0 rem(5) rem(5);
+
+        &-title {
+          margin-bottom: 0;
+          @extend .u-f--h5, .u-f--bold;
+        }
+
+        &-subtitle {
+          @extend .u-f--h5, .u-f--bold;
+          color: #a4a6a8;
+        }
+
+        &-desc {
+          color: #a4a6a8;
+
+          &:not(:last-child) {
+            margin-bottom: 0;
+          }
+          &:last-child {
+            margin-bottom: $lg;
+          }
+        }
+      }
+
+      .card__footer {
+        position: absolute;
+        bottom: -$md;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &-columns {
+          display: flex;
+          column-gap: rem(10);
+          justify-content: center;
+        }
+
+        &-column {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          span {
+            display: block;
+            margin-bottom: rem(5);
+          }
+
+          button {
+            @extend .u-f--h5;
+            padding: 8px 15px;
+
+            @include screen-sm {
+              padding: 10px 18px;
+            }
+            @include screen-md {
+              padding: 12px 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

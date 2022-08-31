@@ -1,0 +1,120 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.gridRuleta {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  width: 100%;
+
+  row-gap: rem(10);
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(20);
+  }
+  @include screen-sm {
+    grid-template-columns: repeat(3, 1fr);
+    gap: $lg;
+  }
+
+  .card {
+    &__img {
+      width: 100%;
+
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+
+
+    &__content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: setcolor("black", "dark4");
+
+      border-radius: 0 0 rem(5) rem(5);
+
+      @include tablet {
+        border-radius: 0 0 rem(10) rem(10);
+      }
+
+      &--top {
+        width: 100%;
+        padding: rem(10) rem(20);
+        border-bottom: 1px solid setcolor("black", "dark2");
+
+        display: flex;
+        justify-content: space-between;
+
+        p:first-of-type {
+          @extend .u-f--h2, .u-f--bold;
+        }
+        p:last-of-type {
+          margin: 0;
+        }
+
+        svg {
+          transition: all 0.4s ease;
+          align-self: flex-start;
+
+          &.fav path {
+            transition: all 0.4s ease;
+            fill: setcolor('primary');
+          }
+        }
+      }
+
+      &--bottom {
+        width: 100%;
+        padding: rem(10) rem(20);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & > div:first-of-type {
+          display: flex;
+          p {
+            margin-right: rem(5);
+
+            @include tablet {
+              margin-right: rem(10);
+            }
+          }
+        }
+
+        & > div:last-of-type {
+            display: flex;
+            p, span {
+                @extend .u-f--bold;
+                color: #a7a9ab;
+                margin: 0;
+            }
+
+            p:first-of-type {
+                margin-right: $sm;
+            }
+
+            p {
+                display: flex;
+                align-items: center;
+
+                img {
+                    height: rem(14);
+                }
+
+                span {
+                    margin-left: rem(5);
+                }
+            }
+        }
+      }
+    }
+  }
+}

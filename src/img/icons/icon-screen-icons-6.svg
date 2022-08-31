@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="icon-screen-icons-6" transform="translate(-7)">
+    <g id="Elipse_718" data-name="Elipse 718" transform="translate(7)" fill="none" stroke="#ff293e" stroke-width="2">
+      <circle cx="40" cy="40" r="40" stroke="none"/>
+      <circle cx="40" cy="40" r="39" fill="none"/>
+    </g>
+    <path id="Trazado_5080" data-name="Trazado 5080" d="M12.495,24.99A12.495,12.495,0,1,0,0,12.495,12.495,12.495,0,0,0,12.495,24.99ZM7.07,10.714l4.686-4.686a1.041,1.041,0,0,1,1.473-.006l.006.006,4.686,4.686a1.042,1.042,0,0,1-1.479,1.468L13.984,9.725a.292.292,0,0,0-.292-.062.271.271,0,0,0-.156.25v8.83a1.041,1.041,0,0,1-2.082,0V9.913a.271.271,0,0,0-.156-.25.292.292,0,0,0-.292.062L8.549,12.183A1.042,1.042,0,0,1,7.07,10.714Z" transform="translate(34.505 27.505)" fill="#ff293e"/>
+  </g>
+</svg>

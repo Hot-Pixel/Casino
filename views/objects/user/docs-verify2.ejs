@@ -1,0 +1,48 @@
+<main class="docsVerify">
+    <section class="user__title">
+        <img src="img/user/icon/icon-menu-docs.svg" alt="">
+        <p>Mis Documentos</p>
+    </section>
+    <section class="docsVerify__content">
+        <div class="docsVerify__header user__card docsVerify2__header">
+            <div class="docsVerify__header-icon">
+                <img src="img/user/icon/icon-docs-check-light.svg" alt="">
+            </div>
+            <div class="docsVerify__header-text">
+                <p>Verificación manual</p>
+                <p>Vamos a verificar tu cuenta en dos sencillos pasos. Sólo debes enviarnos tu documentación.</p>
+            </div>
+        </div>
+        <form action="">
+            <div class="idForm user__card">
+                <div class="idForm__select">
+                    <p>Tipo de documento:</p>
+                    <div class="idForm__radio">
+                        <%- include ('../../components/radio') %>
+                        <p>DNI</p>
+                    </div>
+                    <div class="idForm__radio">
+                        <%- include ('../../components/radio') %>
+                        <p>Pasaporte</p>
+                    </div>
+                    <div class="idForm__radio">
+                        <%- include ('../../components/radio') %>
+                        <p>Lorem Ipsum</p>
+                    </div>
+                </div>
+                <div class="idForm__upload">
+                    <p>Adjunta el documento</p>
+                    <p>(Máximo 5Mb)</p>
+                    <button class="btn__blue">SELECCIONAR ARCHIVO</button>
+                </div>
+                <div class="idForm__message">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                </div>
+            </div>
+            <button class="btn__blue idForm__submit" type="submit">
+                <img src="img/user/icon/icon-docs-send-btn.svg" alt="">
+                <span>ENVIAR</span>
+            </button>
+        </form>
+    </section>
+</main>

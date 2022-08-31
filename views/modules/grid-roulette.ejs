@@ -1,0 +1,24 @@
+<section class="gridRoulette">
+	<% data.forEach( e=> { %>
+		<article class="card">
+			<div class="card__image">
+				<img src="img/images/<%= e.img %>" alt="">
+			</div>
+			<div class="card__content">
+				<p class="card__content-title">
+					<%= e.title %>
+				</p>
+				<p class="card__content-subtitle">
+					<%= e.subtitle %>
+				</p>
+				<p class="card__content-desc">
+					<%= e.body %>
+				</p>
+				<button class="card__footer btn__red">
+					<span>¡JUEGA AHORA!</span>
+					<img src="img/icons/icon-btn-arrow.svg" alt="">
+				</button>
+			</div>
+		</article>
+		<% }) %>
+</section>

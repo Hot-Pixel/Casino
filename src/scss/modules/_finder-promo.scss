@@ -1,0 +1,16 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.finder__promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @extend %margin_horizontal_main;
+
+    .grid__promo {
+        @extend %margin_top_small;
+        @extend %margin_bottom_large;
+    }
+}

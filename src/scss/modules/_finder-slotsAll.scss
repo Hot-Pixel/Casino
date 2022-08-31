@@ -1,0 +1,19 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.slotsFinder {
+  @extend %margin_horizontal_main;
+  @extend %margin_top_medium;
+
+  display: flex;
+
+  .filterSlots {
+    width: 25%;
+  }
+  .gridGames {
+    width: 75%;
+    margin-left: $md;
+  }
+}
+

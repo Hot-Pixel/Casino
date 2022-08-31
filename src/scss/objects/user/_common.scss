@@ -1,0 +1,112 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+//COMMON CARD
+.user__card {
+  padding: $sm;
+
+  border-radius: rem(10);
+  box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+  background-color: setcolor("gray", "light1");
+
+  &-title {
+    @extend .u-f--h2, .u-f--bold;
+    color: setcolor("black", "dark1");
+    padding-bottom: rem(10);
+  }
+}
+
+.user__title {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: rem(28);
+    width: rem(26);
+    margin-right: $sm;
+
+    @include screen-sm {
+      height: rem(38);
+      width: rem(36);
+    }
+  }
+
+  p {
+    @extend .u-f--h1, .u-f--bold;
+    color: setcolor("black", "dark1");
+  }
+}
+
+.user__input {
+  height: rem(45);
+  color: #868b92;
+  border-radius: rem(100);
+
+  &::placeholder {
+    color: #868b92;
+  }
+
+  &--ghost {
+    background-color: transparent;
+    border: 1px solid #d4d6d9;
+  }
+}
+
+.bar {
+  &__ammount {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: $sm;
+
+    p {
+      @extend .u-f--bold;
+      color: setcolor("black", "dark1");
+    }
+    p:last-of-type {
+      @extend .u-f--h3;
+    }
+  }
+
+  &__progress {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: rem(25);
+
+    background-color: #bcc0c4;
+    border-radius: rem(30);
+    overflow: hidden;
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+
+      border-radius: rem(30);
+    }
+
+    &--gradient {
+      z-index: 3;
+      width: 80%;
+      background: linear-gradient(to right, #2074fe, setcolor("secondary"));
+    }
+    &--dark {
+      z-index: 2;
+      width: 90%;
+      background-color: #868b92;
+    }
+    p {
+      @extend .u-f--bold;
+
+      position: absolute;
+      z-index: 5;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 3%;
+    }
+  }
+}

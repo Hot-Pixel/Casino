@@ -1,0 +1,42 @@
+// SETTINGS
+// variables y config
+@use '../settings';
+
+// TOOLS
+// Mixins, extend and functions
+@use '../tools';
+
+// GENERIC
+// Resets, normalize y genericos
+@use '../base';
+
+// COMPONENTS
+// Piezas de UI
+@use '../components/icon__title';
+@use '../components/header__user';
+@use '../components/svg-icon';
+@use '../components/buttons';
+@use '../components/breadcrumbs';
+@use '../components/splide-arrows';
+@use '../components/ruleta-result';
+@use '../components/gradients';
+@use '../components/header-module';
+@use '../components/deposits';
+@use '../components/user';
+@use '../components/hover';
+
+// OBJECTS
+// @use '../objects/menu-poker';
+
+//LAYOUT
+@use '../layout/header';
+@use '../layout/footer';
+
+
+// MODULES
+@use '../modules/_grid-three-cols';
+
+
+
+// HELPER
+@use '../helper';

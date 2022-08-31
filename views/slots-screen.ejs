@@ -1,0 +1,21 @@
+<%- include ('layout/head', { title: "Slots Screen" , css: "screens", header: "has-header" }) %>
+
+<%- include ('layout/header') %>
+
+<main class="has-header">
+
+    <%- include ('modules/screens-bar') %>
+
+    <section class="screens">
+        <section class="screen">
+            <img src="img/images/img-screen.jpg" alt="">
+        </section>
+
+        <%- include ('modules/aside-slots') %>
+    </section>
+
+    <%- include ('layout/footer') %>
+
+    <%- include ('layout/scripts', { script: 'home' }) %>
+
+</main>

@@ -1,0 +1,56 @@
+<main class="jackpot">
+	<section class="jackpot__text">
+		<p class="u-f--h1 u-f--bold">1.343.674€</p>
+		<p class="u-f--h3 u-f--bold">en Jackpots</p>
+		<p class="u-f--h3 u-w--l">Siempre te recomendamos que disfrutes de las tragaperras que más te gusten
+			como la gran forma de ocio que son.</p>
+		<a href="#" class="u-btn_no_button--red">
+			<span>VER TODOS</span>
+			<img src="img/icons/icon-arrow-red.svg" alt="">
+		</a>
+	</section>
+	<section class="jackpot__carousel splide arrows-right">
+		<div class="splide__arrows splideArrows--right">
+            <button class="splide__arrow splide__arrow--prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path id="indicator-left__grey-circle__big"
+                        d="M28,14A14,14,0,1,0,14,28,14,14,0,0,0,28,14ZM10.58,21.42a2,2,0,0,1-.012-2.828l.012-.012,4.24-4.22a.5.5,0,0,0,.013-.707l-.013-.013L10.58,9.42a2.008,2.008,0,0,1,2.84-2.84l6,6a2,2,0,0,1,.012,2.828l-.012.012-6,6a2,2,0,0,1-2.828.012Z"
+                        fill="#8e9296" />
+                </svg>
+
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path id="indicator-left__grey-circle__big"
+                        d="M28,14A14,14,0,1,0,14,28,14,14,0,0,0,28,14ZM10.58,21.42a2,2,0,0,1-.012-2.828l.012-.012,4.24-4.22a.5.5,0,0,0,.013-.707l-.013-.013L10.58,9.42a2.008,2.008,0,0,1,2.84-2.84l6,6a2,2,0,0,1,.012,2.828l-.012.012-6,6a2,2,0,0,1-2.828.012Z"
+                        fill="#8e9296" />
+                </svg>
+            </button>
+        </div>
+		<div class="splide__track">
+			<ul class="splide__list">
+				<% data.forEach( e=> { %>
+					<li class="splide__slide">
+						<article class="jackpot__card">
+							<div class="jackpot__card-image">
+								<img src="img/images/<%= e.img %>" alt="">
+							</div>
+							<div class="jackpot__card-content">
+								<p>
+									<%= e.title %>
+								</p>
+								<p>
+									<%= e.total %>
+								</p>
+								<button class="btn__red">
+									<span>¡JUEGA AHORA!</span>
+									<img src="img/icons/icon-btn-arrow.svg" alt="">
+								</button>
+							</div>
+						</article>
+					</li>
+				<% }) %>
+			</ul>
+		</div>
+	</section>
+</main>

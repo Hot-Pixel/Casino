@@ -1,0 +1,60 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.gridGames {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(5);
+  height: fit-content;
+
+  @include screen-sm {
+    grid-template-columns: repeat(5, 1fr);
+    gap: $sm;
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+
+    & > img {
+      position: relative;
+      top: 0;
+      right: 0;
+      z-index: 0;
+
+      border-radius: 7px;
+      overflow: hidden;
+
+      width: 100%;
+      object-fit: contain;
+    }
+
+    &-favourite {
+      cursor: pointer;
+
+      position: absolute;
+      top: 7%;
+      right: 7%;
+      z-index: 10;
+
+      &.fav {
+
+        svg g path {
+          fill: setcolor("primary");
+          opacity: 1;
+        }
+      }
+    }
+
+    &:hover {
+      .gridHover {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}

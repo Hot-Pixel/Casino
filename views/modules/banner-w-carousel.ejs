@@ -1,0 +1,37 @@
+<section class="bannerCarousel">
+    <div class="splide">
+        <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+                <img src="img/icons/icon-slider-arrow-left.svg" alt="">
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <img src="img/icons/icon-slider-arrow-right.svg" alt="">
+            </button>
+        </div>
+        <div class="bannerCarousel__slider splide__track">
+            <ul class="splide__list">
+                <% data.forEach( e => { %>
+                    <li class="bannerCarousel__slide splide__slide">
+                        <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
+                            <div>
+                                <p><%= e.title %></p>
+                                <p><%= e.body %></p>
+                            </div>
+                            <button class="btn__red">
+                                <span>¡JUEGA AHORA!</span>
+                                <img src="img/icons/icon-btn-arrow.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
+                            <picture>
+                                <source media="(min-width: 992px)" srcset="img/images/img-banner-home.png">
+                                <img src="img/images/img-banner-home-mobile.png" alt="">
+                            </picture>
+                        </div>
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+    </div>
+
+</section>

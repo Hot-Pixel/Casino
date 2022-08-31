@@ -1,0 +1,16 @@
+@use 'settings' as *;
+@use 'helper' as *;
+
+#wrapper {
+
+    margin-top: rem(70);
+
+    @include tablet {
+        margin-top: rem(80);
+    }
+
+    @include tablet-h {
+        margin-top: $xl;
+    }
+
+}

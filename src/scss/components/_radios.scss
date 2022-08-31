@@ -1,0 +1,65 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.radioBtn {
+  position: relative;
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    appearance: none;
+    margin: 0;
+    background-color: transparent;
+
+    height: rem(32);
+    width: rem(32);
+  }
+
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    border: 2px solid #868b92;
+    background-color: transparent;
+    border-radius: 1000px;
+
+    height: rem(32);
+    width: rem(32);
+
+    transition: all 0.3s ease;
+
+    span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+
+      border: none;
+      background-color: #868b92;
+      border-radius: 1000px;
+
+      height: rem(16);
+      width: rem(16);
+
+      transition: all 0.3s ease;
+    }
+  }
+
+  input:checked ~ .container {
+    transition: all 0.3s ease;
+    border: 2px solid setcolor("black", "dark1");
+
+    span {
+      transition: all 0.3s ease;
+      border: 4px solid setcolor("black", "dark1");
+      background-color: transparent;
+    }
+  }
+}

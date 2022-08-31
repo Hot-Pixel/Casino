@@ -1,0 +1,50 @@
+// SETTINGS
+// variables y config
+@use '../settings';
+
+// TOOLS
+// Mixins, extend and functions
+@use '../tools';
+
+// GENERIC
+// Resets, normalize y genericos
+@use '../base';
+
+// COMPONENTS
+// Piezas de UI
+@use '../components/icon__title';
+@use '../components/header__user';
+@use '../components/svg-icon';
+@use '../components/buttons';
+@use '../components/breadcrumbs';
+@use '../components/splide-arrows';
+@use '../components/gradients';
+@use '../components/header-module';
+@use '../components/deposits';
+@use '../components/user';
+@use '../components/hover';
+
+// OBJECTS
+// Contenedores, wrappers o layouts
+@use '../objects/card';
+
+//LAYOUT
+@use '../layout/header';
+@use '../layout/footer';
+@use '../layout/splide';
+
+// MODULES
+@use '../modules/banner-w-carousel';
+@use '../modules/search-bar';
+@use '../modules/grid-half';
+@use '../modules/icons-red';
+@use '../modules/image-text';
+@use '../modules/grid-roulette';
+@use '../modules/carousel-bets';
+@use '../modules/carousel-jackpot';
+@use '../modules/text-block';
+@use '../modules/grid-full';
+
+// HELPER
+// Clases de ayuda, textos, colores y demás
+@use '../helper';

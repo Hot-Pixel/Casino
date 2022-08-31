@@ -1,0 +1,110 @@
+@use '../settings' as *;
+@use '../helper' as *;
+
+// html
+html {
+    overflow-x: hidden !important;
+}
+
+// body
+body {
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    font-family: $body_font_family;
+    font-weight: $body_font_weight;
+    font-size: $body_font-size;
+
+    background: $body_bg;
+    color: $body_color;
+
+    @include tablet {
+        font-size: $body_font_size_ipad;
+    }
+
+    @include tablet-h {
+        font-size: $body_font_size_desktop;
+    }
+
+}
+
+// paragrapgh
+p, span, button, textarea, select {
+    @extend .u-f--p;
+    font-family: $body_font_family;
+    font-weight: $body_font_weight;
+
+    color: $body_color;
+
+    margin-bottom: 0;
+}
+
+input {
+    @extend .u-f--p;
+    padding: $inputs_padding_desktop;
+    font-weight: $inputs_font_weight;
+    font-family: $inputs_font_family;
+    border-radius: $inputs_border_radius;
+
+    &::placeholder {
+        font-weight: $inputs_font_weight;
+    }
+}
+
+// strong
+strong {
+    font-weight: setfont('weight', 'regular');
+}
+
+// headings
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: $h1_margin;
+}
+
+h2 {
+    margin-top: $h2_margin;
+    margin-bottom: $h2_margin;
+    font-size: rem(24);
+    @include tablet {
+        font-size: rem(32);
+    }
+    @include tablet {
+        font-size: rem(42);
+    }
+}
+
+h3 {
+    margin-top: $h3_margin;
+    margin-bottom: $h3_margin;
+    font-size: rem(20);
+    @include tablet {
+        font-size: rem(24);
+    }
+    @include tablet {
+        font-size: rem(30);
+    }
+}
+
+h4 {
+    margin-top: $h4_margin;
+    margin-bottom: $h4_margin;
+    font-size: rem(20);
+    @include tablet {
+        font-size: rem(24);
+    }
+    @include tablet {
+        font-size: rem(30);
+    }
+}
+
+h5 {
+    margin-top: $h5_margin;
+    margin-bottom: $h5_margin;
+}

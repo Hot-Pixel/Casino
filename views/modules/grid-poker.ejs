@@ -1,0 +1,100 @@
+<%
+const data = [
+    {
+        img: "1",
+        title: "Poker in",
+    },
+    {
+        img: "2",
+        title: "Poker Sin Pausa",
+    },
+    {
+        img: "3",
+        title: "Deepstack",
+    },
+    {
+        img: "4",
+        title: "Friday Madness",
+    },
+    {
+        img: "5",
+        title: "Bounty Fever",
+    },
+    {
+        img: "6",
+        title: "Weekend Poker",
+    },
+    {
+        img: "1",
+        title: "MitiKO Poker",
+    },
+    {
+        img: "2",
+        title: "Single Score",
+    },
+    {
+        img: "3",
+        title: "Petit Holdem",
+    },
+    {
+        img: "4",
+        title: "Turbo Low Cost",
+    },
+    {
+        img: "5",
+        title: "All In One 2RB 1A",
+    },
+    {
+        img: "6",
+        title: "Bounty Gamblers",
+    },
+    {
+        img: "1",
+        title: "1UP 1R+1A",
+    },
+    {
+        img: "2",
+        title: "Omaha Madness",
+    },
+    {
+        img: "3",
+        title: "Ace Tarraco",
+    },
+    {
+        img: "4",
+        title: "Masters",
+    },
+]
+%>
+
+<section class="gridPoker">
+    <div class="gridPoker__grid">
+        <% data.forEach( e => { %>
+            <div class="card">
+                <div class="card__img">
+                    <img src="img/images/img-grid-poker-<%= e.img %>.png" alt="">
+                </div>
+                <div class="card__content">
+                    <p class="card__content-title"><%= e.title %></p>
+                    <div class="card__content-table">
+                        <div class="card__content-row">
+                            <p><span>Lunes</span><span>17:00h</span></p>
+                            <p><span>Buy-in</span><span>20€</span></p>
+                        </div>
+                        <hr>
+                        <div class="card__content-row">
+                            <p><span>Lunes</span><span>17:00h</span></p>
+                            <p><span>Buy-in</span><span>20€</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+    <div class="gridPoker__btn">
+        <button class="btn__red btn__red--glow">
+            <span>JUGAR AHORA</span>
+            <img src="img/icons/icon-round-arrow.svg" alt="">
+        </button>
+    </div>
+</section>

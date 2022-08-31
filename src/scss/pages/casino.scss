@@ -1,0 +1,34 @@
+// SETTINGS
+@use '../settings';
+
+// TOOLS
+@use '../tools';
+
+// GENERIC
+@use '../base';
+
+// COMPONENTS
+@use '../components/icon__title';
+@use '../components/header__user';
+@use '../components/svg-icon';
+@use '../components/buttons';
+@use '../components/breadcrumbs';
+@use '../components/deposits';
+@use '../components/user';
+@use '../components/hover';
+
+// OBJECTS
+@use '../objects/filter-base';
+@use '../objects/grid-games';
+
+//LAYOUT
+@use '../layout/header';
+@use '../layout/footer';
+
+// MODULES
+@use '../modules/banner';
+@use '../modules/finder-casino';
+@use '../modules/text-block';
+
+// HELPER
+@use '../helper';

@@ -1,0 +1,47 @@
+@use '../settings' as *;
+@use '../helper' as *;
+@use '../tools' as *;
+
+
+.o-card {
+	display: flex;
+	flex-direction: column;
+
+
+	&--image {
+		border-radius: rem(5) rem(5) 0 0;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+
+
+	&--content {
+		flex: 1;
+		padding: 32px 28px;
+		text-align: center;
+		background-color: setcolor('black','base');
+		border-radius: 0 0 rem(5) rem(5);
+	}
+
+	&--title {
+		@extend .u-f--h2, .u-f--bold;
+	}
+
+	&--subtitle {
+		@extend .u-f--h4, .u-f--bold, .u-c--w-l;
+	}
+
+	&--desc {
+		@extend .u-f--h5, .u-c--w-l;
+	}
+
+
+	&--footer {
+		margin-top: -1.6em;
+		text-align: center;
+	}
+}

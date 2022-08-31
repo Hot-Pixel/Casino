@@ -1,0 +1,112 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.redIcons {
+  @extend %margin_horizontal_main, %margin_top_medium;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title"
+    "icons";
+
+  @include screen-sm {
+    grid-template-columns: 6fr 5fr;
+    grid-template-rows: auto;
+    grid-template-areas: "icons title";
+  }
+
+  p {
+    @extend .u-f--bold;
+    color: setcolor("primary");
+  }
+
+  &__wrapper {
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        width: $lg;
+
+        @include tablet {
+          width: $xl;
+        }
+        @include screen-lg {
+          width: rem(150);
+        }
+        @include screen-xl {
+          width: rem(170);
+        }
+      }
+
+      p {
+        @extend .u-f--h4;
+        font-weight: 400;
+        max-width: 80%;
+        text-align: center;
+        margin-top: rem(5);
+
+        @include screen-sm {
+          font-weight: 700;
+          max-width: 70%;
+          margin-top: rem(10);
+        }
+      }
+    }
+
+    &--left {
+      grid-area: icons;
+      justify-self: flex-start;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      @include screen-sm {
+        width: auto;
+        justify-self: flex-start;
+      }
+    }
+
+    &--right {
+      grid-area: title;
+      justify-self: flex-end;
+
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+
+      @include tablet {
+        justify-self: center;
+        margin-bottom: $lg;
+      }
+      @include screen-sm {
+        margin-bottom: 0;
+        margin-left: $lg;
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      p:first-of-type {
+        @extend .u-f--h1;
+      }
+
+      p:last-of-type {
+        @extend .u-f--h3;
+        max-width: 100%;
+
+        @include screen-sm {
+          max-width: 70%;
+        }
+      }
+    }
+  }
+}

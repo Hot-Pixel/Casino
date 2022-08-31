@@ -1,0 +1,9 @@
+<svg id="icon-header-login" xmlns="http://www.w3.org/2000/svg" width="136.807" height="137.389" viewBox="0 0 136.807 137.389">
+  <circle id="Elipse_746" data-name="Elipse 746" cx="60.5" cy="60.5" r="60.5" transform="translate(8.404 8.39)" fill="#00d1bc" opacity="0.7"/>
+  <path id="Trazado_1" data-name="Trazado 1" d="M237.507,78.695h0c0-1.284-1.936-1.284-1.936-1.284-30.33-8.988-56.142-33.384-63.886-61.633l-1.291-4.494A1.26,1.26,0,0,0,169.1,10h0c-.645,0-1.291,1.284-1.291,1.284l-1.29,4.494c-7.744,28.248-33.556,52.645-63.886,61.633,0,0-1.936.642-1.936,1.284h0c0,1.284,1.936,1.284,1.936,1.284,30.33,8.988,56.142,33.384,63.886,61.633l1.29,4.494a1.26,1.26,0,0,0,1.291,1.284h0c.645,0,1.291-1.284,1.291-1.284l1.291-4.494c7.744-28.248,33.556-52.645,63.886-61.633,0,.642,1.936,0,1.936-1.284Z" transform="translate(-100.7 -10)" fill="#00d1bc"/>
+  <g id="Iser_Icon" data-name="Iser Icon" transform="translate(47.781 47.767)">
+    <circle id="Elipse_734" data-name="Elipse 734" cx="8" cy="8" r="8" transform="translate(12.623 7.623)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="Trazado_5340" data-name="Trazado 5340" d="M27.3,105.179c4.5-6.2,14.139-8.161,21.527-4.385a14.669,14.669,0,0,1,5.228,4.385" transform="translate(-20.054 -69.205)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <circle id="Elipse_735" data-name="Elipse 735" cx="21" cy="21" r="21" transform="translate(-0.377 -0.377)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

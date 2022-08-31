@@ -1,0 +1,74 @@
+<section class="carouselBets">
+	<div class="headerModule">
+		<div class="headerModule-title">
+			<img src="img/icons/icon-star-corp.svg" alt="">
+			<p class="u-f--h2 u-w--bold">Novedades</p>
+		</div>
+		<a href="#" class="headerModule-link">
+			<p>VER TODOS</p>
+			<img src="img/icons/icon-arrow-circle-red.svg" alt="">
+		</a>
+	</div>
+	<section class="carouselBets__carousel splide">
+		<div class="splide__arrows splideArrows--right">
+            <button class="splide__arrow splide__arrow--prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path id="indicator-left__grey-circle__big"
+                        d="M28,14A14,14,0,1,0,14,28,14,14,0,0,0,28,14ZM10.58,21.42a2,2,0,0,1-.012-2.828l.012-.012,4.24-4.22a.5.5,0,0,0,.013-.707l-.013-.013L10.58,9.42a2.008,2.008,0,0,1,2.84-2.84l6,6a2,2,0,0,1,.012,2.828l-.012.012-6,6a2,2,0,0,1-2.828.012Z"
+                        fill="#8e9296" />
+                </svg>
+
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                    <path id="indicator-left__grey-circle__big"
+                        d="M28,14A14,14,0,1,0,14,28,14,14,0,0,0,28,14ZM10.58,21.42a2,2,0,0,1-.012-2.828l.012-.012,4.24-4.22a.5.5,0,0,0,.013-.707l-.013-.013L10.58,9.42a2.008,2.008,0,0,1,2.84-2.84l6,6a2,2,0,0,1,.012,2.828l-.012.012-6,6a2,2,0,0,1-2.828.012Z"
+                        fill="#8e9296" />
+                </svg>
+            </button>
+        </div>
+		<div class="splide__track">
+			<div class="splide__gradient"></div>
+			<ul class="splide__list">
+				<% data.forEach( e=> { %>
+					<li class="splide__slide">
+						<article class="card">
+							<div class="card__image">
+								<img src="img/images/<%= e.img %>">
+							</div>
+							<div class="card__content">
+								<p class="card__content-title">
+									<%= e.partido %>
+								</p>
+								<p class="card__content-subtitle">
+									<%= e.division %>
+								</p>
+								<p class="card__content-desc">
+									<%= e.dia %>
+								</p>
+								<p class="card__content-desc">
+									<%= e.hora %>
+								</p>
+
+								<div class="card__footer card__footer-columns">
+									<div class="card__footer-column">
+										<span>1</span>
+										<button class="btn__black--lighter">2,25</button>
+									</div>
+									<div class="card__footer-column">
+										<span>✖</span>
+										<button class="btn__black--lighter">3,75</button>
+									</div>
+									<div class="card__footer-column">
+										<span>2</span>
+										<button class="btn__black--lighter">8,50</button>
+									</div>
+								</div>
+							</div>
+						</article>
+					</li>
+					<% }) %>
+			</ul>
+		</div>
+	</section>
+</section>

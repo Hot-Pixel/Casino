@@ -1,0 +1,96 @@
+<%
+const gridItems = [
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-tres",
+        img: "1"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-dos",
+        img: "2"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-dos",
+        img: "3"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-uno",
+        img: "4"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-dos",
+        img: "5"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-uno",
+        img: "6"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-tres",
+        img: "7"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-dos",
+        img: "8"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-uno",
+        img: "9"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "blackjack",
+        proveedor: "proveedor-dos",
+        img: "10"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-uno",
+        img: "11"
+    },
+    {
+        title: "Finn Golden Tavern",
+        link: "#",
+        juego: "ruleta",
+        proveedor: "proveedor-dos",
+        img: "12"
+    },
+]
+%>
+
+<main class="casinoFinder" id="casino-finder">
+
+    <%- include ('../objects/filter-casino.ejs') %>
+
+    <%- include ('../objects/grid-games.ejs', { data: gridItems }) %>
+
+</main>

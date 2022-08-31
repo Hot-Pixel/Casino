@@ -1,0 +1,26 @@
+@use '../settings' as *;
+
+@mixin distance($property) {
+    #{$property}: var(--horizontal-main-xs);
+    @include mobile {
+        #{$property}: var(--horizontal-main-sm);
+    }
+    @include tablet {
+        #{$property}: var(--horizontal-main-md);
+    }
+    @include tablet-h {
+        #{$property}: var(--horizontal-main-lg);
+    }
+    @include screen-sm {
+        #{$property}: var(--horizontal-main-xl);
+    }
+    @include screen-md {
+        #{$property}: var(--horizontal-main-2xl);
+    }
+}
+
+
+// .navbar_brand {
+//     position: fixed;
+//     @include distance('left');
+// }
