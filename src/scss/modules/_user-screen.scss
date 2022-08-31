@@ -2,8 +2,12 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.userScreen {
+.userScreen, .withdrawScreen, .depositScreen {
   display: none;
+}
+
+.block-active {
+  display: block !important;
 }
 
 .userScreen.user-on {
@@ -32,16 +36,13 @@
     &__block {
       display: none;
 
-      .dataBlock {
+      .dataBlock,
+      .dataModifyBlock,
+      .docsBlock,
+      .docsVerifyBlock,
+      .docsVerifyBlock2 {
         display: none;
       }
-      .dataModifyBlock {
-        display: none;
-      }
-    }
-
-    .block-active {
-      display: block !important;
     }
   }
 
@@ -107,7 +108,11 @@
             color: setcolor("secondary");
           }
 
-          svg, svg g, svg path, svg g path, svg g circle {
+          svg,
+          svg g,
+          svg path,
+          svg g path,
+          svg g circle {
             stroke: setcolor("secondary");
           }
         }
@@ -147,7 +152,7 @@
       margin-left: $sm;
 
       span {
-        color: setcolor('black', 'dark1');
+        color: setcolor("black", "dark1");
         margin-left: $sm;
       }
     }

@@ -3,14 +3,21 @@
 @use "../tools" as *;
 
 .wallet {
-  margin-top: $md;
+
 
   .wallet__grid {
+    margin-top: $md;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
 
     gap: $md;
+
+    @include screen-sm {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+    }
 
     .wallet__brief {
       border-radius: rem(10);
@@ -93,12 +100,26 @@
     }
 
     .wallet__btns {
+      display: flex;
+      flex-direction: row;
+
+      @include screen-sm {
+      flex-direction: column;
+      }
+
       button {
         display: block;
         height: rem(45);
+        width: fit-content;
 
         padding: 0 $md 0 rem(50);
-        margin-bottom: rem(10);
+        margin-bottom: 0;
+        margin-right: rem(10);
+
+        @include screen-sm {
+          margin-bottom: rem(10);
+          margin-right: 0;
+          }
       }
     }
 

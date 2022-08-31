@@ -27,14 +27,17 @@
 @use '../objects/user/docs';
 @use '../objects/user/preferences';
 @use '../objects/user/support';
+@use '../objects/user/withdraw';
+@use '../objects/user/deposit';
 @use '../objects/user/common';
 
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
+@use '../layout/splide';
 
 // MODULES
-@use '../modules/user-menu';
+@use '../modules/user-screen';
 
 // HELPER
 // Clases de ayuda, textos, colores y demás

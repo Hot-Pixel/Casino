@@ -1554,7 +1554,7 @@ h5 {
 }
 @media only screen and (min-width: 1280px) {
   .header__logo {
-    margin-right: 3.75rem;
+    margin-right: 1.25rem;
   }
 }
 .header__logo svg {
@@ -1566,7 +1566,7 @@ h5 {
 }
 @media only screen and (min-width: 1280px) {
   .header .icon__title {
-    padding-right: 0.9375rem;
+    padding-right: 0.625rem;
   }
 }
 .header .icon__title a {
@@ -1586,7 +1586,7 @@ h5 {
   margin-left: 0.3125rem;
 }
 .header .header__logged-item {
-  margin-left: 3.75rem;
+  margin-left: 0.9375rem;
 }
 .header .header__noLog, .header .header__logged {
   display: none;

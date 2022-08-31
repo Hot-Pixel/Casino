@@ -4,8 +4,12 @@
 
 .support {
   &__content {
-    width: 50%;
+    width: 100%;
     margin-top: $md;
+
+    @include screen-sm {
+      width: 50%;
+    }
 
     & > p {
       @extend .u-f--bold;

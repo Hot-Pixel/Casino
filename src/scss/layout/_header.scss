@@ -66,7 +66,7 @@
       margin-right: $sm;
     }
     @include screen-sm {
-      margin-right: $lg;
+      margin-right: rem(20);
     }
 
     svg {
@@ -82,7 +82,7 @@
   .icon__title {
 
     @include screen-sm {
-      padding-right: $sm;
+      padding-right: rem(10);
     }
 
     a {
@@ -107,7 +107,7 @@
 
   .header__logged {
     &-item {
-      margin-left: $lg;
+      margin-left: $sm;
     }
   }
 

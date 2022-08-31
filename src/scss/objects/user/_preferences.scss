@@ -4,12 +4,17 @@
 
 .preferences {
   &__wrapper {
-    width: 50%;
-    margin-top: $lg;
+    width: 100%;
+    margin-top: $md;
+
+    @include screen-sm {
+      width: 50%;
+    }
 
     & > p {
       color: #868b92;
     }
+
   }
 
   &__table {

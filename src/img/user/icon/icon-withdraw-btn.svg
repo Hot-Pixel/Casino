@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="icon-withdraw-btn" transform="translate(1 5)">
+    <circle id="Elipse_760" data-name="Elipse 760" cx="15" cy="15" r="15" transform="translate(-1 -5)" fill="#868b92" opacity="0.2"/>
+    <path id="Trazado_44" data-name="Trazado 44" d="M10,20A10,10,0,1,0,0,10,10,10,0,0,0,10,20ZM5,9.167H15a.833.833,0,1,1,0,1.667H5A.833.833,0,1,1,5,9.167Z" transform="translate(4)" fill="#868b92"/>
+  </g>
+</svg>
