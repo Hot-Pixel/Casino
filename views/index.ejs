@@ -229,32 +229,36 @@ const gridHalfRight =
 
 <%- include ('layout/header') %>
 
-<%- include ('modules/banner-w-carousel', { data: carouselData }) %>
+<main class="has-header">
 
-<%- include ('modules/search-bar-home') %>
+  <%- include ('modules/banner-w-carousel', { data: carouselData }) %>
 
-<section class="grids__container">
+  <%- include ('modules/search-bar-home') %>
+
+  <section class="grids__container">
 
   <%- include ('modules/grid-half', {data: gridHalfLeft}) %>
 
   <%- include ('modules/grid-half', {data: gridHalfRight}) %>
 
-</section>
+  </section>
 
-<%- include ('modules/grid-full') %>
+  <%- include ('modules/grid-full') %>
 
-<%- include ('modules/icons-red') %>
+  <%- include ('modules/icons-red') %>
 
-<%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
+  <%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
 
-<%- include ('modules/image-text') %>
+  <%- include ('modules/image-text') %>
 
-<%- include ('modules/carousel-bets', { data: betsData }) %>
+  <%- include ('modules/carousel-bets', { data: betsData }) %>
 
-<%- include ('modules/grid-roulette', { data: rouletteData }) %>
+  <%- include ('modules/grid-roulette', { data: rouletteData }) %>
 
-<%- include ('modules/text-block') %>
+  <%- include ('modules/text-block') %>
 
-<%- include ('layout/footer') %>
+  <%- include ('layout/footer') %>
+
+</main>
 
 <%- include ('layout/scripts', { script: 'home' }) %>

@@ -12,14 +12,18 @@ const bannerData =
 
 <%- include ('layout/header') %>
 
-<%- include ('modules/banner', { data: bannerData }) %>
+<main class="has-header">
 
-<%- include ('objects/banner-ruleta-addon') %>
+  <%- include ('modules/banner', { data: bannerData }) %>
 
-<%- include ('modules/finder-ruleta') %>
+  <%- include ('objects/banner-ruleta-addon') %>
 
-<%- include ('modules/text-block') %>
+  <%- include ('modules/finder-ruleta') %>
 
-<%- include ('layout/footer') %>
+  <%- include ('modules/text-block') %>
 
-<%- include ('layout/scripts', { script: 'ruleta' }) %>
+  <%- include ('layout/footer') %>
+
+  <%- include ('layout/scripts', { script: 'ruleta' }) %>
+
+</main>

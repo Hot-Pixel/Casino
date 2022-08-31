@@ -84,6 +84,9 @@
     @include screen-sm {
       padding-right: rem(10);
     }
+    @include screen-lg {
+      padding-right: rem(15);
+    }
 
     a {
       display: flex;
@@ -100,7 +103,6 @@
       p {
         @extend .u-f--h4;
         margin: 0;
-        margin-left: rem(5);
       }
     }
   }

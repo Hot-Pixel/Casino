@@ -6,7 +6,7 @@ import { g as gsapWithCSS } from './index-92880765.js';
 var carouselBanner = new Splide(".bannerCarousel .splide", {
   perPage: 1,
   arrow: true,
-  pagination: false,
+  pagination: false
 });
 
 carouselBanner.mount();

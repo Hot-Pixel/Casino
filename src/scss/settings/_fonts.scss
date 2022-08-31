@@ -21,11 +21,6 @@ $fonts: (
     )
 );
 
-// .list {
-//     font-family: setfont('family', 'primary');
-//     font-size: setfont('size', 'h2');
-// }
-
 // Funcion para extraer familia y grosor
 // Pones 'setfont("carcateristica", "seleccion")' - setfont
 @function setfont($scheme, $tone: base) {

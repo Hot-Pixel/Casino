@@ -12,12 +12,16 @@ const banner =
 
 <%- include ('layout/header') %>
 
-<%- include ('modules/banner', { data: banner }) %>
+<main class="has-header">
 
-<%- include ('modules/finder-casino') %>
+  <%- include ('modules/banner', { data: banner }) %>
 
-<%- include ('modules/text-block') %>
+  <%- include ('modules/finder-casino') %>
 
-<%- include ('layout/footer') %>
+  <%- include ('modules/text-block') %>
 
-<%- include ('layout/scripts',  { script: 'casino' }) %>
+  <%- include ('layout/footer') %>
+
+  <%- include ('layout/scripts',  { script: 'casino' }) %>
+
+</main>

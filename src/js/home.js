@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 var carouselBanner = new Splide(".bannerCarousel .splide", {
   perPage: 1,
   arrow: true,
-  pagination: false,
+  pagination: false
 });
 
 carouselBanner.mount();

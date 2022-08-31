@@ -12,12 +12,16 @@ const banner =
 
 <%- include ('layout/header') %>
 
-<%- include ('modules/header-promo') %>
+<main class="has-header">
 
-<%- include ('modules/finder-promo')%>
+  <%- include ('modules/header-promo') %>
 
-<%- include ('modules/text-block') %>
+  <%- include ('modules/finder-promo')%>
 
-<%- include ('layout/footer') %>
+  <%- include ('modules/text-block') %>
 
-<%- include ('layout/scripts', { script: 'promociones' }) %>
+  <%- include ('layout/footer') %>
+
+  <%- include ('layout/scripts', { script: 'promociones' }) %>
+
+</main>

@@ -2,16 +2,20 @@
 
 <%- include ('layout/header') %>
 
-<%- include ('modules/screens-bar') %>
+<main class="has-header">
 
-<main class="screens">
-    <section class="screen">
-        <img src="img/images/img-screen.jpg" alt="">
+    <%- include ('modules/screens-bar') %>
+
+    <section class="screens">
+        <section class="screen">
+            <img src="img/images/img-screen.jpg" alt="">
+        </section>
+
+        <%- include ('modules/aside-slots') %>
     </section>
 
-    <%- include ('modules/aside-slots') %>
+    <%- include ('layout/footer') %>
+
+    <%- include ('layout/scripts', { script: 'home' }) %>
+
 </main>
-
-<%- include ('layout/footer') %>
-
-<%- include ('layout/scripts', { script: 'home' }) %>

@@ -14,45 +14,48 @@ const bannerData =
 
 <%- include ('layout/header') %>
 
-<%- include ('modules/banner', { data: bannerData }) %>
+<main class="has-header">
 
-<%- include ('objects/menu-poker') %>
+  <%- include ('modules/banner', { data: bannerData }) %>
 
-<main class="poker">
+  <%- include ('objects/menu-poker') %>
 
-    <section class="poker__home poker__section tab-on">
+  <main class="poker">
 
-        <%- include ('modules/grid-download') %>
+      <section class="poker__home poker__section tab-on">
 
-        <%- include ('modules/img-txt-torneos') %>
+          <%- include ('modules/grid-download') %>
 
-        <%- include ('modules/one-col') %>
+          <%- include ('modules/img-txt-torneos') %>
 
-    </section>
+          <%- include ('modules/one-col') %>
 
-    <section class="poker__pc poker__section">
+      </section>
 
-      <%- include ('modules/grid-pc') %>
+      <section class="poker__pc poker__section">
 
-    </section>
+        <%- include ('modules/grid-pc') %>
 
-    <section class="poker__mobile poker__section">
+      </section>
 
-      <%- include ('modules/grid-mobile') %>
+      <section class="poker__mobile poker__section">
 
-    </section>
+        <%- include ('modules/grid-mobile') %>
 
-    <section class="poker__tour poker__section">
+      </section>
 
-      <%- include ('modules/grid-poker') %>
+      <section class="poker__tour poker__section">
 
-    </section>
+        <%- include ('modules/grid-poker') %>
+
+      </section>
+
+  </main>
+
+  <%- include ('modules/text-block') %>
+
+  <%- include ('layout/footer') %>
+
+  <%- include ('layout/scripts', { script: 'poker' }) %>
 
 </main>
-
-<%- include ('modules/text-block') %>
-
-<%- include ('layout/footer') %>
-
-<%- include ('layout/scripts', { script: 'poker' }) %>
-

@@ -1502,6 +1502,11 @@ h5 {
     padding-right: 0.625rem;
   }
 }
+@media only screen and (min-width: 1600px) {
+  .header .icon__title {
+    padding-right: 0.9375rem;
+  }
+}
 .header .icon__title a {
   display: flex;
   align-items: center;
@@ -1516,7 +1521,6 @@ h5 {
 }
 .header .icon__title a p {
   margin: 0;
-  margin-left: 0.3125rem;
 }
 .header .header__logged-item {
   margin-left: 0.9375rem;

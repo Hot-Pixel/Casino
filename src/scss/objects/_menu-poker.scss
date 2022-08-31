@@ -77,22 +77,22 @@
     &:hover,
     &:active,
     &:focus,
-    &.is-active {
-      span {
-        color: setcolor("primary");
-        transition: all 0.5s ease;
-      }
+    // &.is-active {
+    //   span {
+    //     color: setcolor("primary");
+    //     transition: all 0.5s ease;
+    //   }
 
-      img {
-        opacity: 1;
-        transition: all 0.5s ease;
-      }
+    //   img {
+    //     opacity: 1;
+    //     transition: all 0.5s ease;
+    //   }
 
-      .icon {
-        stroke: setcolor("primary");
-        transition: all 0.5s ease;
-      }
-    }
+    //   .icon {
+    //     stroke: setcolor("primary");
+    //     transition: all 0.5s ease;
+    //   }
+    // }
 
     .icon {
       stroke: #a0a2a4;
