@@ -156,18 +156,33 @@ gulp.task("bundleJs", async () => {
   });
 });
 
+// gulp.task("bundleCss", async () => {
+//   gulp
+//     .src(paths.css.src)
+//     .pipe(autoprefixer())
+//     .pipe(cleanCSS())
+//     .pipe(rename({ extname: ".css" }))
+//     .pipe(gulp.dest(paths.css.dest));
+// });
 gulp.task("bundleCss", async () => {
   gulp
-    .src(paths.css.src)
-    .pipe(autoprefixer())
+    .src(paths.scss.src)
+    .pipe(maps.init())
+    .pipe(sassCompiler().on("Error compiling!", sassCompiler.logError))
+    .pipe(maps.write("./"))
     .pipe(cleanCSS())
-    .pipe(rename({ extname: ".css" }))
-    .pipe(gulp.dest(paths.css.dest));
+    .pipe(gulp.dest(paths.css.dest))
 });
 
-gulp.task('copyImg', async () => {
-  gulp.src('public/img/**/*.*')
-      .pipe(gulp.dest('dist/img/'));
+// gulp.task('copyImg', async () => {
+//   gulp.src('public/img/**/*.*')
+//       .pipe(gulp.dest('dist/img/'));
+// });
+gulp.task("copyImg", async () => {
+  gulp
+    .src(paths.images.src)
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/img/'));
 });
 
 gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss", "copyImg"));
