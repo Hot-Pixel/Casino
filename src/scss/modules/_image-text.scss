@@ -49,12 +49,13 @@
 
     &-btns {
       margin-top: $sm;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       @include screen-sm {
         margin-top: $lg;
-
-        display: flex;
-        flex-direction: column;
+        align-items: flex-start;
       }
 
       button {

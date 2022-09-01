@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .redIcons {
-  @extend %margin_horizontal_main, %margin_top_medium;
+  @extend %margin_top_medium;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -12,10 +12,30 @@
     "title"
     "icons";
 
+  background: linear-gradient(
+    to bottom,
+    setcolor("black", "dark5"),
+    transparent
+  );
+  padding-top: $md;
+
   @include screen-sm {
     grid-template-columns: 6fr 5fr;
     grid-template-rows: auto;
     grid-template-areas: "icons title";
+
+    margin-left: rem(120);
+    margin-right: rem(120);
+
+    background: none;
+  }
+  @include screen-md {
+    margin-left: rem(140);
+    margin-right: rem(140);
+  }
+  @include screen-lg {
+    margin-left: rem(150);
+    margin-right: rem(150);
   }
 
   p {
@@ -24,7 +44,6 @@
   }
 
   &__wrapper {
-
     &-item {
       display: flex;
       flex-direction: column;
@@ -66,7 +85,7 @@
 
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       width: 100%;
 
       @include screen-sm {
@@ -77,15 +96,13 @@
 
     &--right {
       grid-area: title;
-      justify-self: flex-end;
-
       display: flex;
       align-items: center;
       flex-direction: column;
       text-align: center;
+      margin-bottom: $md;
 
       @include tablet {
-        justify-self: center;
         margin-bottom: $lg;
       }
       @include screen-sm {

@@ -19,12 +19,12 @@
   --vertical-small-lg: 1.875rem;
   --vertical-small-xl: 1.875rem;
   --vertical-small-2xl: 1.875rem;
-  --vertical-medium-xs: 1.875rem;
-  --vertical-medium-sm: 1.875rem;
-  --vertical-medium-md: 1.875rem;
+  --vertical-medium-xs: 2.5rem;
+  --vertical-medium-sm: 3.125rem;
+  --vertical-medium-md: 3.125rem;
   --vertical-medium-lg: 3.75rem;
-  --vertical-medium-xl: 3.75rem;
-  --vertical-medium-2xl: 3.75rem;
+  --vertical-medium-xl: 4.375rem;
+  --vertical-medium-2xl: 5rem;
   --vertical-large-xs: 2.5rem;
   --vertical-large-sm: 3.125rem;
   --vertical-large-md: 3.75rem;
@@ -1542,6 +1542,7 @@ header.header.header--light .icon__title a p {
 }
 .footer__grid p {
   font-weight: 700;
+  padding-bottom: 0.625rem;
 }
 .footer__grid li {
   padding-bottom: 0.625rem;
@@ -2323,6 +2324,7 @@ header.header.header--light .icon__title a p {
 }
 .jackpot__text p:last-of-type {
   color: #a0a2a4;
+  margin: 0.9375rem 0;
 }
 .jackpot__text a {
   display: flex;
@@ -2334,7 +2336,7 @@ header.header.header--light .icon__title a p {
   margin-right: 0.3125rem;
 }
 .jackpot__carousel {
-  margin-top: 3.75rem;
+  margin-top: 0.9375rem;
 }
 @media only screen and (min-width: 1280px) {
   .jackpot__carousel {
@@ -2355,37 +2357,34 @@ header.header.header--light .icon__title a p {
 .jackpot__card-content {
   background-color: #25292f;
   border-radius: 0 0 0.625rem 0.625rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 0.625rem;
-  height: 7.5rem;
+  padding-bottom: 0;
 }
 @media only screen and (min-width: 1280px) {
   .jackpot__card-content {
     padding: 0.9375rem;
-    height: auto;
+    padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 1440px) {
   .jackpot__card-content {
     padding: 1.25rem;
-    height: auto;
+    padding-bottom: 0;
   }
 }
 .jackpot__card-content button {
-  position: absolute;
-  bottom: -1.875rem;
-  left: 50%;
-  transform: translateX(-50%);
+  transform: translateY(50%);
   width: 80%;
-  height: 2.5rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
   .jackpot__card-content button {
-    width: 70%;
-    height: 2.8125rem;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .jackpot__card-content button {
+    width: 100%;
   }
 }
 .jackpot__card-content button img {

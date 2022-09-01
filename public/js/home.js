@@ -76,22 +76,35 @@ carouselGrid.mount({ Grid });
 var carousel = new Splide(".carouselBets__carousel", {
   pagination: false,
   arrows: true,
-  perPage: 5,
+  perPage: 4,
+  padding: { left: 0, right: 50 },
   perMove: 1,
   gap: 15,
   breakpoints: {
     1600: {
-      perPage: 4,
-    },
-    1200: {
       perPage: 3,
+      padding: { left: 0, right: 150 },
     },
-    992: {
+    1280: {
+      perPage: 3,
+      padding: { left: 0, right: 50 },
+    },
+    1024: {
+      perPage: 2,
+      padding: { left: 0, right: 100 },
+      arrows: false,
+    },
+    768: {
       perPage: 2,
       padding: { left: 0, right: 50 },
       arrows: false,
     },
-    767: {
+    620: {
+      perPage: 1,
+      padding: { left: 0, right: 200 },
+      arrows: false,
+    },
+    475: {
       perPage: 1,
       padding: { left: 0, right: 50 },
       arrows: false,

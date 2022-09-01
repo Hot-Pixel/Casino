@@ -19,12 +19,12 @@
   --vertical-small-lg: 1.875rem;
   --vertical-small-xl: 1.875rem;
   --vertical-small-2xl: 1.875rem;
-  --vertical-medium-xs: 1.875rem;
-  --vertical-medium-sm: 1.875rem;
-  --vertical-medium-md: 1.875rem;
+  --vertical-medium-xs: 2.5rem;
+  --vertical-medium-sm: 3.125rem;
+  --vertical-medium-md: 3.125rem;
   --vertical-medium-lg: 3.75rem;
-  --vertical-medium-xl: 3.75rem;
-  --vertical-medium-2xl: 3.75rem;
+  --vertical-medium-xl: 4.375rem;
+  --vertical-medium-2xl: 5rem;
   --vertical-large-xs: 2.5rem;
   --vertical-large-sm: 3.125rem;
   --vertical-large-md: 3.75rem;
@@ -229,41 +229,41 @@
   font-weight: 500;
 }
 
-.u-f--bold, .jackpot__card-content p:last-of-type, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper--home p, .search .search__wrapper--slots p, .bannerCarousel__slide-wrapper p:first-of-type, .o-card--title, .o-card--subtitle, .user__wrapper p:first-of-type, .headerModule-link p, .u-f--bold p, .jackpot__card-content p:last-of-type p, .carouselBets__carousel .card__content-title p, .carouselBets__carousel .card__content-subtitle p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .bannerCarousel__slide-wrapper p:first-of-type p, .o-card--title p, .o-card--subtitle p, .user__wrapper p:first-of-type p {
+.u-f--bold, .jackpot__card-content p:last-of-type, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .search .search__input input, .search .search__wrapper--home p, .search .search__wrapper--slots p, .bannerCarousel__slide--left > div p, .o-card--title, .o-card--subtitle, .user__wrapper p:first-of-type, .headerModule-link p, .u-f--bold p, .jackpot__card-content p:last-of-type p, .carouselBets__carousel .card__content-title p, .carouselBets__carousel .card__content-subtitle p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .o-card--title p, .o-card--subtitle p, .user__wrapper p:first-of-type p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .bannerCarousel__slide-wrapper p:first-of-type {
+.u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type, .bannerCarousel__slide-wrapper p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
     font-size: 3.625rem;
   }
 }
@@ -302,36 +302,36 @@
   }
 }
 
-.u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+.u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left > div p:last-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left > div p:last-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left > div p:last-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left > div p:last-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left > div p:last-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left > div p:last-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide-wrapper p:last-of-type {
+  .u-f--h3, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left > div p:last-of-type {
     font-size: 1.5rem;
   }
 }
@@ -467,48 +467,48 @@
   }
 }
 
-.gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+.gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -516,48 +516,48 @@
   }
 }
 
-.gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+.gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .redIcons, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .m-text-block, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -1541,6 +1541,7 @@ header.header.header--light .icon__title a p {
 }
 .footer__grid p {
   font-weight: 700;
+  padding-bottom: 0.625rem;
 }
 .footer__grid li {
   padding-bottom: 0.625rem;
@@ -2039,7 +2040,7 @@ header.header.header--light .icon__title a p {
   display: flex;
   flex-direction: column-reverse;
   border-radius: 0.3125rem;
-  overflow: hidden;
+  margin-bottom: 1.5625rem;
 }
 @media only screen and (min-width: 1280px) {
   .bannerCarousel__slide {
@@ -2052,31 +2053,6 @@ header.header.header--light .icon__title a p {
 @media only screen and (min-width: 1280px) {
   .bannerCarousel__slide-wrapper {
     width: 50%;
-    height: 29.375rem;
-  }
-}
-.bannerCarousel__slide-wrapper img {
-  object-fit: contain;
-  object-position: right;
-  width: auto;
-  height: 100%;
-}
-.bannerCarousel__slide-wrapper p:first-of-type {
-  text-align: center;
-}
-@media only screen and (min-width: 1280px) {
-  .bannerCarousel__slide-wrapper p:first-of-type {
-    text-align: left;
-  }
-}
-.bannerCarousel__slide-wrapper p:last-of-type {
-  display: none;
-}
-@media only screen and (min-width: 1280px) {
-  .bannerCarousel__slide-wrapper p:last-of-type {
-    display: inline-block;
-    font-weight: 700;
-    line-height: 1.2em;
   }
 }
 .bannerCarousel__slide--left {
@@ -2084,17 +2060,23 @@ header.header.header--light .icon__title a p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  background-color: #25292f;
+  padding: 1.875rem;
+  padding-bottom: 0;
 }
 @media only screen and (min-width: 1280px) {
   .bannerCarousel__slide--left {
-    padding: 3.75rem;
-    background-color: #25292f;
+    padding: 0.9375rem 0.9375rem 0.9375rem 1.875rem;
     align-items: flex-start;
   }
 }
+@media only screen and (min-width: 1600px) {
+  .bannerCarousel__slide--left {
+    padding: 0.9375rem 0.9375rem 0.9375rem 3.75rem;
+  }
+}
 .bannerCarousel__slide--left > div {
-  padding: 3.75rem 0.625rem;
   background-color: #25292f;
   overflow: hidden;
   border-radius: 0 0 5px 5px;
@@ -2105,38 +2087,57 @@ header.header.header--light .icon__title a p {
     border-radius: 0;
   }
 }
-.bannerCarousel__slide--left button {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 2.8125rem;
-  padding: 0 1.25rem;
-  box-shadow: none;
-  overflow: overlay;
+.bannerCarousel__slide--left > div p:first-of-type {
+  text-align: center;
+  padding-bottom: 0.9375rem;
+  font-size: 2.75rem;
 }
 @media only screen and (min-width: 1280px) {
-  .bannerCarousel__slide--left button {
-    position: static;
-    transform: translateX(0);
-    box-shadow: 0px 0px 1.25rem 0px #ff293e;
+  .bannerCarousel__slide--left > div p:first-of-type {
+    text-align: left;
+    font-size: 2rem;
   }
 }
-.bannerCarousel__slide--left button img {
-  height: 0.875rem;
-  width: 0.875rem;
+@media only screen and (min-width: 1440px) {
+  .bannerCarousel__slide--left > div p:first-of-type {
+    font-size: 2.75rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .bannerCarousel__slide--left > div p:first-of-type {
+    font-size: 3.25rem;
+  }
+}
+.bannerCarousel__slide--left > div p:last-of-type {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  .bannerCarousel__slide--left > div p:last-of-type {
+    display: block;
+    color: #EAEDEF;
+    padding-bottom: 1.875rem;
+  }
+}
+.bannerCarousel__slide--left button {
+  padding: 0.9375rem;
+  transform: translateY(50%);
 }
 .bannerCarousel__slide--right {
-  height: 15.625rem;
-  background-color: #25292f;
+  background-color: transparent;
 }
 @media only screen and (min-width: 1280px) {
   .bannerCarousel__slide--right {
-    height: 29.375rem;
+    background-color: #25292f;
   }
 }
+.bannerCarousel__slide--right img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
 .bannerCarousel .splide__arrow {
-  top: calc(100% - 48px);
+  top: unset;
+  bottom: 0;
 }
 @media only screen and (min-width: 1280px) {
   .bannerCarousel .splide__arrow {
@@ -2361,12 +2362,29 @@ header.header.header--light .icon__title a p {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: "title" "icons";
+  background: linear-gradient(to bottom, #3b424b, transparent);
+  padding-top: 1.875rem;
 }
 @media only screen and (min-width: 1280px) {
   .redIcons {
     grid-template-columns: 6fr 5fr;
     grid-template-rows: auto;
     grid-template-areas: "icons title";
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+    background: none;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .redIcons {
+    margin-left: 8.75rem;
+    margin-right: 8.75rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .redIcons {
+    margin-left: 9.375rem;
+    margin-right: 9.375rem;
   }
 }
 .redIcons p {
@@ -2414,7 +2432,7 @@ header.header.header--light .icon__title a p {
   justify-self: flex-start;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 @media only screen and (min-width: 1280px) {
@@ -2425,15 +2443,14 @@ header.header.header--light .icon__title a p {
 }
 .redIcons__wrapper--right {
   grid-area: title;
-  justify-self: flex-end;
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 1.875rem;
 }
 @media only screen and (min-width: 768px) {
   .redIcons__wrapper--right {
-    justify-self: center;
     margin-bottom: 3.75rem;
   }
 }
@@ -2495,12 +2512,14 @@ header.header.header--light .icon__title a p {
 }
 .imageText__content-btns {
   margin-top: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media only screen and (min-width: 1280px) {
   .imageText__content-btns {
     margin-top: 3.75rem;
-    display: flex;
-    flex-direction: column;
+    align-items: flex-start;
   }
 }
 .imageText__content-btns button {
@@ -2533,46 +2552,42 @@ header.header.header--light .icon__title a p {
   width: 100%;
 }
 .gridRoulette .card__content {
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
   background-color: #2d3239;
-  height: auto;
-  padding: 3.75rem 1.25rem;
+  padding: 3.75rem 1.25rem 0;
   border-radius: 0.3125rem;
 }
 @media only screen and (min-width: 1280px) {
   .gridRoulette .card__content {
-    padding: 3.75rem 0;
-    height: 20.9375rem;
+    width: 100%;
+    aspect-ratio: 1/0.5;
   }
+}
+.gridRoulette .card__content-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.gridRoulette .card__content-title {
+  padding-bottom: 0.9375rem;
 }
 .gridRoulette .card__content-subtitle {
   color: #a4a6a8;
-  max-width: 100%;
-}
-@media only screen and (min-width: 1280px) {
-  .gridRoulette .card__content-subtitle {
-    max-width: 75%;
-  }
+  max-width: 80%;
+  padding-bottom: 0.9375rem;
 }
 .gridRoulette .card__content-desc {
   color: #a4a6a8;
-  max-width: 100%;
-}
-@media only screen and (min-width: 1280px) {
-  .gridRoulette .card__content-desc {
-    max-width: 75%;
-  }
+  max-width: 80%;
+  padding-bottom: 1.875rem;
 }
 .gridRoulette .card__footer {
-  position: absolute;
-  bottom: -1.25rem;
-  left: 50%;
-  transform: translateX(-50%);
+  width: fit-content;
+  transform: translateY(50%);
 }
 
 .carouselBets__carousel .card {
@@ -2590,11 +2605,14 @@ header.header.header--light .icon__title a p {
   height: 100%;
 }
 .carouselBets__carousel .card__content {
-  position: relative;
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   background-color: #1c2026;
-  padding: 1.875rem 1.875rem 6.25rem;
+  padding: 1.875rem 1.875rem 0;
   border-radius: 0 0 0.3125rem 0.3125rem;
+  width: 100%;
+  aspect-ratio: 1/0.7;
 }
 .carouselBets__carousel .card__content-title {
   margin-bottom: 0;
@@ -2612,10 +2630,8 @@ header.header.header--light .icon__title a p {
   margin-bottom: 3.75rem;
 }
 .carouselBets__carousel .card .card__footer {
-  position: absolute;
-  bottom: -1.875rem;
-  left: 50%;
-  transform: translateX(-50%);
+  justify-self: flex-end;
+  transform: translateY(0.9375rem);
 }
 .carouselBets__carousel .card .card__footer-columns {
   display: flex;
@@ -2632,16 +2648,16 @@ header.header.header--light .icon__title a p {
   margin-bottom: 0.3125rem;
 }
 .carouselBets__carousel .card .card__footer-column button {
-  padding: 8px 15px;
+  padding: 0.5rem 0.9375rem;
 }
 @media only screen and (min-width: 1280px) {
   .carouselBets__carousel .card .card__footer-column button {
-    padding: 10px 18px;
+    padding: 0.625rem 1.125rem;
   }
 }
 @media only screen and (min-width: 1440px) {
   .carouselBets__carousel .card .card__footer-column button {
-    padding: 12px 22px;
+    padding: 0.75rem 1.375rem;
   }
 }
 
@@ -2670,6 +2686,7 @@ header.header.header--light .icon__title a p {
 }
 .jackpot__text p:last-of-type {
   color: #a0a2a4;
+  margin: 0.9375rem 0;
 }
 .jackpot__text a {
   display: flex;
@@ -2681,7 +2698,7 @@ header.header.header--light .icon__title a p {
   margin-right: 0.3125rem;
 }
 .jackpot__carousel {
-  margin-top: 3.75rem;
+  margin-top: 0.9375rem;
 }
 @media only screen and (min-width: 1280px) {
   .jackpot__carousel {
@@ -2702,37 +2719,34 @@ header.header.header--light .icon__title a p {
 .jackpot__card-content {
   background-color: #25292f;
   border-radius: 0 0 0.625rem 0.625rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   padding: 0.625rem;
-  height: 7.5rem;
+  padding-bottom: 0;
 }
 @media only screen and (min-width: 1280px) {
   .jackpot__card-content {
     padding: 0.9375rem;
-    height: auto;
+    padding-bottom: 0;
   }
 }
 @media only screen and (min-width: 1440px) {
   .jackpot__card-content {
     padding: 1.25rem;
-    height: auto;
+    padding-bottom: 0;
   }
 }
 .jackpot__card-content button {
-  position: absolute;
-  bottom: -1.875rem;
-  left: 50%;
-  transform: translateX(-50%);
+  transform: translateY(50%);
   width: 80%;
-  height: 2.5rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1440px) {
   .jackpot__card-content button {
-    width: 70%;
-    height: 2.8125rem;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .jackpot__card-content button {
+    width: 100%;
   }
 }
 .jackpot__card-content button img {

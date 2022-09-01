@@ -19,12 +19,12 @@
   --vertical-small-lg: 1.875rem;
   --vertical-small-xl: 1.875rem;
   --vertical-small-2xl: 1.875rem;
-  --vertical-medium-xs: 1.875rem;
-  --vertical-medium-sm: 1.875rem;
-  --vertical-medium-md: 1.875rem;
+  --vertical-medium-xs: 2.5rem;
+  --vertical-medium-sm: 3.125rem;
+  --vertical-medium-md: 3.125rem;
   --vertical-medium-lg: 3.75rem;
-  --vertical-medium-xl: 3.75rem;
-  --vertical-medium-2xl: 3.75rem;
+  --vertical-medium-xl: 4.375rem;
+  --vertical-medium-2xl: 5rem;
   --vertical-large-xs: 2.5rem;
   --vertical-large-sm: 3.125rem;
   --vertical-large-md: 3.75rem;
@@ -1684,6 +1684,7 @@ header.header.header--light .icon__title a p {
 }
 .footer__grid p {
   font-weight: 700;
+  padding-bottom: 0.625rem;
 }
 .footer__grid li {
   padding-bottom: 0.625rem;

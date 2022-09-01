@@ -23,53 +23,50 @@
 		}
 
 		&__content {
-			position: relative;
-
 			display: flex;
 			flex-direction: column;
-			justify-content: flex-start;
+			justify-content: space-between;
 			align-items: center;
-			text-align: center;
 
 			background-color: setcolor('black', 'dark4');
-			height: auto;
-			padding: $lg rem(20);
+			padding: $lg rem(20) 0;
 			border-radius: rem(5);
 
 			@include screen-sm {
-				padding: $lg 0;
-				height: rem(335);
+				width: 100%;
+				aspect-ratio: 1 / 0.5;
+
+			}
+
+			&-txt {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
 			}
 
 			&-title {
 				@extend .u-f--h1, .u-f--bold;
+				padding-bottom: $sm;
 			}
 
 			&-subtitle {
 				@extend .u-f--h3, .u-f--bold;
 				color: #a4a6a8;
-				max-width: 100%;
-
-				@include screen-sm {
-					max-width: 75%;
-				}
+				max-width: 80%;
+				padding-bottom: $sm;
 			}
 
 			&-desc {
 				color: #a4a6a8;
-				max-width: 100%;
-
-				@include screen-sm {
-					max-width: 75%;
-				}
+				max-width: 80%;
+				padding-bottom: $md;
 			}
 		}
 
 		&__footer {
-			position: absolute;
-			bottom: rem(-20);
-			left: 50%;
-			transform: translateX(-50%);
+			width: fit-content;
+			transform: translateY(50%);
 		}
 	}
 }
