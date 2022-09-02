@@ -87,8 +87,8 @@
         @extend .u-f--h3, .u-f--bold;
       }
 
-      button {
-        transform: translateY(50%);
+      .jackpot__link {
+        transform: translateY(50%); 
         width: 80%;
 
         @include screen-md {
