@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .banner__wrapper-title p, .baseFilter__wrapper--right .is-showing, .user__wrapper p:first-of-type, .u-f--bold p, .baseFilter__wrapper--right .is-showing p, .user__wrapper p:first-of-type p {
+.u-f--bold, .m-text-block .bold, .banner__wrapper-title p, .baseFilter__wrapper--right .is-showing, .user__wrapper p:first-of-type, .u-f--bold p, .m-text-block .bold p, .baseFilter__wrapper--right .is-showing p, .user__wrapper p:first-of-type p {
   font-weight: 700;
 }
 
@@ -268,70 +268,70 @@
   }
 }
 
-.u-f--h2 {
+.u-f--h2, .m-text-block .title-big {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2 {
+  .u-f--h2, .m-text-block .title-big {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2 {
+  .u-f--h2, .m-text-block .title-big {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2 {
+  .u-f--h2, .m-text-block .title-big {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2 {
+  .u-f--h2, .m-text-block .title-big {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2 {
+  .u-f--h2, .m-text-block .title-big {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2 {
+  .u-f--h2, .m-text-block .title-big {
     font-size: 2rem;
   }
 }
 
-.u-f--h3 {
+.u-f--h3, .m-text-block .title {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3 {
+  .u-f--h3, .m-text-block .title {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3 {
+  .u-f--h3, .m-text-block .title {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3 {
+  .u-f--h3, .m-text-block .title {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3 {
+  .u-f--h3, .m-text-block .title {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3 {
+  .u-f--h3, .m-text-block .title {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3 {
+  .u-f--h3, .m-text-block .title {
     font-size: 1.5rem;
   }
 }
@@ -700,7 +700,7 @@
   }
 }
 
-.btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+.btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
   display: inline-block;
   font-family: "Lexend";
   font-weight: 700;
@@ -715,36 +715,36 @@
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
-  .btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
     padding: 0.9375rem 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
     padding: 0.9375rem 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .btn__red, .btn__blue, .btn__grey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
+  .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
     padding: 0.9375rem 1.25rem;
   }
 }
-.btn__red > *, .btn__blue > *, .btn__grey > *, .btn__grey--ghost > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
+.btn__red > *, .btn__blue > *, .btn__grey > *, .btn__darkGrey > *, .btn__grey--ghost > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
   vertical-align: middle;
 }
-.btn__red > * + *, .btn__blue > * + *, .btn__grey > * + *, .btn__grey--ghost > * + *, .btn__white > * + *, .btn__gray--red > * + *, .btn__block > * + *, .btn__black--lighter > * + *, .btn__ghost--red > * + *, .btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
+.btn__red > * + *, .btn__blue > * + *, .btn__grey > * + *, .btn__darkGrey > * + *, .btn__grey--ghost > * + *, .btn__white > * + *, .btn__gray--red > * + *, .btn__block > * + *, .btn__black--lighter > * + *, .btn__ghost--red > * + *, .btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
   margin-left: 0.25em;
 }
-.btn__red svg, .btn__blue svg, .btn__grey svg, .btn__grey--ghost svg, .btn__white svg, .btn__gray--red svg, .btn__block svg, .btn__black--lighter svg, .btn__ghost--red svg, .btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
+.btn__red svg, .btn__blue svg, .btn__grey svg, .btn__darkGrey svg, .btn__grey--ghost svg, .btn__white svg, .btn__gray--red svg, .btn__block svg, .btn__black--lighter svg, .btn__ghost--red svg, .btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
   font-size: inherit;
 }
 
@@ -977,6 +977,19 @@ h5 {
 .btn__grey span {
   color: #13171d;
 }
+.btn__darkGrey {
+  background-color: #3b424b;
+}
+.btn__darkGrey:hover {
+  background-color: #2d3239;
+}
+.btn__darkGrey span {
+  color: white;
+}
+.btn__darkGrey span:hover {
+  color: #EAEDEF;
+}
+
 .btn__icons {
   position: relative;
 }
@@ -1535,6 +1548,7 @@ h5 {
 }
 .header .icon__title a p {
   margin: 0;
+  padding-left: 0.125rem;
 }
 .header .header__logged-item {
   margin-left: 0.9375rem;
@@ -1881,5 +1895,15 @@ header.header.header--light .icon__title a p {
     margin-bottom: 0;
     margin-right: 0.9375rem;
   }
+}
+
+.m-text-block p {
+  padding-bottom: 0.9375rem;
+}
+.m-text-block .margin-big {
+  padding-bottom: 1.875rem;
+}
+.m-text-block .gray {
+  color: #939598;
 }
 /*# sourceMappingURL=casino.css.map */

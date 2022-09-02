@@ -76,6 +76,7 @@ gulp.task("js", async () => {
         "src/js/ruleta",
         "src/js/poker",
         "src/js/promociones",
+        "src/js/promocion",
         "src/js/layout",
         "src/js/user",
       ],

@@ -7,4 +7,28 @@
 
 .m-text-block {
 	@extend %margin_horizontal_main, %margin_top_large;
+
+	p {
+		padding-bottom: $sm;
+	}
+
+	.title-big {
+		@extend .u-f--h2;
+	}
+
+	.title {
+		@extend .u-f--h3;
+	}
+
+	.bold {
+		@extend .u-f--bold;
+	}
+
+	.margin-big {
+		padding-bottom: $md;
+	}
+
+	.gray {
+		color: #939598;
+	}
 }

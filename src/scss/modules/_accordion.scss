@@ -3,11 +3,12 @@
 @use "../tools" as *;
 
 .faq {
-    @extend %margin_horizontal_main;
+    @extend %margin_horizontal_main, %margin_top_medium;
 
     &__title {
         p {
             @extend .u-f--h2, .u-f--bold;
+            padding-bottom: $sm;
         }
     }
 
@@ -43,7 +44,17 @@
 
                 p {
                     color: #7f8285;
-                    max-width: 33%;
+                    max-width: 100%;
+
+                    @include screen-sm {
+                        max-width: 66%;
+                    }
+                    @include screen-md {
+                        max-width: 50%;
+                    }
+                    @include screen-lg {
+                        max-width: 33%;
+                    }
                 }
             }
         }

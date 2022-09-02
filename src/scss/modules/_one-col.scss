@@ -3,13 +3,12 @@
 @use "../tools" as *;
 
 .oneCol {
-    @extend %margin_horizontal_main;
-    margin-top: $xl;
+    @extend %margin_horizontal_main, %margin_top_medium;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    padding: $lg 0;
+    padding: $md 0;
     background-color: setcolor('black', 'dark2');
 
     @include screen-sm {
@@ -41,11 +40,13 @@
 
     &__subtitle {
         @extend .u-f--h2;
+        padding-bottom: $sm;
     }
 
     &__body {
         @extend .u-f--h4;
         color: #a4a5a8;
+        padding-bottom: $sm;
     }
 
     a {

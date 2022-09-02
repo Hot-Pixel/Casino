@@ -5,7 +5,6 @@
 .poker {
   &__section {
     transition: all 0.3s ease;
-    display: none;
 
     &.tab-on {
       transition: all 0.3s ease;
@@ -77,26 +76,21 @@
     &:hover,
     &:active,
     &:focus,
-    // &.is-active {
-    //   span {
-    //     color: setcolor("primary");
-    //     transition: all 0.5s ease;
-    //   }
+    &.is-active {
+      span {
+        color: setcolor("primary");
+        transition: all 0.5s ease;
+      }
 
-    //   img {
-    //     opacity: 1;
-    //     transition: all 0.5s ease;
-    //   }
+      svg path, svg g path, svg g rect, svg g line, svg g circle {
+        transition: all 0.5s ease;
+        stroke: setcolor('primary');
+      }
 
-    //   .icon {
-    //     stroke: setcolor("primary");
-    //     transition: all 0.5s ease;
-    //   }
-    // }
-
-    .icon {
-      stroke: #a0a2a4;
-      fill: none
+      img {
+        transition: all 0.5s ease;
+        opacity: 1;
+      }
     }
 
     span {

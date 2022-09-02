@@ -6,7 +6,13 @@ const bannerData =
     title: "¡Bienvenido al Póker!",
     breadcrumb: "Poker"
   }
-
+  const activeTab =
+  {
+    home: "is-active",
+    pc: "",
+    mobile: "",
+    tour: ""
+  }
 
 %>
 
@@ -18,7 +24,7 @@ const bannerData =
 
   <%- include ('modules/banner', { data: bannerData }) %>
 
-  <%- include ('objects/menu-poker') %>
+  <%- include ('objects/menu-poker', { data: activeTab }) %>
 
   <main class="poker">
 
@@ -29,24 +35,6 @@ const bannerData =
           <%- include ('modules/img-txt-torneos') %>
 
           <%- include ('modules/one-col') %>
-
-      </section>
-
-      <section class="poker__pc poker__section">
-
-        <%- include ('modules/grid-pc') %>
-
-      </section>
-
-      <section class="poker__mobile poker__section">
-
-        <%- include ('modules/grid-mobile') %>
-
-      </section>
-
-      <section class="poker__tour poker__section">
-
-        <%- include ('modules/grid-poker') %>
 
       </section>
 

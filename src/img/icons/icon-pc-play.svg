@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49">
+  <g id="icon-pc-play" transform="translate(-399 -10)">
+    <g id="Elipse_768" data-name="Elipse 768" transform="translate(404 15)" fill="#fff" stroke="rgba(255,255,255,0.5)" stroke-width="5">
+      <circle cx="19.5" cy="19.5" r="19.5" stroke="none"/>
+      <circle cx="19.5" cy="19.5" r="22" fill="none"/>
+    </g>
+    <path id="Polígono_2" data-name="Polígono 2" d="M7.156,1.328a1,1,0,0,1,1.688,0l6.18,9.724a1,1,0,0,1-.844,1.536H1.82a1,1,0,0,1-.844-1.536Z" transform="translate(431.795 26.5) rotate(90)" fill="#ff293e"/>
+  </g>
+</svg>

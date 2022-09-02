@@ -1,0 +1,140 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.countdown {
+  @extend %margin_top_medium;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: $lg 0;
+  background-color: setcolor("black", "dark2");
+
+  &__wrapper {
+    @extend %margin_horizontal_main;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    p {
+      @extend .u-f--bold;
+      color: #e99c00;
+      max-width: 80%;
+
+      @include tablet {
+        max-width: 60%;
+      }
+      @include screen-lg {
+        max-width: 40%;
+      }
+    }
+
+    p:first-of-type {
+      @extend .u-f--h2;
+      padding-bottom: $sm;
+    }
+  }
+
+  &__grid {
+    margin-top: $lg;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: $lg;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1fr;
+    }
+    @include screen-sm {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      gap: rem(5);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: setcolor("black");
+    padding: 0 $md $md;
+
+    .cross {
+      transform: translateY(-50%);
+      background-color: setcolor("black");
+      padding: rem(10);
+      border-radius: 1000px;
+      border: rem(10) solid setcolor("black", "dark2");
+    }
+
+    .countdown__icon {
+      height: rem(50);
+    }
+
+    p {
+      @extend .u-f--h4, .u-f--bold;
+      margin: $md 0;
+      max-width: 90%;
+      color: #a7a9ab;
+      text-align: center;
+
+      @include tablet {
+        max-width: 80%;
+      }
+      @include screen-lg {
+        max-width: 60%;
+      }
+    }
+
+    .countdown__verify {
+      width: 80%;
+    }
+  }
+
+  &__time {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: rem(5);
+
+    justify-items: center;
+    align-items: center;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      background-color: setcolor("black", "dark5");
+      border-radius: rem(5);
+      padding: rem(5) rem(10);
+
+      p {
+        color: white;
+        margin: 0;
+        max-width: unset;
+      }
+
+      p:first-of-type {
+        @extend .u-f--h2, .u-f--bold;
+        padding-bottom: rem(5);
+      }
+
+      p:last-of-type {
+        font-size: rem(14);
+      }
+    }
+  }
+}

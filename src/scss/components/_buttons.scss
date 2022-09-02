@@ -48,6 +48,23 @@
   }
 }
 
+.btn__darkGrey {
+  @extend %buttons;
+  background-color: setcolor("black", "dark5");
+
+  &:hover {
+    background-color: setcolor("black", "dark4");
+  }
+
+  span {
+    color: white;
+
+    &:hover {
+      color: setcolor("gray", "light2");
+    }
+  }
+}
+
 .btn__icons {
   position: relative;
   img {

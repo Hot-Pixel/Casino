@@ -6,7 +6,6 @@ const menuPokerExist = document.getElementsByClassName("menuPoker");
 
 window.addEventListener("load", () => {
   if (menuPokerExist.length > 0) {
-    menuPoker();
     accordion();
     carouselPoker();
   }

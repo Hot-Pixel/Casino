@@ -1,0 +1,44 @@
+<%
+const bannerData =
+  {
+    img: "poker",
+    icon: "banner-poker",
+    title: "¡Bienvenido al Póker!",
+    breadcrumb: "Poker"
+  }
+  const activeTab =
+  {
+    home: "",
+    pc: "is-active",
+    mobile: "",
+    tour: ""
+  }
+%>
+
+<%- include ('layout/head', {title: "Poker" , css: "poker", header: "has-header" }) %>
+
+<%- include ('layout/header') %>
+
+<main class="has-header">
+
+  <%- include ('modules/banner', { data: bannerData }) %>
+
+  <%- include ('objects/menu-poker', { data: activeTab }) %>
+
+  <main class="poker">
+
+    <section class="poker__pc poker__section tab-on">
+
+      <%- include ('modules/grid-pc') %>
+
+    </section>
+
+  </main>
+
+  <%- include ('modules/text-block') %>
+
+  <%- include ('layout/footer') %>
+
+</main>
+
+<%- include ('layout/scripts', { script: 'poker' }) %>
