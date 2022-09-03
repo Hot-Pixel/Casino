@@ -1,21 +1,25 @@
 <%
-const banner =
+const bannerData =
   {
-    img: "slots",
-    icon: "banner-slotsAll",
+    img: "slot",
+    icon: "banner-slots",
     title: "Nuestras Slots",
     breadcrumb: "Slots"
   }
 %>
 
-<%- include ('layout/head', {title: "Slots All" , css: "slots-all", header: "has-header" }) %>
+<%- include ('layout/head', {title: "Slots All" , css: "slots-all"}) %>
 
 <%- include ('layout/header') %>
 
-<%- include ('modules/banner', { data: banner }) %>
+<main class="has-header">
 
-<%- include ('modules/finder-slotsAll') %>
+  <%- include ('modules/banner', { data: bannerData }) %>
 
-<%- include ('layout/footer') %>
+  <%- include ('modules/finder-slotsAll') %>
+
+  <%- include ('layout/footer') %>
+
+</main>
 
 <%- include ('layout/scripts', { script: 'slotsAll' }) %>

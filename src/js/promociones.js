@@ -1,7 +1,9 @@
 import { Splide } from "@splidejs/splide";
 import mixitup from 'mixitup';
 
-var mixerPromo = mixitup(".finder__promo", {
+const container = document.querySelector(".finder__promo")
+
+var mixerPromo = mixitup( container, {
   controls: {
     enable: true,
   },

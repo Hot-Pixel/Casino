@@ -57,6 +57,16 @@
     }
   }
 
+  #resetSlots {
+    transition: all 0.4s ease;
+    opacity: 0;
+
+    &.visible {
+      transition: all 0.4s ease;
+      opacity: 1;
+    }
+  }
+
   &__container {
     background-color: setcolor("black", "dark2");
     padding: $sm;

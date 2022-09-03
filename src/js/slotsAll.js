@@ -34,7 +34,9 @@ tags.forEach((tag) => {
   });
 });
 
-const mixerSlots = mixitup(".slotsFinder", {
+const container = document.querySelector('.slotsFinder')
+
+const mixerSlots = mixitup(container, {
   multifilter: {
     enable: true,
   },
@@ -54,6 +56,17 @@ const mixerSlots = mixitup(".slotsFinder", {
     }
 }
 });
+
+const resetBtn = document.getElementById('resetSlots');
+
+container.addEventListener('mixEnd', () => {
+  const state = mixerSlots.getState();
+  if(state.totalShow < state.totalTargets) {
+    resetBtn.classList.add('visible');
+  } else {
+    resetBtn.classList.remove('visible');
+  }
+})
 
 const accorArrows = document.getElementsByClassName("accorArrow");
 const accorBody = document.getElementsByClassName("body");
