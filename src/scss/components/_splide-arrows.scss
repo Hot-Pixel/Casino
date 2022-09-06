@@ -9,14 +9,15 @@
 		opacity: 1;
 		z-index: 10;
 
-		svg {
-			height: rem(20);
-			width: rem(20);
+		opacity: 1;
 
-			@include screen-lg {
-				height: rem(30);
-				width: rem(30);
-			}
+		&:disabled {
+			opacity: 1;
+		}
+
+		svg {
+			height: rem(30);
+			width: rem(30);
 		}
 	}
 

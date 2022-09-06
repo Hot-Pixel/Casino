@@ -6,7 +6,7 @@
   @extend %margin_horizontal_main, %margin_top_small;
   display: flex;
   flex-direction: column;
-  row-gap: $sm;
+  row-gap: rem(5);
 
   @include screen-sm {
     flex-direction: row;
@@ -30,21 +30,16 @@
     padding: $sm;
   }
   @include screen-md {
-    padding: $sm;
     width: 50%;
   }
 
   &:first-of-type {
-    margin-bottom: rem(10);
-
     @include screen-sm {
-        margin-right: rem(5);
-        margin-bottom: 0;
+      margin-right: rem(5);
     }
   }
 
   &:last-of-type {
-
     @include screen-sm {
       margin-left: rem(5);
     }
@@ -60,6 +55,11 @@
 
     .js-arrow__grid {
       cursor: pointer;
+      transform: rotate(-90deg);
+
+      @include screen-sm {
+        transform: rotate(0);
+      }
     }
 
     &-wrapper {
@@ -73,13 +73,40 @@
       }
 
       .icon__title {
-        margin-left: rem(20);
+        margin-left: rem(5);
+
+        @include screen-sm {
+          margin-left: $sm;
+        }
+
+        p {
+          @extend .u-f--bold;
+          font-size: rem(18);
+        }
 
         img {
           display: none;
           @include screen-sm {
             display: inline-block;
           }
+        }
+      }
+    }
+
+    &-link {
+      p {
+        color: white;
+
+        @include screen-sm {
+          color: setcolor("primary");
+        }
+      }
+
+      svg path {
+        fill: white;
+
+        @include screen-sm {
+          fill: setcolor("primary");
         }
       }
     }
@@ -92,13 +119,17 @@
     grid-template-rows: auto auto auto auto;
     gap: 10px;
 
+    height: 0;
+    opacity: 0;
+
     @include tablet {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: auto auto;
-    }
-    @include screen-sm {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto auto;
+    }
+
+    @include screen-sm {
+      height: 100%;
+      opacity: 1;
     }
 
     &-item {
@@ -137,6 +168,12 @@
 
         button {
           margin-bottom: $sm;
+          display: flex;
+          align-items: center;
+
+          img {
+            display: inline-block;
+          }
         }
       }
     }

@@ -27,3 +27,18 @@
 
     }
 }
+
+.userNoIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+
+    p:first-of-type {
+      @extend .u-f--h3, .u-f--bold;
+    }
+    p:last-of-type {
+        @extend .u-f--h4;
+      color: setcolor('secondary');
+    }
+  }

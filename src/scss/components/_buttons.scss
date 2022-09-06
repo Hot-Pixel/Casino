@@ -9,6 +9,14 @@
   @extend %buttons;
   color: setcolor("white");
   background-color: setcolor("primary");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: inline-block;
+  }
+
   &:hover {
     color: setcolor("gray", "lighter");
     background-color: setcolor("primary", "light");
@@ -67,10 +75,12 @@
 
 .btn__icons {
   position: relative;
+
   img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    display: inline-block;
   }
   img:first-of-type {
     left: rem(7);
@@ -134,6 +144,14 @@
   color: setcolor("primary");
   background-color: transparent;
   border: 2px solid setcolor("primary");
+
+  display: flex;
+  align-items: center;
+
+  img {
+    display: inline-block;
+    margin-left: rem(5)
+  }
 }
 
 // button no_button ==========

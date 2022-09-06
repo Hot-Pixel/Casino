@@ -95,7 +95,7 @@
 
     span {
       @extend .u-f--bold;
-      color: #a0a2a4;
+      color: setcolor('gray', 'dark1');
       margin: 0;
       padding-left: rem(10);
     }

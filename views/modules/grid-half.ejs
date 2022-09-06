@@ -4,15 +4,17 @@
             <img src="img/icons/icon-grid-arrow.svg" alt="" class="js-arrow__grid">
             <div class="icon__title">
                 <img src="img/icons/<%= data.icon %>.svg" alt="">
-                <p class="u-f--bold u-f--h4">
+                <p>
                     <%= data.title %>
                 </p>
             </div>
         </div>
         <a href="<%= data.link %>">
-            <div class="gridHalf__navbar-wrapper">
+            <div class="gridHalf__navbar-wrapper gridHalf__navbar-link">
                 <p class="u-f--bold">VER TODOS</p>
-                <img src="img/icons/icon-arrow-red.svg" alt="">
+                <svg id="icon-arrow-red" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    <path id="indicator-right__red-circle__small" d="M14,7a7,7,0,1,0-7,7A7,7,0,0,0,14,7ZM5.29,10.71A1,1,0,0,1,5.284,9.3L5.29,9.29,7.41,7.18a.25.25,0,0,0,.007-.354L7.41,6.82,5.29,4.71A1,1,0,0,1,6.71,3.29l3,3A1,1,0,0,1,9.716,7.7L9.71,7.71l-3,3a1,1,0,0,1-1.414.006Z" fill="#ff293e"/>
+                  </svg>
             </div>
         </a>
     </nav>

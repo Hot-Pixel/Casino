@@ -3,12 +3,16 @@
 @use "../tools" as *;
 
 .bannerCarousel {
-  @extend %margin_top_large;
+  margin-top: rem(100);
 
   background-image: url("../img/images/img-stars-bg.png");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include screen-sm {
+    margin-top: rem(140);
+  }
 
   .splide {
     @extend %margin_horizontal_main;
@@ -20,8 +24,10 @@
     border-radius: rem(5);
     margin-bottom: rem(25);
 
+
     @include screen-sm {
       flex-direction: row;
+      overflow: hidden;
     }
 
     &-wrapper {
@@ -41,26 +47,21 @@
       justify-content: center;
       background-color: setcolor("black");
 
-      padding: $md;
+      padding: $sm;
       padding-bottom: 0;
 
       @include screen-sm {
         padding: $sm $sm $sm $md;
+        justify-content: center;
         align-items: flex-start;
       }
       @include screen-lg {
         padding: $sm $sm $sm $lg;
       }
 
-      & > div {
+      .bannerCarousel__slide-content {
         background-color: setcolor("black");
         overflow: hidden;
-        border-radius: 0 0 5px 5px;
-        margin-bottom: 23px;
-
-        @include screen-sm {
-          border-radius: 0;
-        }
 
         p {
           @extend .u-f--bold;
@@ -69,7 +70,7 @@
         p:first-of-type {
           text-align: center;
           padding-bottom: $sm;
-          font-size: rem(44);
+          font-size: rem(26);
 
           @include screen-sm {
             text-align: left;
@@ -89,15 +90,38 @@
 
           @include screen-sm {
             display: block;
-            color: setcolor("gray", "light2");
+            color: #a4a5a8;
             padding-bottom: $md;
           }
+        }
+      }
+
+      .bannerCarousel__slide-breadcrumb {
+        display: block;
+
+        @include screen-sm {
+          display: none;
+        }
+
+        p {
+          @extend .u-f--h3, .u-f--bold;
         }
       }
 
       button {
         padding: $sm;
         transform: translateY(50%);
+
+        display: flex;
+        align-items: center;
+
+        img {
+          display: inline-block;
+        }
+
+        @include screen-sm {
+          box-shadow: 0px 0px rem(20) 0px setcolor("primary");
+        }
       }
     }
 
@@ -119,18 +143,23 @@
   .splide__arrow {
     top: unset;
     bottom: 0;
+    opacity: 1;
 
     @include screen-sm {
       top: 50%;
     }
 
+    &:disabled {
+      opacity: 1;
+    }
+
     img {
-      height: $lg;
-      width: $lg;
+      height: rem(40);
+      width: rem(40);
 
       @include screen-sm {
-        height: rem(40);
-        width: rem(40);
+        height: rem(55);
+        width: rem(55);
       }
     }
 

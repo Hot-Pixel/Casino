@@ -13,9 +13,12 @@
                 <% data.forEach( e => { %>
                     <li class="bannerCarousel__slide splide__slide">
                         <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
-                            <div>
+                            <div class="bannerCarousel__slide-content">
                                 <p><%= e.title %></p>
                                 <p><%= e.body %></p>
+                            </div>
+                            <div class="bannerCarousel__slide-breadcrumb">
+                                <p>Slots</p>
                             </div>
                             <button class="btn__red">
                                 <span>¡JUEGA AHORA!</span>

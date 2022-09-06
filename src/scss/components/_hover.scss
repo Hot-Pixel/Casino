@@ -37,6 +37,13 @@
 
     button {
       margin-bottom: $sm;
+
+      display: flex;
+      align-items: center;
+
+      img {
+        display: inline-block;
+      }
     }
 
     p {

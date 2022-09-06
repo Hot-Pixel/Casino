@@ -27,7 +27,7 @@
     }
 
     p:last-of-type {
-      color: #a0a2a4;
+      color: setcolor('gray', 'dark1');
       margin: $sm 0;
     }
 
@@ -54,18 +54,22 @@
 
   &__card {
     &-image {
-      margin-top: $lg;
+      position: relative;
+      z-index: 0;
+      transform: translateY(20%);
       background-color: setcolor("black", "dark2");
       border-radius: rem(10) rem(10) 0 0;
 
       img {
-        margin-top: rem(-60);
+        transform: translateY(-20%);
         object-fit: cover;
         width: 100%;
       }
     }
 
     &-content {
+      position: relative;
+      z-index: 1;
       background-color: setcolor("black");
       border-radius: 0 0 rem(10) rem(10);
 
@@ -88,7 +92,7 @@
       }
 
       .jackpot__link {
-        transform: translateY(50%); 
+        transform: translateY(50%);
         width: 80%;
 
         @include screen-md {

@@ -42,6 +42,12 @@ const arrDim = [
   [2, 2],
   [2, 2],
 ];
+const arrDimMobile = [
+  [3, 2],
+  [3, 2],
+  [3, 2],
+  [3, 2],
+];
 
 arrDim.splice(order, 0, item);
 
@@ -49,22 +55,28 @@ const carouselGrid = new Splide(gridFull, {
   perPage: 4,
   perMove: 1,
   pagination: false,
-  gap: 6,
+  gap: 10,
   grid: {
     dimensions: arrDim,
     gap: {
-      row: 6,
-      col: 6,
+      row: 10,
+      col: 10,
     },
   },
   breakpoints: {
+    1400: {
+      perPage: 3,
+    },
+    1280: {
+      perPage: 2,
+    },
     991: {
       perPage: 1,
       arrows: false,
+      padding: {left: 0, right: 50},
       drag: 'free',
       grid: {
-        rows: 2,
-        cols: 2,
+        dimensions: arrDimMobile,
       }
     },
   },
@@ -115,27 +127,54 @@ carousel.mount();
 
 //ANIMATION COLLAPSE GRID HALF
 const arrowArr = document.getElementsByClassName("js-arrow__grid");
-const gridArr = document.getElementsByClassName("gridHalf__grid");
+const gridArr = document.querySelectorAll(".gridHalf__grid");
 
-for (let n = 0; n < arrowArr.length; n++) {
-  arrowArr[n].addEventListener("click", () => {
-    if (gridArr[n].classList.contains("active")) {
-      gsap
-        .timeline()
-        .to(arrowArr[n], { rotation: -90, duration: 0.3 })
-        .to(gridArr[n], { opacity: 0, duration: 0.6 })
-        .to(gridArr[n], { height: 0, duration: 0.3 });
-      gridArr[n].classList.remove("active");
-    } else {
-      gsap
-        .timeline()
-        .to(arrowArr[n], { rotation: 0, duration: 0.3 })
-        .to(gridArr[n], { height: "auto", duration: 0.3 })
-        .to(gridArr[n], { opacity: 1, duration: 0.6 });
-      gridArr[n].classList.add("active");
-    }
+if (window.innerWidth < 1280) {
+  gridArr.forEach( e => {
+    e.classList.remove('active');
   });
+  for (let n = 0; n < arrowArr.length; n++) {
+    arrowArr[n].addEventListener("click", () => {
+      if (gridArr[n].classList.contains("active")) {
+        gsap
+          .timeline()
+          .to(arrowArr[n], { rotation: -90, duration: 0.3 })
+          .to(gridArr[n], { opacity: 0, duration: 0.6 })
+          .to(gridArr[n], { height: 0, duration: 0.3 });
+        gridArr[n].classList.remove("active");
+      } else {
+        gsap
+          .timeline()
+          .to(arrowArr[n], { rotation: 0, duration: 0.3 })
+          .to(gridArr[n], { height: "auto", duration: 0.3 })
+          .to(gridArr[n], { opacity: 1, duration: 0.6 });
+        gridArr[n].classList.add("active");
+      }
+    });
+  }
+} else {
+  for (let n = 0; n < arrowArr.length; n++) {
+    arrowArr[n].addEventListener("click", () => {
+      if (gridArr[n].classList.contains("active")) {
+        gsap
+          .timeline()
+          .to(arrowArr[n], { rotation: -90, duration: 0.3 })
+          .to(gridArr[n], { opacity: 0, duration: 0.6 })
+          .to(gridArr[n], { height: 0, duration: 0.3 });
+        gridArr[n].classList.remove("active");
+      } else {
+        gsap
+          .timeline()
+          .to(arrowArr[n], { rotation: 0, duration: 0.3 })
+          .to(gridArr[n], { height: "auto", duration: 0.3 })
+          .to(gridArr[n], { opacity: 1, duration: 0.6 });
+        gridArr[n].classList.add("active");
+      }
+    });
+  }
 }
+
+
 
 const popUpCloseBtn = document.querySelector('.popUpBalance__closeBtn');
 const popUpOpenBtn = document.querySelector('.popUpBalance__openBtn');
@@ -149,3 +188,13 @@ popUpCloseBtn.addEventListener('click', () => {
   popUpMenu.style.display = 'none';
 })
 
+const menuHeaderOpenBtn = document.querySelector(".menuHeader__openBtn");
+const menuHeaderCloseBtn = document.querySelector(".menuHeader__closeBtn");
+const menuHeader = document.querySelector(".menuHeader");
+
+menuHeaderOpenBtn.addEventListener("click", () => {
+  menuHeader.style.display = "flex";
+});
+menuHeaderCloseBtn.addEventListener("click", () => {
+  menuHeader.style.display = "none";
+});

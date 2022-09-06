@@ -34,7 +34,7 @@
   display: none;
 
   @include screen-sm {
-    padding: 0 $lg;
+    padding: 0 $md;
     display: flex;
   }
 
@@ -86,7 +86,7 @@
       padding-right: rem(10);
     }
     @include screen-lg {
-      padding-right: rem(15);
+      padding-right: $sm;
     }
 
     a {
@@ -102,9 +102,9 @@
       }
 
       p {
-        @extend .u-f--h4;
+        @extend .u-f--h4, .u-f--bold;
         margin: 0;
-        padding-left: rem(2);
+        padding-left: rem(5 );
       }
     }
   }
@@ -162,9 +162,6 @@
     width: 100%;
 
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     height: auto;
     padding: rem(10) rem(20);
@@ -199,6 +196,7 @@
 
   &-logged {
     display: none;
+    justify-content: space-between;
 
     &.menu-active {
       display: flex !important;

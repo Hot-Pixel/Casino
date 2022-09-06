@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .redIcons {
-  @extend %margin_top_medium;
+  @extend %margin_top_small;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -51,10 +51,10 @@
       align-items: center;
 
       img {
-        width: $lg;
+        width: rem(80);
 
         @include tablet {
-          width: $xl;
+          width: rem(100);
         }
         @include screen-lg {
           width: rem(150);
@@ -114,11 +114,12 @@
 
       p:first-of-type {
         @extend .u-f--h1;
+        max-width: 90%;
       }
 
       p:last-of-type {
         @extend .u-f--h3;
-        max-width: 100%;
+        max-width: 90%;
 
         @include screen-sm {
           max-width: 70%;

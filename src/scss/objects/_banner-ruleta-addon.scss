@@ -34,7 +34,7 @@
       @extend .u-f--bold, .u-f--h4;
       margin: 0;
       padding-left: rem(5);
-      color: #a0a2a4;
+      color: setcolor('gray', 'dark1');
     }
   }
 }

@@ -29,13 +29,13 @@
 			align-items: center;
 
 			background-color: setcolor('black', 'dark4');
-			padding: $lg rem(20) 0;
+			padding: $md rem(5) 0;
 			border-radius: rem(5);
 
 			@include screen-sm {
 				width: 100%;
 				aspect-ratio: 1 / 0.5;
-
+				padding: $lg rem(20) 0;
 			}
 
 			&-txt {
@@ -53,14 +53,14 @@
 			&-subtitle {
 				@extend .u-f--h3, .u-f--bold;
 				color: #a4a6a8;
-				max-width: 80%;
+				max-width: 90%;
 				padding-bottom: $sm;
 			}
 
 			&-desc {
 				color: #a4a6a8;
-				max-width: 80%;
-				padding-bottom: $md;
+				max-width: 90%;
+				padding-bottom: $sm;
 			}
 		}
 

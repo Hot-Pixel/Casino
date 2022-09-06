@@ -36,6 +36,8 @@
   }
 
   &--bottom {
+    display: flex;
+    flex-direction: row;
     a:not(:last-of-type) {
       margin-right: rem(10);
     }

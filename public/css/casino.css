@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .m-text-block .bold, .banner__wrapper-title p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .baseFilter__wrapper--right .is-showing, .user__wrapper p:first-of-type, .u-f--bold p, .m-text-block .bold p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .baseFilter__wrapper--right .is-showing p, .user__wrapper p:first-of-type p {
+.u-f--bold, .m-text-block .bold, .banner__wrapper-title p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .icon__title a p, .baseFilter__wrapper--right .is-showing, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .m-text-block .bold p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .baseFilter__wrapper--right .is-showing p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -302,70 +302,70 @@
   }
 }
 
-.u-f--h3, .m-text-block .title, .menuHeader__navItems li a p {
+.u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p {
+  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p {
+  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p {
+  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p {
+  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p {
+  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p {
+  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type {
+.u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
   font-size: 0.75rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type {
+  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.8125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type {
+  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type {
+  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type {
+  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type {
+  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type {
+  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .baseFilter__wrapper--right .is-showing span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.125rem;
   }
 }
@@ -805,6 +805,10 @@ fieldset, input, button {
   border: none;
 }
 
+img {
+  display: block;
+}
+
 html {
   overflow-x: hidden !important;
 }
@@ -950,6 +954,12 @@ h5 {
 .btn__red {
   color: #ffffff;
   background-color: #ff293e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn__red img {
+  display: inline-block;
 }
 .btn__red:hover {
   background-color: #ff5264;
@@ -997,6 +1007,7 @@ h5 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  display: inline-block;
 }
 .btn__icons img:first-of-type {
   left: 0.4375rem;
@@ -1044,6 +1055,12 @@ h5 {
   color: #ff293e;
   background-color: transparent;
   border: 2px solid #ff293e;
+  display: flex;
+  align-items: center;
+}
+.btn__ghost--red img {
+  display: inline-block;
+  margin-left: 0.3125rem;
 }
 
 .btn_no_button--red {
@@ -1174,17 +1191,34 @@ h5 {
   border-radius: 1.875rem;
   background-color: #2d3239;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
+.deposits.reverse {
+  flex-direction: row-reverse;
+}
 .deposits__total {
-  padding-left: 0.9375rem;
+  position: relative;
+  padding-left: 0.625rem;
+  display: flex;
+  align-items: center;
+}
+.deposits__total::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 70%, #2d3239);
 }
 .deposits__total img {
   margin-right: 0.3125rem;
 }
 .deposits svg {
-  margin: 0 0.625rem;
+  margin: 0 0.9375rem 0 0.3125rem;
 }
 .deposits__btn {
   position: relative;
@@ -1217,6 +1251,16 @@ h5 {
   color: #00d1bc;
   margin: 0;
 }
+.userNoIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+.userNoIcon p:last-of-type {
+  color: #00d1bc;
+}
+
 .gridHover {
   position: absolute;
   top: 0;
@@ -1245,6 +1289,11 @@ h5 {
 }
 .gridHover a button {
   margin-bottom: 0.9375rem;
+  display: flex;
+  align-items: center;
+}
+.gridHover a button img {
+  display: inline-block;
 }
 .gridHover a p {
   margin: 0;
@@ -1500,7 +1549,7 @@ h5 {
 }
 @media only screen and (min-width: 1280px) {
   .header {
-    padding: 0 3.75rem;
+    padding: 0 1.875rem;
     display: flex;
   }
 }
@@ -1568,7 +1617,7 @@ h5 {
 }
 .header .icon__title a p {
   margin: 0;
-  padding-left: 0.125rem;
+  padding-left: 0.3125rem;
 }
 .header .header__logged-item {
   margin-left: 0.9375rem;
@@ -1614,9 +1663,6 @@ h5 {
   bottom: 0;
   width: 100%;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   height: auto;
   padding: 0.625rem 1.25rem;
 }
@@ -1644,6 +1690,7 @@ h5 {
 }
 .header__mobile-logged {
   display: none;
+  justify-content: space-between;
 }
 .header__mobile-logged.menu-active {
   display: flex !important;
@@ -1950,6 +1997,10 @@ header.header.header--light .icon__title a p {
 }
 .menuHeader__navItems li a p {
   padding-left: 0.625rem;
+}
+.menuHeader--bottom {
+  display: flex;
+  flex-direction: row;
 }
 .menuHeader--bottom a:not(:last-of-type) {
   margin-right: 0.625rem;
