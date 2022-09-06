@@ -8,9 +8,16 @@
   gap: rem(5);
   height: fit-content;
 
-  @include screen-sm {
-    grid-template-columns: repeat(5, 1fr);
+  @include tablet {
+    grid-template-columns: repeat(3, 1fr);
     gap: $sm;
+  }
+  @include screen-md {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @include screen-lg {
+    grid-template-columns: repeat(5, 1fr);
+
   }
 
   &__item {

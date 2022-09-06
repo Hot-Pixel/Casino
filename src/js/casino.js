@@ -17,7 +17,8 @@ hearts.forEach((heart) => {
   });
 });
 
-var mixerCasino = mixitup(".casinoFinder", {
+const container = document.querySelector(".casinoFinder");
+var mixerCasino = mixitup( container, {
   multifilter: {
     enable: true,
   },
@@ -29,25 +30,25 @@ var mixerCasino = mixitup(".casinoFinder", {
   },
 });
 
-const container = document.querySelector(".casinoFinder");
-let totalContainer = document.querySelector("#is-showing");
-let items = document.querySelectorAll(".mix");
-let itemsHidden = document.querySelectorAll('.mix[style="display: none;"]');
-let itemsLeft = items.length - itemsHidden.length;
-const removeBtn = document.querySelector("#removeFilters");
 
-totalContainer.innerText = items.length;
-console.log(mixerCasino.isMixing());
+const totalHTML = document.querySelector('.is-showing span');
+const state = mixerCasino.getState();
+const total = state.totalShow;
+totalHTML.innerHTML = total;
+
+container.addEventListener('mixEnd', () => {
+  const state = mixerCasino.getState();
+  const total = state.totalShow;
+  totalHTML.innerHTML = total;
+})
+
+const resetBtn = document.getElementById("reset");
 
 container.addEventListener("mixEnd", () => {
-  totalContainer.innerText = itemsLeft;
-  console.log(mixerCasino.isMixing());
+  const state = mixerCasino.getState();
+  if (state.totalShow < state.totalTargets) {
+    resetBtn.classList.add("visible");
+  } else {
+    resetBtn.classList.remove("visible");
+  }
 });
-
-// container.addEventListener("mixStart", () => {
-//   if (!mixerCasino.isMixing()) {
-//     removeBtn.style.display = "none";
-//   } else if (mixerCasino.isMixing()) {
-//     removeBtn.style.display = "inline-block";
-//   }
-// });

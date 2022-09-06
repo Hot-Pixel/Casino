@@ -29,24 +29,24 @@ var mixerRuleta = mixitup(".ruletaFinder", {
 });
 
 const container = document.querySelector(".ruletaFinder");
-let totalContainer = document.querySelector("#is-showing");
-let items = document.querySelectorAll(".mix");
-let itemsHidden = document.querySelectorAll('.mix[style="display: none;"]');
-let itemsLeft = items.length - itemsHidden.length;
-const removeBtn = document.querySelector("#removeFilters");
+const totalHTML = document.querySelector('.is-showing span');
+const state = mixerRuleta.getState();
+const total = state.totalShow;
+totalHTML.innerHTML = total;
 
-totalContainer.innerText = items.length;
-console.log(mixerRuleta.isMixing());
+container.addEventListener('mixEnd', () => {
+  const state = mixerRuleta.getState();
+  const total = state.totalShow;
+  totalHTML.innerHTML = total;
+})
+
+const resetBtn = document.getElementById("reset");
 
 container.addEventListener("mixEnd", () => {
-  totalContainer.innerText = itemsLeft;
-  console.log(mixerRuleta.isMixing());
+  const state = mixerRuleta.getState();
+  if (state.totalShow < state.totalTargets) {
+    resetBtn.classList.add("visible");
+  } else {
+    resetBtn.classList.remove("visible");
+  }
 });
-
-// container.addEventListener("mixStart", () => {
-//   if (!mixerCasino.isMixing()) {
-//     removeBtn.style.display = "none";
-//   } else if (mixerCasino.isMixing()) {
-//     removeBtn.style.display = "inline-block";
-//   }
-// });

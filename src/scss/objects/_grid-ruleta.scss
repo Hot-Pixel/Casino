@@ -10,6 +10,7 @@
   width: 100%;
 
   row-gap: rem(10);
+  margin-top: $lg;
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
@@ -22,11 +23,29 @@
 
   .card {
     &__img {
+      position: relative;
       width: 100%;
+      height: rem(250);
 
-      img {
+      .card__img-bg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+
         width: 100%;
         object-fit: cover;
+        object-position: bottom;
+      }
+      .card__img-cruppier {
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        z-index: 2;
+
+        height: 110%;
+        object-fit: cover;
+        object-position: bottom;
       }
     }
 

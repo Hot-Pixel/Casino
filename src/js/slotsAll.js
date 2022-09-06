@@ -1,5 +1,5 @@
-import mixitup from 'mixitup';
-import mixitupMultifilter from './mixitup-multifilter.js';
+import mixitup from "mixitup";
+import mixitupMultifilter from "./mixitup-multifilter.js";
 import { gsap } from "gsap";
 
 mixitup.use(mixitupMultifilter);
@@ -34,39 +34,67 @@ tags.forEach((tag) => {
   });
 });
 
-const container = document.querySelector('.slotsFinder')
+const container = document.querySelector(".slotsFinder");
 
-const mixerSlots = mixitup(container, {
-  multifilter: {
-    enable: true,
-  },
-  controls: {
-    enable: true,
-  },
-  animation: {
-    enable: false,
-  },
-  callbacks: {
-    onMixClick: function() {
+if (window.innerWidth < 1280) {
+  console.log('boob')
+  const mixerSlots = mixitup(container, {
+    multifilter: {
+      enable: true,
+      parseOn: "submit",
+    },
+    controls: {
+      enable: true,
+    },
+    animation: {
+      enable: false,
+    },
+    callbacks: {
+      onMixClick: function () {
         // Reset the search if a filter is clicked
 
-        if (this.matches('[data-filter]')) {
-            inputSearch.value = '';
+        if (this.matches("[data-filter]")) {
+          inputSearch.value = "";
         }
-    }
+      },
+    },
+  });
+} else {
+  console.log('bob')
+  const mixerSlots = mixitup(container, {
+    multifilter: {
+      enable: true,
+    },
+    controls: {
+      enable: true,
+    },
+    animation: {
+      enable: false,
+    },
+    callbacks: {
+      onMixClick: function () {
+        // Reset the search if a filter is clicked
+
+        if (this.matches("[data-filter]")) {
+          inputSearch.value = "";
+        }
+      },
+    },
+  });
 }
-});
 
-const resetBtn = document.getElementById('resetSlots');
 
-container.addEventListener('mixEnd', () => {
+
+const resetBtn = document.getElementById("resetSlots");
+
+container.addEventListener("mixEnd", () => {
   const state = mixerSlots.getState();
-  if(state.totalShow < state.totalTargets) {
-    resetBtn.classList.add('visible');
+  if (state.totalShow < state.totalTargets) {
+    resetBtn.classList.add("visible");
   } else {
-    resetBtn.classList.remove('visible');
+    resetBtn.classList.remove("visible");
   }
-})
+});
 
 const accorArrows = document.getElementsByClassName("accorArrow");
 const accorBody = document.getElementsByClassName("body");
@@ -90,3 +118,15 @@ for (let n = 0; n < accorArrows.length; n++) {
     }
   });
 }
+
+const btnSlotsMenuOpen = document.querySelector(".btn__openFilterMenu");
+const btnSlotsMenuClose = document.querySelector(".btn__closeFilterMenu");
+const filterSoltsMenu = document.querySelector(".filterSlotsM__menu");
+
+btnSlotsMenuOpen.addEventListener("click", () => {
+  filterSoltsMenu.classList.add("open");
+});
+
+btnSlotsMenuClose.addEventListener("click", () => {
+  filterSoltsMenu.classList.remove("open");
+});

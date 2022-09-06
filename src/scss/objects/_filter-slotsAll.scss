@@ -3,9 +3,10 @@
 @use "../tools" as *;
 
 .filterSlots {
+  display: none;
 
-  span {
-    margin: 0;
+  @include screen-sm {
+    display: block;
   }
 
   &__header {
@@ -56,6 +57,85 @@
       }
     }
   }
+}
+
+.filterSlotsM {
+
+  &__navbar {
+    display: block;
+
+    padding-bottom: $sm;
+
+    @include screen-sm {
+      display: none;
+    }
+
+    .btn__openFilterMenu {
+      cursor: pointer;
+
+      background-color: setcolor("black");
+      border-radius: rem(5);
+      height: rem(55);
+      aspect-ratio: 1 / 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__menu {
+    display: none;
+    margin-top: -6vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+
+    width: 100vw;
+    height: 100%;
+
+    background-color: setcolor("black", "dark2");
+    padding: $sm;
+
+    &.open {
+      display: block;
+    }
+
+    .filterSlotsM__header {
+      height: $lg;
+      width: 100%;
+      background-color: setcolor("black", "dark2");
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        @extend .u-f--h3, .u-f--bold;
+        padding-left: rem(5);
+      }
+    }
+
+    .filterSlotsM__btns {
+      display: flex;
+      justify-content: space-between;
+      column-gap: $sm;
+      padding-top: $sm;
+
+      button {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.filterSlots, .filterSlotsM {
+
+  span {
+    margin: 0;
+  }
 
   #resetSlots {
     transition: all 0.4s ease;
@@ -65,11 +145,6 @@
       transition: all 0.4s ease;
       opacity: 1;
     }
-  }
-
-  &__container {
-    background-color: setcolor("black", "dark2");
-    padding: $sm;
   }
 
   &__search {

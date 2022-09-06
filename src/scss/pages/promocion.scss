@@ -14,10 +14,13 @@
 @use '../components/user';
 
 // OBJECTS
+// @use '../objects/popUp-balance';
 
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
+@use '../layout/popUp-balance';
+@use '../layout/menu-header';
 
 // MODULES
 @use '../modules/block-promo';

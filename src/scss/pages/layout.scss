@@ -26,17 +26,16 @@
 @use '../components/hover';
 
 // OBJECTS
-// @use '../objects/menu-poker';
+// @use '../objects/_popUp-balance';
 
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
-
+@use '../layout/popUp-balance';
+@use '../layout/menu-header';
 
 // MODULES
-@use '../modules/_countdown';
-
-
+// @use '../modules/_countdown';
 
 // HELPER
 @use '../helper';

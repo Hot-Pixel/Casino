@@ -136,3 +136,16 @@ for (let n = 0; n < arrowArr.length; n++) {
     }
   });
 }
+
+const popUpCloseBtn = document.querySelector('.popUpBalance__closeBtn');
+const popUpOpenBtn = document.querySelector('.popUpBalance__openBtn');
+const popUpMenu = document.querySelector('.popUpBalance');
+
+popUpOpenBtn.addEventListener('click', () => {
+  popUpMenu.style.display = 'block';
+})
+
+popUpCloseBtn.addEventListener('click', () => {
+  popUpMenu.style.display = 'none';
+})
+

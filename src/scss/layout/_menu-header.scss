@@ -1,0 +1,43 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.menuHeader {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  padding: $sm;
+  background-color: setcolor("black", "dark1");
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__navItems {
+    margin-top: $md;
+
+    li a {
+      display: flex;
+      align-items: center;
+      padding-bottom: $sm;
+
+      p {
+        @extend .u-f--h3, .u-f--bold;
+        padding-left: rem(10);
+      }
+    }
+  }
+
+  &--bottom {
+    a:not(:last-of-type) {
+      margin-right: rem(10);
+    }
+  }
+}

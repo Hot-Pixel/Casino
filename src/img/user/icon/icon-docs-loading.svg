@@ -1,14 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="23.903" height="24.932" viewBox="0 0 23.903 24.932">
-  <g id="icon-docs-loading" transform="matrix(0.809, 0.588, -0.588, 0.809, 5.394, -38.054)">
-    <line id="Línea_186" data-name="Línea 186" x2="2.857" y2="0.928" transform="translate(25 33.768)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_187" data-name="Línea 187" y1="0.928" x2="2.857" transform="translate(25 39.338)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_184" data-name="Línea 184" x1="1.766" y2="2.43" transform="translate(39.414 28.511)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_176" data-name="Línea 176" x2="1.766" y2="2.43" transform="translate(28.819 28.511)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_188" data-name="Línea 188" y1="2.43" x2="1.766" transform="translate(28.819 43.093)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_189" data-name="Línea 189" y1="3.004" transform="translate(35 44.527)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_190" data-name="Línea 190" x1="1.766" y1="2.43" transform="translate(39.414 43.093)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_191" data-name="Línea 191" x1="2.857" y1="0.928" transform="translate(42.143 39.338)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_192" data-name="Línea 192" x1="2.857" y2="0.928" transform="translate(42.143 33.768)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-    <line id="Línea_193" data-name="Línea 193" y2="6.008" transform="translate(35 25)" fill="none" stroke="#13171d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
-  </g>
-</svg>
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: transparent; display: block; shape-rendering: auto;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+<g transform="rotate(0 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(36 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(72 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.7s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(108 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(144 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(180 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(216 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(252 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.2s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(288 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.1s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(324 50 50)">
+  <rect x="48" y="24" rx="2" ry="3" width="4" height="12" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate>
+  </rect>
+</g>
+<!-- [ldio] generated by https://loading.io/ --></svg>

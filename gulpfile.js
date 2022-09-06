@@ -107,7 +107,7 @@ gulp.task("watch", async () => {
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
   watch(paths.scripts.watcher).on("change", gulp.series("js", server.reload));
-  watch(paths.images.watcher).on("add", gulp.series("imageMin", server.reload));
+  watch(paths.images.watcher).on("add", gulp.series("imageMin"));
   watch(paths.ejs.watcher).on("change", server.reload);
 });
 
@@ -175,10 +175,6 @@ gulp.task("bundleCss", async () => {
     .pipe(gulp.dest(paths.css.dest))
 });
 
-// gulp.task('copyImg', async () => {
-//   gulp.src('public/img/**/*.*')
-//       .pipe(gulp.dest('dist/img/'));
-// });
 gulp.task("copyImg", async () => {
   gulp
     .src(paths.images.src)

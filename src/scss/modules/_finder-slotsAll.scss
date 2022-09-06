@@ -7,13 +7,23 @@
   @extend %margin_top_medium;
 
   display: flex;
+  flex-direction: column;
+
+  @include screen-sm {
+    flex-direction: row;
+  }
 
   .filterSlots {
     width: 25%;
   }
+
   .gridGames {
-    width: 75%;
-    margin-left: $md;
+    width: 100%;
+
+    @include screen-sm {
+      width: 75%;
+      margin-left: $md;
+    }
   }
 }
 

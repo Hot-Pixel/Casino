@@ -12,9 +12,13 @@
 @use '../components/user';
 @use '../components/buttons';
 
+// @use '../objects/popUp-balance';
+
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
+@use '../layout/popUp-balance';
+@use '../layout/menu-header';
 
 // MODULES
 @use '../modules/aside-screens';
