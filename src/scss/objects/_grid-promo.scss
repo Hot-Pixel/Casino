@@ -45,11 +45,13 @@
 
   &-title {
     @extend .u-f--h3, .u-f--bold;
+    padding-bottom: rem(10);
   }
 
   &-subtitle {
     @extend .u-f--h4, .u-f--bold;
     color: setcolor('primary');
+    padding-bottom: rem(10);
   }
 
   &-body {

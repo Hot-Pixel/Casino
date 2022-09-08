@@ -1,0 +1,92 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.carouselPromo {
+    @extend %padding_horizontal_main;
+    padding-top: $lg;
+    padding-bottom: $xl;
+
+    background-color: setcolor('black', 'dark4');
+
+    &__header {
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            padding-bottom: $sm;
+            max-width: 100%;
+
+            @include screen-sm {
+                max-width: 60%;
+            }
+        }
+        .title {
+            @extend .u-f--h2, .u-f--bold;
+        }
+        .subtitle {
+            @extend .u-f--bold;
+        }
+        .body {
+            @extend .u-f--h4;
+            color: setcolor('gray', 'dark1');
+            padding-bottom: $lg;
+        }
+    }
+
+    &__slider {
+
+        li {
+            display: flex;
+            justify-content: center;
+
+            img {
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+    }
+
+    .splide__arrow {
+        top: unset;
+        bottom: -12%;
+        opacity: 1;
+
+        @include screen-sm {
+          top: 50%;
+        }
+
+        &:disabled {
+          opacity: 1;
+        }
+
+        img {
+          height: rem(40);
+          width: rem(40);
+
+          @include screen-sm {
+            height: rem(55);
+            width: rem(55);
+          }
+        }
+
+        &--prev {
+          left: 40%;
+
+          @include screen-sm {
+            left: -5%;
+          }
+        }
+
+        &--next {
+          right: 40%;
+
+          @include screen-sm {
+            right: -5%;
+          }
+        }
+      }
+}

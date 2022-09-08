@@ -50,7 +50,7 @@
         height: rem(45);
 
         @include screen-sm {
-          margin-right: rem(32);
+          margin-right: $md;
         }
       }
 
@@ -110,11 +110,11 @@
 
       #casino-provider, #ruleta-provider {
         margin-right: rem(5);
-        padding-right: rem(32);
+        padding-right: $md;
 
         @include screen-sm {
           margin: 0 rem(20);
-          padding-right: rem(32);
+          padding-right: $md;
         }
       }
 

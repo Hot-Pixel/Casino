@@ -3,13 +3,16 @@
 @use "../tools" as *;
 
 .filter__promo {
-  margin-top: $lg;
-  margin-bottom: $lg;
-  margin-left: $lg;
+  margin: $lg;
 
   display: flex;
   align-items: center;
   flex-direction: column;
+
+  @include screen-sm {
+    margin-top: $sm;
+    margin-bottom: $md;
+  }
 
   .splide__track {
     width: 100%;
@@ -18,7 +21,7 @@
   &-mobile {
     display: flex;
 
-    @include tablet {
+    @include screen-sm {
       display: none;
     }
   }
@@ -26,7 +29,7 @@
   &-desktop {
     display: none;
 
-    @include tablet {
+    @include screen-sm {
       display: flex;
 
       button {
@@ -49,13 +52,15 @@
       font-size: rem(14);
 
       @extend .u-f--bold;
-      color: setcolor("gray", "dark");
+      color: setcolor("gray", "dark1");
 
-      &:hover,
       &:focus,
-      &:active {
+      &:active,
+      &.mixitup-control-active {
         background-color: setcolor("black", "dark4");
-        color: setcolor("gray", "light");
+        color: white;
+        outline: none;
+        border: none;
       }
     }
 

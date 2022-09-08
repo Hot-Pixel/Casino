@@ -12,13 +12,29 @@ var mixerPromo = mixitup( container, {
   },
 });
 
-var carouselPromo = new Splide(".filter__promo .splide", {
+var carouselMenuPromo = new Splide(".filter__promo .splide", {
   pagination: false,
   arrows: false,
   perPage: 3,
   padding: { left: 0, right: 30 },
   perMove: 1,
   gap: 5,
+});
+carouselMenuPromo.mount();
+
+var carouselPromo = new Splide(".carouselPromo__slider", {
+  arrows: true,
+  pagination: false,
+  perPage: 3,
+  perMove: 1,
+  breakpoints: {
+    1280: {
+      perPage: 2,
+    },
+    768: {
+      perPage: 1,
+    }
+  }
 });
 carouselPromo.mount();
 

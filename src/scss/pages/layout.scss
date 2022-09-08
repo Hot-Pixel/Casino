@@ -31,11 +31,12 @@
 //LAYOUT
 @use '../layout/header';
 @use '../layout/footer';
+@use '../layout/splide';
 @use '../layout/popUp-balance';
 @use '../layout/menu-header';
 
 // MODULES
-// @use '../modules/_countdown';
+@use '../modules/carousel-promo';
 
 // HELPER
 @use '../helper';
