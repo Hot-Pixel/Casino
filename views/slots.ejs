@@ -162,9 +162,36 @@ const gridHalfRight =
 
 </section>
 
+<%- include ('modules/grid-full') %>
+
 <%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
 
-<section>
+<section class="slotGrids">
+
+  <style>
+    .slotGrids {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .slotGrids > button {
+      margin-top: 30px;
+      height: 65px;
+      width: 90%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        .slotGrids > button {
+        margin-top: 30px;
+        height: 100px;
+        padding: 0 120px;
+        width: fit-content;
+      }
+    }
+  </style>
+
+  <%- include ('modules/grid-full') %>
 
   <%- include ('modules/grid-full') %>
 

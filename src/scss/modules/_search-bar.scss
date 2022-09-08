@@ -5,7 +5,7 @@
 .search {
   @extend %margin_horizontal_main;
 
-  padding-bottom: $sm;
+  padding: $sm 0;
 
   display: none;
   justify-content: space-between;
@@ -65,6 +65,9 @@
 
       button {
         margin: 0;
+        span {
+          padding-right: rem(5)
+        }
       }
 
       p {

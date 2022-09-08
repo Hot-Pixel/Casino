@@ -73,3 +73,21 @@
     }
   }
 }
+
+.bannerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: setcolor('black');
+  padding: $sm 0;
+
+  span {
+    text-transform: uppercase;
+    @extend .u-f--bold;
+  }
+
+  @include screen-sm {
+    display: none;
+  }
+}

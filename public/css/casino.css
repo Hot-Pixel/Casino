@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .m-text-block .bold, .banner__wrapper-title p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .icon__title a p, .baseFilter__wrapper--right .is-showing, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .m-text-block .bold p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .baseFilter__wrapper--right .is-showing p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .m-text-block .bold, .banner__wrapper-title p, .bannerFooter span, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .icon__title a p, .baseFilter__wrapper--right .is-showing, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .m-text-block .bold p, .bannerFooter span p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .baseFilter__wrapper--right .is-showing p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -371,42 +371,42 @@
 }
 
 .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .baseFilter__wrapper--left #base-fav span, .breadcrumbs span {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
   .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .baseFilter__wrapper--left #base-fav span, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
   .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .baseFilter__wrapper--left #base-fav span, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .baseFilter__wrapper--left #base-fav span, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1440px) {
   .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .baseFilter__wrapper--left #base-fav span, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .baseFilter__wrapper--left #base-fav span, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
   .u-f--h5, .baseFilter__wrapper--left button,
-.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .breadcrumbs span {
+.baseFilter__wrapper--left select, .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider, .baseFilter__wrapper--left #base-fav span, .breadcrumbs span {
     font-size: 1rem;
   }
 }
@@ -1184,8 +1184,12 @@ h5 {
 }
 
 .breadcrumbs svg {
-  margin: 0 0.3125rem;
+  margin: 0 0.625rem;
 }
+.breadcrumbs span:last-of-type {
+  color: #a0a2a4;
+}
+
 .deposits {
   height: 2.5rem;
   border-radius: 1.875rem;
@@ -1307,6 +1311,7 @@ h5 {
 }
 .baseFilter__wrapper {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .baseFilter__wrapper-game, .baseFilter__wrapper-cruppier {
@@ -1316,6 +1321,9 @@ h5 {
   .baseFilter__wrapper-game, .baseFilter__wrapper-cruppier {
     display: block;
   }
+}
+.baseFilter__wrapper-game button, .baseFilter__wrapper-cruppier button {
+  cursor: pointer;
 }
 .baseFilter__wrapper-game button:first-of-type, .baseFilter__wrapper-cruppier button:first-of-type {
   border-radius: 0.3125rem 0 0 0.3125rem;
@@ -1332,36 +1340,45 @@ h5 {
 .baseFilter__wrapper--left button,
 .baseFilter__wrapper--left select {
   background-color: #25292f;
+  color: #a0a2a4;
   font-weight: 700;
   border: none;
-  height: 3.125rem;
+  height: 2.8125rem;
+}
+@media only screen and (min-width: 1280px) {
+  .baseFilter__wrapper--left button,
+.baseFilter__wrapper--left select {
+    margin-right: 2rem;
+  }
 }
 .baseFilter__wrapper--left button {
   margin: 0;
-  padding: 12px;
+  padding: 0 0.625rem;
 }
-.baseFilter__wrapper--left button.mixitup-control-active {
+@media only screen and (min-width: 1280px) {
+  .baseFilter__wrapper--left button {
+    padding: 0 1.25rem;
+  }
+}
+.baseFilter__wrapper--left button:focus, .baseFilter__wrapper--left button:active, .baseFilter__wrapper--left button.mixitup-control-active {
   background-color: #2d3239;
   color: white;
 }
 .baseFilter__wrapper--left select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: "";
+  appearance: none;
   background: transparent;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.928' height='6.352' viewBox='0 0 10.928 6.352'%3E%3Cpath d='M12.474,42.648,8.615,46.506a.27.27,0,0,1-.381,0h0L4.375,42.648' transform='translate(-2.961 -41.234)' fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position-x: 90%;
   background-position-y: 50%;
-  border: 1px solid #dfdfdf;
+  border: 1px solid #a0a2a4;
   border-radius: 0.3125rem;
-  padding: 0.625rem;
+  padding: 0 1.875rem 0 0.625rem;
 }
 @media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--left select {
-    padding: 1rem;
-    margin-right: 2rem;
+    padding: 0 1.875rem 0 1.25rem;
+    margin-right: 1.875rem;
   }
 }
 .baseFilter__wrapper--left #casino-provider, .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier, .baseFilter__wrapper--left #ruleta-provider {
@@ -1394,7 +1411,6 @@ h5 {
 }
 .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier {
   display: block;
-  padding-right: 0.3125rem;
 }
 @media only screen and (min-width: 1280px) {
   .baseFilter__wrapper--left #casino-game, .baseFilter__wrapper--left #ruleta-cruppier {
@@ -1415,6 +1431,7 @@ h5 {
   }
 }
 .baseFilter__wrapper--left #base-fav span {
+  color: #a0a2a4;
   margin: 0;
   display: none;
 }
@@ -1422,6 +1439,9 @@ h5 {
   .baseFilter__wrapper--left #base-fav span {
     display: block;
   }
+}
+.baseFilter__wrapper--left #base-fav.mixitup-control-active span {
+  color: white;
 }
 .baseFilter__wrapper--left #base-fav.mixitup-control-active svg path {
   fill: #ff293e;
@@ -1439,7 +1459,11 @@ h5 {
 .baseFilter__wrapper--right button {
   opacity: 0;
   transition: all 0.4s ease;
-  margin-right: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .baseFilter__wrapper--right button {
+    margin-right: 0.9375rem;
+  }
 }
 .baseFilter__wrapper--right button.visible {
   opacity: 1;
@@ -2066,6 +2090,22 @@ header.header.header--light .icon__title a p {
     height: 95px;
     margin-bottom: 0;
     margin-right: 0.9375rem;
+  }
+}
+
+.bannerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25292f;
+  padding: 0.9375rem 0;
+}
+.bannerFooter span {
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 1280px) {
+  .bannerFooter {
+    display: none;
   }
 }
 

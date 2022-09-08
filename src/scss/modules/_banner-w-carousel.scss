@@ -28,6 +28,7 @@
     @include screen-sm {
       flex-direction: row;
       overflow: hidden;
+      margin-bottom: 0;
     }
 
     &-wrapper {
