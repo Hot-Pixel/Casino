@@ -1,13 +1,29 @@
-import accordion from "./modules/accordion.js";
+import { gsap } from "gsap";
 
-const accorExist = document.getElementsByClassName("faq");
+const accorArrows = document.getElementsByClassName("accorArrow");
+const accorBody = document.getElementsByClassName("body");
 
-window.addEventListener("load", () => {
-  if (accorExist.length > 0) {
-    accordion();
-  }
-});
+console.log(accorBody);
 
+for (let n = 0; n < accorArrows.length; n++) {
+  accorArrows[n].addEventListener("click", () => {
+    if (accorBody[n].classList.contains("active")) {
+      gsap
+        .timeline()
+        .to(accorArrows[n], { rotation: -90, duration: 0.3 })
+        .to(accorBody[n], { opacity: 0, duration: 0.3 })
+        .to(accorBody[n], { height: 0, padding:0, duration: 0.3 });
+      accorBody[n].classList.remove("active");
+    } else {
+      gsap
+        .timeline()
+        .to(accorArrows[n], { rotation: 0, duration: 0.3 })
+        .to(accorBody[n], { height: "auto", padding: 15, duration: 0.3 })
+        .to(accorBody[n], { opacity: 1, duration: 0.3 });
+      accorBody[n].classList.add("active");
+    }
+  });
+}
 
 //CUENTA ATRAS
 // Set the date we're counting down to

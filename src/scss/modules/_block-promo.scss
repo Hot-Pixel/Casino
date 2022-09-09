@@ -44,8 +44,8 @@
     &-badge {
       transform: translateY(-50%);
 
-      width: rem(55);
-      height: rem(55);
+      width: rem(45);
+      height: rem(45);
       margin-bottom: rem(-30);
 
       filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.4));
@@ -58,6 +58,8 @@
 
     p {
       @extend .u-f--h1, .u-f--bold;
+      max-width: 80%;
+      padding: $sm 0;
     }
 
     &-btn {
@@ -127,13 +129,15 @@
       .title {
         @extend .u-f--h4, .u-f--bold;
         width: 100%;
+        padding-bottom: $sm;
 
         @include screen-sm {
            width: 50%;
+           padding-bottom: 0;
         }
       }
 
-      .body {
+      .content {
         width: 100%;
         color: #a4a5a8;
 
@@ -151,6 +155,11 @@
     p {
       color: setcolor('gray', 'dark1');
       padding-bottom: $sm;
+      max-width: 100%;
+
+      @include screen-sm {
+        max-width: 50%;
+      }
     }
 
     &-btn {

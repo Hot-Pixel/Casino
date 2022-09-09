@@ -9,8 +9,12 @@
   flex-direction: column;
   align-items: center;
 
-  padding: $lg 0;
+  padding: $md 0;
   background-color: setcolor("black", "dark2");
+
+  @include screen-lg {
+    padding: $lg 0;
+  }
 
   &__wrapper {
     @extend %margin_horizontal_main;

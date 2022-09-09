@@ -211,9 +211,19 @@
         }
       }
 
-      // #removeFilters {
-      //   display: none;
-      // }
+      .ruletaFilter__btn {
+        svg {
+          display: block;
+
+          @include screen-sm {
+            display: none;
+          }
+        }
+
+        span {
+          color: white;
+        }
+      }
     }
   }
 }
