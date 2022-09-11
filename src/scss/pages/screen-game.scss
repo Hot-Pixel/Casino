@@ -11,10 +11,9 @@
 @use '../components/deposits';
 @use '../components/user';
 @use '../components/buttons';
-@use '../components/breadcrumbs';
+@use '../components/svg-icon';
 
 //OBJECTS
-@use '../objects/screens-bar';
 
 //LAYOUT
 @use '../layout/header';
@@ -23,9 +22,15 @@
 @use '../layout/menu-header';
 
 // MODULES
-@use '../modules/aside-screens';
 @use '../modules/text-block';
 
 
 // HELPER
 @use '../helper';
+
+.screenGame {
+    & > img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }

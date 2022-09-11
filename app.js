@@ -17,6 +17,7 @@ import pokerTournament from "./routes/pokerTournament.js";
 import pokerPc from "./routes/pokerPc.js";
 import slotsScreen from "./routes/slots-screen.js";
 import casinoScreen from "./routes/casino-screen.js";
+import screenGame from "./routes/screen-game.js";
 import user from "./routes/user.js";
 import {fileURLToPath} from 'url';
 
@@ -47,6 +48,7 @@ app.use("/poker-mobile", pokerMobile);
 app.use("/poker-tournament", pokerTournament);
 app.use("/slots-screen", slotsScreen);
 app.use("/casino-screen", casinoScreen);
+app.use("/screen-game", screenGame);
 app.use("/user", user);
 
 // catch 404 and forward to error handler

@@ -78,6 +78,7 @@ gulp.task("js", async () => {
         "src/js/promociones",
         "src/js/promocion",
         "src/js/layout",
+        "src/js/screens",
         "src/js/user",
       ],
       plugins: [

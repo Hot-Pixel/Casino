@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .m-text-block .bold, .banner__wrapper-title p, .bannerFooter span, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .icon__title a p, .baseFilter__wrapper--right .is-showing, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .m-text-block .bold p, .bannerFooter span p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .baseFilter__wrapper--right .is-showing p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .textBlock .bold, .banner__wrapper-title p, .bannerFooter span, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .icon__title a p, .baseFilter__wrapper--right .is-showing, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .textBlock .bold p, .bannerFooter span p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .baseFilter__wrapper--right .is-showing p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -268,70 +268,70 @@
   }
 }
 
-.u-f--h2, .m-text-block .title-big {
+.u-f--h2, .textBlock .title-big {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .m-text-block .title-big {
+  .u-f--h2, .textBlock .title-big {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .m-text-block .title-big {
+  .u-f--h2, .textBlock .title-big {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .m-text-block .title-big {
+  .u-f--h2, .textBlock .title-big {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .m-text-block .title-big {
+  .u-f--h2, .textBlock .title-big {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .m-text-block .title-big {
+  .u-f--h2, .textBlock .title-big {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .m-text-block .title-big {
+  .u-f--h2, .textBlock .title-big {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+.u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .m-text-block .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
@@ -474,48 +474,48 @@
   }
 }
 
-.m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+.textBlock, .casinoFinder, .footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -523,48 +523,48 @@
   }
 }
 
-.m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+.textBlock, .casinoFinder, .footer__grid, .footer__brands {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .m-text-block, .casinoFinder, .footer__grid, .footer__brands {
+  .textBlock, .casinoFinder, .footer__grid, .footer__brands {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -630,31 +630,31 @@
   }
 }
 
-.m-text-block {
+.textBlock {
   margin-top: var(--vertical-large-xs);
 }
 @media only screen and (min-width: 576px) {
-  .m-text-block {
+  .textBlock {
     margin-top: var(--vertical-large-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .m-text-block {
+  .textBlock {
     margin-top: var(--vertical-large-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .m-text-block {
+  .textBlock {
     margin-top: var(--vertical-large-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .m-text-block {
+  .textBlock {
     margin-top: var(--vertical-large-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .m-text-block {
+  .textBlock {
     margin-top: var(--vertical-large-2xl);
   }
 }
@@ -2120,13 +2120,13 @@ header.header.header--light .icon__title a p {
   }
 }
 
-.m-text-block p {
+.textBlock p {
   padding-bottom: 0.9375rem;
 }
-.m-text-block .margin-big {
+.textBlock .margin-big {
   padding-bottom: 1.875rem;
 }
-.m-text-block .gray {
+.textBlock .gray {
   color: #939598;
 }
 /*# sourceMappingURL=casino.css.map */
