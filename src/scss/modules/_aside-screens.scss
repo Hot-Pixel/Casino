@@ -29,13 +29,16 @@
     fill: setcolor("primary");
   }
 
-  aside.asideSlots {
+  .asideSlots, .asideCasino {
     display: none;
     width: 30%;
-    padding: $md $lg;
+    padding: $md $md;
 
     @include screen-sm {
       display: block;
+    }
+    @include screen-lg {
+      padding: $md $lg;
     }
 
     .aside__title {
@@ -43,7 +46,7 @@
     }
   }
 
-  aside.asideSlots__mobile {
+  .asideSlots__mobile, .asideCasino__mobile {
     display: block;
     width: 100%;
     padding: 0;
@@ -75,6 +78,13 @@
       width: 150%;
       padding: $sm 0 $sm $sm;
       background-image: linear-gradient(to right, transparent, #13171d);
+
+      @include mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     &--bottom {
@@ -132,6 +142,11 @@
       row-gap: $sm;
 
       @include screen-sm {
+        grid-template-columns: repeat(3, 1fr);
+        gap: $sm;
+      }
+
+      @include screen-lg {
         grid-template-columns: repeat(4, 1fr);
         gap: $md;
       }
@@ -164,6 +179,17 @@
   }
 
   .tableScreen {
+    margin: $sm;
+
+    @include tablet {
+      margin: $md;
+    }
+
+    @include screen-sm {
+      margin: 0;
+      margin-top: $md;
+    }
+
     &__grid {
       display: flex;
       flex-direction: column;

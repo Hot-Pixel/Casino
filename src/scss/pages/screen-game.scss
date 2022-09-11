@@ -12,6 +12,7 @@
 @use '../components/user';
 @use '../components/buttons';
 @use '../components/svg-icon';
+@use '../components/header-module';
 
 //OBJECTS
 
@@ -24,13 +25,48 @@
 // MODULES
 @use '../modules/text-block';
 
-
 // HELPER
 @use '../helper';
+
+
+
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
 
 .screenGame {
     & > img {
       object-fit: contain;
       width: 100%;
+    }
+
+    &__bar {
+      display: flex;
+      justify-content: center;
+
+      padding: $sm;
+      background-color: setcolor('black', 'dark2');
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-of-type) {
+        margin-right: rem(10);
+      }
+
+      p {
+        font-size: rem(12);
+
+        @include tablet {
+          font-size: rem(14);
+        }
+      }
+
+      p:last-of-type {
+        padding-left: rem(5);
+        color: #a4a6a8;
+      }
     }
   }

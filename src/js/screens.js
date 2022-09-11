@@ -1,28 +1,41 @@
-const heartBtn = document.querySelector('.heart');
+const screenExist = document.getElementsByClassName("screens");
 
-heartBtn.addEventListener('click', () => {
-    heartBtn.classList.toggle('active');
+window.addEventListener("load", () => {
+  if (screenExist.length > 0) {
+    heartAction();
+  }
+  popUpAction();
 });
 
-const popUpCloseBtn = document.querySelector('.popUpBalance__closeBtn');
-const popUpOpenBtn = document.querySelector('.popUpBalance__openBtn');
-const popUpMenu = document.querySelector('.popUpBalance');
+function heartAction() {
+  const heartBtn = document.querySelector(".heart");
 
-popUpOpenBtn.addEventListener('click', () => {
-  popUpMenu.style.display = 'block';
-})
+  heartBtn.addEventListener("click", () => {
+    heartBtn.classList.toggle("active");
+  });
+}
 
-popUpCloseBtn.addEventListener('click', () => {
-  popUpMenu.style.display = 'none';
-})
+function popUpAction() {
+  const popUpCloseBtn = document.querySelector(".popUpBalance__closeBtn");
+  const popUpOpenBtn = document.querySelector(".popUpBalance__openBtn");
+  const popUpMenu = document.querySelector(".popUpBalance");
 
-const menuHeaderOpenBtn = document.querySelector(".menuHeader__openBtn");
-const menuHeaderCloseBtn = document.querySelector(".menuHeader__closeBtn");
-const menuHeader = document.querySelector(".menuHeader");
+  popUpOpenBtn.addEventListener("click", () => {
+    popUpMenu.style.display = "block";
+  });
 
-menuHeaderOpenBtn.addEventListener("click", () => {
-  menuHeader.style.display = "flex";
-});
-menuHeaderCloseBtn.addEventListener("click", () => {
-  menuHeader.style.display = "none";
-});
+  popUpCloseBtn.addEventListener("click", () => {
+    popUpMenu.style.display = "none";
+  });
+
+  const menuHeaderOpenBtn = document.querySelector(".menuHeader__openBtn");
+  const menuHeaderCloseBtn = document.querySelector(".menuHeader__closeBtn");
+  const menuHeader = document.querySelector(".menuHeader");
+
+  menuHeaderOpenBtn.addEventListener("click", () => {
+    menuHeader.style.display = "flex";
+  });
+  menuHeaderCloseBtn.addEventListener("click", () => {
+    menuHeader.style.display = "none";
+  });
+}
