@@ -8,8 +8,8 @@ $body_bg: setcolor('black', 'dark1');
 $body_color: setcolor('white');
 
 // fonts
-$body_font_size: rem(10);
-$body_font_size_ipad: rem(12);
+$body_font_size: rem(14);
+$body_font_size_ipad: rem(16);
 $body_font_size_desktop: rem(14);
 
 $body_font_family: setfont("family", "primary");
@@ -35,7 +35,7 @@ $buttons_font_family: setfont("family", "primary");
 $buttons_font_weight: setfont('weight', 'bold');
 $buttons_border_radius: rem(100);
 
-$buttons_font_size: rem(10);
+$buttons_font_size: rem(12);
 $buttons_font_size_ipad: rem(12);
 $buttons_font_size_desktop: rem(12);
 

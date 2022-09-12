@@ -55,7 +55,7 @@
       position: relative;
       background-color: setcolor("black");
       border-radius: 0 0 rem(10) rem(10);
-      padding: $md $sm 0;
+      padding: $md $md 0;
 
 
       @include screen-sm {
@@ -66,15 +66,15 @@
 
       &-content {
         display: flex;
+        align-items: center;
         flex-direction: column;
-        max-width: 80%;
+
         text-align: center;
         margin: 0 auto;
-        padding-bottom: $sm;
-
 
       @include screen-sm {
         padding-bottom: $md;
+        max-width: 80%;
       }
 
         p:first-of-type {
@@ -85,23 +85,6 @@
           @extend .u-f--h4, .u-f--bold;
           color: #a7a9ab;
           padding-bottom: $sm;
-        }
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          span {
-            @extend .u-f--bold;
-            font-size: rem(12);
-            color: setcolor("primary");
-            margin: 0;
-            padding-right: rem(5);
-          }
-
-          img {
-            height: rem(12);
-          }
         }
       }
 
@@ -116,22 +99,22 @@
 
         button {
           height: rem(65);
-          width: 60%;
+          width: 100%;
           padding: $sm;
 
+          @include mobile {
+            width: 80%;
+          }
+          @include tablet {
+            width: 60%;
+          }
           @include screen-md {
             width: 50%;
           }
 
           img {
-            display: none;
-
             width: rem(35);
             height: rem(35);
-
-            @include tablet {
-              display: block;
-            }
           }
         }
 

@@ -1,0 +1,21 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+a.redCta {
+  display: flex;
+  align-items: center;
+
+  span {
+    @extend .u-f--bold;
+    font-size: rem(12);
+    color: setcolor("primary");
+    margin: 0;
+    padding-right: rem(5);
+  }
+
+  img {
+    height: rem(12);
+    width: rem(12);
+  }
+}

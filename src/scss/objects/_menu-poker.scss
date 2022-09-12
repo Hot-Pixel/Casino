@@ -49,9 +49,7 @@
       .menuPoker__btn {
         padding: 0 $sm;
         margin: 0;
-
-        display: flex;
-        justify-content: center;
+        width: 100%;
 
         img {
           display: none;
@@ -61,17 +59,12 @@
   }
 
   &__btn {
-    position: relative;
-
     display: flex;
+    justify-content: center;
     align-items: center;
 
     background-color: transparent;
     cursor: pointer;
-
-    &:not(:last-of-type) {
-      border-right: 1px solid setcolor("black", "dark5");
-    }
 
     &:hover,
     &:active,
@@ -107,5 +100,9 @@
       transform: translateX(-50%);
       opacity: 0;
     }
+  }
+
+  a:not(:last-of-type) {
+    border-right: 1px solid setcolor('black', 'dark5');
   }
 }

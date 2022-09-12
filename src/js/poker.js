@@ -8,6 +8,7 @@ window.addEventListener("load", () => {
   if (menuPokerExist.length > 0) {
     accordion();
     carouselPoker();
+    menuPoker();
   }
 });
 

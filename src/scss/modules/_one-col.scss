@@ -3,67 +3,54 @@
 @use "../tools" as *;
 
 .oneCol {
-    @extend %margin_horizontal_main, %margin_top_medium;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  @extend %margin_horizontal_main, %margin_top_medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    padding: $md 0;
-    background-color: setcolor('black', 'dark2');
+  padding: $md 0;
+  background-color: setcolor("black", "dark2");
+
+  @include screen-sm {
+    padding: rem(80) 0;
+  }
+  @include screen-md {
+    padding: rem(120) 0;
+  }
+  @include screen-lg {
+    padding: rem(150) 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  p {
+    @extend .u-f--bold;
+    max-width: 80%;
 
     @include screen-sm {
-        padding: rem(80) 0;
+      max-width: 50%;
     }
-    @include screen-md {
-        padding: rem(120) 0;
-    }
-    @include screen-lg {
-        padding: rem(150) 0;
-    }
+  }
 
-    &__wrapper {
-        text-align: center;
-        max-width: 80%;
+  &__title {
+    @extend .u-f--h1;
+  }
 
-        @include screen-sm {
-            max-width: 50%;
-        }
-    }
+  &__subtitle {
+    @extend .u-f--h2;
+    padding-bottom: $sm;
+  }
 
-    p {
-        @extend .u-f--bold;
-    }
-
-    &__title {
-        @extend .u-f--h1;
-    }
-
-    &__subtitle {
-        @extend .u-f--h2;
-        padding-bottom: $sm;
-    }
-
-    &__body {
-        @extend .u-f--h4;
-        color: #a4a5a8;
-        padding-bottom: $sm;
-    }
-
-    a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        span {
-          @extend .u-f--bold;
-          font-size: rem(12);
-          color: setcolor("primary");
-          margin: 0;
-          padding-right: rem(5);
-        }
-
-        img {
-          height: rem(12);
-        }
-      }
+  &__body {
+    @extend .u-f--h4;
+    color: #a4a5a8;
+    padding-bottom: $sm;
+  }
 }

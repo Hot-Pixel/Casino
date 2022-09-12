@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .imageTextTorneo {
-  @extend %margin_horizontal_main, %margin_top_medium;
+  @extend %margin_horizontal_main, %margin_top_large;
 
   padding: $lg;
 
@@ -28,11 +28,16 @@
   }
 
   &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     width: 100%;
     padding-bottom: $sm;
     text-align: center;
 
     @include screen-sm {
+      align-items: flex-start;
       width: 40%;
       padding: $lg;
       text-align: left;
@@ -45,19 +50,7 @@
     p:last-of-type {
       color: setcolor('gray', 'dark1');
     }
-    a {
-      span {
-        @extend .u-f--bold;
-        font-size: rem(12);
-        color: setcolor("primary");
-        margin: 0;
-        padding-right: rem(5);
-      }
 
-      img {
-        height: rem(12);
-      }
-    }
   }
 
   &__image {

@@ -33,8 +33,14 @@
     &.regular {
       padding: $sm;
 
-      @include tablet {
-        row-gap: $lg;
+      @include tablet-h {
+        padding: $lg;
+      }
+      @include screen-sm {
+        padding: $sm;
+      }
+      @include screen-lg {
+        padding: $lg;
       }
     }
 
@@ -45,13 +51,22 @@
     &.wBtn {
       padding: $sm;
       padding-bottom: 0;
-
+      margin-bottom: $md;
 
       display: flex;
       flex-direction: column;
       justify-content: space-between;
 
-      @include tablet {
+      @include tablet-h {
+        padding: $lg;
+        padding-bottom: 0;
+      }
+      @include screen-sm {
+        padding: $sm;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      @include screen-lg {
         padding: $lg;
         padding-bottom: 0;
       }
@@ -113,30 +128,38 @@
 
       button {
         transform: translateY(50%);
-        height: rem(45);
-        width: 80%;
-
-        @include tablet {
-          height: rem(70);
-        }
-
-        img {
-          display: none;
-
-          @include tablet {
-            display: block;
-          }
-        }
+        height: rem(70);
+        width: 100%;
       }
     }
 
     .grid3Cols__btn {
       height: rem(70);
       width: 100%;
-      margin-bottom: rem(10);
 
       &:first-of-type {
-        margin-top: $lg;
+        margin-bottom: rem(10);
+
+        @include screen-sm {
+          margin-top: $lg;
+        }
+      }
+    }
+  }
+
+  &__mobile {
+    padding-bottom: 0 !important;
+    margin-bottom: $md;
+
+    @include screen-sm {
+      margin-bottom: 0;
+    }
+
+    &-btns {
+      transform: translateY(25%);
+
+      @include screen-sm {
+        transform: translateY(0);
       }
     }
   }
