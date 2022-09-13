@@ -1,15 +1,9 @@
 import { Splide } from "@splidejs/splide";
 import { Grid } from "@splidejs/splide-extension-grid";
 import { gsap } from "gsap";
+import carouselBanner from "./modules/carouselBanner.js";
 
-//CAROUSEL BANNER
-var carouselBanner = new Splide(".bannerCarousel .splide", {
-  perPage: 1,
-  arrow: true,
-  pagination: false
-});
-
-carouselBanner.mount();
+carouselBanner();
 
 //CAROUSEL JACKPOT
 var carouselJackpot = new Splide(".jackpot__carousel", {
