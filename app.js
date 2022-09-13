@@ -18,6 +18,12 @@ import pokerPc from "./routes/pokerPc.js";
 import slotsScreen from "./routes/slots-screen.js";
 import casinoScreen from "./routes/casino-screen.js";
 import screenGame from "./routes/screen-game.js";
+import data from "./routes/datos.js";
+import docs from "./routes/documentos.js";
+import history from "./routes/historial.js";
+import wallet from "./routes/cartera.js";
+import preferences from "./routes/preferencias.js";
+import support from "./routes/soporte.js";
 import user from "./routes/user.js";
 import {fileURLToPath} from 'url';
 
@@ -48,6 +54,12 @@ app.use("/poker-mobile", pokerMobile);
 app.use("/poker-tournament", pokerTournament);
 app.use("/slots-screen", slotsScreen);
 app.use("/casino-screen", casinoScreen);
+app.use("/datos", data);
+app.use("/mis-documentos", docs);
+app.use("/historial", history);
+app.use("/mi-cartera", wallet);
+app.use("/preferencias", preferences);
+app.use("/soporte", support);
 app.use("/screen-game", screenGame);
 app.use("/user", user);
 

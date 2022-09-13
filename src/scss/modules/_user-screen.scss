@@ -2,18 +2,18 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.userScreen, .withdrawScreen, .depositScreen {
+.withdrawScreen, .depositScreen {
   display: none;
 }
 
-.block-active {
-  display: block !important;
-}
+// .block-active {
+//   display: block !important;
+// }
 
-.userScreen.user-on {
+.userScreen {
   position: relative;
   display: block;
-  opacity: 0;
+  opacity: 1;
 
   background-color: setcolor("gray", "light2");
 
@@ -33,17 +33,17 @@
       padding: $md;
     }
 
-    &__block {
-      display: none;
+    // &__block {
+    //   display: none;
 
-      .dataBlock,
-      .dataModifyBlock,
-      .docsBlock,
-      .docsVerifyBlock,
-      .docsVerifyBlock2 {
-        display: none;
-      }
-    }
+    //   .dataBlock,
+    //   .dataModifyBlock,
+    //   .docsBlock,
+    //   .docsVerifyBlock,
+    //   .docsVerifyBlock2 {
+    //     display: none;
+    //   }
+    // }
   }
 
   .userMenu {
@@ -51,8 +51,8 @@
     width: 20%;
     height: 92vh;
     top: 8vh;
-    left: -20%;
-    opacity: 0;
+    left: 0;
+    opacity: 1;
 
     overflow: hidden;
 

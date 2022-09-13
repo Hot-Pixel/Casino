@@ -1,0 +1,69 @@
+<%- include ('layout/head', {title: "Layout" , css: "user" }) %>
+
+<%- include ('layout/header') %>
+
+<main class="userScreen">
+
+    <%- include ('objects/user/user-menu') %>
+
+    <%- include ('objects/user/user-menu-mobile') %>
+
+    <section class="userContent has-header">
+        <div class="userContent__block">
+            <%- include ('objects/user/wallet') %>
+        </div>
+    </section>
+</main>
+
+<main class="withdrawScreen">
+
+    <div class="withdraw">
+
+        <section class="withdraw__header">
+            <img src="img/user/logo/logo-casino-dark.png" alt="">
+            <img src="img/user/icon/icon-menu-close.svg" alt="" class="withdraw__btn-close">
+        </section>
+
+        <div class="withdraw__block">
+            <%- include ('objects/user/withdraw') %>
+        </div>
+
+        <div class="withdraw__block">
+            <%- include ('objects/user/withdraw-detail') %>
+        </div>
+
+        <div class="withdraw__block">
+            <%- include ('objects/user/withdraw-ok') %>
+        </div>
+
+    </div>
+
+</main>
+
+<main class="depositScreen">
+
+    <div class="deposit">
+
+        <section class="deposit__header">
+            <img src="img/user/logo/logo-casino-dark.png" alt="">
+            <img src="img/user/icon/icon-menu-close.svg" alt="" class="deposit__btn-close">
+        </section>
+
+        <div class="deposit__block">
+            <%- include ('objects/user/deposit') %>
+        </div>
+
+        <div class="deposit__block">
+            <%- include ('objects/user/deposit-detail') %>
+        </div>
+
+        <div class="deposit__block">
+            <%- include ('objects/user/deposit-ok') %>
+        </div>
+
+    </div>
+
+</main>
+
+<%- include ('layout/scripts', { script: 'user'})%>
+

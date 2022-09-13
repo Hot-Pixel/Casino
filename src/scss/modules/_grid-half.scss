@@ -2,6 +2,25 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+.slotGrids {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > button {
+    margin-top: 30px;
+    height: 65px;
+    width: 90%;
+
+    @include screen-sm {
+      margin-top: 30px;
+      height: 100px;
+      padding: 0 120px;
+      width: fit-content;
+    }
+  }
+}
+
 .grids__container {
   @extend %margin_horizontal_main, %margin_top_small;
   display: flex;
