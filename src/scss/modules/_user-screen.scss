@@ -6,9 +6,9 @@
   display: none;
 }
 
-// .block-active {
-//   display: block !important;
-// }
+.block-active {
+  display: block !important;
+}
 
 .userScreen {
   position: relative;
@@ -33,17 +33,13 @@
       padding: $md;
     }
 
-    // &__block {
-    //   display: none;
-
-    //   .dataBlock,
-    //   .dataModifyBlock,
-    //   .docsBlock,
-    //   .docsVerifyBlock,
-    //   .docsVerifyBlock2 {
-    //     display: none;
-    //   }
-    // }
+    .dataBlock,
+    .dataModifyBlock,
+    .docsBlock,
+    .docsVerifyBlock,
+    .docsVerifyBlock2 {
+      display: none;
+    }
   }
 
   .userMenu {

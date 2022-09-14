@@ -4,7 +4,7 @@
 
 <main class="userScreen">
 
-    <%- include ('objects/user/user-menu') %>
+    <%- include ('objects/user/user-menu'), { data: 'nav-active'} %>
 
     <%- include ('objects/user/user-menu-mobile') %>
 
@@ -15,31 +15,6 @@
             </div>
         </div>
     </section>
-</main>
-
-<main class="withdrawScreen">
-
-    <div class="withdraw">
-
-        <section class="withdraw__header">
-            <img src="img/user/logo/logo-casino-dark.png" alt="">
-            <img src="img/user/icon/icon-menu-close.svg" alt="" class="withdraw__btn-close">
-        </section>
-
-        <div class="withdraw__block">
-            <%- include ('objects/user/withdraw') %>
-        </div>
-
-        <div class="withdraw__block">
-            <%- include ('objects/user/withdraw-detail') %>
-        </div>
-
-        <div class="withdraw__block">
-            <%- include ('objects/user/withdraw-ok') %>
-        </div>
-
-    </div>
-
 </main>
 
 <main class="depositScreen">
