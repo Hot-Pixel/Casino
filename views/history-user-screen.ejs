@@ -1,12 +1,23 @@
-<%- include ('layout/head', {title: "Layout" , css: "user" }) %>
+<%
+    let nav = {
+        data: '',
+        docs: '',
+        wallet: '',
+        hist: 'nav-active',
+        pref: '',
+        supp: '',
+    }
+%>
+
+<%- include ('layout/head', {title: "Mi Historial" , css: "user" }) %>
 
 <%- include ('layout/header') %>
 
 <main class="userScreen">
 
-    <%- include ('objects/user/user-menu') %>
+    <%- include ('objects/user/user-menu', { nav: nav }) %>
 
-    <%- include ('objects/user/user-menu-mobile') %>
+    <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
 
     <section class="userContent has-header">
         <div class="userContent__block">
@@ -65,5 +76,5 @@
 
 </main>
 
-<%- include ('layout/scripts', { script: 'user'})%>
+<%- include ('layout/scripts', { script: 'history'})%>
 

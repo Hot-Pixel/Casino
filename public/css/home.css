@@ -2425,25 +2425,6 @@ header.header.header--light .icon__title a p {
   margin-right: 0.9375rem;
 }
 
-.slotGrids {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.slotGrids > button {
-  margin-top: 30px;
-  height: 65px;
-  width: 90%;
-}
-@media only screen and (min-width: 1280px) {
-  .slotGrids > button {
-    margin-top: 30px;
-    height: 100px;
-    padding: 0 120px;
-    width: fit-content;
-  }
-}
-
 .grids__container {
   display: flex;
   flex-direction: column;
@@ -3024,6 +3005,25 @@ header.header.header--light .icon__title a p {
 }
 .textBlock .gray {
   color: #939598;
+}
+
+.slotGrids {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slotGrids button {
+  margin-top: 30px;
+  height: 65px;
+  width: 90%;
+}
+@media only screen and (min-width: 1280px) {
+  .slotGrids button {
+    margin-top: 30px;
+    height: 100px;
+    padding: 0 120px;
+    width: fit-content;
+  }
 }
 
 .gridFull {

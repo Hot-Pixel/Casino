@@ -80,6 +80,9 @@ gulp.task("js", async () => {
         "src/js/layout",
         "src/js/screens",
         "src/js/user",
+        "src/js/data",
+        "src/js/docs",
+        "src/js/history",
       ],
       plugins: [
         commonjs({

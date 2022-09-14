@@ -1,30 +1,18 @@
 import { gsap } from "gsap";
 
-const dataModifyOpen = document.querySelector(".data__modify-open");
-const dataModifyClose = document.querySelector(".data__modify-close");
-const dataBlock = document.querySelector(".dataBlock");
-const dataModifyBlock = document.querySelector(".dataModifyBlock");
 
-dataModifyOpen.addEventListener("click", () => {
-  dataBlock.classList.remove("block-active");
-  dataModifyBlock.classList.add("block-active");
-});
 
-dataModifyClose.addEventListener("click", () => {
-  dataBlock.classList.add("block-active");
-  dataModifyBlock.classList.remove("block-active");
-});
 
-const menuMobileCollapse = document.querySelector(".userMenuMobile__collapse");
-const menuMobileTab = document.querySelector(".userMenuMobile__tab");
+// const menuMobileCollapse = document.querySelector(".userMenuMobile__collapse");
+// const menuMobileTab = document.querySelector(".userMenuMobile__tab");
 
-menuMobileCollapse.addEventListener("click", () => {
-  gsap.to(userMenuMobile, { right: "-80vw", opacity: 1, duration: 0.4 });
-});
+// menuMobileCollapse.addEventListener("click", () => {
+//   gsap.to(userMenuMobile, { right: "-80vw", opacity: 1, duration: 0.4 });
+// });
 
-menuMobileTab.addEventListener("click", () => {
-  gsap.to(userMenuMobile, { right: 0, opacity: 1, duration: 0.4 });
-});
+// menuMobileTab.addEventListener("click", () => {
+//   gsap.to(userMenuMobile, { right: 0, opacity: 1, duration: 0.4 });
+// });
 
 // const verifyBtn = document.querySelectorAll(".nav__btn > button");
 // const docsBlock = document.querySelector(".docsBlock");

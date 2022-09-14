@@ -1,12 +1,23 @@
+<%
+    let nav = {
+        data: '',
+        docs: '',
+        wallet: '',
+        hist: '',
+        pref: '',
+        supp: 'nav-active',
+    }
+%>
+
 <%- include ('layout/head', {title: "Layout" , css: "user" }) %>
 
 <%- include ('layout/header') %>
 
 <main class="userScreen">
 
-    <%- include ('objects/user/user-menu') %>
+    <%- include ('objects/user/user-menu', { nav: nav }) %>
 
-    <%- include ('objects/user/user-menu-mobile') %>
+    <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
 
     <section class="userContent has-header">
 

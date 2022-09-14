@@ -104,12 +104,20 @@
             color: setcolor("secondary");
           }
 
-          svg,
-          svg g,
-          svg path,
-          svg g path,
-          svg g circle {
+          .nav__item-icon,
+          .nav__item-icon g,
+          .nav__item-icon path,
+          .nav__item-icon g path,
+          .nav__item-icon g circle {
             stroke: setcolor("secondary");
+          }
+
+          .nav__item-arrow,
+          .nav__item-arrow g,
+          .nav__item-arrow path,
+          .nav__item-arrow g path,
+          .nav__item-arrow g circle {
+            fill: setcolor("secondary");
           }
         }
 

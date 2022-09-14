@@ -1565,8 +1565,10 @@ h5 {
   transition: all 0.4s ease;
   color: #13171d;
 }
+.history .history__navbar .history__nav.is-active {
+  color: #13171d;
+}
 .history .history__grid {
-  display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 1.875rem;
 }
@@ -1635,6 +1637,12 @@ h5 {
 }
 .history .history__grid .history__activity .history__table-row:nth-of-type(even) {
   background-color: #f4f6f7;
+}
+.history .block {
+  display: none;
+}
+.history .active-block {
+  display: grid !important;
 }
 
 .docs__state {
@@ -3523,12 +3531,19 @@ header.header.header--light .icon__title a p {
 .userScreen .userMenu .nav__item.nav-active p {
   color: #00d1bc;
 }
-.userScreen .userMenu .nav__item.nav-active svg,
-.userScreen .userMenu .nav__item.nav-active svg g,
-.userScreen .userMenu .nav__item.nav-active svg path,
-.userScreen .userMenu .nav__item.nav-active svg g path,
-.userScreen .userMenu .nav__item.nav-active svg g circle {
+.userScreen .userMenu .nav__item.nav-active .nav__item-icon,
+.userScreen .userMenu .nav__item.nav-active .nav__item-icon g,
+.userScreen .userMenu .nav__item.nav-active .nav__item-icon path,
+.userScreen .userMenu .nav__item.nav-active .nav__item-icon g path,
+.userScreen .userMenu .nav__item.nav-active .nav__item-icon g circle {
   stroke: #00d1bc;
+}
+.userScreen .userMenu .nav__item.nav-active .nav__item-arrow,
+.userScreen .userMenu .nav__item.nav-active .nav__item-arrow g,
+.userScreen .userMenu .nav__item.nav-active .nav__item-arrow path,
+.userScreen .userMenu .nav__item.nav-active .nav__item-arrow g path,
+.userScreen .userMenu .nav__item.nav-active .nav__item-arrow g circle {
+  fill: #00d1bc;
 }
 .userScreen .userMenu .nav__item--left {
   display: flex;

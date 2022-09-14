@@ -1,10 +1,21 @@
+<%
+    let nav = {
+        data: '',
+        docs: 'nav-active',
+        wallet: '',
+        hist: '',
+        pref: '',
+        supp: '',
+    }
+%>
+
 <%- include ('layout/head', {title: "Layout" , css: "user" }) %>
 
 <%- include ('layout/header') %>
 
 <main class="userScreen">
 
-    <%- include ('objects/user/user-menu'), { data: 'nav-active'} %>
+    <%- include ('objects/user/user-menu', { nav: nav }) %>
 
     <%- include ('objects/user/user-menu-mobile') %>
 
@@ -42,5 +53,5 @@
 
 </main>
 
-<%- include ('layout/scripts', { script: 'user'})%>
+<%- include ('layout/scripts', { script: 'docs'})%>
 

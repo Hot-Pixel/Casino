@@ -1,12 +1,23 @@
+<%
+    let nav = {
+        data: 'nav-active',
+        docs: '',
+        wallet: '',
+        hist: '',
+        pref: '',
+        supp: '',
+    }
+%>
+
 <%- include ('layout/head', {title: "Layout" , css: "user" }) %>
 
 <%- include ('layout/header') %>
 
 <main class="userScreen">
 
-    <%- include ('objects/user/user-menu') %>
+    <%- include ('objects/user/user-menu', { nav: nav }) %>
 
-    <%- include ('objects/user/user-menu-mobile') %>
+    <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
 
     <section class="userContent has-header">
         <div class="dataBlock block-active">
@@ -43,5 +54,5 @@
 
 </main>
 
-<%- include ('layout/scripts', { script: 'user'})%>
+<%- include ('layout/scripts', { script: 'data'})%>
 
