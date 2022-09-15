@@ -21,14 +21,13 @@
         color: setcolor("black", "dark1");
       }
 
-      // &.is-active {
-      //   color: setcolor("black", "dark1");
-      // }
+      &.is-active {
+        color: setcolor("black", "dark1");
+      }
     }
   }
 
   .history__grid {
-    display: grid;
     grid-template-columns: 1fr 3fr;
     gap: $md;
 
@@ -116,5 +115,13 @@
             }
         }
     }
+  }
+
+  .block {
+    display: none;
+  }
+
+  .active-block {
+    display: grid !important;
   }
 }

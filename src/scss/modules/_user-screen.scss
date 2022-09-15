@@ -2,7 +2,7 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.userScreen, .withdrawScreen, .depositScreen {
+.withdrawScreen, .depositScreen {
   display: none;
 }
 
@@ -10,10 +10,10 @@
   display: block !important;
 }
 
-.userScreen.user-on {
+.userScreen {
   position: relative;
   display: block;
-  opacity: 0;
+  opacity: 1;
 
   background-color: setcolor("gray", "light2");
 
@@ -33,16 +33,12 @@
       padding: $md;
     }
 
-    &__block {
+    .dataBlock,
+    .dataModifyBlock,
+    .docsBlock,
+    .docsVerifyBlock,
+    .docsVerifyBlock2 {
       display: none;
-
-      .dataBlock,
-      .dataModifyBlock,
-      .docsBlock,
-      .docsVerifyBlock,
-      .docsVerifyBlock2 {
-        display: none;
-      }
     }
   }
 
@@ -51,8 +47,8 @@
     width: 20%;
     height: 92vh;
     top: 8vh;
-    left: -20%;
-    opacity: 0;
+    left: 0;
+    opacity: 1;
 
     overflow: hidden;
 
@@ -108,12 +104,20 @@
             color: setcolor("secondary");
           }
 
-          svg,
-          svg g,
-          svg path,
-          svg g path,
-          svg g circle {
+          .nav__item-icon,
+          .nav__item-icon g,
+          .nav__item-icon path,
+          .nav__item-icon g path,
+          .nav__item-icon g circle {
             stroke: setcolor("secondary");
+          }
+
+          .nav__item-arrow,
+          .nav__item-arrow g,
+          .nav__item-arrow path,
+          .nav__item-arrow g path,
+          .nav__item-arrow g circle {
+            fill: setcolor("secondary");
           }
         }
 

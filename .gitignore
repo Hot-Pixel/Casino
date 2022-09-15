@@ -114,7 +114,6 @@ out
 .vscode-test
 .vscode
 
-public/*
 dist
 
 # yarn v2

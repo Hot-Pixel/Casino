@@ -1,0 +1,58 @@
+<%
+    let nav = {
+        data: 'nav-active',
+        docs: '',
+        wallet: '',
+        hist: '',
+        pref: '',
+        supp: '',
+    }
+%>
+
+<%- include ('layout/head', {title: "Layout" , css: "user" }) %>
+
+<%- include ('layout/header') %>
+
+<main class="userScreen">
+
+    <%- include ('objects/user/user-menu', { nav: nav }) %>
+
+    <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
+
+    <section class="userContent has-header">
+        <div class="dataBlock block-active">
+            <%- include ('objects/user/data') %>
+        </div>
+        <div class="dataModifyBlock">
+            <%- include ('objects/user/data-modify') %>
+        </div>
+    </section>
+</main>
+
+<main class="depositScreen">
+
+    <div class="deposit">
+
+        <section class="deposit__header">
+            <img src="img/user/logo/logo-casino-dark.png" alt="">
+            <img src="img/user/icon/icon-menu-close.svg" alt="" class="deposit__btn-close">
+        </section>
+
+        <div class="deposit__block">
+            <%- include ('objects/user/deposit') %>
+        </div>
+
+        <div class="deposit__block">
+            <%- include ('objects/user/deposit-detail') %>
+        </div>
+
+        <div class="deposit__block">
+            <%- include ('objects/user/deposit-ok') %>
+        </div>
+
+    </div>
+
+</main>
+
+<%- include ('layout/scripts', { script: 'data'})%>
+

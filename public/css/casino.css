@@ -744,6 +744,9 @@
 .btn__red > * + *, .btn__blue > * + *, .btn__grey > * + *, .btn__darkGrey > * + *, .btn__grey--ghost > * + *, .btn__white > * + *, .btn__gray--red > * + *, .btn__block > * + *, .btn__black--lighter > * + *, .btn__ghost--red > * + *, .btn_no_button--red > * + *, .btn_border > * + *, .btn_border_secondary > * + *, .btn_white > * + *, .btn_border_white > * + * {
   margin-left: 0.25em;
 }
+.btn__red img, .btn__blue img, .btn__grey img, .btn__darkGrey img, .btn__grey--ghost img, .btn__white img, .btn__gray--red img, .btn__block img, .btn__black--lighter img, .btn__ghost--red img, .btn_no_button--red img, .btn_border img, .btn_border_secondary img, .btn_white img, .btn_border_white img {
+  display: inline;
+}
 .btn__red svg, .btn__blue svg, .btn__grey svg, .btn__darkGrey svg, .btn__grey--ghost svg, .btn__white svg, .btn__gray--red svg, .btn__block svg, .btn__black--lighter svg, .btn__ghost--red svg, .btn_no_button--red svg, .btn_border svg, .btn_border_secondary svg, .btn_white svg, .btn_border_white svg {
   font-size: inherit;
 }
@@ -957,9 +960,6 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.btn__red img {
-  display: inline-block;
 }
 .btn__red:hover {
   background-color: #ff5264;
