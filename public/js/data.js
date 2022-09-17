@@ -1,15 +1,10 @@
-const dataModifyOpen = document.querySelector(".data__modify-open");
-const dataModifyClose = document.querySelector(".data__modify-close");
-const dataBlock = document.querySelector(".dataBlock");
-const dataModifyBlock = document.querySelector(".dataModifyBlock");
+import { p as popUpSaldo, m as marginHeader } from './marginHeader-a6d4c25f.js';
+import { d as dataModify } from './dataModify-9d8bbfff.js';
+import './index-92880765.js';
 
-dataModifyOpen.addEventListener("click", () => {
-  dataBlock.classList.remove("block-active");
-  dataModifyBlock.classList.add("block-active");
-});
-
-dataModifyClose.addEventListener("click", () => {
-  dataBlock.classList.add("block-active");
-  dataModifyBlock.classList.remove("block-active");
+window.addEventListener('load', () => {
+  popUpSaldo();
+  marginHeader();
+  dataModify();
 });
 //# sourceMappingURL=data.js.map

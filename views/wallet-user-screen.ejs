@@ -11,7 +11,7 @@
 
 <%- include ('layout/head', {title: "Layout" , css: "user" }) %>
 
-<%- include ('layout/header') %>
+<%- include ('layout/header', { mode: "header--light"}) %>
 
 <main class="userScreen">
 
@@ -51,30 +51,7 @@
 
 </main>
 
-<main class="depositScreen">
 
-    <div class="deposit">
 
-        <section class="deposit__header">
-            <img src="img/user/logo/logo-casino-dark.png" alt="">
-            <img src="img/user/icon/icon-menu-close.svg" alt="" class="deposit__btn-close">
-        </section>
-
-        <div class="deposit__block">
-            <%- include ('objects/user/deposit') %>
-        </div>
-
-        <div class="deposit__block">
-            <%- include ('objects/user/deposit-detail') %>
-        </div>
-
-        <div class="deposit__block">
-            <%- include ('objects/user/deposit-ok') %>
-        </div>
-
-    </div>
-
-</main>
-
-<%- include ('layout/scripts', { script: 'user'})%>
+<%- include ('layout/scripts', { script: 'wallet'})%>
 

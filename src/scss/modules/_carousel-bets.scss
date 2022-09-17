@@ -34,27 +34,19 @@
         border-radius: 0 0 rem(5) rem(5);
 
         width: 100%;
-        aspect-ratio: 1 / 0.7;
 
         &-title {
-          margin-bottom: 0;
           @extend .u-f--h5, .u-f--bold;
         }
 
         &-subtitle {
           @extend .u-f--h5, .u-f--bold;
-          color: #a4a6a8;
+          margin-bottom: $sm;
+          color: setcolor('gray', 'dark1');
         }
 
         &-desc {
-          color: #a4a6a8;
-
-          &:not(:last-child) {
-            margin-bottom: 0;
-          }
-          &:last-child {
-            margin-bottom: $lg;
-          }
+          color: setcolor('gray', 'dark1');
         }
       }
 

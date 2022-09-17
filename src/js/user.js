@@ -1,8 +1,3 @@
-import { gsap } from "gsap";
-
-
-
-
 // const menuMobileCollapse = document.querySelector(".userMenuMobile__collapse");
 // const menuMobileTab = document.querySelector(".userMenuMobile__tab");
 
@@ -32,28 +27,3 @@ import { gsap } from "gsap";
 //     docsVerifyBlock.classList.add("block-active");
 //   });
 // });
-
-// const withdrawOpenBtn = document.querySelector(".wallet__btn-withdraw");
-// const whitdrawBlock = document.querySelector(".whitdrawScreen");
-// const withdrawCloseBtn = document.querySelector(".withdraw__btn-close");
-
-// withdrawOpenBtn.addEventListener("click", () => {
-//   whitdrawBlock.classList.add("block-active");
-// });
-
-// withdrawCloseBtn.addEventListener("click", () => {
-//   whitdrawBlock.classList.remove("block-active");
-// });
-
-// const btnAmmountArr = document.querySelectorAll(".btnAmmount");
-// const inputAmmount = document.querySelector(".depositDetail__ammount");
-
-// btnAmmountArr[0].addEventListener('click', () => {
-//   inputAmmount.value = 20;
-// })
-// btnAmmountArr[1].addEventListener('click', () => {
-//   inputAmmount.value = 50;
-// })
-// btnAmmountArr[2].addEventListener('click', () => {
-//   inputAmmount.value = 100;
-// })

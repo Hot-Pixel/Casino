@@ -27,19 +27,9 @@
     }
 
     p:last-of-type {
+      @extend .u-f--bold;
       color: setcolor('gray', 'dark1');
       margin: $sm 0;
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-
-      span {
-        color: setcolor("primary");
-        margin: 0;
-        margin-right: rem(5);
-      }
     }
   }
 

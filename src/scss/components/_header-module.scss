@@ -19,23 +19,13 @@
     align-items: center;
 
     p {
+      @extend .u-f--bold;
       margin-left: rem(10);
     }
 
     img {
       width: rem(25);
       height: rem(25);
-    }
-  }
-
-  &-link {
-    display: flex;
-    align-items: center;
-
-    p {
-      margin-right: rem(5);
-      @extend .u-f--bold;
-      color: setcolor("primary");
     }
   }
 }

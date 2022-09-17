@@ -39,12 +39,17 @@
       text-align: left;
     }
 
-    & > * {
-      margin-top: 0;
-      margin-bottom: 0;
-      & + * {
-        margin-top: $sm;
-      }
+    .title {
+      @extend .u-f--bold, .u-f--h1;
+      padding-bottom: $md;
+    }
+    .subtitle {
+      @extend .u-f--bold, .u-f--h3;
+      color: setcolor('gray', 'dark1');
+      padding-bottom: $sm;
+    }
+    .body {
+      color: setcolor('gray', 'dark1');
     }
 
     &-btns {

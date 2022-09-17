@@ -7,7 +7,7 @@
 	@extend %margin_horizontal_main, %margin_top_medium;
 
 	display: grid;
-	gap: $sm;
+	gap: rem(10);
 
 	@include screen-sm {
 		grid-template-columns: repeat( 2, 1fr );

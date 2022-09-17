@@ -229,41 +229,41 @@
   font-weight: 500;
 }
 
-.u-f--bold, .textBlock .bold, .jackpot__card-content p:last-of-type, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .redIcons p, .gridHalf__navbar-wrapper .icon__title p, .search .search__input input, .search .search__wrapper--home p, .search .search__wrapper--slots p, .bannerCarousel__slide--left .bannerCarousel__slide-content p, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .icon__title a p, .o-card--title, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .headerModule-link p, .u-f--bold p, .textBlock .bold p, .jackpot__card-content p:last-of-type p, .carouselBets__carousel .card__content-title p, .carouselBets__carousel .card__content-subtitle p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .search .search__input input p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .o-card--title p, .o-card--subtitle p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .textBlock .bold, .jackpot__text p:last-of-type, .jackpot__card-content p:last-of-type, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .gridRoulette .card__content-title, .gridRoulette .card__content-subtitle, .imageText__content .title, .imageText__content .subtitle, .redIcons p, .gridHalf__navbar-wrapper .icon__title p, .search .search__input input, .search .search__wrapper--home p, .search .search__wrapper--slots p, .bannerCarousel__slide--left .bannerCarousel__slide-content p, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .depositScreen .deposit__title, .depositScreen .depositDetail__card-top .depositDetail__ammount, .depositScreen .depositDetail__card-tc .tc__header p, .depositScreen .depositDetail__card-tc .tc__body a, .depositScreen .depositDetail__select-email input, .o-card--title, .o-card--subtitle, a.redCta span, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .headerModule-title p, .u-f--bold p, .textBlock .bold p, .jackpot__text p:last-of-type p, .jackpot__card-content p:last-of-type p, .carouselBets__carousel .card__content-title p, .carouselBets__carousel .card__content-subtitle p, .gridRoulette .card__content-title p, .gridRoulette .card__content-subtitle p, .imageText__content .title p, .imageText__content .subtitle p, .search .search__input input p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .depositScreen .deposit__title p, .depositScreen .depositDetail__card-top .depositDetail__ammount p, .depositScreen .depositDetail__card-tc .tc__body a p, .depositScreen .depositDetail__select-email input p, .o-card--title p, .o-card--subtitle p, a.redCta span p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
+.u-f--h1, .gridRoulette .card__content-title, .imageText__content .title, .redIcons__wrapper--right p:first-of-type, .depositScreen .deposit__title {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .imageText__content .title, .redIcons__wrapper--right p:first-of-type, .depositScreen .deposit__title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .imageText__content .title, .redIcons__wrapper--right p:first-of-type, .depositScreen .deposit__title {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .imageText__content .title, .redIcons__wrapper--right p:first-of-type, .depositScreen .deposit__title {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .imageText__content .title, .redIcons__wrapper--right p:first-of-type, .depositScreen .deposit__title {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .imageText__content .title, .redIcons__wrapper--right p:first-of-type, .depositScreen .deposit__title {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .gridRoulette .card__content-title, .redIcons__wrapper--right p:first-of-type {
+  .u-f--h1, .gridRoulette .card__content-title, .imageText__content .title, .redIcons__wrapper--right p:first-of-type, .depositScreen .deposit__title {
     font-size: 3.625rem;
   }
 }
@@ -302,104 +302,104 @@
   }
 }
 
-.u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+.u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .imageText__content .subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .depositScreen .depositDetail__card-top .depositDetail__ammount, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .imageText__content .subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .depositScreen .depositDetail__card-top .depositDetail__ammount, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .imageText__content .subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .depositScreen .depositDetail__card-top .depositDetail__ammount, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .imageText__content .subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .depositScreen .depositDetail__card-top .depositDetail__ammount, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .imageText__content .subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .depositScreen .depositDetail__card-top .depositDetail__ammount, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .imageText__content .subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .depositScreen .depositDetail__card-top .depositDetail__ammount, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .jackpot__card-content p:last-of-type, .gridRoulette .card__content-subtitle, .imageText__content .subtitle, .redIcons__wrapper--right p:last-of-type, .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb p, .menuHeader__navItems li a p, .depositScreen .depositDetail__card-top .depositDetail__ammount, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+.u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.0625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .header .icon__title a p, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .redIcons__wrapper-item p, .search .search__wrapper--home p, .search .search__wrapper--slots p, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .o-card--subtitle, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.125rem;
   }
 }
 
-.u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
+.u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .header .nav__item a p, .o-card--desc, .breadcrumbs span {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .header .nav__item a p, .o-card--desc, .breadcrumbs span {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .header .nav__item a p, .o-card--desc, .breadcrumbs span {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .header .nav__item a p, .o-card--desc, .breadcrumbs span {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .header .nav__item a p, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .header .nav__item a p, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .o-card--desc, .breadcrumbs span {
+  .u-f--h5, .carouselBets__carousel .card__content-title, .carouselBets__carousel .card__content-subtitle, .carouselBets__carousel .card .card__footer-column button, .header .nav__item a p, .o-card--desc, .breadcrumbs span {
     font-size: 1rem;
   }
 }
@@ -467,48 +467,48 @@
   }
 }
 
-.gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+.gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -516,48 +516,48 @@
   }
 }
 
-.gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+.gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands {
+  .gridFull, .textBlock, .jackpot, .carouselBets, .gridRoulette, .imageText, .grids__container, .search, .bannerCarousel .splide, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -653,7 +653,9 @@
 }
 
 .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Lexend";
   font-weight: 700;
   font-size: 0.75rem;
@@ -1199,14 +1201,6 @@ h5 {
   width: 1.5625rem;
   height: 1.5625rem;
 }
-.headerModule-link {
-  display: flex;
-  align-items: center;
-}
-.headerModule-link p {
-  margin-right: 0.3125rem;
-  color: #ff293e;
-}
 
 .deposits {
   height: 2.5rem;
@@ -1221,6 +1215,7 @@ h5 {
   flex-direction: row-reverse;
 }
 .deposits__total {
+  cursor: pointer;
   position: relative;
   padding-left: 0.625rem;
   display: flex;
@@ -1264,10 +1259,15 @@ h5 {
   cursor: pointer;
 }
 .user__wrapper {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-end;
   margin-right: 0.625rem;
+}
+@media only screen and (min-width: 1600px) {
+  .user__wrapper {
+    display: flex;
+  }
 }
 .user__wrapper p {
   color: #00d1bc;
@@ -1321,6 +1321,21 @@ h5 {
   margin: 0;
 }
 
+a.redCta {
+  display: flex;
+  align-items: center;
+}
+a.redCta span {
+  font-size: 0.75rem;
+  color: #ff293e;
+  margin: 0;
+  padding-right: 0.3125rem;
+}
+a.redCta img {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
 .o-card {
   display: flex;
   flex-direction: column;
@@ -1345,18 +1360,360 @@ h5 {
   text-align: center;
 }
 
-.has-header {
+.depositScreen {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 1.875rem;
+  background-color: #EAEDEF;
+}
+.depositScreen .deposit {
   position: relative;
-  margin-top: 6vh;
+}
+.depositScreen .deposit__header {
+  width: 100%;
+  padding: 0.9375rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.depositScreen .deposit__header img:first-of-type {
+  object-fit: cover;
+  max-width: 60%;
+}
+.depositScreen .deposit__header .deposit__btn-close {
+  cursor: pointer;
+  width: 1rem;
+  object-fit: cover;
 }
 @media only screen and (min-width: 1280px) {
-  .has-header {
-    margin-top: 8vh;
+  .depositScreen .deposit__header .deposit__btn-close {
+    width: 1.375rem;
   }
 }
-
-.is-on {
-  display: flex !important;
+.depositScreen .deposit__block {
+  padding-top: 7.5rem;
+  display: none;
+  width: 100%;
+}
+.depositScreen .deposit__block.active {
+  display: block;
+}
+.depositScreen .deposit .deposit__step2-method {
+  display: none;
+}
+.depositScreen .deposit .deposit__step2-method.active {
+  display: flex;
+}
+.depositScreen .deposit__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.depositScreen .deposit__title {
+  display: flex;
+  align-items: center;
+  color: #13171d;
+}
+.depositScreen .deposit__title img {
+  margin-right: 0.625rem;
+}
+.depositScreen .deposit__grid {
+  margin-top: 1.875rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  gap: 0.625rem;
+}
+@media only screen and (min-width: 1280px) {
+  .depositScreen .deposit__grid {
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+  }
+}
+.depositScreen .deposit__item {
+  background-color: white;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1280px) {
+  .depositScreen .deposit__item {
+    padding: 1.875rem;
+  }
+}
+.depositScreen .deposit__item img {
+  object-fit: contain;
+}
+@media only screen and (min-width: 1280px) {
+  .depositScreen .deposit__item img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+.depositScreen .depositDetail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1280px) {
+  .depositScreen .depositDetail {
+    width: 50%;
+  }
+}
+.depositScreen .depositDetail__card {
+  width: 100%;
+  margin-top: calc(3.75rem + 1.875rem);
+  background-color: #F4F6F8;
+  border-radius: 2.5rem 2.5rem 0.625rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+.depositScreen .depositDetail__card-top {
+  position: relative;
+  margin-bottom: 0.9375rem;
+  padding: 4.375rem 0.9375rem 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.depositScreen .depositDetail__card-top .depositDetail__logo {
+  position: absolute;
+  top: -3.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 0.625rem;
+  padding: 1.875rem;
+}
+.depositScreen .depositDetail__card-top p {
+  color: #13171d;
+}
+.depositScreen .depositDetail__card-top p:last-of-type {
+  color: #868b92;
+}
+.depositScreen .depositDetail__card-top .depositDetail__ammount {
+  width: 50%;
+  margin-top: 0.9375rem;
+  padding: 0.9375rem 0;
+  background-color: #EAEDEF;
+  border-radius: 6.25rem;
+  color: #868b92;
+  text-align: center;
+  appearance: none;
+}
+.depositScreen .depositDetail__card-top .depositDetail__fixed {
+  display: flex;
+  margin-top: 0.625rem;
+}
+.depositScreen .depositDetail__card-top .depositDetail__fixed div {
+  width: 5rem;
+  padding: 0.9375rem 0;
+  box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.3);
+}
+.depositScreen .depositDetail__card-top .depositDetail__fixed div:nth-of-type(2) {
+  margin: 0 0.3125rem;
+}
+.depositScreen .depositDetail__card-top input::-webkit-outer-spin-button,
+.depositScreen .depositDetail__card-top input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.depositScreen .depositDetail__card-tc {
+  border-radius: 0 0 0.625rem 0.625rem;
+  padding: 0.9375rem;
+  background-color: #e99c00;
+}
+.depositScreen .depositDetail__card-tc .tc__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.depositScreen .depositDetail__card-tc .tc__body {
+  padding: 0.9375rem 0;
+}
+.depositScreen .depositDetail__card-tc .tc__body p {
+  padding-bottom: 0.625rem;
+}
+.depositScreen .depositDetail__card-tc .tc__body a {
+  color: white;
+}
+.depositScreen .depositDetail__select {
+  margin-top: 1.875rem;
+}
+.depositScreen .depositDetail__select > p {
+  text-align: center;
+}
+.depositScreen .depositDetail__select-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.625rem;
+}
+.depositScreen .depositDetail__select-content {
+  margin-top: 0.625rem;
+  border-radius: 0.3125rem;
+  background-color: white;
+}
+.depositScreen .depositDetail__select-content p {
+  color: #13171d;
+  padding: 0.9375rem;
+}
+.depositScreen .depositDetail__select-content p:not(:last-of-type) {
+  border-bottom: 1px solid #e7e7e8;
+}
+.depositScreen .depositDetail__select-noBond {
+  width: 100%;
+  margin-top: 0.625rem;
+}
+.depositScreen .depositDetail__select-noBond .item {
+  aspect-ratio: unset !important;
+  height: 9.375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .depositScreen .depositDetail__select-noBond .item {
+    height: 12.5rem;
+  }
+}
+.depositScreen .depositDetail__select-email {
+  margin-top: 0.625rem;
+  background-color: #f4f6f8;
+  border-radius: 0.3125rem;
+  padding: 1.875rem;
+}
+.depositScreen .depositDetail__select-email input {
+  width: 100%;
+  padding: 0.9375rem 0;
+  text-align: center;
+  background-color: #eaedef;
+  color: #868b92;
+}
+.depositScreen .depositDetail .item {
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  aspect-ratio: 1/2;
+}
+@media only screen and (min-width: 1280px) {
+  .depositScreen .depositDetail .item {
+    aspect-ratio: 1/0.8;
+  }
+}
+.depositScreen .depositDetail .item input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  appearance: none;
+  margin: 0;
+  background-color: transparent;
+}
+.depositScreen .depositDetail .item input:checked ~ .item__wrapper {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.depositScreen .depositDetail .item input:checked ~ .item__wrapper svg path {
+  fill: black;
+  transition: all 0.3s ease;
+}
+.depositScreen .depositDetail .item input:checked ~ .item__wrapper p {
+  color: #13171d;
+}
+.depositScreen .depositDetail .item input:checked ~ .item__wrapper .radio {
+  transition: all 0.3s ease;
+  border: 2px solid #13171d;
+}
+.depositScreen .depositDetail .item input:checked ~ .item__wrapper .radio span {
+  transition: all 0.3s ease;
+  border: 4px solid #13171d;
+  background-color: transparent;
+}
+.depositScreen .depositDetail .item__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f6f8;
+  border-radius: 0.3125rem;
+}
+.depositScreen .depositDetail .item__wrapper svg {
+  object-fit: contain;
+  max-height: 1.875rem;
+}
+.depositScreen .depositDetail .item__wrapper p {
+  color: #868b92;
+  margin: 0.9375rem 0;
+}
+.depositScreen .depositDetail .item__wrapper .radio {
+  position: relative;
+  z-index: 0;
+  border: 2px solid #868b92;
+  background-color: transparent;
+  border-radius: 1000px;
+  height: 2rem;
+  width: 2rem;
+  transition: all 0.3s ease;
+}
+.depositScreen .depositDetail .item__wrapper .radio span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: none;
+  background-color: #868b92;
+  border-radius: 1000px;
+  height: 1rem;
+  width: 1rem;
+  transition: all 0.3s ease;
+}
+.depositScreen .depositDetail__btn {
+  margin-top: 0.9375rem;
+  display: flex;
+}
+@media only screen and (min-width: 1280px) {
+  .depositScreen .depositDetail__btn {
+    margin-top: 1.875rem;
+  }
+}
+.depositScreen .depositDetail__btn button:first-of-type {
+  margin-right: 0.3125rem;
+  width: 30%;
+}
+@media only screen and (min-width: 1280px) {
+  .depositScreen .depositDetail__btn button:first-of-type {
+    width: 20%;
+  }
+}
+.depositScreen .depositDetail__btn button:last-of-type {
+  margin-left: 0.3125rem;
+  width: 70%;
+}
+@media only screen and (min-width: 1280px) {
+  .depositScreen .depositDetail__btn button:last-of-type {
+    width: 80%;
+  }
+}
+.depositScreen .depositDetail__btn .btn__white img {
+  transform: rotate(90deg);
 }
 
 .header {
@@ -1365,8 +1722,7 @@ h5 {
   left: 0;
   z-index: 8;
   width: 100%;
-  height: 8vh;
-  padding: 0 1.25rem;
+  padding: 0.9375rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1376,7 +1732,7 @@ h5 {
 }
 @media only screen and (min-width: 1280px) {
   .header {
-    padding: 0 1.875rem;
+    padding: 1.25rem 1.875rem;
     display: flex;
   }
 }
@@ -1404,52 +1760,70 @@ h5 {
 }
 @media only screen and (min-width: 1280px) {
   .header__logo {
-    width: auto;
+    width: 11.875rem;
     margin-right: 0.9375rem;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .header__logo {
+    width: 15rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .header__logo {
+    width: auto;
     margin-right: 1.25rem;
   }
 }
 .header__logo svg {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .header__navBar ul {
   display: flex;
 }
 @media only screen and (min-width: 1280px) {
-  .header .icon__title {
+  .header .nav__item {
     padding-right: 0.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .header .icon__title {
+  .header .nav__item {
     padding-right: 0.9375rem;
   }
 }
-.header .icon__title a {
+.header .nav__item a {
   display: flex;
   align-items: center;
 }
-.header .icon__title a svg {
+.header .nav__item a svg {
   display: none;
+  height: 0.875rem;
+  width: 0.875rem;
 }
-@media only screen and (min-width: 1440px) {
-  .header .icon__title a svg {
+@media only screen and (min-width: 1600px) {
+  .header .nav__item a svg {
     display: inline-block;
   }
 }
-.header .icon__title a p {
+.header .nav__item a p {
   margin: 0;
   padding-left: 0.3125rem;
+}
+.header .nav__promo {
+  padding-right: 0;
+}
+.header .header__logged.active {
+  display: flex;
 }
 .header .header__logged-item {
   margin-left: 0.9375rem;
 }
-.header .header__noLog, .header .header__logged {
+.header .header__noLog.active {
+  display: flex;
+}
+.header .header__noLog,
+.header .header__logged {
   display: none;
 }
 
@@ -1523,22 +1897,48 @@ h5 {
   display: flex !important;
 }
 
-header.header.header--light {
+.header.header--light {
   transition: all 0.4s ease;
   background-color: #F4F6F8;
 }
-header.header.header--light .header__logo svg g path:not(#Trazado_1, #Trazado_2) {
+.header.header--light .header__logo svg g path:not(#Trazado_1, #Trazado_2) {
   fill: #13171d;
 }
-header.header.header--light .icon__title a svg path, header.header.header--light .icon__title a svg g path {
+.header.header--light .nav__item svg path,
+.header.header--light .nav__item svg g path {
   fill: #13171d;
 }
-header.header.header--light .icon__title a p {
+.header.header--light .nav__item p {
   color: #13171d;
+}
+.header.header--light .deposits {
+  background-color: #EAEDEF;
+}
+.header.header--light .deposits__total::before {
+  background: linear-gradient(to right, transparent 70%, #EAEDEF);
+}
+.header.header--light .deposits__total span {
+  color: #13171d;
+}
+.header.header--light .deposits__total svg path {
+  fill: #13171d;
+}
+.header.header--light .deposits > svg g path {
+  stroke: #13171d;
+}
+.header.header--light .deposits .deposits__btn {
+  background-color: #00d1bc !important;
+  box-shadow: 0px 0px 1.25rem 0px #00d1bc !important;
+}
+.header.header--light .user a svg g g {
+  stroke: white;
 }
 
 .footer {
   width: 100%;
+}
+.footer__trama {
+  padding: 0 0.9375rem;
 }
 .footer__trama img {
   object-fit: cover;
@@ -1547,7 +1947,7 @@ header.header.header--light .icon__title a p {
 .footer__grid {
   display: grid;
   column-gap: 3.75rem;
-  row-gap: 3.75rem;
+  row-gap: 2.8125rem;
   justify-items: flex-start;
   align-items: flex-start;
   grid-template-columns: 1fr;
@@ -1607,7 +2007,7 @@ header.header.header--light .icon__title a p {
 }
 .footer__grid p {
   font-weight: 700;
-  padding-bottom: 0.625rem;
+  padding-bottom: 1.875rem;
 }
 .footer__grid li {
   padding-bottom: 0.625rem;
@@ -2098,8 +2498,9 @@ header.header.header--light .icon__title a p {
 
 .popUpBalance {
   display: none;
+  opacity: 0;
   position: absolute;
-  top: -2vh;
+  top: 0.625rem;
   right: 10%;
   z-index: 10;
   background-color: #25292f;
@@ -2155,6 +2556,10 @@ header.header.header--light .icon__title a p {
   background: linear-gradient(to right, #1f78fb, #00d1bc);
   border-radius: 6.25rem;
 }
+.popUpBalance__freespins {
+  display: flex;
+  align-items: center;
+}
 .popUpBalance__freespins img {
   margin-right: 0.625rem;
 }
@@ -2201,15 +2606,15 @@ header.header.header--light .icon__title a p {
 }
 
 .bannerCarousel {
-  margin-top: 6.25rem;
-  background-image: url("../img/images/img-stars-bg.png");
-  background-position: right;
+  padding-top: 0.9375rem;
+  background-image: url("../img/images/img-banner-stars-bg.svg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 @media only screen and (min-width: 1280px) {
   .bannerCarousel {
-    margin-top: 8.75rem;
+    padding-top: 3.75rem;
   }
 }
 .bannerCarousel__slide {
@@ -2240,19 +2645,19 @@ header.header.header--light .icon__title a p {
   align-items: center;
   justify-content: center;
   background-color: #25292f;
-  padding: 0.9375rem;
+  padding: 1.875rem 0.9375rem;
   padding-bottom: 0;
 }
 @media only screen and (min-width: 1280px) {
   .bannerCarousel__slide--left {
-    padding: 0.9375rem 0.9375rem 0.9375rem 1.875rem;
-    justify-content: center;
+    padding: 1.875rem 0.9375rem 1.875rem 3.75rem;
+    justify-content: space-between;
     align-items: flex-start;
   }
 }
 @media only screen and (min-width: 1600px) {
   .bannerCarousel__slide--left {
-    padding: 0.9375rem 0.9375rem 0.9375rem 3.75rem;
+    padding: 3.125rem 0.9375rem 3.125rem 3.75rem;
   }
 }
 .bannerCarousel__slide--left .bannerCarousel__slide-content {
@@ -2262,7 +2667,7 @@ header.header.header--light .icon__title a p {
 .bannerCarousel__slide--left .bannerCarousel__slide-content p:first-of-type {
   text-align: center;
   padding-bottom: 0.9375rem;
-  font-size: 1.625rem;
+  font-size: 2.125rem;
 }
 @media only screen and (min-width: 1280px) {
   .bannerCarousel__slide--left .bannerCarousel__slide-content p:first-of-type {
@@ -2277,17 +2682,39 @@ header.header.header--light .icon__title a p {
 }
 @media only screen and (min-width: 1600px) {
   .bannerCarousel__slide--left .bannerCarousel__slide-content p:first-of-type {
+    font-size: 2.75rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .bannerCarousel__slide--left .bannerCarousel__slide-content p:first-of-type {
     font-size: 3.25rem;
   }
 }
 .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type {
   display: none;
+  font-size: 1.375rem;
 }
 @media only screen and (min-width: 1280px) {
   .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type {
     display: block;
     color: #a4a5a8;
     padding-bottom: 1.875rem;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type {
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type {
+    font-size: 1.25rem;
+  }
+}
+@media only screen and (min-width: 1900px) {
+  .bannerCarousel__slide--left .bannerCarousel__slide-content p:last-of-type {
+    font-size: 1.5rem;
   }
 }
 .bannerCarousel__slide--left .bannerCarousel__slide-breadcrumb {
@@ -2304,12 +2731,10 @@ header.header.header--light .icon__title a p {
   display: flex;
   align-items: center;
 }
-.bannerCarousel__slide--left button img {
-  display: inline-block;
-}
 @media only screen and (min-width: 1280px) {
   .bannerCarousel__slide--left button {
     box-shadow: 0px 0px 1.25rem 0px #ff293e;
+    transform: translateY(0);
   }
 }
 .bannerCarousel__slide--right {
@@ -2322,7 +2747,7 @@ header.header.header--light .icon__title a p {
 }
 .bannerCarousel__slide--right img {
   object-fit: cover;
-  object-position: center;
+  object-position: right;
   width: 100%;
 }
 .bannerCarousel .splide__arrow {
@@ -2433,14 +2858,14 @@ header.header.header--light .icon__title a p {
 @media only screen and (min-width: 1280px) {
   .grids__container {
     flex-direction: row;
-    column-gap: 0.9375rem;
+    column-gap: 0.625rem;
     row-gap: 0;
   }
 }
 
 .gridHalf {
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem 0.9375rem;
   height: 100%;
   background-color: #25292f;
   border-radius: 0.3125rem;
@@ -2458,16 +2883,6 @@ header.header.header--light .icon__title a p {
 @media only screen and (min-width: 1440px) {
   .gridHalf {
     width: 50%;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .gridHalf:first-of-type {
-    margin-right: 0.3125rem;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .gridHalf:last-of-type {
-    margin-left: 0.3125rem;
   }
 }
 .gridHalf__navbar {
@@ -2693,18 +3108,6 @@ header.header.header--light .icon__title a p {
     text-align: left;
   }
 }
-.redIcons__wrapper--right p:first-of-type {
-  max-width: 90%;
-}
-.redIcons__wrapper--right p:last-of-type {
-  max-width: 90%;
-}
-@media only screen and (min-width: 1280px) {
-  .redIcons__wrapper--right p:last-of-type {
-    max-width: 70%;
-  }
-}
-
 .imageText {
   display: grid;
   grid-template-columns: 1fr;
@@ -2737,12 +3140,15 @@ header.header.header--light .icon__title a p {
     text-align: left;
   }
 }
-.imageText__content > * {
-  margin-top: 0;
-  margin-bottom: 0;
+.imageText__content .title {
+  padding-bottom: 1.875rem;
 }
-.imageText__content > * + * {
-  margin-top: 0.9375rem;
+.imageText__content .subtitle {
+  color: #a0a2a4;
+  padding-bottom: 0.9375rem;
+}
+.imageText__content .body {
+  color: #a0a2a4;
 }
 .imageText__content-btns {
   margin-top: 0.9375rem;
@@ -2771,7 +3177,7 @@ header.header.header--light .icon__title a p {
 
 .gridRoulette {
   display: grid;
-  gap: 0.9375rem;
+  gap: 0.625rem;
 }
 @media only screen and (min-width: 1280px) {
   .gridRoulette {
@@ -2844,22 +3250,13 @@ header.header.header--light .icon__title a p {
   padding: 1.875rem 1.875rem 0;
   border-radius: 0 0 0.3125rem 0.3125rem;
   width: 100%;
-  aspect-ratio: 1/0.7;
-}
-.carouselBets__carousel .card__content-title {
-  margin-bottom: 0;
 }
 .carouselBets__carousel .card__content-subtitle {
-  color: #a4a6a8;
+  margin-bottom: 0.9375rem;
+  color: #a0a2a4;
 }
 .carouselBets__carousel .card__content-desc {
-  color: #a4a6a8;
-}
-.carouselBets__carousel .card__content-desc:not(:last-child) {
-  margin-bottom: 0;
-}
-.carouselBets__carousel .card__content-desc:last-child {
-  margin-bottom: 3.75rem;
+  color: #a0a2a4;
 }
 .carouselBets__carousel .card .card__footer {
   justify-self: flex-end;
@@ -2919,15 +3316,6 @@ header.header.header--light .icon__title a p {
 .jackpot__text p:last-of-type {
   color: #a0a2a4;
   margin: 0.9375rem 0;
-}
-.jackpot__text a {
-  display: flex;
-  align-items: center;
-}
-.jackpot__text a span {
-  color: #ff293e;
-  margin: 0;
-  margin-right: 0.3125rem;
 }
 .jackpot__carousel {
   margin-top: 0.9375rem;

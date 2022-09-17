@@ -11,14 +11,14 @@
 
   @include screen-sm {
     flex-direction: row;
-    column-gap: $sm;
+    column-gap: rem(10);
     row-gap: 0;
   }
 }
 
 .gridHalf {
   width: 100%;
-  padding: 10px;
+  padding: rem(10) $sm;
   height: 100%;
 
   background-color: setcolor("black");
@@ -32,18 +32,6 @@
   }
   @include screen-md {
     width: 50%;
-  }
-
-  &:first-of-type {
-    @include screen-sm {
-      margin-right: rem(5);
-    }
-  }
-
-  &:last-of-type {
-    @include screen-sm {
-      margin-left: rem(5);
-    }
   }
 
   &__navbar {

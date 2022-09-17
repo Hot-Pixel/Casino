@@ -23,10 +23,12 @@
 @use '../components/deposits';
 @use '../components/user';
 @use '../components/hover';
+@use '../components/red-cta';
 
 // OBJECTS
 // Contenedores, wrappers o layouts
 @use '../objects/card';
+@use '../objects/user/deposit';
 
 //LAYOUT
 @use '../layout/header';

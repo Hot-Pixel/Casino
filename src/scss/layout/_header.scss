@@ -2,27 +2,13 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.has-header {
-  position: relative;
-  margin-top: 6vh;
-
-  @include screen-sm {
-    margin-top: 8vh;
-  }
-}
-
-.is-on {
-  display: flex !important;
-}
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 8;
   width: 100%;
-  height: 8vh;
-  padding: 0 rem(20);
+  padding: $sm rem(20);
 
   display: flex;
   align-items: center;
@@ -34,7 +20,7 @@
   display: none;
 
   @include screen-sm {
-    padding: 0 $md;
+    padding: rem(20) $md;
     display: flex;
   }
 
@@ -63,16 +49,20 @@
     margin-bottom: rem(10);
 
     @include screen-sm {
-      width: auto;
+      width: rem(190);
       margin-right: $sm;
     }
-    @include screen-sm {
+    @include screen-md {
+      width: rem(240);
+    }
+    @include screen-lg {
+      width: auto;
       margin-right: rem(20);
     }
 
     svg {
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
     }
   }
 
@@ -80,8 +70,7 @@
     display: flex;
   }
 
-  .icon__title {
-
+  .nav__item {
     @include screen-sm {
       padding-right: rem(10);
     }
@@ -95,27 +84,43 @@
 
       svg {
         display: none;
+        height: rem(14);
+        width: rem(14);
 
-        @include screen-md {
+        @include screen-lg {
           display: inline-block;
         }
       }
 
       p {
-        @extend .u-f--h4, .u-f--bold;
+        @extend .u-f--h5, .u-f--bold;
         margin: 0;
-        padding-left: rem(5 );
+        padding-left: rem(5);
       }
     }
   }
 
+  .nav__promo {
+    padding-right: 0;
+  }
+
   .header__logged {
+    &.active {
+      display: flex;
+    }
     &-item {
       margin-left: $sm;
     }
   }
 
-  .header__noLog, .header__logged {
+  .header__noLog {
+    &.active {
+      display: flex;
+    }
+  }
+
+  .header__noLog,
+  .header__logged {
     display: none;
   }
 }
@@ -204,22 +209,56 @@
   }
 }
 
-header.header.header--light {
+.header.header--light {
   transition: all 0.4s ease;
   background-color: setcolor("gray", "light1");
 
   .header__logo svg g path:not(#Trazado_1, #Trazado_2) {
-    fill: setcolor('black', 'dark1');
+    fill: setcolor("black", "dark1");
   }
 
-  .icon__title a {
-
-    svg path, svg g path {
-      fill: setcolor('black', 'dark1');
+  .nav__item {
+    svg path,
+    svg g path {
+      fill: setcolor("black", "dark1");
     }
 
     p {
-      color: setcolor('black', 'dark1');
+      color: setcolor("black", "dark1");
     }
+  }
+
+  .deposits {
+    background-color: setcolor("gray", "light2");
+    &__total {
+      &::before {
+        background: linear-gradient(
+          to right,
+          transparent 70%,
+          setcolor("gray", "light2")
+        );
+      }
+
+      span {
+        color: setcolor("black", "dark1");
+      }
+
+      svg path {
+        fill: setcolor("black", "dark1");
+      }
+    }
+
+    & > svg g path {
+      stroke: setcolor("black", "dark1");
+    }
+
+    .deposits__btn {
+      background-color: setcolor("secondary") !important;
+      box-shadow: 0px 0px rem(20) 0px setcolor("secondary") !important;
+    }
+  }
+
+  .user a svg g g {
+    stroke: white;
   }
 }

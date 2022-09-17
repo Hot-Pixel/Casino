@@ -1,19 +1,11 @@
-const historyNav = document.querySelectorAll('.history__nav');
-const historyBlock = document.querySelectorAll('.block');
+import popUpSaldo from "./modules/popUpBalance.js";
+import marginHeader from "./modules/marginHeader.js";
+import dataModify from "./modules/dataModify.js";
+import historyNavBar from "./modules/historyNavBar.js";
 
-historyNav.forEach( nav => {
-  nav.addEventListener('click', (e) => {
-
-    historyBlock.forEach( block => {
-      block.classList.remove('active-block');
-    })
-    historyNav.forEach( nav => {
-      nav.classList.remove('is-active');
-    })
-    e.currentTarget.classList.add('is-active');
-    let dataBlock = e.currentTarget.dataset.block;
-    console.log(dataBlock)
-    let target = document.querySelector(dataBlock);
-    target.classList.add('active-block');
-  })
-});
+window.addEventListener('load', () => {
+  popUpSaldo()
+  marginHeader()
+  dataModify()
+  historyNavBar()
+})

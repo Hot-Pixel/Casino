@@ -114,16 +114,10 @@
 
       p:first-of-type {
         @extend .u-f--h1;
-        max-width: 90%;
       }
 
       p:last-of-type {
         @extend .u-f--h3;
-        max-width: 90%;
-
-        @include screen-sm {
-          max-width: 70%;
-        }
       }
     }
   }

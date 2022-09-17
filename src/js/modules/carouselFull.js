@@ -1,4 +1,7 @@
-function carouselFull() {
+import { Splide } from "@splidejs/splide";
+import { Grid } from "@splidejs/splide-extension-grid";
+
+function carouselGrid() {
   const gridFull = document.querySelector(".gridFull .splide");
   const order = gridFull.dataset.order - 1;
   const item = [1, 1];
@@ -10,35 +13,48 @@ function carouselFull() {
     [2, 2],
     [2, 2],
   ];
+  const arrDimMobile = [
+    [3, 2],
+    [3, 2],
+    [3, 2],
+    [3, 2],
+  ];
 
   arrDim.splice(order, 0, item);
 
-  const splideGrid = new Splide(gridFull, {
+  const carouselGrid = new Splide(gridFull, {
     perPage: 4,
     perMove: 1,
     pagination: false,
-    gap: 6,
+    gap: 10,
     grid: {
       dimensions: arrDim,
       gap: {
-        row: 6,
-        col: 6,
+        row: 10,
+        col: 10,
       },
     },
     breakpoints: {
+      1400: {
+        perPage: 3,
+      },
+      1280: {
+        perPage: 2,
+      },
       991: {
         perPage: 1,
         arrows: false,
-        drag: 'free',
+        padding: { left: 0, right: 50 },
+        drag: "free",
         grid: {
-          rows: 2,
-          cols: 2,
-        }
+          dimensions: arrDimMobile,
+        },
       },
     },
   });
 
-  splideGrid.mount({ Grid });
+  carouselGrid.mount({ Grid });
 }
 
-export default carouselFull;
+export default carouselGrid;
+

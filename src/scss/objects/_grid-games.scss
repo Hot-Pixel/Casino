@@ -10,7 +10,7 @@
 
   @include tablet {
     grid-template-columns: repeat(3, 1fr);
-    gap: $sm;
+    gap: rem(10);
   }
   @include screen-md {
     grid-template-columns: repeat(4, 1fr);

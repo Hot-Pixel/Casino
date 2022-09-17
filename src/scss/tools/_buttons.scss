@@ -2,7 +2,9 @@
 @use "../helper" as *;
 
 %buttons {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   font-family: $buttons_font_family;
   font-weight: $buttons_font_weight;

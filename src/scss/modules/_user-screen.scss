@@ -2,12 +2,13 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+
 .withdrawScreen, .depositScreen {
   display: none;
-}
 
-.block-active {
-  display: block !important;
+  &.block-active {
+    display: block !important;
+  }
 }
 
 .userScreen {
@@ -39,6 +40,10 @@
     .docsVerifyBlock,
     .docsVerifyBlock2 {
       display: none;
+
+      &.block-active {
+        display: block !important;
+      }
     }
   }
 
@@ -140,7 +145,7 @@
 
         margin-top: $sm;
 
-        button {
+        a {
           height: rem(45);
           padding: 0;
           width: 90%;

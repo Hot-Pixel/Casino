@@ -83,12 +83,13 @@ gulp.task("js", async () => {
         "src/js/data",
         "src/js/docs",
         "src/js/history",
+        "src/js/wallet",
       ],
       plugins: [
         commonjs({
           include: [
             "node_modules/mixitup/dist/mixitup.js",
-            "src/js/mixitup-multifilter.js",
+            "src/js/modules/mixitup-multifilter.js",
           ],
         }),
         nodeResolve(),
@@ -145,7 +146,7 @@ gulp.task("bundleJs", async () => {
           commonjs({
             include: [
               "node_modules/mixitup/dist/mixitup.js",
-              "src/js/mixitup-multifilter.js",
+              "src/js/modules/mixitup-multifilter.js",
             ],
           }),
           nodeResolve(),

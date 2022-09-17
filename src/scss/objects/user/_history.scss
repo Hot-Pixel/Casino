@@ -32,7 +32,7 @@
     gap: $md;
 
     .history__filter {
-        position: relative;
+      padding-bottom: 0 !important;
 
       .history__content {
         padding: $md $sm;
@@ -48,8 +48,19 @@
       }
 
       .history__inputs {
-        padding: $md $sm;
+        padding: $md $sm 0;
         border-top: 1px solid #dddfe2;
+
+        select {
+          @extend .u-f--bold;
+          padding: 0 $sm;
+          appearance: none;
+          background: transparent;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg id='icon-select-arrow' transform='translate(14) rotate(90)'%3E%3Cpath id='Trazado_97' data-name='Trazado 97' d='M14 7a7 7 0 1 0-7 7A7 7 0 0 0 14 7ZM5.29 10.71A1 1 0 0 1 5.284 9.3L5.29 9.29 7.41 7.18a.25.25 0 0 0 .007-.354L7.41 6.82 5.29 4.71A1 1 0 0 1 6.71 3.29l3 3A1 1 0 0 1 9.716 7.7L9.71 7.71l-3 3a1 1 0 0 1-1.414.006Z' transform='translate(0 0)' fill='%23868b92'/%3E%3C/g%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position-x: 92%;
+          background-position-y: 50%;
+        }
 
         input,
         select {
@@ -74,14 +85,12 @@
       }
 
       .history__submit {
-          position: absolute;
-          width: 100%;
-          left: 50%;
-          bottom: rem(-20);
+        display: flex;
+        justify-content: center;
+        transform: translateY(50%);
 
           button {
               padding: rem(10);
-              transform: translateX(-50%);
           }
       }
     }
