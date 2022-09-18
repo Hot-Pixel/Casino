@@ -10,15 +10,21 @@ const bannerData =
 
 <%- include ('layout/head', {title: "Slots All" , css: "slots-all"}) %>
 
-<%- include ('layout/header', { mode: ""}) %>
+<%- include ('modules/deposit') %>
 
-<main class="has-header">
+<main class="pageContainer">
 
-  <%- include ('modules/banner', { data: bannerData }) %>
+    <%- include ('layout/header', { mode: ""}) %>
 
-  <%- include ('modules/finder-slotsAll') %>
+    <section class="has-header">
 
-  <%- include ('layout/footer') %>
+      <%- include ('modules/banner', { data: bannerData }) %>
+
+      <%- include ('modules/finder-slotsAll') %>
+
+      <%- include ('layout/footer') %>
+
+    </section>
 
 </main>
 

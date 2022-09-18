@@ -1,35 +1,41 @@
 <%- include ('layout/head', { title: "Slots Game" , css: "screen-game" }) %>
 
-<%- include ('layout/header', { mode: ""}) %>
+<%- include ('modules/deposit') %>
 
-<main class="screenGame has-header">
+<main class="pageContainer">
 
-    <img src="img/images/img-screen.jpg" alt="">
+    <%- include ('layout/header', { mode: ""}) %>
 
-    <div class="screenGame__bar">
-        <div class="screenGame__item">
-            <p>A:</p>
-            <p>0,00€</p>
-        </div>
-        <div class="screenGame__item">
-            <p>P:</p>
-            <p>0,00€</p>
-        </div>
-        <div class="screenGame__item">
-            <p>R:</p>
-            <p>0,00€</p>
-        </div>
-        <div class="screenGame__item">
-            <p>BS:</p>
-            <p>0,00€</p>
-        </div>
-        <div class="screenGame__item">
-            <p>T:</p>
-            <p>0,00€</p>
-        </div>
-    </div>
+    <section class="screenGame has-header">
 
-    <%- include ('layout/footer') %>
+        <img src="img/images/img-screen.jpg" alt="">
+
+        <div class="screenGame__bar">
+            <div class="screenGame__item">
+                <p>A:</p>
+                <p>0,00€</p>
+            </div>
+            <div class="screenGame__item">
+                <p>P:</p>
+                <p>0,00€</p>
+            </div>
+            <div class="screenGame__item">
+                <p>R:</p>
+                <p>0,00€</p>
+            </div>
+            <div class="screenGame__item">
+                <p>BS:</p>
+                <p>0,00€</p>
+            </div>
+            <div class="screenGame__item">
+                <p>T:</p>
+                <p>0,00€</p>
+            </div>
+        </div>
+
+        <%- include ('layout/footer') %>
+
+    </section>
 
 </main>
 

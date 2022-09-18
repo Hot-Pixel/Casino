@@ -10,17 +10,23 @@ const bannerData =
 
 <%- include ('layout/head', {title: "Ruleta en Vivo" , css: "ruleta", header: "has-header" }) %>
 
-<%- include ('layout/header', { mode: ""}) %>
+<%- include ('modules/deposit') %>
 
-<main class="has-header">
+<main class="pageContainer">
 
-  <%- include ('modules/banner', { data: bannerData }) %>
+  <%- include ('layout/header', { mode: ""}) %>
 
-  <%- include ('modules/finder-ruleta') %>
+  <section class="has-header">
 
-  <%- include ('modules/text-block') %>
+    <%- include ('modules/banner', { data: bannerData }) %>
 
-  <%- include ('layout/footer') %>
+    <%- include ('modules/finder-ruleta') %>
+
+    <%- include ('modules/text-block') %>
+
+    <%- include ('layout/footer') %>
+
+  </section>
 
 </main>
 

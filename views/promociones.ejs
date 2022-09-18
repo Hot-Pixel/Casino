@@ -10,19 +10,25 @@ const banner =
 
 <%- include ('layout/head', {title: "Nuestras Promociones" , css: "promociones", header: "has-header" }) %>
 
-<%- include ('layout/header', { mode: ""}) %>
+<%- include ('modules/deposit') %>
 
-<main class="has-header">
+<main class="pageContainer">
 
-  <%- include ('modules/header-promo') %>
+  <%- include ('layout/header', { mode: ""}) %>
 
-  <%- include ('modules/finder-promo')%>
+  <section class="has-header">
 
-  <%- include ('modules/carousel-promo')%>
+    <%- include ('modules/header-promo') %>
 
-  <%- include ('modules/text-block') %>
+    <%- include ('modules/finder-promo')%>
 
-  <%- include ('layout/footer') %>
+    <%- include ('modules/carousel-promo')%>
+
+    <%- include ('modules/text-block') %>
+
+    <%- include ('layout/footer') %>
+
+  </section>
 
 </main>
 

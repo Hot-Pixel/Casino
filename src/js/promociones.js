@@ -1,62 +1,16 @@
-import { Splide } from "@splidejs/splide";
-import mixitup from 'mixitup';
+import filterPromo from "./modules/filterPromo.js";
+import popUpSaldo from "./modules/popUpBalance.js";
+import marginHeader from "./modules/marginHeader.js";
+import carouselPromociones from "./modules/carouselPromociones.js";
+import depositSteps from "./modules/depositSteps.js";
+import depositAmmount from "./modules/depositAmmount.js";
 
-const container = document.querySelector(".finder__promo")
-
-var mixerPromo = mixitup( container, {
-  controls: {
-    enable: true,
-  },
-  animation: {
-    enable: false,
-  },
-});
-
-var carouselMenuPromo = new Splide(".filter__promo .splide", {
-  pagination: false,
-  arrows: false,
-  perPage: 3,
-  padding: { left: 0, right: 30 },
-  perMove: 1,
-  gap: 5,
-});
-carouselMenuPromo.mount();
-
-var carouselPromo = new Splide(".carouselPromo__slider", {
-  arrows: true,
-  pagination: false,
-  perPage: 3,
-  perMove: 1,
-  breakpoints: {
-    1280: {
-      perPage: 2,
-    },
-    768: {
-      perPage: 1,
-    }
-  }
-});
-carouselPromo.mount();
-
-const popUpCloseBtn = document.querySelector('.popUpBalance__closeBtn');
-const popUpOpenBtn = document.querySelector('.popUpBalance__openBtn');
-const popUpMenu = document.querySelector('.popUpBalance');
-
-popUpOpenBtn.addEventListener('click', () => {
-  popUpMenu.style.display = 'block';
+window.addEventListener('load', () => {
+  filterCasino()
+  popUpSaldo()
+  marginHeader()
+  depositSteps();
+  depositAmmount();
+  filterPromo()
+  carouselPromociones()
 })
-
-popUpCloseBtn.addEventListener('click', () => {
-  popUpMenu.style.display = 'none';
-})
-
-const menuHeaderOpenBtn = document.querySelector(".menuHeader__openBtn");
-const menuHeaderCloseBtn = document.querySelector(".menuHeader__closeBtn");
-const menuHeader = document.querySelector(".menuHeader");
-
-menuHeaderOpenBtn.addEventListener("click", () => {
-  menuHeader.style.display = "flex";
-});
-menuHeaderCloseBtn.addEventListener("click", () => {
-  menuHeader.style.display = "none";
-});

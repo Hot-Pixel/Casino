@@ -11,71 +11,52 @@
 
 <%- include ('layout/head', {title: "Layout" , css: "user" }) %>
 
-<%- include ('layout/header', { mode: "header--light"}) %>
+<%- include ('modules/deposit') %>
 
-<main class="userScreen">
+<main class="pageContainer">
 
-    <%- include ('objects/user/user-menu', { nav: nav }) %>
+    <%- include ('layout/header', { mode: "header--light"}) %>
 
-    <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
+    <main class="userScreen">
 
-    <section class="userContent has-header">
+        <%- include ('objects/user/user-menu', { nav: nav }) %>
 
-        <div class="userContent__block">
-            <%- include ('objects/user/preferences') %>
-        </div>
+        <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
 
-    </section>
+        <section class="userContent has-header">
 
-</main>
+            <div class="userContent__block">
+                <%- include ('objects/user/preferences') %>
+            </div>
 
-<main class="withdrawScreen">
-
-    <div class="withdraw">
-
-        <section class="withdraw__header">
-            <img src="img/user/logo/logo-casino-dark.png" alt="">
-            <img src="img/user/icon/icon-menu-close.svg" alt="" class="withdraw__btn-close">
         </section>
 
-        <div class="withdraw__block">
-            <%- include ('objects/user/withdraw') %>
+    </main>
+
+    <main class="withdrawScreen">
+
+        <div class="withdraw">
+
+            <section class="withdraw__header">
+                <img src="img/user/logo/logo-casino-dark.png" alt="">
+                <img src="img/user/icon/icon-menu-close.svg" alt="" class="withdraw__btn-close">
+            </section>
+
+            <div class="withdraw__block">
+                <%- include ('objects/user/withdraw') %>
+            </div>
+
+            <div class="withdraw__block">
+                <%- include ('objects/user/withdraw-detail') %>
+            </div>
+
+            <div class="withdraw__block">
+                <%- include ('objects/user/withdraw-ok') %>
+            </div>
+
         </div>
 
-        <div class="withdraw__block">
-            <%- include ('objects/user/withdraw-detail') %>
-        </div>
-
-        <div class="withdraw__block">
-            <%- include ('objects/user/withdraw-ok') %>
-        </div>
-
-    </div>
-
-</main>
-
-<main class="depositScreen">
-
-    <div class="deposit">
-
-        <section class="deposit__header">
-            <img src="img/user/logo/logo-casino-dark.png" alt="">
-            <img src="img/user/icon/icon-menu-close.svg" alt="" class="deposit__btn-close">
-        </section>
-
-        <div class="deposit__block">
-            <%- include ('objects/user/deposit') %>
-        </div>
-
-        <div class="deposit__block">
-            <%- include ('objects/user/deposit-detail') %>
-        </div>
-
-        <div class="deposit__block">
-            <%- include ('objects/user/deposit-ok') %>
-        </div>
-
-    </div>
+    </main>
 
 </main>
 

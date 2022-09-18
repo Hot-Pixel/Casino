@@ -1,21 +1,28 @@
 <%- include ('layout/head', { title: "Slots Screen" , css: "screens", header: "has-header" }) %>
 
-<%- include ('layout/header', { mode: ""}) %>
+<%- include ('modules/deposit') %>
 
-<main class="has-header">
+<main class="pageContainer">
 
-    <%- include ('objects/screens-bar') %>
+    <%- include ('layout/header', { mode: ""}) %>
 
-    <section class="screens">
-        <section class="screen">
-            <img src="img/images/img-screen.jpg" alt="">
+    <section class="has-header">
+
+        <%- include ('objects/screens-bar') %>
+
+        <section class="screens">
+            <section class="screen">
+                <img src="img/images/img-screen.jpg" alt="">
+            </section>
+
+            <%- include ('modules/aside-slots') %>
         </section>
 
-        <%- include ('modules/aside-slots') %>
+        <%- include ('layout/footer') %>
+
     </section>
 
-    <%- include ('layout/footer') %>
-
 </main>
+
 
 <%- include ('layout/scripts', { script: 'screens' }) %>

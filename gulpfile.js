@@ -5,6 +5,7 @@ import dartSass from "sass";
 import gulpSass from "gulp-sass";
 const sassCompiler = gulpSass(dartSass);
 import maps from "gulp-sourcemaps";
+import plumber from "gulp-plumber";
 import browserSync from "browser-sync";
 const server = browserSync.create();
 import autoprefixer from "gulp-autoprefixer";
@@ -50,6 +51,7 @@ const paths = {
 gulp.task("sass", async () => {
   gulp
     .src(paths.scss.src)
+    .pipe(plumber())
     .pipe(maps.init())
     .pipe(sassCompiler().on("Error compiling!", sassCompiler.logError))
     .pipe(maps.write("./"))
@@ -61,6 +63,7 @@ gulp.task("sass", async () => {
 gulp.task("imageMin", async () => {
   gulp
     .src(paths.images.src)
+    .pipe(plumber())
     .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest));
 });

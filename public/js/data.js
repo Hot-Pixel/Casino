@@ -1,10 +1,11 @@
-import { p as popUpSaldo, m as marginHeader } from './marginHeader-a6d4c25f.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-b6c0f84a.js';
 import { d as dataModify } from './dataModify-9d8bbfff.js';
-import './index-92880765.js';
 
 window.addEventListener('load', () => {
   popUpSaldo();
   marginHeader();
   dataModify();
+  depositSteps();
+  depositAmmount();
 });
 //# sourceMappingURL=data.js.map

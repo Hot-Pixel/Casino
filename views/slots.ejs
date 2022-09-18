@@ -146,44 +146,50 @@ const gridHalfRight =
 
 <%- include ('layout/head', {title: "Slots" , css: "slots"}) %>
 
-<%- include ('layout/header', { mode: ""}) %>
+<%- include ('modules/deposit') %>
 
-<main class="has-header">
+<main class="pageContainer">
 
-<%- include ('modules/banner', { data: bannerData }) %>
+  <%- include ('layout/header', { mode: ""}) %>
 
-<%- include ('modules/search-bar-slots') %>
+  <section class="has-header">
 
-<section class="grids__container">
+    <%- include ('modules/banner', { data: bannerData }) %>
 
-  <%- include ('modules/grid-half', {data: gridHalfLeft}) %>
+    <%- include ('modules/search-bar-slots') %>
 
-  <%- include ('modules/grid-half', {data: gridHalfRight}) %>
+    <section class="grids__container">
 
-</section>
+      <%- include ('modules/grid-half', {data: gridHalfLeft}) %>
 
-<%- include ('modules/grid-full') %>
+      <%- include ('modules/grid-half', {data: gridHalfRight}) %>
 
-<%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
+    </section>
 
-<section class="slotGrids">
+    <%- include ('modules/grid-full') %>
 
-  <%- include ('modules/grid-full') %>
+    <%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
 
-  <%- include ('modules/grid-full') %>
+    <section class="slotGrids">
 
-  <a href="">
-    <button class="btn__red btn__red--glow">
-      <span>VER TODAS LAS SLOTS ONLINE</span>
-      <img src="img/icons/icon-btn-arrow.svg" alt="">
-    </button>
-  </a>
+      <%- include ('modules/grid-full') %>
 
-</section>
+      <%- include ('modules/grid-full') %>
 
-<%- include ('modules/text-block') %>
+      <a href="">
+        <button class="btn__red btn__red--glow">
+          <span>VER TODAS LAS SLOTS ONLINE</span>
+          <img src="img/icons/icon-btn-arrow.svg" alt="">
+        </button>
+      </a>
 
-<%- include ('layout/footer') %>
+    </section>
+
+    <%- include ('modules/text-block') %>
+
+    <%- include ('layout/footer') %>
+
+  </section>
 
 </main>
 

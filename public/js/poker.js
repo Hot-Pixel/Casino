@@ -1,5 +1,6 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { g as gsapWithCSS } from './index-92880765.js';
+import { a as accordion } from './accordion-3c2dda1d.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-b6c0f84a.js';
 
 function menuPoker() {
   const menuBtns = document.querySelectorAll(".menuPoker__btn");
@@ -59,61 +60,13 @@ function carouselPoker() {
     carousel.mount();
 }
 
-function accordion() {
-    const accorArrows = document.getElementsByClassName("accorArrow");
-    const accorBody = document.getElementsByClassName("body");
-
-    for (let n = 0; n < accorArrows.length; n++) {
-      accorArrows[n].addEventListener("click", () => {
-        if (accorBody[n].classList.contains("active")) {
-          gsapWithCSS
-            .timeline()
-            .to(accorArrows[n], { rotation: -90, duration: 0.3 })
-            .to(accorBody[n], { opacity: 0, duration: 0.3 })
-            .to(accorBody[n], { height: 0, padding:0, duration: 0.3 });
-          accorBody[n].classList.remove("active");
-        } else {
-          gsapWithCSS
-            .timeline()
-            .to(accorArrows[n], { rotation: 0, duration: 0.3 })
-            .to(accorBody[n], { height: "auto", padding: 15, duration: 0.3 })
-            .to(accorBody[n], { opacity: 1, duration: 0.3 });
-          accorBody[n].classList.add("active");
-        }
-      });
-    }
-  }
-
-const menuPokerExist = document.getElementsByClassName("menuPoker");
-
 window.addEventListener("load", () => {
-  if (menuPokerExist.length > 0) {
-    accordion();
-    carouselPoker();
-    menuPoker();
-  }
-});
-
-const popUpCloseBtn = document.querySelector('.popUpBalance__closeBtn');
-const popUpOpenBtn = document.querySelector('.popUpBalance__openBtn');
-const popUpMenu = document.querySelector('.popUpBalance');
-
-popUpOpenBtn.addEventListener('click', () => {
-  popUpMenu.style.display = 'block';
-});
-
-popUpCloseBtn.addEventListener('click', () => {
-  popUpMenu.style.display = 'none';
-});
-
-const menuHeaderOpenBtn = document.querySelector(".menuHeader__openBtn");
-const menuHeaderCloseBtn = document.querySelector(".menuHeader__closeBtn");
-const menuHeader = document.querySelector(".menuHeader");
-
-menuHeaderOpenBtn.addEventListener("click", () => {
-  menuHeader.style.display = "flex";
-});
-menuHeaderCloseBtn.addEventListener("click", () => {
-  menuHeader.style.display = "none";
+  accordion();
+  carouselPoker();
+  menuPoker();
+  popUpSaldo();
+  marginHeader();
+  depositSteps();
+  depositAmmount();
 });
 //# sourceMappingURL=poker.js.map

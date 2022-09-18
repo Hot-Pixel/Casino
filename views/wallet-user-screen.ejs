@@ -11,47 +11,49 @@
 
 <%- include ('layout/head', {title: "Layout" , css: "user" }) %>
 
-<%- include ('layout/header', { mode: "header--light"}) %>
+<%- include ('modules/deposit') %>
 
-<main class="userScreen">
+<main class="pageContainer">
 
-    <%- include ('objects/user/user-menu', { nav: nav }) %>
+    <%- include ('layout/header', { mode: "header--light"}) %>
 
-    <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
+    <section class="userScreen">
 
-    <section class="userContent has-header">
-        <div class="userContent__block">
-            <%- include ('objects/user/wallet') %>
+        <%- include ('objects/user/user-menu', { nav: nav }) %>
+
+        <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
+
+        <section class="userContent has-header">
+            <div class="userContent__block">
+                <%- include ('objects/user/wallet') %>
+            </div>
+        </section>
+    </section>
+
+    <section class="withdrawScreen">
+
+        <div class="withdraw">
+
+            <section class="withdraw__header">
+                <img src="img/user/logo/logo-casino-dark.png" alt="">
+                <img src="img/user/icon/icon-menu-close.svg" alt="" class="withdraw__btn-close">
+            </section>
+
+            <div class="withdraw__block">
+                <%- include ('objects/user/withdraw') %>
+            </div>
+
+            <div class="withdraw__block">
+                <%- include ('objects/user/withdraw-detail') %>
+            </div>
+
+            <div class="withdraw__block">
+                <%- include ('objects/user/withdraw-ok') %>
+            </div>
+
         </div>
+
     </section>
 </main>
 
-<main class="withdrawScreen">
-
-    <div class="withdraw">
-
-        <section class="withdraw__header">
-            <img src="img/user/logo/logo-casino-dark.png" alt="">
-            <img src="img/user/icon/icon-menu-close.svg" alt="" class="withdraw__btn-close">
-        </section>
-
-        <div class="withdraw__block">
-            <%- include ('objects/user/withdraw') %>
-        </div>
-
-        <div class="withdraw__block">
-            <%- include ('objects/user/withdraw-detail') %>
-        </div>
-
-        <div class="withdraw__block">
-            <%- include ('objects/user/withdraw-ok') %>
-        </div>
-
-    </div>
-
-</main>
-
-
-
 <%- include ('layout/scripts', { script: 'wallet'})%>
-

@@ -10,18 +10,25 @@ const banner =
 
 <%- include ('layout/head', {title: "Casino" , css: "casino", header: "has-header" }) %>
 
-<%- include ('layout/header', { mode: ""}) %>
+<%- include ('modules/deposit') %>
 
-<main class="has-header">
+<main class="pageContainer">
 
-  <%- include ('modules/banner', { data: banner }) %>
+  <%- include ('layout/header', { mode: ""}) %>
 
-  <%- include ('modules/finder-casino') %>
+  <main class="has-header">
 
-  <%- include ('modules/text-block') %>
+    <%- include ('modules/banner', { data: banner }) %>
 
-  <%- include ('layout/footer') %>
+    <%- include ('modules/finder-casino') %>
+
+    <%- include ('modules/text-block') %>
+
+    <%- include ('layout/footer') %>
+
+  </main>
 
 </main>
+
 
 <%- include ('layout/scripts',  { script: 'casino' }) %>

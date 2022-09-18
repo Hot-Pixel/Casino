@@ -18,29 +18,35 @@ const bannerData =
 
 <%- include ('layout/head', {title: "Poker" , css: "poker", header: "has-header" }) %>
 
-<%- include ('layout/header', { mode: ""}) %>
+<%- include ('modules/deposit') %>
 
-<main class="has-header">
+<main class="pageContainer">
 
-  <%- include ('modules/banner', { data: bannerData }) %>
+  <%- include ('layout/header', { mode: ""}) %>
 
-  <%- include ('objects/menu-poker', { data: activeTab }) %>
+  <section class="has-header">
 
-  <main class="poker">
+    <%- include ('modules/banner', { data: bannerData }) %>
 
-    <section class="poker__tour poker__section tab-on">
+    <%- include ('objects/menu-poker', { data: activeTab }) %>
 
-      <%- include ('modules/txt-2Cols') %>
+    <section class="poker">
 
-      <%- include ('modules/grid-poker-torneos') %>
+      <section class="poker__tour poker__section tab-on">
+
+        <%- include ('modules/txt-2Cols') %>
+
+        <%- include ('modules/grid-poker-torneos') %>
+
+      </section>
 
     </section>
 
-  </main>
+    <%- include ('modules/text-block') %>
 
-  <%- include ('modules/text-block') %>
+    <%- include ('layout/footer') %>
 
-  <%- include ('layout/footer') %>
+  </section>
 
 </main>
 

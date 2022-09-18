@@ -1,18 +1,24 @@
 <%- include ('layout/head', { title: "Promocion" , css: "promocion" }) %>
 
-<%- include ('layout/header', { mode: ""}) %>
+<%- include ('modules/deposit') %>
 
-<main class="has-header">
+<main class="pageContainer">
 
-    <%- include ('modules/block-promo') %>
+    <%- include ('layout/header', { mode: ""}) %>
 
-    <%- include ('modules/countdown') %>
+    <section class="has-header">
 
-    <%- include ('modules/accordion') %>
+        <%- include ('modules/block-promo') %>
 
-    <%- include ('modules/text-block') %>
+        <%- include ('modules/countdown') %>
 
-    <%- include ('layout/footer') %>
+        <%- include ('modules/accordion') %>
+
+        <%- include ('modules/text-block') %>
+
+        <%- include ('layout/footer') %>
+
+    </section>
 
 </main>
 

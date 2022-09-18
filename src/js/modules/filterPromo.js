@@ -1,8 +1,10 @@
 import { Splide } from "@splidejs/splide";
 import mixitup from 'mixitup';
 
+const container = document.querySelector(".finder__promo")
+
 const filterPromo = () => {
-  var mixerPromo = mixitup(".finder__promo", {
+  var mixerPromo = mixitup( container, {
     controls: {
       enable: true,
     },
@@ -11,7 +13,7 @@ const filterPromo = () => {
     },
   });
 
-  var carouselPromo = new Splide(".filter__promo .splide", {
+  var carouselMenuPromo = new Splide(".filter__promo .splide", {
     pagination: false,
     arrows: false,
     perPage: 3,
@@ -19,7 +21,7 @@ const filterPromo = () => {
     perMove: 1,
     gap: 5,
   });
-  carouselPromo.mount();
+  carouselMenuPromo.mount();
 }
 
 export default filterPromo;
