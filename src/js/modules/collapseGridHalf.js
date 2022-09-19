@@ -6,8 +6,6 @@ const gridNodes = document.querySelectorAll("gridHalf__grid");
 
 function collapseGrid() {
 
-  console.log(gridArr)
-
   if (window.innerWidth < 1280) {
     gridNodes.forEach( e => {
       e.classList.remove('active');

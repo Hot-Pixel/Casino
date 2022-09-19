@@ -9,6 +9,7 @@ const depositStep1 = document.querySelector(".deposit__step1");
 const depositMethodsBtn = document.querySelectorAll(".deposit__item");
 const depositMethods = document.querySelectorAll(".deposit__step2-method");
 const depositStep2 = document.querySelector(".deposit__step2");
+const step2BackBtn = document.querySelectorAll(".depositStep2__backBtn");
 
 function depositSteps() {
   depositOpenBtn.addEventListener("click", () => {
@@ -45,6 +46,31 @@ function depositSteps() {
         `.${e.currentTarget.dataset.method}`
       );
       target.classList.add("active");
+    });
+  });
+
+  step2BackBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      depositMethods.forEach((method) => {
+        method.classList.remove("active");
+      });
+      depositBlocks.forEach((block) => {
+        block.classList.remove("active");
+      });
+      depositStep1.classList.add("active");
+      return false;
+    });
+  });
+
+  step2BackBtn.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      depositMethods.forEach((method) => {
+        method.classList.remove("active");
+      });
+      depositBlocks.forEach((block) => {
+        block.classList.remove("active");
+      });
+      depositStep1.classList.add("active");
     });
   });
 }
