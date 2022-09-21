@@ -1287,6 +1287,11 @@ h5 {
   border: 3px solid #717477;
 }
 
+.ruletaResult--green {
+  background-color: #1c7a5a;
+  border: 3px solid #717477;
+}
+
 @keyframes results-loading {
   0% {
     opacity: 1;
