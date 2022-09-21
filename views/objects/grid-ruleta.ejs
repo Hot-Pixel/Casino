@@ -1,15 +1,15 @@
 <section class="gridRuleta">
     <% data.forEach( e => { %>
-        <div class="gridRuleta__item card mix <%= e.cruppier %> <%= e.proveedor %>">
+        <div class="gridRuleta__item card mix <%= e.crupier %> <%= e.proveedor %>">
             <div class="card__img nuevo">
                 <img class="card__img-bg" src="img/images/<%= e.imgBg %>" alt="">
-                <img class="card__img-cruppier" src="img/images/<%= e.imgCru %>" alt="">
+                <img class="card__img-crupier" src="img/images/<%= e.imgCru %>" alt="">
             </div>
             <div class="card__content">
                 <div class="card__content--top">
                     <div>
-                        <p><%= e.title %></p>
-                        <p>con Adriana</p>
+                        <div class="card__title"><%= e.title %></div>
+                        <div class="card__croupier">con Adriana</div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" class="card__content-heart">
                         <g transform="translate(6.977 -2.109)">
@@ -22,15 +22,15 @@
                     </svg>
                 </div>
                 <div class="card__content--bottom">
-                    <div>
-                        <p class="ruletaResult ruletaResult--red">23</p>
-                        <p class="ruletaResult ruletaResult--black">17</p>
-                        <p class="ruletaResult ruletaResult--black">9</p>
-                        <p class="ruletaResult ruletaResult--red">21</p>
+                    <div class="ruletaResultWrapper">
+                        <div class="ruletaResult ruletaResult--red">23</div>
+                        <div class="ruletaResult ruletaResult--black">17</div>
+                        <div class="ruletaResult ruletaResult--black">9</div>
+                        <div class="ruletaResult ruletaResult--red">21</div>
                     </div>
-                    <div>
-                        <p><span>Desde </span><span>0,20</span>€</p>
-                        <p><img src="img/icons/icon-user-grey.svg" alt=""><span>73</span></p>
+                    <div class="ruletaDataWrapper">
+                        <div class="ruletaData minbet"><span>Desde </span><span class="minbet-value">0,20</span>€</div>
+                        <div class="ruletaData users"><img src="img/icons/icon-user-grey.svg" alt=""><span class="users-value">73</span></div>
                     </div>
                 </div>
             </div>

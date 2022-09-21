@@ -57,7 +57,7 @@
         object-fit: cover;
         object-position: bottom;
       }
-      .card__img-cruppier {
+      .card__img-crupier {
         position: absolute;
         bottom: 0;
         right: 10%;
@@ -90,13 +90,6 @@
         display: flex;
         justify-content: space-between;
 
-        p:first-of-type {
-          @extend .u-f--h2, .u-f--bold;
-        }
-        p:last-of-type {
-          margin: 0;
-        }
-
         svg {
           transition: all 0.4s ease;
           align-self: flex-start;
@@ -116,9 +109,9 @@
         justify-content: space-between;
         align-items: center;
 
-        & > div:first-of-type {
+        & > .ruletaResultWrapper {
           display: flex;
-          p {
+          .ruletaResult {
             margin-right: rem(5);
 
             @include tablet {
@@ -127,19 +120,19 @@
           }
         }
 
-        & > div:last-of-type {
+        & > .ruletaDataWrapper {
             display: flex;
-            p, span {
+            .ruletaData, span {
                 @extend .u-f--bold;
                 color: #a7a9ab;
                 margin: 0;
             }
 
-            p:first-of-type {
+            .minbet {
                 margin-right: $sm;
             }
 
-            p {
+            .ruletaData {
                 display: flex;
                 align-items: center;
 
@@ -153,6 +146,10 @@
             }
         }
       }
+    }
+ 
+    &__title { 
+      @extend .u-f--h2, .u-f--bold;
     }
   }
 }

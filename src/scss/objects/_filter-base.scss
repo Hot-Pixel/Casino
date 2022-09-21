@@ -14,7 +14,7 @@
     justify-content: space-between;
     align-items: center;
 
-    &-game, &-cruppier {
+    &-game, &-crupier {
       display: none;
 
       @include screen-sm {
@@ -86,7 +86,7 @@
 
       }
 
-      #casino-provider, #casino-game, #ruleta-cruppier, #ruleta-provider {
+      #casino-provider, #casino-game, #ruleta-crupier, #ruleta-provider {
         @extend .u-f--h5;
         margin-right: rem(5);
         background-color: #25292f;
@@ -118,7 +118,7 @@
         }
       }
 
-      #casino-game, #ruleta-cruppier {
+      #casino-game, #ruleta-crupier {
         display: block;
 
         @include screen-sm {
