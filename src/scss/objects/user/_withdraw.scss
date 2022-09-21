@@ -2,7 +2,7 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.whitdrawScreen {
+.withdrawScreen {
   position: fixed;
   z-index: 10;
   top: 0;
@@ -10,16 +10,13 @@
 
   width: 100vw;
   height: 100vh;
+  opacity: 0;
 
   background-color: setcolor("gray", "light2");
 
   .withdraw {
     @extend %margin_horizontal_main;
     height: 100%;
-
-    .block-flex {
-      display: flex;
-    }
 
     &__header {
       width: 100%;
@@ -52,6 +49,10 @@
 
       justify-content: center;
       align-items: center;
+
+      &.active {
+        display: flex;
+      }
     }
 
     &__wrapper {

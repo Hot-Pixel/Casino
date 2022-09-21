@@ -1,7 +1,8 @@
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-a098a8a3.js';
-import { f as favHeart } from './favHeart-fc186b4a.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-f89dd174.js';
+import { d as dataModify } from './dataModify-9d8bbfff.js';
+import { f as favHeart } from './favHeart-9f93afda.js';
 import { m as mixitup } from './mixitup-b8d39d7d.js';
-import { m as mixitupMultifilter } from './mixitup-multifilter-5efd6c76.js';
+import { m as mixitupMultifilter } from './mixitup-multifilter-2daf904c.js';
 
 mixitup.use(mixitupMultifilter);
 
@@ -45,7 +46,7 @@ function filterWheel() {
 window.addEventListener('load', () => {
   popUpSaldo();
   marginHeader();
-  // dataModify()
+  dataModify();
   favHeart();
   depositSteps();
   depositAmmount();

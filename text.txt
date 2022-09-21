@@ -1,0 +1,8 @@
+  <div class="deposit__block deposit__step2">
+    <%- include ('../objects/user/deposit-step2/deposit-skrill') %>
+    <%- include ('../objects/user/deposit-step2/deposit-paypal') %>
+    <%- include ('../objects/user/deposit-step2/deposit-debit') %>
+    <%- include ('../objects/user/deposit-step2/deposit-transfer') %>
+    <%- include ('../objects/user/deposit-step2/deposit-paysafe') %>
+    <%- include ('../objects/user/deposit-step2/deposit-neteller') %>
+</div>

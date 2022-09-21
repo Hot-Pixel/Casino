@@ -1,0 +1,25 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.deposit__step3 {
+    .deposit__logo {
+      height: $xl;
+      width: $xl;
+    }
+
+    .deposit__body {
+      @extend .u-f--h3, .u-f--bold;
+      color: setcolor('black', 'dark1');
+      margin: $md 0;
+      max-width: 60%;
+
+      @include tablet {
+        max-width: 100%;
+      }
+    }
+
+    .depositStep3__btn {
+      padding: $sm $lg;
+    }
+  }

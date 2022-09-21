@@ -1,6 +1,6 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-c89dac96.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-a098a8a3.js';
+import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-9376d90a.js';
+import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-f89dd174.js';
 
 function carouselBanner() {
   var carousel = new Splide(".bannerCarousel .splide", {
@@ -11,6 +11,31 @@ function carouselBanner() {
 
   carousel.mount();
 }
+
+function accordionDeposit() {
+    const accorArrows = document.getElementsByClassName("accorArrowDepo");
+    const accorBody = document.getElementsByClassName("tc__body");
+
+    for (let n = 0; n < accorArrows.length; n++) {
+      accorArrows[n].addEventListener("click", () => {
+        if (accorBody[n].classList.contains("active")) {
+          gsapWithCSS
+            .timeline()
+            .to(accorArrows[n], { rotation: -90, duration: 0.3 })
+            .to(accorBody[n], { opacity: 0, padding: 0,  duration: 0.3 })
+            .to(accorBody[n], { height: 0, duration: 0.3 });
+          accorBody[n].classList.remove("active");
+        } else {
+          gsapWithCSS
+            .timeline()
+            .to(accorArrows[n], { rotation: 0, duration: 0.3 })
+            .to(accorBody[n], { height: "auto", padding: '15px 0', duration: 0.3 })
+            .to(accorBody[n], { opacity: 1, duration: 0.3 });
+          accorBody[n].classList.add("active");
+        }
+      });
+    }
+  }
 
 function carouselBets() {
   var carousel = new Splide(".carouselBets__carousel", {
@@ -58,7 +83,22 @@ function carouselBets() {
   carousel.mount();
 }
 
+function depositCopy() {
+  const iban = document.querySelector("#iban");
+  const copyBtn = document.querySelector(".depositTransfer__table-copy");
+
+  copyBtn.addEventListener("click", () => {
+    gsapWithCSS
+      .timeline()
+      .to(copyBtn, { scale: 0.9, duration: 0.2 })
+      .to(copyBtn, { scale: 1, duration: 0.2 });
+
+    navigator.clipboard.writeText(iban.innerText);
+  });
+}
+
 window.addEventListener("load", () => {
+  accordionDeposit();
   carouselBanner();
   carouselJackpot();
   carouselBets();
@@ -68,5 +108,6 @@ window.addEventListener("load", () => {
   marginHeader();
   depositSteps();
   depositAmmount();
+  depositCopy();
 });
 //# sourceMappingURL=home.js.map
