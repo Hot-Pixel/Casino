@@ -111,12 +111,17 @@
 
         & > .ruletaResultWrapper {
           display: flex;
+          transition: transform 500ms;
           .ruletaResult {
             margin-right: rem(5);
 
             @include tablet {
               margin-right: rem(10);
             }
+
+          }
+          &.animate {
+            transform: scale(1.1);
           }
         }
 

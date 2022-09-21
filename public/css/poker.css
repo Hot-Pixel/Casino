@@ -1439,6 +1439,7 @@ a.redCta img {
 }
 .gridRuleta .card__content--bottom > .ruletaResultWrapper {
   display: flex;
+  transition: transform 500ms;
 }
 .gridRuleta .card__content--bottom > .ruletaResultWrapper .ruletaResult {
   margin-right: 0.3125rem;
@@ -1447,6 +1448,9 @@ a.redCta img {
   .gridRuleta .card__content--bottom > .ruletaResultWrapper .ruletaResult {
     margin-right: 0.625rem;
   }
+}
+.gridRuleta .card__content--bottom > .ruletaResultWrapper.animate {
+  transform: scale(1.1);
 }
 .gridRuleta .card__content--bottom > .ruletaDataWrapper {
   display: flex;

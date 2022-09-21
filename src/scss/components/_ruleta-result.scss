@@ -20,12 +20,28 @@
         height: $md;
     }
 }
+.ruletaResult--placeholder {
+    background-color: rgb(101, 101, 101);
+    border: 3px solid #484a4d;
+    animation: results-loading 1000ms ease-in 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
 .ruletaResult--red {
     background-color: setcolor('primary');
     border: 3px solid #ff7f8b;
 
 }
 .ruletaResult--black {
-    background-color: black;
+    background-color: #000;
     border: 3px solid #717477;
 }
+
+@keyframes results-loading {
+    0% {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }

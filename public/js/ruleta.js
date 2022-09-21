@@ -139,8 +139,8 @@ function LiveRoulette() {
                     processActiveUsers(event, rouletteElm);
                     break;
             }
-            // processLimits(event, rouletteElm);
-            // processProvider(event, rouletteElm);
+            processLimits(event, rouletteElm);
+            processProvider(event, rouletteElm);
         }
     }
     
@@ -151,7 +151,12 @@ function LiveRoulette() {
             const result = data.lastResults[i];
             resultOutput += `<div class='ruletaResult ruletaResult--${numbers[result].color}'>${result}</div>`;
         }
-        element.querySelector('.ruletaResultWrapper').innerHTML = resultOutput;
+        const resultWrapper = element.querySelector('.ruletaResultWrapper');
+        resultWrapper.classList.add('animate');
+        resultWrapper.innerHTML = resultOutput;
+        setTimeout(() => {
+            resultWrapper.classList.remove('animate');
+        }, 500);
     }
     
     function processActiveUsers(data, element) {
@@ -168,12 +173,12 @@ function LiveRoulette() {
         const dealerImageEl = element.querySelector('.card__img-crupier');
 
         if (!data.dealerName || data.dealerName === "Auto" || data.dealerName === "Quantum Automatica") {    
-            dealerNameEl.innerHTML = "";
+            dealerNameEl.innerHTML = "&nbsp;";
             return false;
         }    
         
         // Ignore if new dealer is same as current
-        if(dealerNameEl.text === data.dealerName) return false;
+        if(dealerNameEl.innerHTML === `con ${data.dealerName}`) return false;
         
         if (data.dealerImage) {
             dealerImageEl.src = data.dealerImage;
@@ -201,10 +206,24 @@ function LiveRoulette() {
 
         /*Hide Dealer Name if = 'Ruleta Relámpago*/
         if(data.dealerName === "Ruleta Relámpago") {
-            data.dealerName = "";
+            data.dealerName = "&nbsp;";
         }
     
-        dealerNameEl.text = data.dealerName;
+        dealerNameEl.innerHTML = `con ${data.dealerName}`;
+    }
+    
+    function processLimits(data, element) {
+        if(data.limitFrom < 1) {
+            return false;
+        }
+        const formatter = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        element.querySelector('.minbet').classList.remove('d-none');
+        element.querySelector('.minbet .minbet-value').innerHTML = formatter.format(data.limitFrom / 100);
+    }
+    
+    function processProvider(data, element) {
+        if(data.playtechId) element.classList.add('playtech');
+        if(data.evolutionId) element.classList.add('evolution');
     }
 }
 
