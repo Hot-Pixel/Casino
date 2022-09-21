@@ -1,6 +1,6 @@
 <section class="gridRuleta">
     <% data.forEach( e => { %>
-        <div class="gridRuleta__item card mix <%= e.crupier %> <%= e.proveedor %>">
+        <div class="gridRuleta__item card mix <%= e.crupier %> <%= e.proveedor %>" data-lobby-id="<%= e.id %>">
             <div class="card__img nuevo">
                 <img class="card__img-bg" src="img/images/<%= e.imgBg %>" alt="">
                 <img class="card__img-crupier" src="img/images/<%= e.imgCru %>" alt="">
@@ -30,7 +30,7 @@
                     </div>
                     <div class="ruletaDataWrapper">
                         <div class="ruletaData minbet"><span>Desde </span><span class="minbet-value">0,20</span>€</div>
-                        <div class="ruletaData users"><img src="img/icons/icon-user-grey.svg" alt=""><span class="users-value">73</span></div>
+                        <div class="ruletaData users d-none"><img src="img/icons/icon-user-grey.svg" alt=""><span class="users-value">73</span></div>
                     </div>
                 </div>
             </div>

@@ -5,8 +5,9 @@ import favHeart from "./modules/favHeart.js";
 import filterWheel from "./modules/filterWheel.js";
 import depositSteps from "./modules/depositSteps.js";
 import depositAmmount from "./modules/depositAmmount.js";
+import LiveRoulette from "./modules/liveRoulette.js";
 
-window.addEventListener('load', () => {
+document.addEventListener("DOMContentLoaded", () => {
   popUpSaldo()
   marginHeader()
   // dataModify()
@@ -14,4 +15,5 @@ window.addEventListener('load', () => {
   depositSteps()
   depositAmmount()
   filterWheel()
+  LiveRoulette()
 })
