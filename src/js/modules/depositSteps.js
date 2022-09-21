@@ -4,25 +4,30 @@ const depositScreen = document.querySelector(".depositScreen");
 const pageContainer = document.querySelector(".pageContainer");
 const depositBlocks = document.querySelectorAll(".deposit__block");
 const depositCloseBtn = document.querySelector(".deposit__btn-close");
-const depositOpenBtn = document.querySelector(".deposit__openBtn");
+const depositOpenBtns = document.querySelectorAll(".deposit__openBtn");
 const depositStep1 = document.querySelector(".deposit__step1");
 const depositMethodsBtn = document.querySelectorAll(".deposit__item");
 const depositMethods = document.querySelectorAll(".deposit__step2-method");
 const depositStep2 = document.querySelector(".deposit__step2");
+const depositStep3 = document.querySelector(".deposit__step3");
 const step2BackBtn = document.querySelectorAll(".depositStep2__backBtn");
+const step3Btn = document.querySelectorAll(".depositStep3__Btn");
 
 function depositSteps() {
-  depositOpenBtn.addEventListener("click", () => {
-    depositBlocks.forEach((block) => {
-      block.classList.remove("active");
+  depositOpenBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      depositBlocks.forEach((block) => {
+        block.classList.remove("active");
+      });
+      depositStep1.classList.add("active");
+      gsap
+        .timeline()
+        .to(pageContainer, { display: "none", duration: 0 })
+        .to(depositScreen, { display: "block", duration: 0 })
+        .to(depositScreen, { opacity: 1, duration: 0.4 });
     });
-    depositStep1.classList.add("active");
-    gsap
-      .timeline()
-      .to(pageContainer, { display: "none", duration: 0 })
-      .to(depositScreen, { display: "block", duration: 0 })
-      .to(depositScreen, { opacity: 1, duration: 0.4 });
-  });
+  })
+
 
   depositCloseBtn.addEventListener("click", () => {
     gsap
@@ -62,7 +67,7 @@ function depositSteps() {
     });
   });
 
-  step2BackBtn.forEach((btn) => {
+  step3Btn.forEach((btn) => {
     btn.addEventListener("click", () => {
       depositMethods.forEach((method) => {
         method.classList.remove("active");
@@ -70,7 +75,8 @@ function depositSteps() {
       depositBlocks.forEach((block) => {
         block.classList.remove("active");
       });
-      depositStep1.classList.add("active");
+      depositStep3.classList.add("active");
+      return false;
     });
   });
 }

@@ -1,0 +1,45 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.deposit {
+  &__grid {
+    margin-top: $md;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: rem(10);
+
+    @include screen-sm {
+      grid-template-columns: 1fr 1fr;
+      width: auto;
+    }
+  }
+
+  &__item {
+    background-color: white;
+    border-radius: rem(5);
+    padding: $sm;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    @include screen-sm {
+      padding: $md;
+    }
+
+    img {
+      object-fit: contain;
+
+      @include screen-sm {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  }
+}

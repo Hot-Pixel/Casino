@@ -1,26 +1,6 @@
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-5a00c40f.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-f89dd174.js';
 import { d as dataModify } from './dataModify-9d8bbfff.js';
-
-function historyNavBar() {
-  const historyNav = document.querySelectorAll(".history__nav");
-  const historyBlock = document.querySelectorAll(".block");
-
-  historyNav.forEach((nav) => {
-    nav.addEventListener("click", (e) => {
-      historyBlock.forEach((block) => {
-        block.classList.remove("active-block");
-      });
-      historyNav.forEach((nav) => {
-        nav.classList.remove("is-active");
-      });
-      e.currentTarget.classList.add("is-active");
-      let dataBlock = e.currentTarget.dataset.block;
-      console.log(dataBlock);
-      let target = document.querySelector(dataBlock);
-      target.classList.add("active-block");
-    });
-  });
-}
+import { h as historyNavBar } from './historyNavBar-c56d1d21.js';
 
 window.addEventListener('load', () => {
   popUpSaldo();

@@ -85,6 +85,8 @@ gulp.task("js", async () => {
         "src/js/user",
         "src/js/data",
         "src/js/docs",
+        "src/js/preferences",
+        "src/js/support",
         "src/js/history",
         "src/js/wallet",
       ],

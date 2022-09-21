@@ -3,6 +3,10 @@
 @use "../tools" as *;
 
 
+.pageContainer {
+  overflow: hidden;
+}
+
 .withdrawScreen, .depositScreen {
   display: none;
 
@@ -16,16 +20,17 @@
   display: block;
   opacity: 1;
 
-  background-color: setcolor("gray", "light2");
-
   width: 100vw;
-  min-height: 100%;
 
   .userContent {
     width: 100%;
     margin-left: 0;
 
     padding: $sm;
+
+    min-height: calc(100vh - 85px);
+    background-color: setcolor("gray", "light2");
+    overflow: hidden;
 
     @include screen-sm {
       width: 80%;
