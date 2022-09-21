@@ -1,5 +1,5 @@
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-5a00c40f.js';
-import { d as dataModify } from './dataModify-9d8bbfff.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-a098a8a3.js';
+import { d as dataModify } from './dataModify-2378b72f.js';
 
 function historyNavBar() {
   const historyNav = document.querySelectorAll(".history__nav");

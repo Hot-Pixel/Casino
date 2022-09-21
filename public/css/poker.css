@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .txt2cols__title p, .faq__title p, .faq__accordion-item .head p, .oneCol p, .gridPoker .card__content-title, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-title, .grid3Cols__container-step .step, .grid3Cols__container-step .title, .grid3Cols__container-step > div p:first-of-type, .gridDl .card__bottom-content p:first-of-type, .gridDl .card__bottom-content p:nth-of-type(2), .textBlock .bold, .banner__wrapper-title p, .bannerFooter span, .header__promo-content p:first-of-type, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .depositScreen .deposit__title, .depositScreen .depositDetail__card-top .depositDetail__ammount, .depositScreen .depositDetail__card-tc .tc__header p, .depositScreen .depositDetail__card-tc .tc__body a, .depositScreen .depositDetail__select-email input, .gridRuleta .card__content--top p:first-of-type, .gridRuleta .card__content--bottom > div:last-of-type p, .gridRuleta .card__content--bottom > div:last-of-type span, .menuPoker__btn span, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, a.redCta span, .u-f--bold p, .gridPoker .card__content-title p, .gridPoker .card__content-row p:last-of-type span:last-of-type p, .grid3Cols__container-title p, .grid3Cols__container-step .step p, .grid3Cols__container-step .title p, .grid3Cols__container-step > div p:first-of-type p, .gridDl .card__bottom-content p:first-of-type p, .gridDl .card__bottom-content p:nth-of-type(2) p, .textBlock .bold p, .bannerFooter span p, .header__promo-content p:first-of-type p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .depositScreen .deposit__title p, .depositScreen .depositDetail__card-top .depositDetail__ammount p, .depositScreen .depositDetail__card-tc .tc__body a p, .depositScreen .depositDetail__select-email input p, .gridRuleta .card__content--top p:first-of-type p, .menuPoker__btn span p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p, a.redCta span p {
+.u-f--bold, .txt2cols__title p, .faq__title p, .faq__accordion-item .head p, .oneCol p, .gridPoker .card__content-title, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-title, .grid3Cols__container-step .step, .grid3Cols__container-step .title, .grid3Cols__container-step > div p:first-of-type, .gridDl .card__bottom-content p:first-of-type, .gridDl .card__bottom-content p:nth-of-type(2), .textBlock .bold, .banner__wrapper-title p, .bannerFooter span, .header__promo-content p:first-of-type, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .depositScreen .deposit__title, .depositScreen .depositDetail__card-top .depositDetail__ammount, .depositScreen .depositDetail__card-tc .tc__header p, .depositScreen .depositDetail__card-tc .tc__body a, .depositScreen .depositDetail__select-email input, .gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData, .gridRuleta .card__content--bottom > .ruletaDataWrapper span, .gridRuleta .card__title, .menuPoker__btn span, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, a.redCta span, .u-f--bold p, .gridPoker .card__content-title p, .gridPoker .card__content-row p:last-of-type span:last-of-type p, .grid3Cols__container-title p, .grid3Cols__container-step .step p, .grid3Cols__container-step .title p, .grid3Cols__container-step > div p:first-of-type p, .gridDl .card__bottom-content p:first-of-type p, .gridDl .card__bottom-content p:nth-of-type(2) p, .textBlock .bold p, .bannerFooter span p, .header__promo-content p:first-of-type p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .depositScreen .deposit__title p, .depositScreen .depositDetail__card-top .depositDetail__ammount p, .depositScreen .depositDetail__card-tc .tc__body a p, .depositScreen .depositDetail__select-email input p, .gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData p, .gridRuleta .card__content--bottom > .ruletaDataWrapper span p, .gridRuleta .card__title p, .menuPoker__btn span p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p, a.redCta span p {
   font-weight: 700;
 }
 
@@ -268,36 +268,36 @@
   }
 }
 
-.u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__content--top p:first-of-type {
+.u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__title {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__title {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__title {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__content--top p:first-of-type {
+  .u-f--h2, .txt2cols__title p, .faq__title p, .oneCol__subtitle, .gridPoker .card__content-title, .grid3Cols__container-title, .gridDl .card__bottom-content p:first-of-type, .textBlock .title-big, .gridRuleta .card__title {
     font-size: 2rem;
   }
 }
@@ -1391,7 +1391,7 @@ a.redCta img {
   object-fit: cover;
   object-position: bottom;
 }
-.gridRuleta .card__img .card__img-cruppier {
+.gridRuleta .card__img .card__img-crupier {
   position: absolute;
   bottom: 0;
   right: 10%;
@@ -1418,9 +1418,6 @@ a.redCta img {
   display: flex;
   justify-content: space-between;
 }
-.gridRuleta .card__content--top p:last-of-type {
-  margin: 0;
-}
 .gridRuleta .card__content--top svg {
   transition: all 0.4s ease;
   align-self: flex-start;
@@ -1436,38 +1433,37 @@ a.redCta img {
   justify-content: space-between;
   align-items: center;
 }
-.gridRuleta .card__content--bottom > div:first-of-type {
+.gridRuleta .card__content--bottom > .ruletaResultWrapper {
   display: flex;
 }
-.gridRuleta .card__content--bottom > div:first-of-type p {
+.gridRuleta .card__content--bottom > .ruletaResultWrapper .ruletaResult {
   margin-right: 0.3125rem;
 }
 @media only screen and (min-width: 768px) {
-  .gridRuleta .card__content--bottom > div:first-of-type p {
+  .gridRuleta .card__content--bottom > .ruletaResultWrapper .ruletaResult {
     margin-right: 0.625rem;
   }
 }
-.gridRuleta .card__content--bottom > div:last-of-type {
+.gridRuleta .card__content--bottom > .ruletaDataWrapper {
   display: flex;
 }
-.gridRuleta .card__content--bottom > div:last-of-type p, .gridRuleta .card__content--bottom > div:last-of-type span {
+.gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData, .gridRuleta .card__content--bottom > .ruletaDataWrapper span {
   color: #a7a9ab;
   margin: 0;
 }
-.gridRuleta .card__content--bottom > div:last-of-type p:first-of-type {
+.gridRuleta .card__content--bottom > .ruletaDataWrapper .minbet {
   margin-right: 0.9375rem;
 }
-.gridRuleta .card__content--bottom > div:last-of-type p {
+.gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData {
   display: flex;
   align-items: center;
 }
-.gridRuleta .card__content--bottom > div:last-of-type p img {
+.gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData img {
   height: 0.875rem;
 }
-.gridRuleta .card__content--bottom > div:last-of-type p span {
+.gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData span {
   margin-left: 0.3125rem;
 }
-
 .depositScreen {
   display: none;
   opacity: 0;
