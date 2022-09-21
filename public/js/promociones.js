@@ -1,6 +1,6 @@
 import { S as Splide$1 } from './splide.esm-20cd2e1c.js';
 import { m as mixitup } from './mixitup-b8d39d7d.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-346238be.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-4b0888aa.js';
 
 const container = document.querySelector(".finder__promo");
 
