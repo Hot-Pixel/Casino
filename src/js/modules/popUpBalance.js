@@ -5,6 +5,8 @@ const popUpOpenBtn = document.querySelector(".popUpBalance__openBtn");
 const popUpMenu = document.querySelector(".popUpBalance");
 
 function popUpSaldo() {
+  if(!popUpSaldo) return;
+  
   popUpOpenBtn.addEventListener("click", () => {
     gsap
       .timeline()

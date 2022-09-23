@@ -474,6 +474,10 @@
   }
 }
 
+.d-none {
+  display: none !important;
+}
+
 .textBlock, .casinoFinder, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
