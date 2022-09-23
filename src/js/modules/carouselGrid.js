@@ -1,8 +1,10 @@
 import { Splide } from "@splidejs/splide";
 import { Grid } from "@splidejs/splide-extension-grid";
 
-function carouselGrid() {
-  const gridFull = document.querySelector(".gridFull .splide");
+function carouselGrid(id, name) {
+  const gridFull = document.querySelector(id);
+
+  console.log(gridFull)
   const order = gridFull.dataset.order - 1;
   const item = [1, 1];
   const arrDim = [
@@ -22,7 +24,7 @@ function carouselGrid() {
 
   arrDim.splice(order, 0, item);
 
-  const carouselGrid = new Splide(gridFull, {
+  name = new Splide(gridFull, {
     perPage: 4,
     perMove: 1,
     pagination: false,
@@ -53,7 +55,7 @@ function carouselGrid() {
     },
   });
 
-  carouselGrid.mount({ Grid });
+  name.mount({ Grid });
 }
 
 export default carouselGrid;

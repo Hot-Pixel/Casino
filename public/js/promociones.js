@@ -1,6 +1,6 @@
-import { S as Splide$1 } from './splide.esm-20cd2e1c.js';
+import { S as Splide } from './splide.esm-20cd2e1c.js';
 import { m as mixitup } from './mixitup-b8d39d7d.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-f89dd174.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy } from './depositCopy-f41c5281.js';
 
 const container = document.querySelector(".finder__promo");
 
@@ -14,7 +14,7 @@ const filterPromo = () => {
     },
   });
 
-  var carouselMenuPromo = new Splide$1(".filter__promo .splide", {
+  var carouselMenuPromo = new Splide(".filter__promo .splide", {
     pagination: false,
     arrows: false,
     perPage: 3,
@@ -44,11 +44,11 @@ function carouselPromociones() {
 }
 
 window.addEventListener('load', () => {
-  filterCasino();
   popUpSaldo();
   marginHeader();
   depositSteps();
   depositAmmount();
+  depositCopy();
   filterPromo();
   carouselPromociones();
 });

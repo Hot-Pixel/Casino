@@ -229,109 +229,109 @@
   font-weight: 500;
 }
 
-.u-f--bold, .textBlock .bold, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .depositScreen .deposit__title, .headerModule-title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .textBlock .bold p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .depositScreen .deposit__title p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .textBlock .bold, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .headerModule-title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .textBlock .bold p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .depositScreen .deposit__title {
+.u-f--h1, .user__title p, .depositScreen .deposit__title {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .depositScreen .deposit__title {
+  .u-f--h1, .user__title p, .depositScreen .deposit__title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1, .depositScreen .deposit__title {
+  .u-f--h1, .user__title p, .depositScreen .deposit__title {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .depositScreen .deposit__title {
+  .u-f--h1, .user__title p, .depositScreen .deposit__title {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .depositScreen .deposit__title {
+  .u-f--h1, .user__title p, .depositScreen .deposit__title {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .depositScreen .deposit__title {
+  .u-f--h1, .user__title p, .depositScreen .deposit__title {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .depositScreen .deposit__title {
+  .u-f--h1, .user__title p, .depositScreen .deposit__title {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2, .textBlock .title-big {
+.u-f--h2, .textBlock .title-big, .user__card-title {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .textBlock .title-big {
+  .u-f--h2, .textBlock .title-big, .user__card-title {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .textBlock .title-big {
+  .u-f--h2, .textBlock .title-big, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .textBlock .title-big {
+  .u-f--h2, .textBlock .title-big, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .textBlock .title-big {
+  .u-f--h2, .textBlock .title-big, .user__card-title {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .textBlock .title-big {
+  .u-f--h2, .textBlock .title-big, .user__card-title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .textBlock .title-big {
+  .u-f--h2, .textBlock .title-big, .user__card-title {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+.u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
@@ -370,36 +370,36 @@
   }
 }
 
-.u-f--h5, .header .nav__item a p {
+.u-f--h5, .header .nav__item a p, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:first-of-type, .depositTransfer--bottom p, .depositTransfer__table p {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h5, .header .nav__item a p {
+  .u-f--h5, .header .nav__item a p, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:first-of-type, .depositTransfer--bottom p, .depositTransfer__table p {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h5, .header .nav__item a p {
+  .u-f--h5, .header .nav__item a p, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:first-of-type, .depositTransfer--bottom p, .depositTransfer__table p {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h5, .header .nav__item a p {
+  .u-f--h5, .header .nav__item a p, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:first-of-type, .depositTransfer--bottom p, .depositTransfer__table p {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h5, .header .nav__item a p {
+  .u-f--h5, .header .nav__item a p, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:first-of-type, .depositTransfer--bottom p, .depositTransfer__table p {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .header .nav__item a p {
+  .u-f--h5, .header .nav__item a p, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:first-of-type, .depositTransfer--bottom p, .depositTransfer__table p {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h5, .header .nav__item a p {
+  .u-f--h5, .header .nav__item a p, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:first-of-type, .depositTransfer--bottom p, .depositTransfer__table p {
     font-size: 1rem;
   }
 }
@@ -952,9 +952,6 @@ h5 {
 .btn__red {
   color: #ffffff;
   background-color: #ff293e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .btn__red:hover {
   background-color: #ff5264;
@@ -1282,6 +1279,494 @@ h5 {
   margin-right: 0.625rem;
 }
 
+.deposit__grid {
+  margin-top: 1.875rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  gap: 0.625rem;
+}
+@media only screen and (min-width: 1280px) {
+  .deposit__grid {
+    grid-template-columns: 1fr 1fr;
+    width: auto;
+  }
+}
+.deposit__item {
+  background-color: white;
+  border-radius: 0.3125rem;
+  padding: 0.9375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1280px) {
+  .deposit__item {
+    padding: 1.875rem;
+  }
+}
+.deposit__item img {
+  object-fit: contain;
+}
+@media only screen and (min-width: 1280px) {
+  .deposit__item img {
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.depositDetail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 1280px) {
+  .depositDetail {
+    width: 50%;
+  }
+}
+.depositDetail__card {
+  width: 100%;
+  margin-top: calc(3.75rem + 1.875rem);
+  background-color: #F4F6F8;
+  border-radius: 2.5rem 2.5rem 0.625rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+}
+.depositDetail__card-top {
+  position: relative;
+  margin-bottom: 0.9375rem;
+  padding: 4.375rem 0.9375rem 1.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.depositDetail__card-top .depositDetail__logo {
+  position: absolute;
+  top: -3.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 0.625rem;
+  padding: 1.875rem;
+}
+.depositDetail__card-top p {
+  color: #13171d;
+}
+.depositDetail__card-top p:last-of-type {
+  color: #868b92;
+}
+.depositDetail__card-top .depositDetail__ammount {
+  width: 50%;
+  margin-top: 0.9375rem;
+  padding: 0.9375rem 0;
+  background-color: #EAEDEF;
+  border-radius: 6.25rem;
+  color: #868b92;
+  text-align: center;
+  appearance: none;
+}
+.depositDetail__card-top .depositDetail__fixed {
+  display: flex;
+  margin-top: 0.625rem;
+}
+.depositDetail__card-top .depositDetail__fixed div {
+  width: 5rem;
+  padding: 0.9375rem 0;
+  box-shadow: 0px 7px 16px -3px rgba(0, 0, 0, 0.3);
+}
+.depositDetail__card-top .depositDetail__fixed div:nth-of-type(2) {
+  margin: 0 0.3125rem;
+}
+.depositDetail__card-top input::-webkit-outer-spin-button,
+.depositDetail__card-top input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.depositDetail__card-tc {
+  border-radius: 0 0 0.625rem 0.625rem;
+  padding: 0.9375rem;
+  background-color: #e99c00;
+}
+.depositDetail__card-tc .tc__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.depositDetail__card-tc .tc__header .accorArrowDepo {
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+.depositDetail__card-tc .tc__body {
+  padding: 0;
+  height: 0;
+  opacity: 0;
+}
+.depositDetail__card-tc .tc__body p {
+  padding-bottom: 0.625rem;
+}
+.depositDetail__card-tc .tc__body a {
+  color: white;
+}
+.depositDetail__select {
+  margin-top: 1.875rem;
+}
+.depositDetail__select > p {
+  text-align: center;
+}
+.depositDetail__select-type {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.625rem;
+}
+.depositDetail__select-content {
+  margin-top: 0.625rem;
+  border-radius: 0.3125rem;
+  background-color: white;
+}
+.depositDetail__select-content p {
+  color: #13171d;
+  padding: 0.9375rem;
+}
+.depositDetail__select-content p:not(:last-of-type) {
+  border-bottom: 1px solid #e7e7e8;
+}
+.depositDetail__select-noBond {
+  width: 100%;
+  margin-top: 0.625rem;
+}
+.depositDetail__select-noBond .item {
+  aspect-ratio: unset !important;
+  height: 9.375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .depositDetail__select-noBond .item {
+    height: 12.5rem;
+  }
+}
+.depositDetail__select-email {
+  margin-top: 0.625rem;
+  background-color: #f4f6f8;
+  border-radius: 0.3125rem;
+  padding: 1.875rem;
+}
+.depositDetail__select-email input {
+  width: 100%;
+  padding: 0.9375rem 0;
+  text-align: center;
+  background-color: #eaedef;
+  color: #868b92;
+}
+.depositDetail__select-save {
+  margin-top: 1.875rem;
+}
+.depositDetail__select-save p:first-of-type {
+  color: #13171d;
+  margin-bottom: 0.9375rem;
+}
+.depositDetail__select-save p:last-of-type {
+  color: #868B92;
+}
+.depositDetail .item {
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  aspect-ratio: 1/2;
+}
+@media only screen and (min-width: 1280px) {
+  .depositDetail .item {
+    aspect-ratio: 1/0.8;
+  }
+}
+.depositDetail .item input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  appearance: none;
+  margin: 0;
+  background-color: transparent;
+}
+.depositDetail .item input:checked ~ .item__wrapper {
+  background-color: white;
+  transition: all 0.3s ease;
+}
+.depositDetail .item input:checked ~ .item__wrapper svg path {
+  fill: black;
+  transition: all 0.3s ease;
+}
+.depositDetail .item input:checked ~ .item__wrapper p {
+  color: #13171d;
+}
+.depositDetail .item input:checked ~ .item__wrapper .radio {
+  transition: all 0.3s ease;
+  border: 2px solid #13171d;
+}
+.depositDetail .item input:checked ~ .item__wrapper .radio span {
+  transition: all 0.3s ease;
+  border: 4px solid #13171d;
+  background-color: transparent;
+}
+.depositDetail .item__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f4f6f8;
+  border-radius: 0.3125rem;
+}
+.depositDetail .item__wrapper svg {
+  object-fit: contain;
+  max-height: 1.875rem;
+}
+.depositDetail .item__wrapper p {
+  color: #868b92;
+  margin: 0.9375rem 0;
+}
+.depositDetail .item__wrapper .radio {
+  position: relative;
+  z-index: 0;
+  border: 2px solid #868b92;
+  background-color: transparent;
+  border-radius: 1000px;
+  height: 2rem;
+  width: 2rem;
+  transition: all 0.3s ease;
+}
+.depositDetail .item__wrapper .radio span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border: none;
+  background-color: #868b92;
+  border-radius: 1000px;
+  height: 1rem;
+  width: 1rem;
+  transition: all 0.3s ease;
+}
+.depositDetail__btn {
+  margin-top: 0.9375rem;
+  display: flex;
+}
+@media only screen and (min-width: 1280px) {
+  .depositDetail__btn {
+    margin-top: 1.875rem;
+  }
+}
+.depositDetail__btn button:first-of-type {
+  margin-right: 0.3125rem;
+  width: 30%;
+}
+@media only screen and (min-width: 1280px) {
+  .depositDetail__btn button:first-of-type {
+    width: 20%;
+  }
+}
+.depositDetail__btn button:last-of-type {
+  margin-left: 0.3125rem;
+  width: 70%;
+}
+@media only screen and (min-width: 1280px) {
+  .depositDetail__btn button:last-of-type {
+    width: 80%;
+  }
+}
+.depositDetail__btn .btn__white img {
+  transform: rotate(90deg);
+}
+
+.depositTransfer__card {
+  background-color: #F4F6F8;
+  border-radius: 0.9375rem;
+}
+.depositTransfer__card p {
+  color: #13171d !important;
+  padding-bottom: 0.9375rem;
+}
+.depositTransfer--top {
+  align-items: flex-start !important;
+  padding: 1.875rem;
+  border-bottom: 1px solid #EAEDEF;
+  text-align: left !important;
+}
+.depositTransfer--top > p:first-of-type {
+  margin-top: 3.75rem;
+}
+.depositTransfer--top .depositDetail__logo {
+  position: absolute;
+  top: -3.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 0.625rem;
+  padding: 1.875rem;
+}
+.depositTransfer--bottom {
+  padding: 1.875rem;
+}
+.depositTransfer__table {
+  width: 100%;
+  background-color: white;
+  border-radius: 0.3125rem;
+  margin-bottom: 0.9375rem;
+}
+.depositTransfer__table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.depositTransfer__table-header {
+  width: 100%;
+  padding: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .depositTransfer__table-header {
+    padding: 0.9375rem 1.875rem;
+  }
+}
+.depositTransfer__table-body {
+  padding: 0.9375rem;
+  border-top: 1px solid #dadfe3;
+}
+@media only screen and (min-width: 1280px) {
+  .depositTransfer__table-body {
+    padding: 0.9375rem 1.875rem;
+  }
+}
+.depositTransfer__table-copy {
+  display: flex;
+  align-items: center;
+  padding: 0.9375rem 1.875rem;
+  cursor: pointer;
+}
+.depositTransfer__table-copy span {
+  color: #00d1bc;
+  padding-right: 0.3125rem;
+}
+.depositTransfer__btn button {
+  width: 100% !important;
+}
+
+.deposit__step3 .deposit__logo {
+  height: 6.25rem;
+  width: 6.25rem;
+}
+.deposit__step3 .deposit__body {
+  color: #13171d;
+  margin: 1.875rem 0;
+  max-width: 60%;
+}
+@media only screen and (min-width: 768px) {
+  .deposit__step3 .deposit__body {
+    max-width: 100%;
+  }
+}
+.deposit__step3 .depositStep3__btn {
+  padding: 0.9375rem 3.75rem;
+}
+
+.user__card {
+  padding: 0.9375rem;
+  border-radius: 0.625rem;
+  box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+  background-color: #F4F6F8;
+}
+.user__card-title {
+  color: #13171d;
+  padding-bottom: 0.625rem;
+}
+
+.user__title {
+  display: flex;
+  align-items: center;
+}
+.user__title img {
+  height: 1.75rem;
+  width: 1.625rem;
+  margin-right: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .user__title img {
+    height: 2.375rem;
+    width: 2.25rem;
+  }
+}
+.user__title p {
+  color: #13171d;
+}
+
+.user__input {
+  height: 2.8125rem;
+  color: #868b92;
+  border-radius: 6.25rem;
+}
+.user__input::placeholder {
+  color: #868b92;
+}
+.user__input--ghost {
+  background-color: transparent;
+  border: 1px solid #d4d6d9;
+}
+
+.bar__ammount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9375rem;
+}
+.bar__ammount p {
+  color: #13171d;
+}
+.bar__progress {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 1.5625rem;
+  background-color: #bcc0c4;
+  border-radius: 1.875rem;
+  overflow: hidden;
+}
+.bar__progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 1.875rem;
+}
+.bar__progress--gradient {
+  z-index: 3;
+  width: 80%;
+  background: linear-gradient(to right, #2074fe, #00d1bc);
+}
+.bar__progress--dark {
+  z-index: 2;
+  width: 90%;
+  background-color: #868b92;
+}
+.bar__progress p {
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3%;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -1307,13 +1792,12 @@ h5 {
   align-items: center;
 }
 .header__wrapper .header__noLog-btn {
-  width: auto;
   margin: 0;
   margin-left: 0.625rem;
+  padding: 0.9375rem 2.5rem;
 }
 @media only screen and (min-width: 1440px) {
   .header__wrapper .header__noLog-btn {
-    width: 11.875rem;
     margin-left: 0.625rem;
   }
 }

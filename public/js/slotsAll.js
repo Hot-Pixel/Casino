@@ -1,8 +1,8 @@
 import { f as favHeart } from './favHeart-9f93afda.js';
 import { m as mixitup } from './mixitup-b8d39d7d.js';
 import { m as mixitupMultifilter } from './mixitup-multifilter-2daf904c.js';
-import { a as accordion } from './accordion-08167fe9.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-f89dd174.js';
+import { a as accordion } from './accordion-5dd1d94e.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy } from './depositCopy-f41c5281.js';
 
 mixitup.use(mixitupMultifilter);
 
@@ -63,7 +63,6 @@ const filterSlotsAll = () => {
       },
     });
   } else {
-    console.log("bob");
     mixitup(container, {
       multifilter: {
         enable: true,
@@ -118,5 +117,6 @@ window.addEventListener("load", () => {
   marginHeader();
   depositSteps();
   depositAmmount();
+  depositCopy();
 });
 //# sourceMappingURL=slotsAll.js.map

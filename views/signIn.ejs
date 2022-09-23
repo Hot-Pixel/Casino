@@ -1,0 +1,11 @@
+<%- include ('layout/head', {title: "Iniciar Sesión" , css: "signIn" }) %>
+
+<div class="login__block login__signIn active">
+    <%- include ('objects/user/login') %>
+</div>
+
+<div class="login__block login__recover">
+    <%- include ('objects/user/login-recover') %>
+</div>
+
+<%- include ('layout/scripts', { script: 'signIn'})%>

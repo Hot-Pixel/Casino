@@ -911,9 +911,6 @@ h5 {
 .btn__red {
   color: #ffffff;
   background-color: #ff293e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .btn__red:hover {
   background-color: #ff5264;
@@ -1940,13 +1937,12 @@ a.redCta img {
   align-items: center;
 }
 .header__wrapper .header__noLog-btn {
-  width: auto;
   margin: 0;
   margin-left: 0.625rem;
+  padding: 0.9375rem 2.5rem;
 }
 @media only screen and (min-width: 1440px) {
   .header__wrapper .header__noLog-btn {
-    width: 11.875rem;
     margin-left: 0.625rem;
   }
 }
@@ -3594,18 +3590,18 @@ a.redCta img {
   color: #939598;
 }
 
-.slotGrids {
+.slotsBtn {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.slotGrids button {
+.slotsBtn a {
   margin-top: 30px;
   height: 65px;
   width: 90%;
 }
 @media only screen and (min-width: 1280px) {
-  .slotGrids button {
+  .slotsBtn a {
     margin-top: 30px;
     height: 100px;
     padding: 0 120px;

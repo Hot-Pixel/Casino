@@ -1,0 +1,47 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.password {
+    .password__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .password__header {
+        height: rem(90);
+        width: rem(90);
+
+        margin-bottom: $lg;
+      }
+
+      h4 {
+        @extend .u-f--h4;
+        color: black;
+        text-align: center;
+        max-width: 75%;
+      }
+
+      p {
+        color: #868b92;
+        text-align: center;
+        max-width: 75%;
+      }
+
+      .password__input {
+        width: 75%;
+        margin-top: $lg;
+        margin-bottom: rem(10);
+
+        input[type="text"] {
+          height: rem(45);
+          width: 100%;
+
+          background-color: transparent;
+          border: rem(2) solid #868b92;
+
+          text-align: center;
+        }
+      }
+    }
+  }

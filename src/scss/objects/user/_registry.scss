@@ -1,0 +1,104 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.stepOne, .stepThree {
+    background-color: #f4f6f8;
+    background-image: url("../img/img-bg-step1.jpg");
+
+    .login__form {
+      max-width: 60%;
+    }
+
+    &__input {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-flow: row;
+      gap: rem(20);
+
+      input {
+        flex: 50%;
+
+        background-color: #eaedef;
+        color: #868b92;
+
+        height: rem(45);
+
+        &::placeholder {
+          color: #868b92;
+        }
+      }
+    }
+
+    &__accept {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      margin-top: rem(20);
+
+      input[type="checkbox"] {
+        margin-right: rem(10);
+      }
+
+      p {
+        color: #868b92;
+      }
+    }
+  }
+
+  &__steps {
+    position: absolute;
+    top: rem(-38);
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: rem(8) solid #f4f6f8;
+    border-radius: rem(100);
+
+    &:not(:last-of-type) {
+      margin-right: rem(5);
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      box-sizing: content-box;
+
+      border: rem(8) solid #eaedef;
+      border-radius: rem(100);
+
+      margin: 0;
+
+      span {
+        @extend .u-f--bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        box-sizing: content-box;
+
+        width: rem(35);
+        height: rem(35);
+
+        color: #6f7a8c;
+        border: rem(4) solid #f4f6f8;
+        border-radius: rem(100);
+        background-color: #eaedef;
+
+        margin: 0;
+      }
+    }
+  }

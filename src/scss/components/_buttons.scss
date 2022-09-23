@@ -9,9 +9,6 @@
   @extend %buttons;
   color: setcolor("white");
   background-color: setcolor("primary");
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &:hover {
     color: setcolor("gray", "lighter");

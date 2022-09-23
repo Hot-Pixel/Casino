@@ -166,24 +166,20 @@ const gridHalfRight =
 
     </section>
 
-    <%- include ('modules/grid-full') %>
+    <%- include ('modules/grid-full', { data: "gridFullA"}) %>
 
     <%- include ('modules/carousel-jackpot', { data: jackpotData }) %>
 
-    <section class="slotGrids">
+    <%- include ('modules/grid-full', { data: "gridFullB" }) %>
 
-      <%- include ('modules/grid-full') %>
+    <%- include ('modules/grid-full', { data: "gridFullC" }) %>
 
-      <%- include ('modules/grid-full') %>
-
-      <a href="">
-        <button class="btn__red btn__red--glow">
-          <span>VER TODAS LAS SLOTS ONLINE</span>
-          <img src="img/icons/icon-btn-arrow.svg" alt="">
-        </button>
+    <div class="slotsBtn">
+      <a href="/slots-all" class="btn__red btn__red--glow">
+        <span>VER TODAS LAS SLOTS ONLINE</span>
+        <img src="img/icons/icon-btn-arrow.svg" alt="">
       </a>
-
-    </section>
+    </div>
 
     <%- include ('modules/text-block') %>
 

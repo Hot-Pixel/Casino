@@ -16,6 +16,10 @@
 //OBJECTS
 @use '../objects/screens-bar';
 @use '../objects/user/deposit';
+@use '../objects/user/deposit__step1';
+@use '../objects/user/deposit__step2';
+@use '../objects/user/deposit__step3';
+@use '../objects/user/common';
 
 //LAYOUT
 @use '../layout/header';

@@ -25,6 +25,8 @@ import wallet from "./routes/cartera.js";
 import preferences from "./routes/preferencias.js";
 import support from "./routes/soporte.js";
 import user from "./routes/user.js";
+import signIn from "./routes/signIn.js";
+import signUp from "./routes/signUp.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -62,6 +64,8 @@ app.use("/preferencias", preferences);
 app.use("/soporte", support);
 app.use("/screen-game", screenGame);
 app.use("/user", user);
+app.use("/sign-in", signIn);
+app.use("/sign-up", signUp);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

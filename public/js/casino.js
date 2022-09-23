@@ -1,6 +1,6 @@
 import { m as mixitup } from './mixitup-b8d39d7d.js';
 import { m as mixitupMultifilter } from './mixitup-multifilter-2daf904c.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-f89dd174.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy } from './depositCopy-f41c5281.js';
 
 mixitup.use(mixitupMultifilter);
 
@@ -60,5 +60,6 @@ window.addEventListener('load', () => {
   marginHeader();
   depositSteps();
   depositAmmount();
+  depositCopy();
 });
 //# sourceMappingURL=casino.js.map

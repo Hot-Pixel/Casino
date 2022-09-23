@@ -59,7 +59,6 @@ const filterSlotsAll = () => {
       },
     });
   } else {
-    console.log("bob");
     const mixerSlots = mixitup(container, {
       multifilter: {
         enable: true,

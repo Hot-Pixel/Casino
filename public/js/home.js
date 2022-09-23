@@ -1,6 +1,6 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-9376d90a.js';
-import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount } from './depositAmmount-f89dd174.js';
+import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-7bf2443d.js';
+import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy } from './depositCopy-f41c5281.js';
 
 function carouselBanner() {
   var carousel = new Splide(".bannerCarousel .splide", {
@@ -83,26 +83,27 @@ function carouselBets() {
   carousel.mount();
 }
 
-function depositCopy() {
-  const iban = document.querySelector("#iban");
-  const copyBtn = document.querySelector(".depositTransfer__table-copy");
+let carouselGridA, carouselGridB;
 
-  copyBtn.addEventListener("click", () => {
-    gsapWithCSS
-      .timeline()
-      .to(copyBtn, { scale: 0.9, duration: 0.2 })
-      .to(copyBtn, { scale: 1, duration: 0.2 });
+let data =[
+  {
+    id: ".gridFullA .splide",
+    name: carouselGridA
+  },
+  {
+    id: ".gridFullB .splide",
+    name: carouselGridB
+  }
+];
 
-    navigator.clipboard.writeText(iban.innerText);
-  });
-}
 
 window.addEventListener("load", () => {
   accordionDeposit();
   carouselBanner();
   carouselJackpot();
   carouselBets();
-  carouselGrid();
+  carouselGrid(data[0].id, data[0].name);
+  carouselGrid(data[1].id, data[1].name);
   popUpSaldo();
   collapseGrid();
   marginHeader();

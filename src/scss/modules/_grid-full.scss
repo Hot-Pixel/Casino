@@ -2,12 +2,12 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.slotGrids {
+.slotsBtn {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  button {
+  a {
     margin-top: 30px;
     height: 65px;
     width: 90%;
@@ -18,33 +18,32 @@
       padding: 0 120px;
       width: fit-content;
     }
-
   }
 }
 
 .gridFull {
-    @extend %margin_horizontal_main, %margin_top_medium;
+  @extend %margin_horizontal_main, %margin_top_medium;
+  position: relative;
+  overflow: hidden;
+
+  .item {
     position: relative;
+
+    border-radius: rem(10);
     overflow: hidden;
 
-    .item {
-        position: relative;
+    height: 100%;
 
-        border-radius: rem(10);
-        overflow: hidden;
-
-        height: 100%;
-
-        & > img {
-            object-fit: cover;
-            width: 100%;
-        }
-
-        &:hover {
-            .gridHover {
-              opacity: 1;
-              transition: all 0.3s ease;
-            }
-          }
+    & > img {
+      object-fit: cover;
+      width: 100%;
     }
+
+    &:hover {
+      .gridHover {
+        opacity: 1;
+        transition: all 0.3s ease;
+      }
+    }
+  }
 }

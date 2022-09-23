@@ -1,3 +1,5 @@
+import { Splide } from "@splidejs/splide";
+
 function carouselPromociones() {
     var carouselPromo = new Splide(".carouselPromo__slider", {
         arrows: true,

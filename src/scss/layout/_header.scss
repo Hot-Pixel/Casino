@@ -29,12 +29,11 @@
     align-items: center;
 
     .header__noLog-btn {
-      width: auto;
       margin: 0;
       margin-left: rem(10);
+      padding: $sm rem(40);
 
       @include screen-md {
-        width: rem(190);
         margin-left: rem(10);
       }
 
