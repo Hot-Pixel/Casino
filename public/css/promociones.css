@@ -2061,9 +2061,9 @@ h5 {
   background-color: #25292f;
 }
 .header__mobile-logo {
-  margin: 0 3.75rem;
+  margin: 0 2.8125rem;
 }
-.header__mobile-logo img {
+.header__mobile-logo svg {
   width: 100%;
   object-fit: cover;
 }
@@ -2075,8 +2075,10 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6vh;
-  padding: 0.625rem 1.25rem;
+  padding: 0.9375rem 1.25rem;
+}
+.header__mobile--top .menuHeader__openBtn {
+  cursor: pointer;
 }
 .header__mobile--bottom {
   position: fixed;
@@ -2088,25 +2090,21 @@ h5 {
 }
 .header__mobile-noLog {
   display: none;
+  column-gap: 0.625rem;
 }
 .header__mobile-noLog.menu-active {
   display: flex !important;
 }
-.header__mobile-noLog button {
+.header__mobile-noLog a {
   width: 50%;
   margin: 0;
+  padding: 0.9375rem 0;
 }
-.header__mobile-noLog button img {
+.header__mobile-noLog a img {
   width: 1.5625rem;
 }
-.header__mobile-noLog button:first-of-type {
-  margin-right: 0.9375rem;
-}
-.header__mobile-noLog button:first-of-type span {
+.header__mobile-noLog a:first-of-type span {
   color: black;
-}
-.header__mobile-noLog button:last-of-type {
-  margin-left: 0.9375rem;
 }
 .header__mobile-logged {
   display: none;
@@ -2151,6 +2149,48 @@ h5 {
 }
 .header.header--light .user a svg g g {
   stroke: white;
+}
+
+.header__mobile.header--light {
+  transition: all 0.4s ease;
+}
+.header__mobile.header--light .header__mobile-wrapper {
+  background-color: #F4F6F8;
+}
+.header__mobile.header--light .header__mobile--top .menuHeader__openBtn svg circle {
+  fill: #d4d7da;
+}
+.header__mobile.header--light .header__mobile--top .menuHeader__openBtn svg g line {
+  stroke: black;
+}
+.header__mobile.header--light .header__mobile--top .header__mobile-logo svg g path:not(#Trazado_1, #Trazado_2) {
+  fill: #13171d;
+}
+.header__mobile.header--light .header__mobile--top .userMobile svg g g circle,
+.header__mobile.header--light .header__mobile--top .userMobile svg g g path {
+  stroke: white;
+}
+.header__mobile.header--light .header__mobile--bottom .header__mobile-logged .deposits {
+  background-color: #EAEDEF;
+}
+.header__mobile.header--light .header__mobile--bottom .header__mobile-logged .deposits__total::before {
+  background: linear-gradient(to right, transparent 70%, #EAEDEF);
+}
+.header__mobile.header--light .header__mobile--bottom .header__mobile-logged .deposits__total span {
+  color: #13171d;
+}
+.header__mobile.header--light .header__mobile--bottom .header__mobile-logged .deposits__total svg path {
+  fill: #13171d;
+}
+.header__mobile.header--light .header__mobile--bottom .header__mobile-logged .deposits > svg g path {
+  stroke: #13171d;
+}
+.header__mobile.header--light .header__mobile--bottom .header__mobile-logged .deposits .deposits__btn {
+  background-color: #00d1bc !important;
+  box-shadow: 0px 0px 1.25rem 0px #00d1bc !important;
+}
+.header__mobile.header--light .header__mobile--bottom .header__mobile-logged .userNoIcon p {
+  color: #13171d;
 }
 
 .footer {
@@ -2804,6 +2844,9 @@ h5 {
   background-color: #13171d;
   flex-direction: column;
   justify-content: space-between;
+}
+.menuHeader__close {
+  cursor: pointer;
 }
 .menuHeader__navItems {
   margin-top: 1.875rem;

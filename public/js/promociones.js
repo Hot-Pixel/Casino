@@ -1,6 +1,6 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
 import { m as mixitup } from './mixitup-b8d39d7d.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy } from './depositCopy-f41c5281.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-013e6314.js';
 
 const container = document.querySelector(".finder__promo");
 
@@ -51,5 +51,6 @@ window.addEventListener('load', () => {
   depositCopy();
   filterPromo();
   carouselPromociones();
+  menuHeaderMobile();
 });
 //# sourceMappingURL=promociones.js.map

@@ -1,0 +1,30 @@
+// SETTINGS
+// variables y config
+@use '../settings';
+
+// TOOLS
+// Mixins, extend and functions
+@use '../tools';
+
+// GENERIC
+// Resets, normalize y genericos
+@use '../base';
+
+// COMPONENTS
+@use '../components/buttons';
+
+// OBJECTS
+@use '../objects/user/login';
+@use '../objects/user/registry';
+@use '../objects/user/registry-step1';
+@use '../objects/user/registry-step2';
+@use '../objects/user/registry-step3';
+
+//LAYOUT
+
+// MODULES
+// @use '../modules/user-screen';
+
+// HELPER
+// Clases de ayuda, textos, colores y demás
+@use '../helper';

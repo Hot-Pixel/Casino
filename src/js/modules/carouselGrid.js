@@ -4,7 +4,6 @@ import { Grid } from "@splidejs/splide-extension-grid";
 function carouselGrid(id, name) {
   const gridFull = document.querySelector(id);
 
-  console.log(gridFull)
   const order = gridFull.dataset.order - 1;
   const item = [1, 1];
   const arrDim = [

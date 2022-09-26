@@ -1,4 +1,4 @@
-import { g as gsapWithCSS, m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy } from './depositCopy-f41c5281.js';
+import { g as gsapWithCSS, m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-013e6314.js';
 
 function withdrawSteps() {
   const withdrawOpenBtn = document.querySelector(".wallet__btn-withdraw");
@@ -85,5 +85,6 @@ window.addEventListener("load", () => {
   depositAmmount();
   depositCopy();
   withdrawSteps();
+  menuHeaderMobile();
 });
 //# sourceMappingURL=wallet.js.map

@@ -467,6 +467,10 @@
   }
 }
 
+.d-none {
+  display: none !important;
+}
+
 .login {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
@@ -957,6 +961,10 @@ h5 {
   display: block;
 }
 
+.is-invalid {
+  border: 1px solid #e99c00;
+}
+
 .login {
   height: 100vh;
   width: 100%;
@@ -1003,12 +1011,12 @@ h5 {
   flex-direction: column;
 }
 .login__input input {
-  background-color: #eaedef;
-  color: #868b92;
+  background-color: #EAEDEF;
+  color: #868B92;
   height: 2.8125rem;
 }
 .login__input input::placeholder {
-  color: #868b92;
+  color: #868B92;
 }
 .login__input input:last-of-type {
   margin-top: 0.625rem;

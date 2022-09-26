@@ -2,60 +2,35 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.stepOne, .stepThree {
-    background-color: #f4f6f8;
-    background-image: url("../img/img-bg-step1.jpg");
+.registry__block {
+  display: none;
 
-    .login__form {
+  &.active {
+    display: block;
+  }
+}
+
+.registry {
+
+  &__container {
+    padding: 0 $lg;
+  }
+
+  &__form {
+    max-width: 60%;
+
+    h2 {
+      margin-bottom: $lg;
       max-width: 60%;
-    }
-
-    &__input {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-auto-flow: row;
-      gap: rem(20);
-
-      input {
-        flex: 50%;
-
-        background-color: #eaedef;
-        color: #868b92;
-
-        height: rem(45);
-
-        &::placeholder {
-          color: #868b92;
-        }
-      }
-    }
-
-    &__accept {
-      display: flex;
-      justify-content: flex-start;
-      align-items: flex-start;
-
-      margin-top: rem(20);
-
-      input[type="checkbox"] {
-        margin-right: rem(10);
-      }
-
-      p {
-        color: #868b92;
-      }
     }
   }
 
   &__steps {
-    position: absolute;
-    top: rem(-38);
-    left: 50%;
-    transform: translateX(-50%);
-
     display: flex;
     justify-content: center;
     align-items: center;
+
+    transform: translateY(-50%);
   }
 
   &__step {
@@ -63,7 +38,7 @@
     justify-content: center;
     align-items: center;
 
-    border: rem(8) solid #f4f6f8;
+    border: rem(8) solid setcolor("gray", "light1");
     border-radius: rem(100);
 
     &:not(:last-of-type) {
@@ -77,7 +52,7 @@
 
       box-sizing: content-box;
 
-      border: rem(8) solid #eaedef;
+      border: rem(8) solid setcolor("gray", "light2");
       border-radius: rem(100);
 
       margin: 0;
@@ -93,12 +68,83 @@
         width: rem(35);
         height: rem(35);
 
-        color: #6f7a8c;
-        border: rem(4) solid #f4f6f8;
+        color: setcolor("gray", "mid");
+        border: rem(4) solid setcolor("gray", "light1");
         border-radius: rem(100);
-        background-color: #eaedef;
+        background-color: setcolor("gray", "light2");
 
         margin: 0;
       }
     }
+
+    &.active {
+
+      p {
+        border: rem(8) solid setcolor("secondary");
+      }
+
+      span {
+        color: white;
+        border: rem(4) solid setcolor("secondary", "light");
+        background-color: setcolor("secondary");
+      }
+    }
   }
+
+  &__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+    gap: $sm;
+
+    input {
+      margin: 0 !important;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    column-gap: rem(10);
+
+    transform: translateY(50%);
+
+    button {
+      padding: $sm $md;
+      width: 25%;
+    }
+
+    .btn__white {
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  input, select, button:not([type="button"]) {
+    background: setcolor('gray', 'light2');
+    border-radius: rem(100);
+    color: setcolor("gray", "mid");
+    @extend .u-f--bold;
+    border: none;
+    height: rem(45);
+
+    &:hover, &:active, &:focus {
+      border: none;
+      outline: none;
+      text-decoration: none;
+    }
+  }
+
+  input, select {
+    padding-left: rem(20);
+  }
+
+  select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg id='icon-select-arrow' transform='translate(14) rotate(90)'%3E%3Cpath id='Trazado_97' data-name='Trazado 97' d='M14 7a7 7 0 1 0-7 7A7 7 0 0 0 14 7ZM5.29 10.71A1 1 0 0 1 5.284 9.3L5.29 9.29 7.41 7.18a.25.25 0 0 0 .007-.354L7.41 6.82 5.29 4.71A1 1 0 0 1 6.71 3.29l3 3A1 1 0 0 1 9.716 7.7L9.71 7.71l-3 3a1 1 0 0 1-1.414.006Z' transform='translate(0 0)' fill='%23868b92'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 15px);
+    background-position-y: 50%;
+  }
+}

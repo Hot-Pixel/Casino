@@ -116,6 +116,8 @@ gulp.task("watch", async () => {
   server.init({
     proxy: "http://localhost:3000",
     browser: "chrome",
+    online: true,
+    tunnel: true,
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
   watch(paths.scripts.watcher).on("change", gulp.series("js", server.reload));

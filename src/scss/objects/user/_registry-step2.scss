@@ -1,0 +1,76 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.stepTwo {
+  background-image: url("../img/images/img-bg-register2.jpg");
+
+  &__radios {
+    display: flex;
+    column-gap: rem(10);
+  }
+
+  &__radio {
+    position: relative;
+    width: 50%;
+
+    input[type="radio"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+      appearance: none;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+
+      width: 100%;
+
+    }
+
+    button.stepTwo__radioBtn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+
+      width: 100%;
+
+      transition: all 0.3s ease;
+    }
+
+    input:checked ~ button.stepTwo__radioBtn {
+      transition: all 0.3s ease;
+      background-color: setcolor("gray", "light1");
+      box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__dob {
+    display: flex;
+    width: 100%;
+    column-gap: rem(10);
+
+    &-select {
+      width: 33%;
+    }
+  }
+
+  &__location {
+    display: flex;
+    column-gap: rem(10);
+
+    &-cp {
+      width: 33%;
+    }
+
+    &-city {
+      width: 64%;
+    }
+  }
+
+  &__region {
+    grid-column: 1 / 3;
+  }
+}

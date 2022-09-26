@@ -1,0 +1,15 @@
+<%- include ('layout/head', {title: "Proceso de registro - Paso 1" , css: "signUp" }) %>
+
+<div class="registry__block registry__step1 active">
+    <%- include ('objects/user/registry-step1') %>
+</div>
+
+<div class="registry__block registry__step2 ">
+    <%- include ('objects/user/registry-step2') %>
+</div>
+
+<div class="registry__block registry__step3 ">
+    <%- include ('objects/user/registry-step3') %>
+</div>
+
+<%- include ('layout/scripts', { script: 'signUp'})%>

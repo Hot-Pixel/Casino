@@ -1,4 +1,4 @@
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy } from './depositCopy-f41c5281.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-013e6314.js';
 
 window.addEventListener('load', () => {
   popUpSaldo();
@@ -6,5 +6,6 @@ window.addEventListener('load', () => {
   depositSteps();
   depositAmmount();
   depositCopy();
+  menuHeaderMobile();
 });
 //# sourceMappingURL=docs.js.map
