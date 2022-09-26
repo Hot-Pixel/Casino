@@ -39,9 +39,9 @@ $buttons_font_size: rem(12);
 $buttons_font_size_ipad: rem(12);
 $buttons_font_size_desktop: rem(12);
 
-$buttons_padding: rem(10) rem(10) ;
-$buttons_padding_ipad: $sm $sm;
-$buttons_padding_desktop: $sm rem(20);
+$buttons_padding: $sm $md;
+$buttons_padding_ipad: $sm $md;
+$buttons_padding_desktop: $sm $md;
 
 // inputs
 $inputs_font_family: setfont("family", "primary");

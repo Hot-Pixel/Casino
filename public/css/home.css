@@ -668,32 +668,32 @@
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 0.625rem 0.625rem;
+  padding: 0.9375rem 1.875rem;
   border-radius: 6.25rem;
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 .btn__red > *, .btn__blue > *, .btn__grey > *, .btn__darkGrey > *, .btn__grey--ghost > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {

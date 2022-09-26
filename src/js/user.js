@@ -1,13 +1,4 @@
-// const menuMobileCollapse = document.querySelector(".userMenuMobile__collapse");
-// const menuMobileTab = document.querySelector(".userMenuMobile__tab");
 
-// menuMobileCollapse.addEventListener("click", () => {
-//   gsap.to(userMenuMobile, { right: "-80vw", opacity: 1, duration: 0.4 });
-// });
-
-// menuMobileTab.addEventListener("click", () => {
-//   gsap.to(userMenuMobile, { right: 0, opacity: 1, duration: 0.4 });
-// });
 
 // const verifyBtn = document.querySelectorAll(".nav__btn > button");
 // const docsBlock = document.querySelector(".docsBlock");

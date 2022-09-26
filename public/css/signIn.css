@@ -524,32 +524,32 @@
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 0.625rem 0.625rem;
+  padding: 0.9375rem 1.875rem;
   border-radius: 6.25rem;
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 .btn__red > *, .btn__blue > *, .btn__grey > *, .btn__darkGrey > *, .btn__grey--ghost > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
@@ -987,7 +987,12 @@ h5 {
   flex-direction: column;
   align-items: center;
   margin-top: 7.5rem;
-  min-width: 30%;
+  min-width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .login__form {
+    min-width: 30%;
+  }
 }
 .login__form h2 {
   color: #13171d;
@@ -1000,7 +1005,17 @@ h5 {
   box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
   border-radius: 1.875rem;
   width: 100%;
-  padding: 0 3.75rem;
+  padding: 0 0.9375rem;
+}
+@media only screen and (min-width: 768px) {
+  .login__container {
+    padding: 0 1.875rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .login__container {
+    padding: 0 3.75rem;
+  }
 }
 .login__badge {
   margin: 0 auto;
@@ -1062,17 +1077,32 @@ h5 {
 .password .password__container h4 {
   color: black;
   text-align: center;
-  max-width: 75%;
+  max-width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .password .password__container h4 {
+    max-width: 75%;
+  }
 }
 .password .password__container p {
   color: #868b92;
   text-align: center;
-  max-width: 75%;
+  max-width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .password .password__container p {
+    max-width: 75%;
+  }
 }
 .password .password__container .password__input {
-  width: 75%;
   margin-top: 3.75rem;
   margin-bottom: 0.625rem;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .password .password__container .password__input {
+    width: 75%;
+  }
 }
 .password .password__container .password__input input[type=text] {
   height: 2.8125rem;
@@ -1080,5 +1110,13 @@ h5 {
   background-color: transparent;
   border: 0.125rem solid #868b92;
   text-align: center;
+}
+.password .password__container button {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .password .password__container button {
+    width: fit-content;
+  }
 }
 /*# sourceMappingURL=signIn.css.map */

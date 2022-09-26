@@ -41,7 +41,11 @@
     align-items: center;
 
     margin-top: rem(120);
-    min-width: 30%;
+    min-width: 100%;
+
+    @include screen-sm {
+      min-width: 30%;
+    }
 
     h2 {
       @extend .u-f--h2, .u-f--bold;
@@ -59,7 +63,14 @@
     border-radius: rem(30);
 
     width: 100%;
-    padding: 0 $lg;
+    padding: 0 $sm;
+
+    @include tablet {
+      padding: 0 $md;
+    }
+    @include screen-sm {
+      padding: 0 $lg;
+    }
   }
 
   &__badge {

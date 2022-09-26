@@ -641,32 +641,32 @@
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 0.625rem 0.625rem;
+  padding: 0.9375rem 1.875rem;
   border-radius: 6.25rem;
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 .btn__red > *, .btn__blue > *, .btn__grey > *, .btn__darkGrey > *, .btn__grey--ghost > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
@@ -1742,9 +1742,14 @@ h5 {
 .docs__content .docs__sent .docs__grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.625rem;
+}
+@media only screen and (min-width: 768px) {
+  .docs__content .docs__sent .docs__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.625rem;
+  }
 }
 .docs__content .docs__sent .docs__grid-item {
   padding: 0.9375rem;
@@ -3700,12 +3705,11 @@ h5 {
   position: relative;
   display: block;
   opacity: 1;
-  width: 100vw;
+  width: 100%;
 }
 .userScreen .userContent {
-  width: 100%;
   margin-left: 0;
-  padding: 0.9375rem;
+  padding: 1.875rem 0.9375rem 12vh 0.9375rem;
   min-height: calc(100vh - 85px);
   background-color: #EAEDEF;
   overflow: hidden;
@@ -3829,12 +3833,12 @@ h5 {
   bottom: 0;
   right: 0;
   z-index: 10;
-  height: 94vh;
-  width: 80vw;
+  height: 100vh;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  opacity: 0;
+  opacity: 1;
   background-color: #F4F6F8;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   padding: 0.9375rem;
@@ -3843,21 +3847,6 @@ h5 {
   .userScreen .userMenuMobile {
     display: none;
   }
-}
-.userScreen .userMenuMobile .userMenuMobile__tab {
-  position: absolute;
-  top: 0.9375rem;
-  left: -2.5rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  border-radius: 1000px 0 0 1000px;
-  background-color: #F4F6F8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.userScreen .userMenuMobile .userMenuMobile__tab img {
-  transform: rotate(90deg);
 }
 .userScreen .userMenuMobile .nav__title {
   display: flex;
@@ -3880,6 +3869,9 @@ h5 {
 .userScreen .userMenuMobile .nav__title--left .nav__title-verify p {
   color: #00d1bc;
 }
+.userScreen .userMenuMobile .nav__title .userMenuMobile__collapse {
+  cursor: pointer;
+}
 .userScreen .userMenuMobile .nav__item {
   display: flex;
   justify-content: space-between;
@@ -3887,6 +3879,23 @@ h5 {
   padding: 0.9375rem 0.9375rem;
   border-bottom: 1px solid #EAEDEF;
   cursor: pointer;
+}
+.userScreen .userMenuMobile .nav__item.nav-active p {
+  color: #00d1bc;
+}
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-icon,
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-icon g,
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-icon path,
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-icon g path,
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-icon g circle {
+  stroke: #00d1bc;
+}
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-arrow,
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-arrow g,
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-arrow path,
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-arrow g path,
+.userScreen .userMenuMobile .nav__item.nav-active .nav__item-arrow g circle {
+  fill: #00d1bc;
 }
 .userScreen .userMenuMobile .nav__item--left {
   display: flex;
@@ -3902,9 +3911,18 @@ h5 {
   justify-content: center;
   margin-top: 0.9375rem;
 }
-.userScreen .userMenuMobile .nav__btn button {
+.userScreen .userMenuMobile .nav__btn a {
   height: 2.8125rem;
   padding: 0;
   width: 90%;
+}
+.userScreen .userMenuMobile .userMenu__session {
+  display: flex;
+  align-items: center;
+  margin-left: 0.9375rem;
+}
+.userScreen .userMenuMobile .userMenu__session span {
+  color: #13171d;
+  margin-left: 0.9375rem;
 }
 /*# sourceMappingURL=user.css.map */
