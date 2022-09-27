@@ -3,46 +3,56 @@
 @use "../tools" as *;
 
 
-.app-apuestas {
+.appApuestas {
 	@extend %margin_top_large;
 	@extend %padding_horizontal_main;
 
-	&-title {
-		font-size: 34px;
+
+
+	// Title
+
+	&__title {
+		@extend .u-f--h1;
 		text-align: center;
-		@include tablet {
-			font-size: 58px;
+
+		@include screen-sm {
 			text-align: left;
 		}
 	}
 
-	&-columns {
-		@extend %margin_top_medium;
+
+
+	// Columns
+
+	&__columns {
 		display: grid;
 		column-gap: $lg;
 		row-gap: rem(45);
+		@extend %margin_top_medium;
 
-		@include tablet {
+		@include screen-sm {
 			grid-template-columns: repeat(3, 1fr);
 		}
-	}
 
 
-	&-column {
+		&-column {
 
 
-		p {
-			font-size: 20px;
+			p {
+				@extend .u-f--h4;
 
-
-			& + p {
-				margin-top: 20px;
+				& + p {
+					margin-top: 20px;
+				}
 			}
 		}
 	}
 
 
-	&-box {
+
+	// Columns design
+
+	&__box {
 		position: relative;
 		padding: 30px 25px 60px;
 		border-radius: 10px;
@@ -65,6 +75,7 @@
 			left: rem(40);
 			padding: $sm rem(40);
 
+
 			span + img {
 				margin-left: 20px;
 			}
@@ -72,7 +83,7 @@
 	}
 
 
-	&-not-box {
+	&__not-box {
 
 
 		p {
@@ -85,13 +96,9 @@
 
 
 		small {
-			font-size: 14px;
+			@extend .u-f--h4;
 			text-align: left;
 			opacity: .6;
-
-			@include screen-sm {
-				font-size: 18px;
-			}
 		}
 	}
 }

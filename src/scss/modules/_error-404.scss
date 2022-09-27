@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 
-.error-404 {
+.error404 {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -11,7 +11,7 @@
 	@extend %margin_top_large;
 	@extend %padding_horizontal_main;
 
-	@include tablet {
+	@include screen-sm {
 		display: block;
 	}
 
@@ -19,35 +19,27 @@
 
 	// Header
 
-	&-header {
+	&__header {
 		position: relative;
 		z-index: 1;
 
-		@include tablet {
+		@include screen-sm {
 			max-width: 50%;
 		}
 
 
-		h1 {
-			font-size: 34px;
-
-			@include tablet {
-				font-size: 58px;
-			}
+		&-title {
+			@extend .u-f--h1;
 		}
 
 
-		h1 + p {
+		&-title + p {
 			margin-top: 10px;
 		}
 
 
 		p {
-			font-size: 18px;
-
-			@include tablet {
-				font-size: 24px;
-			}
+			@extend .u-f--h3;
 		}
 	}
 
@@ -55,12 +47,16 @@
 
 	// Menu
 
-	&-menu {
+	&__menu {
 		position: relative;
 		z-index: 1;
-		margin-top: 350px;
+		margin-top: 380px;
 
-		@include tablet {
+		@include tablet-h {
+			margin-top: 400px;
+		}
+
+		@include screen-sm {
 			margin-top: 60px;
 			max-width: 50%;
 		}
@@ -68,7 +64,9 @@
 
 		&-wanted {
 			width: 216px;
-			@include tablet {
+			max-width: 100%;
+
+			@include screen-sm {
 				width: initial;
 			}
 		}
@@ -88,13 +86,12 @@
 			display: flex;
 			gap: 5px;
 			align-items: center;
-			font-size: 12px;
+			@extend .u-f--h3;
 			text-transform: uppercase;
 			color: setcolor("primary");
 
-			@include tablet {
+			@include screen-sm {
 				gap: 20px;
-				font-size: 24px;
 			}
 
 
@@ -102,7 +99,7 @@
 				width: 14px;
 				height: 14px;
 
-				@include tablet {
+				@include screen-sm {
 					width: 18px;
 					height: 18px;
 				}
@@ -114,7 +111,7 @@
 
 	// Banner
 
-	&-banner {
+	&__banner {
 		position: absolute;
 		overflow: hidden;
 		z-index: 0;
@@ -126,7 +123,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 
-		@include tablet {
+		@include screen-sm {
 			height: 715px;
 		}
 

@@ -234,36 +234,36 @@
 }
 
 /* Font Size Class */
-.u-f--h1, .user__title p, .depositScreen .deposit__title {
+.u-f--h1, .appApuestas__title, .user__title p, .depositScreen .deposit__title {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .appApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .appApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .appApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .appApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .appApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .appApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 3.625rem;
   }
 }
@@ -336,36 +336,36 @@
   }
 }
 
-.u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+.u-f--h4, .appApuestas__columns-column p, .appApuestas__not-box small, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__columns-column p, .appApuestas__not-box small, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__columns-column p, .appApuestas__not-box small, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__columns-column p, .appApuestas__not-box small, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__columns-column p, .appApuestas__not-box small, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__columns-column p, .appApuestas__not-box small, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.0625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__columns-column p, .appApuestas__not-box small, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.125rem;
   }
 }
@@ -598,100 +598,100 @@
   }
 }
 
-.app-apuestas-columns, .footer__grid {
+.appApuestas__columns, .footer__grid {
   margin-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .app-apuestas-columns, .footer__grid {
+  .appApuestas__columns, .footer__grid {
     margin-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .app-apuestas-columns, .footer__grid {
+  .appApuestas__columns, .footer__grid {
     margin-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .app-apuestas-columns, .footer__grid {
+  .appApuestas__columns, .footer__grid {
     margin-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .app-apuestas-columns, .footer__grid {
+  .appApuestas__columns, .footer__grid {
     margin-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .app-apuestas-columns, .footer__grid {
+  .appApuestas__columns, .footer__grid {
     margin-top: var(--vertical-medium-2xl);
   }
 }
 
-.app-apuestas {
+.appApuestas {
   margin-top: var(--vertical-large-xs);
 }
 @media only screen and (min-width: 576px) {
-  .app-apuestas {
+  .appApuestas {
     margin-top: var(--vertical-large-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .app-apuestas {
+  .appApuestas {
     margin-top: var(--vertical-large-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .app-apuestas {
+  .appApuestas {
     margin-top: var(--vertical-large-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .app-apuestas {
+  .appApuestas {
     margin-top: var(--vertical-large-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .app-apuestas {
+  .appApuestas {
     margin-top: var(--vertical-large-2xl);
   }
 }
 
-.app-apuestas {
+.appApuestas {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .app-apuestas {
+  .appApuestas {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .app-apuestas {
+  .appApuestas {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .app-apuestas {
+  .appApuestas {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .app-apuestas {
+  .appApuestas {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .app-apuestas {
+  .appApuestas {
     padding-left: var(--horizontal-main-2xl);
     padding-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .app-apuestas {
+  .appApuestas {
     padding-left: var(--horizontal-main-3xl);
     padding-right: var(--horizontal-main-3xl);
   }
@@ -2695,72 +2695,61 @@ h5 {
   margin-right: 0.625rem;
 }
 
-.app-apuestas-title {
-  font-size: 34px;
+.appApuestas__title {
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
-  .app-apuestas-title {
-    font-size: 58px;
+@media only screen and (min-width: 1280px) {
+  .appApuestas__title {
     text-align: left;
   }
 }
-.app-apuestas-columns {
+.appApuestas__columns {
   display: grid;
   column-gap: 3.75rem;
   row-gap: 2.8125rem;
 }
-@media only screen and (min-width: 768px) {
-  .app-apuestas-columns {
+@media only screen and (min-width: 1280px) {
+  .appApuestas__columns {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.app-apuestas-column p {
-  font-size: 20px;
-}
-.app-apuestas-column p + p {
+.appApuestas__columns-column p + p {
   margin-top: 20px;
 }
-.app-apuestas-box {
+.appApuestas__box {
   position: relative;
   padding: 30px 25px 60px;
   border-radius: 10px;
   background-color: #1c2026;
 }
 @media only screen and (min-width: 1280px) {
-  .app-apuestas-box {
+  .appApuestas__box {
     padding: 50px 40px 100px;
   }
 }
-.app-apuestas-box p {
+.appApuestas__box p {
   opacity: 0.6;
 }
-.app-apuestas-box-button {
+.appApuestas__box-button {
   position: absolute;
   right: 2.5rem;
   bottom: -1.5em;
   left: 2.5rem;
   padding: 0.9375rem 2.5rem;
 }
-.app-apuestas-box-button span + img {
+.appApuestas__box-button span + img {
   margin-left: 20px;
 }
-.app-apuestas-not-box p {
+.appApuestas__not-box p {
   text-align: center;
 }
 @media only screen and (min-width: 1280px) {
-  .app-apuestas-not-box p {
+  .appApuestas__not-box p {
     text-align: left;
   }
 }
-.app-apuestas-not-box small {
-  font-size: 14px;
+.appApuestas__not-box small {
   text-align: left;
   opacity: 0.6;
-}
-@media only screen and (min-width: 1280px) {
-  .app-apuestas-not-box small {
-    font-size: 18px;
-  }
 }
 /*# sourceMappingURL=app-apuestas.css.map */
