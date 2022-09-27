@@ -1394,14 +1394,8 @@ a.redCta img {
   }
 }
 .depositScreen .deposit__block {
-  padding-top: 3.75rem;
   display: none;
   width: 100%;
-}
-@media only screen and (min-width: 1280px) {
-  .depositScreen .deposit__block {
-    padding-top: 7.5rem;
-  }
 }
 .depositScreen .deposit__block.active {
   display: block;
@@ -1418,6 +1412,7 @@ a.redCta img {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 7.5rem;
 }
 .depositScreen .deposit__title {
   display: flex;
@@ -1432,29 +1427,23 @@ a.redCta img {
   margin-top: 1.875rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
   gap: 0.625rem;
 }
 @media only screen and (min-width: 1280px) {
   .deposit__grid {
-    grid-template-columns: 1fr 1fr;
     width: auto;
   }
 }
 .deposit__item {
   background-color: white;
   border-radius: 0.3125rem;
-  padding: 0.9375rem;
+  padding: 1.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-@media only screen and (min-width: 1280px) {
-  .deposit__item {
-    padding: 1.875rem;
-  }
 }
 .deposit__item img {
   object-fit: contain;

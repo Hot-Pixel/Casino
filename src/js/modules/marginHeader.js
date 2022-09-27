@@ -2,6 +2,8 @@ function marginHeader() {
   const header = document.querySelector(".header");
   const headerMobile = document.querySelector(".header__mobile--top");
   const contentBlocks = document.querySelectorAll(".has-header");
+  const userMenus = document.querySelectorAll('.userMenu');
+  const userContents = document.querySelectorAll('.userContent');
 
   if (window.innerWidth < 1280) {
 
@@ -13,6 +15,8 @@ function marginHeader() {
       });
     });
 
+
+
   } else {
     contentBlocks.forEach((block) => {
       block.style.marginTop = `${header.offsetHeight}px`;
@@ -21,7 +25,19 @@ function marginHeader() {
         block.style.marginTop = `${header.offsetHeight}px`;
       });
     });
+
+    userMenus.forEach((menu) => {
+      menu.style.top = `${header.offsetHeight}px`;
+      menu.style.height = `calc(100vh - ${header.offsetHeight}px)`;
+    })
+    userContents.forEach((content) => {
+      content.style.top = `${header.offsetHeight}px`;
+      // content.style.minHeight = `calc(100vh - ${header.offsetHeight}px)`;
+    })
+
   }
+
+
 }
 
 export default marginHeader;

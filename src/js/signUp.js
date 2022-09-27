@@ -4,6 +4,7 @@ const registryBlocks = document.querySelectorAll('.registry__block');
 const registryStep1 = document.querySelector('.registry__step1');
 const registryStep2 = document.querySelector('.registry__step2');
 const registryStep3 = document.querySelector('.registry__step3');
+const registryStep4 = document.querySelector('.registry__step4');
 const registryStep2Btn = document.querySelector('.registry__btnStep2');
 const registryStep3Btn = document.querySelector('.registry__btnStep3');
 const registryStep4Btn = document.querySelector('.registry__btnStep4');
@@ -25,6 +26,13 @@ registryStep3Btn.addEventListener('click', () => {
     registryStep3.classList.add('active');
 });
 
+registryStep4Btn.addEventListener('click', () => {
+    registryBlocks.forEach( (block) => {
+        block.classList.remove('active');
+    });
+    registryStep4.classList.add('active');
+});
+
 registryStep1BackBtn.addEventListener('click', () => {
     registryBlocks.forEach( (block) => {
         block.classList.remove('active');
@@ -39,12 +47,6 @@ registryStep2BackBtn.addEventListener('click', () => {
     registryStep2.classList.add('active');
 });
 
-// registryStep3BackBtn.addEventListener('click', () => {
-//     registryBlocks.forEach( (block) => {
-//         block.classList.remove('active');
-//     });
-//     registryStep3.classList.add('active');
-// });
 
 const validation = new JustValidate(".stepOne__form", {
     errorFieldCssClass: "is-invalid",

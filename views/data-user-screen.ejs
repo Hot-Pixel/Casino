@@ -17,13 +17,13 @@
 
     <%- include ('layout/header', { mode: "header--light"}) %>
 
-    <section class="userScreen">
+    <section class="userScreen ">
 
         <%- include ('objects/user/user-menu', { nav: nav }) %>
 
         <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
 
-        <section class="userContent has-header">
+        <section class="userContent">
             <div class="dataBlock block-active">
                 <%- include ('objects/user/data') %>
             </div>

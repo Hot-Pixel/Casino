@@ -229,41 +229,41 @@
   font-weight: 500;
 }
 
-.u-f--bold, .registry__step p span, .registry input, .registry select, .registry button:not([type=button]), .login__form h2, .login__footer p:last-of-type, .u-f--bold p, .registry__step p span p, .registry input p, .registry select p, .registry button:not([type=button]) p, .login__form h2 p, .login__footer p:last-of-type p {
+.u-f--bold, .stepFour__header p, .stepFour__header-title, .stepFour__header-subtitle, .registry__step p span, .registry input, .registry select, .registry button:not([type=button]), .login__form h2, .login__footer p:last-of-type, .u-f--bold p, .stepFour__header-title p, .stepFour__header-subtitle p, .registry__step p span p, .registry input p, .registry select p, .registry button:not([type=button]) p, .login__form h2 p, .login__footer p:last-of-type p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1 {
+.u-f--h1, .stepFour__header-title {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1 {
+  .u-f--h1, .stepFour__header-title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1 {
+  .u-f--h1, .stepFour__header-title {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1 {
+  .u-f--h1, .stepFour__header-title {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1 {
+  .u-f--h1, .stepFour__header-title {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1 {
+  .u-f--h1, .stepFour__header-title {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1 {
+  .u-f--h1, .stepFour__header-title {
     font-size: 3.625rem;
   }
 }
@@ -302,36 +302,36 @@
   }
 }
 
-.u-f--h3 {
+.u-f--h3, .stepFour__header-subtitle {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3 {
+  .u-f--h3, .stepFour__header-subtitle {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3 {
+  .u-f--h3, .stepFour__header-subtitle {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3 {
+  .u-f--h3, .stepFour__header-subtitle {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3 {
+  .u-f--h3, .stepFour__header-subtitle {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3 {
+  .u-f--h3, .stepFour__header-subtitle {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3 {
+  .u-f--h3, .stepFour__header-subtitle {
     font-size: 1.5rem;
   }
 }
@@ -1251,5 +1251,53 @@ h5 {
 
 .stepThree {
   background-image: url("../img/images/img-bg-register3.jpg");
+}
+
+.stepFour p {
+  text-align: center;
+}
+.stepFour__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stepFour__header p {
+  color: #13171d;
+  max-width: 60%;
+  padding-bottom: 1.875rem;
+}
+.stepFour__verify {
+  background-color: #F4F6F8;
+  border-radius: 0.3125rem;
+  padding: 3.75rem 3.75rem 0;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stepFour__verify p {
+  color: #868B92;
+  padding-bottom: 1.875rem;
+}
+.stepFour__verify a {
+  width: 40%;
+  padding: 0.9375rem 1.875rem;
+  transform: translateY(50%);
+}
+.stepFour__game {
+  margin-top: 3.75rem;
+  margin-bottom: 0.9375rem;
+  color: #868B92;
+  max-width: 60%;
+}
+.stepFour__grid {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-flow: row;
+  width: 80%;
+}
+.stepFour__grid img {
+  object-fit: cover;
+  width: 100%;
 }
 /*# sourceMappingURL=signUp.css.map */
