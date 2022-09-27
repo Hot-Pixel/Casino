@@ -3697,9 +3697,8 @@ h5 {
   width: 100%;
 }
 .userScreen .userContent {
-  position: relative;
   margin-left: 0;
-  min-height: 100vh;
+  min-height: calc(100vh - 85px);
   padding: 1.875rem 0.9375rem 12vh 0.9375rem;
   background-color: #EAEDEF;
   overflow: hidden;

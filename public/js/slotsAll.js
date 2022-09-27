@@ -1,8 +1,8 @@
 import { f as favHeart } from './favHeart-9f93afda.js';
 import { m as mixitup } from './mixitup-b8d39d7d.js';
 import { m as mixitupMultifilter } from './mixitup-multifilter-2daf904c.js';
-import { a as accordion } from './accordion-074f3058.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-6c6f9a77.js';
+import { a as accordion } from './accordion-79f50dad.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-4afd8372.js';
 
 mixitup.use(mixitupMultifilter);
 
