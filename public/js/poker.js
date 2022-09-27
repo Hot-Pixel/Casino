@@ -1,6 +1,6 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { a as accordion } from './accordion-79f50dad.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-4afd8372.js';
+import { a as accordion } from './accordion-716d8875.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-cb8e89e0.js';
 
 function menuPoker() {
   const menuBtns = document.querySelectorAll(".menuPoker__btn");
@@ -70,5 +70,6 @@ window.addEventListener("load", () => {
   depositAmmount();
   depositCopy();
   menuHeaderMobile();
+  userMenuMobile();
 });
 //# sourceMappingURL=poker.js.map

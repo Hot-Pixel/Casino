@@ -313,7 +313,7 @@
                     </g>
                 </svg>
             </a>
-            <a href="/datos" class="header__mobile-user userMobile">
+            <div class="header__mobile-user userMobile userMenuMobile__open">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
                     <g id="icon-user-cyan" transform="translate(-0.689 -0.689)">
                         <circle id="Elipse_702" data-name="Elipse 702" cx="17" cy="17" r="17"
@@ -332,7 +332,7 @@
                         </g>
                     </g>
                 </svg>
-            </a>
+            </div>
         </section>
 
         <section class="header__mobile-wrapper header__mobile--bottom">
@@ -387,6 +387,10 @@
 
     <section class="menuHeader">
         <%- include ('menu-header.ejs') %>
+    </section>
+
+    <section class="userMenuMobile">
+        <%- include ('user-menu-mobile') %>
     </section>
 
 </header>

@@ -1,5 +1,5 @@
-import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-dcb171d4.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-4afd8372.js';
+import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-af04b2ee.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-cb8e89e0.js';
 import './splide.esm-20cd2e1c.js';
 
 let carouselGridA, carouselGridB, carouselGridC;
@@ -31,5 +31,6 @@ window.addEventListener('load', () => {
   depositAmmount();
   depositCopy();
   menuHeaderMobile();
+  userMenuMobile();
 });
 //# sourceMappingURL=slots.js.map

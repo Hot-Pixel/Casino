@@ -6,6 +6,7 @@ import depositAmmount from "./modules/depositAmmount.js";
 import depositCopy from "./modules/depositCopy.js";
 import countdown from "./modules/countdown.js";
 import menuHeaderMobile from "./modules/menuHeaderMobile.js";
+import userMenuMobile from "./modules/userMenuMobile.js";
 
 window.addEventListener("load", () => {
   accordion();
@@ -16,5 +17,6 @@ window.addEventListener("load", () => {
   depositCopy();
   countdown()
   menuHeaderMobile();
+  userMenuMobile()
 });
 

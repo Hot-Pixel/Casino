@@ -1,8 +1,8 @@
 import { f as favHeart } from './favHeart-9f93afda.js';
 import { m as mixitup } from './mixitup-b8d39d7d.js';
 import { m as mixitupMultifilter } from './mixitup-multifilter-2daf904c.js';
-import { a as accordion } from './accordion-79f50dad.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-4afd8372.js';
+import { a as accordion } from './accordion-716d8875.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-cb8e89e0.js';
 
 mixitup.use(mixitupMultifilter);
 
@@ -119,5 +119,6 @@ window.addEventListener("load", () => {
   depositAmmount();
   depositCopy();
   menuHeaderMobile();
+  userMenuMobile();
 });
 //# sourceMappingURL=slotsAll.js.map

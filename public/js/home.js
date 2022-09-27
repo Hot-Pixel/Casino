@@ -1,6 +1,6 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-dcb171d4.js';
-import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-4afd8372.js';
+import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-af04b2ee.js';
+import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-cb8e89e0.js';
 
 function carouselBanner() {
   var carousel = new Splide(".bannerCarousel .splide", {
@@ -111,5 +111,6 @@ window.addEventListener("load", () => {
   depositAmmount();
   depositCopy();
   menuHeaderMobile();
+  userMenuMobile();
 });
 //# sourceMappingURL=home.js.map

@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .carouselPromo__header .title, .carouselPromo__header .subtitle, .textBlock .bold, .header__promo-content p:first-of-type, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .grid__promo-title, .grid__promo-subtitle, .grid__promo-body, .filter__promo-wrapper button, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .carouselPromo__header .title p, .carouselPromo__header .subtitle p, .textBlock .bold p, .header__promo-content p:first-of-type p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .grid__promo-title p, .grid__promo-subtitle p, .grid__promo-body p, .filter__promo-wrapper button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .carouselPromo__header .title, .carouselPromo__header .subtitle, .textBlock .bold, .header__promo-content p:first-of-type, .userMenuMobile .nav__title--left > p, .userMenuMobile .nav__title--left .nav__title-verify p, .userMenuMobile .nav__item--left p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .grid__promo-title, .grid__promo-subtitle, .grid__promo-body, .filter__promo-wrapper button, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .carouselPromo__header .title p, .carouselPromo__header .subtitle p, .textBlock .bold p, .header__promo-content p:first-of-type p, .userMenuMobile .nav__title--left > p p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .grid__promo-title p, .grid__promo-subtitle p, .grid__promo-body p, .filter__promo-wrapper button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -302,36 +302,36 @@
   }
 }
 
-.u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
+.u-f--h3, .textBlock .title, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
+  .u-f--h3, .textBlock .title, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .grid__promo-title, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
@@ -2824,11 +2824,12 @@ h5 {
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -90vw;
   z-index: 10;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  opacity: 0;
   padding: 0.9375rem;
   background-color: #13171d;
   flex-direction: column;
@@ -2854,6 +2855,107 @@ h5 {
 }
 .menuHeader--bottom a:not(:last-of-type) {
   margin-right: 0.625rem;
+}
+
+.userMenuMobile {
+  position: fixed;
+  bottom: 0;
+  right: -90vw;
+  z-index: 10;
+  height: 100vh;
+  width: 90vw;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  background-color: #F4F6F8;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .userMenuMobile {
+    display: none;
+  }
+}
+.userMenuMobile .nav__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0.9375rem 1.875rem;
+}
+.userMenuMobile .nav__title--left > p {
+  color: #13171d;
+  margin-bottom: 0.625rem;
+}
+.userMenuMobile .nav__title--left .nav__title-verify {
+  display: flex;
+}
+.userMenuMobile .nav__title--left .nav__title-verify img {
+  margin-right: 0.625rem;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.userMenuMobile .nav__title--left .nav__title-verify p {
+  color: #00d1bc;
+}
+.userMenuMobile .nav__title .userMenuMobile__collapse {
+  cursor: pointer;
+}
+.userMenuMobile .nav__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9375rem 0.9375rem;
+  border-bottom: 1px solid #EAEDEF;
+  cursor: pointer;
+}
+.userMenuMobile .nav__item.nav-active p {
+  color: #00d1bc;
+}
+.userMenuMobile .nav__item.nav-active .nav__item-icon,
+.userMenuMobile .nav__item.nav-active .nav__item-icon g,
+.userMenuMobile .nav__item.nav-active .nav__item-icon path,
+.userMenuMobile .nav__item.nav-active .nav__item-icon g path,
+.userMenuMobile .nav__item.nav-active .nav__item-icon g circle {
+  stroke: #00d1bc;
+}
+.userMenuMobile .nav__item.nav-active .nav__item-arrow,
+.userMenuMobile .nav__item.nav-active .nav__item-arrow g,
+.userMenuMobile .nav__item.nav-active .nav__item-arrow path,
+.userMenuMobile .nav__item.nav-active .nav__item-arrow g path,
+.userMenuMobile .nav__item.nav-active .nav__item-arrow g circle {
+  fill: #00d1bc;
+}
+.userMenuMobile .nav__item--left {
+  display: flex;
+  align-items: center;
+}
+.userMenuMobile .nav__item--left p {
+  margin: 0;
+  margin-left: 0.9375rem;
+  color: #13171d;
+}
+.userMenuMobile .nav__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.9375rem;
+}
+.userMenuMobile .nav__btn a {
+  height: 2.8125rem;
+  padding: 0;
+  width: 90%;
+}
+.userMenuMobile__open {
+  cursor: pointer;
+}
+.userMenuMobile .userMenu__session {
+  display: flex;
+  align-items: center;
+  margin-left: 0.9375rem;
+}
+.userMenuMobile .userMenu__session span {
+  color: #13171d;
+  margin-left: 0.9375rem;
 }
 
 .header__promo {
