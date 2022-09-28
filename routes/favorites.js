@@ -4,7 +4,7 @@ const router = express.Router();
 
 /* Poker */
 const favorites = router.get("/", function (req, res, next) {
-  res.render("poker-satelites-online");
+  res.render("favorites");
 });
 
 export default favorites;

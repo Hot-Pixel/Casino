@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .boardGame, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .boardGame p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .boardGame__header-title, .boardGame__header-subtitle, .boardGame__board-number, .boardGame__footer-title, .boardGame__footer-import, .boardGame__footer-time, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .boardGame__header-title p, .boardGame__header-subtitle p, .boardGame__board-number p, .boardGame__footer-title p, .boardGame__footer-import p, .boardGame__footer-time p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -268,104 +268,104 @@
   }
 }
 
-.u-f--h2, .user__card-title {
+.u-f--h2, .boardGame__board-number-top, .user__card-title {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .boardGame__board-number-top, .user__card-title {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .boardGame__board-number-top, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .boardGame__board-number-top, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .boardGame__board-number-top, .user__card-title {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .boardGame__board-number-top, .user__card-title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .boardGame__board-number-top, .user__card-title {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .boardGame__header-subtitle, .boardGame__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+.u-f--h3, .boardGame__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .boardGame__header-subtitle, .boardGame__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .boardGame__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .boardGame__header-subtitle, .boardGame__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .boardGame__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .boardGame__header-subtitle, .boardGame__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .boardGame__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .boardGame__header-subtitle, .boardGame__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .boardGame__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .boardGame__header-subtitle, .boardGame__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .boardGame__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .boardGame__header-subtitle, .boardGame__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .boardGame__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+.u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.0625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.125rem;
   }
 }
@@ -2696,102 +2696,87 @@ h5 {
 }
 
 .boardGame {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-@media only screen and (min-width: 1280px) {
-  .boardGame {
-    display: block;
-  }
-}
-.boardGame__header {
-  position: relative;
-  z-index: 1;
-}
-@media only screen and (min-width: 1280px) {
-  .boardGame__header {
-    max-width: 50%;
-  }
+  text-align: center;
 }
 .boardGame__header-subtitle {
   margin-top: 10px;
 }
-.boardGame__menu {
-  position: relative;
-  z-index: 1;
-  margin-top: 380px;
-}
-@media only screen and (min-width: 1024px) {
-  .boardGame__menu {
-    margin-top: 400px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .boardGame__menu {
-    margin-top: 60px;
-    max-width: 50%;
-  }
-}
-.boardGame__menu-wanted {
-  width: 216px;
-  max-width: 100%;
+.boardGame__board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 35px auto;
+  padding: 20px 30px;
+  width: 100%;
+  max-width: 740px;
+  border-radius: 10px;
+  background-color: #3b424b;
 }
 @media only screen and (min-width: 1280px) {
-  .boardGame__menu-wanted {
-    width: initial;
+  .boardGame__board {
+    padding: 55px 65px;
   }
 }
-.boardGame__menu img + ul {
+.boardGame__board-text {
+  opacity: 0.6;
+}
+.boardGame__board-numbers + .boardGame__board-text {
   margin-top: 25px;
 }
-.boardGame__menu li + li {
-  margin-top: 20px;
-}
-.boardGame__menu a {
+.boardGame__board-numbers {
   display: flex;
+  flex-wrap: wrap;
   gap: 5px;
+  justify-content: center;
   align-items: center;
-  text-transform: uppercase;
-  color: #ff293e;
 }
-@media only screen and (min-width: 1280px) {
-  .boardGame__menu a {
-    gap: 20px;
-  }
+.boardGame__board-number {
+  padding: 23px 33px;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #2d3239;
 }
-.boardGame__menu a img {
-  width: 14px;
-  height: 14px;
+.boardGame__board-number.selected {
+  color: #25292f;
+  background-color: #ff293e;
 }
-@media only screen and (min-width: 1280px) {
-  .boardGame__menu a img {
-    width: 18px;
-    height: 18px;
-  }
+.boardGame__footer-title {
+  opacity: 0.6;
 }
-.boardGame__banner {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 484px;
-  background-image: url("../img/images/img-404-background.png");
+.boardGame__footer-import {
+  margin: 20px auto 0;
+  padding: 30px;
+  max-width: 540px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 80px;
+  opacity: 0.6;
+}
+.boardGame__footer-time {
+  margin: 20px auto 0;
+  padding: 15px 30px;
+  width: 100%;
+  max-width: 540px;
+  border: none;
+  border-radius: 45px;
+  background-color: #1c2026;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg id='icon-select-arrow' transform='translate(14) rotate(90)'%3E%3Cpath id='Trazado_97' data-name='Trazado 97' d='M14 7a7 7 0 1 0-7 7A7 7 0 0 0 14 7ZM5.29 10.71A1 1 0 0 1 5.284 9.3L5.29 9.29 7.41 7.18a.25.25 0 0 0 .007-.354L7.41 6.82 5.29 4.71A1 1 0 0 1 6.71 3.29l3 3A1 1 0 0 1 9.716 7.7L9.71 7.71l-3 3a1 1 0 0 1-1.414.006Z' transform='translate(0 0)' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position-y: 50%;
+  background-position-x: calc(100% - 30px);
+  appearance: none;
 }
-@media only screen and (min-width: 1280px) {
-  .boardGame__banner {
-    height: 715px;
-  }
+.boardGame__footer-button {
+  margin: 40px auto 0;
+  width: fit-content;
 }
-.boardGame__banner-image {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  max-width: 90%;
+.boardGame__footer-button span {
+  text-transform: uppercase;
+}
+.boardGame__footer-button span + img {
+  margin-left: 15px;
 }
 /*# sourceMappingURL=board-game.css.map */

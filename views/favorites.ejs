@@ -1,3 +1,12 @@
+<%
+const banner = {
+	img: "casino",
+	icon: "banner-casino",
+	title: "Juegos de Casino",
+	breadcrumb: "Casino"
+}
+%>
+
 <%- include ('layout/head', {title: "Favorites" , css: "favorites", header: "has-header" }) %>
 
 <%- include ('modules/deposit') %>
@@ -7,6 +16,8 @@
 	<%- include ('layout/header', { mode: ""}) %>
 
 	<main class="has-header">
+
+		<%- include ('modules/banner', { data: banner }) %>
 
 		<%- include ('modules/favorites') %>
 

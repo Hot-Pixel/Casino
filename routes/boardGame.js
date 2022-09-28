@@ -4,7 +4,7 @@ const router = express.Router();
 
 /* Poker */
 const boardGame = router.get("/", function (req, res, next) {
-  res.render("poker-satelites-online");
+  res.render("board-game");
 });
 
 export default boardGame;

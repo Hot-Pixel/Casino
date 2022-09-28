@@ -1,22 +1,69 @@
 <section class="boardGame">
+
 	<header class="boardGame__header">
-		<p class="boardGame__header-title">Página no encontrada</p>
-		<p class="boardGame__header-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras venenatis quam eget nulla porta laoreet.</p>
+		<p class="boardGame__header-title">Configuración de sesión</p>
+		<p class="boardGame__header-subtitle">Estás a punto de comenzar una sesión de máquinas de azar. Por favor, introduce los parámetros de sesión.</p>
 	</header>
-	<nav class="boardGame__menu">
-		<img class="boardGame__menu-wanted" src="img/images/img-404-wanted.png" alt="Wanted">
-		<ul>
-			<li><a href="#"><img src="img/icons/icon-arrow-circle-red.svg" alt="">Inicio</a></li>
-			<li><a href="#"><img src="img/icons/icon-arrow-circle-red.svg" alt="">Apuestas</a></li>
-			<li><a href="#"><img src="img/icons/icon-arrow-circle-red.svg" alt="">Slots</a></li>
-			<li><a href="#"><img src="img/icons/icon-arrow-circle-red.svg" alt="">Casino</a></li>
-			<li><a href="#"><img src="img/icons/icon-arrow-circle-red.svg" alt="">Ruleta en Vivo</a></li>
-			<li><a href="#"><img src="img/icons/icon-arrow-circle-red.svg" alt="">Apuestas Virtuales</a></li>
-			<li><a href="#"><img src="img/icons/icon-arrow-circle-red.svg" alt="">Poker</a></li>
-			<li><a href="#"><img src="img/icons/icon-arrow-circle-red.svg" alt="">Promociones</a></li>
-		</ul>
-	</nav>
-	<div class="boardGame__banner">
-		<img class="boardGame__banner-image" src="img/images/img-404-image.png" alt="">
+
+
+	<div class="boardGame__board">
+
+		<p class="boardGame__board-text">¿Cuánto tiempo quieres jugar?</p>
+		<div class="boardGame__board-numbers">
+			<div class="boardGame__board-number selected">
+				<div class="boardGame__board-number-top">30</div>
+				<div class="boardGame__board-number-bottom">min</div>
+			</div>
+			<div class="boardGame__board-number">
+				<div class="boardGame__board-number-top">1</div>
+				<div class="boardGame__board-number-bottom">horas</div>
+			</div>
+			<div class="boardGame__board-number">
+				<div class="boardGame__board-number-top">2</div>
+				<div class="boardGame__board-number-bottom">horas</div>
+			</div>
+			<div class="boardGame__board-number">
+				<div class="boardGame__board-number-top">4</div>
+				<div class="boardGame__board-number-bottom">horas</div>
+			</div>
+			<div class="boardGame__board-number">
+				<div class="boardGame__board-number-top">6</div>
+				<div class="boardGame__board-number-bottom">horas</div>
+			</div>
+		</div>
+
+		<p class="boardGame__board-text">¿Con qué frecuencia quieres que te avisemos?</p>
+		<div class="boardGame__board-numbers">
+			<div class="boardGame__board-number">
+				<div class="boardGame__board-number-top">5</div>
+				<div class="boardGame__board-number-bottom">min</div>
+			</div>
+			<div class="boardGame__board-number selected">
+				<div class="boardGame__board-number-top">10</div>
+				<div class="boardGame__board-number-bottom">min</div>
+			</div>
+			<div class="boardGame__board-number">
+				<div class="boardGame__board-number-top">15</div>
+				<div class="boardGame__board-number-bottom">min</div>
+			</div>
+		</div>
+
 	</div>
+
+
+	<footer class="boardGame__footer">
+		<p class="boardGame__footer-title">¿Con cuánto saldo quieres jugar?</p>
+		<p class="boardGame__footer-import">1€ máximo para este juego</p>
+		<select class="boardGame__footer-time" name="select">
+			<option selected>Tiempo mínimo para la próxima sesión</option>
+			<option value="value1">Value 1</option>
+			<option value="value2">Value 2</option>
+			<option value="value3">Value 3</option>
+		</select>
+		<a href="#" class="boardGame__footer-button btn__red btn__red--glow">
+			<span>Comenzar la sessión</span>
+			<img src="img/icons/icon-play-white.svg" alt="">
+		</a>
+	</footer>
+
 </section>

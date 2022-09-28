@@ -4,132 +4,150 @@
 
 
 .boardGame {
-	position: relative;
-	display: flex;
-	@extend .u-f--bold;
-	flex-direction: column;
-	justify-content: space-between;
 	@extend %margin_top_large;
 	@extend %padding_horizontal_main;
-
-	@include screen-sm {
-		display: block;
-	}
-
+	text-align: center;
 
 
 	// Header
 
 	&__header {
-		position: relative;
-		z-index: 1;
-
-		@include screen-sm {
-			max-width: 50%;
-		}
 
 
 		&-title {
 			@extend .u-f--h1;
+			@extend .u-f--bold;
 		}
 
 
 		&-subtitle {
 			margin-top: 10px;
 			@extend .u-f--h3;
+			@extend .u-f--bold;
 		}
 	}
 
 
+	// Board
 
-	// Menu
-
-	&__menu {
-		position: relative;
-		z-index: 1;
-		margin-top: 380px;
-
-		@include tablet-h {
-			margin-top: 400px;
-		}
+	&__board {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin: 35px auto;
+		padding: 20px 30px;
+		width: 100%;
+		max-width: 740px;
+		border-radius: 10px;
+		background-color: setcolor("black", "dark5");
 
 		@include screen-sm {
-			margin-top: 60px;
-			max-width: 50%;
+			padding: 55px 65px;
 		}
 
 
-		&-wanted {
-			width: 216px;
-			max-width: 100%;
-
-			@include screen-sm {
-				width: initial;
-			}
+		&-text {
+			@extend .u-f--h4;
+			opacity: .6;
 		}
 
-
-		img + ul {
+		&-numbers + &-text {
 			margin-top: 25px;
 		}
 
 
-		li + li {
-			margin-top: 20px;
+		&-numbers {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+			justify-content: center;
+			align-items: center;
 		}
 
 
-		a {
-			display: flex;
-			gap: 5px;
-			align-items: center;
-			@extend .u-f--h3;
-			text-transform: uppercase;
-			color: setcolor("primary");
+		&-number {
+			padding: 23px 33px;
+			@extend .u-f--bold;
+			border-radius: 10px;
+			color: setcolor("white");
+			background-color: setcolor("black", "dark4");
 
-			@include screen-sm {
-				gap: 20px;
+
+			&-top {
+				@extend .u-f--h2;
 			}
 
 
-			img {
-				width: 14px;
-				height: 14px;
+			&-bottom {
+				@extend .u-f--h4;
+			}
 
-				@include screen-sm {
-					width: 18px;
-					height: 18px;
-				}
+
+			&.selected {
+				color: setcolor("black");
+				background-color: setcolor("primary");
 			}
 		}
 	}
 
 
+	// Board
 
-	// Banner
+	&__footer {
 
-	&__banner {
-		position: absolute;
-		overflow: hidden;
-		z-index: 0;
-		top: 0;
-		right: 0;
-		left: 0;
-		height: 484px;
-		background-image: url('../img/images/img-404-background.png');
-		background-repeat: no-repeat;
-		background-size: cover;
 
-		@include screen-sm {
-			height: 715px;
+		&-title {
+			@extend .u-f--h4;
+			@extend .u-f--bold;
+			opacity: .6;
 		}
 
 
-		&-image {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			max-width: 90%
+		&-import {
+			margin: 20px auto 0;
+			padding: 30px;
+			max-width: 540px;
+			@extend .u-f--bold;
+			color: setcolor("white");
+			border: 2px solid setcolor("white");
+			border-radius: 80px;
+			opacity: .6;
+		}
+
+
+		&-time {
+			margin: 20px auto 0;
+			padding: 15px 30px;
+			width: 100%;
+			max-width: 540px;
+			@extend .u-f--bold;
+			border: none;
+			border-radius: 45px;
+			background-color: setcolor("black", "dark2");
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg id='icon-select-arrow' transform='translate(14) rotate(90)'%3E%3Cpath id='Trazado_97' data-name='Trazado 97' d='M14 7a7 7 0 1 0-7 7A7 7 0 0 0 14 7ZM5.29 10.71A1 1 0 0 1 5.284 9.3L5.29 9.29 7.41 7.18a.25.25 0 0 0 .007-.354L7.41 6.82 5.29 4.71A1 1 0 0 1 6.71 3.29l3 3A1 1 0 0 1 9.716 7.7L9.71 7.71l-3 3a1 1 0 0 1-1.414.006Z' transform='translate(0 0)' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-position-y: 50%;
+			background-position-x: calc( 100% - 30px );
+			appearance: none;
+		}
+
+
+		&-button {
+			margin: 40px auto 0;
+			width: fit-content;
+
+
+			span {
+				text-transform: uppercase;
+
+
+				& + img {
+					margin-left: 15px;
+				}
+			}
 		}
 	}
 }
