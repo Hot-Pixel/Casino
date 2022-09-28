@@ -1,0 +1,141 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.error-404 {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	@extend %margin_top_large;
+	@extend %padding_horizontal_main;
+
+	@include tablet {
+		display: block;
+	}
+
+
+
+	// Header
+
+	&-header {
+		position: relative;
+		z-index: 1;
+
+		@include tablet {
+			max-width: 50%;
+		}
+
+
+		h1 {
+			font-size: 34px;
+
+			@include tablet {
+				font-size: 58px;
+			}
+		}
+
+
+		h1 + p {
+			margin-top: 10px;
+		}
+
+
+		p {
+			font-size: 18px;
+
+			@include tablet {
+				font-size: 24px;
+			}
+		}
+	}
+
+
+
+	// Menu
+
+	&-menu {
+		position: relative;
+		z-index: 1;
+		margin-top: 350px;
+
+		@include tablet {
+			margin-top: 60px;
+			max-width: 50%;
+		}
+
+
+		&-wanted {
+			width: 216px;
+			@include tablet {
+				width: initial;
+			}
+		}
+
+
+		img + ul {
+			margin-top: 25px;
+		}
+
+
+		li + li {
+			margin-top: 20px;
+		}
+
+
+		a {
+			display: flex;
+			gap: 5px;
+			align-items: center;
+			font-size: 12px;
+			text-transform: uppercase;
+			color: setcolor("primary");
+
+			@include tablet {
+				gap: 20px;
+				font-size: 24px;
+			}
+
+
+			img {
+				width: 14px;
+				height: 14px;
+
+				@include tablet {
+					width: 18px;
+					height: 18px;
+				}
+			}
+		}
+	}
+
+
+
+	// Banner
+
+	&-banner {
+		position: absolute;
+		overflow: hidden;
+		z-index: 0;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 484px;
+		background-image: url('../img/images/img-404-background.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		@include tablet {
+			height: 715px;
+		}
+
+
+		img {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			max-width: 90%
+		}
+	}
+}

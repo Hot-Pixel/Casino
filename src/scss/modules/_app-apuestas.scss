@@ -1,0 +1,97 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.app-apuestas {
+	@extend %margin_top_large;
+	@extend %padding_horizontal_main;
+
+	&-title {
+		font-size: 34px;
+		text-align: center;
+		@include tablet {
+			font-size: 58px;
+			text-align: left;
+		}
+	}
+
+	&-columns {
+		@extend %margin_top_medium;
+		display: grid;
+		column-gap: $lg;
+		row-gap: rem(45);
+
+		@include tablet {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+
+	&-column {
+
+
+		p {
+			font-size: 20px;
+
+
+			& + p {
+				margin-top: 20px;
+			}
+		}
+	}
+
+
+	&-box {
+		position: relative;
+		padding: 30px 25px 60px;
+		border-radius: 10px;
+		background-color: setcolor("black", "dark2");
+
+		@include screen-sm {
+			padding: 50px 40px 100px;
+		}
+
+
+		p {
+			opacity: .6;
+		}
+
+
+		&-button {
+			position: absolute;
+			right: rem(40);
+			bottom: -1.5em;
+			left: rem(40);
+			padding: $sm rem(40);
+
+			span + img {
+				margin-left: 20px;
+			}
+		}
+	}
+
+
+	&-not-box {
+
+
+		p {
+			text-align: center;
+
+			@include screen-sm {
+				text-align: left;
+			}
+		}
+
+
+		small {
+			font-size: 14px;
+			text-align: left;
+			opacity: .6;
+
+			@include screen-sm {
+				font-size: 18px;
+			}
+		}
+	}
+}

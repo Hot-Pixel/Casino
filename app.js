@@ -27,6 +27,9 @@ import support from "./routes/soporte.js";
 import user from "./routes/user.js";
 import signIn from "./routes/signIn.js";
 import signUp from "./routes/signUp.js";
+import appApuestas from "./routes/appApuestas.js";
+import error404 from "./routes/error404.js";
+import atencionCliente from "./routes/atencionCliente.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -66,6 +69,9 @@ app.use("/screen-game", screenGame);
 app.use("/user", user);
 app.use("/sign-in", signIn);
 app.use("/sign-up", signUp);
+app.use("/appApuestas", appApuestas);
+app.use("/error404", error404);
+app.use("/atencionCliente", atencionCliente);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
