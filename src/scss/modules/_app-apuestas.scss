@@ -3,94 +3,215 @@
 @use "../tools" as *;
 
 
-.app-apuestas {
+.appApuestas {
 	@extend %margin_top_large;
-	@extend %padding_horizontal_main;
-
-	&-title {
-		font-size: 34px;
-		text-align: center;
-		@include tablet {
-			font-size: 58px;
-			text-align: left;
-		}
-	}
-
-	&-columns {
-		@extend %margin_top_medium;
-		display: grid;
-		column-gap: $lg;
-		row-gap: rem(45);
-
-		@include tablet {
-			grid-template-columns: repeat(3, 1fr);
-		}
-	}
 
 
-	&-column {
 
+	// Header
 
-		p {
-			font-size: 20px;
-
-
-			& + p {
-				margin-top: 20px;
-			}
-		}
-	}
-
-
-	&-box {
+	&__header {
 		position: relative;
-		padding: 30px 25px 60px;
-		border-radius: 10px;
-		background-color: setcolor("black", "dark2");
+		padding-top: 100px;
+		padding-bottom: 100px;
+		@extend %padding_horizontal_main;
+		background-image: url('../img/images/img-app-apuestas-header-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: initial;
 
 		@include screen-sm {
-			padding: 50px 40px 100px;
+			background-position: center center;
+			background-size: cover;
 		}
 
 
-		p {
+		div {
+			position: relative;
+			z-index: 1;
+			width: 80%;
+
+			@include screen-sm {
+				width: 40%;
+			}
+		}
+
+
+		& > img {
+			position: relative;
+			left: -10%;
+			right: -10%;
+			width: 120%;
+
+			@include screen-sm {
+				position: absolute;
+				z-index: 0;
+				right: 0;
+				bottom: -70px;
+				left: initial;
+				width: 70%;
+			}
+		}
+
+
+		&-title {
+			@extend .u-f--h1;
+			font-weight: bold;
+		}
+
+
+		&-subtitle {
+			@extend .u-f--h3;
+			font-weight: bold;
 			opacity: .6;
 		}
 
 
-		&-button {
-			position: absolute;
-			right: rem(40);
-			bottom: -1.5em;
-			left: rem(40);
-			padding: $sm rem(40);
+		* + a {
+			margin-top: 25px;
+		}
 
-			span + img {
-				margin-left: 20px;
+
+		a {
+			display: inline-block;
+			padding: 7.5px 36px 7.5px 7.5px;
+			text-transform: uppercase;
+
+			img {
+				width: 30px;
+				height: 30px;
 			}
 		}
 	}
 
 
-	&-not-box {
+	// Content
+
+	&__content {
+		@extend %padding_horizontal_main;
+		background-image: url('../img/images/img-app-apuestas-content-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: bottom center;
 
 
-		p {
-			text-align: center;
+		// Top
 
-			@include screen-sm {
-				text-align: left;
+		&-top {
+			@extend %margin_top_medium;
+
+
+			&-title {
+				@extend .u-f--h2;
+				font-weight: bold;
+				text-align: center;
+			}
+
+
+			.appApuestas__columns {
+				display: grid;
+				gap: 40px;
+				grid-template-columns: repeat(1, 1fr);
+				@extend %margin_top_small;
+				margin-right: auto;
+				margin-left: auto;
+
+				@include tablet {
+					grid-template-columns: repeat(2, 1fr);
+				}
+
+				@include screen-sm {
+					grid-template-columns: repeat(4, 1fr);
+					max-width: 1120px;
+				}
+			}
+
+
+			.appApuestas__column {
+				text-align: center;
+
+
+				img {
+					margin: auto;
+					max-width: 250px;
+				}
+
+
+				img + p {
+					@extend .u-f--h4;
+					font-weight: bold;
+				}
 			}
 		}
 
 
-		small {
-			font-size: 14px;
-			text-align: left;
-			opacity: .6;
+		// Bottom
+
+		&-bottom {
+			position: relative;
+			bottom: -180px;
+			margin: -90px auto 180px;
+			padding: 75px 75px 85px;
+			width: 100%;
+			max-width: 796px;
+			border-radius: 10px;
+			background-color: setcolor("black");
 
 			@include screen-sm {
-				font-size: 18px;
+				bottom: -300px;
+				margin-top: -190px;
+				margin-bottom: 300px;
+			}
+
+
+			&-title {
+				@extend .u-f--h4;
+				font-weight: bold;
+				text-align: center;
+			}
+
+
+			.appApuestas__columns {
+				display: grid;
+				gap: 40px;
+				grid-template-columns: repeat(1, 1fr);
+				@extend %margin_top_small;
+				margin-right: auto;
+				margin-left: auto;
+
+				@include screen-sm {
+					grid-template-columns: repeat(4, 1fr);
+					max-width: 1120px;
+				}
+			}
+
+
+			.appApuestas__column {
+
+
+				& > img {
+					display: none;
+
+					@include screen-sm {
+						display: block;
+						margin-bottom: 20px;
+						border-radius: 10px;
+						background-color: setcolor("black", "dark5");
+					}
+				}
+
+
+				a {
+					display: flex;
+					gap: 10px;
+					justify-content: space-between;
+					padding: 12px 16px 12px 50px;
+					text-align: center;
+
+
+					span {
+						width: 100%;
+					}
+				}
 			}
 		}
 	}
