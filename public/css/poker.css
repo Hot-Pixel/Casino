@@ -229,41 +229,41 @@
   font-weight: 500;
 }
 
-.u-f--bold, .txt2cols__title p, .faq__title p, .faq__accordion-item .head p, .oneCol p, .gridPoker .card__content-title, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-title, .grid3Cols__container-step .step, .grid3Cols__container-step .title, .grid3Cols__container-step > div p:first-of-type, .gridDl .card__bottom-content p:first-of-type, .gridDl .card__bottom-content p:nth-of-type(2), .textBlock .bold, .banner__wrapper-title p, .bannerFooter span, .header__promo-content p:first-of-type, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData, .gridRuleta .card__content--bottom > .ruletaDataWrapper span, .gridRuleta .card__title, .menuPoker__btn span, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, a.redCta span, .u-f--bold p, .gridPoker .card__content-title p, .gridPoker .card__content-row p:last-of-type span:last-of-type p, .grid3Cols__container-title p, .grid3Cols__container-step .step p, .grid3Cols__container-step .title p, .grid3Cols__container-step > div p:first-of-type p, .gridDl .card__bottom-content p:first-of-type p, .gridDl .card__bottom-content p:nth-of-type(2) p, .textBlock .bold p, .bannerFooter span p, .header__promo-content p:first-of-type p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData p, .gridRuleta .card__content--bottom > .ruletaDataWrapper span p, .gridRuleta .card__title p, .menuPoker__btn span p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p, a.redCta span p {
+.u-f--bold, .pokerSatelitesCEP, .pokerSatelitesOnline__Card-title, .pokerSatelitesOnline__Card-subtitle, .pokerSatelitesOnline__Card-price, .gridHalf__navbar-wrapper .icon__title p, .txt2cols__title p, .faq__title p, .faq__accordion-item .head p, .oneCol p, .gridPoker .card__content-title, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-title, .grid3Cols__container-step .step, .grid3Cols__container-step .title, .grid3Cols__container-step > div p:first-of-type, .gridDl .card__bottom-content p:first-of-type, .gridDl .card__bottom-content p:nth-of-type(2), .textBlock .bold, .banner__wrapper-title p, .bannerFooter span, .header__promo-content p:first-of-type, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData, .gridRuleta .card__content--bottom > .ruletaDataWrapper span, .gridRuleta .card__title, .menuPoker__btn span, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, a.redCta span, .u-f--bold p, .pokerSatelitesCEP p, .pokerSatelitesOnline__Card-title p, .pokerSatelitesOnline__Card-subtitle p, .pokerSatelitesOnline__Card-price p, .gridPoker .card__content-title p, .gridPoker .card__content-row p:last-of-type span:last-of-type p, .grid3Cols__container-title p, .grid3Cols__container-step .step p, .grid3Cols__container-step .title p, .grid3Cols__container-step > div p:first-of-type p, .gridDl .card__bottom-content p:first-of-type p, .gridDl .card__bottom-content p:nth-of-type(2) p, .textBlock .bold p, .bannerFooter span p, .header__promo-content p:first-of-type p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .gridRuleta .card__content--bottom > .ruletaDataWrapper .ruletaData p, .gridRuleta .card__content--bottom > .ruletaDataWrapper span p, .gridRuleta .card__title p, .menuPoker__btn span p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p, a.redCta span p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
+.u-f--h1, .pokerSatelitesCEP__header-title, .pokerSatelitesOnline__Card-title, .pokerSatelitesOnline__Card-price, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .pokerSatelitesCEP__header-title, .pokerSatelitesOnline__Card-title, .pokerSatelitesOnline__Card-price, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .pokerSatelitesCEP__header-title, .pokerSatelitesOnline__Card-title, .pokerSatelitesOnline__Card-price, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .pokerSatelitesCEP__header-title, .pokerSatelitesOnline__Card-title, .pokerSatelitesOnline__Card-price, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .pokerSatelitesCEP__header-title, .pokerSatelitesOnline__Card-title, .pokerSatelitesOnline__Card-price, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .pokerSatelitesCEP__header-title, .pokerSatelitesOnline__Card-title, .pokerSatelitesOnline__Card-price, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .pokerSatelitesCEP__header-title, .pokerSatelitesOnline__Card-title, .pokerSatelitesOnline__Card-price, .oneCol__title, .banner__wrapper-title p, .header__promo-content p:first-of-type, .user__title p, .depositScreen .deposit__title {
     font-size: 3.625rem;
   }
 }
@@ -302,70 +302,70 @@
   }
 }
 
-.u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+.u-f--h3, .pokerSatelitesCEP__header-subtitle, .pokerSatelitesCEP__menu a, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .pokerSatelitesCEP__header-subtitle, .pokerSatelitesCEP__menu a, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .pokerSatelitesCEP__header-subtitle, .pokerSatelitesCEP__menu a, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .pokerSatelitesCEP__header-subtitle, .pokerSatelitesCEP__menu a, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .pokerSatelitesCEP__header-subtitle, .pokerSatelitesCEP__menu a, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .pokerSatelitesCEP__header-subtitle, .pokerSatelitesCEP__menu a, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .pokerSatelitesCEP__header-subtitle, .pokerSatelitesCEP__menu a, .gridPoker .card__content-row p:last-of-type span:last-of-type, .grid3Cols__container-step .step, .grid3Cols__container-step > div p:first-of-type, .textBlock .title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+.u-f--h4, .pokerSatelitesOnline__Card-subtitle, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .pokerSatelitesOnline__Card-subtitle, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .pokerSatelitesOnline__Card-subtitle, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .pokerSatelitesOnline__Card-subtitle, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .pokerSatelitesOnline__Card-subtitle, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .pokerSatelitesOnline__Card-subtitle, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.0625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .pokerSatelitesOnline__Card-subtitle, .oneCol__body, .grid3Cols__container-step .title, .gridDl .card__bottom-content p:nth-of-type(2), .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.125rem;
   }
 }
@@ -471,48 +471,48 @@
   display: none !important;
 }
 
-.txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+.grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -520,48 +520,48 @@
   }
 }
 
-.txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+.grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .grids__container, .txt2cols, .faq, .oneCol, .imageTextTorneo, .gridPoker, .grid3Cols, .gridDl, .textBlock, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -569,129 +569,129 @@
   }
 }
 
-.footer {
+.grids__container, .footer {
   margin-top: var(--vertical-small-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-2xl);
   }
 }
 
-.txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
+.bannerPokerSatelites, .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
   margin-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
+  .bannerPokerSatelites, .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
     margin-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
+  .bannerPokerSatelites, .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
     margin-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
+  .bannerPokerSatelites, .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
     margin-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
+  .bannerPokerSatelites, .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
     margin-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
+  .bannerPokerSatelites, .txt2cols, .faq, .oneCol, .gridPoker .gridPoker__btn, .footer__grid {
     margin-top: var(--vertical-medium-2xl);
   }
 }
 
-.imageTextTorneo, .grid3Cols, .textBlock {
+.pokerSatelitesCEP, .imageTextTorneo, .grid3Cols, .textBlock {
   margin-top: var(--vertical-large-xs);
 }
 @media only screen and (min-width: 576px) {
-  .imageTextTorneo, .grid3Cols, .textBlock {
+  .pokerSatelitesCEP, .imageTextTorneo, .grid3Cols, .textBlock {
     margin-top: var(--vertical-large-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .imageTextTorneo, .grid3Cols, .textBlock {
+  .pokerSatelitesCEP, .imageTextTorneo, .grid3Cols, .textBlock {
     margin-top: var(--vertical-large-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .imageTextTorneo, .grid3Cols, .textBlock {
+  .pokerSatelitesCEP, .imageTextTorneo, .grid3Cols, .textBlock {
     margin-top: var(--vertical-large-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .imageTextTorneo, .grid3Cols, .textBlock {
+  .pokerSatelitesCEP, .imageTextTorneo, .grid3Cols, .textBlock {
     margin-top: var(--vertical-large-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .imageTextTorneo, .grid3Cols, .textBlock {
+  .pokerSatelitesCEP, .imageTextTorneo, .grid3Cols, .textBlock {
     margin-top: var(--vertical-large-2xl);
   }
 }
 
-.banner__wrapper {
+.pokerSatelitesCEP, .banner__wrapper {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .banner__wrapper {
+  .pokerSatelitesCEP, .banner__wrapper {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .banner__wrapper {
+  .pokerSatelitesCEP, .banner__wrapper {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .banner__wrapper {
+  .pokerSatelitesCEP, .banner__wrapper {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .banner__wrapper {
+  .pokerSatelitesCEP, .banner__wrapper {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .banner__wrapper {
+  .pokerSatelitesCEP, .banner__wrapper {
     padding-left: var(--horizontal-main-2xl);
     padding-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .banner__wrapper {
+  .pokerSatelitesCEP, .banner__wrapper {
     padding-left: var(--horizontal-main-3xl);
     padding-right: var(--horizontal-main-3xl);
   }
@@ -1284,6 +1284,7 @@ a.redCta img {
   }
 }
 .menuPoker__wrapper:first-of-type .menuPoker__btn {
+  position: relative;
   padding: 0 3.75rem;
 }
 @media only screen and (min-width: 1600px) {
@@ -3604,5 +3605,333 @@ a.redCta img {
 }
 .txt2cols__body p {
   padding-bottom: 0.625rem;
+}
+
+.bannerPokerSatelites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 294px;
+  background-image: url("../img/images/img-banner-poker-satelite-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bannerPokerSatelites__logo {
+  max-width: 80%;
+}
+.bannerPokerSatelites__breadcrumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  padding: 15px 40px;
+  width: 100%;
+  background-color: #13171d;
+}
+@media only screen and (min-width: 1280px) {
+  .bannerPokerSatelites__breadcrumbs {
+    position: relative;
+    margin-top: 10px;
+    padding: 5px 20px;
+    width: initial;
+    border-radius: 10px;
+  }
+}
+
+.grids__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3125rem;
+}
+@media only screen and (min-width: 1280px) {
+  .grids__container {
+    flex-direction: row;
+    column-gap: 0.625rem;
+    row-gap: 0;
+  }
+}
+
+.gridHalf {
+  width: 100%;
+  padding: 0.625rem 0.9375rem;
+  height: 100%;
+  background-color: #25292f;
+  border-radius: 0.3125rem;
+}
+@media only screen and (min-width: 768px) {
+  .gridHalf {
+    padding: 3.75rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf {
+    padding: 0.9375rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .gridHalf {
+    width: 50%;
+  }
+}
+.gridHalf__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.gridHalf__navbar .js-arrow__grid {
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar .js-arrow__grid {
+    transform: rotate(0);
+  }
+}
+.gridHalf__navbar-wrapper {
+  display: flex;
+  align-items: center;
+}
+.gridHalf__navbar-wrapper > p {
+  color: #ff293e;
+  margin: 0;
+  padding-right: 10px;
+}
+.gridHalf__navbar-wrapper .icon__title {
+  margin-left: 0.3125rem;
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar-wrapper .icon__title {
+    margin-left: 0.9375rem;
+  }
+}
+.gridHalf__navbar-wrapper .icon__title p {
+  font-size: 1.125rem;
+}
+.gridHalf__navbar-wrapper .icon__title img {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar-wrapper .icon__title img {
+    display: inline-block;
+  }
+}
+.gridHalf__navbar-link p {
+  color: white;
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar-link p {
+    color: #ff293e;
+  }
+}
+.gridHalf__navbar-link svg path {
+  fill: white;
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar-link svg path {
+    fill: #ff293e;
+  }
+}
+.gridHalf__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto auto;
+  gap: 10px;
+  height: 0;
+  opacity: 0;
+}
+@media only screen and (min-width: 768px) {
+  .gridHalf__grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__grid {
+    height: 100%;
+    opacity: 1;
+  }
+}
+.gridHalf__grid-item {
+  position: relative;
+}
+.gridHalf__grid-item > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.gridHalf__grid-item:hover .gridHalf__grid-item--hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.gridHalf__grid-item--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.gridHalf__grid-item--hover button {
+  margin-bottom: 0.9375rem;
+  display: flex;
+  align-items: center;
+}
+.gridHalf__grid-item--hover button img {
+  display: inline-block;
+}
+
+.pokerSatelitesOnline__Cards {
+  position: relative;
+}
+.pokerSatelitesOnline__Card {
+  position: relative;
+  z-index: 1;
+  padding: 70px 35px 0;
+  text-align: center;
+}
+.pokerSatelitesOnline__Card + .pokerSatelitesOnline__Card {
+  margin-top: 40px;
+}
+@media only screen and (min-width: 1280px) {
+  .pokerSatelitesOnline__Card + .pokerSatelitesOnline__Card {
+    margin-top: 0;
+  }
+}
+.pokerSatelitesOnline__Card-subtitle {
+  margin-top: 35px;
+  color: #ff293e;
+}
+.pokerSatelitesOnline__Card-price {
+  margin-top: 15px;
+  color: #ff293e;
+}
+.pokerSatelitesOnline__Card-button {
+  position: relative;
+  margin: 40px auto -22px;
+  width: fit-content;
+}
+.pokerSatelitesOnline__Card-button span + img {
+  margin-left: 20px;
+}
+.pokerSatelitesOnline__astronauta {
+  position: absolute;
+  z-index: 0;
+  right: -85px;
+  bottom: -65px;
+}
+
+.pokerSatelitesCEP {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 1280px) {
+  .pokerSatelitesCEP {
+    display: block;
+  }
+}
+.pokerSatelitesCEP__header {
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (min-width: 1280px) {
+  .pokerSatelitesCEP__header {
+    max-width: 50%;
+  }
+}
+.pokerSatelitesCEP__header-subtitle {
+  margin-top: 10px;
+}
+.pokerSatelitesCEP__menu {
+  position: relative;
+  z-index: 1;
+  margin-top: 380px;
+}
+@media only screen and (min-width: 1024px) {
+  .pokerSatelitesCEP__menu {
+    margin-top: 400px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .pokerSatelitesCEP__menu {
+    margin-top: 60px;
+    max-width: 50%;
+  }
+}
+.pokerSatelitesCEP__menu-wanted {
+  width: 216px;
+  max-width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .pokerSatelitesCEP__menu-wanted {
+    width: initial;
+  }
+}
+.pokerSatelitesCEP__menu img + ul {
+  margin-top: 25px;
+}
+.pokerSatelitesCEP__menu li + li {
+  margin-top: 20px;
+}
+.pokerSatelitesCEP__menu a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  text-transform: uppercase;
+  color: #ff293e;
+}
+@media only screen and (min-width: 1280px) {
+  .pokerSatelitesCEP__menu a {
+    gap: 20px;
+  }
+}
+.pokerSatelitesCEP__menu a img {
+  width: 14px;
+  height: 14px;
+}
+@media only screen and (min-width: 1280px) {
+  .pokerSatelitesCEP__menu a img {
+    width: 18px;
+    height: 18px;
+  }
+}
+.pokerSatelitesCEP__banner {
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 484px;
+  background-image: url("../img/images/img-404-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media only screen and (min-width: 1280px) {
+  .pokerSatelitesCEP__banner {
+    height: 715px;
+  }
+}
+.pokerSatelitesCEP__banner-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 90%;
 }
 /*# sourceMappingURL=poker.css.map */

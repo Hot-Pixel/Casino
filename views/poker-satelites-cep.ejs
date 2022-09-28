@@ -1,22 +1,40 @@
-<%- include ('layout/head', {title: "Poker satelites CEP" , css: "poker-satelites-cep", header: "has-header" }) %>
+<%
+const activeTab =
+	{
+		home: 'is-active',
+		pc: '',
+		mobile: '',
+		tour: ''
+	}
+%>
+
+<%- include ('layout/head', {title: 'Poker' , css: 'poker', header: 'has-header' }) %>
 
 <%- include ('modules/deposit') %>
 
 <main class="pageContainer">
 
-	<%- include ('layout/header', { mode: ""}) %>
+	<%- include ('layout/header', { mode: ''}) %>
 
 	<main class="has-header">
 
-		<%- include ('modules/poker-satelites-cep') %>
+		<%- include ('modules/banner-poker-satelites') %>
 
-		<%- include ('modules/text-block') %>
+		<%- include ('objects/menu-poker', { data: activeTab }) %>
 
-		<%- include ('layout/footer') %>
+		<section class="poker">
+
+			<%- include ('modules/poker-satelites-cep') %>
+
+			<%- include ('modules/text-block') %>
+
+			<%- include ('layout/footer') %>
+
+		</section>
 
 	</main>
 
 </main>
 
 
-<%- include ('layout/scripts',  { script: 'casino' }) %>
+<%- include ('layout/scripts',  { script: 'poker' }) %>

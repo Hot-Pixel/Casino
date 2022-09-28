@@ -1,18 +1,18 @@
 <%
 const bannerData =
-  {
-    img: "poker",
-    icon: "banner-poker",
-    title: "¡Bienvenido al Póker!",
-    breadcrumb: "Poker"
-  }
-  const activeTab =
-  {
-    home: "is-active",
-    pc: "",
-    mobile: "",
-    tour: ""
-  }
+	{
+		img: "poker",
+		icon: "banner-poker",
+		title: "¡Bienvenido al Póker!",
+		breadcrumb: "Poker"
+	}
+	const activeTab =
+	{
+		home: "is-active",
+		pc: "",
+		mobile: "",
+		tour: ""
+	}
 
 %>
 
@@ -22,33 +22,33 @@ const bannerData =
 
 <main class="pageContainer">
 
-  <%- include ('layout/header', { mode: ""}) %>
+	<%- include ('layout/header', { mode: ""}) %>
 
-  <section class="has-header">
+	<section class="has-header">
 
-    <%- include ('modules/banner', { data: bannerData }) %>
+		<%- include ('modules/banner', { data: bannerData }) %>
 
-    <%- include ('objects/menu-poker', { data: activeTab }) %>
+		<%- include ('objects/menu-poker', { data: activeTab }) %>
 
-    <section class="poker">
+		<section class="poker">
 
-        <section class="poker__home poker__section tab-on">
+			<section class="poker__home poker__section tab-on">
 
-            <%- include ('modules/block-poker-home') %>
+				<%- include ('modules/block-poker-home') %>
 
-            <%- include ('modules/img-txt-torneos') %>
+				<%- include ('modules/img-txt-torneos') %>
 
-            <%- include ('modules/one-col') %>
+				<%- include ('modules/one-col') %>
 
-        </section>
+			</section>
 
-    </section>
+		</section>
 
-    <%- include ('modules/text-block') %>
+		<%- include ('modules/text-block') %>
 
-    <%- include ('layout/footer') %>
+		<%- include ('layout/footer') %>
 
-  </section>
+	</section>
 
 </main>
 

@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .textBlock .bold, .pokerSatelitesCEP, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .textBlock .bold p, .pokerSatelitesCEP p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .textBlock .bold, .pokerSatelitesCEP, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .menuPoker__btn span, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .textBlock .bold p, .pokerSatelitesCEP p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .menuPoker__btn span p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -598,31 +598,31 @@
   }
 }
 
-.footer__grid {
+.bannerPokerSatelites, .footer__grid {
   margin-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer__grid {
+  .bannerPokerSatelites, .footer__grid {
     margin-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__grid {
+  .bannerPokerSatelites, .footer__grid {
     margin-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer__grid {
+  .bannerPokerSatelites, .footer__grid {
     margin-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer__grid {
+  .bannerPokerSatelites, .footer__grid {
     margin-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer__grid {
+  .bannerPokerSatelites, .footer__grid {
     margin-top: var(--vertical-medium-2xl);
   }
 }
@@ -1303,6 +1303,91 @@ h5 {
 }
 .gridHover a p {
   margin: 0;
+}
+
+.poker__section {
+  transition: all 0.3s ease;
+}
+.poker__section.tab-on {
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.menuPoker {
+  padding: 1.5625rem 0;
+  background-color: #1c2026;
+  box-shadow: 0.0625rem 1.0625rem 1.375rem 0.125rem rgb(0, 0, 0);
+  border-top: 1px solid #3b424b;
+}
+.menuPoker__wrapper {
+  justify-content: center;
+  align-items: center;
+}
+.menuPoker__wrapper:first-of-type {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .menuPoker__wrapper:first-of-type {
+    display: flex;
+  }
+}
+.menuPoker__wrapper:first-of-type .menuPoker__btn {
+  padding: 0 3.75rem;
+}
+@media only screen and (min-width: 1600px) {
+  .menuPoker__wrapper:first-of-type .menuPoker__btn {
+    padding: 0 5rem;
+  }
+}
+.menuPoker__wrapper:last-of-type {
+  display: flex;
+}
+@media only screen and (min-width: 1024px) {
+  .menuPoker__wrapper:last-of-type {
+    display: none;
+  }
+}
+.menuPoker__wrapper:last-of-type .menuPoker__btn {
+  padding: 0 0.9375rem;
+  margin: 0;
+  width: 100%;
+}
+.menuPoker__wrapper:last-of-type .menuPoker__btn img {
+  display: none;
+}
+.menuPoker__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menuPoker__btn:hover span, .menuPoker__btn:active span, .menuPoker__btn:focus span, .menuPoker__btn.is-active span {
+  color: #ff293e;
+  transition: all 0.5s ease;
+}
+.menuPoker__btn:hover svg path, .menuPoker__btn:hover svg g path, .menuPoker__btn:hover svg g rect, .menuPoker__btn:hover svg g line, .menuPoker__btn:hover svg g circle, .menuPoker__btn:active svg path, .menuPoker__btn:active svg g path, .menuPoker__btn:active svg g rect, .menuPoker__btn:active svg g line, .menuPoker__btn:active svg g circle, .menuPoker__btn:focus svg path, .menuPoker__btn:focus svg g path, .menuPoker__btn:focus svg g rect, .menuPoker__btn:focus svg g line, .menuPoker__btn:focus svg g circle, .menuPoker__btn.is-active svg path, .menuPoker__btn.is-active svg g path, .menuPoker__btn.is-active svg g rect, .menuPoker__btn.is-active svg g line, .menuPoker__btn.is-active svg g circle {
+  transition: all 0.5s ease;
+  stroke: #ff293e;
+}
+.menuPoker__btn:hover img, .menuPoker__btn:active img, .menuPoker__btn:focus img, .menuPoker__btn.is-active img {
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.menuPoker__btn span {
+  color: #a0a2a4;
+  margin: 0;
+  padding-left: 0.625rem;
+}
+.menuPoker__btn img {
+  position: absolute;
+  bottom: -1.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.menuPoker a:not(:last-of-type) {
+  border-right: 1px solid #3b424b;
 }
 
 .filterSlots {
@@ -2693,6 +2778,27 @@ h5 {
 }
 .menuHeader--bottom a:not(:last-of-type) {
   margin-right: 0.625rem;
+}
+
+.bannerPokerSatelites {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 294px;
+  background-image: url("../img/images/img-banner-poker-satelite-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bannerPokerSatelites__logo {
+  max-width: 80%;
+}
+.bannerPokerSatelites__breadcrumbs {
+  margin-top: 10px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color: #13171d;
 }
 
 .pokerSatelitesCEP {

@@ -4,132 +4,68 @@
 
 
 .pokerSatelitesOnline {
-	position: relative;
-	display: flex;
-	@extend .u-f--bold;
-	flex-direction: column;
-	justify-content: space-between;
-	@extend %margin_top_large;
-	@extend %padding_horizontal_main;
 
-	@include screen-sm {
-		display: block;
+
+	&__Cards {
+		position: relative;
 	}
 
 
-
-	// Header
-
-	&__header {
+	&__Card {
 		position: relative;
 		z-index: 1;
+		padding: 70px 35px 0;
+		text-align: center;
 
-		@include screen-sm {
-			max-width: 50%;
+
+		& + & {
+			margin-top: 40px;
+
+			@include screen-sm {
+				margin-top: 0;
+			}
 		}
 
 
 		&-title {
 			@extend .u-f--h1;
+			@extend .u-f--bold;
 		}
 
 
 		&-subtitle {
-			margin-top: 10px;
-			@extend .u-f--h3;
-		}
-	}
-
-
-
-	// Menu
-
-	&__menu {
-		position: relative;
-		z-index: 1;
-		margin-top: 380px;
-
-		@include tablet-h {
-			margin-top: 400px;
-		}
-
-		@include screen-sm {
-			margin-top: 60px;
-			max-width: 50%;
+			margin-top: 35px;
+			@extend .u-f--h4;
+			@extend .u-f--bold;
+			color: setcolor('primary');
 		}
 
 
-		&-wanted {
-			width: 216px;
-			max-width: 100%;
-
-			@include screen-sm {
-				width: initial;
-			}
+		&-price {
+			margin-top: 15px;
+			@extend .u-f--h1;
+			@extend .u-f--bold;
+			color: setcolor('primary');
 		}
 
 
-		img + ul {
-			margin-top: 25px;
-		}
+		&-button {
+			position: relative;
+			margin: 40px auto -22px;
+			width: fit-content;
 
 
-		li + li {
-			margin-top: 20px;
-		}
-
-
-		a {
-			display: flex;
-			gap: 5px;
-			align-items: center;
-			@extend .u-f--h3;
-			text-transform: uppercase;
-			color: setcolor("primary");
-
-			@include screen-sm {
-				gap: 20px;
-			}
-
-
-			img {
-				width: 14px;
-				height: 14px;
-
-				@include screen-sm {
-					width: 18px;
-					height: 18px;
-				}
+			span + img {
+				margin-left: 20px;
 			}
 		}
 	}
 
 
-
-	// Banner
-
-	&__banner {
+	&__astronauta {
 		position: absolute;
-		overflow: hidden;
 		z-index: 0;
-		top: 0;
-		right: 0;
-		left: 0;
-		height: 484px;
-		background-image: url('../img/images/img-404-background.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		@include screen-sm {
-			height: 715px;
-		}
-
-
-		&-image {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			max-width: 90%
-		}
+		right: -85px;
+		bottom: -65px;
 	}
 }

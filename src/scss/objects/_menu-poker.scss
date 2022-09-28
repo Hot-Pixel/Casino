@@ -3,106 +3,107 @@
 @use "../tools" as *;
 
 .poker {
-  &__section {
-    transition: all 0.3s ease;
+	&__section {
+		transition: all 0.3s ease;
 
-    &.tab-on {
-      transition: all 0.3s ease;
-      display: block;
-    }
-  }
+		&.tab-on {
+		transition: all 0.3s ease;
+		display: block;
+		}
+	}
 }
 
 .menuPoker {
-  padding: rem(25) 0;
-  background-color: setcolor("black", "dark2");
-  box-shadow: rem(1) rem(17) rem(22) rem(2) rgba(0, 0, 0, 1);
-  border-top: 1px solid setcolor("black", "dark5");
+	padding: rem(25) 0;
+	background-color: setcolor("black", "dark2");
+	box-shadow: rem(1) rem(17) rem(22) rem(2) rgba(0, 0, 0, 1);
+	border-top: 1px solid setcolor("black", "dark5");
 
-  &__wrapper {
-    justify-content: center;
-    align-items: center;
+	&__wrapper {
+		justify-content: center;
+		align-items: center;
 
-    &:first-of-type {
-      display: none;
+		&:first-of-type {
+			display: none;
 
-      @include tablet-h {
-        display: flex;
-      }
+			@include tablet-h {
+				display: flex;
+			}
 
-      .menuPoker__btn {
-        padding: 0 $lg;
+			.menuPoker__btn {
+				position: relative;
+				padding: 0 $lg;
 
-        @include screen-lg {
-          padding: 0 rem(80);
-        }
-      }
-    }
+				@include screen-lg {
+				padding: 0 rem(80);
+				}
+			}
+		}
 
-    &:last-of-type {
-      display: flex;
+		&:last-of-type {
+			display: flex;
 
-      @include tablet-h {
-        display: none;
-      }
+			@include tablet-h {
+				display: none;
+			}
 
-      .menuPoker__btn {
-        padding: 0 $sm;
-        margin: 0;
-        width: 100%;
+			.menuPoker__btn {
+				padding: 0 $sm;
+				margin: 0;
+				width: 100%;
 
-        img {
-          display: none;
-        }
-      }
-    }
-  }
+				img {
+				display: none;
+				}
+			}
+		}
+	}
 
-  &__btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-    background-color: transparent;
-    cursor: pointer;
+		background-color: transparent;
+		cursor: pointer;
 
-    &:hover,
-    &:active,
-    &:focus,
-    &.is-active {
-      span {
-        color: setcolor("primary");
-        transition: all 0.5s ease;
-      }
+		&:hover,
+		&:active,
+		&:focus,
+		&.is-active {
+			span {
+				color: setcolor("primary");
+				transition: all 0.5s ease;
+			}
 
-      svg path, svg g path, svg g rect, svg g line, svg g circle {
-        transition: all 0.5s ease;
-        stroke: setcolor('primary');
-      }
+			svg path, svg g path, svg g rect, svg g line, svg g circle {
+				transition: all 0.5s ease;
+				stroke: setcolor('primary');
+			}
 
-      img {
-        transition: all 0.5s ease;
-        opacity: 1;
-      }
-    }
+			img {
+				transition: all 0.5s ease;
+				opacity: 1;
+			}
+		}
 
-    span {
-      @extend .u-f--bold;
-      color: setcolor('gray', 'dark1');
-      margin: 0;
-      padding-left: rem(10);
-    }
+		span {
+			@extend .u-f--bold;
+			color: setcolor('gray', 'dark1');
+			margin: 0;
+			padding-left: rem(10);
+		}
 
-    img {
-      position: absolute;
-      bottom: rem(-30);
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-    }
-  }
+		img {
+			position: absolute;
+			bottom: rem(-30);
+			left: 50%;
+			transform: translateX(-50%);
+			opacity: 0;
+		}
+	}
 
-  a:not(:last-of-type) {
-    border-right: 1px solid setcolor('black', 'dark5');
-  }
+	a:not(:last-of-type) {
+		border-right: 1px solid setcolor('black', 'dark5');
+	}
 }
