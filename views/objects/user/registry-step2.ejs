@@ -1,5 +1,5 @@
-<section class="login stepTwo registry">
-    <div class="login__header">
+<section class=" stepTwo registry">
+    <div class="registry__header">
         <a href="/" class="login__header-logo">
             <img src="img/icons/icon-logo-black.svg" alt="">
         </a>
@@ -7,10 +7,10 @@
             <img src="img/icons/icon-close-register.svg" alt="">
         </a>
     </div>
-    <section class="login__layout registry__layout">
-        <form action="" method="post" class="login__form registry__form">
+    <section class="registry__layout">
+        <form action="" method="post" class="registry__form">
             <h2>¡Abre tu cuenta gratis y en tan solo 30 segundos!</h2>
-            <div class="login__container registry__container">
+            <div class="registry__container">
                 <div class="registry__steps">
                     <div class="registry__step active">
                         <p><span>1</span></p>
@@ -22,7 +22,7 @@
                         <p><span>3</span></p>
                     </div>
                 </div>
-                <div class="stepTwo__input registry__input login__input">
+                <div class="stepTwo__input">
                     <div class="stepTwo__radios">
                         <div class="stepTwo__radio">
                             <input type="radio" name="gender" value="man">
@@ -33,7 +33,9 @@
                             <button class="stepTwo__radioBtn">Mujer</button>
                         </div>
                     </div>
-                    <input type="text" name="name" required placeholder="Domicilio">
+                    <div class="stepTwo__address">
+                        <input type="text" name="name" required placeholder="Domicilio">
+                    </div>
                     <div class="stepTwo__dob">
                         <select class="stepTwo__dob-select" name="" id="daySelect">
                             <option selected disabled value="">Día</option>
@@ -187,15 +189,21 @@
                             <option selected disabled value="">Localidad</option>
                         </select>
                     </div>
-                    <select class="stepTwo__nationality" name="" id="">
-                        <option selected disabled value="">Nacionalidad</option>
-                    </select>
-                    <select class="stepTwo__province" name="" id="">
-                        <option selected disabled value="">Provincia</option>
-                    </select>
-                    <select class="stepTwo__region" name="" id="">
-                        <option selected disabled value="">Región fiscal</option>
-                    </select>
+                    <div class="stepTwo__nationality">
+                        <select name="" id="">
+                            <option selected disabled value="">Nacionalidad</option>
+                        </select>
+                    </div>
+                    <div class="stepTwo__province">
+                        <select name="" id="">
+                            <option selected disabled value="">Provincia</option>
+                        </select>
+                    </div>
+                    <div class="stepTwo__region">
+                        <select name="" id="">
+                            <option selected disabled value="">Región fiscal</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="registry__btns">
                     <button type="button" class="btn__white registry__btnStep1-back">
@@ -209,8 +217,20 @@
                 </div>
             </div>
         </form>
-        <div class="login__footer">
+        <div class="registry__login">
             <p>¿Ya estás registrado?<a href="#">Inicia sesión aquí</a></p>
         </div>
     </section>
+
+    <section class="registry__footer">
+        <button type="button" class="btn__white registry__btnStep1-back">
+            <img src="img/icons/icon-arrow-black.svg" alt="">
+            <span>ATRÁS</span>
+        </button>
+        <button type="button" class="btn__blue registry__btnStep3">
+            <span>CONTINUAR</span>
+            <img src="img/icons/icon-arrow-white.svg" alt="">
+        </button>
+    </section>
+
 </section>

@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .userMenuMobile .nav__title--left > p, .userMenuMobile .nav__title--left .nav__title-verify p, .userMenuMobile .nav__item--left p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .userMenuMobile .nav__title--left > p p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -302,36 +302,36 @@
   }
 }
 
-.u-f--h3, .appApuestas__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+.u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .appApuestas__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .appApuestas__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .appApuestas__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .appApuestas__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .appApuestas__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .appApuestas__header-subtitle, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
@@ -709,32 +709,32 @@
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 0.625rem 0.625rem;
+  padding: 0.9375rem 1.875rem;
   border-radius: 6.25rem;
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 .btn__red > *, .btn__blue > *, .btn__grey > *, .btn__darkGrey > *, .btn__grey--ghost > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
@@ -1609,14 +1609,8 @@ h5 {
   }
 }
 .depositScreen .deposit__block {
-  padding-top: 3.75rem;
   display: none;
   width: 100%;
-}
-@media only screen and (min-width: 1280px) {
-  .depositScreen .deposit__block {
-    padding-top: 7.5rem;
-  }
 }
 .depositScreen .deposit__block.active {
   display: block;
@@ -1633,6 +1627,7 @@ h5 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 7.5rem;
 }
 .depositScreen .deposit__title {
   display: flex;
@@ -1647,29 +1642,23 @@ h5 {
   margin-top: 1.875rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
   gap: 0.625rem;
 }
 @media only screen and (min-width: 1280px) {
   .deposit__grid {
-    grid-template-columns: 1fr 1fr;
     width: auto;
   }
 }
 .deposit__item {
   background-color: white;
   border-radius: 0.3125rem;
-  padding: 0.9375rem;
+  padding: 1.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-@media only screen and (min-width: 1280px) {
-  .deposit__item {
-    padding: 1.875rem;
-  }
 }
 .deposit__item img {
   object-fit: contain;
@@ -2663,11 +2652,12 @@ h5 {
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -90vw;
   z-index: 10;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  opacity: 0;
   padding: 0.9375rem;
   background-color: #13171d;
   flex-direction: column;
@@ -2693,6 +2683,107 @@ h5 {
 }
 .menuHeader--bottom a:not(:last-of-type) {
   margin-right: 0.625rem;
+}
+
+.userMenuMobile {
+  position: fixed;
+  bottom: 0;
+  right: -90vw;
+  z-index: 10;
+  height: 100vh;
+  width: 90vw;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0;
+  background-color: #F4F6F8;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .userMenuMobile {
+    display: none;
+  }
+}
+.userMenuMobile .nav__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0.9375rem 1.875rem;
+}
+.userMenuMobile .nav__title--left > p {
+  color: #13171d;
+  margin-bottom: 0.625rem;
+}
+.userMenuMobile .nav__title--left .nav__title-verify {
+  display: flex;
+}
+.userMenuMobile .nav__title--left .nav__title-verify img {
+  margin-right: 0.625rem;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.userMenuMobile .nav__title--left .nav__title-verify p {
+  color: #00d1bc;
+}
+.userMenuMobile .nav__title .userMenuMobile__collapse {
+  cursor: pointer;
+}
+.userMenuMobile .nav__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.9375rem 0.9375rem;
+  border-bottom: 1px solid #EAEDEF;
+  cursor: pointer;
+}
+.userMenuMobile .nav__item.nav-active p {
+  color: #00d1bc;
+}
+.userMenuMobile .nav__item.nav-active .nav__item-icon,
+.userMenuMobile .nav__item.nav-active .nav__item-icon g,
+.userMenuMobile .nav__item.nav-active .nav__item-icon path,
+.userMenuMobile .nav__item.nav-active .nav__item-icon g path,
+.userMenuMobile .nav__item.nav-active .nav__item-icon g circle {
+  stroke: #00d1bc;
+}
+.userMenuMobile .nav__item.nav-active .nav__item-arrow,
+.userMenuMobile .nav__item.nav-active .nav__item-arrow g,
+.userMenuMobile .nav__item.nav-active .nav__item-arrow path,
+.userMenuMobile .nav__item.nav-active .nav__item-arrow g path,
+.userMenuMobile .nav__item.nav-active .nav__item-arrow g circle {
+  fill: #00d1bc;
+}
+.userMenuMobile .nav__item--left {
+  display: flex;
+  align-items: center;
+}
+.userMenuMobile .nav__item--left p {
+  margin: 0;
+  margin-left: 0.9375rem;
+  color: #13171d;
+}
+.userMenuMobile .nav__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.9375rem;
+}
+.userMenuMobile .nav__btn a {
+  height: 2.8125rem;
+  padding: 0;
+  width: 90%;
+}
+.userMenuMobile__open {
+  cursor: pointer;
+}
+.userMenuMobile .userMenu__session {
+  display: flex;
+  align-items: center;
+  margin-left: 0.9375rem;
+}
+.userMenuMobile .userMenu__session span {
+  color: #13171d;
+  margin-left: 0.9375rem;
 }
 
 .appApuestas__header {

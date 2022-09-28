@@ -11,26 +11,120 @@
 }
 
 .registry {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: setcolor('gray', 'light2');
 
-  &__container {
-    padding: 0 $lg;
+  padding-bottom: rem(120);
+
+  @include screen-sm {
+    padding-bottom: 0;
+  }
+
+  &__header {
+    @extend %padding_horizontal_main;
+    padding-top: $sm;
+    padding-bottom: $sm;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+
+    width: 100%;
+    padding: $sm;
+    background-color: setcolor('gray', 'light2');
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    justify-content: center;
+    column-gap: rem(10);
+
+    @include screen-sm {
+      display: none;
+    }
+
+    button {
+      width: 50%;
+      padding: $sm 0;
+    }
+  }
+
+  &__layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__form {
-    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-top: rem(100);
+
+    @include screen-sm {
+      max-width: 50%;
+      align-items: center;
+      margin-top: rem(120);
+    }
 
     h2 {
+      @extend .u-f--h2, .u-f--bold;
+      color: setcolor("black", "dark1");
+      text-align: left;
+
+      margin-top: rem(-40);
       margin-bottom: $lg;
+
       max-width: 60%;
+      padding-left: $sm;
+
+      @include screen-sm {
+        text-align: center;
+        padding-left: 0;
+
+      }
+    }
+  }
+
+  &__container {
+    background-color: #f4f6f8;
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+
+    width: 100%;
+    padding: 0 $sm;
+
+    @include tablet {
+      padding: 0 $md;
+    }
+    @include screen-sm {
+      padding: 0 $lg;
+      border-radius: rem(30);
     }
   }
 
   &__steps {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+
+    padding-left: $sm;
 
     transform: translateY(-50%);
+
+    @include screen-sm {
+      padding-left: 0;
+      justify-content: center;
+    }
   }
 
   &__step {
@@ -91,23 +185,16 @@
     }
   }
 
-  &__input {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: row;
-    gap: $sm;
-
-    input {
-      margin: 0 !important;
-    }
-  }
-
   &__btns {
-    display: flex;
+    display: none;
     justify-content: center;
     column-gap: rem(10);
 
     transform: translateY(50%);
+
+    @include screen-sm {
+      display: flex;
+    }
 
     button {
       padding: $sm $md;
@@ -146,5 +233,17 @@
     background-repeat: no-repeat;
     background-position-x: calc(100% - 15px);
     background-position-y: 50%;
+  }
+
+  &__login {
+    margin-top: rem(45);
+    p {
+      color: setcolor("black", "dark1");
+    }
+    a {
+      @extend .u-f--bold;
+      color: setcolor('secondary');
+      padding-left: rem(5);
+    }
   }
 }

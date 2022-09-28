@@ -5,6 +5,25 @@
 .stepOne {
   background-image: url("../img/images/img-bg-register1.jpg");
 
+  &__input {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: $sm;
+
+    @include screen-sm {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    input {
+      margin: 0 !important;
+      text-align: center;
+
+      @include screen-sm {
+        text-align: left;
+      }
+    }
+  }
   .registry__accept {
     display: flex;
     justify-content: flex-start;

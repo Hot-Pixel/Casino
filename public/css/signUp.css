@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .stepFour__header p, .stepFour__header-title, .stepFour__header-subtitle, .registry__step p span, .registry input, .registry select, .registry button:not([type=button]), .login__form h2, .login__footer p:last-of-type, .u-f--bold p, .stepFour__header-title p, .stepFour__header-subtitle p, .registry__step p span p, .registry input p, .registry select p, .registry button:not([type=button]) p, .login__form h2 p, .login__footer p:last-of-type p {
+.u-f--bold, .stepFour__header p, .stepFour__header-title, .stepFour__header-subtitle, .registry__form h2, .registry__step p span, .registry input, .registry select, .registry button:not([type=button]), .registry__login a, .login__form h2, .login__footer p:last-of-type, .u-f--bold p, .stepFour__header-title p, .stepFour__header-subtitle p, .registry__form h2 p, .registry__step p span p, .registry input p, .registry select p, .registry button:not([type=button]) p, .registry__login a p, .login__form h2 p, .login__footer p:last-of-type p {
   font-weight: 700;
 }
 
@@ -268,36 +268,36 @@
   }
 }
 
-.u-f--h2, .login__form h2 {
+.u-f--h2, .registry__form h2, .login__form h2 {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .login__form h2 {
+  .u-f--h2, .registry__form h2, .login__form h2 {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .login__form h2 {
+  .u-f--h2, .registry__form h2, .login__form h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .login__form h2 {
+  .u-f--h2, .registry__form h2, .login__form h2 {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .login__form h2 {
+  .u-f--h2, .registry__form h2, .login__form h2 {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .login__form h2 {
+  .u-f--h2, .registry__form h2, .login__form h2 {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .login__form h2 {
+  .u-f--h2, .registry__form h2, .login__form h2 {
     font-size: 2rem;
   }
 }
@@ -471,42 +471,42 @@
   display: none !important;
 }
 
-.login {
+.registry__header, .login {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .login {
+  .registry__header, .login {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .login {
+  .registry__header, .login {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .login {
+  .registry__header, .login {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .login {
+  .registry__header, .login {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .login {
+  .registry__header, .login {
     padding-left: var(--horizontal-main-2xl);
     padding-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .login {
+  .registry__header, .login {
     padding-left: var(--horizontal-main-3xl);
     padding-right: var(--horizontal-main-3xl);
   }
@@ -1071,21 +1071,109 @@ h5 {
   display: block;
 }
 
-.registry__container {
-  padding: 0 3.75rem;
+.registry {
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #EAEDEF;
+  padding-bottom: 7.5rem;
+}
+@media only screen and (min-width: 1280px) {
+  .registry {
+    padding-bottom: 0;
+  }
+}
+.registry__header {
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.registry__footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  padding: 0.9375rem;
+  background-color: #EAEDEF;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  column-gap: 0.625rem;
+}
+@media only screen and (min-width: 1280px) {
+  .registry__footer {
+    display: none;
+  }
+}
+.registry__footer button {
+  width: 50%;
+  padding: 0.9375rem 0;
+}
+.registry__layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .registry__form {
-  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 6.25rem;
+}
+@media only screen and (min-width: 1280px) {
+  .registry__form {
+    max-width: 50%;
+    align-items: center;
+    margin-top: 7.5rem;
+  }
 }
 .registry__form h2 {
+  color: #13171d;
+  text-align: left;
+  margin-top: -2.5rem;
   margin-bottom: 3.75rem;
   max-width: 60%;
+  padding-left: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .registry__form h2 {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+.registry__container {
+  background-color: #f4f6f8;
+  box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  width: 100%;
+  padding: 0 0.9375rem;
+}
+@media only screen and (min-width: 768px) {
+  .registry__container {
+    padding: 0 1.875rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .registry__container {
+    padding: 0 3.75rem;
+    border-radius: 1.875rem;
+  }
 }
 .registry__steps {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  padding-left: 0.9375rem;
   transform: translateY(-50%);
+}
+@media only screen and (min-width: 1280px) {
+  .registry__steps {
+    padding-left: 0;
+    justify-content: center;
+  }
 }
 .registry__step {
   display: flex;
@@ -1127,20 +1215,16 @@ h5 {
   border: 0.25rem solid #99e4de;
   background-color: #00d1bc;
 }
-.registry__input {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-flow: row;
-  gap: 0.9375rem;
-}
-.registry__input input {
-  margin: 0 !important;
-}
 .registry__btns {
-  display: flex;
+  display: none;
   justify-content: center;
   column-gap: 0.625rem;
   transform: translateY(50%);
+}
+@media only screen and (min-width: 1280px) {
+  .registry__btns {
+    display: flex;
+  }
 }
 .registry__btns button {
   padding: 0.9375rem 1.875rem;
@@ -1171,9 +1255,39 @@ h5 {
   background-position-x: calc(100% - 15px);
   background-position-y: 50%;
 }
+.registry__login {
+  margin-top: 2.8125rem;
+}
+.registry__login p {
+  color: #13171d;
+}
+.registry__login a {
+  color: #00d1bc;
+  padding-left: 0.3125rem;
+}
 
 .stepOne {
   background-image: url("../img/images/img-bg-register1.jpg");
+}
+.stepOne__input {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: row;
+  gap: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .stepOne__input {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.stepOne__input input {
+  margin: 0 !important;
+  text-align: center;
+}
+@media only screen and (min-width: 1280px) {
+  .stepOne__input input {
+    text-align: left;
+  }
 }
 .stepOne .registry__accept {
   display: flex;
@@ -1194,6 +1308,16 @@ h5 {
 
 .stepTwo {
   background-image: url("../img/images/img-bg-register2.jpg");
+}
+.stepTwo__input {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 0.625rem;
+  padding-bottom: 1.875rem;
+}
+.stepTwo__input div {
+  width: 100%;
 }
 .stepTwo__radios {
   display: flex;
@@ -1240,17 +1364,23 @@ h5 {
   column-gap: 0.625rem;
 }
 .stepTwo__location-cp {
-  width: 33%;
+  width: 34%;
 }
 .stepTwo__location-city {
-  width: 64%;
+  width: 66%;
 }
-.stepTwo__region {
-  grid-column: 1/3;
+.stepTwo__nationality select, .stepTwo__nationality input, .stepTwo__province select, .stepTwo__province input, .stepTwo__region select, .stepTwo__region input, .stepTwo__address select, .stepTwo__address input {
+  width: 100%;
 }
 
 .stepThree {
   background-image: url("../img/images/img-bg-register3.jpg");
+}
+.stepThree__input {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  gap: 0.625rem;
 }
 
 .stepFour p {
