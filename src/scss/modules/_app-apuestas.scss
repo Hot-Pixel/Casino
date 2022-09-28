@@ -4,7 +4,7 @@
 
 
 .appApuestas {
-	@extend %margin_top_large;
+	// @extend %margin_top_large;
 
 
 
@@ -26,7 +26,7 @@
 		}
 
 
-		div {
+		&-content {
 			position: relative;
 			z-index: 1;
 			width: 80%;
@@ -37,7 +37,7 @@
 		}
 
 
-		& > img {
+		&-image {
 			position: relative;
 			left: -10%;
 			right: -10%;
@@ -56,24 +56,20 @@
 
 		&-title {
 			@extend .u-f--h1;
-			font-weight: bold;
+			@extend .u-f--bold;
 		}
 
 
 		&-subtitle {
 			@extend .u-f--h3;
-			font-weight: bold;
+			@extend .u-f--bold;
 			opacity: .6;
 		}
 
 
-		* + a {
-			margin-top: 25px;
-		}
-
-
-		a {
+		&-button {
 			display: inline-block;
+			margin-top: 25px;
 			padding: 7.5px 36px 7.5px 7.5px;
 			text-transform: uppercase;
 
@@ -102,7 +98,7 @@
 
 			&-title {
 				@extend .u-f--h2;
-				font-weight: bold;
+				@extend .u-f--bold;
 				text-align: center;
 			}
 
@@ -126,19 +122,24 @@
 			}
 
 
-			.appApuestas__column {
+			.appApuestas__star {
 				text-align: center;
 
 
-				img {
+				&-image {
 					margin: auto;
 					max-width: 250px;
 				}
 
 
-				img + p {
+				&-title {
 					@extend .u-f--h4;
-					font-weight: bold;
+					@extend .u-f--bold;
+				}
+
+
+				&-subtitle {
+					margin-top: 10px;
 				}
 			}
 		}
@@ -159,13 +160,13 @@
 			@include screen-sm {
 				bottom: -300px;
 				margin-top: -190px;
-				margin-bottom: 300px;
+				margin-bottom: 360px;
 			}
 
 
 			&-title {
 				@extend .u-f--h4;
-				font-weight: bold;
+				@extend .u-f--bold;
 				text-align: center;
 			}
 
@@ -179,16 +180,16 @@
 				margin-left: auto;
 
 				@include screen-sm {
-					grid-template-columns: repeat(4, 1fr);
+					grid-template-columns: repeat(2, 1fr);
 					max-width: 1120px;
 				}
 			}
 
 
-			.appApuestas__column {
+			.appApuestas__qr {
 
 
-				& > img {
+				&-image {
 					display: none;
 
 					@include screen-sm {
@@ -200,12 +201,14 @@
 				}
 
 
-				a {
+				&-button {
 					display: flex;
 					gap: 10px;
 					justify-content: space-between;
 					padding: 12px 16px 12px 50px;
+					width: 100%;
 					text-align: center;
+					text-transform: uppercase;
 
 
 					span {

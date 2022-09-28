@@ -6,6 +6,7 @@
 .error404 {
 	position: relative;
 	display: flex;
+	@extend .u-f--bold;
 	flex-direction: column;
 	justify-content: space-between;
 	@extend %margin_top_large;
@@ -33,12 +34,8 @@
 		}
 
 
-		&-title + p {
+		&-subtitle {
 			margin-top: 10px;
-		}
-
-
-		p {
 			@extend .u-f--h3;
 		}
 	}
@@ -128,7 +125,7 @@
 		}
 
 
-		img {
+		&-image {
 			position: absolute;
 			right: 0;
 			bottom: 0;

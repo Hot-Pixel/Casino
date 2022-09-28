@@ -13,6 +13,7 @@
 
 	&__title {
 		@extend .u-f--h1;
+		@extend .u-f--bold;
 		text-align: center;
 
 		@include screen-sm {
@@ -74,6 +75,7 @@
 			bottom: -1.5em;
 			left: rem(40);
 			padding: $sm rem(40);
+			text-transform: uppercase;
 
 
 			span + img {
