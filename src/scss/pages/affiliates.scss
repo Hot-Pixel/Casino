@@ -1,0 +1,40 @@
+// SETTINGS
+@use '../settings';
+
+// TOOLS
+@use '../tools';
+
+// GENERIC
+@use '../base';
+
+// COMPONENTS
+@use '../components/icon__title';
+@use '../components/header__user';
+@use '../components/svg-icon';
+@use '../components/buttons';
+@use '../components/breadcrumbs';
+@use '../components/deposits';
+@use '../components/user';
+@use '../components/hover';
+
+
+// OBJECTS
+@use '../objects/filter-slotsAll';
+@use '../objects/grid-games';
+@use '../objects/user/deposit';
+@use '../objects/user/deposit__step1';
+@use '../objects/user/deposit__step2';
+@use '../objects/user/deposit__step3';
+@use '../objects/user/common';
+
+//LAYOUT
+@use '../layout/header';
+@use '../layout/footer';
+@use '../layout/popUp-balance';
+@use '../layout/menu-header';
+
+// MODULES
+@use '../modules/affiliates';
+
+// HELPER
+@use '../helper';
