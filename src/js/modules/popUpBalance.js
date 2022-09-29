@@ -1,11 +1,13 @@
 import { gsap } from "gsap";
 
-const popUpCloseBtn = document.querySelector(".popUpBalance__closeBtn");
-const popUpOpenBtn = document.querySelector(".popUpBalance__openBtn");
-const popUpMenu = document.querySelector(".popUpBalance");
 
 function popUpSaldo() {
-  if(!popUpSaldo) return;
+  
+  const popUpCloseBtn = document.querySelector(".popUpBalance__closeBtn");
+  const popUpOpenBtn = document.querySelector(".popUpBalance__openBtn");
+  const popUpMenu = document.querySelector(".popUpBalance");
+
+  if(!popUpMenu) return;
   
   popUpOpenBtn.addEventListener("click", () => {
     gsap
