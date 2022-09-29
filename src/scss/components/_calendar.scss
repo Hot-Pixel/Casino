@@ -1,0 +1,8 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.flatpickr-calendar {
+    border-radius: rem(10) !important;
+    background: setcolor('gray', 'light1') !important;
+}
