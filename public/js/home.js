@@ -1,15 +1,42 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-0f83d658.js';
+import { c as carouselJackpot, a as collapseGrid, b as carouselGrid } from './collapseGridHalf-4cd488fb.js';
 import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-f069f291.js';
 
 function carouselBanner() {
-  var carousel = new Splide(".bannerCarousel .splide", {
-    perPage: 1,
-    arrow: true,
-    pagination: false,
-  });
+  const bannerData = JSON.parse(document.querySelector('#bannerData').textContent);
+  bannerData.timeToCache = new Date().toString();
+  getList()
+    .then(data => {
+      generateSlides(data);
+      initSplide();
+    });
 
-  carousel.mount();
+  function generateSlides(data) {
+    const template = document.getElementById("banner-slide-template");
+    const target = document.querySelector('.splide__list');
+    data.forEach(slide => {
+      const clone = template.content.firstElementChild.cloneNode(true);
+      clone.innerHTML = clone.innerHTML
+        .replaceAll('{title}', slide.txt.title)
+        .replaceAll('{body}', slide.txt.description)
+        .replaceAll('{link}', slide.url)
+        .replaceAll('{cta}', slide.txt.button)
+        .replaceAll('{imgDesk}', slide.img.bg)
+        .replaceAll('{imgMobile}', slide.img.icon)
+        ;
+      target.appendChild(clone);
+    });
+  }
+
+  function initSplide() {
+    var carousel = new Splide(".bannerCarousel .splide", {
+      perPage: 1,
+      arrow: true,
+      pagination: false,
+    });
+
+    carousel.mount();
+  }
 }
 
 function accordionDeposit() {
@@ -87,12 +114,8 @@ function carouselBets() {
 
 window.addEventListener("load", () => {
   accordionDeposit();
-  carouselBanner();
   carouselJackpot();
   carouselBets();
-  document.querySelectorAll('.gridFull .splide').forEach(grid => {
-    carouselGrid(grid);
-  });
   popUpSaldo();
   collapseGrid();
   marginHeader();
@@ -101,5 +124,10 @@ window.addEventListener("load", () => {
   depositCopy();
   menuHeaderMobile();
   userMenuMobile();
+
+  document.querySelectorAll('.gridFull .splide').forEach(grid => {
+    carouselGrid(grid);
+  });
+  carouselBanner();
 });
 //# sourceMappingURL=home.js.map

@@ -1,4 +1,4 @@
-import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-0f83d658.js';
+import { c as carouselJackpot, b as carouselGrid, a as collapseGrid } from './collapseGridHalf-4cd488fb.js';
 import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-f069f291.js';
 import './splide.esm-20cd2e1c.js';
 

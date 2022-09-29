@@ -14,12 +14,8 @@ import userMenuMobile from "./modules/userMenuMobile.js";
 
 window.addEventListener("load", () => {
   accordionDeposit();
-  carouselBanner();
   carouselJackpot();
   carouselBets();
-  document.querySelectorAll('.gridFull .splide').forEach(grid => {
-    carouselGrid(grid);
-  });
   popUpSaldo();
   collapseGrid();
   marginHeader();
@@ -27,7 +23,12 @@ window.addEventListener("load", () => {
   depositAmmount();
   depositCopy();
   menuHeaderMobile();
-  userMenuMobile()
+  userMenuMobile();
+
+  document.querySelectorAll('.gridFull .splide').forEach(grid => {
+    carouselGrid(grid);
+  });
+  carouselBanner();
 });
 
 
