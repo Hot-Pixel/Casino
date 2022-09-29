@@ -10,33 +10,201 @@
         </div>
         <div class="bannerCarousel__slider splide__track">
             <ul class="splide__list">
-                <% data.forEach( e => { %>
-                    <li class="bannerCarousel__slide splide__slide">
-                        <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
-                            <div class="bannerCarousel__slide-content">
-                                <p><%= e.title %></p>
-                                <p><%= e.body %></p>
-                            </div>
-                            <div class="bannerCarousel__slide-breadcrumb">
-                                <p>Slots</p>
-                            </div>
-                            <a href="">
-                                <button class="btn__red">
-                                    <span>¡JUEGA AHORA!</span>
-                                    <img src="img/icons/icon-btn-arrow.svg" alt="">
-                                </button>
-                            </a>
-                        </div>
-                        <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
-                            <picture>
-                                <source media="(min-width: 1280px)" srcset="img/images/img-banner-home.png">
-                                <img src="img/images/img-banner-home-mobile.png" alt="">
-                            </picture>
-                        </div>
-                    </li>
-                <% }) %>
             </ul>
         </div>
     </div>
 
 </section>
+<template id="banner-slide-template">
+    <li class="bannerCarousel__slide splide__slide">
+        <div class="bannerCarousel__slide--left bannerCarousel__slide-wrapper">
+            <div class="bannerCarousel__slide-content">
+                <p class="bannerCarousel__slide-title">{title}</p>
+                <p class="bannerCarousel__slide-body">{body}</p>
+            </div>
+            <a class="btn__red" href="{link}" title="{title}">
+                <span class="bannerCarousel__btn-text">{cta}</span>
+                <img src="img/icons/icon-btn-arrow.svg" alt="{title}">
+            </a>
+        </div>
+        <div class="bannerCarousel__slide--right bannerCarousel__slide-wrapper">
+            <picture>
+                <source media="(min-width: 1280px)" srcset="{imgDesk}">
+                <img src="{imgMobile}" alt="">
+            </picture>
+        </div>
+    </li>
+</template>
+<%# Banners in production are loaded asynchronouly, the function getList() simulates the fetch that get the banners %> 
+<script id="bannerData"
+    type="application/json">{"partnerId": "37", "siteId": "2",  "roomId": "0", "roomName": "classic", "pageId": "63731", "pageUrl": "/index.html", "groups": "17,3", "moduleId": "703", "type": "html", "locale": "es-ES", "currency": "EUR", "type": "html" }</script>
+<script>
+    function getList() {
+        return new Promise((resolve, reject) => {
+            resolve([
+            {
+                    "url": "/register.html",
+                    "bannerId": 1000090,
+                    "locale": "es-ES",
+                    "txt": {
+                        "title": "Descubre a Emerald King Rainbow Road",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor",
+                        "button": "¡JUEGA AHORA!",
+                        "titlePosition": "TOP",
+                        "textPosition": "LEFT"
+                    },
+                    "img": {
+                        "bg": "https://www.casinobarcelona.es/bimg/1000090/es-ES/bg.png?ts=1663076723211",
+                        "icon": "https://www.casinobarcelona.es/bimg/1000090/es-ES/icon.png?ts=1664464535951"
+                    },
+                    "styles": {
+                        "title": "font-size9",
+                        "titleInline": "padding-top:0em;padding-right:0em;padding-bottom:0em;padding-left:0em;margin-top:0em;margin-right:0em;margin-bottom:0em;margin-left:0em;line-height:1.0;font-family:Arial;color:#FFF;background-color:rgba(255,255,255,0.0);letter-spacing:0px;text-decoration:none;text-shadow:2px 2px 3px #BCBCBC;text-align:left;font-weight:bold;font-style:normal",
+                        "description": "font-size6",
+                        "descriptionInline": "padding-top:0.3em;padding-right:0em;padding-bottom:0.3em;padding-left:0em;margin-top:0em;margin-right:0em;margin-bottom:0em;margin-left:0em;font-family:Arial;line-height:1.1;letter-spacing:0px;color:#FFF;background-color:rgba(255,255,255,0.0);text-decoration:none;text-shadow:0px 0px 0px transparent;text-align:left;font-weight:bold;font-style:normal",
+                        "button": "font-size6",
+                        "buttonInline": "border-top-left-radius:0.2em;border-top-right-radius:0.2em;border-bottom-right-radius:0.2em;border-bottom-left-radius:0.2em;float:none;padding-top:0.5em;padding-right:0.6em;padding-bottom:0.5em;padding-left:0.6em;margin-top:0.3em;margin-right:0em;margin-bottom:0em;margin-left:0em;font-family:Arial;line-height:1.0;text-decoration:none;letter-spacing:0px;text-align:left;font-weight:bold;font-style:normal;background-color:#e67e22;color:#FFF;text-shadow:0px 1px 2px rgba(0, 0, 0, 0.25);box-shadow:1px 1px 1px 0px #333;-webkit-box-shadow:1px 1px 1px 0 #333;border-bottom: 3px solid #C96C1B;border-top: 0px solid transparent;border-right: 0px solid transparent;border-left: 0px solid transparent",
+                        "banner": "height:40;marginLeft:0;marginTop:0;marginRight:0;marginBottom:0"
+                    },
+                    "effects": {
+                        "show": {
+                            "title": {
+                                "name": "elastic",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "description": {
+                                "name": "zoomInRight",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "button": {
+                                "name": "rotateInUpRight",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "bg": {
+                                "name": "fadeIn",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "icon": {
+                                "name": "fadeInDown",
+                                "duration": 0,
+                                "delay": 0
+                            }
+                        },
+                        "hide": {
+                            "title": {
+                                "name": "fadeOut",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "description": {
+                                "name": "fadeOut",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "button": {
+                                "name": "fadeOut",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "bg": {
+                                "name": "fadeOut",
+                                "duration": 1,
+                                "delay": 0
+                            },
+                            "icon": {
+                                "name": "fadeOut",
+                                "duration": 0,
+                                "delay": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "url": "/register.html",
+                    "bannerId": 1000090,
+                    "locale": "es-ES",
+                    "txt": {
+                        "title": "Descubre a Emerald King Rainbow Road",
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet dignissim tortor",
+                        "button": "¡JUEGA AHORA!",
+                        "titlePosition": "TOP",
+                        "textPosition": "LEFT"
+                    },
+                    "img": {
+                        "bg": "https://www.casinobarcelona.es/bimg/1000090/es-ES/bg.png?ts=1663076723211",
+                        "icon": "https://www.casinobarcelona.es/bimg/1000090/es-ES/icon.png?ts=1664464535951"
+                    },
+                    "styles": {
+                        "title": "font-size9",
+                        "titleInline": "padding-top:0em;padding-right:0em;padding-bottom:0em;padding-left:0em;margin-top:0em;margin-right:0em;margin-bottom:0em;margin-left:0em;line-height:1.0;font-family:Arial;color:#FFF;background-color:rgba(255,255,255,0.0);letter-spacing:0px;text-decoration:none;text-shadow:2px 2px 3px #BCBCBC;text-align:left;font-weight:bold;font-style:normal",
+                        "description": "font-size6",
+                        "descriptionInline": "padding-top:0.3em;padding-right:0em;padding-bottom:0.3em;padding-left:0em;margin-top:0em;margin-right:0em;margin-bottom:0em;margin-left:0em;font-family:Arial;line-height:1.1;letter-spacing:0px;color:#FFF;background-color:rgba(255,255,255,0.0);text-decoration:none;text-shadow:0px 0px 0px transparent;text-align:left;font-weight:bold;font-style:normal",
+                        "button": "font-size6",
+                        "buttonInline": "border-top-left-radius:0.2em;border-top-right-radius:0.2em;border-bottom-right-radius:0.2em;border-bottom-left-radius:0.2em;float:none;padding-top:0.5em;padding-right:0.6em;padding-bottom:0.5em;padding-left:0.6em;margin-top:0.3em;margin-right:0em;margin-bottom:0em;margin-left:0em;font-family:Arial;line-height:1.0;text-decoration:none;letter-spacing:0px;text-align:left;font-weight:bold;font-style:normal;background-color:#e67e22;color:#FFF;text-shadow:0px 1px 2px rgba(0, 0, 0, 0.25);box-shadow:1px 1px 1px 0px #333;-webkit-box-shadow:1px 1px 1px 0 #333;border-bottom: 3px solid #C96C1B;border-top: 0px solid transparent;border-right: 0px solid transparent;border-left: 0px solid transparent",
+                        "banner": "height:40;marginLeft:0;marginTop:0;marginRight:0;marginBottom:0"
+                    },
+                    "effects": {
+                        "show": {
+                            "title": {
+                                "name": "elastic",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "description": {
+                                "name": "zoomInRight",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "button": {
+                                "name": "rotateInUpRight",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "bg": {
+                                "name": "fadeIn",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "icon": {
+                                "name": "fadeInDown",
+                                "duration": 0,
+                                "delay": 0
+                            }
+                        },
+                        "hide": {
+                            "title": {
+                                "name": "fadeOut",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "description": {
+                                "name": "fadeOut",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "button": {
+                                "name": "fadeOut",
+                                "duration": 0,
+                                "delay": 0
+                            },
+                            "bg": {
+                                "name": "fadeOut",
+                                "duration": 1,
+                                "delay": 0
+                            },
+                            "icon": {
+                                "name": "fadeOut",
+                                "duration": 0,
+                                "delay": 0
+                            }
+                        }
+                    }
+                }
+            ]);
+        });
+    }
+</script>

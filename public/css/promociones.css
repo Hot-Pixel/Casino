@@ -2019,18 +2019,8 @@ h5 {
 .header .nav__promo {
   padding-right: 0;
 }
-.header .header__logged.active {
-  display: flex;
-}
 .header .header__logged-item {
   margin-left: 0.9375rem;
-}
-.header .header__noLog.active {
-  display: flex;
-}
-.header .header__noLog,
-.header .header__logged {
-  display: none;
 }
 
 .header__mobile {
@@ -2076,11 +2066,8 @@ h5 {
   padding: 0.625rem 1.25rem;
 }
 .header__mobile-noLog {
-  display: none;
   column-gap: 0.625rem;
-}
-.header__mobile-noLog.menu-active {
-  display: flex !important;
+  display: flex;
 }
 .header__mobile-noLog a {
   width: 50%;
@@ -2094,11 +2081,8 @@ h5 {
   color: black;
 }
 .header__mobile-logged {
-  display: none;
   justify-content: space-between;
-}
-.header__mobile-logged.menu-active {
-  display: flex !important;
+  display: flex;
 }
 
 .header.header--light {

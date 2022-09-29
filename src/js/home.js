@@ -12,27 +12,10 @@ import depositCopy from "./modules/depositCopy.js";
 import menuHeaderMobile from "./modules/menuHeaderMobile.js";
 import userMenuMobile from "./modules/userMenuMobile.js";
 
-let carouselGridA, carouselGridB;
-
-let data =[
-  {
-    id: ".gridFullA .splide",
-    name: carouselGridA
-  },
-  {
-    id: ".gridFullB .splide",
-    name: carouselGridB
-  }
-]
-
-
 window.addEventListener("load", () => {
   accordionDeposit();
-  carouselBanner();
   carouselJackpot();
   carouselBets();
-  carouselGrid(data[0].id, data[0].name);
-  carouselGrid(data[1].id, data[1].name);
   popUpSaldo();
   collapseGrid();
   marginHeader();
@@ -40,7 +23,12 @@ window.addEventListener("load", () => {
   depositAmmount();
   depositCopy();
   menuHeaderMobile();
-  userMenuMobile()
+  userMenuMobile();
+
+  document.querySelectorAll('.gridFull .splide').forEach(grid => {
+    carouselGrid(grid);
+  });
+  carouselBanner();
 });
 
 
