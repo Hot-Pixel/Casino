@@ -104,24 +104,11 @@
   }
 
   .header__logged {
-    &.active {
-      display: flex;
-    }
     &-item {
       margin-left: $sm;
     }
   }
 
-  .header__noLog {
-    &.active {
-      display: flex;
-    }
-  }
-
-  .header__noLog,
-  .header__logged {
-    display: none;
-  }
 }
 
 .header__mobile {
@@ -175,12 +162,8 @@
   }
 
   &-noLog {
-    display: none;
     column-gap: rem(10);
-
-    &.menu-active {
-      display: flex !important;
-    }
+    display: flex;
 
     a {
       width: 50%;
@@ -197,12 +180,8 @@
   }
 
   &-logged {
-    display: none;
     justify-content: space-between;
-
-    &.menu-active {
-      display: flex !important;
-    }
+    display: flex;
   }
 }
 

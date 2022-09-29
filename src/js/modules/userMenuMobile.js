@@ -7,7 +7,10 @@ function userMenuMobile() {
   );
   const userMenuMobile = document.querySelector(".userMenuMobile");
 
-  userMenuMobileOpen.addEventListener("click", () => {
+  if(!userMenuMobile) return;
+
+  userMenuMobileOpen.addEventListener("click", e => {
+    e.preventDefault();
     userMenuMobile.style.display = "flex";
     gsap.to(userMenuMobile, { right: "0", opacity: 1, duration: 0.7 });
   });
