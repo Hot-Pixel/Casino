@@ -19,8 +19,8 @@
 
 
 // OBJECTS
-@use '../objects/filter-slotsAll';
-@use '../objects/grid-games';
+@use '../objects/filter-favorites';
+@use '../objects/grid-favorites';
 @use '../objects/user/deposit';
 @use '../objects/user/deposit__step1';
 @use '../objects/user/deposit__step2';
@@ -34,8 +34,7 @@
 @use '../layout/menu-header';
 
 // MODULES
-@use '../modules/banner';
-@use '../modules/favorites';
+@use '../modules/banner-favorites';
 @use '../modules/text-block';
 
 // HELPER

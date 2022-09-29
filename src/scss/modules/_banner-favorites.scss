@@ -1,0 +1,50 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.bannerFavorites {
+	@extend %margin_top_medium;
+	text-align: center;
+
+
+	&__bgImage {
+		height: 294px;
+		background-image: url('../img/images/img-banner-favorites-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+
+	&__heart {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: -.5em auto 0;
+		font-size: 95px;
+		width: 1em;
+		height: 1em;
+		border-radius: 1em;
+		background-color: setcolor('primary');
+		box-shadow: 0 0 60px rgba( black, 24% );
+
+
+		img {
+			margin-top: 10px;
+			width: 44px;
+		}
+	}
+
+
+	&__title {
+		@extend .u-f--h1;
+		@extend .u-f--bold;
+		color: setcolor('primary');
+	}
+
+
+	&__breadcrumb {
+		margin-top: 10px;
+	}
+}
