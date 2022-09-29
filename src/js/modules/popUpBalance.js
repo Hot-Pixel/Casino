@@ -7,7 +7,7 @@ function popUpSaldo() {
   const popUpOpenBtn = document.querySelector(".popUpBalance__openBtn");
   const popUpMenu = document.querySelector(".popUpBalance");
 
-  if(!popUpMenu) return;
+  if(!popUpOpenBtn) return;
   
   popUpOpenBtn.addEventListener("click", () => {
     gsap
