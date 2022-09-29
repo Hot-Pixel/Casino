@@ -1,5 +1,5 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-35bb599b.js';
+import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-0f83d658.js';
 import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-f069f291.js';
 
 function carouselBanner() {
@@ -85,27 +85,14 @@ function carouselBets() {
   carousel.mount();
 }
 
-let carouselGridA, carouselGridB;
-
-let data =[
-  {
-    id: ".gridFullA .splide",
-    name: carouselGridA
-  },
-  {
-    id: ".gridFullB .splide",
-    name: carouselGridB
-  }
-];
-
-
 window.addEventListener("load", () => {
   accordionDeposit();
   carouselBanner();
   carouselJackpot();
   carouselBets();
-  carouselGrid(data[0].id, data[0].name);
-  carouselGrid(data[1].id, data[1].name);
+  document.querySelectorAll('.gridFull .splide').forEach(grid => {
+    carouselGrid(grid);
+  });
   popUpSaldo();
   collapseGrid();
   marginHeader();
