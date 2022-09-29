@@ -2739,7 +2739,7 @@ h5 {
   color: #ffffff;
   background-color: #2d3239;
 }
-.boardGame__board-number.selected {
+.boardGame__board-number.is-active {
   color: #25292f;
   background-color: #ff293e;
 }

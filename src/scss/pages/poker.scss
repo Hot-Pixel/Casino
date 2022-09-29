@@ -14,6 +14,7 @@
 @use '../components/red-cta';
 @use '../components/deposits';
 @use '../components/user';
+@use '../components/table';
 
 // OBJECTS
 @use '../objects/menu-poker';
@@ -44,8 +45,10 @@
 @use '../modules/txt-2Cols';
 @use '../modules/banner-poker-satelites';
 @use '../modules/grid-half';
+@use '../modules/grid-1-2-cols';
 @use '../modules/poker-satelites-online';
 @use '../modules/poker-satelites-cep';
+@use '../modules/block-promo';
 
 // HELPER
 @use '../helper';
