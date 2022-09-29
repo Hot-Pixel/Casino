@@ -132,7 +132,11 @@ gulp.task("watch", async () => {
 gulp.task("bundleEjs", async () => {
   gulp
     .src(paths.ejs.src)
-    .pipe(ejsCompiler())
+    .pipe(ejsCompiler({
+      player: {
+        isLogged: false
+      }
+    }))
     .pipe(rename({ extname: ".html" }))
     .pipe(gulp.dest(paths.ejs.dest));
 });
