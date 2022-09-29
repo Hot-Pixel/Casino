@@ -1,30 +1,31 @@
-<section class="depositScreen">
+<% if(player.isLogged){ %>
+    <section class="depositScreen">
 
-    <div class="deposit">
+        <div class="deposit">
 
-        <section class="deposit__header">
-            <img src="img/user/logo/logo-casino-dark.png" alt="">
-            <img src="img/user/icon/icon-menu-close.svg" alt="" class="deposit__btn-close">
-        </section>
+            <section class="deposit__header">
+                <img src="img/user/logo/logo-casino-dark.png" alt="">
+                <img src="img/user/icon/icon-menu-close.svg" alt="" class="deposit__btn-close">
+            </section>
 
-        <div class="deposit__block deposit__step1 active">
-            <%- include ('../objects/user/deposit-step1') %>
+            <div class="deposit__block deposit__step1 active">
+                <%- include ('../objects/user/deposit-step1') %>
+            </div>
+
+            <div class="deposit__block deposit__step2">
+                <%- include ('../objects/user/deposit-step2/deposit-skrill') %>
+                <%- include ('../objects/user/deposit-step2/deposit-paypal') %>
+                <%- include ('../objects/user/deposit-step2/deposit-debit') %>
+                <%- include ('../objects/user/deposit-step2/deposit-transfer') %>
+                <%- include ('../objects/user/deposit-step2/deposit-paysafe') %>
+                <%- include ('../objects/user/deposit-step2/deposit-neteller') %>
+            </div>
+
+            <div class="deposit__block deposit__step3">
+                <%- include ('../objects/user/deposit-step3') %>
+            </div>
+
         </div>
 
-        <div class="deposit__block deposit__step2">
-            <%- include ('../objects/user/deposit-step2/deposit-skrill') %>
-            <%- include ('../objects/user/deposit-step2/deposit-paypal') %>
-            <%- include ('../objects/user/deposit-step2/deposit-debit') %>
-            <%- include ('../objects/user/deposit-step2/deposit-transfer') %>
-            <%- include ('../objects/user/deposit-step2/deposit-paysafe') %>
-            <%- include ('../objects/user/deposit-step2/deposit-neteller') %>
-        </div>
-
-        <div class="deposit__block deposit__step3">
-            <%- include ('../objects/user/deposit-step3') %>
-        </div>
-
-    </div>
-
-</section>
-
+    </section>
+<% } %>

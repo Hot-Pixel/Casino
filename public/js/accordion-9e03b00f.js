@@ -1,25 +1,23 @@
-import { gsap } from "gsap";
+import { g as gsapWithCSS } from './userMenuMobile-f069f291.js';
 
-function accordionDeposit() {
-    const accorArrows = document.getElementsByClassName("accorArrowDepo");
-    const accorBody = document.getElementsByClassName("tc__body");
-
-    if(!accorArrows) return;
+function accordion() {
+    const accorArrows = document.getElementsByClassName("accorArrow");
+    const accorBody = document.getElementsByClassName("body");
 
     for (let n = 0; n < accorArrows.length; n++) {
       accorArrows[n].addEventListener("click", () => {
         if (accorBody[n].classList.contains("active")) {
-          gsap
+          gsapWithCSS
             .timeline()
             .to(accorArrows[n], { rotation: -90, duration: 0.3 })
-            .to(accorBody[n], { opacity: 0, padding: 0,  duration: 0.3 })
-            .to(accorBody[n], { height: 0, duration: 0.3 });
+            .to(accorBody[n], { opacity: 0, duration: 0.3 })
+            .to(accorBody[n], { height: 0, padding:0, duration: 0.3 });
           accorBody[n].classList.remove("active");
         } else {
-          gsap
+          gsapWithCSS
             .timeline()
             .to(accorArrows[n], { rotation: 0, duration: 0.3 })
-            .to(accorBody[n], { height: "auto", padding: '15px 0', duration: 0.3 })
+            .to(accorBody[n], { height: "auto", padding: 15, duration: 0.3 })
             .to(accorBody[n], { opacity: 1, duration: 0.3 });
           accorBody[n].classList.add("active");
         }
@@ -27,4 +25,5 @@ function accordionDeposit() {
     }
   }
 
-  export default accordionDeposit;
+export { accordion as a };
+//# sourceMappingURL=accordion-9e03b00f.js.map

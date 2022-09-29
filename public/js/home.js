@@ -1,6 +1,6 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-3c9fe9cd.js';
-import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-ea75f653.js';
+import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-35bb599b.js';
+import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-f069f291.js';
 
 function carouselBanner() {
   var carousel = new Splide(".bannerCarousel .splide", {
@@ -15,6 +15,8 @@ function carouselBanner() {
 function accordionDeposit() {
     const accorArrows = document.getElementsByClassName("accorArrowDepo");
     const accorBody = document.getElementsByClassName("tc__body");
+
+    if(!accorArrows) return;
 
     for (let n = 0; n < accorArrows.length; n++) {
       accorArrows[n].addEventListener("click", () => {

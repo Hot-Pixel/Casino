@@ -1,4 +1,4 @@
-import { g as gsapWithCSS, m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-ea75f653.js';
+import { g as gsapWithCSS, m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-f069f291.js';
 
 function withdrawSteps() {
   const withdrawOpenBtn = document.querySelector(".wallet__btn-withdraw");
