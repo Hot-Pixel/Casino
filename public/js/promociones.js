@@ -1,6 +1,6 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
 import { m as mixitup } from './mixitup-b8d39d7d.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-bf242ba6.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-ea75f653.js';
 
 const container = document.querySelector(".finder__promo");
 

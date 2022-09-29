@@ -1,6 +1,6 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { a as accordion } from './accordion-7dd3ce82.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-bf242ba6.js';
+import { a as accordion } from './accordion-7475812b.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-ea75f653.js';
 
 function menuPoker() {
   const menuBtns = document.querySelectorAll(".menuPoker__btn");
