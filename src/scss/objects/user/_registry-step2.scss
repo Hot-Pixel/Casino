@@ -3,7 +3,13 @@
 @use "../tools" as *;
 
 .stepTwo {
-  background-image: url("../img/images/img-bg-register2.jpg");
+  background-image: url("../img/user/img/img-registry-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+
+  @include screen-sm {
+    background-image: url("../img/images/img-bg-register2.jpg");
+  }
 
   &__input {
     display: grid;
@@ -12,6 +18,11 @@
     gap: rem(10);
 
     padding-bottom: $md;
+
+    @include screen-sm {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
 
     div {
       width: 100%;
@@ -80,6 +91,12 @@
 
     &-city {
       width: 66%;
+    }
+  }
+
+  &__region {
+    @include screen-sm {
+      grid-column: 1 / 3;
     }
   }
 

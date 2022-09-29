@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .stepFour__header p, .stepFour__header-title, .stepFour__header-subtitle, .registry__form h2, .registry__step p span, .registry input, .registry select, .registry button:not([type=button]), .registry__login a, .login__form h2, .login__footer p:last-of-type, .u-f--bold p, .stepFour__header-title p, .stepFour__header-subtitle p, .registry__form h2 p, .registry__step p span p, .registry input p, .registry select p, .registry button:not([type=button]) p, .registry__login a p, .login__form h2 p, .login__footer p:last-of-type p {
+.u-f--bold, .stepFour__header p, .stepFour__header-title, .stepFour__header-subtitle, .registry__form h2, .registry__step p span, .registry input:not([type=checkbox]), .registry select, .registry button:not([type=button]), .registry__login a, .login__form h2, .login__footer p:last-of-type, .u-f--bold p, .stepFour__header-title p, .stepFour__header-subtitle p, .registry__form h2 p, .registry__step p span p, .registry input:not([type=checkbox]) p, .registry select p, .registry button:not([type=button]) p, .registry__login a p, .login__form h2 p, .login__footer p:last-of-type p {
   font-weight: 700;
 }
 
@@ -1076,12 +1076,23 @@ h5 {
   height: 100%;
   min-height: 100vh;
   width: 100%;
-  background-color: #EAEDEF;
+  overflow-x: hidden;
   padding-bottom: 7.5rem;
 }
 @media only screen and (min-width: 1280px) {
   .registry {
     padding-bottom: 0;
+  }
+}
+.registry__bg {
+  position: absolute;
+  top: 7%;
+  right: -30%;
+  z-index: 2;
+}
+@media only screen and (min-width: 1280px) {
+  .registry__bg {
+    display: none;
   }
 }
 .registry__header {
@@ -1119,6 +1130,8 @@ h5 {
   align-items: center;
 }
 .registry__form {
+  position: relative;
+  z-index: 8;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1233,14 +1246,14 @@ h5 {
 .registry__btns .btn__white img {
   transform: rotate(90deg);
 }
-.registry input, .registry select, .registry button:not([type=button]) {
+.registry input:not([type=checkbox]), .registry select, .registry button:not([type=button]) {
   background: #EAEDEF;
   border-radius: 6.25rem;
   color: #868B92;
   border: none;
   height: 2.8125rem;
 }
-.registry input:hover, .registry input:active, .registry input:focus, .registry select:hover, .registry select:active, .registry select:focus, .registry button:not([type=button]):hover, .registry button:not([type=button]):active, .registry button:not([type=button]):focus {
+.registry input:not([type=checkbox]):hover, .registry input:not([type=checkbox]):active, .registry input:not([type=checkbox]):focus, .registry select:hover, .registry select:active, .registry select:focus, .registry button:not([type=button]):hover, .registry button:not([type=button]):active, .registry button:not([type=button]):focus {
   border: none;
   outline: none;
   text-decoration: none;
@@ -1267,7 +1280,14 @@ h5 {
 }
 
 .stepOne {
-  background-image: url("../img/images/img-bg-register1.jpg");
+  background-image: url("../img/user/img/img-registry-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 1280px) {
+  .stepOne {
+    background-image: url("../img/images/img-bg-register1.jpg");
+  }
 }
 .stepOne__input {
   display: grid;
@@ -1289,25 +1309,64 @@ h5 {
     text-align: left;
   }
 }
-.stepOne .registry__accept {
+.stepOne__accept {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   margin-top: 0.9375rem;
   margin-bottom: 1.875rem;
 }
-.stepOne .registry__accept input[type=checkbox] {
-  margin-right: 0.625rem;
-}
-.stepOne .registry__accept p {
+.stepOne__accept p {
+  margin-left: 1.25rem;
   color: #868B92;
 }
-.stepOne .registry__accept p:first-of-type {
+@media only screen and (min-width: 1280px) {
+  .stepOne__accept p {
+    margin-left: 0.9375rem;
+  }
+}
+.stepOne__accept p:first-of-type {
   padding-bottom: 0.625rem;
+}
+.stepOne__checkbox {
+  position: relative;
+  z-index: 0;
+  width: 1rem;
+  height: 1rem;
+}
+.stepOne__checkbox input {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  appearance: none;
+  z-index: 2;
+  width: 1rem;
+  height: 1rem;
+}
+.stepOne__checkbox span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cg fill='none'%3E%3Cpath d='M4 0h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z'/%3E%3Cpath d='M4 1C2.346 1 1 2.346 1 4v8c0 1.654 1.346 3 3 3h8c1.654 0 3-1.346 3-3V4c0-1.654-1.346-3-3-3H4m0-1h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z' fill='%23868b92'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: 16px 16px;
+}
+.stepOne__checkbox input:checked ~ span {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath data-name='Trazado 4900' d='M16 4a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4Zm-3.749.469a.869.869 0 0 1 .159 1.218l-.022.028L7.9 11.429a1.486 1.486 0 0 1-.937.629H6.7a1.417 1.417 0 0 1-.891-.32L3.76 10.1a.857.857 0 0 1 1.051-1.346l1.612 1.235a.274.274 0 0 0 .434-.046l4.183-5.372a.869.869 0 0 1 1.211-.102Z' fill='%23868b92'/%3E%3C/svg%3E");
 }
 
 .stepTwo {
-  background-image: url("../img/images/img-bg-register2.jpg");
+  background-image: url("../img/user/img/img-registry-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 1280px) {
+  .stepTwo {
+    background-image: url("../img/images/img-bg-register2.jpg");
+  }
 }
 .stepTwo__input {
   display: grid;
@@ -1315,6 +1374,12 @@ h5 {
   grid-template-rows: repeat(7, 1fr);
   gap: 0.625rem;
   padding-bottom: 1.875rem;
+}
+@media only screen and (min-width: 1280px) {
+  .stepTwo__input {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
 }
 .stepTwo__input div {
   width: 100%;
@@ -1369,20 +1434,42 @@ h5 {
 .stepTwo__location-city {
   width: 66%;
 }
+@media only screen and (min-width: 1280px) {
+  .stepTwo__region {
+    grid-column: 1/3;
+  }
+}
 .stepTwo__nationality select, .stepTwo__nationality input, .stepTwo__province select, .stepTwo__province input, .stepTwo__region select, .stepTwo__region input, .stepTwo__address select, .stepTwo__address input {
   width: 100%;
 }
 
 .stepThree {
-  background-image: url("../img/images/img-bg-register3.jpg");
+  background-image: url("../img/user/img/img-registry-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+@media only screen and (min-width: 1280px) {
+  .stepThree {
+    background-image: url("../img/images/img-bg-register3.jpg");
+  }
 }
 .stepThree__input {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   gap: 0.625rem;
+  padding-bottom: 1.875rem;
+}
+@media only screen and (min-width: 1280px) {
+  .stepThree__input {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
+.stepFour {
+  padding: 0 0.9375rem;
+}
 .stepFour p {
   text-align: center;
 }
@@ -1393,38 +1480,66 @@ h5 {
 }
 .stepFour__header p {
   color: #13171d;
-  max-width: 60%;
-  padding-bottom: 1.875rem;
+  max-width: 100%;
+  padding-bottom: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .stepFour__header p {
+    max-width: 60%;
+    padding-bottom: 1.875rem;
+  }
 }
 .stepFour__verify {
   background-color: #F4F6F8;
   border-radius: 0.3125rem;
-  padding: 3.75rem 3.75rem 0;
-  max-width: 60%;
+  padding: 0.9375rem 0.9375rem 0;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media only screen and (min-width: 1280px) {
+  .stepFour__verify {
+    padding: 3.75rem 3.75rem 0;
+    max-width: 60%;
+  }
 }
 .stepFour__verify p {
   color: #868B92;
   padding-bottom: 1.875rem;
 }
 .stepFour__verify a {
-  width: 40%;
+  width: 90%;
   padding: 0.9375rem 1.875rem;
   transform: translateY(50%);
+}
+@media only screen and (min-width: 1280px) {
+  .stepFour__verify a {
+    width: 40%;
+  }
 }
 .stepFour__game {
   margin-top: 3.75rem;
   margin-bottom: 0.9375rem;
   color: #868B92;
-  max-width: 60%;
+  max-width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .stepFour__game {
+    max-width: 60%;
+  }
 }
 .stepFour__grid {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: row;
-  width: 80%;
+  width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .stepFour__grid {
+    grid-template-columns: repeat(9, 1fr);
+    width: 80%;
+  }
 }
 .stepFour__grid img {
   object-fit: cover;

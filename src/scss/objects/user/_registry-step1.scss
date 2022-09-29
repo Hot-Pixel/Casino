@@ -3,7 +3,13 @@
 @use "../tools" as *;
 
 .stepOne {
-  background-image: url("../img/images/img-bg-register1.jpg");
+  background-image: url("../img/user/img/img-registry-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+
+  @include screen-sm {
+    background-image: url("../img/images/img-bg-register1.jpg");
+  }
 
   &__input {
     display: grid;
@@ -24,24 +30,62 @@
       }
     }
   }
-  .registry__accept {
+  &__accept {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
 
     margin-top: $sm;
     margin-bottom: $md;
 
-    input[type="checkbox"] {
-      margin-right: rem(10);
-    }
-
     p {
+      margin-left: rem(20);
       color: setcolor("gray", "mid");
+
+      @include screen-sm {
+        margin-left: $sm;
+      }
 
       &:first-of-type {
         padding-bottom: rem(10);
       }
+    }
+  }
+
+  &__checkbox {
+    position: relative;
+    z-index: 0;
+
+    width: rem(16);
+    height: rem(16);
+
+    input {
+      cursor: pointer;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      appearance: none;
+      z-index: 2;
+      width: rem(16);
+      height: rem(16);
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+
+      width: rem(16);
+      height: rem(16);
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cg fill='none'%3E%3Cpath d='M4 0h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z'/%3E%3Cpath d='M4 1C2.346 1 1 2.346 1 4v8c0 1.654 1.346 3 3 3h8c1.654 0 3-1.346 3-3V4c0-1.654-1.346-3-3-3H4m0-1h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4Z' fill='%23868b92'/%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat no-repeat;
+      background-position: center center;
+      background-size: 16px 16px;
+    }
+
+    input:checked ~ span {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath data-name='Trazado 4900' d='M16 4a4 4 0 0 0-4-4H4a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4Zm-3.749.469a.869.869 0 0 1 .159 1.218l-.022.028L7.9 11.429a1.486 1.486 0 0 1-.937.629H6.7a1.417 1.417 0 0 1-.891-.32L3.76 10.1a.857.857 0 0 1 1.051-1.346l1.612 1.235a.274.274 0 0 0 .434-.046l4.183-5.372a.869.869 0 0 1 1.211-.102Z' fill='%23868b92'/%3E%3C/svg%3E");
     }
   }
 }

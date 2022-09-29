@@ -3,12 +3,25 @@
 @use "../tools" as *;
 
 .stepThree {
-  background-image: url("../img/images/img-bg-register3.jpg");
+  background-image: url("../img/user/img/img-registry-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+
+  @include screen-sm {
+    background-image: url("../img/images/img-bg-register3.jpg");
+  }
 
   &__input {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     gap: rem(10);
+
+    padding-bottom: $md;
+
+    @include screen-sm {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
   }
 }
