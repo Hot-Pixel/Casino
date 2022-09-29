@@ -15,12 +15,23 @@
   height: 100%;
   min-height: 100vh;
   width: 100%;
-  background-color: setcolor('gray', 'light2');
+  overflow-x: hidden;
 
   padding-bottom: rem(120);
 
   @include screen-sm {
     padding-bottom: 0;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 7%;
+    right: -30%;
+    z-index: 2;
+
+    @include screen-sm {
+      display: none
+    }
   }
 
   &__header {
@@ -65,6 +76,9 @@
   }
 
   &__form {
+    position: relative;
+    z-index: 8;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -208,7 +222,7 @@
     }
   }
 
-  input, select, button:not([type="button"]) {
+  input:not([type="checkbox"]), select, button:not([type="button"]) {
     background: setcolor('gray', 'light2');
     border-radius: rem(100);
     color: setcolor("gray", "mid");
