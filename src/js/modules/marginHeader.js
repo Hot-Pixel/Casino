@@ -2,7 +2,7 @@ function marginHeader() {
   const header = document.querySelector(".header");
   const headerMobile = document.querySelector(".header__mobile--top");
   const contentBlocks = document.querySelectorAll(".has-header");
-  const userMenus = document.querySelectorAll(".userMenu");
+  // const userMenus = document.querySelectorAll(".userMenu");
   const popUpMenu = document.querySelector(".popUpBalance");
 
   if (window.innerWidth < 1280) {
@@ -29,6 +29,7 @@ function marginHeader() {
 
     // popUpMenu.style.marginTop = `${header.offsetHeight}px`;
   }
+
 }
 
 export default marginHeader;

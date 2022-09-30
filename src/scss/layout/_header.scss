@@ -2,6 +2,10 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+header {
+  position: relative;
+}
+
 .header {
   position: fixed;
   top: 0;

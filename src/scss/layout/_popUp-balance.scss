@@ -2,6 +2,10 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+.popUpBalanceBlock {
+    position: relative;
+}
+
 .popUpBalance {
     display: none;
     opacity: 0;

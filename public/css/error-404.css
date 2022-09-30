@@ -2118,6 +2118,10 @@ h5 {
   right: 3%;
 }
 
+header {
+  position: relative;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -2552,6 +2556,10 @@ h5 {
 .footer .footer__casinos > div p {
   color: #a4a5a8;
   text-align: center;
+}
+
+.popUpBalanceBlock {
+  position: relative;
 }
 
 .popUpBalance {

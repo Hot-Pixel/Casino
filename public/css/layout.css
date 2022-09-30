@@ -1382,6 +1382,10 @@ h5 {
   margin: 0;
 }
 
+header {
+  position: relative;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -2183,6 +2187,10 @@ h5 {
   padding: 1em 0;
   right: 0.5em;
   top: 0;
+}
+
+.popUpBalanceBlock {
+  position: relative;
 }
 
 .popUpBalance {
