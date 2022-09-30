@@ -4,217 +4,138 @@
 
 
 .appApuestas {
+	background-image: url('../img/images/img-app-apuestas-content-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
 
 
+	// Commons
 
-	// Header
+	&__title {
+		@extend .u-f--bold;
+		text-align: center;
+	}
 
-	&__header {
-		position: relative;
-		padding-top: rem(100);
-		padding-bottom: rem(100);
-		@extend %padding_horizontal_main;
-		background-image: url('../img/images/img-app-apuestas-header-bg.jpg');
-		background-repeat: no-repeat;
-		background-position: top center;
-		background-size: initial;
+	&__columns {
+		display: grid;
+		gap: rem(40);
+		grid-template-columns: repeat(1, 1fr);
+		@extend %margin_top_small;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+
+// Top
+
+.appApuestas__top {
+	@extend %margin_horizontal_main, %margin_top_medium;
+
+
+	.appApuestas__title {
+		@extend .u-f--h2;
+	}
+
+
+	.appApuestas__columns {
+
+		@include tablet {
+			grid-template-columns: repeat(2, 1fr);
+		}
 
 		@include screen-sm {
-			background-position: center center;
-			background-size: cover;
+			grid-template-columns: repeat(4, 1fr);
+			max-width: rem(1120);
 		}
+	}
+}
 
 
-		&-content {
-			position: relative;
-			z-index: 1;
-			width: 80%;
+.appApuestas__star {
+	text-align: center;
 
-			@include screen-sm {
-				width: 40%;
-			}
+
+	&-image {
+		margin: auto;
+		max-width: rem(250);
+	}
+
+
+	&-title {
+		@extend .u-f--h4;
+		@extend .u-f--bold;
+	}
+
+
+	&-subtitle {
+		margin-top: rem(10);
+	}
+}
+
+
+// Bottom
+
+.appApuestas__bottom {
+	position: relative;
+	bottom: rem(-180);
+	margin: rem(-90) auto rem(180);
+	padding: rem(75) rem(75) rem(85);
+	width: 100%;
+	max-width: rem(796);
+	border-radius: rem(10);
+	background-color: setcolor("black");
+
+	@include screen-sm {
+		bottom: rem(-300);
+		margin-top: rem(-190);
+		margin-bottom: rem(360);
+	}
+
+
+	.appApuestas__title {
+		@extend .u-f--h4;
+	}
+
+
+	.appApuestas__columns {
+
+		@include screen-sm {
+			grid-template-columns: repeat(2, 1fr);
+			max-width: rem(1120);
 		}
+	}
+}
 
 
-		&-image {
-			position: relative;
-			left: -10%;
-			right: -10%;
-			width: 120%;
-
-			@include screen-sm {
-				position: absolute;
-				z-index: 0;
-				right: 0;
-				bottom: rem(-70);
-				left: initial;
-				width: 70%;
-			}
-		}
+.appApuestas__qr {
 
 
-		&-title {
-			@extend .u-f--h1;
-			@extend .u-f--bold;
-		}
+	&-image {
+		display: none;
 
-
-		&-subtitle {
-			@extend .u-f--h3;
-			@extend .u-f--bold;
-			opacity: .6;
-		}
-
-
-		&-button {
-			display: inline-block;
-			margin-top: $md;
-			padding: rem(7.5) rem(36) rem(7.5) rem(7.5);
-			text-transform: uppercase;
-
-			img {
-				width: rem(30);
-				height: rem(30);
-			}
+		@include screen-sm {
+			display: block;
+			margin-bottom: $sm;
+			border-radius: rem(10);
+			background-color: setcolor("black", "dark5");
 		}
 	}
 
 
-	// Content
-
-	&__content {
-		@extend %padding_horizontal_main;
-		background-image: url('../img/images/img-app-apuestas-content-bg.jpg');
-		background-repeat: no-repeat;
-		background-position: bottom center;
-
-
-		// Top
-
-		&-top {
-			@extend %margin_top_medium;
+	&-button {
+		display: flex;
+		gap: rem(10);
+		justify-content: space-between;
+		padding: rem(12) rem(16) rem(12) rem(50);
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
 
 
-			&-title {
-				@extend .u-f--h2;
-				@extend .u-f--bold;
-				text-align: center;
-			}
-
-
-			.appApuestas__columns {
-				display: grid;
-				gap: rem(40);
-				grid-template-columns: repeat(1, 1fr);
-				@extend %margin_top_small;
-				margin-right: auto;
-				margin-left: auto;
-
-				@include tablet {
-					grid-template-columns: repeat(2, 1fr);
-				}
-
-				@include screen-sm {
-					grid-template-columns: repeat(4, 1fr);
-					max-width: rem(1120);
-				}
-			}
-
-
-			.appApuestas__star {
-				text-align: center;
-
-
-				&-image {
-					margin: auto;
-					max-width: rem(250);
-				}
-
-
-				&-title {
-					@extend .u-f--h4;
-					@extend .u-f--bold;
-				}
-
-
-				&-subtitle {
-					margin-top: rem(10);
-				}
-			}
-		}
-
-
-		// Bottom
-
-		&-bottom {
-			position: relative;
-			bottom: rem(-180);
-			margin: rem(-90) auto rem(180);
-			padding: rem(75) rem(75) rem(85);
+		span {
 			width: 100%;
-			max-width: rem(796);
-			border-radius: rem(10);
-			background-color: setcolor("black");
-
-			@include screen-sm {
-				bottom: rem(-300);
-				margin-top: rem(-190);
-				margin-bottom: rem(360);
-			}
-
-
-			&-title {
-				@extend .u-f--h4;
-				@extend .u-f--bold;
-				text-align: center;
-			}
-
-
-			.appApuestas__columns {
-				display: grid;
-				gap: rem(40);
-				grid-template-columns: repeat(1, 1fr);
-				@extend %margin_top_small;
-				margin-right: auto;
-				margin-left: auto;
-
-				@include screen-sm {
-					grid-template-columns: repeat(2, 1fr);
-					max-width: rem(1120);
-				}
-			}
-
-
-			.appApuestas__qr {
-
-
-				&-image {
-					display: none;
-
-					@include screen-sm {
-						display: block;
-						margin-bottom: $sm;
-						border-radius: rem(10);
-						background-color: setcolor("black", "dark5");
-					}
-				}
-
-
-				&-button {
-					display: flex;
-					gap: rem(10);
-					justify-content: space-between;
-					padding: rem(12) rem(16) rem(12) rem(50);
-					width: 100%;
-					text-align: center;
-					text-transform: uppercase;
-
-
-					span {
-						width: 100%;
-					}
-				}
-			}
 		}
 	}
 }

@@ -47,7 +47,9 @@
 @use '../modules/grid-half';
 @use '../modules/grid-1-2-cols';
 @use '../modules/poker-satelites-online';
-@use '../modules/poker-satelites-cep';
+@use '../modules/poker-satelites-cep-content';
+@use '../modules/poker-satelites-cep-table';
+@use '../modules/poker-satelites-cep-accordion';
 @use '../modules/block-promo';
 
 // HELPER

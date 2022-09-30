@@ -1,0 +1,78 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.bannerAppApuestas {
+	position: relative;
+	padding-top: rem(100);
+	padding-bottom: rem(100);
+	@extend %margin_top_medium, %padding_horizontal_main;
+	background-image: url('../img/images/img-app-apuestas-header-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: initial;
+
+	@include screen-sm {
+		background-position: center center;
+		background-size: cover;
+	}
+
+
+	// Content
+
+	&__content {
+		position: relative;
+		z-index: 1;
+		width: 80%;
+
+		@include screen-sm {
+			width: 40%;
+		}
+	}
+
+
+	&__title {
+		@extend .u-f--h1;
+		@extend .u-f--bold;
+	}
+
+
+	&__subtitle {
+		@extend .u-f--h3;
+		@extend .u-f--bold;
+		opacity: .6;
+	}
+
+
+	&__button {
+		display: inline-block;
+		margin-top: $md;
+		padding: rem(7.5) rem(36) rem(7.5) rem(7.5);
+		text-transform: uppercase;
+
+		img {
+			width: rem(30);
+			height: rem(30);
+		}
+	}
+
+
+	// Image {
+
+	&__image {
+		position: relative;
+		left: -10%;
+		right: -10%;
+		width: 120%;
+
+		@include screen-sm {
+			position: absolute;
+			z-index: 0;
+			right: 0;
+			bottom: rem(-70);
+			left: initial;
+			width: 70%;
+		}
+	}
+}
