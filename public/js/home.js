@@ -3,8 +3,6 @@ import { c as carouselJackpot, a as collapseGrid, b as carouselGrid } from './co
 import { g as gsapWithCSS, m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-d62b6803.js';
 
 function carouselBanner() {
-  const bannerData = JSON.parse(document.querySelector('#bannerData').textContent);
-  bannerData.timeToCache = new Date().toString();
   getList()
     .then(data => {
       generateSlides(data);

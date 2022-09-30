@@ -1,8 +1,6 @@
 import { Splide } from "@splidejs/splide";
 
 function carouselBanner() {
-  const bannerData = JSON.parse(document.querySelector('#bannerData').textContent);
-  bannerData.timeToCache = new Date().toString();
   getList()
     .then(data => {
       generateSlides(data);
