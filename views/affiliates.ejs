@@ -8,7 +8,19 @@
 
 	<main class="has-header">
 
-		<%- include ('modules/affiliates') %>
+		<%- include ('modules/banner-affiliates') %>
+
+		<section class="affiliatesContent">
+
+			<%- include ('modules/affiliates-content-cards') %>
+
+			<%- // include ('modules/affiliates-content-benefits') %>
+
+			<%- // include ('modules/affiliates-content-info') %>
+
+		</section>
+
+		<%- // include ('modules/affiliates-contact') %>
 
 		<%- include ('layout/footer') %>
 
@@ -17,4 +29,4 @@
 </main>
 
 
-<%- include ('layout/scripts',  { script: 'affiliates' }) %>
+<%- // include ('layout/scripts',  { script: 'affiliates' }) %>

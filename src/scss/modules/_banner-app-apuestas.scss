@@ -5,9 +5,9 @@
 
 .bannerAppApuestas {
 	position: relative;
+	@extend %margin_top_medium, %padding_horizontal_main;
 	padding-top: rem(100);
 	padding-bottom: rem(100);
-	@extend %margin_top_medium, %padding_horizontal_main;
 	background-image: url('../img/images/img-app-apuestas-header-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: top center;

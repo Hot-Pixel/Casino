@@ -229,143 +229,143 @@
   font-weight: 500;
 }
 
-.u-f--bold, .affiliates, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .affiliates p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .affiliatesContentCards__card-title, .affiliatesContentCards__card-badge-span, .bannerAffiliates__title, .bannerAffiliates__subtitle, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .affiliatesContentCards__card-title p, .affiliatesContentCards__card-badge-span p, .bannerAffiliates__title p, .bannerAffiliates__subtitle p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .affiliates__header-title, .user__title p, .depositScreen .deposit__title {
+.u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .affiliates__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1, .affiliates__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .affiliates__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .affiliates__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .affiliates__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .affiliates__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2, .user__card-title {
+.u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .user__card-title {
+  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .affiliates__header-subtitle, .affiliates__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+.u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .affiliates__header-subtitle, .affiliates__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .affiliates__header-subtitle, .affiliates__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .affiliates__header-subtitle, .affiliates__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .affiliates__header-subtitle, .affiliates__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .affiliates__header-subtitle, .affiliates__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .affiliates__header-subtitle, .affiliates__menu a, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+.u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.0625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.125rem;
   }
 }
@@ -471,48 +471,48 @@
   display: none !important;
 }
 
-.footer__grid, .footer__brands, .depositScreen .deposit {
+.affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -520,48 +520,48 @@
   }
 }
 
-.footer__grid, .footer__brands, .depositScreen .deposit {
+.affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -598,100 +598,71 @@
   }
 }
 
-.footer__grid {
+.bannerAffiliates, .footer__grid {
   margin-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer__grid {
+  .bannerAffiliates, .footer__grid {
     margin-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__grid {
+  .bannerAffiliates, .footer__grid {
     margin-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer__grid {
+  .bannerAffiliates, .footer__grid {
     margin-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer__grid {
+  .bannerAffiliates, .footer__grid {
     margin-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer__grid {
+  .bannerAffiliates, .footer__grid {
     margin-top: var(--vertical-medium-2xl);
   }
 }
 
-.affiliates {
-  margin-top: var(--vertical-large-xs);
-}
-@media only screen and (min-width: 576px) {
-  .affiliates {
-    margin-top: var(--vertical-large-sm);
-  }
-}
-@media only screen and (min-width: 768px) {
-  .affiliates {
-    margin-top: var(--vertical-large-md);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .affiliates {
-    margin-top: var(--vertical-large-lg);
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .affiliates {
-    margin-top: var(--vertical-large-xl);
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .affiliates {
-    margin-top: var(--vertical-large-2xl);
-  }
-}
-
-.affiliates {
+.bannerAffiliates {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .affiliates {
+  .bannerAffiliates {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .affiliates {
+  .bannerAffiliates {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .affiliates {
+  .bannerAffiliates {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .affiliates {
+  .bannerAffiliates {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .affiliates {
+  .bannerAffiliates {
     padding-left: var(--horizontal-main-2xl);
     padding-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .affiliates {
+  .bannerAffiliates {
     padding-left: var(--horizontal-main-3xl);
     padding-right: var(--horizontal-main-3xl);
   }
@@ -2695,103 +2666,88 @@ h5 {
   margin-right: 0.625rem;
 }
 
-.affiliates {
+.bannerAffiliates {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-@media only screen and (min-width: 1280px) {
-  .affiliates {
-    display: block;
-  }
-}
-.affiliates__header {
-  position: relative;
-  z-index: 1;
-}
-@media only screen and (min-width: 1280px) {
-  .affiliates__header {
-    max-width: 50%;
-  }
-}
-.affiliates__header-subtitle {
-  margin-top: 0.625rem;
-}
-.affiliates__menu {
-  position: relative;
-  z-index: 1;
-  margin-top: 380px;
-}
-@media only screen and (min-width: 1024px) {
-  .affiliates__menu {
-    margin-top: 400px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .affiliates__menu {
-    margin-top: 60px;
-    max-width: 50%;
-  }
-}
-.affiliates__menu-wanted {
-  width: 216px;
-  max-width: 100%;
-}
-@media only screen and (min-width: 1280px) {
-  .affiliates__menu-wanted {
-    width: initial;
-  }
-}
-.affiliates__menu img + ul {
-  margin-top: 25px;
-}
-.affiliates__menu li + li {
-  margin-top: 20px;
-}
-.affiliates__menu a {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  text-transform: uppercase;
-  color: #ff293e;
-}
-@media only screen and (min-width: 1280px) {
-  .affiliates__menu a {
-    gap: 20px;
-  }
-}
-.affiliates__menu a img {
-  width: 14px;
-  height: 14px;
-}
-@media only screen and (min-width: 1280px) {
-  .affiliates__menu a img {
-    width: 18px;
-    height: 18px;
-  }
-}
-.affiliates__banner {
-  position: absolute;
-  overflow: hidden;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  left: 0;
-  height: 484px;
-  background-image: url("../img/images/img-404-background.png");
+  padding-top: 6.25rem;
+  padding-bottom: 12.5rem;
+  background-color: #25292f;
+  background-image: url("../img/images/img-affiliates-header-bg-mobile.jpg");
   background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
   background-size: cover;
 }
 @media only screen and (min-width: 1280px) {
-  .affiliates__banner {
-    height: 715px;
+  .bannerAffiliates {
+    padding-bottom: 6.25rem;
+    background-color: #ff293e;
+    background-image: url("../img/images/img-affiliates-header-bg-desktop.jpg");
+    background-position-y: bottom;
   }
 }
-.affiliates__banner-image {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  max-width: 90%;
+.bannerAffiliates__title, .bannerAffiliates__subtitle {
+  width: 80%;
+}
+@media only screen and (min-width: 1280px) {
+  .bannerAffiliates__title, .bannerAffiliates__subtitle {
+    width: 40%;
+  }
+}
+.bannerAffiliates__subtitle {
+  margin-top: 0.9375rem;
+}
+
+.affiliatesContentCards {
+  position: relative;
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentCards {
+    margin-top: -3.75rem;
+  }
+}
+.affiliatesContentCards__grid {
+  display: grid;
+  gap: 0.625rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentCards__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.affiliatesContentCards__card {
+  margin-top: 3.75rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.875rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  border-radius: 0.625rem;
+  background-color: #2d3239;
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentCards__card {
+    margin-top: 0;
+  }
+}
+.affiliatesContentCards__card-image {
+  margin: -3.75rem auto 1.875rem;
+}
+.affiliatesContentCards__card-text {
+  margin-top: 0.9375rem;
+  margin-bottom: 1.875rem;
+}
+.affiliatesContentCards__card-badge {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1.25rem 1fr 1.25rem;
+  justify-items: center;
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  background-color: #3b424b;
+}
+.affiliatesContentCards__card-badge + .affiliatesContentCards__card-badge {
+  margin-top: 0.3125rem;
 }
 /*# sourceMappingURL=affiliates.css.map */

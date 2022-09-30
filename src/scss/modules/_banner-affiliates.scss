@@ -1,0 +1,46 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.bannerAffiliates {
+	position: relative;
+	@extend %margin_top_medium, %padding_horizontal_main;
+	padding-top: rem(100);
+	padding-bottom: rem(200);
+	background-color: setcolor('black');
+	background-image: url('../img/images/img-affiliates-header-bg-mobile.jpg');
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-position-x: center;
+	background-size: cover;
+
+	@include screen-sm {
+		padding-bottom: rem(100);
+		background-color: setcolor('primary');
+		background-image: url('../img/images/img-affiliates-header-bg-desktop.jpg');
+		background-position-y: bottom;
+	}
+
+
+	&__title,
+	&__subtitle {
+		@extend .u-f--bold;
+		width: 80%;
+
+		@include screen-sm {
+			width: 40%;
+		}
+	}
+
+
+	&__title {
+		@extend .u-f--h1;
+	}
+
+
+	&__subtitle {
+		margin-top: rem(15);
+		@extend .u-f--h4;
+	}
+}
