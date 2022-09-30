@@ -1690,13 +1690,11 @@ h5 {
   align-items: center;
 }
 .user__title img {
-  height: 1.75rem;
   width: 1.625rem;
   margin-right: 0.9375rem;
 }
 @media only screen and (min-width: 1280px) {
   .user__title img {
-    height: 2.375rem;
     width: 2.25rem;
   }
 }

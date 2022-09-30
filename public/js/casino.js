@@ -1,6 +1,11 @@
 import { m as mixitup } from './mixitup-b8d39d7d.js';
+<<<<<<< HEAD
+import { m as mixitupMultifilter } from './mixitup-multifilter-2daf904c.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-b6dfe5e6.js';
+=======
 import { m as mixitupMultifilter } from './mixitup-multifilter-5efd6c76.js';
 import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-f069f291.js';
+>>>>>>> dev
 
 mixitup.use(mixitupMultifilter);
 

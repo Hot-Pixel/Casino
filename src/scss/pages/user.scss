@@ -19,6 +19,7 @@
 @use '../components/user';
 @use '../components/checkboxes';
 @use '../components/radios';
+@use '../components/calendar';
 
 // OBJECTS
 @use '../objects/user/data';
@@ -41,6 +42,7 @@
 @use '../layout/popUp-balance';
 @use '../layout/menu-header';
 @use '../layout/menu-user';
+@use '../layout/flatpickr';
 
 // MODULES
 @use '../modules/user-screen';

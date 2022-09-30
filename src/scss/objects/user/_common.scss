@@ -22,12 +22,10 @@
   align-items: center;
 
   img {
-    height: rem(28);
     width: rem(26);
     margin-right: $sm;
 
     @include screen-sm {
-      height: rem(38);
       width: rem(36);
     }
   }

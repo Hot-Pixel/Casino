@@ -1,6 +1,11 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
+<<<<<<< HEAD
+import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-ed97293d.js';
+import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-b6dfe5e6.js';
+=======
 import { c as carouselJackpot, a as collapseGrid, b as carouselGrid } from './collapseGridHalf-4cd488fb.js';
 import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-f069f291.js';
+>>>>>>> dev
 
 function carouselBanner() {
   getList()

@@ -3,7 +3,7 @@
         <img src="img/user/icon/icon-menu-history.svg" alt="">
         <p>Mi Historial</p>
     </section>
-    <section class="history__navbar">
+    <section class="history__navbar history__navbar-desktop">
         <button class="history__nav is-active" data-block=".detailBlock">Informe detallado</button>
         <button class="history__nav" data-block=".freespinsBlock">Freespins</button>
         <button class="history__nav" data-block=".movementsBlock">Depósitos y retiradas</button>
@@ -11,9 +11,21 @@
         <button class="history__nav" data-block=".bondsBlock">Bonos</button>
         <button class="history__nav" data-block=".slotsBlock">Slots</button>
     </section>
+    <section class="history__navbar history__navbar-mobile splide">
+        <div class="splide__track">
+            <div class="splide__list">
+                <button class="splide__slide history__nav is-active" data-block=".detailBlock">Informe detallado</button>
+                <button class="splide__slide history__nav" data-block=".freespinsBlock">Freespins</button>
+                <button class="splide__slide history__nav" data-block=".movementsBlock">Depósitos y retiradas</button>
+                <button class="splide__slide history__nav" data-block=".annualBlock">Resumen anual</button>
+                <button class="splide__slide history__nav" data-block=".bondsBlock">Bonos</button>
+                <button class="splide__slide history__nav" data-block=".slotsBlock">Slots</button>
+            </div>
+        </div>
+    </section>
     <section class="history__content">
         <main class="detailBlock block history__grid active-block">
-            <section class="detail">
+            <section class="history__finder detail">
                 <p class="user__card-title" >Informe detallado</p>
                 <div class="history__filter user__card">
                     <div class="history__content">
@@ -22,8 +34,8 @@
                     </div>
                     <form action="">
                         <div class="history__inputs">
-                            <input type="date" name="" id="" placeholder="Fecha de Inicio">
-                            <input type="date" name="" id="" placeholder="Fecha de fin">
+                            <input class="input__date" type="text" name="" id="startDate" placeholder="Fecha de Inicio">
+                            <input class="input__date" type="text" name="" id="endDate" placeholder="Fecha de fin" readonly>
                             <select name="" id="">
                                 <option value="" disabled selected>Estado</option>
                                 <option value=""></option>
@@ -50,66 +62,68 @@
             </section>
             <section class="history__activity">
                 <p class="user__card-title">Informe de actividad</p>
-                <div class="history__table user__card">
-                    <div class="history__table-row">
-                        <p class="bold">Id</p>
-                        <p class="bold">Estado</p>
-                        <p class="bold">Sala</p>
-                        <p class="bold">Creación</p>
-                        <p class="bold">Expiración</p>
-                        <p class="bold">Conversión</p>
-                        <p class="bold">Operación</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
+                <div class="history__wrapper">
+                    <div class="history__table user__card">
+                        <div class="history__table-row">
+                            <p class="bold">Id</p>
+                            <p class="bold">Estado</p>
+                            <p class="bold">Sala</p>
+                            <p class="bold">Creación</p>
+                            <p class="bold">Expiración</p>
+                            <p class="bold">Conversión</p>
+                            <p class="bold">Operación</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <main class="freespinsBlock block history__grid">
-            <section class="freespins">
+            <section class="history__finder freespins">
                 <p class="user__card-title" >Freespins</p>
                 <div class="history__filter user__card">
                     <div class="history__content">
@@ -142,66 +156,68 @@
             </section>
             <section class="history__activity">
                 <p class="user__card-title">Informe de actividad</p>
-                <div class="history__table user__card">
-                    <div class="history__table-row">
-                        <p class="bold">Id</p>
-                        <p class="bold">Estado</p>
-                        <p class="bold">Sala</p>
-                        <p class="bold">Creación</p>
-                        <p class="bold">Expiración</p>
-                        <p class="bold">Conversión</p>
-                        <p class="bold">Operación</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
+                <div class="history__wrapper">
+                    <div class="history__table user__card">
+                        <div class="history__table-row">
+                            <p class="bold">Id</p>
+                            <p class="bold">Estado</p>
+                            <p class="bold">Sala</p>
+                            <p class="bold">Creación</p>
+                            <p class="bold">Expiración</p>
+                            <p class="bold">Conversión</p>
+                            <p class="bold">Operación</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <main class="movementsBlock block history__grid">
-            <section class="movements">
+            <section class="history__finder movements">
                 <p class="user__card-title">Depósitos y retiradas</p>
                 <div class="history__filter user__card">
                     <div class="history__content">
@@ -234,66 +250,68 @@
             </section>
             <section class="history__activity">
                 <p class="user__card-title">Informe de actividad</p>
-                <div class="history__table user__card">
-                    <div class="history__table-row">
-                        <p class="bold">Id</p>
-                        <p class="bold">Estado</p>
-                        <p class="bold">Sala</p>
-                        <p class="bold">Creación</p>
-                        <p class="bold">Expiración</p>
-                        <p class="bold">Conversión</p>
-                        <p class="bold">Operación</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
+                <div class="history__wrapper">
+                    <div class="history__table user__card">
+                        <div class="history__table-row">
+                            <p class="bold">Id</p>
+                            <p class="bold">Estado</p>
+                            <p class="bold">Sala</p>
+                            <p class="bold">Creación</p>
+                            <p class="bold">Expiración</p>
+                            <p class="bold">Conversión</p>
+                            <p class="bold">Operación</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <main class="annualBlock block history__grid">
-            <section class="annual">
+            <section class="history__finder annual">
                 <p class="user__card-title" >Resumen anual</p>
                 <div class="history__filter user__card">
                     <div class="history__content">
@@ -326,66 +344,68 @@
             </section>
             <section class="history__activity">
                 <p class="user__card-title">Informe de actividad</p>
-                <div class="history__table user__card">
-                    <div class="history__table-row">
-                        <p class="bold">Id</p>
-                        <p class="bold">Estado</p>
-                        <p class="bold">Sala</p>
-                        <p class="bold">Creación</p>
-                        <p class="bold">Expiración</p>
-                        <p class="bold">Conversión</p>
-                        <p class="bold">Operación</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
+                <div class="history__wrapper">
+                    <div class="history__table user__card">
+                        <div class="history__table-row">
+                            <p class="bold">Id</p>
+                            <p class="bold">Estado</p>
+                            <p class="bold">Sala</p>
+                            <p class="bold">Creación</p>
+                            <p class="bold">Expiración</p>
+                            <p class="bold">Conversión</p>
+                            <p class="bold">Operación</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <main class="bondsBlock block history__grid">
-            <section class="bonds">
+            <section class="history__finder bonds">
                 <p class="user__card-title" >Bonos</p>
                 <div class="history__filter user__card">
                     <div class="history__content">
@@ -418,66 +438,68 @@
             </section>
             <section class="history__activity">
                 <p class="user__card-title">Informe de actividad</p>
-                <div class="history__table user__card">
-                    <div class="history__table-row">
-                        <p class="bold">Id</p>
-                        <p class="bold">Estado</p>
-                        <p class="bold">Sala</p>
-                        <p class="bold">Creación</p>
-                        <p class="bold">Expiración</p>
-                        <p class="bold">Conversión</p>
-                        <p class="bold">Operación</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
+                <div class="history__wrapper">
+                    <div class="history__table user__card">
+                        <div class="history__table-row">
+                            <p class="bold">Id</p>
+                            <p class="bold">Estado</p>
+                            <p class="bold">Sala</p>
+                            <p class="bold">Creación</p>
+                            <p class="bold">Expiración</p>
+                            <p class="bold">Conversión</p>
+                            <p class="bold">Operación</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
         <main class="slotsBlock block history__grid">
-            <section class="slotsHistory">
+            <section class="history__finder slotsHistory">
                 <p class="user__card-title" >Slots</p>
                 <div class="history__filter user__card">
                     <div class="history__content">
@@ -510,60 +532,62 @@
             </section>
             <section class="history__activity">
                 <p class="user__card-title">Informe de actividad</p>
-                <div class="history__table user__card">
-                    <div class="history__table-row">
-                        <p class="bold">Id</p>
-                        <p class="bold">Estado</p>
-                        <p class="bold">Sala</p>
-                        <p class="bold">Creación</p>
-                        <p class="bold">Expiración</p>
-                        <p class="bold">Conversión</p>
-                        <p class="bold">Operación</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
-                    </div>
-                    <div class="history__table-row">
-                        <p class="bold">694517</p>
-                        <p>Canjeado</p>
-                        <p>Apuestas deportivas - SportnCo</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>04/03/2022 12:20:14</p>
-                        <p>0</p>
+                <div class="history__wrapper">
+                    <div class="history__table user__card">
+                        <div class="history__table-row">
+                            <p class="bold">Id</p>
+                            <p class="bold">Estado</p>
+                            <p class="bold">Sala</p>
+                            <p class="bold">Creación</p>
+                            <p class="bold">Expiración</p>
+                            <p class="bold">Conversión</p>
+                            <p class="bold">Operación</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
+                        <div class="history__table-row">
+                            <p class="bold">694517</p>
+                            <p>Canjeado</p>
+                            <p>Apuestas deportivas - SportnCo</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>04/03/2022 12:20:14</p>
+                            <p>0</p>
+                        </div>
                     </div>
                 </div>
             </section>
