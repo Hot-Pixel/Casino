@@ -36,8 +36,6 @@
     </li>
 </template>
 <%# Banners in production are loaded asynchronouly, the function getList() simulates the fetch that get the banners %> 
-<script id="bannerData"
-    type="application/json">{"partnerId": "37", "siteId": "2",  "roomId": "0", "roomName": "classic", "pageId": "63731", "pageUrl": "/index.html", "groups": "17,3", "moduleId": "703", "type": "html", "locale": "es-ES", "currency": "EUR", "type": "html" }</script>
 <script>
     function getList() {
         return new Promise((resolve, reject) => {
