@@ -12,13 +12,14 @@ import depositCopy from "./modules/depositCopy.js";
 import menuHeaderMobile from "./modules/menuHeaderMobile.js";
 import userMenuMobile from "./modules/userMenuMobile.js";
 
+marginHeader();
+
 window.addEventListener("load", () => {
   accordionDeposit();
   carouselJackpot();
   carouselBets();
   popUpSaldo();
   collapseGrid();
-  marginHeader();
   depositSteps();
   depositAmmount();
   depositCopy();

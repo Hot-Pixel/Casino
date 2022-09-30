@@ -1,7 +1,19 @@
-<<<<<<< HEAD
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-b6dfe5e6.js';
+import { m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-d62b6803.js';
 import { h as historyNavBar } from './historyNavBar-c56d1d21.js';
 import { S as Splide } from './splide.esm-20cd2e1c.js';
+
+function carouselMenuHistory() {
+  var carousel = new Splide(".splide", {
+    pagination: false,
+    arrows: false,
+    perPage: 2,
+    padding: { left: 0, right: 80 },
+    perMove: 1,
+    drag: "free",
+  });
+
+  carousel.mount();
+}
 
 var HOOKS = [
     "onChange",
@@ -2614,7 +2626,7 @@ var Spanish = {
     time_24hr: true,
 };
 fp.l10ns.es = Spanish;
-var Spanish$1 = fp.l10ns;
+fp.l10ns;
 
 var __spreadArrays = (undefined && undefined.__spreadArrays) || function () {
     for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
@@ -2769,35 +2781,27 @@ function rangePlugin(config) {
         return plugin;
     };
 }
-=======
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-f069f291.js';
-import { h as historyNavBar } from './historyNavBar-3c80e964.js';
->>>>>>> dev
+
+function calendarHistory() {
+  flatpickr("#startDate", {
+    locale: 'es',
+    plugins: [new rangePlugin({ input: "#endDate" })],
+    dateFormat: "d-m-Y",
+    disableMobile: "true"
+  });
+}
+
+marginHeader();
 
 window.addEventListener('load', () => {
   popUpSaldo();
-  marginHeader();
   historyNavBar();
   depositSteps();
   depositAmmount();
   depositCopy();
   menuHeaderMobile();
   userMenuMobile();
-});
-
-var carouselHistory = new Splide(".splide", {
-  pagination: false,
-  arrows: false,
-  perPage: 2,
-  padding: { left: 0, right: 80 },
-  perMove: 1,
-  drag: 'free'
-});
-
-carouselHistory.mount();
-
-flatpickr('#startDate', {
-  locale: Spanish$1,
-  plugins: [ new rangePlugin({ input: "#endDate"}) ]
+  carouselMenuHistory();
+  calendarHistory();
 });
 //# sourceMappingURL=history.js.map

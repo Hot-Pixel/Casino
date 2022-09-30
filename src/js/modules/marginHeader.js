@@ -3,6 +3,7 @@ function marginHeader() {
   const headerMobile = document.querySelector(".header__mobile--top");
   const contentBlocks = document.querySelectorAll(".has-header");
   const userMenus = document.querySelectorAll(".userMenu");
+  const popUpMenu = document.querySelector(".popUpBalance");
 
   if (window.innerWidth < 1280) {
     contentBlocks.forEach((block) => {
@@ -25,6 +26,8 @@ function marginHeader() {
       menu.style.top = `${header.offsetHeight}px`;
       menu.style.height = `calc(100vh - ${header.offsetHeight}px)`;
     });
+
+    // popUpMenu.style.marginTop = `${header.offsetHeight}px`;
   }
 }
 
