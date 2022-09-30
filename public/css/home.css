@@ -3214,7 +3214,7 @@ a.redCta img {
 .gridHalf__grid-item > img {
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .gridHalf__grid-item:hover .gridHalf__grid-item--hover {
   opacity: 1;

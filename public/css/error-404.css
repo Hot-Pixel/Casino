@@ -2716,26 +2716,26 @@ h5 {
   }
 }
 .error404__header-subtitle {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .error404__menu {
   position: relative;
   z-index: 1;
-  margin-top: 380px;
+  margin-top: 23.75rem;
 }
 @media only screen and (min-width: 1024px) {
   .error404__menu {
-    margin-top: 400px;
+    margin-top: 25rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .error404__menu {
-    margin-top: 60px;
-    max-width: 50%;
+    margin-top: 3.75rem;
+    max-width: 0.3125rem;
   }
 }
 .error404__menu-wanted {
-  width: 216px;
+  width: 13.5rem;
   max-width: 100%;
 }
 @media only screen and (min-width: 1280px) {
@@ -2744,31 +2744,31 @@ h5 {
   }
 }
 .error404__menu img + ul {
-  margin-top: 25px;
+  margin-top: 1.5625rem;
 }
 .error404__menu li + li {
-  margin-top: 20px;
+  margin-top: 0.9375rem;
 }
 .error404__menu a {
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
   align-items: center;
   text-transform: uppercase;
   color: #ff293e;
 }
 @media only screen and (min-width: 1280px) {
   .error404__menu a {
-    gap: 20px;
+    gap: 0.9375rem;
   }
 }
 .error404__menu a img {
-  width: 14px;
-  height: 14px;
+  width: 0.875rem;
+  height: 0.875rem;
 }
 @media only screen and (min-width: 1280px) {
   .error404__menu a img {
-    width: 18px;
-    height: 18px;
+    width: 1.125rem;
+    height: 1.125rem;
   }
 }
 .error404__banner {
@@ -2778,14 +2778,14 @@ h5 {
   top: 0;
   right: 0;
   left: 0;
-  height: 484px;
+  height: 30.25rem;
   background-image: url("../img/images/img-404-background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media only screen and (min-width: 1280px) {
   .error404__banner {
-    height: 715px;
+    height: 44.6875rem;
   }
 }
 .error404__banner-image {

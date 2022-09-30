@@ -127,7 +127,7 @@
       & > img {
         width: 100%;
         object-fit: cover;
-        border-radius: 10px;
+        border-radius: rem(10);
       }
 
       &:hover .gridHalf__grid-item--hover {

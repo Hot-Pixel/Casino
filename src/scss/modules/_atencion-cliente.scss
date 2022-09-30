@@ -43,7 +43,7 @@
 				@extend .u-f--h4;
 
 				& + p {
-					margin-top: 20px;
+					margin-top: $sm;
 				}
 			}
 		}
@@ -55,12 +55,12 @@
 
 	&__box {
 		position: relative;
-		padding: 30px 25px 60px;
-		border-radius: 10px;
+		padding: rem(30) rem(25) rem(60);
+		border-radius: rem(10);
 		background-color: setcolor("black", "dark2");
 
 		@include screen-sm {
-			padding: 50px 40px 100px;
+			padding: rem(50) rem(40) rem(100);
 		}
 
 
@@ -79,7 +79,7 @@
 
 
 			span + img {
-				margin-left: 20px;
+				margin-left: $sm;
 			}
 		}
 	}

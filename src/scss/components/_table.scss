@@ -10,7 +10,7 @@
 	&__title {
 		margin-bottom: 5px;
 		padding: 40px 30px;
-		border-radius: 10px;
+		border-radius: rem(10);
 		background-color: setcolor('black', 'dark4');
 		background-image: linear-gradient(to right, setcolor('black', 'dark4') 50%, setcolor('black', 'dark2'));
 
@@ -132,7 +132,7 @@
 		grid-template-columns: repeat( 5, auto );
 		align-items: center;
 		padding: 35px 30px;
-		border-radius: 10px;
+		border-radius: rem(10);
 		background-color: setcolor('black', 'dark4');
 
 		@include screen-sm {

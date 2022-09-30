@@ -35,7 +35,7 @@
 
 
 		&-subtitle {
-			margin-top: 10px;
+			margin-top: rem(10);
 			@extend .u-f--h3;
 		}
 	}
@@ -47,20 +47,20 @@
 	&__menu {
 		position: relative;
 		z-index: 1;
-		margin-top: 380px;
+		margin-top: rem(380);
 
 		@include tablet-h {
-			margin-top: 400px;
+			margin-top: rem(400);
 		}
 
 		@include screen-sm {
-			margin-top: 60px;
-			max-width: 50%;
+			margin-top: $lg;
+			max-width: rem(5);
 		}
 
 
 		&-wanted {
-			width: 216px;
+			width: rem(216);
 			max-width: 100%;
 
 			@include screen-sm {
@@ -70,35 +70,35 @@
 
 
 		img + ul {
-			margin-top: 25px;
+			margin-top: rem(25);
 		}
 
 
 		li + li {
-			margin-top: 20px;
+			margin-top: $sm;
 		}
 
 
 		a {
 			display: flex;
-			gap: 5px;
+			gap: rem(5);
 			align-items: center;
 			@extend .u-f--h3;
 			text-transform: uppercase;
 			color: setcolor("primary");
 
 			@include screen-sm {
-				gap: 20px;
+				gap: rem(15);
 			}
 
 
 			img {
-				width: 14px;
-				height: 14px;
+				width: rem(14);
+				height: rem(14);
 
 				@include screen-sm {
-					width: 18px;
-					height: 18px;
+					width: rem(18);
+					height: rem(18);
 				}
 			}
 		}
@@ -115,13 +115,13 @@
 		top: 0;
 		right: 0;
 		left: 0;
-		height: 484px;
+		height: rem(484);
 		background-image: url('../img/images/img-404-background.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 
 		@include screen-sm {
-			height: 715px;
+			height: rem(715);
 		}
 
 

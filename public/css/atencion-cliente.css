@@ -2714,17 +2714,17 @@ h5 {
   }
 }
 .atencionCliente__columns-column p + p {
-  margin-top: 20px;
+  margin-top: 0.9375rem;
 }
 .atencionCliente__box {
   position: relative;
-  padding: 30px 25px 60px;
-  border-radius: 10px;
+  padding: 1.875rem 1.5625rem 3.75rem;
+  border-radius: 0.625rem;
   background-color: #1c2026;
 }
 @media only screen and (min-width: 1280px) {
   .atencionCliente__box {
-    padding: 50px 40px 100px;
+    padding: 3.125rem 2.5rem 6.25rem;
   }
 }
 .atencionCliente__box p {
@@ -2739,7 +2739,7 @@ h5 {
   text-transform: uppercase;
 }
 .atencionCliente__box-button span + img {
-  margin-left: 20px;
+  margin-left: 0.9375rem;
 }
 .atencionCliente__not-box p {
   text-align: center;

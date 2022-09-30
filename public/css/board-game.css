@@ -2699,43 +2699,43 @@ h5 {
   text-align: center;
 }
 .boardGame__header-subtitle {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .boardGame__board {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 0.625rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 35px auto;
-  padding: 20px 30px;
+  margin: 2.1875rem auto;
+  padding: 1.25rem 1.875rem;
   width: 100%;
-  max-width: 740px;
-  border-radius: 10px;
+  max-width: 46.25rem;
+  border-radius: 0.625rem;
   background-color: #3b424b;
 }
 @media only screen and (min-width: 1280px) {
   .boardGame__board {
-    padding: 55px 65px;
+    padding: 3.4375rem 4.0625rem;
   }
 }
 .boardGame__board-text {
   opacity: 0.6;
 }
 .boardGame__board-numbers + .boardGame__board-text {
-  margin-top: 25px;
+  margin-top: 1.5625rem;
 }
 .boardGame__board-numbers {
   display: flex;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 0.3125rem;
   justify-content: center;
   align-items: center;
 }
 .boardGame__board-number {
-  padding: 23px 33px;
-  border-radius: 10px;
+  padding: 1.4375rem 2.0625rem;
+  border-radius: 0.625rem;
   color: #ffffff;
   background-color: #2d3239;
 }
@@ -2747,36 +2747,36 @@ h5 {
   opacity: 0.6;
 }
 .boardGame__footer-import {
-  margin: 20px auto 0;
-  padding: 30px;
-  max-width: 540px;
+  margin: 0.9375rem auto 0;
+  padding: 1.875rem;
+  max-width: 33.75rem;
   color: #ffffff;
   border: 2px solid #ffffff;
-  border-radius: 80px;
+  border-radius: 5rem;
   opacity: 0.6;
 }
 .boardGame__footer-time {
-  margin: 20px auto 0;
-  padding: 15px 30px;
+  margin: 0.9375rem auto 0;
+  padding: 0.9375rem 1.875rem;
   width: 100%;
-  max-width: 540px;
+  max-width: 33.75rem;
   border: none;
-  border-radius: 45px;
+  border-radius: 4rem 5;
   background-color: #1c2026;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg id='icon-select-arrow' transform='translate(14) rotate(90)'%3E%3Cpath id='Trazado_97' data-name='Trazado 97' d='M14 7a7 7 0 1 0-7 7A7 7 0 0 0 14 7ZM5.29 10.71A1 1 0 0 1 5.284 9.3L5.29 9.29 7.41 7.18a.25.25 0 0 0 .007-.354L7.41 6.82 5.29 4.71A1 1 0 0 1 6.71 3.29l3 3A1 1 0 0 1 9.716 7.7L9.71 7.71l-3 3a1 1 0 0 1-1.414.006Z' transform='translate(0 0)' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position-y: 50%;
-  background-position-x: calc(100% - 30px);
+  background-position-x: calc(100% - 1.875rem);
   appearance: none;
 }
 .boardGame__footer-button {
-  margin: 40px auto 0;
+  margin: 2.5rem auto 0;
   width: fit-content;
 }
 .boardGame__footer-button span {
   text-transform: uppercase;
 }
 .boardGame__footer-button span + img {
-  margin-left: 15px;
+  margin-left: 0.9375rem;
 }
 /*# sourceMappingURL=board-game.css.map */

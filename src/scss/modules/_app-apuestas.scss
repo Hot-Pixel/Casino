@@ -11,8 +11,8 @@
 
 	&__header {
 		position: relative;
-		padding-top: 100px;
-		padding-bottom: 100px;
+		padding-top: rem(100);
+		padding-bottom: rem(100);
 		@extend %padding_horizontal_main;
 		background-image: url('../img/images/img-app-apuestas-header-bg.jpg');
 		background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 				position: absolute;
 				z-index: 0;
 				right: 0;
-				bottom: -70px;
+				bottom: rem(-70);
 				left: initial;
 				width: 70%;
 			}
@@ -68,13 +68,13 @@
 
 		&-button {
 			display: inline-block;
-			margin-top: 25px;
-			padding: 7.5px 36px 7.5px 7.5px;
+			margin-top: $md;
+			padding: rem(7.5) rem(36) rem(7.5) rem(7.5);
 			text-transform: uppercase;
 
 			img {
-				width: 30px;
-				height: 30px;
+				width: rem(30);
+				height: rem(30);
 			}
 		}
 	}
@@ -104,7 +104,7 @@
 
 			.appApuestas__columns {
 				display: grid;
-				gap: 40px;
+				gap: rem(40);
 				grid-template-columns: repeat(1, 1fr);
 				@extend %margin_top_small;
 				margin-right: auto;
@@ -116,7 +116,7 @@
 
 				@include screen-sm {
 					grid-template-columns: repeat(4, 1fr);
-					max-width: 1120px;
+					max-width: rem(1120);
 				}
 			}
 
@@ -127,7 +127,7 @@
 
 				&-image {
 					margin: auto;
-					max-width: 250px;
+					max-width: rem(250);
 				}
 
 
@@ -138,7 +138,7 @@
 
 
 				&-subtitle {
-					margin-top: 10px;
+					margin-top: rem(10);
 				}
 			}
 		}
@@ -148,18 +148,18 @@
 
 		&-bottom {
 			position: relative;
-			bottom: -180px;
-			margin: -90px auto 180px;
-			padding: 75px 75px 85px;
+			bottom: rem(-180);
+			margin: rem(-90) auto rem(180);
+			padding: rem(75) rem(75) rem(85);
 			width: 100%;
-			max-width: 796px;
-			border-radius: 10px;
+			max-width: rem(796);
+			border-radius: rem(10);
 			background-color: setcolor("black");
 
 			@include screen-sm {
-				bottom: -300px;
-				margin-top: -190px;
-				margin-bottom: 360px;
+				bottom: rem(-300);
+				margin-top: rem(-190);
+				margin-bottom: rem(360);
 			}
 
 
@@ -172,7 +172,7 @@
 
 			.appApuestas__columns {
 				display: grid;
-				gap: 40px;
+				gap: rem(40);
 				grid-template-columns: repeat(1, 1fr);
 				@extend %margin_top_small;
 				margin-right: auto;
@@ -180,7 +180,7 @@
 
 				@include screen-sm {
 					grid-template-columns: repeat(2, 1fr);
-					max-width: 1120px;
+					max-width: rem(1120);
 				}
 			}
 
@@ -193,8 +193,8 @@
 
 					@include screen-sm {
 						display: block;
-						margin-bottom: 20px;
-						border-radius: 10px;
+						margin-bottom: $sm;
+						border-radius: rem(10);
 						background-color: setcolor("black", "dark5");
 					}
 				}
@@ -202,9 +202,9 @@
 
 				&-button {
 					display: flex;
-					gap: 10px;
+					gap: rem(10);
 					justify-content: space-between;
-					padding: 12px 16px 12px 50px;
+					padding: rem(12) rem(16) rem(12) rem(50);
 					width: 100%;
 					text-align: center;
 					text-transform: uppercase;

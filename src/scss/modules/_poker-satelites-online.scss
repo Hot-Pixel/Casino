@@ -14,12 +14,12 @@
 	&__Card {
 		position: relative;
 		z-index: 1;
-		padding: 70px 35px 0;
+		padding: rem(70) rem(35) 0;
 		text-align: center;
 
 
 		& + & {
-			margin-top: 40px;
+			margin-top: rem(40);
 
 			@include screen-sm {
 				margin-top: 0;
@@ -34,7 +34,7 @@
 
 
 		&-subtitle {
-			margin-top: 35px;
+			margin-top: rem(35);
 			@extend .u-f--h4;
 			@extend .u-f--bold;
 			color: setcolor('primary');
@@ -42,7 +42,7 @@
 
 
 		&-price {
-			margin-top: 15px;
+			margin-top: $sm;
 			@extend .u-f--h1;
 			@extend .u-f--bold;
 			color: setcolor('primary');
@@ -51,12 +51,12 @@
 
 		&-button {
 			position: relative;
-			margin: 40px auto -22px;
+			margin: rem(40) auto rem(-22);
 			width: fit-content;
 
 
 			span + img {
-				margin-left: 20px;
+				margin-left: rem(20);
 			}
 		}
 	}
@@ -65,7 +65,7 @@
 	&__astronauta {
 		position: absolute;
 		z-index: 0;
-		right: -85px;
-		bottom: -65px;
+		right: rem(-85);
+		bottom: rem(-65);
 	}
 }

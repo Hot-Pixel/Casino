@@ -2668,8 +2668,8 @@ h5 {
 
 .appApuestas__header {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
   background-image: url("../img/images/img-app-apuestas-header-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
@@ -2702,7 +2702,7 @@ h5 {
     position: absolute;
     z-index: 0;
     right: 0;
-    bottom: -70px;
+    bottom: -4.375rem;
     left: initial;
     width: 70%;
   }
@@ -2712,13 +2712,13 @@ h5 {
 }
 .appApuestas__header-button {
   display: inline-block;
-  margin-top: 25px;
-  padding: 7.5px 36px 7.5px 7.5px;
+  margin-top: 1.875rem;
+  padding: 0.46875rem 2.25rem 0.46875rem 0.46875rem;
   text-transform: uppercase;
 }
 .appApuestas__header-button img {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 .appApuestas__content {
   background-image: url("../img/images/img-app-apuestas-content-bg.jpg");
@@ -2730,7 +2730,7 @@ h5 {
 }
 .appApuestas__content-top .appApuestas__columns {
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
   grid-template-columns: repeat(1, 1fr);
   margin-right: auto;
   margin-left: auto;
@@ -2743,7 +2743,7 @@ h5 {
 @media only screen and (min-width: 1280px) {
   .appApuestas__content-top .appApuestas__columns {
     grid-template-columns: repeat(4, 1fr);
-    max-width: 1120px;
+    max-width: 70rem;
   }
 }
 .appApuestas__content-top .appApuestas__star {
@@ -2751,26 +2751,26 @@ h5 {
 }
 .appApuestas__content-top .appApuestas__star-image {
   margin: auto;
-  max-width: 250px;
+  max-width: 15.625rem;
 }
 .appApuestas__content-top .appApuestas__star-subtitle {
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 .appApuestas__content-bottom {
   position: relative;
-  bottom: -180px;
-  margin: -90px auto 180px;
-  padding: 75px 75px 85px;
+  bottom: -11.25rem;
+  margin: -5.625rem auto 11.25rem;
+  padding: 4.6875rem 4.6875rem 5.3125rem;
   width: 100%;
-  max-width: 796px;
-  border-radius: 10px;
+  max-width: 49.75rem;
+  border-radius: 0.625rem;
   background-color: #25292f;
 }
 @media only screen and (min-width: 1280px) {
   .appApuestas__content-bottom {
-    bottom: -300px;
-    margin-top: -190px;
-    margin-bottom: 360px;
+    bottom: -18.75rem;
+    margin-top: -11.875rem;
+    margin-bottom: 22.5rem;
   }
 }
 .appApuestas__content-bottom-title {
@@ -2778,7 +2778,7 @@ h5 {
 }
 .appApuestas__content-bottom .appApuestas__columns {
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
   grid-template-columns: repeat(1, 1fr);
   margin-right: auto;
   margin-left: auto;
@@ -2786,7 +2786,7 @@ h5 {
 @media only screen and (min-width: 1280px) {
   .appApuestas__content-bottom .appApuestas__columns {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 1120px;
+    max-width: 70rem;
   }
 }
 .appApuestas__content-bottom .appApuestas__qr-image {
@@ -2795,16 +2795,16 @@ h5 {
 @media only screen and (min-width: 1280px) {
   .appApuestas__content-bottom .appApuestas__qr-image {
     display: block;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 0.9375rem;
+    border-radius: 0.625rem;
     background-color: #3b424b;
   }
 }
 .appApuestas__content-bottom .appApuestas__qr-button {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
   justify-content: space-between;
-  padding: 12px 16px 12px 50px;
+  padding: 0.75rem 1rem 0.75rem 3.125rem;
   width: 100%;
   text-align: center;
   text-transform: uppercase;

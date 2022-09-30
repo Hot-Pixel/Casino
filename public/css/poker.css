@@ -1263,7 +1263,7 @@ a.redCta img {
 .table__title {
   margin-bottom: 5px;
   padding: 40px 30px;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #2d3239;
   background-image: linear-gradient(to right, #2d3239 50%, #1c2026);
 }
@@ -1332,7 +1332,7 @@ a.redCta img {
   grid-template-columns: repeat(5, auto);
   align-items: center;
   padding: 35px 30px;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   background-color: #2d3239;
 }
 @media only screen and (min-width: 1280px) {
@@ -3728,10 +3728,10 @@ a.redCta img {
 @media only screen and (min-width: 1280px) {
   .bannerPokerSatelites__breadcrumbs {
     position: relative;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     padding: 5px 20px;
     width: initial;
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
 }
 
@@ -3857,7 +3857,7 @@ a.redCta img {
 .gridHalf__grid-item > img {
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .gridHalf__grid-item:hover .gridHalf__grid-item--hover {
   opacity: 1;
@@ -3905,11 +3905,11 @@ a.redCta img {
 .pokerSatelitesOnline__Card {
   position: relative;
   z-index: 1;
-  padding: 70px 35px 0;
+  padding: 4.375rem 2.1875rem 0;
   text-align: center;
 }
 .pokerSatelitesOnline__Card + .pokerSatelitesOnline__Card {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 @media only screen and (min-width: 1280px) {
   .pokerSatelitesOnline__Card + .pokerSatelitesOnline__Card {
@@ -3917,26 +3917,26 @@ a.redCta img {
   }
 }
 .pokerSatelitesOnline__Card-subtitle {
-  margin-top: 35px;
+  margin-top: 2.1875rem;
   color: #ff293e;
 }
 .pokerSatelitesOnline__Card-price {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
   color: #ff293e;
 }
 .pokerSatelitesOnline__Card-button {
   position: relative;
-  margin: 40px auto -22px;
+  margin: 2.5rem auto -1.375rem;
   width: fit-content;
 }
 .pokerSatelitesOnline__Card-button span + img {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 .pokerSatelitesOnline__astronauta {
   position: absolute;
   z-index: 0;
-  right: -85px;
-  bottom: -65px;
+  right: -5.3125rem;
+  bottom: -4.0625rem;
 }
 
 .pokerSatelitesCEP__data {
@@ -3948,13 +3948,13 @@ a.redCta img {
   }
 }
 .pokerSatelitesCEP__data-subtitle {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
 }
 @media only screen and (min-width: 1280px) {
   .pokerSatelitesCEP__data-subtitle {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
   }
 }
 .pokerSatelitesCEP__data-text {
@@ -3966,7 +3966,7 @@ a.redCta img {
 }
 @media only screen and (min-width: 1280px) {
   .pokerSatelitesCEP__data-price {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
   }
 }
 
@@ -3982,11 +3982,11 @@ a.redCta img {
 }
 .pokerSatelitesCEP__badges-item {
   display: grid;
-  column-gap: 15px;
+  column-gap: 0.9375rem;
   grid-template-columns: 50px 1fr 50px;
   grid-template-rows: auto auto;
-  padding: 30px 35px 35px 30px;
-  border-radius: 10px;
+  padding: 1.875rem 35px 35px 1.875rem;
+  border-radius: 0.625rem;
   background-color: #1c2026;
 }
 .pokerSatelitesCEP__badges-item-image {
