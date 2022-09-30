@@ -150,6 +150,7 @@ gulp.task("bundleJs", async () => {
     "ruleta",
     "poker",
     "promociones",
+    "promocion",
     "layout",
   ];
   pagesArr.forEach((e) => {
