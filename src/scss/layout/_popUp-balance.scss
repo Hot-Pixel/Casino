@@ -2,110 +2,150 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.popUpBalanceBlock {
-    position: relative;
+.popUpBalance {
+  display: none;
+  opacity: 0;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  transform: translateY(100%);
+  opacity: 0;
+
+  z-index: 10;
+
+  background-color: setcolor("black");
+  border-radius: rem(5);
+
+  @include screen-sm {
+    top: rem(10);
+    left: 90%;
+    bottom: unset;
+
+    width: auto;
+  }
+
+  &__container {
+    padding: $sm;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid setcolor("black", "dark1");
+    }
+
+    .popUpBalance__closeBtn {
+      cursor: pointer;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > p {
+      @extend .u-f--bold, .u-f--h4;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+
+    column-gap: $lg;
+
+    &:last-of-type {
+      margin-top: $sm;
+    }
+
+    .title {
+      color: #a4a5a8;
+    }
+
+    .total {
+      color: white;
+    }
+
+    p.total {
+      @extend .u-f--bold, .u-f--h4;
+    }
+
+    .progress {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .progressBar {
+      position: relative;
+      width: 80%;
+      height: rem(12);
+
+      background-color: setcolor("black", "dark4");
+      border-radius: $xl;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 73%;
+        height: rem(12);
+
+        background: linear-gradient(to right, #1f78fb, #00d1bc);
+        border-radius: $xl;
+      }
+    }
+  }
+
+  &__freespins {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: rem(10);
+    }
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+
+    p {
+      @extend .u-f--bold;
+      color: setcolor("primary");
+
+      padding-right: rem(5);
+    }
+  }
 }
 
-.popUpBalance {
-    display: none;
-    opacity: 0;
+.popUpBalance.header--light {
+  background-color: setcolor("gray", "light1");
 
-    position: absolute;
-    top: rem(10);
-    right: 10%;
-
-    z-index: 10;
-
-    background-color: setcolor('black');
-    border-radius: rem(5);
-
-    &__container {
-        padding: $sm;
-
-        &:not(:last-of-type) {
-            border-bottom: 1px solid setcolor('black', 'dark1');
-        }
-
-        .popUpBalance__closeBtn {
-            cursor: pointer;
-        }
+  .popUpBalance__header {
+    .popUpBalance__closeBtn {
+      path {
+        fill: setcolor("gray", "mid");
+      }
     }
+  }
 
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        & > p {
-            @extend .u-f--bold, .u-f--h4;
-        }
+  .popUpBalance__container {
+    &:not(:last-of-type) {
+      border-bottom: 1px solid setcolor("gray", "light2");
     }
+  }
 
-    &__grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-flow: row;
+  .popUpBalance__header-title,
+  .popUpBalance__grid .total,
+  .popUpBalance__freespins span,
+  .popUpBalance__detail p {
+    color: setcolor("black", "dark1");
+  }
 
-        column-gap: $lg;
-
-        &:last-of-type {
-            margin-top: $sm;
-        }
-
-        .title {
-            color: #a4a5a8;
-        }
-
-        .total {
-            @extend .u-f--bold, .u-f--h4;
-            color: white;
-        }
-
-        .progress {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .progressBar {
-            position: relative;
-            width: 80%;
-            height: rem(12);
-
-            background-color: setcolor('black', 'dark4');
-            border-radius: $xl;
-
-            &::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-
-                width: 73%;
-                height: rem(12);
-
-                background: linear-gradient(to right, #1f78fb, #00d1bc);
-                border-radius: $xl;
-            }
-        }
-    }
-
-    &__freespins {
-        display: flex;
-        align-items: center;
-        img {
-            margin-right: rem(10);
-        }
-    }
-
-    &__detail {
-        display: flex;
-        align-items: center;
-
-        p {
-            @extend .u-f--bold;
-            color: setcolor('primary');
-
-            padding-right: rem(5);
-        }
-    }
+  .popUpBalance__freespins svg g g path, .popUpBalance__detail svg path {
+    fill: setcolor("black", "dark1");
+  }
 }

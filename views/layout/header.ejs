@@ -235,7 +235,7 @@
     </section>
 
     <% if(player.isLogged){ %>
-        <section class="popUpBalanceBlock <%= mode %>">
+        <section class="popUpBalance <%= mode %>">
             <%- include ('popUp-balance') %>
         </section>
     <% } %>
@@ -357,7 +357,7 @@
                             <img src="img/icons/icon-plus-btn.svg" alt="">
                             <span>DEPOSITAR</span>
                         </button>
-                        <div class="deposits__total">
+                        <div class="deposits__total popUpBalance__openBtn">
                             <svg id="icon-coins-header" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                 viewBox="0 0 14 14">
                                 <path id="Trazado_4897" data-name="Trazado 4897"
