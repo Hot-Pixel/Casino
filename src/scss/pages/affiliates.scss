@@ -34,11 +34,12 @@
 @use '../layout/menu-header';
 
 // MODULES
+@use '../modules/grid-half';
 @use '../modules/banner-affiliates';
 @use '../modules/affiliates-content-cards';
-// @use '../modules/affiliates-content-benefits';
-// @use '../modules/affiliates-content-info';
-// @use '../modules/affiliates-contact';
+@use '../modules/affiliates-content-benefits';
+@use '../modules/affiliates-content-info';
+@use '../modules/affiliates-contact';
 
 // HELPER
 @use '../helper';

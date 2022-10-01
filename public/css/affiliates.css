@@ -229,143 +229,145 @@
   font-weight: 500;
 }
 
-.u-f--bold, .affiliatesContentCards__card-title, .affiliatesContentCards__card-badge-span, .bannerAffiliates__title, .bannerAffiliates__subtitle, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .affiliatesContentCards__card-title p, .affiliatesContentCards__card-badge-span p, .bannerAffiliates__title p, .bannerAffiliates__subtitle p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .affiliatesContact__content-title, .affiliatesContact__content-subtitle, .affiliatesContact__form-title, .affiliatesContact__form input,
+.affiliatesContact__form textarea, .affiliatesContentInfo__content-title, .affiliatesContentInfo__content-subtitle, .affiliatesContentBenefits__title, .affiliatesContentBenefits__text, .affiliatesContentBenefits__benefits-item-title, .affiliatesContentCards__card-title, .affiliatesContentCards__card-badge-span, .bannerAffiliates__content-title, .bannerAffiliates__content-subtitle, .gridHalf__navbar-wrapper .icon__title p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .affiliatesContact__content-title p, .affiliatesContact__content-subtitle p, .affiliatesContact__form-title p, .affiliatesContact__form input p,
+.affiliatesContact__form textarea p, .affiliatesContentInfo__content-title p, .affiliatesContentInfo__content-subtitle p, .affiliatesContentBenefits__title p, .affiliatesContentBenefits__text p, .affiliatesContentBenefits__benefits-item-title p, .affiliatesContentCards__card-title p, .affiliatesContentCards__card-badge-span p, .bannerAffiliates__content-title p, .bannerAffiliates__content-subtitle p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
+.u-f--h1, .affiliatesContentInfo__content-title, .bannerAffiliates__content-title, .user__title p, .depositScreen .deposit__title {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .affiliatesContentInfo__content-title, .bannerAffiliates__content-title, .user__title p, .depositScreen .deposit__title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .affiliatesContentInfo__content-title, .bannerAffiliates__content-title, .user__title p, .depositScreen .deposit__title {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .affiliatesContentInfo__content-title, .bannerAffiliates__content-title, .user__title p, .depositScreen .deposit__title {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .affiliatesContentInfo__content-title, .bannerAffiliates__content-title, .user__title p, .depositScreen .deposit__title {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .affiliatesContentInfo__content-title, .bannerAffiliates__content-title, .user__title p, .depositScreen .deposit__title {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .bannerAffiliates__title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .affiliatesContentInfo__content-title, .bannerAffiliates__content-title, .user__title p, .depositScreen .deposit__title {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
+.u-f--h2, .affiliatesContact__content-title, .affiliatesContentBenefits__title, .affiliatesContentCards__card-title, .user__card-title {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
+  .u-f--h2, .affiliatesContact__content-title, .affiliatesContentBenefits__title, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
+  .u-f--h2, .affiliatesContact__content-title, .affiliatesContentBenefits__title, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
+  .u-f--h2, .affiliatesContact__content-title, .affiliatesContentBenefits__title, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
+  .u-f--h2, .affiliatesContact__content-title, .affiliatesContentBenefits__title, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
+  .u-f--h2, .affiliatesContact__content-title, .affiliatesContentBenefits__title, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .affiliatesContentCards__card-title, .user__card-title {
+  .u-f--h2, .affiliatesContact__content-title, .affiliatesContentBenefits__title, .affiliatesContentCards__card-title, .user__card-title {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+.u-f--h3, .affiliatesContentBenefits__benefits-item-title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .affiliatesContentBenefits__benefits-item-title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .affiliatesContentBenefits__benefits-item-title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .affiliatesContentBenefits__benefits-item-title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .affiliatesContentBenefits__benefits-item-title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .affiliatesContentBenefits__benefits-item-title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .affiliatesContentBenefits__benefits-item-title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+.u-f--h4, .affiliatesContact__content-subtitle, .affiliatesContact__form-title, .affiliatesContentInfo__content-subtitle, .affiliatesContentBenefits__text, .affiliatesContentCards__card-badge-span, .bannerAffiliates__content-subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContact__content-subtitle, .affiliatesContact__form-title, .affiliatesContentInfo__content-subtitle, .affiliatesContentBenefits__text, .affiliatesContentCards__card-badge-span, .bannerAffiliates__content-subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContact__content-subtitle, .affiliatesContact__form-title, .affiliatesContentInfo__content-subtitle, .affiliatesContentBenefits__text, .affiliatesContentCards__card-badge-span, .bannerAffiliates__content-subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContact__content-subtitle, .affiliatesContact__form-title, .affiliatesContentInfo__content-subtitle, .affiliatesContentBenefits__text, .affiliatesContentCards__card-badge-span, .bannerAffiliates__content-subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContact__content-subtitle, .affiliatesContact__form-title, .affiliatesContentInfo__content-subtitle, .affiliatesContentBenefits__text, .affiliatesContentCards__card-badge-span, .bannerAffiliates__content-subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContact__content-subtitle, .affiliatesContact__form-title, .affiliatesContentInfo__content-subtitle, .affiliatesContentBenefits__text, .affiliatesContentCards__card-badge-span, .bannerAffiliates__content-subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.0625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .affiliatesContentCards__card-badge-span, .bannerAffiliates__subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .affiliatesContact__content-subtitle, .affiliatesContact__form-title, .affiliatesContentInfo__content-subtitle, .affiliatesContentBenefits__text, .affiliatesContentCards__card-badge-span, .bannerAffiliates__content-subtitle, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.125rem;
   }
 }
@@ -471,48 +473,48 @@
   display: none !important;
 }
 
-.affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+.affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -520,48 +522,48 @@
   }
 }
 
-.affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+.affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .affiliatesContentCards__grid, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .affiliatesContentCards__grid, .bannerAffiliates__content, .grids__container, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -569,102 +571,61 @@
   }
 }
 
-.footer {
+.grids__container, .footer {
   margin-top: var(--vertical-small-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer {
+  .grids__container, .footer {
     margin-top: var(--vertical-small-2xl);
   }
 }
 
-.bannerAffiliates, .footer__grid {
+.affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .footer__grid {
   margin-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .bannerAffiliates, .footer__grid {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .footer__grid {
     margin-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .bannerAffiliates, .footer__grid {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .footer__grid {
     margin-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .bannerAffiliates, .footer__grid {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .footer__grid {
     margin-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .bannerAffiliates, .footer__grid {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .footer__grid {
     margin-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .bannerAffiliates, .footer__grid {
+  .affiliatesContact, .affiliatesContentInfo, .affiliatesContentBenefits, .footer__grid {
     margin-top: var(--vertical-medium-2xl);
-  }
-}
-
-.bannerAffiliates {
-  padding-left: var(--horizontal-main-xs);
-  padding-right: var(--horizontal-main-xs);
-}
-@media only screen and (min-width: 576px) {
-  .bannerAffiliates {
-    padding-left: var(--horizontal-main-sm);
-    padding-right: var(--horizontal-main-sm);
-  }
-}
-@media only screen and (min-width: 768px) {
-  .bannerAffiliates {
-    padding-left: var(--horizontal-main-md);
-    padding-right: var(--horizontal-main-md);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .bannerAffiliates {
-    padding-left: var(--horizontal-main-lg);
-    padding-right: var(--horizontal-main-lg);
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .bannerAffiliates {
-    padding-left: var(--horizontal-main-xl);
-    padding-right: var(--horizontal-main-xl);
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .bannerAffiliates {
-    padding-left: var(--horizontal-main-2xl);
-    padding-right: var(--horizontal-main-2xl);
-  }
-}
-@media only screen and (min-width: 1600px) {
-  .bannerAffiliates {
-    padding-left: var(--horizontal-main-3xl);
-    padding-right: var(--horizontal-main-3xl);
   }
 }
 
@@ -2666,35 +2627,219 @@ h5 {
   margin-right: 0.625rem;
 }
 
+.grids__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3125rem;
+}
+@media only screen and (min-width: 1280px) {
+  .grids__container {
+    flex-direction: row;
+    column-gap: 0.625rem;
+    row-gap: 0;
+  }
+}
+
+.gridHalf {
+  width: 100%;
+  padding: 0.625rem 0.9375rem;
+  height: 100%;
+  background-color: #25292f;
+  border-radius: 0.3125rem;
+}
+@media only screen and (min-width: 768px) {
+  .gridHalf {
+    padding: 3.75rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf {
+    padding: 0.9375rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .gridHalf {
+    width: 50%;
+  }
+}
+.gridHalf__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+}
+.gridHalf__navbar .js-arrow__grid {
+  cursor: pointer;
+  transform: rotate(-90deg);
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar .js-arrow__grid {
+    transform: rotate(0);
+  }
+}
+.gridHalf__navbar-wrapper {
+  display: flex;
+  align-items: center;
+}
+.gridHalf__navbar-wrapper > p {
+  color: #ff293e;
+  margin: 0;
+  padding-right: 10px;
+}
+.gridHalf__navbar-wrapper .icon__title {
+  margin-left: 0.3125rem;
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar-wrapper .icon__title {
+    margin-left: 0.9375rem;
+  }
+}
+.gridHalf__navbar-wrapper .icon__title p {
+  font-size: 1.125rem;
+}
+.gridHalf__navbar-wrapper .icon__title img {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar-wrapper .icon__title img {
+    display: inline-block;
+  }
+}
+.gridHalf__navbar-link p {
+  color: white;
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar-link p {
+    color: #ff293e;
+  }
+}
+.gridHalf__navbar-link svg path {
+  fill: white;
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__navbar-link svg path {
+    fill: #ff293e;
+  }
+}
+.gridHalf__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto auto;
+  gap: 10px;
+  height: 0;
+  opacity: 0;
+}
+@media only screen and (min-width: 768px) {
+  .gridHalf__grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .gridHalf__grid {
+    height: 100%;
+    opacity: 1;
+  }
+}
+.gridHalf__grid-item {
+  position: relative;
+}
+.gridHalf__grid-item > img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.625rem;
+}
+.gridHalf__grid-item:hover .gridHalf__grid-item--hover {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+.gridHalf__grid-item--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.gridHalf__grid-item--hover button {
+  margin-bottom: 0.9375rem;
+  display: flex;
+  align-items: center;
+}
+.gridHalf__grid-item--hover button img {
+  display: inline-block;
+}
+
 .bannerAffiliates {
   position: relative;
+  margin-top: 4.375rem;
   padding-top: 6.25rem;
-  padding-bottom: 12.5rem;
-  background-color: #25292f;
-  background-image: url("../img/images/img-affiliates-header-bg-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: center;
-  background-size: cover;
+}
+@media only screen and (min-width: 576px) {
+  .bannerAffiliates {
+    padding-top: 3.75rem;
+    padding-bottom: 5.625rem;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .bannerAffiliates {
-    padding-bottom: 6.25rem;
+    padding-top: 6.25rem;
+    padding-bottom: 12.5rem;
     background-color: #ff293e;
-    background-image: url("../img/images/img-affiliates-header-bg-desktop.jpg");
-    background-position-y: bottom;
   }
 }
-.bannerAffiliates__title, .bannerAffiliates__subtitle {
-  width: 80%;
+.bannerAffiliates__content {
+  position: absolute;
+  z-index: 1;
+  margin-top: -2.5rem;
+}
+@media only screen and (min-width: 576px) {
+  .bannerAffiliates__content {
+    position: relative;
+    margin-top: 0;
+  }
+}
+.bannerAffiliates__content-title, .bannerAffiliates__content-subtitle {
+  width: 100%;
 }
 @media only screen and (min-width: 1280px) {
-  .bannerAffiliates__title, .bannerAffiliates__subtitle {
+  .bannerAffiliates__content-title, .bannerAffiliates__content-subtitle {
     width: 40%;
   }
 }
-.bannerAffiliates__subtitle {
+.bannerAffiliates__content-subtitle {
   margin-top: 0.9375rem;
+}
+.bannerAffiliates__bg {
+  position: relative;
+  z-index: 0;
+  height: max-content;
+}
+@media only screen and (min-width: 576px) {
+  .bannerAffiliates__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: auto;
+  }
+}
+.bannerAffiliates__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .affiliatesContentCards {
@@ -2749,5 +2894,158 @@ h5 {
 }
 .affiliatesContentCards__card-badge + .affiliatesContentCards__card-badge {
   margin-top: 0.3125rem;
+}
+.affiliatesContentBenefits {
+  display: grid;
+  gap: 1.25rem;
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentBenefits {
+    column-gap: 3.75rem;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentBenefits__title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+.affiliatesContentBenefits__text {
+  opacity: 0.6;
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentBenefits__text {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+}
+.affiliatesContentBenefits__benefits {
+  display: grid;
+  gap: 1.25rem;
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentBenefits__benefits {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+.affiliatesContentBenefits__benefits-item {
+  display: flex;
+  gap: 0.625rem;
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentBenefits__benefits-item {
+    gap: 1.25rem;
+    flex-direction: column;
+  }
+}
+.affiliatesContentBenefits__benefits-item-image {
+  width: 1em;
+  height: 1em;
+  font-size: 2.375rem;
+}
+.affiliatesContentBenefits__benefits-item-title {
+  margin-top: 0.625rem;
+  color: #ff293e;
+}
+
+.affiliatesContentInfo {
+  display: grid;
+  gap: 1.875rem;
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentInfo {
+    column-gap: 6.25rem;
+    grid-template-columns: 3fr 7fr;
+    align-items: center;
+  }
+}
+.affiliatesContentInfo__content-subtitle {
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+}
+.affiliatesContentInfo__content-text {
+  opacity: 0.6;
+}
+.affiliatesContentInfo__image {
+  width: 125%;
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContentInfo__image {
+    max-width: 100%;
+  }
+}
+
+.affiliatesContact {
+  display: grid;
+  gap: 2.5rem;
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContact {
+    column-gap: 3.75rem;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+.affiliatesContact__content {
+  padding: 0;
+  background-color: transparent;
+}
+.affiliatesContact__content-subtitle {
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+.affiliatesContact__content-text {
+  opacity: 0.6;
+}
+.affiliatesContact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 1.875rem 1.875rem 0;
+  border-radius: 0.625rem;
+  background-color: #25292f;
+}
+.affiliatesContact__form-text {
+  opacity: 0.6;
+}
+.affiliatesContact__form input,
+.affiliatesContact__form textarea {
+  padding: 0.9375rem 1.5625rem;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  background-color: transparent;
+}
+.affiliatesContact__form input::placeholder,
+.affiliatesContact__form textarea::placeholder {
+  opacity: 0.6;
+}
+.affiliatesContact__form input {
+  border-radius: 6.25rem;
+}
+.affiliatesContact__form textarea {
+  border-radius: 1.25rem;
+}
+.affiliatesContact__form button {
+  margin: auto;
+  padding: 0.46875rem 0.9375rem 0.46875rem 0.46875rem;
+  width: fit-content;
+  transform: translateY(50%);
+}
+@media only screen and (min-width: 1280px) {
+  .affiliatesContact__form button {
+    margin-right: 0;
+  }
+}
+.affiliatesContact__form button img {
+  width: 1em;
+  height: 1em;
+  font-size: 30px;
+}
+.affiliatesContact__form button img + span {
+  margin-left: 0.625rem;
 }
 /*# sourceMappingURL=affiliates.css.map */
