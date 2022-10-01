@@ -45,8 +45,9 @@
 
 	&-button {
 		position: relative;
-		margin: rem(40) auto rem(-22);
+		margin: rem(40) auto 0;
 		width: fit-content;
+		transform: translateY(50%);
 
 
 		span + img {

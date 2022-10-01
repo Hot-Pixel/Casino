@@ -41,10 +41,6 @@
 
 			p {
 				@extend .u-f--h4;
-
-				& + p {
-					margin-top: $sm;
-				}
 			}
 		}
 	}
@@ -54,13 +50,17 @@
 	// Columns design
 
 	&__box {
-		position: relative;
-		padding: rem(30) rem(25) rem(60);
+		padding: rem(30) rem(25) 0;
 		border-radius: rem(10);
 		background-color: setcolor("black", "dark2");
 
+		display: flex;
+		flex-direction: column;
+		gap: rem(20);
+		justify-content: space-between;
+
 		@include screen-sm {
-			padding: rem(50) rem(40) rem(100);
+			padding: rem(50) rem(40) 0;
 		}
 
 
@@ -70,16 +70,16 @@
 
 
 		&-button {
-			position: absolute;
-			right: rem(40);
-			bottom: -1.5em;
-			left: rem(40);
 			padding: $sm rem(40);
-			text-transform: uppercase;
+			transform: translateY(50%);
 
 
-			span + img {
-				margin-left: $sm;
+			span {
+				text-transform: uppercase;
+
+				& + img {
+					margin-left: $sm;
+				}
 			}
 		}
 	}
@@ -93,6 +93,10 @@
 
 			@include screen-sm {
 				text-align: left;
+			}
+
+			& + p {
+				margin-top: $sm;
 			}
 		}
 

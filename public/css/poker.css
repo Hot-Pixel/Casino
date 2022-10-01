@@ -3923,8 +3923,9 @@ a.redCta img {
 }
 .pokerSatelitesOnline__Card-button {
   position: relative;
-  margin: 2.5rem auto -1.375rem;
+  margin: 2.5rem auto 0;
   width: fit-content;
+  transform: translateY(50%);
 }
 .pokerSatelitesOnline__Card-button span + img {
   margin-left: 1.25rem;
