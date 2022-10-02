@@ -92,6 +92,7 @@ gulp.task("js", async () => {
         "src/js/signIn",
         "src/js/signUp",
         "src/js/appApuestas",
+        "src/js/game",
       ],
       plugins: [
         commonjs({
