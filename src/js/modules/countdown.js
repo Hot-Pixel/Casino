@@ -1,9 +1,11 @@
 function countdown() {
+    const countdownWrapper = document.querySelector('.countdown__time');
+    if(!countdownWrapper) return;
 
     //CUENTA ATRAS
     // Set the date we're counting down to
-    const date = new Date();
-    let countDownDate = date.setDate(date.getDate() + 30);
+    const registerDate = countdownWrapper.dataset.creationDate;
+    let countDownDate = new Date(registerDate);
 
     // Update the count down every 1 second
     let x = setInterval(function() {
@@ -29,7 +31,7 @@ function countdown() {
     // If the count down is finished, write some text
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        countdownWrapper.remove();
     }
     }, 1000);
 

@@ -753,7 +753,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 a:focus, a:hover, a:active {
   outline: 0;

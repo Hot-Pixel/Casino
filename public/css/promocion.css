@@ -753,7 +753,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 a:focus, a:hover, a:active {
   outline: 0;
@@ -2553,6 +2553,7 @@ header {
   opacity: 0;
   padding: 0;
   border-top: 1px solid #13171d;
+  overflow: hidden;
 }
 .faq__accordion-item .body p {
   color: #7f8285;
@@ -2621,21 +2622,13 @@ header {
 }
 .countdown__grid {
   margin-top: 3.75rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  display: flex;
   gap: 3.75rem;
-}
-@media only screen and (min-width: 768px) {
-  .countdown__grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr;
-  }
+  flex-wrap: wrap;
 }
 @media only screen and (min-width: 1280px) {
   .countdown__grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
     gap: 0.3125rem;
   }
 }
@@ -2643,8 +2636,19 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   background-color: #25292f;
   padding: 0 1.875rem 1.875rem;
+}
+@media only screen and (min-width: 768px) {
+  .countdown__item {
+    width: calc(50% - 3.75rem / 2);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .countdown__item {
+    width: calc(25% - 1.875rem / 2);
+  }
 }
 .countdown__item .cross {
   transform: translateY(-50%);
