@@ -2423,13 +2423,15 @@ header {
     background: linear-gradient(to bottom, #ff293e, #ff293e 20%, transparent 20%);
   }
 }
-.blockPromo button {
-  height: 6.25rem;
-  width: 100%;
-}
 .blockPromo__bg img {
   object-fit: contain;
   filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.4));
+  width: 100%;
+}
+.blockPromo__cta {
+  display: flex;
+  margin: 1.875rem 0 0.9375rem;
+  height: 6.25rem;
   width: 100%;
 }
 .blockPromo__title {
@@ -2455,15 +2457,6 @@ header {
 .blockPromo__title p {
   max-width: 80%;
   padding: 0.9375rem 0;
-}
-.blockPromo__title-btn {
-  display: block;
-  margin: 1.875rem 0 0.9375rem;
-}
-@media only screen and (min-width: 1280px) {
-  .blockPromo__title-btn {
-    display: none;
-  }
 }
 .blockPromo__features {
   display: none;
@@ -2532,15 +2525,6 @@ header {
 .blockPromo__tc p {
   color: #a0a2a4;
   padding-bottom: 0.9375rem;
-}
-.blockPromo__tc-btn {
-  display: none;
-  margin: 3.75rem 0;
-}
-@media only screen and (min-width: 1280px) {
-  .blockPromo__tc-btn {
-    display: block;
-  }
 }
 
 .faq__title p {
