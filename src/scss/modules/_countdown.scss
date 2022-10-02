@@ -47,19 +47,11 @@
 
   &__grid {
     margin-top: $lg;
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    display: flex;
     gap: $lg;
 
-    @include tablet {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr 1fr;
-    }
     @include screen-sm {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 1fr;
       gap: rem(5);
     }
   }
@@ -71,6 +63,13 @@
 
     background-color: setcolor("black");
     padding: 0 $md $md;
+
+    @include tablet {
+      width: 50%;
+    }
+    @include screen-sm {
+      width: 25%;
+    }
 
     .cross {
       transform: translateY(-50%);
