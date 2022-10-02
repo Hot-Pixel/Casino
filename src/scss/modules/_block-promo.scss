@@ -155,11 +155,6 @@
     p {
       color: setcolor('gray', 'dark1');
       padding-bottom: $sm;
-      max-width: 100%;
-
-      @include screen-sm {
-        max-width: 50%;
-      }
     }
 
     &-btn {

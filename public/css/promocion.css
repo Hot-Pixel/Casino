@@ -2532,12 +2532,6 @@ header {
 .blockPromo__tc p {
   color: #a0a2a4;
   padding-bottom: 0.9375rem;
-  max-width: 100%;
-}
-@media only screen and (min-width: 1280px) {
-  .blockPromo__tc p {
-    max-width: 50%;
-  }
 }
 .blockPromo__tc-btn {
   display: none;
