@@ -12,10 +12,8 @@ recoverBtn.addEventListener("click", () => {
   loginRecover.classList.add("active");
 });
 
-const nameValue = document.querySelector('input[name="user"]').value;
-const passValue = document.querySelector('input[name="password"]').value;
-
-console.log(nameValue);
+const nameValue = document.getElementById('user').value;
+const passValue = document.getElementById('password').value;
 
 const validation = new JustValidate(".login__form", {
   errorFieldCssClass: "is-invalid",
