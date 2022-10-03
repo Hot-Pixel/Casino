@@ -111,6 +111,12 @@
     button, a {
       height: rem(50);
       width: 50%;
+
+      &.loading {
+        opacity: .5;
+        pointer-events: none;
+        background-color: setcolor("gray", "mid");
+      }
     }
 
     a {
