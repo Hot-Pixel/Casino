@@ -1,0 +1,25 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.alert {
+    padding: 1rem;
+
+    &--error {
+        color: setcolor("danger", "base");
+        background-color: setcolor("danger", "light");
+        border: solid 1px setcolor("danger", "base");
+    }
+    
+    &--warning {
+        color: setcolor("warning", "base");
+        background-color: setcolor("warning", "light");
+        border: solid 1px setcolor("warning", "base");
+    }
+    &--success {
+        color: setcolor("secondary", "base");
+        background-color: setcolor("secondary", "light");
+        border: solid 1px setcolor("secondary", "base");
+        
+    }
+}
