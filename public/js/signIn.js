@@ -1181,9 +1181,55 @@ class JustValidate {
   }
 }
 
+function Alert(options = {}) {
+    const defaultOptions = {
+        wrapperSelector: '.alert__wrapper',
+        itemTemplate: '<div class="alert alert--{type} alert--{closable}" data-index="{index}">{message}</div>'
+    };
+    options = Object.assign({}, defaultOptions, options);
+    const wrapperEl = document.querySelector(options.wrapperSelector);
+    let alertIndex = 0;
+
+    function add(message, type = 'warning', closable = true) {
+        const alertStr = options.itemTemplate
+            .replace("{type}", type)
+            .replace("{closable}", closable ? "closable" : "fixed")
+            .replace("{index}", alertIndex)
+            .replace("{message}", message);
+        const alertEl = stringToElement(alertStr);
+        if(closable) {
+            alertEl.addEventListener("click", () => remove(alertEl.dataset.index));
+        }
+        wrapperEl.append(alertEl);
+        alertIndex++;
+    }
+
+    function remove(index) {
+        const alert = wrapperEl.querySelector(`[data-index="${index}"]`);
+        alert.remove();
+    }
+
+    function removeAll() {
+        wrapperEl.innerHTML = "";
+    }
+
+    function stringToElement(str) {
+        const tmp = document.createElement('div');
+        tmp.innerHTML = str;
+        return tmp.firstChild;
+    }
+
+    return {
+        add,
+        remove,
+        removeAll
+    };
+}
+
 const recoverBtn = document.querySelector(".login__recoverBtn");
 const loginBlocks = document.querySelectorAll(".login__block");
 document.querySelector(".login__signIn");
+const loginSubmitBtn = document.querySelector(".login__submit");
 const loginRecover = document.querySelector(".login__recover");
 
 recoverBtn.addEventListener("click", () => {
@@ -1193,10 +1239,9 @@ recoverBtn.addEventListener("click", () => {
   loginRecover.classList.add("active");
 });
 
-const nameValue = document.querySelector('input[name="user"]').value;
-document.querySelector('input[name="password"]').value;
-
-console.log(nameValue);
+const nameEl = document.getElementById('user');
+const passEl = document.getElementById('password');
+const alert = Alert();
 
 const validation = new JustValidate(".login__form", {
   errorFieldCssClass: "is-invalid",
@@ -1214,28 +1259,43 @@ const validation = new JustValidate(".login__form", {
 validation
   .addField("#user", [
     {
-      rule: "minLength",
-      value: 5,
-      errorMessage: "Requiere mínimo 5 caracteres",
-    },
-    {
-      rule: "maxLength",
-      value: 20,
-      errorMessage: "No puede tener más de 20 caracteres",
-    },
-    {
       rule: "required",
       errorMessage: "Este campo es obligatorio",
     },
   ])
   .addField("#password", [
     {
-      rule: "password",
-      errorMessage: "La contraseña debe estar formada por al menos una letra y un número",
-    },
-    {
       rule: "required",
       errorMessage: "Este campo es obligatorio",
     },
-  ]);
+  ])
+  .onSuccess(async () => {
+    try {
+      setFormLoading(true);
+      alert.removeAll();
+      const res = await handleLogin(nameEl.value, passEl.value);
+      console.log(res);
+    } catch (error) {
+      alert.add(error, "error");
+    } finally {
+      setFormLoading(false);
+    }
+  });
+
+// async function handleLogin(user, pass) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (user === pass) {
+//         resolve('login ok');
+//       }
+//       reject('login error');
+//     }, 1000);
+//   })
+// }
+
+function setFormLoading(isLoading) {
+  const submitTextEl = loginSubmitBtn.querySelector('span');
+  loginSubmitBtn.classList.toggle('loading', isLoading);
+  isLoading ? submitTextEl.innerText = "CARGANDO..." : submitTextEl.innerText = "ENTRAR";
+}
 //# sourceMappingURL=signIn.js.map

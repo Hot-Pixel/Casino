@@ -18,7 +18,6 @@
     }
     @include screen-sm {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(5, 1fr);
       column-gap: $sm;
       row-gap: rem(50);
     }

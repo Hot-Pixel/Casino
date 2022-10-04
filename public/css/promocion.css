@@ -753,7 +753,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 a:focus, a:hover, a:active {
   outline: 0;
@@ -2425,13 +2425,15 @@ header {
     background: linear-gradient(to bottom, #ff293e, #ff293e 20%, transparent 20%);
   }
 }
-.blockPromo button {
-  height: 6.25rem;
-  width: 100%;
-}
 .blockPromo__bg img {
   object-fit: contain;
   filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.4));
+  width: 100%;
+}
+.blockPromo__cta {
+  display: flex;
+  margin: 1.875rem 0 0.9375rem;
+  height: 6.25rem;
   width: 100%;
 }
 .blockPromo__title {
@@ -2457,15 +2459,6 @@ header {
 .blockPromo__title p {
   max-width: 80%;
   padding: 0.9375rem 0;
-}
-.blockPromo__title-btn {
-  display: block;
-  margin: 1.875rem 0 0.9375rem;
-}
-@media only screen and (min-width: 1280px) {
-  .blockPromo__title-btn {
-    display: none;
-  }
 }
 .blockPromo__features {
   display: none;
@@ -2534,21 +2527,6 @@ header {
 .blockPromo__tc p {
   color: #a0a2a4;
   padding-bottom: 0.9375rem;
-  max-width: 100%;
-}
-@media only screen and (min-width: 1280px) {
-  .blockPromo__tc p {
-    max-width: 50%;
-  }
-}
-.blockPromo__tc-btn {
-  display: none;
-  margin: 3.75rem 0;
-}
-@media only screen and (min-width: 1280px) {
-  .blockPromo__tc-btn {
-    display: block;
-  }
 }
 
 .faq__title p {
@@ -2577,6 +2555,7 @@ header {
   opacity: 0;
   padding: 0;
   border-top: 1px solid #13171d;
+  overflow: hidden;
 }
 .faq__accordion-item .body p {
   color: #7f8285;
@@ -2645,21 +2624,13 @@ header {
 }
 .countdown__grid {
   margin-top: 3.75rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  justify-content: center;
+  display: flex;
   gap: 3.75rem;
-}
-@media only screen and (min-width: 768px) {
-  .countdown__grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr;
-  }
+  flex-wrap: wrap;
 }
 @media only screen and (min-width: 1280px) {
   .countdown__grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
     gap: 0.3125rem;
   }
 }
@@ -2667,8 +2638,19 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   background-color: #25292f;
   padding: 0 1.875rem 1.875rem;
+}
+@media only screen and (min-width: 768px) {
+  .countdown__item {
+    width: calc(50% - 3.75rem / 2);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .countdown__item {
+    width: calc(25% - 1.875rem / 2);
+  }
 }
 .countdown__item .cross {
   transform: translateY(-50%);

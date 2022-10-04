@@ -5,7 +5,7 @@ function popUpSaldo() {
   const popUpOpenBtns = document.querySelectorAll(".popUpBalance__openBtn");
   const popUpMenu = document.querySelector(".popUpBalance");
 
-  if (!popUpOpenBtns) return;
+  if (popUpOpenBtns.length === 0) return;
 
   popUpOpenBtns.forEach((btn) => {
     if (window.innerWidth < 1280) {

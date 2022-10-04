@@ -153,6 +153,8 @@ gulp.task("bundleJs", async () => {
     "promociones",
     "promocion",
     "layout",
+    "signIn",
+    "signUp",
   ];
   pagesArr.forEach((e) => {
     return rollup

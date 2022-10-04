@@ -609,7 +609,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 a:focus, a:hover, a:active {
   outline: 0;
@@ -954,6 +954,25 @@ h5 {
   color: #ff293e;
 }
 
+.alert {
+  padding: 1rem;
+}
+.alert--error {
+  color: #ec0000;
+  background-color: #eb9b9c;
+  border: solid 1px #ec0000;
+}
+.alert--warning {
+  color: #e99c00;
+  background-color: #ead19c;
+  border: solid 1px #e99c00;
+}
+.alert--success {
+  color: #00d1bc;
+  background-color: #99e4de;
+  border: solid 1px #00d1bc;
+}
+
 .login__block {
   display: none;
 }
@@ -1047,6 +1066,11 @@ h5 {
 .login__btns button, .login__btns a {
   height: 3.125rem;
   width: 50%;
+}
+.login__btns button.loading, .login__btns a.loading {
+  opacity: 0.5;
+  pointer-events: none;
+  background-color: #868B92;
 }
 .login__btns a {
   margin-left: 0.9375rem;
