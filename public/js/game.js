@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-import { m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-87364a79.js';
-import { l as loading } from './loading-39012ce4.js';
-=======
-import { m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-06ed4418.js';
->>>>>>> dev
+import { m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-e0dcc8dc.js';
+import { l as loading } from './loading-2da3e22c.js';
 
 function gameNav() {
     const gameLimitBtn = document.querySelector(".game__limitBtn");

@@ -1,5 +1,5 @@
-import { a as accordion } from './accordion-0befc97c.js';
-import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-06ed4418.js';
+import { a as accordion } from './accordion-0dd6120a.js';
+import { p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-e0dcc8dc.js';
 
 function countdown() {
     const countdownWrapper = document.querySelector('.countdown__time');

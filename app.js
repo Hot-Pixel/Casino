@@ -32,6 +32,7 @@ import error404 from "./routes/error404.js";
 import atencionCliente from "./routes/atencionCliente.js";
 import game from "./routes/juegoResponsable.js";
 import verify from "./routes/verify.js";
+import howTo from "./routes/comoJugar.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -76,6 +77,7 @@ app.use("/error404", error404);
 app.use("/atencionCliente", atencionCliente);
 app.use("/juego-responsable", game);
 app.use("/verificacion", verify);
+app.use("/como-jugar", howTo);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
