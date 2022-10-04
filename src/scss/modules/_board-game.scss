@@ -1,0 +1,153 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.boardGame {
+	@extend %margin_top_large;
+	@extend %padding_horizontal_main;
+	text-align: center;
+
+
+	// Header
+
+	&__header {
+
+
+		&-title {
+			@extend .u-f--h1;
+			@extend .u-f--bold;
+		}
+
+
+		&-subtitle {
+			margin-top: rem(10);
+			@extend .u-f--h3;
+			@extend .u-f--bold;
+		}
+	}
+
+
+	// Board
+
+	&__board {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(10);
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		margin: rem(35) auto;
+		padding: rem(20) rem(30);
+		width: 100%;
+		max-width: rem(740);
+		border-radius: rem(10);
+		background-color: setcolor("black", "dark5");
+
+		@include screen-sm {
+			padding: rem(55) rem(65);
+		}
+
+
+		&-text {
+			@extend .u-f--h4;
+			opacity: .6;
+		}
+
+		&-numbers + &-text {
+			margin-top: rem(25);
+		}
+
+
+		&-numbers {
+			display: flex;
+			flex-wrap: wrap;
+			gap: rem(5);
+			justify-content: center;
+			align-items: center;
+		}
+
+
+		&-number {
+			padding: rem(23) rem(33);
+			@extend .u-f--bold;
+			border-radius: rem(10);
+			color: setcolor("white");
+			background-color: setcolor("black", "dark4");
+
+
+			&-top {
+				@extend .u-f--h2;
+			}
+
+
+			&-bottom {
+				@extend .u-f--h4;
+			}
+
+
+			&.is-active {
+				color: setcolor("black");
+				background-color: setcolor("primary");
+			}
+		}
+	}
+
+
+	// Board
+
+	&__footer {
+
+
+		&-title {
+			@extend .u-f--h4;
+			@extend .u-f--bold;
+			opacity: .6;
+		}
+
+
+		&-import {
+			margin: $sm auto 0;
+			padding: rem(30);
+			max-width: rem(540);
+			@extend .u-f--bold;
+			color: setcolor("white");
+			border: 2px solid setcolor("white");
+			border-radius: 3em;
+			opacity: .6;
+		}
+
+
+		&-time {
+			margin: $sm auto 0;
+			padding: rem(15) rem(30);
+			width: 100%;
+			max-width: rem(540);
+			@extend .u-f--bold;
+			border: none;
+			border-radius: 2em;
+			background-color: setcolor("black", "dark2");
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg id='icon-select-arrow' transform='translate(14) rotate(90)'%3E%3Cpath id='Trazado_97' data-name='Trazado 97' d='M14 7a7 7 0 1 0-7 7A7 7 0 0 0 14 7ZM5.29 10.71A1 1 0 0 1 5.284 9.3L5.29 9.29 7.41 7.18a.25.25 0 0 0 .007-.354L7.41 6.82 5.29 4.71A1 1 0 0 1 6.71 3.29l3 3A1 1 0 0 1 9.716 7.7L9.71 7.71l-3 3a1 1 0 0 1-1.414.006Z' transform='translate(0 0)' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-position-y: 50%;
+			background-position-x: calc( 100% - rem(30) );
+			appearance: none;
+		}
+
+
+		&-button {
+			margin: rem(40) auto 0;
+			width: fit-content;
+
+
+			span {
+				text-transform: uppercase;
+
+
+				& + img {
+					margin-left: $sm;
+				}
+			}
+		}
+	}
+}

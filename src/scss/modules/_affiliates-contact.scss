@@ -1,0 +1,109 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.affiliatesContact {
+	display: grid;
+	gap: rem(40);
+	@extend %margin_top_medium, %margin_horizontal_main;
+
+	@include screen-sm {
+		column-gap: rem(60);
+		grid-template-columns: repeat( 2, 2fr );
+	}
+
+
+	&__content {
+		padding: 0;
+		background-color: transparent;
+
+
+		&-title {
+			@extend .u-f--h2;
+			@extend .u-f--bold;
+		}
+
+
+		&-subtitle {
+			margin-top: rem(30);
+			margin-bottom: rem(10);
+			@extend .u-f--h4;
+			@extend .u-f--bold;
+		}
+
+
+		&-text {
+			opacity: .6;
+		}
+	}
+
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		justify-content: space-between;
+		padding: rem(30) rem(30) 0;
+		border-radius: rem(10);
+		background-color: setcolor('black');
+
+
+		&-title {
+			@extend .u-f--h4;
+			@extend .u-f--bold;
+		}
+
+
+		&-text {
+			opacity: .6;
+		}
+
+
+		input,
+		textarea {
+			padding: rem(15) rem(25);
+			@extend .u-f--bold;
+			border: 2px solid rgba(setcolor('white'), .6);
+			color: setcolor('white');
+			background-color: transparent;
+
+			&::placeholder {
+				opacity: .6;
+			}
+		}
+
+
+		input {
+			border-radius: rem(100);
+		}
+
+
+		textarea {
+			border-radius: rem(20);
+		}
+
+
+		button {
+			margin: auto;
+			padding: rem(7.5) rem(15) rem(7.5) rem(7.5);
+			width: fit-content;
+			transform: translateY(50%);
+
+			@include screen-sm {
+				margin-right: 0;
+			}
+
+
+			img {
+				width: 1em;
+				height: 1em;
+				font-size: 30px;
+
+				& + span {
+					margin-left: rem(10);
+				}
+			}
+		}
+	}
+}

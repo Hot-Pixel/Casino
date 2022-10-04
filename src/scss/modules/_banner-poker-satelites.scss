@@ -1,0 +1,43 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.bannerPokerSatelites {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	@extend %margin_top_medium;
+	height: 294px;
+	background-image: url('../img/images/img-banner-poker-satelite-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+
+	&__logo {
+		max-width: 80%;
+	}
+
+
+	&__breadcrumbs {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		bottom: 0;
+		padding: 15px 40px;
+		width: 100%;
+		background-color: setcolor("black", "dark1");
+
+		@include screen-sm {
+			position: relative;
+			margin-top: rem(10);
+			padding: 5px 20px;
+			width: initial;
+			border-radius: rem(10);
+		}
+	}
+}

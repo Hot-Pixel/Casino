@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="208.209" height="212.188" viewBox="0 0 208.209 212.188">
+  <g id="Icon" transform="translate(0 -103.34)">
+    <path id="Star" d="M208.209,106.094h0c0-1.326-2.652-1.989-2.652-1.989C159.141,90.18,120.019,53.047,108.083,9.283l-1.989-7.294S105.431,0,104.1,0s-1.989,1.989-1.989,1.989l-1.989,7.294C88.19,53.047,49.068,90.18,2.652,104.1c0,0-2.652.663-2.652,1.989s2.652,1.989,2.652,1.989c46.416,13.925,85.538,51.058,97.473,94.821l1.989,7.294s.663,1.989,1.989,1.989,1.989-1.989,1.989-1.989l1.989-7.294c11.936-43.764,51.058-80.9,97.473-94.821-.663.663,1.989,0,2.652-1.989" transform="translate(0 103.34)" fill="#ff293e"/>
+    <g id="Group_808" data-name="Group 808" transform="translate(83.519 187.382)">
+      <circle id="Ellipse_790" data-name="Ellipse 790" cx="40" cy="40" r="40" transform="translate(-19.415 -17.542)" fill="#fff" opacity="0.2"/>
+      <circle id="Ellipse_791" data-name="Ellipse 791" cx="30" cy="30" r="30" transform="translate(-9.414 -7.542)" fill="#fff" opacity="0.2"/>
+      <text id="_3" data-name="3" transform="translate(20.585 33.958)" fill="#fff" font-size="32" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-9.203" y="0">3</tspan></text>
+    </g>
+  </g>
+</svg>

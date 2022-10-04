@@ -1,0 +1,74 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+// Card
+
+.pokerSatelitesOnline__Card {
+	position: relative;
+	z-index: 1;
+	padding: rem(70) rem(35) 0;
+	text-align: center;
+
+
+	& + & {
+		margin-top: rem(40);
+
+		@include screen-sm {
+			margin-top: 0;
+		}
+	}
+
+
+	&-title {
+		@extend .u-f--h1;
+		@extend .u-f--bold;
+	}
+
+
+	&-subtitle {
+		margin-top: rem(35);
+		@extend .u-f--h4;
+		@extend .u-f--bold;
+		color: setcolor('primary');
+	}
+
+
+	&-price {
+		margin-top: $sm;
+		@extend .u-f--h1;
+		@extend .u-f--bold;
+		color: setcolor('primary');
+	}
+
+
+	&-button {
+		position: relative;
+		margin: rem(40) auto 0;
+		width: fit-content;
+		transform: translateY(50%);
+
+
+		span + img {
+			margin-left: rem(20);
+		}
+	}
+}
+
+
+// Cartoon doll
+
+.pokerSatelitesOnline {
+
+	.grids__container {
+		position: relative;
+	}
+
+	&__cartoonDoll {
+		position: absolute;
+		z-index: 0;
+		right: rem(-85);
+		bottom: rem(-65);
+	}
+}

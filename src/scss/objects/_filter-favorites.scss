@@ -1,0 +1,43 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.filterFavorites {
+	margin: $sm auto;
+	width: fit-content;
+
+
+	&__wrapper {}
+
+
+	&__types {
+
+
+		button {
+			padding: rem(12) $sm;
+			color: rgba( setcolor('white'), .6);
+			background-color: setcolor('black');
+			cursor: pointer;
+
+			& + & {
+				margin-left: 2px;
+			}
+
+			&:first-of-type {
+				border-radius: rem(5) 0 0 rem(5);
+			}
+			&:last-of-type {
+				border-radius: 0 rem(5) rem(5) 0;
+			}
+
+
+			&:focus,
+			&:active,
+			&.mixitup-control-active {
+				color: setcolor('white');
+				background-color: setcolor('black', 'dark4');
+			}
+		}
+	}
+}

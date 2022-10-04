@@ -1,0 +1,32 @@
+<%- include ('layout/head', {title: 'Affiliates' , css: 'affiliates', header: 'has-header' }) %>
+
+<%- include ('modules/deposit') %>
+
+<main class="pageContainer">
+
+	<%- include ('layout/header', { mode: ''}) %>
+
+	<main class="has-header">
+
+		<%- include ('modules/banner-affiliates') %>
+
+		<section class="affiliatesContent">
+
+			<%- include ('modules/affiliates-content-cards') %>
+
+			<%- include ('modules/affiliates-content-benefits') %>
+
+			<%- include ('modules/affiliates-content-info') %>
+
+		</section>
+
+		<%- include ('modules/affiliates-contact') %>
+
+		<%- include ('layout/footer') %>
+
+	</main>
+
+</main>
+
+
+<%- // include ('layout/scripts',  { script: 'affiliates' }) %>
