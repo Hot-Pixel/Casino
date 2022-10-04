@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .boardGame__header-title, .boardGame__header-subtitle, .boardGame__board-number, .boardGame__footer-title, .boardGame__footer-import, .boardGame__footer-time, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .boardGame__header-title p, .boardGame__header-subtitle p, .boardGame__board-number p, .boardGame__footer-title p, .boardGame__footer-import p, .boardGame__footer-time p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .boardGame__header-title, .boardGame__header-subtitle, .boardGame__board-number, .boardGame__footer-title, .boardGame__footer-import, .boardGame__footer-time, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid p.total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .boardGame__header-title p, .boardGame__header-subtitle p, .boardGame__board-number p, .boardGame__footer-title p, .boardGame__footer-import p, .boardGame__footer-time p, .popUpBalance__header > p p, .popUpBalance__grid p.total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -336,36 +336,36 @@
   }
 }
 
-.u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+.u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.0625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid .total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .boardGame__board-text, .boardGame__board-number-bottom, .boardGame__footer-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.125rem;
   }
 }
@@ -709,32 +709,32 @@
   outline: none;
   border: none;
   cursor: pointer;
-  padding: 0.625rem 0.625rem;
+  padding: 0.9375rem 1.875rem;
   border-radius: 6.25rem;
   transition: all 0.3s;
 }
 @media only screen and (min-width: 768px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 0.9375rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1280px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 12px;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 @media only screen and (min-width: 1440px) {
   .btn__red, .btn__blue, .btn__grey, .btn__darkGrey, .btn__grey--ghost, .btn__white, .btn__gray--red, .btn__block, .btn__black--lighter, .btn__ghost--red, .btn_no_button--red, .btn_border, .btn_border_secondary, .btn_white, .btn_border_white {
     font-size: 0.75rem;
-    padding: 0.9375rem 1.25rem;
+    padding: 0.9375rem 1.875rem;
   }
 }
 .btn__red > *, .btn__blue > *, .btn__grey > *, .btn__darkGrey > *, .btn__grey--ghost > *, .btn__white > *, .btn__gray--red > *, .btn__block > *, .btn__black--lighter > *, .btn__ghost--red > *, .btn_no_button--red > *, .btn_border > *, .btn_border_secondary > *, .btn_white > *, .btn_border_white > * {
@@ -794,7 +794,7 @@ li {
 
 a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 a:focus, a:hover, a:active {
   outline: 0;
@@ -1609,14 +1609,8 @@ h5 {
   }
 }
 .depositScreen .deposit__block {
-  padding-top: 3.75rem;
   display: none;
   width: 100%;
-}
-@media only screen and (min-width: 1280px) {
-  .depositScreen .deposit__block {
-    padding-top: 7.5rem;
-  }
 }
 .depositScreen .deposit__block.active {
   display: block;
@@ -1633,6 +1627,7 @@ h5 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 7.5rem;
 }
 .depositScreen .deposit__title {
   display: flex;
@@ -1647,29 +1642,23 @@ h5 {
   margin-top: 1.875rem;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-auto-flow: row;
   gap: 0.625rem;
 }
 @media only screen and (min-width: 1280px) {
   .deposit__grid {
-    grid-template-columns: 1fr 1fr;
     width: auto;
   }
 }
 .deposit__item {
   background-color: white;
   border-radius: 0.3125rem;
-  padding: 0.9375rem;
+  padding: 1.875rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-}
-@media only screen and (min-width: 1280px) {
-  .deposit__item {
-    padding: 1.875rem;
-  }
 }
 .deposit__item img {
   object-fit: contain;
@@ -2061,13 +2050,11 @@ h5 {
   align-items: center;
 }
 .user__title img {
-  height: 1.75rem;
   width: 1.625rem;
   margin-right: 0.9375rem;
 }
 @media only screen and (min-width: 1280px) {
   .user__title img {
-    height: 2.375rem;
     width: 2.25rem;
   }
 }
@@ -2129,6 +2116,10 @@ h5 {
   top: 50%;
   transform: translateY(-50%);
   right: 3%;
+}
+
+header {
+  position: relative;
 }
 
 .header {
@@ -2227,18 +2218,8 @@ h5 {
 .header .nav__promo {
   padding-right: 0;
 }
-.header .header__logged.active {
-  display: flex;
-}
 .header .header__logged-item {
   margin-left: 0.9375rem;
-}
-.header .header__noLog.active {
-  display: flex;
-}
-.header .header__noLog,
-.header .header__logged {
-  display: none;
 }
 
 .header__mobile {
@@ -2284,11 +2265,8 @@ h5 {
   padding: 0.625rem 1.25rem;
 }
 .header__mobile-noLog {
-  display: none;
   column-gap: 0.625rem;
-}
-.header__mobile-noLog.menu-active {
-  display: flex !important;
+  display: flex;
 }
 .header__mobile-noLog a {
   width: 50%;
@@ -2302,11 +2280,8 @@ h5 {
   color: black;
 }
 .header__mobile-logged {
-  display: none;
   justify-content: space-between;
-}
-.header__mobile-logged.menu-active {
-  display: flex !important;
+  display: flex;
 }
 
 .header.header--light {
@@ -2586,12 +2561,25 @@ h5 {
 .popUpBalance {
   display: none;
   opacity: 0;
-  position: absolute;
-  top: 0.625rem;
-  right: 10%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(100%);
+  opacity: 0;
   z-index: 10;
-  background-color: #25292f;
+  background-color: #13171d;
   border-radius: 0.3125rem;
+}
+@media only screen and (min-width: 1280px) {
+  .popUpBalance {
+    top: 0.625rem;
+    right: 10%;
+    left: initial;
+    bottom: initial;
+    transform: translateY(0);
+    width: auto;
+  }
 }
 .popUpBalance__container {
   padding: 0.9375rem;
@@ -2647,7 +2635,7 @@ h5 {
   display: flex;
   align-items: center;
 }
-.popUpBalance__freespins img {
+.popUpBalance__freespins svg {
   margin-right: 0.625rem;
 }
 .popUpBalance__detail {
@@ -2659,15 +2647,35 @@ h5 {
   padding-right: 0.3125rem;
 }
 
+.popUpBalance.header--light {
+  background-color: #F4F6F8;
+}
+.popUpBalance.header--light .popUpBalance__header .popUpBalance__closeBtn path {
+  fill: #868B92;
+}
+.popUpBalance.header--light .popUpBalance__container:not(:last-of-type) {
+  border-bottom: 1px solid #EAEDEF;
+}
+.popUpBalance.header--light .popUpBalance__header-title,
+.popUpBalance.header--light .popUpBalance__grid .total,
+.popUpBalance.header--light .popUpBalance__freespins span,
+.popUpBalance.header--light .popUpBalance__detail p {
+  color: #13171d;
+}
+.popUpBalance.header--light .popUpBalance__freespins svg g g path, .popUpBalance.header--light .popUpBalance__detail svg path {
+  fill: #13171d;
+}
+
 .menuHeader {
   display: none;
   position: fixed;
   top: 0;
-  left: 0;
+  left: -90vw;
   z-index: 10;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  opacity: 0;
   padding: 0.9375rem;
   background-color: #13171d;
   flex-direction: column;
