@@ -234,11 +234,11 @@
 .gameBlock .game__container .titleSm, .gameBlock .game .limit_input,
 .gameBlock .game .exclusion_input,
 .gameBlock .game .exclusion_select, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .withdrawScreen .withdraw__title, .withdrawScreen .withdrawDetail--top p:first-of-type, .withdrawScreen .withdrawDetail--top .withdrawDetail__ammount, .withdrawScreen .withdrawDetail--bottom .withdrawDetail__item p:last-of-type, .withdrawScreen .withdraw__step3 .withdraw__body, .support__content > p, .support span, .support__form p:first-of-type, .support__form input,
-.support__form textarea, .support__text p:first-of-type, .preferences__row p, .docs__state > div p:first-of-type, .docs__content-card .docs__text-title, .docs__content .docs__sent .docs__grid--top p:first-of-type, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2), .docs__content .docs__sent .docs__grid-stripe p, .docsVerify__header-text p, .docsVerify .docsVerify__steps p, .docsVerify .idForm__radio p, .docsVerify .idForm__message textarea, .history .history__navbar .history__nav, .history .history__grid .history__filter .history__content p:first-of-type, .history .history__grid .history__filter .history__inputs select, .history .history__grid .history__filter .history__inputs .input__date, .history .history__grid .history__activity .history__wrapper .history__table .bold, .wallet .wallet__grid .wallet__brief-row:first-of-type p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .data__screen .data__card > p, .data__screen .data__wrapper span, .data__screen .data__tc .data__row .data__col-date p, .data__screen .data__last p:last-of-type, .data__screen form .data__form-title p, .data__screen form .data__form-input select, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .userScreen .userMenu .nav__title > p p, .userScreen .userMenu .nav__title-verify p p, .userScreen .userMenu .nav__item--left p p, .userMenuMobile .nav__title--left > p p, .userMenuMobile .nav__title--left .nav__title-verify p p, .userMenuMobile .nav__item--left p p, .menuHeader__navItems li a p p, .popUpBalance__header > p p, .popUpBalance__grid p.total p, .popUpBalance__detail p p, .header .nav__item a p p, .user__card-title p, .user__title p p, .bar__ammount p p, .bar__progress p p, .gameBlock .game__header p, .gameBlock .game__container .title p,
+.support__form textarea, .support__text p:first-of-type, .preferences__row p, .docs__state > div p:first-of-type, .docs__content-card .docs__text-title, .docs__content .docs__sent .docs__grid--top p:first-of-type, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2), .docs__content .docs__sent .docs__grid-stripe p, .docsVerify__header-text p:first-of-type, .docsVerify .docsVerify__steps p, .docsVerify .idForm__radio p, .docsVerify .idForm__message textarea, .history .history__navbar .history__nav, .history .history__grid .history__filter .history__content p:first-of-type, .history .history__grid .history__filter .history__inputs select, .history .history__grid .history__filter .history__inputs .input__date, .history .history__grid .history__activity .history__wrapper .history__table .bold, .wallet .wallet__grid .wallet__brief-row:first-of-type p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type, .data__screen .data__card > p, .data__screen .data__wrapper span, .data__screen .data__tc .data__row .data__col-date p, .data__screen .data__last p:last-of-type, .data__screen form .data__form-title p, .data__screen form .data__form-input select, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .userScreen .userMenu .nav__title > p p, .userScreen .userMenu .nav__title-verify p p, .userScreen .userMenu .nav__item--left p p, .userMenuMobile .nav__title--left > p p, .userMenuMobile .nav__title--left .nav__title-verify p p, .userMenuMobile .nav__item--left p p, .menuHeader__navItems li a p p, .popUpBalance__header > p p, .popUpBalance__grid p.total p, .popUpBalance__detail p p, .header .nav__item a p p, .user__card-title p, .user__title p p, .bar__ammount p p, .bar__progress p p, .gameBlock .game__header p, .gameBlock .game__container .title p,
 .gameBlock .game__container .titleSm p, .gameBlock .game .limit_input p,
 .gameBlock .game .exclusion_input p,
 .gameBlock .game .exclusion_select p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__header p p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .withdrawScreen .withdraw__title p, .withdrawScreen .withdrawDetail--top p:first-of-type p, .withdrawScreen .withdrawDetail--top .withdrawDetail__ammount p, .withdrawScreen .withdrawDetail--bottom .withdrawDetail__item p:last-of-type p, .withdrawScreen .withdraw__step3 .withdraw__body p, .support__content > p p, .support span p, .support__form p:first-of-type p, .support__form input p,
-.support__form textarea p, .support__text p:first-of-type p, .preferences__row p p, .docs__state > div p:first-of-type p, .docs__content-card .docs__text-title p, .docs__content .docs__sent .docs__grid--top p:first-of-type p, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2) p, .docs__content .docs__sent .docs__grid-stripe p p, .docsVerify__header-text p p, .docsVerify .docsVerify__steps p p, .docsVerify .idForm__radio p p, .docsVerify .idForm__message textarea p, .history .history__navbar .history__nav p, .history .history__grid .history__filter .history__content p:first-of-type p, .history .history__grid .history__filter .history__inputs select p, .history .history__grid .history__filter .history__inputs .input__date p, .history .history__grid .history__activity .history__wrapper .history__table .bold p, .wallet .wallet__grid .wallet__brief-row:first-of-type p p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type p, .data__screen .data__card > p p, .data__screen .data__wrapper span p, .data__screen .data__tc .data__row .data__col-date p p, .data__screen .data__last p:last-of-type p, .data__screen form .data__form-title p p, .data__screen form .data__form-input select p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.support__form textarea p, .support__text p:first-of-type p, .preferences__row p p, .docs__state > div p:first-of-type p, .docs__content-card .docs__text-title p, .docs__content .docs__sent .docs__grid--top p:first-of-type p, .docs__content .docs__sent .docs__grid--top p:nth-of-type(2) p, .docs__content .docs__sent .docs__grid-stripe p p, .docsVerify__header-text p:first-of-type p, .docsVerify .docsVerify__steps p p, .docsVerify .idForm__radio p p, .docsVerify .idForm__message textarea p, .history .history__navbar .history__nav p, .history .history__grid .history__filter .history__content p:first-of-type p, .history .history__grid .history__filter .history__inputs select p, .history .history__grid .history__filter .history__inputs .input__date p, .history .history__grid .history__activity .history__wrapper .history__table .bold p, .wallet .wallet__grid .wallet__brief-row:first-of-type p p, .wallet .wallet__grid .wallet__brief-row:not(:first-of-type) p:last-of-type p, .data__screen .data__card > p p, .data__screen .data__wrapper span p, .data__screen .data__tc .data__row .data__col-date p p, .data__screen .data__last p:last-of-type p, .data__screen form .data__form-title p p, .data__screen form .data__form-input select p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -1571,22 +1571,31 @@ h5 {
   margin-top: 0.625rem;
 }
 
-.userContent {
-  padding-right: 0 !important;
+.history {
+  margin-right: -0.9375rem;
 }
-@media only screen and (min-width: 1280px) {
-  .userContent {
-    padding-right: 1.875rem !important;
+@media only screen and (min-width: 576px) {
+  .history {
+    margin-right: -1.875rem;
   }
 }
-
+@media only screen and (min-width: 768px) {
+  .history {
+    margin-right: -3.75rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .history {
+    margin-right: 0;
+  }
+}
 .history .history__navbar {
   margin: 1.875rem 0;
 }
 .history .history__navbar-desktop {
   display: none;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
   .history .history__navbar-desktop {
     display: flex;
   }
@@ -1594,7 +1603,7 @@ h5 {
 .history .history__navbar-mobile {
   display: flex;
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
   .history .history__navbar-mobile {
     display: none;
   }
@@ -1627,8 +1636,23 @@ h5 {
   }
 }
 .history .history__grid .history__filter {
-  margin-right: 0.9375rem !important;
   padding-bottom: 0 !important;
+  margin-right: 0.9375rem;
+}
+@media only screen and (min-width: 576px) {
+  .history .history__grid .history__filter {
+    margin-right: 1.875rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .history .history__grid .history__filter {
+    margin-right: 3.75rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .history .history__grid .history__filter {
+    margin-right: 0;
+  }
 }
 .history .history__grid .history__filter .history__content {
   padding: 1.875rem 0.9375rem;
@@ -1746,8 +1770,14 @@ h5 {
 .docs__state img {
   margin-right: 0.9375rem;
 }
-.docs__state > div p {
+.docs__state.accept p {
   color: #00d1bc;
+}
+.docs__state.alert p {
+  color: #ec0000;
+}
+.docs__state.warning p {
+  color: #e99c00;
 }
 .docs__content {
   display: flex;
@@ -1868,43 +1898,83 @@ h5 {
 }
 
 .docsVerify__content {
-  width: 100%;
-  margin-top: 3.75rem;
+  margin: 3.75rem 0;
+  max-width: 100%;
 }
 @media only screen and (min-width: 1280px) {
   .docsVerify__content {
-    width: 50%;
+    max-width: 70%;
   }
 }
-.docsVerify .docsVerify2__header {
-  margin-bottom: 1.875rem !important;
+@media only screen and (min-width: 1440px) {
+  .docsVerify__content {
+    max-width: 60%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .docsVerify__content {
+    max-width: 50%;
+  }
 }
 .docsVerify__header {
   position: relative;
-  padding: 3.75rem 1.875rem !important;
+  padding: 3.75rem 1.875rem 0 !important;
   border-radius: 1.25rem !important;
   margin-bottom: 3.75rem;
 }
 .docsVerify__header-icon {
   position: absolute;
   top: -2rem;
-  left: 1.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media only screen and (min-width: 1280px) {
+  .docsVerify__header-icon {
+    left: 1.875rem;
+    transform: translateX(0);
+  }
+}
+.docsVerify__header-text {
+  text-align: center;
+}
+@media only screen and (min-width: 1280px) {
+  .docsVerify__header-text {
+    text-align: left;
+  }
 }
 .docsVerify__header-text p:first-of-type {
   color: #13171d;
   margin-bottom: 0.9375rem;
 }
 .docsVerify__header-text p:last-of-type {
+  font-weight: 400;
   color: #868b92;
 }
+@media only screen and (min-width: 1280px) {
+  .docsVerify__header-text p:last-of-type {
+    font-weight: 700;
+  }
+}
 .docsVerify__header-start {
-  position: absolute;
-  bottom: -1.375rem;
-  left: 1.875rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(50%);
+}
+@media only screen and (min-width: 1280px) {
+  .docsVerify__header-start {
+    justify-content: flex-start;
+  }
 }
 .docsVerify__header-start button {
+  width: 100%;
   padding: 0.9375rem 1.875rem;
   box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+}
+@media only screen and (min-width: 1280px) {
+  .docsVerify__header-start button {
+    width: max-content;
+  }
 }
 .docsVerify .docsVerify__steps {
   display: flex;
@@ -1931,13 +2001,112 @@ h5 {
   align-items: center;
 }
 .docsVerify .docsVerify__steps img {
-  padding-right: 0.9375rem;
+  margin-right: 0.9375rem;
 }
-.docsVerify button {
+.docsVerify .docsVerify__step2 img {
+  width: 3.125rem;
+}
+@keyframes spinner__wrapper {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.docsVerify .docsVerify__step2 .spinner {
+  margin-right: 0.9375rem;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  overflow: hidden;
+  background: transparent;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(0.3);
+  backface-visibility: hidden;
+  transform-origin: 0 0; /* see note above */
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div {
+  left: 47px;
+  top: 1.5px;
+  position: absolute;
+  animation: spinner__wrapper linear 1s infinite;
+  background: #000000;
+  width: 6px;
+  height: 33px;
+  border-radius: 2.31px/2.31px;
+  transform-origin: 3px 48.5px;
+  box-sizing: content-box;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -0.9166666667s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -0.8333333333s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.75s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.6666666667s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.5833333333s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.5s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.4166666667s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.3333333333s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.25s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.1666666667s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.0833333333s;
+  background: #000000;
+}
+.docsVerify .docsVerify__step2 .spinner__wrapper div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+  background: #000000;
+}
+.docsVerify .docsVerify__steps-backBtn button {
   height: 45;
   width: 100%;
 }
-.docsVerify button img {
+.docsVerify .docsVerify__steps-backBtn button img {
   transform: rotate(90deg);
 }
 .docsVerify .idForm {
@@ -1992,19 +2161,50 @@ h5 {
   border: none;
 }
 .docsVerify .idForm__submit {
-  margin-left: 1.875rem;
-  margin-top: 1.875rem;
-  width: auto;
+  display: flex;
+  justify-content: center;
+  transform: translateY(50%);
+  width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .docsVerify .idForm__submit {
+    justify-content: flex-start;
+  }
+}
+.docsVerify .idForm__submit button {
+  width: max-content;
   padding: 0.625rem 0.9375rem 0.625rem 0.625rem;
+}
+@media only screen and (min-width: 1280px) {
+  .docsVerify .idForm__submit button {
+    margin-left: 1.875rem;
+  }
+}
+
+.docsVerify2__header {
+  position: relative;
+  padding: 3.75rem 1.875rem 1.875rem !important;
+  margin-bottom: 1.875rem;
 }
 
 .preferences__wrapper {
-  width: 100%;
   margin-top: 1.875rem;
+  max-width: 100%;
 }
 @media only screen and (min-width: 1280px) {
   .preferences__wrapper {
-    width: 50%;
+    max-width: 70%;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .preferences__wrapper {
+    max-width: 60%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .preferences__wrapper {
+    max-width: 50%;
   }
 }
 .preferences__wrapper > p {
@@ -2025,12 +2225,22 @@ h5 {
 }
 
 .support__content {
-  width: 100%;
   margin-top: 1.875rem;
+  max-width: 100%;
 }
 @media only screen and (min-width: 1280px) {
   .support__content {
-    width: 50%;
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .support__content {
+    max-width: 60%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .support__content {
+    max-width: 50%;
   }
 }
 .support__content > p {
@@ -2760,7 +2970,22 @@ h5 {
   display: block;
 }
 .gameBlock .game__screen {
-  max-width: 50%;
+  max-width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .gameBlock .game__screen {
+    max-width: 70%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .gameBlock .game__screen {
+    max-width: 60%;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .gameBlock .game__screen {
+    max-width: 50%;
+  }
 }
 .gameBlock .game__header {
   color: #13171d;
@@ -2787,11 +3012,17 @@ h5 {
   color: #868B92;
   padding-bottom: 0.9375rem;
 }
-.gameBlock .game__container button.btn__blue {
+.gameBlock .game__container .game__limitBtn {
   padding: 0.9375rem 2.5rem;
 }
 .gameBlock .game__container button {
   transform: translateY(50%);
+  width: 100%;
+}
+@media only screen and (min-width: 1280px) {
+  .gameBlock .game__container button {
+    width: max-content;
+  }
 }
 .gameBlock .game__container-limit {
   padding: 1.875rem 0 0 !important;
@@ -2804,9 +3035,6 @@ h5 {
 .gameBlock .game__limit:first-of-type {
   margin-top: 0.9375rem;
 }
-.gameBlock .game__limit:last-of-type {
-  border-bottom: 1px solid #d2d4d7;
-}
 .gameBlock .game__limit-title {
   color: #13171d;
   padding-bottom: 0.9375rem;
@@ -2814,11 +3042,21 @@ h5 {
 .gameBlock .game__limit .limit_input {
   width: 100%;
 }
+.gameBlock .game__limit--last {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid #d2d4d7;
+  padding: 1.875rem 1.875rem 0;
+}
+.gameBlock .game__limit--last .game__limit-saveBtn {
+  padding: 0.9375rem 2.8125rem;
+}
 .gameBlock .game__exclusion {
   width: 100%;
   border-top: 1px solid #d2d4d7;
   margin-top: 0.9375rem;
-  padding: 1.875rem 0 0.9375rem;
+  padding: 1.875rem 0.9375rem 0.9375rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2833,9 +3071,30 @@ h5 {
   column-gap: 0.625rem;
   width: 100%;
 }
+.gameBlock .game__exclusion-saveBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 0.9375rem;
+}
+.gameBlock .game__exclusion-saveBtn button {
+  width: 100%;
+  padding: 0.9375rem 2.8125rem;
+}
+@media only screen and (min-width: 1280px) {
+  .gameBlock .game__exclusion-saveBtn button {
+    width: max-content;
+  }
+}
 .gameBlock .game__exclusion .exclusion_input,
 .gameBlock .game__exclusion .exclusion_select {
-  width: 25%;
+  width: 50%;
+}
+@media only screen and (min-width: 1280px) {
+  .gameBlock .game__exclusion .exclusion_input,
+.gameBlock .game__exclusion .exclusion_select {
+    width: 25%;
+  }
 }
 .gameBlock .game__exclusion .exclusion_select {
   padding: 0 0.9375rem;
@@ -3768,14 +4027,16 @@ header {
   transform: translateY(100%);
   opacity: 0;
   z-index: 10;
-  background-color: #25292f;
+  background-color: #13171d;
   border-radius: 0.3125rem;
 }
 @media only screen and (min-width: 1280px) {
   .popUpBalance {
     top: 0.625rem;
-    left: 90%;
-    bottom: unset;
+    right: 10%;
+    left: initial;
+    bottom: initial;
+    transform: translateY(0);
     width: auto;
   }
 }
@@ -4842,6 +5103,17 @@ span.flatpickr-weekday {
   padding: 1.875rem 0.9375rem 12vh 0.9375rem;
   background-color: #EAEDEF;
   overflow: hidden;
+  opacity: 0;
+}
+@media only screen and (min-width: 576px) {
+  .userScreen .userContent {
+    padding: 1.875rem 1.875rem 12vh 1.875rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .userScreen .userContent {
+    padding: 1.875rem 3.75rem 12vh 3.75rem;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .userScreen .userContent {
@@ -4868,7 +5140,7 @@ span.flatpickr-weekday {
   position: fixed;
   width: 20%;
   left: 0;
-  opacity: 1;
+  opacity: 0;
   overflow: hidden;
   background-color: #F4F6F8;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);

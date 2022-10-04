@@ -2,22 +2,27 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.userContent {
-  padding-right: 0 !important;
-
-  @include screen-sm {
-    padding-right: $md !important;
-  }
-}
 
 .history {
+  margin-right: rem(-15);
+
+  @include mobile {
+    margin-right: rem(-30);
+  }
+  @include tablet {
+    margin-right: rem(-60);
+  }
+  @include screen-sm {
+    margin-right: 0;
+  }
+
   .history__navbar {
     margin: $md 0;
 
     &-desktop {
       display: none;
 
-      @include screen-sm {
+      @include tablet {
         display: flex;
       }
     }
@@ -25,7 +30,7 @@
     &-mobile {
       display: flex;
 
-      @include screen-sm {
+      @include tablet {
         display: none;
       }
     }
@@ -62,8 +67,18 @@
     }
 
     .history__filter {
-      margin-right: $sm !important;
       padding-bottom: 0 !important;
+      margin-right: $sm;
+
+      @include mobile {
+        margin-right: $md;
+      }
+      @include tablet {
+        margin-right: $lg;
+      }
+      @include screen-sm {
+        margin-right: 0;
+      }
 
       .history__content {
         padding: $md $sm;

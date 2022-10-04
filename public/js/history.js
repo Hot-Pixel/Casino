@@ -1,6 +1,7 @@
 import { m as marginHeader, p as popUpSaldo, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile, u as userMenuMobile } from './userMenuMobile-87364a79.js';
 import { h as historyNavBar } from './historyNavBar-c56d1d21.js';
 import { S as Splide } from './splide.esm-20cd2e1c.js';
+import { l as loading } from './loading-39012ce4.js';
 
 function carouselMenuHistory() {
   var carousel = new Splide(".splide", {
@@ -10,6 +11,16 @@ function carouselMenuHistory() {
     padding: { left: 0, right: 80 },
     perMove: 1,
     drag: "free",
+    breakpoints: {
+      768: {
+        perPage: 3,
+        padding: { left: 0, right: 80 },
+      },
+      576: {
+        perPage: 2,
+        padding: { left: 0, right: 80 },
+      }
+    }
   });
 
   carousel.mount();
@@ -2791,6 +2802,7 @@ function calendarHistory() {
   });
 }
 
+loading();
 marginHeader();
 
 window.addEventListener('load', () => {
