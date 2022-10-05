@@ -71,6 +71,10 @@ const pagesArr = [
   "wallet",
 ];
 
+const globalModules = {
+  Alert: "Alert"
+}
+
 /* Gulp Pipe for compiling SASS main file */
 gulp.task("sass", async () => {
   gulp
@@ -112,9 +116,7 @@ gulp.task("js", async () => {
           file: `public/js/${e}.js`,
           format: "iife",
           name: 'CBAR',
-          globals: {
-            Alert: "Alert"
-          }
+          globals: globalModules
         });
       });
   });
@@ -170,9 +172,7 @@ gulp.task("bundleJs", async () => {
           format: "iife",
           plugins: [terser()],
           name: 'CBAR',
-          globals: {
-            Alert: "Alert"
-          }
+          globals: globalModules
         });
       });
   });
