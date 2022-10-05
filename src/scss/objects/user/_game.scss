@@ -11,7 +11,17 @@
 
   .game {
     &__screen {
-      max-width: 50%;
+      max-width: 100%;
+
+      @include screen-sm {
+        max-width: 70%;
+      }
+      @include screen-md {
+        max-width: 60%;
+      }
+      @include screen-lg {
+        max-width: 50%;
+      }
     }
 
     &__header {
@@ -48,12 +58,17 @@
         padding-bottom: $sm;
       }
 
-      button.btn__blue {
+      .game__limitBtn {
         padding: $sm rem(40);
       }
 
       button {
         transform: translateY(50%);
+        width: 100%;
+
+        @include screen-sm {
+          width: max-content;
+        }
       }
 
       &-limit {
@@ -70,10 +85,6 @@
         margin-top: $sm;
       }
 
-      &:last-of-type {
-        border-bottom: 1px solid #d2d4d7;
-      }
-
       &-title {
         color: setcolor("black", "dark1");
         padding-bottom: $sm;
@@ -84,11 +95,24 @@
       }
     }
 
+    &__limit--last {
+      display: flex;
+      justify-content: center;
+
+      width: 100%;
+      border-top: 1px solid #d2d4d7;
+      padding: $md $md 0;
+
+      .game__limit-saveBtn {
+        padding: $sm rem(45);
+      }
+    }
+
     &__exclusion {
       width: 100%;
       border-top: 1px solid #d2d4d7;
       margin-top: $sm;
-      padding: $md 0 $sm;
+      padding: $md $sm $sm;
 
       display: flex;
       flex-direction: column;
@@ -106,9 +130,31 @@
         width: 100%;
       }
 
+      &-saveBtn {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 0 $sm;
+
+        button {
+          width: 100%;
+          padding: $sm rem(45);
+
+          @include screen-sm {
+            width: max-content;
+          }
+        }
+      }
+
       .exclusion_input,
       .exclusion_select {
-        width: 25%;
+        width: 50%;
+
+        @include screen-sm {
+          width: 25%;
+        }
       }
 
       .exclusion_select {

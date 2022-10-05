@@ -31,6 +31,7 @@
       }
 
       .menuPoker__btn {
+        position: relative;
         padding: 0 $lg;
 
         @include screen-lg {
@@ -77,9 +78,13 @@
         transition: all 0.5s ease;
       }
 
-      svg path, svg g path, svg g rect, svg g line, svg g circle {
+      svg path,
+      svg g path,
+      svg g rect,
+      svg g line,
+      svg g circle {
         transition: all 0.5s ease;
-        stroke: setcolor('primary');
+        stroke: setcolor("primary");
       }
 
       img {
@@ -90,7 +95,7 @@
 
     span {
       @extend .u-f--bold;
-      color: setcolor('gray', 'dark1');
+      color: setcolor("gray", "dark1");
       margin: 0;
       padding-left: rem(10);
     }
@@ -105,6 +110,6 @@
   }
 
   a:not(:last-of-type) {
-    border-right: 1px solid setcolor('black', 'dark5');
+    border-right: 1px solid setcolor("black", "dark5");
   }
 }

@@ -4,9 +4,11 @@
 
 <main class="pageContainer">
 
-	<%- include ('layout/header', { mode: ""}) %>
+	<%- include ('layout/header', { mode: ''}) %>
 
 	<section class="has-header">
+
+		<%- include ('modules/banner-app-apuestas') %>
 
 		<%- include ('modules/app-apuestas') %>
 
@@ -17,4 +19,4 @@
 </main>
 
 
-<%- include ('layout/scripts',  { script: 'casino' }) %>
+<%- include ('layout/scripts',  { script: 'app-apuestas' }) %>

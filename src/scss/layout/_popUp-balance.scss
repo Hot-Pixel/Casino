@@ -16,13 +16,16 @@
 
   z-index: 10;
 
-  background-color: setcolor("black");
+  background-color: setcolor("black", "dark1");
   border-radius: rem(5);
 
   @include screen-sm {
     top: rem(10);
-    left: 90%;
-    bottom: unset;
+    right: 10%;
+    left: initial;
+    bottom: initial;
+
+    transform: translateY(0);
 
     width: auto;
   }

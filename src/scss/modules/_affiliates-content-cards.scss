@@ -1,0 +1,87 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.affiliatesContentCards {
+	position: relative;
+
+	@include screen-sm {
+		margin-top: rem(-60);
+	}
+
+
+	// Grid
+
+	&__grid {
+		display: grid;
+		gap: rem(10);
+		grid-template-columns: repeat( 1, 1fr );
+		@extend %margin_horizontal_main;
+
+		@include screen-sm {
+			grid-template-columns: repeat( 3, 1fr );
+		}
+	}
+
+
+	// Card
+
+	&__card {
+		margin-top: rem(60);
+		margin-right: auto;
+		margin-left: auto;
+		padding: rem(30);
+		width: 100%;
+		max-width: 600px;
+		text-align: center;
+		border-radius: rem(10);
+		background-color: setcolor('black', 'dark4');
+
+		@include screen-sm {
+			margin-top: 0;
+		}
+
+
+		&-image {
+			margin: rem(-60) auto rem(30);
+		}
+
+
+		&-title {
+			@extend .u-f--h2;
+			@extend .u-f--bold;
+		}
+
+
+		&-text {
+			margin-top: rem(15);
+			margin-bottom: rem(30);
+		}
+
+
+		&-badge {
+			display: grid;
+			gap: rem(20);
+			grid-template-columns: rem(20) 1fr rem(20);
+			justify-items: center;
+			padding: rem(20);
+			border-radius: rem(5);
+			background-color: setcolor('black', 'dark5');
+
+
+			& + & {
+				margin-top: rem(5);
+			}
+
+
+			&-image {}
+
+
+			&-span {
+				@extend .u-f--h4;
+				@extend .u-f--bold;
+			}
+		}
+	}
+}

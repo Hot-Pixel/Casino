@@ -1,0 +1,26 @@
+<%- include ('layout/head', {title: "Juego Responsable" , css: "user" }) %>
+
+<%- include ('modules/deposit') %>
+
+<main class="pageContainer">
+
+    <%- include ('layout/header', { mode: "header--light"}) %>
+
+    <section class="userScreen has-header">
+
+        <%- include ('objects/user/user-menu', { nav: "" }) %>
+
+        <section class="userContent ">
+            <div class="verifyBlock">
+                <%- include ('objects/user/docs-verify') %>
+            </div>
+            <div class="verifyBlock">
+                <%- include ('objects/user/docs-verify2') %>
+            </div>
+        </section>
+
+    </section>
+
+</main>
+
+<%- include ('layout/scripts', { script: 'game'})%>

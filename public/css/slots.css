@@ -2745,14 +2745,16 @@ header {
   transform: translateY(100%);
   opacity: 0;
   z-index: 10;
-  background-color: #25292f;
+  background-color: #13171d;
   border-radius: 0.3125rem;
 }
 @media only screen and (min-width: 1280px) {
   .popUpBalance {
     top: 0.625rem;
-    left: 90%;
-    bottom: unset;
+    right: 10%;
+    left: initial;
+    bottom: initial;
+    transform: translateY(0);
     width: auto;
   }
 }
@@ -3240,7 +3242,7 @@ header {
 .gridHalf__grid-item > img {
   width: 100%;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 0.625rem;
 }
 .gridHalf__grid-item:hover .gridHalf__grid-item--hover {
   opacity: 1;

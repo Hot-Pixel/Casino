@@ -1,0 +1,44 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.gridFavorites {
+	display: grid;
+	gap: rem(5);
+	grid-template-columns: repeat( 3, 1fr );
+	@extend %margin_horizontal_main;
+
+	@include screen-sm {
+		gap: rem(10);
+		grid-template-columns: repeat( 6, 1fr );
+	}
+
+
+	&__item {
+		position: relative;
+		overflow: hidden;
+		border-radius: rem(5);
+
+
+		&-image {
+			width: 100%;
+		}
+
+
+		&-close {
+			position: absolute;
+			top: 7px;
+			right: 9px;
+		}
+
+
+		&:hover {
+
+			.gridHover {
+				opacity: 1;
+				transition: all 0.3s ease;
+			}
+		}
+	}
+}

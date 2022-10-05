@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid p.total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .popUpBalance__header > p p, .popUpBalance__grid p.total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .atencionCliente__title, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid p.total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .atencionCliente__title p, .popUpBalance__header > p p, .popUpBalance__grid p.total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -2568,14 +2568,16 @@ header {
   transform: translateY(100%);
   opacity: 0;
   z-index: 10;
-  background-color: #25292f;
+  background-color: #13171d;
   border-radius: 0.3125rem;
 }
 @media only screen and (min-width: 1280px) {
   .popUpBalance {
     top: 0.625rem;
-    left: 90%;
-    bottom: unset;
+    right: 10%;
+    left: initial;
+    bottom: initial;
+    transform: translateY(0);
     width: auto;
   }
 }
@@ -2719,32 +2721,32 @@ header {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.atencionCliente__columns-column p + p {
-  margin-top: 20px;
-}
 .atencionCliente__box {
-  position: relative;
-  padding: 30px 25px 60px;
-  border-radius: 10px;
+  padding: 1.875rem 1.5625rem 0;
+  border-radius: 0.625rem;
   background-color: #1c2026;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-between;
 }
 @media only screen and (min-width: 1280px) {
   .atencionCliente__box {
-    padding: 50px 40px 100px;
+    padding: 3.125rem 2.5rem 0;
   }
 }
 .atencionCliente__box p {
   opacity: 0.6;
 }
 .atencionCliente__box-button {
-  position: absolute;
-  right: 2.5rem;
-  bottom: -1.5em;
-  left: 2.5rem;
   padding: 0.9375rem 2.5rem;
+  transform: translateY(50%);
+}
+.atencionCliente__box-button span {
+  text-transform: uppercase;
 }
 .atencionCliente__box-button span + img {
-  margin-left: 20px;
+  margin-left: 0.9375rem;
 }
 .atencionCliente__not-box p {
   text-align: center;
@@ -2753,6 +2755,9 @@ header {
   .atencionCliente__not-box p {
     text-align: left;
   }
+}
+.atencionCliente__not-box p + p {
+  margin-top: 0.9375rem;
 }
 .atencionCliente__not-box small {
   text-align: left;

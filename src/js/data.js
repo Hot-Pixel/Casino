@@ -6,14 +6,17 @@ import depositAmmount from "./modules/depositAmmount.js";
 import depositCopy from "./modules/depositCopy.js";
 import menuHeaderMobile from "./modules/menuHeaderMobile.js";
 import userMenuMobile from "./modules/userMenuMobile.js";
+import loading from "./modules/loading.js";
 
-window.addEventListener('load', () => {
-  popUpSaldo()
-  marginHeader()
-  dataModify()
+loading()
+marginHeader();
+
+window.addEventListener("load", () => {
+  popUpSaldo();
+  dataModify();
   depositSteps();
   depositAmmount();
   depositCopy();
   menuHeaderMobile();
   userMenuMobile();
-})
+});

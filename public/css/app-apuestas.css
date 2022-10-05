@@ -229,143 +229,143 @@
   font-weight: 500;
 }
 
-.u-f--bold, .userMenuMobile .nav__title--left > p, .userMenuMobile .nav__title--left .nav__title-verify p, .userMenuMobile .nav__item--left p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid p.total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .userMenuMobile .nav__title--left > p p, .popUpBalance__header > p p, .popUpBalance__grid p.total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .appApuestas__title, .appApuestas__star-title, .bannerAppApuestas__title, .bannerAppApuestas__subtitle, .userMenuMobile .nav__title--left > p, .userMenuMobile .nav__title--left .nav__title-verify p, .userMenuMobile .nav__item--left p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid p.total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .filterSlots__search input, .filterSlotsM__search input, .filterSlots__general button, .filterSlotsM__general button, .filterSlots__title p, .filterSlotsM__title p, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .appApuestas__title p, .appApuestas__star-title p, .bannerAppApuestas__title p, .bannerAppApuestas__subtitle p, .userMenuMobile .nav__title--left > p p, .popUpBalance__header > p p, .popUpBalance__grid p.total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .filterSlots--left span p, .filterSlotsM__menu .filterSlotsM__header span p, .filterSlots__search input p, .filterSlotsM__search input p, .filterSlots__general button p, .filterSlotsM__general button p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
 /* Font Size Class */
-.u-f--h1, .appApuestas__header-title, .user__title p, .depositScreen .deposit__title {
+.u-f--h1, .bannerAppApuestas__title, .user__title p, .depositScreen .deposit__title {
   font-size: 1.625rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h1, .appApuestas__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAppApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h1, .appApuestas__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAppApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 2.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h1, .appApuestas__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAppApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 2.75rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h1, .appApuestas__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAppApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .appApuestas__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAppApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 3.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h1, .appApuestas__header-title, .user__title p, .depositScreen .deposit__title {
+  .u-f--h1, .bannerAppApuestas__title, .user__title p, .depositScreen .deposit__title {
     font-size: 3.625rem;
   }
 }
 
-.u-f--h2, .appApuestas__content-top-title, .user__card-title {
+.u-f--h2, .appApuestas__top .appApuestas__title, .user__card-title {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .appApuestas__content-top-title, .user__card-title {
+  .u-f--h2, .appApuestas__top .appApuestas__title, .user__card-title {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .appApuestas__content-top-title, .user__card-title {
+  .u-f--h2, .appApuestas__top .appApuestas__title, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .appApuestas__content-top-title, .user__card-title {
+  .u-f--h2, .appApuestas__top .appApuestas__title, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .appApuestas__content-top-title, .user__card-title {
+  .u-f--h2, .appApuestas__top .appApuestas__title, .user__card-title {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .appApuestas__content-top-title, .user__card-title {
+  .u-f--h2, .appApuestas__top .appApuestas__title, .user__card-title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .appApuestas__content-top-title, .user__card-title {
+  .u-f--h2, .appApuestas__top .appApuestas__title, .user__card-title {
     font-size: 2rem;
   }
 }
 
-.u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+.u-f--h3, .bannerAppApuestas__subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .bannerAppApuestas__subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .bannerAppApuestas__subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .bannerAppApuestas__subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .bannerAppApuestas__subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .bannerAppApuestas__subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .appApuestas__header-subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
+  .u-f--h3, .bannerAppApuestas__subtitle, .userMenuMobile .nav__title--left > p, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .filterSlots--left span, .filterSlotsM__menu .filterSlotsM__header span, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
 
-.u-f--h4, .appApuestas__content-top .appApuestas__column img + p, .appApuestas__content-bottom-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+.u-f--h4, .appApuestas__star-title, .appApuestas__bottom .appApuestas__title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
   font-size: 0.875rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h4, .appApuestas__content-top .appApuestas__column img + p, .appApuestas__content-bottom-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__star-title, .appApuestas__bottom .appApuestas__title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h4, .appApuestas__content-top .appApuestas__column img + p, .appApuestas__content-bottom-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__star-title, .appApuestas__bottom .appApuestas__title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h4, .appApuestas__content-top .appApuestas__column img + p, .appApuestas__content-bottom-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__star-title, .appApuestas__bottom .appApuestas__title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 0.9375rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h4, .appApuestas__content-top .appApuestas__column img + p, .appApuestas__content-bottom-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__star-title, .appApuestas__bottom .appApuestas__title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .appApuestas__content-top .appApuestas__column img + p, .appApuestas__content-bottom-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__star-title, .appApuestas__bottom .appApuestas__title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.0625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h4, .appApuestas__content-top .appApuestas__column img + p, .appApuestas__content-bottom-title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
+  .u-f--h4, .appApuestas__star-title, .appApuestas__bottom .appApuestas__title, .popUpBalance__header > p, .popUpBalance__grid p.total, .footer__grid-item:nth-of-type(3) li a span, .filterSlots__search input, .filterSlotsM__search input, .user__wrapper p:first-of-type, .userNoIcon p:last-of-type {
     font-size: 1.125rem;
   }
 }
@@ -471,48 +471,48 @@
   display: none !important;
 }
 
-.footer__grid, .footer__brands, .depositScreen .deposit {
+.appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -520,48 +520,48 @@
   }
 }
 
-.footer__grid, .footer__brands, .depositScreen .deposit {
+.appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .footer__grid, .footer__brands, .depositScreen .deposit {
+  .appApuestas__top, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -569,129 +569,100 @@
   }
 }
 
-.appApuestas__content-top .appApuestas__columns, .appApuestas__content-bottom .appApuestas__columns, .footer {
+.appApuestas__columns, .footer {
   margin-top: var(--vertical-small-xs);
 }
 @media only screen and (min-width: 576px) {
-  .appApuestas__content-top .appApuestas__columns, .appApuestas__content-bottom .appApuestas__columns, .footer {
+  .appApuestas__columns, .footer {
     margin-top: var(--vertical-small-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .appApuestas__content-top .appApuestas__columns, .appApuestas__content-bottom .appApuestas__columns, .footer {
+  .appApuestas__columns, .footer {
     margin-top: var(--vertical-small-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .appApuestas__content-top .appApuestas__columns, .appApuestas__content-bottom .appApuestas__columns, .footer {
+  .appApuestas__columns, .footer {
     margin-top: var(--vertical-small-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__content-top .appApuestas__columns, .appApuestas__content-bottom .appApuestas__columns, .footer {
+  .appApuestas__columns, .footer {
     margin-top: var(--vertical-small-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .appApuestas__content-top .appApuestas__columns, .appApuestas__content-bottom .appApuestas__columns, .footer {
+  .appApuestas__columns, .footer {
     margin-top: var(--vertical-small-2xl);
   }
 }
 
-.appApuestas__content-top, .footer__grid {
+.appApuestas__top, .bannerAppApuestas, .footer__grid {
   margin-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .appApuestas__content-top, .footer__grid {
+  .appApuestas__top, .bannerAppApuestas, .footer__grid {
     margin-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .appApuestas__content-top, .footer__grid {
+  .appApuestas__top, .bannerAppApuestas, .footer__grid {
     margin-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .appApuestas__content-top, .footer__grid {
+  .appApuestas__top, .bannerAppApuestas, .footer__grid {
     margin-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__content-top, .footer__grid {
+  .appApuestas__top, .bannerAppApuestas, .footer__grid {
     margin-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .appApuestas__content-top, .footer__grid {
+  .appApuestas__top, .bannerAppApuestas, .footer__grid {
     margin-top: var(--vertical-medium-2xl);
   }
 }
 
-.appApuestas {
-  margin-top: var(--vertical-large-xs);
-}
-@media only screen and (min-width: 576px) {
-  .appApuestas {
-    margin-top: var(--vertical-large-sm);
-  }
-}
-@media only screen and (min-width: 768px) {
-  .appApuestas {
-    margin-top: var(--vertical-large-md);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  .appApuestas {
-    margin-top: var(--vertical-large-lg);
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .appApuestas {
-    margin-top: var(--vertical-large-xl);
-  }
-}
-@media only screen and (min-width: 1440px) {
-  .appApuestas {
-    margin-top: var(--vertical-large-2xl);
-  }
-}
-
-.appApuestas__header, .appApuestas__content {
+.bannerAppApuestas {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .appApuestas__header, .appApuestas__content {
+  .bannerAppApuestas {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .appApuestas__header, .appApuestas__content {
+  .bannerAppApuestas {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .appApuestas__header, .appApuestas__content {
+  .bannerAppApuestas {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__header, .appApuestas__content {
+  .bannerAppApuestas {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .appApuestas__header, .appApuestas__content {
+  .bannerAppApuestas {
     padding-left: var(--horizontal-main-2xl);
     padding-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .appApuestas__header, .appApuestas__content {
+  .bannerAppApuestas {
     padding-left: var(--horizontal-main-3xl);
     padding-right: var(--horizontal-main-3xl);
   }
@@ -2568,14 +2539,16 @@ header {
   transform: translateY(100%);
   opacity: 0;
   z-index: 10;
-  background-color: #25292f;
+  background-color: #13171d;
   border-radius: 0.3125rem;
 }
 @media only screen and (min-width: 1280px) {
   .popUpBalance {
     top: 0.625rem;
-    left: 90%;
-    bottom: unset;
+    right: 10%;
+    left: initial;
+    bottom: initial;
+    transform: translateY(0);
     width: auto;
   }
 }
@@ -2802,156 +2775,146 @@ header {
   margin-left: 0.9375rem;
 }
 
-.appApuestas__header {
+.bannerAppApuestas {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
   background-image: url("../img/images/img-app-apuestas-header-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: initial;
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__header {
+  .bannerAppApuestas {
     background-position: center center;
     background-size: cover;
   }
 }
-.appApuestas__header div {
+.bannerAppApuestas__content {
   position: relative;
   z-index: 1;
   width: 80%;
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__header div {
+  .bannerAppApuestas__content {
     width: 40%;
   }
 }
-.appApuestas__header > img {
+.bannerAppApuestas__subtitle {
+  opacity: 0.6;
+}
+.bannerAppApuestas__button {
+  display: inline-block;
+  margin-top: 1.875rem;
+  padding: 0.46875rem 2.25rem 0.46875rem 0.46875rem;
+  text-transform: uppercase;
+}
+.bannerAppApuestas__button img {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.bannerAppApuestas__image {
   position: relative;
   left: -10%;
   right: -10%;
   width: 120%;
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__header > img {
+  .bannerAppApuestas__image {
     position: absolute;
     z-index: 0;
     right: 0;
-    bottom: -70px;
+    bottom: -4.375rem;
     left: initial;
     width: 70%;
   }
 }
-.appApuestas__header-title {
-  font-weight: bold;
-}
-.appApuestas__header-subtitle {
-  font-weight: bold;
-  opacity: 0.6;
-}
-.appApuestas__header * + a {
-  margin-top: 25px;
-}
-.appApuestas__header a {
-  display: inline-block;
-  padding: 7.5px 36px 7.5px 7.5px;
-  text-transform: uppercase;
-}
-.appApuestas__header a img {
-  width: 30px;
-  height: 30px;
-}
-.appApuestas__content {
+
+.appApuestas {
   background-image: url("../img/images/img-app-apuestas-content-bg.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
+  background-size: cover;
 }
-.appApuestas__content-top-title {
-  font-weight: bold;
+.appApuestas__title {
   text-align: center;
 }
-.appApuestas__content-top .appApuestas__columns {
+.appApuestas__columns {
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
   grid-template-columns: repeat(1, 1fr);
   margin-right: auto;
   margin-left: auto;
 }
+
 @media only screen and (min-width: 768px) {
-  .appApuestas__content-top .appApuestas__columns {
+  .appApuestas__top .appApuestas__columns {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__content-top .appApuestas__columns {
+  .appApuestas__top .appApuestas__columns {
     grid-template-columns: repeat(4, 1fr);
-    max-width: 1120px;
+    max-width: 70rem;
   }
 }
-.appApuestas__content-top .appApuestas__column {
+
+.appApuestas__star {
   text-align: center;
 }
-.appApuestas__content-top .appApuestas__column img {
+.appApuestas__star-image {
   margin: auto;
-  max-width: 250px;
+  max-width: 15.625rem;
 }
-.appApuestas__content-top .appApuestas__column img + p {
-  font-weight: bold;
+.appApuestas__star-subtitle {
+  margin-top: 0.625rem;
 }
-.appApuestas__content-bottom {
+
+.appApuestas__bottom {
   position: relative;
-  bottom: -180px;
-  margin: -90px auto 180px;
-  padding: 75px 75px 85px;
+  bottom: -11.25rem;
+  margin: -5.625rem auto 11.25rem;
+  padding: 4.6875rem 4.6875rem 5.3125rem;
   width: 100%;
-  max-width: 796px;
-  border-radius: 10px;
+  max-width: 49.75rem;
+  border-radius: 0.625rem;
   background-color: #25292f;
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__content-bottom {
-    bottom: -300px;
-    margin-top: -190px;
-    margin-bottom: 300px;
+  .appApuestas__bottom {
+    bottom: -18.75rem;
+    margin-top: -11.875rem;
+    margin-bottom: 22.5rem;
   }
-}
-.appApuestas__content-bottom-title {
-  font-weight: bold;
-  text-align: center;
-}
-.appApuestas__content-bottom .appApuestas__columns {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(1, 1fr);
-  margin-right: auto;
-  margin-left: auto;
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__content-bottom .appApuestas__columns {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1120px;
+  .appApuestas__bottom .appApuestas__columns {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 70rem;
   }
 }
-.appApuestas__content-bottom .appApuestas__column > img {
+
+.appApuestas__qr-image {
   display: none;
 }
 @media only screen and (min-width: 1280px) {
-  .appApuestas__content-bottom .appApuestas__column > img {
+  .appApuestas__qr-image {
     display: block;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    margin-bottom: 0.9375rem;
+    border-radius: 0.625rem;
     background-color: #3b424b;
   }
 }
-.appApuestas__content-bottom .appApuestas__column a {
+.appApuestas__qr-button {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
   justify-content: space-between;
-  padding: 12px 16px 12px 50px;
+  padding: 0.75rem 1rem 0.75rem 3.125rem;
+  width: 100%;
   text-align: center;
+  text-transform: uppercase;
 }
-.appApuestas__content-bottom .appApuestas__column a span {
+.appApuestas__qr-button span {
   width: 100%;
 }
 /*# sourceMappingURL=app-apuestas.css.map */

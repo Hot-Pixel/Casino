@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 54 54">
+  <g id="icon-verify-warning" transform="translate(-66.288 7)">
+    <g id="Elipse_695" data-name="Elipse 695" transform="translate(73.288 0)" fill="none" stroke="#e99c00" stroke-width="7" opacity="0.35">
+      <circle cx="20" cy="20" r="20" stroke="none"/>
+      <circle cx="20" cy="20" r="23.5" fill="none"/>
+    </g>
+    <g id="Alert" transform="translate(81.288 8)">
+      <g id="Background" fill="none" stroke="#e99c00" stroke-width="2">
+        <circle cx="12" cy="12" r="12" stroke="none"/>
+        <circle cx="12" cy="12" r="11" fill="none"/>
+      </g>
+      <g id="Grupo_607" data-name="Grupo 607" transform="translate(10.618 4.722)">
+        <circle id="Elipse_741" data-name="Elipse 741" cx="1.382" cy="1.382" r="1.382" transform="translate(0 11.794)" fill="#e99c00"/>
+        <path id="Trazado_5371" data-name="Trazado 5371" d="M-1,0H1.763L1.072,9.031H-.309Z" transform="translate(1)" fill="#e99c00"/>
+      </g>
+    </g>
+  </g>
+</svg>

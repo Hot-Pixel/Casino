@@ -1,0 +1,25 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.pokerSatelitesCEP__tables {
+	background-color: setcolor('black', 'dark2');
+
+
+	&-inner {
+		@extend %margin_horizontal_main, %margin_top_medium;
+		padding-top: rem(80);
+		padding-bottom: rem(80);
+	}
+
+
+	&-title {
+		@extend .u-f--h2;
+		@extend .u-f--bold;
+
+		&:not(:first-child) {
+			margin-top: rem(80);
+		}
+	}
+}

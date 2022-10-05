@@ -2739,14 +2739,16 @@ header {
   transform: translateY(100%);
   opacity: 0;
   z-index: 10;
-  background-color: #25292f;
+  background-color: #13171d;
   border-radius: 0.3125rem;
 }
 @media only screen and (min-width: 1280px) {
   .popUpBalance {
     top: 0.625rem;
-    left: 90%;
-    bottom: unset;
+    right: 10%;
+    left: initial;
+    bottom: initial;
+    transform: translateY(0);
     width: auto;
   }
 }

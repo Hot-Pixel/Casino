@@ -19327,8 +19327,11 @@
     const popUpCloseBtn = document.querySelector(".popUpBalance__closeBtn");
     const popUpOpenBtns = document.querySelectorAll(".popUpBalance__openBtn");
     const popUpMenu = document.querySelector(".popUpBalance");
+    const header = document.querySelector(".header");
 
     if (popUpOpenBtns.length === 0) return;
+
+    popUpMenu.style.marginTop = `${header.offsetHeight}px`;
 
     popUpOpenBtns.forEach((btn) => {
       if (window.innerWidth < 1280) {
@@ -19376,7 +19379,6 @@
     const headerMobile = document.querySelector(".header__mobile--top");
     const contentBlocks = document.querySelectorAll(".has-header");
     const userMenus = document.querySelectorAll(".userMenu");
-    const popUpMenu = document.querySelector(".popUpBalance");
 
     if (window.innerWidth < 1280) {
       contentBlocks.forEach((block) => {
@@ -19399,10 +19401,6 @@
         menu.style.top = `${header.offsetHeight}px`;
         menu.style.height = `calc(100vh - ${header.offsetHeight}px)`;
       });
-
-      if(popUpMenu) {
-        popUpMenu.style.marginTop = `${header.offsetHeight}px`;
-      }
     }
   }
 

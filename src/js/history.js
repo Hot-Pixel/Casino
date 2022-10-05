@@ -8,9 +8,10 @@ import menuHeaderMobile from "./modules/menuHeaderMobile.js";
 import userMenuMobile from "./modules/userMenuMobile.js";
 import carouselMenuHistory from "./modules/carouselMenuHistory.js";
 import calendarHistory from "./modules/calendarHistory.js";
+import loading from "./modules/loading.js";
 
-
-marginHeader()
+loading()
+marginHeader();
 
 window.addEventListener('load', () => {
   popUpSaldo()

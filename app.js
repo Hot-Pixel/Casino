@@ -31,6 +31,13 @@ import appApuestas from "./routes/appApuestas.js";
 import error404 from "./routes/error404.js";
 import atencionCliente from "./routes/atencionCliente.js";
 import game from "./routes/juegoResponsable.js";
+import verify from "./routes/verify.js";
+import howTo from "./routes/comoJugar.js";
+import pokerSatelitesOnline from "./routes/pokerSatelitesOnline.js";
+import pokerSatelitesCEP from "./routes/pokerSatelitesCEP.js";
+import favorites from "./routes/favorites.js";
+import boardGame from "./routes/boardGame.js";
+import affiliates from "./routes/affiliates.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -74,21 +81,28 @@ app.use("/appApuestas", appApuestas);
 app.use("/error404", error404);
 app.use("/atencionCliente", atencionCliente);
 app.use("/juego-responsable", game);
+app.use("/verificacion", verify);
+app.use("/como-jugar", howTo);
+app.use("/satelites-online", pokerSatelitesOnline);
+app.use("/satelites-cep", pokerSatelitesCEP);
+app.use("/favorites", favorites);
+app.use("/boardGame", boardGame);
+app.use("/affiliates", affiliates);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-  next(createError(404));
+	next(createError(404));
 });
 
 // error handler
 app.use(function (err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get("env") === "development" ? err : {};
+	// set locals, only providing error in development
+	res.locals.message = err.message;
+	res.locals.error = req.app.get("env") === "development" ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render("error");
+	// render the error page
+	res.status(err.status || 500);
+	res.render("error");
 });
 
 app.locals = {

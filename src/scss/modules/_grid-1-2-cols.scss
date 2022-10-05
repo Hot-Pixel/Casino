@@ -1,0 +1,14 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.grid-1-2-cols {
+	display: grid;
+	gap: rem(30);
+
+	@include screen-sm {
+		gap: rem(20);
+		grid-template-columns: 1fr 2fr;
+	}
+}
