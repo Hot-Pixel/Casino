@@ -47,6 +47,30 @@ const paths = {
   },
 };
 
+const pagesArr = [
+  "appApuestas",
+  "casino",
+  "data",
+  "docs",
+  "game",
+  "history",
+  "home",
+  "layout",
+  "poker",
+  "preferences",
+  "promocion",
+  "promociones",
+  "ruleta",
+  "screens",
+  "signIn",
+  "signUp",
+  "slots",
+  "slotsAll",
+  "support",
+  "user",
+  "wallet",
+];
+
 /* Gulp Pipe for compiling SASS main file */
 gulp.task("sass", async () => {
   gulp
@@ -69,48 +93,31 @@ gulp.task("imageMin", async () => {
 });
 
 gulp.task("js", async () => {
-  return rollup
-    .rollup({
-      input: [
-        "src/js/casino",
-        "src/js/home",
-        "src/js/slots",
-        "src/js/slotsAll",
-        "src/js/ruleta",
-        "src/js/poker",
-        "src/js/promociones",
-        "src/js/promocion",
-        "src/js/layout",
-        "src/js/screens",
-        "src/js/user",
-        "src/js/data",
-        "src/js/docs",
-        "src/js/preferences",
-        "src/js/support",
-        "src/js/history",
-        "src/js/wallet",
-        "src/js/signIn",
-        "src/js/signUp",
-        "src/js/appApuestas",
-        "src/js/game",
-      ],
-      plugins: [
-        commonjs({
-          include: [
-            "node_modules/mixitup/dist/mixitup.js",
-            "src/js/modules/mixitup-multifilter.js",
-          ],
-        }),
-        nodeResolve(),
-      ],
-    })
-    .then((bundle) => {
-      return bundle.write({
-        dir: "public/js/",
-        format: "esm",
-        sourcemap: true,
+  pagesArr.forEach((e) => {
+    return rollup
+      .rollup({
+        input: [`src/js/${e}.js`],
+        plugins: [
+          commonjs({
+            include: [
+              "node_modules/mixitup/dist/mixitup.js",
+              "src/js/modules/mixitup-multifilter.js",
+            ],
+          }),
+          nodeResolve(),
+        ],
+      })
+      .then((bundle) => {
+        return bundle.write({
+          file: `public/js/${e}.js`,
+          format: "iife",
+          name: 'CBAR',
+          globals: {
+            Alert: "Alert"
+          }
+        });
       });
-    });
+  });
 });
 
 /* Gulp Watch */
@@ -118,8 +125,8 @@ gulp.task("watch", async () => {
   server.init({
     proxy: "http://localhost:3000",
     browser: "chrome",
-    online: true,
-    tunnel: true,
+    online: false,
+    tunnel: false,
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
   watch(paths.scripts.watcher).on("change", gulp.series("js", server.reload));
@@ -143,19 +150,6 @@ gulp.task("bundleEjs", async () => {
 });
 
 gulp.task("bundleJs", async () => {
-  const pagesArr = [
-    "casino",
-    "home",
-    "slots",
-    "slotsAll",
-    "ruleta",
-    "poker",
-    "promociones",
-    "promocion",
-    "layout",
-    "signIn",
-    "signUp",
-  ];
   pagesArr.forEach((e) => {
     return rollup
       .rollup({
@@ -175,19 +169,15 @@ gulp.task("bundleJs", async () => {
           file: `dist/js/${e}.js`,
           format: "iife",
           plugins: [terser()],
+          name: 'CBAR',
+          globals: {
+            Alert: "Alert"
+          }
         });
       });
   });
 });
 
-// gulp.task("bundleCss", async () => {
-//   gulp
-//     .src(paths.css.src)
-//     .pipe(autoprefixer())
-//     .pipe(cleanCSS())
-//     .pipe(rename({ extname: ".css" }))
-//     .pipe(gulp.dest(paths.css.dest));
-// });
 gulp.task("bundleCss", async () => {
   gulp
     .src(paths.scss.src)
@@ -205,4 +195,5 @@ gulp.task("copyImg", async () => {
     .pipe(gulp.dest('dist/img/'));
 });
 
+// gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss"));
 gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss", "copyImg"));

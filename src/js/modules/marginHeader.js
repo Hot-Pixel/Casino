@@ -27,7 +27,9 @@ function marginHeader() {
       menu.style.height = `calc(100vh - ${header.offsetHeight}px)`;
     });
 
-    popUpMenu.style.marginTop = `${header.offsetHeight}px`;
+    if(popUpMenu) {
+      popUpMenu.style.marginTop = `${header.offsetHeight}px`;
+    }
   }
 }
 

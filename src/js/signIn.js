@@ -16,7 +16,7 @@ recoverBtn.addEventListener("click", () => {
 
 const nameEl = document.getElementById('user');
 const passEl = document.getElementById('password');
-const alert = Alert();
+const alertMgr = Alert();
 
 const validation = new JustValidate(".login__form", {
   errorFieldCssClass: "is-invalid",
@@ -47,29 +47,20 @@ validation
   .onSuccess(async () => {
     try {
       setFormLoading(true);
-      alert.removeAll();
+      alertMgr.removeAll();
       const res = await handleLogin(nameEl.value, passEl.value);
       console.log(res)
     } catch (error) {
-      alert.add(error, "error");
+      alertMgr.add(error, "error");
     } finally {
       setFormLoading(false);
     }
   });
-
-// async function handleLogin(user, pass) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (user === pass) {
-//         resolve('login ok');
-//       }
-//       reject('login error');
-//     }, 1000);
-//   })
-// }
 
 function setFormLoading(isLoading) {
   const submitTextEl = loginSubmitBtn.querySelector('span');
   loginSubmitBtn.classList.toggle('loading', isLoading);
   isLoading ? submitTextEl.innerText = "CARGANDO..." : submitTextEl.innerText = "ENTRAR";
 }
+
+export { Alert }; 
