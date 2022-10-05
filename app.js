@@ -107,7 +107,7 @@ app.use(function (err, req, res, next) {
 
 app.locals = {
   player: {
-    isLogged: false
+    isLogged: true
   }
 };
 
