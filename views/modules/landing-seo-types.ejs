@@ -1,0 +1,15 @@
+<section class="landingSEOTypes">
+	<p class="landingSEOTypes__title">Tipos más populares</p>
+	<div class="landingSEOTypes__grid">
+		<% data.forEach( e=> { %>
+			<div class="landingSEOTypes__grid-item">
+				<img class="landingSEOTypes__grid-item-image" src="img/images/<%= e.img %>">
+				<p class="landingSEOTypes__grid-item-title"><%= e.title %></p>
+				<a href="<%= e.btnHref %>" class="landingSEOTypes__grid-item-button btn__darkGrey">
+					<span><%= e.btnLabel %></span>
+					<img src="img/icons/icon-arrow-circle-white.svg" alt="">
+				</a>
+			</div>
+		<% }) %>
+	</div>
+</section>

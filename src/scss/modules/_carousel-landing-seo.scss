@@ -1,0 +1,80 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.carouselLandingSEO {
+	// @extend %margin_horizontal_main;
+	@extend %padding_horizontal_main;
+	margin-top: $lg;
+	margin-bottom: $lg;
+
+
+	&__title {
+		margin-bottom: $md;
+		@extend .u-f--h3;
+		@extend .u-f--bold;
+		text-align: center;
+	}
+
+
+	&__carousel {
+		margin-right: auto;
+		margin-left: auto;
+		width: calc( 100% - rem(90) );
+
+		@include screen-sm {
+			width: 100%;
+		}
+
+
+		.splide__arrow {
+			z-index: 10;
+			background: none;
+			border-radius: 0;
+			opacity: 1;
+
+
+			&:disabled {
+				opacity: 1;
+			}
+
+
+			svg {
+				height: rem(30);
+				width: rem(30);
+			}
+
+
+			&--prev {
+				left: rem(-45);
+			}
+
+
+			&--next {
+				right: rem(-45);
+			}
+		}
+
+
+		&-item {
+
+
+			&-logo {
+				max-width: 100%;
+			}
+
+
+			&-button {
+				margin-top: rem(30);
+				margin-right: auto;
+				margin-left: auto;
+				max-width: fit-content;
+
+				@include screen-sm {
+					margin-top: rem(20);
+				}
+			}
+		}
+	}
+}

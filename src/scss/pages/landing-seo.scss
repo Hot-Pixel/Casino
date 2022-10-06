@@ -13,7 +13,8 @@
 @use '../components/svg-icon';
 @use '../components/buttons';
 @use '../components/breadcrumbs';
-@use '../components/splide-arrows'; //////////
+@use '../components/splide-arrows';
+@use '../components/gradients';
 @use '../components/deposits';
 @use '../components/user';
 @use '../components/hover';
@@ -36,6 +37,10 @@
 // MODULES
 @use '../modules/banner-landing-seo';
 @use '../modules/grid-full';
+@use '../modules/landing-seo-grid';
+@use '../modules/carousel-landing-seo';
+@use '../modules/landing-seo-themes';
+@use '../modules/landing-seo-types';
 
 // HELPER
 @use '../helper';

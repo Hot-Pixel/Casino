@@ -1,3 +1,148 @@
+<%
+const carouselData = [
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+	{
+		logo     : "img-banner-poker-satelite-logo.png",
+		btnLabel : "Slots Playtech",
+		btnHref  : "#"
+	},
+]
+
+const themesData = [
+	{
+		img      : "img-landing-seo-themes-classic-slot.png",
+		title    : "Slots clásicas",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-themes-faraon.png",
+		title    : "Slots de Faraón",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-themes-gnomo.png",
+		title    : "Slots de Gnomos",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-themes-pirates.png",
+		title    : "Slots de Piratas",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-themes-vikings.png",
+		title    : "Slots de Vikingos",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-themes-zeus.png",
+		title    : "Slots de Zeus",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+]
+
+const typesData = [
+	{
+		img      : "img-landing-seo-types-videopoker.png",
+		title    : "Slots VideoPoker",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-types-5tambores.png",
+		title    : "Slots con 5 tambores",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-types-freespins.png",
+		title    : "Slots con Freespins",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-types-jackpot.png",
+		title    : "Slots con Jackpots",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-types-megaways.png",
+		title    : "Slots Megaways",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-types-videobingo.png",
+		title    : "Slots de VideoBingo",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-types-news.png",
+		title    : "Slots Nuevas",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+	{
+		img      : "img-landing-seo-types-zeus.png",
+		title    : "Slots de Zeus",
+		btnLabel : "¡Juega Ahora!",
+		btnHref  : "#"
+	},
+]
+%>
+
 <%- include ('layout/head', {title: 'Landing SEO' , css: 'landing-seo'}) %>
 
 <%- include ('modules/deposit') %>
@@ -10,21 +155,17 @@
 
 		<%- include ('modules/banner-landing-seo') %>
 
-		<%- include ('modules/grid-full', { data: "gridFullSeo"}) %>
+		<div class="landingSEO__gridFull">
+			<div class="landingSEO__gridFull-inner">
+				<%- include ('modules/grid-full', { data: "gridFullSeo"}) %>
+			</div>
+		</div>
 
-		<section class="landing-seoContent">
+		<%- include ('modules/carousel-landing-seo', { data: carouselData }) %>
 
-			<%- // include ('modules/landing-seo-module-1') %>
+		<%- include ('modules/landing-seo-themes', { data:  themesData }) %>
 
-			<%- // include ('modules/landing-seo-module-2') %>
-
-			<%- // include ('modules/landing-seo-module-3') %>
-
-			<%- // include ('modules/landing-seo-module-4') %>
-
-		</section>
-
-		<%- // include ('modules/landing-seo-contact') %>
+		<%- include ('modules/landing-seo-types', { data: typesData }) %>
 
 		<%- include ('layout/footer') %>
 
@@ -34,6 +175,3 @@
 
 
 <%- include ('layout/scripts',  { script: 'landingSeo' }) %>
-
-
-¿Cómo jugar?

@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .landingSEO__title, .landingSEO__subtitle, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .landingSEO__title p, .landingSEO__subtitle p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .landingSEOTypes__title, .landingSEOTypes__grid-item-title, .landingSEOThemes__title, .landingSEOThemes__grid-item-title, .carouselLandingSEO__title, .landingSEO__title, .landingSEO__subtitle, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid .total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .landingSEOTypes__title p, .landingSEOTypes__grid-item-title p, .landingSEOThemes__title p, .landingSEOThemes__grid-item-title p, .carouselLandingSEO__title p, .landingSEO__title p, .landingSEO__subtitle p, .popUpBalance__header > p p, .popUpBalance__grid .total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -302,36 +302,36 @@
   }
 }
 
-.u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+.u-f--h3, .landingSEOTypes__title, .landingSEOTypes__grid-item-title, .landingSEOThemes__title, .landingSEOThemes__grid-item-title, .carouselLandingSEO__title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
   font-size: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .landingSEOTypes__title, .landingSEOTypes__grid-item-title, .landingSEOThemes__title, .landingSEOThemes__grid-item-title, .carouselLandingSEO__title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .landingSEOTypes__title, .landingSEOTypes__grid-item-title, .landingSEOThemes__title, .landingSEOThemes__grid-item-title, .carouselLandingSEO__title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.125rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .landingSEOTypes__title, .landingSEOTypes__grid-item-title, .landingSEOThemes__title, .landingSEOThemes__grid-item-title, .carouselLandingSEO__title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .landingSEOTypes__title, .landingSEOTypes__grid-item-title, .landingSEOThemes__title, .landingSEOThemes__grid-item-title, .carouselLandingSEO__title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.25rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .landingSEOTypes__title, .landingSEOTypes__grid-item-title, .landingSEOThemes__title, .landingSEOThemes__grid-item-title, .carouselLandingSEO__title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h3, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
+  .u-f--h3, .landingSEOTypes__title, .landingSEOTypes__grid-item-title, .landingSEOThemes__title, .landingSEOThemes__grid-item-title, .carouselLandingSEO__title, .menuHeader__navItems li a p, .bar__ammount p:last-of-type, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositTransfer--top > p:last-of-type, .userNoIcon p:first-of-type {
     font-size: 1.5rem;
   }
 }
@@ -627,42 +627,42 @@
   }
 }
 
-.landingSEO {
+.landingSEOTypes, .landingSEOThemes, .carouselLandingSEO, .landingSEO__gridFull, .landingSEO {
   padding-left: var(--horizontal-main-xs);
   padding-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .landingSEO {
+  .landingSEOTypes, .landingSEOThemes, .carouselLandingSEO, .landingSEO__gridFull, .landingSEO {
     padding-left: var(--horizontal-main-sm);
     padding-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .landingSEO {
+  .landingSEOTypes, .landingSEOThemes, .carouselLandingSEO, .landingSEO__gridFull, .landingSEO {
     padding-left: var(--horizontal-main-md);
     padding-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .landingSEO {
+  .landingSEOTypes, .landingSEOThemes, .carouselLandingSEO, .landingSEO__gridFull, .landingSEO {
     padding-left: var(--horizontal-main-lg);
     padding-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .landingSEO {
+  .landingSEOTypes, .landingSEOThemes, .carouselLandingSEO, .landingSEO__gridFull, .landingSEO {
     padding-left: var(--horizontal-main-xl);
     padding-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .landingSEO {
+  .landingSEOTypes, .landingSEOThemes, .carouselLandingSEO, .landingSEO__gridFull, .landingSEO {
     padding-left: var(--horizontal-main-2xl);
     padding-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .landingSEO {
+  .landingSEOTypes, .landingSEOThemes, .carouselLandingSEO, .landingSEO__gridFull, .landingSEO {
     padding-left: var(--horizontal-main-3xl);
     padding-right: var(--horizontal-main-3xl);
   }
@@ -1177,6 +1177,21 @@ h5 {
 }
 .splideArrows--right .splide__arrow--next {
   right: 0;
+}
+
+.splide__gradient {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent, #13171d);
+  pointer-events: none;
+}
+
+.banner__gradient {
+  background-image: linear-gradient(to right, #13171d 30%, transparent);
 }
 
 .deposits {
@@ -2792,6 +2807,7 @@ h5 {
     display: grid;
     gap: 0.625rem;
     grid-template-columns: 2fr 3fr;
+    padding-bottom: 5rem;
   }
 }
 .landingSEO__image {
@@ -2826,6 +2842,14 @@ h5 {
     transform: translateY(0);
     width: fit-content;
   }
+}
+.landingSEO__button span + img {
+  margin-left: 0.625rem;
+}
+.landingSEO__button img {
+  width: 1em;
+  height: 1em;
+  font-size: 14px;
 }
 
 .slotsBtn {
@@ -2864,5 +2888,192 @@ h5 {
 .gridFull .item:hover .gridHover {
   opacity: 1;
   transition: all 0.3s ease;
+}
+
+.landingSEO__gridFull {
+  margin-top: 5rem;
+}
+@media only screen and (min-width: 1280px) {
+  .landingSEO__gridFull {
+    margin-top: -5rem;
+  }
+}
+.landingSEO__gridFull-inner {
+  background: #1c2026;
+  border-radius: 0.625rem;
+}
+.landingSEO__gridFull .headerModule {
+  display: none;
+}
+.landingSEO__gridFull .gridFullSeo {
+  margin: 0;
+  padding: 0.625rem;
+  max-width: initial;
+}
+
+.carouselLandingSEO {
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+}
+.carouselLandingSEO__title {
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+.carouselLandingSEO__carousel {
+  margin-right: auto;
+  margin-left: auto;
+  width: calc(100% - 5.625rem);
+}
+@media only screen and (min-width: 1280px) {
+  .carouselLandingSEO__carousel {
+    width: 100%;
+  }
+}
+.carouselLandingSEO__carousel .splide__arrow {
+  z-index: 10;
+  background: none;
+  border-radius: 0;
+  opacity: 1;
+}
+.carouselLandingSEO__carousel .splide__arrow:disabled {
+  opacity: 1;
+}
+.carouselLandingSEO__carousel .splide__arrow svg {
+  height: 1.875rem;
+  width: 1.875rem;
+}
+.carouselLandingSEO__carousel .splide__arrow--prev {
+  left: -2.8125rem;
+}
+.carouselLandingSEO__carousel .splide__arrow--next {
+  right: -2.8125rem;
+}
+.carouselLandingSEO__carousel-item-logo {
+  max-width: 100%;
+}
+.carouselLandingSEO__carousel-item-button {
+  margin-top: 1.875rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: fit-content;
+}
+@media only screen and (min-width: 1280px) {
+  .carouselLandingSEO__carousel-item-button {
+    margin-top: 1.25rem;
+  }
+}
+
+.landingSEOThemes {
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+  background: transparent linear-gradient(180deg, rgba(28, 32, 38, 0) 0%, #1c2026 100%) 0% 0% no-repeat padding-box;
+}
+@media only screen and (min-width: 1280px) {
+  .landingSEOThemes {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+}
+.landingSEOThemes__title {
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+.landingSEOThemes__grid {
+  display: grid;
+  gap: 0.625rem;
+  grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 768px) {
+  .landingSEOThemes__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .landingSEOThemes__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.landingSEOThemes__grid-item {
+  margin-top: 20%;
+  padding-right: 1.875rem;
+  padding-bottom: 1.875rem;
+  padding-left: 1.875rem;
+  border-radius: 0.3125rem;
+  background: transparent linear-gradient(180deg, #25292f 0%, rgba(37, 41, 47, 0) 100%) 0% 0% no-repeat padding-box;
+}
+.landingSEOThemes__grid-item-image {
+  margin-top: -20%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 100%;
+}
+.landingSEOThemes__grid-item-title {
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  text-align: center;
+}
+.landingSEOThemes__grid-item-button span + img {
+  margin-left: 0.625rem;
+}
+.landingSEOThemes__grid-item-button img {
+  width: 1em;
+  height: 1em;
+  font-size: 14px;
+}
+
+.landingSEOTypes {
+  padding-top: 0.9375rem;
+  padding-bottom: 0.9375rem;
+}
+@media only screen and (min-width: 1280px) {
+  .landingSEOTypes {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+}
+.landingSEOTypes__title {
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+.landingSEOTypes__grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 768px) {
+  .landingSEOTypes__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .landingSEOTypes__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.landingSEOTypes__grid-item-image {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(100% - 0.9375rem - 0.9375rem);
+}
+@media only screen and (min-width: 1280px) {
+  .landingSEOTypes__grid-item-image {
+    max-width: calc(100% - 3.75rem - 3.75rem);
+  }
+}
+.landingSEOTypes__grid-item-title {
+  margin-top: 1.875rem;
+  margin-bottom: 0.9375rem;
+  text-align: center;
+}
+.landingSEOTypes__grid-item-button {
+  background-color: #2d3239;
+}
+.landingSEOTypes__grid-item-button span + img {
+  margin-left: 0.625rem;
+}
+.landingSEOTypes__grid-item-button img {
+  width: 1em;
+  height: 1em;
+  font-size: 14px;
 }
 /*# sourceMappingURL=landing-seo.css.map */
