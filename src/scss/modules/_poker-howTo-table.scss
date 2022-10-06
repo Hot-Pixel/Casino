@@ -1,0 +1,44 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.pokerHowTable {
+  @extend %margin_horizontal_main, %margin_top_medium;
+
+  &__header-title {
+    padding-bottom: $sm;
+    @extend .u-f--h2, .u-f--bold;
+  }
+
+  &__table {
+    border-radius: rem(5);
+
+    .bold {
+        @extend .u-f--bold;
+    }
+
+    &-row {
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 1fr 2fr 1fr;
+        padding: $sm;
+
+        justify-items: flex-end;
+
+        &:first-of-type {
+            background-color: #282c31;
+        }
+        &:nth-of-type(odd) {
+            background-color: #24272d;
+        }
+        &:nth-of-type(even) {
+            background-color: #1a1e24;
+        }
+    }
+
+    &-col {
+        &:first-of-type {
+            justify-self: flex-start;
+        }
+    }
+  }
+}

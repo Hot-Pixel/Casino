@@ -1,4 +1,3 @@
-import menuPoker from "./modules/menuPoker.js";
 import carouselPoker from "./modules/carouselPoker.js";
 import accordion from "./modules/accordion.js";
 import popUpSaldo from "./modules/popUpBalance.js";
@@ -12,7 +11,6 @@ import userMenuMobile from "./modules/userMenuMobile.js";
 window.addEventListener("load", () => {
   accordion();
   carouselPoker();
-  menuPoker();
   popUpSaldo();
   marginHeader();
   depositSteps();

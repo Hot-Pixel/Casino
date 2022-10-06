@@ -5,15 +5,15 @@
 
 // Card
 
-.pokerSatelitesOnline__Card {
+.pokerSatelitesOnline__card {
 	position: relative;
 	z-index: 1;
-	padding: rem(70) rem(35) 0;
+	padding: $lg $md 0;
 	text-align: center;
 
 
 	& + & {
-		margin-top: rem(40);
+		margin-top: $md;
 
 		@include screen-sm {
 			margin-top: 0;
@@ -28,7 +28,7 @@
 
 
 	&-subtitle {
-		margin-top: rem(35);
+		margin-top: $md;
 		@extend .u-f--h4;
 		@extend .u-f--bold;
 		color: setcolor('primary');
@@ -45,13 +45,13 @@
 
 	&-button {
 		position: relative;
-		margin: rem(40) auto 0;
+		margin: $md auto 0;
 		width: fit-content;
 		transform: translateY(50%);
 
 
 		span + img {
-			margin-left: rem(20);
+			margin-left: $sm;
 		}
 	}
 }
@@ -60,6 +60,7 @@
 // Cartoon doll
 
 .pokerSatelitesOnline {
+	@extend %margin_top_large;
 
 	.grids__container {
 		position: relative;
