@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .countdown__title p, .countdown__item p, .countdown__time-item p:first-of-type, .textBlock .bold, .faq__title p, .faq__accordion-item .head p, .blockPromo__title p, .blockPromo__features-item span, .blockPromo__table-row .title, .userMenuMobile .nav__title--left > p, .userMenuMobile .nav__title--left .nav__title-verify p, .userMenuMobile .nav__item--left p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid p.total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .countdown__time-item p:first-of-type p, .textBlock .bold p, .blockPromo__features-item span p, .blockPromo__table-row .title p, .userMenuMobile .nav__title--left > p p, .popUpBalance__header > p p, .popUpBalance__grid p.total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
+.u-f--bold, .countdown__title p, .countdown__item p, .countdown__time-item p:first-of-type, .textBlock .bold, .faq__title, .pokerHowAccord__title, .faq__accordion-item .head p, .pokerHowAccord__accordion-item .head p, .blockPromo__title p, .blockPromo__features-item span, .blockPromo__table-row .title, .userMenuMobile .nav__title--left > p, .userMenuMobile .nav__title--left .nav__title-verify p, .userMenuMobile .nav__item--left p, .menuHeader__navItems li a p, .popUpBalance__header > p, .popUpBalance__grid p.total, .popUpBalance__detail p, .header .nav__item a p, .user__card-title, .user__title p, .bar__ammount p, .bar__progress p, .deposit__step3 .deposit__body, .depositDetail__card-top .depositDetail__ammount, .depositDetail__card-tc .tc__header p, .depositDetail__card-tc .tc__body a, .depositDetail__select-email input, .depositDetail__select-save p:first-of-type, .depositTransfer--top > p:last-of-type, .depositTransfer__table-body, .depositTransfer__table-copy span, .depositScreen .deposit__title, .user__wrapper p:first-of-type, .userNoIcon p:first-of-type, .u-f--bold p, .countdown__time-item p:first-of-type p, .textBlock .bold p, .faq__title p, .pokerHowAccord__title p, .blockPromo__features-item span p, .blockPromo__table-row .title p, .userMenuMobile .nav__title--left > p p, .popUpBalance__header > p p, .popUpBalance__grid p.total p, .user__card-title p, .deposit__step3 .deposit__body p, .depositDetail__card-top .depositDetail__ammount p, .depositDetail__card-tc .tc__body a p, .depositDetail__select-email input p, .depositDetail__select-save p:first-of-type p, .depositTransfer--top > p:last-of-type p, .depositTransfer__table-body p, .depositTransfer__table-copy span p, .depositScreen .deposit__title p, .user__wrapper p:first-of-type p, .userNoIcon p:first-of-type p {
   font-weight: 700;
 }
 
@@ -268,36 +268,36 @@
   }
 }
 
-.u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title p, .user__card-title {
+.u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title, .pokerHowAccord__title, .user__card-title {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 768px) {
-  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title p, .user__card-title {
+  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title, .pokerHowAccord__title, .user__card-title {
     font-size: 1.375rem;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title p, .user__card-title {
+  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title, .pokerHowAccord__title, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title p, .user__card-title {
+  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title, .pokerHowAccord__title, .user__card-title {
     font-size: 1.5rem;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title p, .user__card-title {
+  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title, .pokerHowAccord__title, .user__card-title {
     font-size: 1.625rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title p, .user__card-title {
+  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title, .pokerHowAccord__title, .user__card-title {
     font-size: 1.875rem;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title p, .user__card-title {
+  .u-f--h2, .countdown__title p:first-of-type, .countdown__time-item p:first-of-type, .textBlock .title-big, .faq__title, .pokerHowAccord__title, .user__card-title {
     font-size: 2rem;
   }
 }
@@ -471,48 +471,48 @@
   display: none !important;
 }
 
-.countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+.countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -520,48 +520,48 @@
   }
 }
 
-.countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+.countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
   margin-left: var(--horizontal-main-xs);
   margin-right: var(--horizontal-main-xs);
 }
 @media only screen and (min-width: 576px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-sm);
     margin-right: var(--horizontal-main-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-md);
     margin-right: var(--horizontal-main-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-lg);
     margin-right: var(--horizontal-main-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-xl);
     margin-right: var(--horizontal-main-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-2xl);
     margin-right: var(--horizontal-main-2xl);
   }
 }
 @media only screen and (min-width: 1600px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     margin-left: var(--horizontal-main-3xl);
     margin-right: var(--horizontal-main-3xl);
   }
 }
 @media only screen and (min-width: 1900px) {
-  .countdown__wrapper, .textBlock, .faq, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
+  .countdown__wrapper, .textBlock, .faq, .pokerHowAccord, .blockPromo__wrapper, .footer__grid, .footer__brands, .depositScreen .deposit {
     max-width: 100rem;
     margin-left: 0;
     margin-right: 0;
@@ -598,31 +598,31 @@
   }
 }
 
-.countdown, .faq, .blockPromo__bg, .footer__grid {
+.countdown, .faq, .pokerHowAccord, .blockPromo__bg, .footer__grid {
   margin-top: var(--vertical-medium-xs);
 }
 @media only screen and (min-width: 576px) {
-  .countdown, .faq, .blockPromo__bg, .footer__grid {
+  .countdown, .faq, .pokerHowAccord, .blockPromo__bg, .footer__grid {
     margin-top: var(--vertical-medium-sm);
   }
 }
 @media only screen and (min-width: 768px) {
-  .countdown, .faq, .blockPromo__bg, .footer__grid {
+  .countdown, .faq, .pokerHowAccord, .blockPromo__bg, .footer__grid {
     margin-top: var(--vertical-medium-md);
   }
 }
 @media only screen and (min-width: 1024px) {
-  .countdown, .faq, .blockPromo__bg, .footer__grid {
+  .countdown, .faq, .pokerHowAccord, .blockPromo__bg, .footer__grid {
     margin-top: var(--vertical-medium-lg);
   }
 }
 @media only screen and (min-width: 1280px) {
-  .countdown, .faq, .blockPromo__bg, .footer__grid {
+  .countdown, .faq, .pokerHowAccord, .blockPromo__bg, .footer__grid {
     margin-top: var(--vertical-medium-xl);
   }
 }
 @media only screen and (min-width: 1440px) {
-  .countdown, .faq, .blockPromo__bg, .footer__grid {
+  .countdown, .faq, .pokerHowAccord, .blockPromo__bg, .footer__grid {
     margin-top: var(--vertical-medium-2xl);
   }
 }
@@ -2529,50 +2529,54 @@ header {
   padding-bottom: 0.9375rem;
 }
 
-.faq__title p {
+.faq__title, .pokerHowAccord__title {
   padding-bottom: 0.9375rem;
 }
-.faq__accordion-item {
+.faq__subtitle, .pokerHowAccord__subtitle {
+  color: #868B92;
+  padding-bottom: 0.9375rem;
+}
+.faq__accordion-item, .pokerHowAccord__accordion-item {
   background-color: #1c2026;
   border-radius: 0.3125rem;
   margin-bottom: 0.3125rem;
 }
-.faq__accordion-item .head {
+.faq__accordion-item .head, .pokerHowAccord__accordion-item .head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.9375rem;
 }
-.faq__accordion-item .head p {
+.faq__accordion-item .head p, .pokerHowAccord__accordion-item .head p {
   margin: 0;
 }
-.faq__accordion-item .head .accorArrow {
+.faq__accordion-item .head .accorArrow, .pokerHowAccord__accordion-item .head .accorArrow {
   cursor: pointer;
   transform: rotate(-90deg);
 }
-.faq__accordion-item .body {
+.faq__accordion-item .body, .pokerHowAccord__accordion-item .body {
   height: 0;
   opacity: 0;
   padding: 0;
   border-top: 1px solid #13171d;
   overflow: hidden;
 }
-.faq__accordion-item .body p {
+.faq__accordion-item .body p, .pokerHowAccord__accordion-item .body p {
   color: #7f8285;
   max-width: 100%;
 }
 @media only screen and (min-width: 1280px) {
-  .faq__accordion-item .body p {
+  .faq__accordion-item .body p, .pokerHowAccord__accordion-item .body p {
     max-width: 66%;
   }
 }
 @media only screen and (min-width: 1440px) {
-  .faq__accordion-item .body p {
+  .faq__accordion-item .body p, .pokerHowAccord__accordion-item .body p {
     max-width: 50%;
   }
 }
 @media only screen and (min-width: 1600px) {
-  .faq__accordion-item .body p {
+  .faq__accordion-item .body p, .pokerHowAccord__accordion-item .body p {
     max-width: 33%;
   }
 }

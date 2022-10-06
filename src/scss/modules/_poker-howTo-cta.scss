@@ -1,0 +1,63 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.pokerHowCta {
+  @extend %margin_horizontal_main, %margin_top_medium;
+  padding: $sm;
+  background-color: setcolor("black", "dark2");
+  border-radius: rem(20);
+
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: $sm;
+
+  @include screen-sm {
+    grid-template-columns: 1fr 1fr;
+    column-gap: $lg;
+    row-gap: 0;
+    padding: $md;
+  }
+
+  p {
+    @extend .u-f--bold;
+    text-align: center;
+
+    @include screen-sm {
+      text-align: left;
+    }
+  }
+
+  &__title {
+    @extend .u-f--h2;
+  }
+
+  &__subtitle {
+    @extend .u-f--h4;
+    color: setcolor("gray", "mid");
+    padding-bottom: $sm;
+
+    @include screen-sm {
+      padding-bottom: $md;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(10);
+
+    @include screen-sm {
+      flex-direction: row;
+      column-gap: rem(10);
+    }
+
+    &-btn {
+      width: 100%;
+
+      @include screen-sm {
+        width: 50%;
+      }
+    }
+  }
+}

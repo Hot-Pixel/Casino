@@ -2,14 +2,17 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.faq {
+.faq, .pokerHowAccord {
     @extend %margin_horizontal_main, %margin_top_medium;
 
     &__title {
-        p {
-            @extend .u-f--h2, .u-f--bold;
-            padding-bottom: $sm;
-        }
+        @extend .u-f--h2, .u-f--bold;
+        padding-bottom: $sm;
+    }
+
+    &__subtitle {
+        color: setcolor('gray', 'mid');
+        padding-bottom: $sm;
     }
 
     &__accordion {
