@@ -1,3 +1,7 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
 .splide__gradient {
     position: absolute;
     z-index: 5;
@@ -7,10 +11,10 @@
     width: 20%;
     height: 100%;
 
-    background-image: linear-gradient(to right, transparent, #13171d);
+    background-image: linear-gradient(to right, transparent, setcolor('black', 'dark1'));
     pointer-events: none;
 }
 
 .banner__gradient {
-    background-image: linear-gradient(to right, #13171d 30%, transparent);
+    background-image: linear-gradient(to right, setcolor('black', 'dark1') 30%, transparent);
 }
