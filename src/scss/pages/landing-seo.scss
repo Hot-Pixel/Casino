@@ -20,9 +20,6 @@
 
 
 // OBJECTS
-@use '../objects/card'; //////////
-@use '../objects/filter-slotsAll';
-@use '../objects/grid-games';
 @use '../objects/user/deposit';
 @use '../objects/user/deposit__step1';
 @use '../objects/user/deposit__step2';
@@ -39,12 +36,6 @@
 // MODULES
 @use '../modules/banner-landing-seo';
 @use '../modules/grid-full';
-@use '../modules/icons-red'; //////////
-// @use '../modules/grid-half';
-// @use '../modules/affiliates-content-cards';
-// @use '../modules/affiliates-content-benefits';
-// @use '../modules/affiliates-content-info';
-// @use '../modules/affiliates-contact';
 
 // HELPER
 @use '../helper';

@@ -1,6 +1,7 @@
 import { S as Splide } from './splide.esm-20cd2e1c.js';
-import { c as carouselJackpot, a as carouselGrid, b as collapseGrid } from './collapseGridHalf-959704d6.js';
+import { c as carouselJackpot, a as collapseGrid } from './collapseGridHalf-6a8a5855.js';
 import { g as gsapWithCSS, p as popUpSaldo, m as marginHeader, d as depositSteps, a as depositAmmount, b as depositCopy, c as menuHeaderMobile } from './menuHeaderMobile-013e6314.js';
+import { c as carouselGrid } from './carouselGrid-6425979d.js';
 
 function carouselBanner() {
   var carousel = new Splide(".bannerCarousel .splide", {

@@ -91,6 +91,7 @@ gulp.task("js", async () => {
         "src/js/wallet",
         "src/js/signIn",
         "src/js/signUp",
+        "src/js/landingSeo",
       ],
       plugins: [
         commonjs({
