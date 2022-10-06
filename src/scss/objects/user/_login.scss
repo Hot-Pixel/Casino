@@ -2,14 +2,6 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.login__block {
-  display: none;
-
-  &.active {
-    display: block;
-  }
-}
-
 .is-invalid {
   border: 1px solid setcolor('warning');
 }
@@ -128,16 +120,16 @@
   &__footer{
     cursor: pointer;
     margin-top: $md;
+    text-align: center;
 
-    p {
+    p, a {
       color: setcolor("black", "dark1");
       margin: rem(5) 0;
-      text-align: center;
 
-      &:last-of-type {
-        @extend .u-f--bold;
-        color: setcolor("secondary");
-      }
+    }
+    a {
+      @extend .u-f--bold;
+      color: setcolor("secondary");
     }
   }
 }
