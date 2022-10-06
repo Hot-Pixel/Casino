@@ -3,6 +3,9 @@
 @use "../tools" as *;
 
 .password {
+    p {
+      color: black;
+    }
     .password__container {
       display: flex;
       flex-direction: column;
