@@ -35,6 +35,7 @@ import pokerSatelitesCEP from "./routes/pokerSatelitesCEP.js";
 import favorites from "./routes/favorites.js";
 import boardGame from "./routes/boardGame.js";
 import affiliates from "./routes/affiliates.js";
+import landingSEO from "./routes/landingSEO.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -82,6 +83,7 @@ app.use("/pokerSatelitesCEP", pokerSatelitesCEP);
 app.use("/favorites", favorites);
 app.use("/boardGame", boardGame);
 app.use("/affiliates", affiliates);
+app.use("/landingSEO", landingSEO);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -1,0 +1,50 @@
+// SETTINGS
+@use '../settings';
+
+// TOOLS
+@use '../tools';
+
+// GENERIC
+@use '../base';
+
+// COMPONENTS
+@use '../components/icon__title';
+@use '../components/header__user';
+@use '../components/svg-icon';
+@use '../components/buttons';
+@use '../components/breadcrumbs';
+@use '../components/splide-arrows'; //////////
+@use '../components/deposits';
+@use '../components/user';
+@use '../components/hover';
+
+
+// OBJECTS
+@use '../objects/card'; //////////
+@use '../objects/filter-slotsAll';
+@use '../objects/grid-games';
+@use '../objects/user/deposit';
+@use '../objects/user/deposit__step1';
+@use '../objects/user/deposit__step2';
+@use '../objects/user/deposit__step3';
+@use '../objects/user/common';
+
+//LAYOUT
+@use '../layout/header';
+@use '../layout/footer';
+@use '../layout/splide';
+@use '../layout/popUp-balance';
+@use '../layout/menu-header';
+
+// MODULES
+@use '../modules/banner-landing-seo';
+@use '../modules/grid-full';
+@use '../modules/icons-red'; //////////
+// @use '../modules/grid-half';
+// @use '../modules/affiliates-content-cards';
+// @use '../modules/affiliates-content-benefits';
+// @use '../modules/affiliates-content-info';
+// @use '../modules/affiliates-contact';
+
+// HELPER
+@use '../helper';
