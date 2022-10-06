@@ -62,6 +62,7 @@ const pagesArr = [
   "promociones",
   "ruleta",
   "screens",
+  "recoverPassword",
   "signIn",
   "signUp",
   "slots",

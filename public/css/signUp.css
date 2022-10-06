@@ -229,7 +229,7 @@
   font-weight: 500;
 }
 
-.u-f--bold, .stepFour__header p, .stepFour__header-title, .stepFour__header-subtitle, .registry__form h2, .registry__step p span, .registry input:not([type=checkbox]), .registry select, .registry button:not([type=button]), .registry__login a, .login__form h2, .login__footer p:last-of-type, .u-f--bold p, .stepFour__header-title p, .stepFour__header-subtitle p, .registry__form h2 p, .registry__step p span p, .registry input:not([type=checkbox]) p, .registry select p, .registry button:not([type=button]) p, .registry__login a p, .login__form h2 p, .login__footer p:last-of-type p {
+.u-f--bold, .stepFour__header p, .stepFour__header-title, .stepFour__header-subtitle, .registry__form h2, .registry__step p span, .registry input:not([type=checkbox]), .registry select, .registry button:not([type=button]), .registry__login a, .login__form h2, .login__footer a, .u-f--bold p, .stepFour__header-title p, .stepFour__header-subtitle p, .registry__form h2 p, .registry__step p span p, .registry input:not([type=checkbox]) p, .registry select p, .registry button:not([type=button]) p, .registry__login a p, .login__form h2 p, .login__footer a p {
   font-weight: 700;
 }
 
@@ -973,13 +973,6 @@ h5 {
   border: solid 1px #00d1bc;
 }
 
-.login__block {
-  display: none;
-}
-.login__block.active {
-  display: block;
-}
-
 .is-invalid {
   border: 1px solid #e99c00;
 }
@@ -1078,13 +1071,13 @@ h5 {
 .login__footer {
   cursor: pointer;
   margin-top: 1.875rem;
-}
-.login__footer p {
-  color: #13171d;
-  margin: 0.3125rem 0;
   text-align: center;
 }
-.login__footer p:last-of-type {
+.login__footer p, .login__footer a {
+  color: #13171d;
+  margin: 0.3125rem 0;
+}
+.login__footer a {
   color: #00d1bc;
 }
 
