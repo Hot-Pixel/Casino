@@ -1,4 +1,4 @@
-var CBAR = (function (exports) {
+(function () {
   'use strict';
 
   var __defProp = Object.defineProperty;
@@ -1184,82 +1184,36 @@ var CBAR = (function (exports) {
     }
   }
 
-  function Alert(options = {}) {
-      const defaultOptions = {
-          wrapperSelector: '.alert__wrapper',
-          itemTemplate: '<div class="alert alert--{type} alert--{closable}" data-index="{index}">{message}</div>'
-      };
-      options = Object.assign({}, defaultOptions, options);
-      const wrapperEl = document.querySelector(options.wrapperSelector);
-      let alertIndex = 0;
+  function recoverPassword() {
 
-      function add(message, type = 'warning', closable = true) {
-          const alertStr = options.itemTemplate
-              .replace("{type}", type)
-              .replace("{closable}", closable ? "closable" : "fixed")
-              .replace("{index}", alertIndex)
-              .replace("{message}", message);
-          const alertEl = stringToElement(alertStr);
-          if(closable) {
-              alertEl.addEventListener("click", () => remove(alertEl.dataset.index));
-          }
-          wrapperEl.append(alertEl);
-          alertIndex++;
-      }
+    const loginRecover = document.querySelector(".login__recover");
+    if (loginRecover) return;
 
-      function remove(index) {
-          const alert = wrapperEl.querySelector(`[data-index="${index}"]`);
-          alert.remove();
-      }
-
-      function removeAll() {
-          wrapperEl.innerHTML = "";
-      }
-
-      function stringToElement(str) {
-          const tmp = document.createElement('div');
-          tmp.innerHTML = str;
-          return tmp.firstChild;
-      }
-
-      return {
-          add,
-          remove,
-          removeAll
-      };
-  }
-
-  document.querySelector(".login__recover");
-
-
-  const validation = new JustValidate(".login__form", {
-    errorFieldCssClass: "is-invalid",
-    errorFieldStyle: {
-      border: '1px solid #E99C00',
-    },
-    errorLabelCssClass: 'is-label-invalid',
-    errorLabelStyle: {
-      color: '#E99C00',
-      fontSize: '12px',
-      marginTop: '10px'
-    },
-  });
-
-  validation
-    .addField("#email", [
-      {
-        rule: "email",
-        errorMessage: "Introduce un email válido",
+    const validation = new JustValidate(".login__form", {
+      errorFieldCssClass: "is-invalid",
+      errorFieldStyle: {
+        border: '1px solid #E99C00',
       },
-    ])
-    .onSuccess(e => {
-      e.target.submit();
+      errorLabelCssClass: 'is-label-invalid',
+      errorLabelStyle: {
+        color: '#E99C00',
+        fontSize: '12px',
+        marginTop: '10px'
+      },
     });
 
-  exports.Alert = Alert;
+    validation
+      .addField("#email", [
+        {
+          rule: "email",
+          errorMessage: "Introduce un email válido",
+        },
+      ])
+      .onSuccess(e => {
+        e.target.submit();
+      });
+  }
 
-  Object.defineProperty(exports, '__esModule', { value: true });
+  recoverPassword();
 
-  return exports;
-
-})({});
+})();

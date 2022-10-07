@@ -70,6 +70,9 @@ const pagesArr = [
   "support",
   "user",
   "wallet",
+  "shared/common",
+  "shared/commonLogged",
+  "shared/userArea",
 ];
 
 const globalModules = {
@@ -77,7 +80,7 @@ const globalModules = {
 }
 
 /* Gulp Pipe for compiling SASS main file */
-gulp.task("sass", async () => {
+gulp.task("sass", async done => {
   gulp
     .src(paths.scss.src)
     .pipe(plumber())
@@ -86,18 +89,20 @@ gulp.task("sass", async () => {
     .pipe(maps.write("./"))
     .pipe(gulp.dest(paths.scss.dest))
     .pipe(server.stream());
+    done();
 });
 
 /* Gulp task to minify images */
-gulp.task("imageMin", async () => {
+gulp.task("imageMin", async done => {
   gulp
     .src(paths.images.src)
     .pipe(plumber())
     .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest));
+    done();
 });
 
-gulp.task("js", async () => {
+gulp.task("js", async done => {
   pagesArr.forEach((e) => {
     return rollup
       .rollup({
@@ -121,10 +126,11 @@ gulp.task("js", async () => {
         });
       });
   });
+  done();
 });
 
 /* Gulp Watch */
-gulp.task("watch", async () => {
+gulp.task("watch", async done => {
   server.init({
     proxy: "http://localhost:3000",
     browser: "chrome",
@@ -135,12 +141,13 @@ gulp.task("watch", async () => {
   watch(paths.scripts.watcher).on("change", gulp.series("js", server.reload));
   watch(paths.images.watcher).on("add", gulp.series("imageMin"));
   watch(paths.ejs.watcher).on("change", server.reload);
+  done();
 });
 
 /*---------------------------------------------------*/
 
 /* Bundle Tasks */
-gulp.task("bundleEjs", async () => {
+gulp.task("bundleEjs", async done => {
   gulp
     .src(paths.ejs.src)
     .pipe(ejsCompiler({
@@ -150,9 +157,10 @@ gulp.task("bundleEjs", async () => {
     }))
     .pipe(rename({ extname: ".html" }))
     .pipe(gulp.dest(paths.ejs.dest));
+    done();
 });
 
-gulp.task("bundleJs", async () => {
+gulp.task("bundleJs", async done => {
   pagesArr.forEach((e) => {
     return rollup
       .rollup({
@@ -177,9 +185,10 @@ gulp.task("bundleJs", async () => {
         });
       });
   });
+  done();
 });
 
-gulp.task("bundleCss", async () => {
+gulp.task("bundleCss", async done => {
   gulp
     .src(paths.scss.src)
     .pipe(maps.init())
@@ -187,13 +196,15 @@ gulp.task("bundleCss", async () => {
     .pipe(maps.write("./"))
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.css.dest))
+    done();
 });
 
-gulp.task("copyImg", async () => {
+gulp.task("copyImg", async done => {
   gulp
     .src(paths.images.src)
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img/'));
+    done();
 });
 
 // gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss"));

@@ -3172,6 +3172,52 @@
     carouselJackpot.mount();
   }
 
+  function carouselBets() {
+    var carousel = new Splide(".carouselBets__carousel", {
+      pagination: false,
+      arrows: true,
+      perPage: 5,
+      padding: 0,
+      perMove: 1,
+      gap: 10,
+      breakpoints: {
+        1900: {
+          perPage: 4,
+          padding: { left: 0, right: 50 },
+        },
+        1600: {
+          perPage: 3,
+          padding: { left: 0, right: 120 },
+        },
+        1280: {
+          perPage: 3,
+          padding: { left: 0, right: 50 },
+        },
+        1024: {
+          perPage: 2,
+          padding: { left: 0, right: 100 },
+          arrows: false,
+        },
+        768: {
+          perPage: 2,
+          padding: { left: 0, right: 50 },
+          arrows: false,
+        },
+        620: {
+          perPage: 1,
+          padding: { left: 0, right: 200 },
+          arrows: false,
+        },
+        510: {
+          perPage: 1,
+          padding: { left: 0, right: 50 },
+          arrows: false,
+        },
+      },
+    });
+    carousel.mount();
+  }
+
   function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
   function _inheritsLoose(subClass, superClass) { subClass.prototype = Object.create(superClass.prototype); subClass.prototype.constructor = subClass; subClass.__proto__ = superClass; }
@@ -8675,77 +8721,56 @@
       // to protect from tree shaking
   gsapWithCSS.core.Tween;
 
-  function accordionDeposit() {
-      const accorArrows = document.getElementsByClassName("accorArrowDepo");
-      const accorBody = document.getElementsByClassName("tc__body");
+  const arrowArr = document.getElementsByClassName("js-arrow__grid");
+  const gridArr = document.getElementsByClassName("gridHalf__grid");
+  const gridNodes = document.querySelectorAll("gridHalf__grid");
 
-      if(!accorArrows) return;
+  function collapseGrid() {
 
-      for (let n = 0; n < accorArrows.length; n++) {
-        accorArrows[n].addEventListener("click", () => {
-          if (accorBody[n].classList.contains("active")) {
+    if (window.innerWidth < 1280) {
+      gridNodes.forEach( e => {
+        e.classList.remove('active');
+      });
+      for (let n = 0; n < arrowArr.length; n++) {
+        arrowArr[n].addEventListener("click", () => {
+          if (gridArr[n].classList.contains("active")) {
             gsapWithCSS
               .timeline()
-              .to(accorArrows[n], { rotation: -90, duration: 0.3 })
-              .to(accorBody[n], { opacity: 0, padding: 0,  duration: 0.3 })
-              .to(accorBody[n], { height: 0, duration: 0.3 });
-            accorBody[n].classList.remove("active");
+              .to(arrowArr[n], { rotation: -90, duration: 0.3 })
+              .to(gridArr[n], { opacity: 0, duration: 0.6 })
+              .to(gridArr[n], { height: 0, duration: 0.3 });
+            gridArr[n].classList.remove("active");
           } else {
             gsapWithCSS
               .timeline()
-              .to(accorArrows[n], { rotation: 0, duration: 0.3 })
-              .to(accorBody[n], { height: "auto", padding: '15px 0', duration: 0.3 })
-              .to(accorBody[n], { opacity: 1, duration: 0.3 });
-            accorBody[n].classList.add("active");
+              .to(arrowArr[n], { rotation: 0, duration: 0.3 })
+              .to(gridArr[n], { height: "auto", duration: 0.3 })
+              .to(gridArr[n], { opacity: 1, duration: 0.6 });
+            gridArr[n].classList.add("active");
+          }
+        });
+      }
+    } else {
+      for (let n = 0; n < arrowArr.length; n++) {
+        arrowArr[n].addEventListener("click", () => {
+          if (gridArr[n].classList.contains("active")) {
+            gsapWithCSS
+              .timeline()
+              .to(arrowArr[n], { rotation: -90, duration: 0.3 })
+              .to(gridArr[n], { opacity: 0, duration: 0.6 })
+              .to(gridArr[n], { height: 0, duration: 0.3 });
+            gridArr[n].classList.remove("active");
+          } else {
+            gsapWithCSS
+              .timeline()
+              .to(arrowArr[n], { rotation: 0, duration: 0.3 })
+              .to(gridArr[n], { height: "auto", duration: 0.3 })
+              .to(gridArr[n], { opacity: 1, duration: 0.6 });
+            gridArr[n].classList.add("active");
           }
         });
       }
     }
-
-  function carouselBets() {
-    var carousel = new Splide(".carouselBets__carousel", {
-      pagination: false,
-      arrows: true,
-      perPage: 5,
-      padding: 0,
-      perMove: 1,
-      gap: 10,
-      breakpoints: {
-        1900: {
-          perPage: 4,
-          padding: { left: 0, right: 50 },
-        },
-        1600: {
-          perPage: 3,
-          padding: { left: 0, right: 120 },
-        },
-        1280: {
-          perPage: 3,
-          padding: { left: 0, right: 50 },
-        },
-        1024: {
-          perPage: 2,
-          padding: { left: 0, right: 100 },
-          arrows: false,
-        },
-        768: {
-          perPage: 2,
-          padding: { left: 0, right: 50 },
-          arrows: false,
-        },
-        620: {
-          perPage: 1,
-          padding: { left: 0, right: 200 },
-          arrows: false,
-        },
-        510: {
-          perPage: 1,
-          padding: { left: 0, right: 50 },
-          arrows: false,
-        },
-      },
-    });
-    carousel.mount();
   }
 
   /*!
@@ -9387,320 +9412,15 @@
     splide.mount({ Grid });
   }
 
-  function popUpSaldo() {
-    const popUpCloseBtn = document.querySelector(".popUpBalance__closeBtn");
-    const popUpOpenBtns = document.querySelectorAll(".popUpBalance__openBtn");
-    const popUpMenu = document.querySelector(".popUpBalance");
-    const header = document.querySelector(".header");
-
-    if (popUpOpenBtns.length === 0) return;
-
-    popUpMenu.style.marginTop = `${header.offsetHeight}px`;
-
-    popUpOpenBtns.forEach((btn) => {
-      if (window.innerWidth < 1280) {
-        btn.addEventListener("click", () => {
-          gsapWithCSS
-            .timeline()
-            .to(popUpMenu, { display: "block", duration: 0 })
-            .to(popUpMenu, {
-              opacity: 1,
-              transform: "translateY(0)",
-              duration: 0.4,
-            });
-        });
-      } else {
-        btn.addEventListener("click", () => {
-          gsapWithCSS
-            .timeline()
-            .to(popUpMenu, { display: "block", duration: 0 })
-            .to(popUpMenu, { opacity: 1, duration: 0.4 });
-        });
-      }
-    });
-
-    popUpCloseBtn.addEventListener("click", () => {
-      if (window.innerWidth < 1280) {
-        gsapWithCSS
-          .timeline()
-          .to(popUpMenu, {
-            opacity: 0,
-            transform: "translateY(100%)",
-            duration: 0.3,
-          })
-          .to(popUpMenu, { display: "none", duration: 0 });
-      } else {
-        gsapWithCSS
-          .timeline()
-          .to(popUpMenu, { opacity: 0, duration: 0.2 })
-          .to(popUpMenu, { display: "none", duration: 0 });
-      }
-    });
-  }
-
-  const arrowArr = document.getElementsByClassName("js-arrow__grid");
-  const gridArr = document.getElementsByClassName("gridHalf__grid");
-  const gridNodes = document.querySelectorAll("gridHalf__grid");
-
-  function collapseGrid() {
-
-    if (window.innerWidth < 1280) {
-      gridNodes.forEach( e => {
-        e.classList.remove('active');
-      });
-      for (let n = 0; n < arrowArr.length; n++) {
-        arrowArr[n].addEventListener("click", () => {
-          if (gridArr[n].classList.contains("active")) {
-            gsapWithCSS
-              .timeline()
-              .to(arrowArr[n], { rotation: -90, duration: 0.3 })
-              .to(gridArr[n], { opacity: 0, duration: 0.6 })
-              .to(gridArr[n], { height: 0, duration: 0.3 });
-            gridArr[n].classList.remove("active");
-          } else {
-            gsapWithCSS
-              .timeline()
-              .to(arrowArr[n], { rotation: 0, duration: 0.3 })
-              .to(gridArr[n], { height: "auto", duration: 0.3 })
-              .to(gridArr[n], { opacity: 1, duration: 0.6 });
-            gridArr[n].classList.add("active");
-          }
-        });
-      }
-    } else {
-      for (let n = 0; n < arrowArr.length; n++) {
-        arrowArr[n].addEventListener("click", () => {
-          if (gridArr[n].classList.contains("active")) {
-            gsapWithCSS
-              .timeline()
-              .to(arrowArr[n], { rotation: -90, duration: 0.3 })
-              .to(gridArr[n], { opacity: 0, duration: 0.6 })
-              .to(gridArr[n], { height: 0, duration: 0.3 });
-            gridArr[n].classList.remove("active");
-          } else {
-            gsapWithCSS
-              .timeline()
-              .to(arrowArr[n], { rotation: 0, duration: 0.3 })
-              .to(gridArr[n], { height: "auto", duration: 0.3 })
-              .to(gridArr[n], { opacity: 1, duration: 0.6 });
-            gridArr[n].classList.add("active");
-          }
-        });
-      }
-    }
-  }
-
-  function marginHeader() {
-    const header = document.querySelector(".header");
-    const headerMobile = document.querySelector(".header__mobile--top");
-    const contentBlocks = document.querySelectorAll(".has-header");
-    const userMenus = document.querySelectorAll(".userMenu");
-
-    if (window.innerWidth < 1280) {
-      contentBlocks.forEach((block) => {
-        block.style.marginTop = `${headerMobile.offsetHeight}px`;
-
-        window.addEventListener("resize", () => {
-          block.style.marginTop = `${headerMobile.offsetHeight}px`;
-        });
-      });
-    } else {
-      contentBlocks.forEach((block) => {
-        block.style.marginTop = `${header.offsetHeight}px`;
-
-        window.addEventListener("resize", () => {
-          block.style.marginTop = `${header.offsetHeight}px`;
-        });
-      });
-
-      userMenus.forEach((menu) => {
-        menu.style.top = `${header.offsetHeight}px`;
-        menu.style.height = `calc(100vh - ${header.offsetHeight}px)`;
-      });
-    }
-  }
-
-  function depositSteps() {
-    const depositScreen = document.querySelector(".depositScreen");
-    const pageContainer = document.querySelector(".pageContainer");
-    const depositBlocks = document.querySelectorAll(".deposit__block");
-    const depositCloseBtn = document.querySelector(".deposit__btn-close");
-    const depositOpenBtns = document.querySelectorAll(".deposit__openBtn");
-    const depositStep1 = document.querySelector(".deposit__step1");
-    const depositMethodsBtn = document.querySelectorAll(".deposit__item");
-    const depositMethods = document.querySelectorAll(".deposit__step2-method");
-    const depositStep2 = document.querySelector(".deposit__step2");
-    const depositStep3 = document.querySelector(".deposit__step3");
-    const step2BackBtn = document.querySelectorAll(".depositStep2__backBtn");
-    const step3Btn = document.querySelectorAll(".depositStep3__Btn");
-    
-    if(!depositScreen) return;
-    
-    depositOpenBtns.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        depositBlocks.forEach((block) => {
-          block.classList.remove("active");
-        });
-        depositStep1.classList.add("active");
-        gsapWithCSS
-          .timeline()
-          .to(pageContainer, { display: "none", duration: 0 })
-          .to(depositScreen, { display: "block", duration: 0 })
-          .to(depositScreen, { opacity: 1, duration: 0.4 });
-      });
-    });
-
-
-    depositCloseBtn.addEventListener("click", () => {
-      gsapWithCSS
-        .timeline()
-        .to(pageContainer, { display: "block", duration: 0 })
-        .to(depositScreen, { opacity: 0, duration: 0.2 })
-        .to(depositScreen, { display: "none", duration: 0 });
-    });
-
-    depositMethodsBtn.forEach((methodBtn) => {
-      methodBtn.addEventListener("click", (e) => {
-        depositBlocks.forEach((block) => {
-          block.classList.remove("active");
-        });
-        depositStep2.classList.add("active");
-
-        depositMethods.forEach((method) => {
-          method.classList.remove("active");
-        });
-        const target = document.querySelector(
-          `.${e.currentTarget.dataset.method}`
-        );
-        target.classList.add("active");
-      });
-    });
-
-    step2BackBtn.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        depositMethods.forEach((method) => {
-          method.classList.remove("active");
-        });
-        depositBlocks.forEach((block) => {
-          block.classList.remove("active");
-        });
-        depositStep1.classList.add("active");
-        return false;
-      });
-    });
-
-    step3Btn.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        depositMethods.forEach((method) => {
-          method.classList.remove("active");
-        });
-        depositBlocks.forEach((block) => {
-          block.classList.remove("active");
-        });
-        depositStep3.classList.add("active");
-        return false;
-      });
-    });
-  }
-
-  function depositAmmount() {
-    const btnsArr20 = document.querySelectorAll(".btnAmmount__20");
-    const btnsArr50 = document.querySelectorAll(".btnAmmount__50");
-    const btnsArr100 = document.querySelectorAll(".btnAmmount__100");
-    const inputAmmount = document.querySelector(".depositDetail__ammount");
-
-
-    btnsArr20.forEach((btn20) => {
-      btn20.addEventListener("click", () => {
-          inputAmmount.value = 20;
-        });
-    });
-    btnsArr50.forEach((btn50) => {
-      btn50.addEventListener("click", () => {
-          inputAmmount.value = 50;
-        });
-    });
-    btnsArr100.forEach((btn100) => {
-      btn100.addEventListener("click", () => {
-          inputAmmount.value = 100;
-        });
-    });
-
-  }
-
-  function depositCopy() {
-    const iban = document.querySelector("#iban");
-    const copyBtn = document.querySelector(".depositTransfer__table-copy");
-    
-    if(!copyBtn) return;
-
-    copyBtn.addEventListener("click", () => {
-      gsapWithCSS
-        .timeline()
-        .to(copyBtn, { scale: 0.9, duration: 0.2 })
-        .to(copyBtn, { scale: 1, duration: 0.2 });
-
-      navigator.clipboard.writeText(iban.innerText);
-    });
-  }
-
-  const menuHeaderOpenBtn = document.querySelector(".menuHeader__openBtn");
-  const menuHeaderCloseBtn = document.querySelector(".menuHeader__closeBtn");
-  const menuHeader = document.querySelector(".menuHeader");
-
-  function menuHeaderMobile() {
-    menuHeaderOpenBtn.addEventListener("click", () => {
-      menuHeader.style.display = "flex";
-      gsapWithCSS.to(menuHeader, { left: "0", opacity: 1, duration: 0.7 });
-    });
-
-    menuHeaderCloseBtn.addEventListener("click", () => {
-      gsapWithCSS
-        .to(menuHeader, { left: "-90vw", opacity: 0, duration: 0.3 })
-        .to(menuHeader, { display: "none", duration: 0 });
-    });
-  }
-
-  function userMenuMobile() {
-    const userMenuMobileOpen = document.querySelector(".userMenuMobile__open");
-    const userMenuMobileClose = document.querySelector(
-      ".userMenuMobile__collapse"
-    );
-    const userMenuMobile = document.querySelector(".userMenuMobile");
-
-    if(!userMenuMobile) return;
-
-    userMenuMobileOpen.addEventListener("click", e => {
-      e.preventDefault();
-      userMenuMobile.style.display = "flex";
-      gsapWithCSS.to(userMenuMobile, { right: "0", opacity: 1, duration: 0.7 });
-    });
-
-    userMenuMobileClose.addEventListener("click", () => {
-      gsapWithCSS
-        .to(userMenuMobile, { right: "-90vw", opacity: 0, duration: 0.3 })
-        .to(userMenuMobile, { display: "none", duration: 0 });
-    });
-  }
-
-  marginHeader();
-
-  window.addEventListener("load", () => {
-    accordionDeposit();
+  document.addEventListener("DOMContentLoaded", () => {
+    carouselBanner();
     carouselJackpot();
-    carouselBets();
-    popUpSaldo();
+    carouselBets();  
     collapseGrid();
-    depositSteps();
-    depositAmmount();
-    depositCopy();
-    menuHeaderMobile();
-    userMenuMobile();
 
     document.querySelectorAll('.gridFull .splide').forEach(grid => {
       carouselGrid(grid);
     });
-    carouselBanner();
   });
 
 })();
