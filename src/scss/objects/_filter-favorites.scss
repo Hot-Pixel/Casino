@@ -2,14 +2,16 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+.favoritesGames {
+	background-image: url('../img/images/img-favourites-bg.svg');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100vw auto;
+}
 
 .filterFavorites {
 	margin: $sm auto;
 	width: fit-content;
-
-
-	&__wrapper {}
-
 
 	&__types {
 

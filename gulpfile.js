@@ -52,6 +52,7 @@ const pagesArr = [
   "casino",
   "data",
   "docs",
+  "favourites",
   "game",
   "history",
   "home",

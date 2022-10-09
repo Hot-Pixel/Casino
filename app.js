@@ -2,6 +2,7 @@ import express from "express";
 const app = express();
 import createError from "http-errors";
 import path from "path";
+
 import home from "./routes/home.js";
 import about from "./routes/about.js";
 import layout from "./routes/layout.js";
@@ -37,7 +38,7 @@ import howTo from "./routes/pokerHowTo.js";
 import pokerSatelitesOnline from "./routes/pokerSatelitesOnline.js";
 import pokerSatelitesCEP from "./routes/pokerSatelitesCEP.js";
 import pokerSatelitesNavidad from "./routes/pokerSatelitesNavidad.js";
-import favorites from "./routes/favorites.js";
+import favourites from "./routes/favourites.js";
 import boardGame from "./routes/boardGame.js";
 import affiliates from "./routes/affiliates.js";
 import {fileURLToPath} from 'url';
@@ -89,7 +90,7 @@ app.use("/como-jugar", howTo);
 app.use("/satelites-online", pokerSatelitesOnline);
 app.use("/satelites-cep", pokerSatelitesCEP);
 app.use("/satelites-navidad", pokerSatelitesNavidad);
-app.use("/favorites", favorites);
+app.use("/favoritos", favourites);
 app.use("/boardGame", boardGame);
 app.use("/affiliates", affiliates);
 

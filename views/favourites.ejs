@@ -1,0 +1,133 @@
+<%
+const gridItems = [
+	{
+		juego: "slots",
+		img: "1"
+	},
+	{
+		juego: "casino",
+		img: "2"
+	},
+	{
+		juego: "ruleta",
+		img: "3"
+	},
+	{
+		juego: "ruleta",
+		img: "4"
+	},
+	{
+		juego: "slots",
+		img: "5"
+	},
+	{
+		juego: "ruleta",
+		img: "6"
+	},
+	{
+		juego: "slots",
+		img: "7"
+	},
+	{
+		juego: "ruleta",
+		img: "8"
+	},
+	{
+		juego: "ruleta",
+		img: "9"
+	},
+	{
+		juego: "slots",
+		img: "10"
+	},
+	{
+		juego: "casino",
+		img: "11"
+	},
+	{
+		juego: "casino",
+		img: "12"
+	},
+	{
+		juego: "slots",
+		img: "1"
+	},
+	{
+		juego: "casino",
+		img: "2"
+	},
+	{
+		juego: "ruleta",
+		img: "3"
+	},
+	{
+		juego: "ruleta",
+		img: "4"
+	},
+	{
+		juego: "slots",
+		img: "5"
+	},
+	{
+		juego: "ruleta",
+		img: "6"
+	},
+	{
+		juego: "slots",
+		img: "7"
+	},
+	{
+		juego: "ruleta",
+		img: "8"
+	},
+	{
+		juego: "ruleta",
+		img: "9"
+	},
+	{
+		juego: "slots",
+		img: "10"
+	},
+	{
+		juego: "casino",
+		img: "11"
+	},
+	{
+		juego: "casino",
+		img: "12"
+	}
+]
+%>
+
+
+
+<%- include ('layout/head', {title: 'Favorites' , css: 'favourites'}) %>
+
+<%- include ('modules/deposit') %>
+
+<main class="pageContainer">
+
+	<%- include ('layout/header', { mode: ''}) %>
+
+	<main class="has-header">
+
+		<%- include ('modules/banner-favorites') %>
+
+		<section class="favoritesGames">
+
+			<%- include ('objects/filter-favorites.ejs') %>
+
+			<%- include ('objects/grid-favorites.ejs', { data: gridItems }) %>
+
+		</section>
+
+		<%- include ('modules/text-block') %>
+
+		<%- include ('layout/footer') %>
+
+	</main>
+
+</main>
+
+
+<%- include ('layout/scripts',  { script: 'favourites', screen: 'casino' }) %>
