@@ -35,12 +35,15 @@ import atencionCliente from "./routes/atencionCliente.js";
 import game from "./routes/juegoResponsable.js";
 import verify from "./routes/verify.js";
 import howTo from "./routes/pokerHowTo.js";
+import texas from "./routes/pokerTexas.js";
+import omaha from "./routes/pokerOmaha.js";
 import pokerSatelitesOnline from "./routes/pokerSatelitesOnline.js";
 import pokerSatelitesCEP from "./routes/pokerSatelitesCEP.js";
 import pokerSatelitesNavidad from "./routes/pokerSatelitesNavidad.js";
 import favourites from "./routes/favourites.js";
 import boardGame from "./routes/boardGame.js";
 import affiliates from "./routes/affiliates.js";
+import landingAffiliates from "./routes/landingAfiliados.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -81,18 +84,21 @@ app.use("/user", user);
 app.use("/sign-in", signIn);
 app.use("/recover-password", recoverPassword);
 app.use("/sign-up", signUp);
-app.use("/appApuestas", appApuestas);
-app.use("/error404", error404);
-app.use("/atencionCliente", atencionCliente);
+app.use("/app-apuestas", appApuestas);
+app.use("/error-404", error404);
+app.use("/atencion-cliente", atencionCliente);
 app.use("/juego-responsable", game);
 app.use("/verificacion", verify);
 app.use("/como-jugar", howTo);
+app.use("/como-jugar-texas", texas);
+app.use("/como-jugar-omaha", omaha);
 app.use("/satelites-online", pokerSatelitesOnline);
 app.use("/satelites-cep", pokerSatelitesCEP);
 app.use("/satelites-navidad", pokerSatelitesNavidad);
 app.use("/favoritos", favourites);
-app.use("/boardGame", boardGame);
-app.use("/affiliates", affiliates);
+app.use("/tabla-juego", boardGame);
+app.use("/afiliados", affiliates);
+app.use("/landing-afiliados", landingAffiliates);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
