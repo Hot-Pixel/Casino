@@ -2,70 +2,102 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 .gridRoulette {
-	@extend %margin_horizontal_main, %margin_top_medium;
+  @extend %margin_horizontal_main, %margin_top_medium;
 
-	display: grid;
-	gap: rem(10);
+  &__grid {
+    display: grid;
+    column-gap: rem(10);
+
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto 1fr auto;
+	grid-template-areas:
+	"imgIzq"
+	"contIzq"
+	"imgDrch"
+	"contDrch";
+
+    @include screen-sm {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+
+	  grid-template-areas:
+	  "imgIzq imgDrch"
+	  "contIzq contDrch";
+    }
+  }
+
+  .imgIzq {
+	grid-area: imgIzq;
+  }
+
+  .imgDrch {
+	grid-area: imgDrch;
+  }
+
+  .contIzq {
+	grid-area: contIzq;
+	margin-bottom: $md;
 
 	@include screen-sm {
-		grid-template-columns: repeat( 2, 1fr );
+		margin-bottom: 0;
 	}
+  }
 
-	.card {
-		&__image {
-			img {
-				object-fit: contain;
-				width: 100%;
-			}
-		}
+  .contDrch {
+	grid-area: contDrch;
+  }
 
-		&__content {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: center;
+  &__image {
+    img {
+      object-fit: contain;
+      width: 100%;
+    }
+  }
 
-			background-color: setcolor('black', 'dark4');
-			padding: $md rem(5) 0;
-			border-radius: 0 0 rem(5) rem(5);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-			@include screen-sm {
-				width: 100%;
-				aspect-ratio: 1 / 0.5;
-				padding: $lg rem(20) 0;
-			}
+    background-color: setcolor("black", "dark4");
+    padding: $md rem(5) 0;
+    border-radius: 0 0 rem(5) rem(5);
 
-			&-txt {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				text-align: center;
-			}
+    @include screen-sm {
+      width: 100%;
+      padding: $lg rem(20) 0;
+    }
 
-			&-title {
-				@extend .u-f--h1, .u-f--bold;
-				padding-bottom: $sm;
-			}
+    &-txt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
 
-			&-subtitle {
-				@extend .u-f--h3, .u-f--bold;
-				color: #a4a6a8;
-				max-width: 90%;
-				padding-bottom: $sm;
-			}
+    &-title {
+      @extend .u-f--h1, .u-f--bold;
+      padding-bottom: $sm;
+    }
 
-			&-desc {
-				color: #a4a6a8;
-				max-width: 90%;
-				padding-bottom: $sm;
-			}
-		}
+    &-subtitle {
+      @extend .u-f--h3, .u-f--bold;
+      color: #a4a6a8;
+      max-width: 90%;
+      padding-bottom: $sm;
+    }
 
-		&__footer {
-			width: fit-content;
-			transform: translateY(50%);
-		}
-	}
+    &-desc {
+      color: #a4a6a8;
+      max-width: 90%;
+      padding-bottom: $sm;
+    }
+  }
+
+  &__footer {
+    width: fit-content;
+    transform: translateY(50%);
+  }
 }
