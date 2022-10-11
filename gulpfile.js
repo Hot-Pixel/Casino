@@ -77,7 +77,8 @@ const pagesArr = [
 ];
 
 const globalModules = {
-  Alert: "Alert"
+  Alert: "Alert",
+  Session: "Session"
 }
 
 /* Gulp Pipe for compiling SASS main file */
