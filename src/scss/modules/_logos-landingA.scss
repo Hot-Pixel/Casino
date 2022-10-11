@@ -1,0 +1,50 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.logosLandingA {
+  @extend %padding_horizontal_main, %margin_top_large;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    padding-bottom: $md;
+
+    @include screen-sm {
+      padding-bottom: $lg;
+    }
+
+    &-title {
+      @extend .u-f--h3, .u-f--bold;
+      color: setcolor("gray", "mid");
+    }
+  }
+
+  &__flex {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    column-gap: $md;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    @include screen-sm {
+      display: flex;
+    }
+  }
+
+  &__slider {
+
+    img {
+      object-fit: contain;
+      max-height: 80%;
+    }
+
+    @include screen-sm {
+      display: none;
+    }
+  }
+}

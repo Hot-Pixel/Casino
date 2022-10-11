@@ -56,6 +56,7 @@ const pagesArr = [
   "game",
   "history",
   "home",
+  "landingA",
   "layout",
   "poker",
   "preferences",

@@ -1,0 +1,132 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.stepsLandingA {
+  @extend %padding_horizontal_main;
+  height: 100%;
+
+  background-color: setcolor("black");
+
+  @include screen-sm {
+    height: 12vh;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    @include screen-sm {
+      flex-direction: row;
+    }
+  }
+
+  &__step {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 12vh;
+    width: 100%;
+
+    border-bottom: 1px solid setcolor("black", "dark1");
+
+    @include screen-sm {
+      border: none;
+    }
+
+    &-wrapper {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 12vh;
+
+      display: flex;
+      align-items: center;
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      height: 12vh;
+      width: 100%;
+      padding-left: 0;
+
+      background-color: setcolor("black");
+
+      @include screen-sm {
+        justify-content: center;
+        padding-left: $md;
+        width: 85%;
+      }
+    }
+
+    &-gradient {
+      display: none;
+
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 12vh;
+      background-image: linear-gradient(to right, black 70%, transparent);
+
+      @include screen-sm {
+        display: block;
+      }
+    }
+
+    &-icon {
+      @extend .u-f--h3, .u-f--bold;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-right: $sm;
+
+      color: white;
+      width: rem(50);
+      height: rem(50);
+      background-color: setcolor("primary");
+      border-radius: 200px;
+      border: rem(10) solid #a82838;
+      box-sizing: content-box;
+    }
+
+    &-flex {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-title,
+    &-subtitle {
+      color: setcolor("primary");
+      @extend .u-f--bold;
+    }
+
+    &-title {
+      @extend .u-f--h3;
+    }
+
+    &-path {
+      display: none;
+
+      height: 12vh;
+      width: rem(45);
+
+      clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
+      background-color: setcolor("black");
+
+      @include screen-sm {
+        display: block;
+      }
+    }
+  }
+}
