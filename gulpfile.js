@@ -154,7 +154,7 @@ gulp.task("bundleEjs", async done => {
     .src(paths.ejs.src)
     .pipe(ejsCompiler({
       player: {
-        isLogged: false
+        isLogged: true
       }
     }))
     .pipe(rename({ extname: ".html" }))
