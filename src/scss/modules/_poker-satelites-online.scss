@@ -71,5 +71,10 @@
 		z-index: 0;
 		right: rem(-85);
 		bottom: rem(-65);
+		display: none;
+
+		@include screen-sm {
+			display: block;
+		}
 	}
 }

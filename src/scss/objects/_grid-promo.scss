@@ -3,7 +3,6 @@
 @use "../tools" as *;
 
 .grid__promo {
-
   &-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -24,21 +23,15 @@
   }
 
   &-card {
-
     &--top img {
       width: 100%;
       object-fit: contain;
     }
 
     &--bottom {
-        position: relative;
-        background-color: setcolor('black');
-        padding: $lg;
-        border-radius: 0 0 rem(10) rem(10);
-
-        @include screen-sm {
-          padding: $lg $lg $lg;
-        }
+      background-color: setcolor("black");
+      padding: rem(45) rem(45) 0;
+      border-radius: 0 0 rem(10) rem(10);
     }
   }
 
@@ -49,20 +42,28 @@
 
   &-subtitle {
     @extend .u-f--h4, .u-f--bold;
-    color: setcolor('primary');
+    color: setcolor("primary");
     padding-bottom: rem(10);
   }
 
   &-body {
-    @extend .u-f--bold;
-    color: setcolor('gray');
+    color: setcolor("gray", "mid");
+    padding-bottom: $md;
   }
 
   &-btn {
-    position: absolute;
-    bottom: rem(-22);
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(50%);
+
+    a {
+      width: 70%;
+      img {
+        display: none;
+        @include screen-sm {
+          display: inline;
+        }
+      }
+    }
   }
 }

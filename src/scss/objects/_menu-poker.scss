@@ -70,9 +70,7 @@
     cursor: pointer;
 
     &:hover,
-    &:active,
-    &:focus,
-    &.is-active {
+    &.active {
       span {
         color: setcolor("primary");
         transition: all 0.5s ease;

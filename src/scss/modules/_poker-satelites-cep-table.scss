@@ -22,4 +22,8 @@
 			margin-top: rem(80);
 		}
 	}
+
+	.table__header span {
+		color: setcolor('gray', 'mid');
+	}
 }

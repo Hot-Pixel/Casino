@@ -205,6 +205,10 @@
 
       padding: $sm;
 
+      .grey {
+        color: setcolor('gray', 'mid');
+      }
+
       &:nth-of-type(odd) {
         background-color: #282b31;
       }
