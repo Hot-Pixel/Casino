@@ -1,0 +1,15 @@
+<section class="landingSEOThemes">
+	<p class="landingSEOThemes__title">Temáticas más populares</p>
+	<div class="landingSEOThemes__grid">
+		<% data.forEach( e=> { %>
+			<div class="landingSEOThemes__grid-item">
+				<img class="landingSEOThemes__grid-item-image" src="img/images/<%= e.img %>">
+				<p class="landingSEOThemes__grid-item-title"><%= e.title %></p>
+				<a href="<%= e.btnHref %>" class="landingSEOThemes__grid-item-button btn__darkGrey">
+					<span><%= e.btnLabel %></span>
+					<img src="img/icons/icon-arrow-circle-white.svg" alt="">
+				</a>
+			</div>
+		<% }) %>
+	</div>
+</section>

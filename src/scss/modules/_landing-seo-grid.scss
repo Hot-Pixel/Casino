@@ -1,0 +1,31 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.landingSEO__gridFull {
+	margin-top: rem(80);
+	@extend %padding_horizontal_main;
+
+	@include screen-sm {
+		margin-top: rem(-80);
+	}
+
+
+	&-inner {
+		background: setcolor('black', 'dark2');
+		border-radius: rem(10);
+	}
+
+
+	.headerModule {
+		display: none;
+	}
+
+
+	.gridFullSeo {
+		margin: 0;
+		padding: rem(10);
+		max-width: initial;
+	}
+}

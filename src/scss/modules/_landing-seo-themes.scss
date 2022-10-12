@@ -1,0 +1,82 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.landingSEOThemes {
+	padding-top: rem(15);
+	padding-bottom: rem(15);
+	@extend %padding_horizontal_main;
+	background: transparent linear-gradient(180deg, rgba( setcolor('black', 'dark2'), 0 ) 0%, setcolor('black', 'dark2') 100%) 0% 0% no-repeat padding-box;
+
+	@include screen-sm {
+		padding-top: rem(60);
+		padding-bottom: rem(60);
+	}
+
+
+	&__title {
+		margin-bottom: $md;
+		@extend .u-f--h3;
+		@extend .u-f--bold;
+		text-align: center;
+	}
+
+
+	&__grid {
+		display: grid;
+		gap: rem(10);
+		grid-template-columns: 1fr;
+
+		@include tablet {
+			grid-template-columns: repeat( 2, 1fr );
+		}
+
+		@include screen-sm {
+			grid-template-columns: repeat( 3, 1fr );
+		}
+
+
+		&-item {
+			margin-top: 20%;
+			padding-right: rem(30);
+			padding-bottom: rem(30);
+			padding-left: rem(30);
+			border-radius: rem(5);
+			background: transparent linear-gradient(180deg, setcolor('black') 0%, rgba( setcolor('black'), 0 ) 100%) 0% 0% no-repeat padding-box;
+
+
+			&-image {
+				margin-top: -20%;
+				margin-right: auto;
+				margin-left: auto;
+				max-width: 100%;
+			}
+
+
+			&-title {
+				margin-top: $sm;
+				margin-bottom: $sm;
+				@extend .u-f--h3;
+				@extend .u-f--bold;
+				text-align: center;
+			}
+
+
+			&-button {
+
+
+				span + img {
+					margin-left: rem(10);
+				}
+
+
+				img {
+					width: 1em;
+					height: 1em;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

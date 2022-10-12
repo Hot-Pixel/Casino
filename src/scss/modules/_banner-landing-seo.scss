@@ -1,0 +1,79 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.landingSEO {
+	@extend %margin_top_medium, %padding_horizontal_main;
+	background: transparent linear-gradient(150deg, rgba( setcolor('primary'), 0 ) 0%, setcolor( 'primary' ) 100%) 0% 0% no-repeat padding-box;
+
+	@include screen-sm {
+		display: grid;
+		gap: rem(10);
+		grid-template-columns: 2fr 3fr;
+		padding-bottom: rem(80);
+	}
+
+
+	&__image {
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 100%;
+
+		@include screen-sm {
+			grid-column: 2 / 3;
+			grid-row: 1 / 2;
+		}
+	}
+
+
+	&__content {
+		display: flex;
+		gap: rem(10);
+		flex-direction: column;
+		justify-content: center;
+
+		@include screen-sm {
+			grid-column: 1 / 2;
+			grid-row: 1 / 2;
+			gap: rem(20);
+		}
+	}
+
+
+	&__title {
+		@extend .u-f--h1;
+		@extend .u-f--bold;
+	}
+
+
+	&__subtitle {
+		@extend .u-f--h4;
+		@extend .u-f--bold;
+	}
+
+
+	&__text {}
+
+
+	&__button {
+		transform: translateY( calc( 100% + rem(20) ) );
+
+		@include screen-sm {
+			transform: translateY(0);
+			width: fit-content;
+		}
+
+
+		span + img {
+			margin-left: rem(10);
+		}
+
+
+		img {
+			width: 1em;
+			height: 1em;
+			font-size: 14px;
+		}
+	}
+}
