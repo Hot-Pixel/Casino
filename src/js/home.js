@@ -7,7 +7,7 @@ import carouselGrid from "./modules/carouselGrid.js";
 document.addEventListener("DOMContentLoaded", () => {
   carouselBanner();
   carouselJackpot();
-  carouselBets();  
+  carouselBets();
   collapseGrid();
 
   document.querySelectorAll('.gridFull .splide').forEach(grid => {
