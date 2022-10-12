@@ -47,8 +47,42 @@ const paths = {
   },
 };
 
+const pagesArr = [
+  "appApuestas",
+  "casino",
+  "data",
+  "docs",
+  "favourites",
+  "game",
+  "history",
+  "home",
+  "landingA",
+  "landingSeo",
+  "poker",
+  "preferences",
+  "promocion",
+  "promociones",
+  "ruleta",
+  "screens",
+  "recoverPassword",
+  "signIn",
+  "signUp",
+  "slots",
+  "slotsAll",
+  "support",
+  "wallet",
+  "shared/common",
+  "shared/commonLogged",
+  "shared/userArea",
+];
+
+const globalModules = {
+  Alert: "Alert",
+  Session: "Session"
+}
+
 /* Gulp Pipe for compiling SASS main file */
-gulp.task("sass", async () => {
+gulp.task("sass", async done => {
   gulp
     .src(paths.scss.src)
     .pipe(plumber())
@@ -57,97 +91,78 @@ gulp.task("sass", async () => {
     .pipe(maps.write("./"))
     .pipe(gulp.dest(paths.scss.dest))
     .pipe(server.stream());
+    done();
 });
 
 /* Gulp task to minify images */
-gulp.task("imageMin", async () => {
+gulp.task("imageMin", async done => {
   gulp
     .src(paths.images.src)
     .pipe(plumber())
     .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest));
+    done();
 });
 
-gulp.task("js", async () => {
-  return rollup
-    .rollup({
-      input: [
-        "src/js/casino",
-        "src/js/home",
-        "src/js/slots",
-        "src/js/slotsAll",
-        "src/js/ruleta",
-        "src/js/poker",
-        "src/js/promociones",
-        "src/js/promocion",
-        "src/js/layout",
-        "src/js/screens",
-        "src/js/user",
-        "src/js/data",
-        "src/js/docs",
-        "src/js/preferences",
-        "src/js/support",
-        "src/js/history",
-        "src/js/wallet",
-        "src/js/signIn",
-        "src/js/signUp",
-        "src/js/landingSeo",
-      ],
-      plugins: [
-        commonjs({
-          include: [
-            "node_modules/mixitup/dist/mixitup.js",
-            "src/js/modules/mixitup-multifilter.js",
-          ],
-        }),
-        nodeResolve(),
-      ],
-    })
-    .then((bundle) => {
-      return bundle.write({
-        dir: "public/js/",
-        format: "esm",
-        sourcemap: true,
+gulp.task("js", async done => {
+  pagesArr.forEach((e) => {
+    return rollup
+      .rollup({
+        input: [`src/js/${e}.js`],
+        plugins: [
+          commonjs({
+            include: [
+              "node_modules/mixitup/dist/mixitup.js",
+              "src/js/modules/mixitup-multifilter.js",
+            ],
+          }),
+          nodeResolve(),
+        ],
+      })
+      .then((bundle) => {
+        return bundle.write({
+          file: `public/js/${e}.js`,
+          format: "iife",
+          name: 'CBAR',
+          globals: globalModules
+        });
       });
-    });
+  });
+  done();
 });
 
 /* Gulp Watch */
-gulp.task("watch", async () => {
+gulp.task("watch", async done => {
   server.init({
     proxy: "http://localhost:3000",
     browser: "chrome",
-    online: true,
-    tunnel: true,
+    online: false,
+    tunnel: false,
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
   watch(paths.scripts.watcher).on("change", gulp.series("js", server.reload));
   watch(paths.images.watcher).on("add", gulp.series("imageMin"));
   watch(paths.ejs.watcher).on("change", server.reload);
+  done();
 });
 
 /*---------------------------------------------------*/
 
 /* Bundle Tasks */
-gulp.task("bundleEjs", async () => {
+gulp.task("bundleEjs", async done => {
   gulp
     .src(paths.ejs.src)
-    .pipe(ejsCompiler())
+    .pipe(ejsCompiler({
+      player: {
+        isLogged: true
+      }
+    }))
     .pipe(rename({ extname: ".html" }))
     .pipe(gulp.dest(paths.ejs.dest));
+    done();
 });
 
-gulp.task("bundleJs", async () => {
-  const pagesArr = [
-    "casino",
-    "home",
-    "slots",
-    "slotsAll",
-    "ruleta",
-    "poker",
-    "promociones",
-    "layout",
-  ];
+gulp.task("bundleJs", async done => {
   pagesArr.forEach((e) => {
     return rollup
       .rollup({
@@ -167,20 +182,15 @@ gulp.task("bundleJs", async () => {
           file: `dist/js/${e}.js`,
           format: "iife",
           plugins: [terser()],
+          name: 'CBAR',
+          globals: globalModules
         });
       });
   });
+  done();
 });
 
-// gulp.task("bundleCss", async () => {
-//   gulp
-//     .src(paths.css.src)
-//     .pipe(autoprefixer())
-//     .pipe(cleanCSS())
-//     .pipe(rename({ extname: ".css" }))
-//     .pipe(gulp.dest(paths.css.dest));
-// });
-gulp.task("bundleCss", async () => {
+gulp.task("bundleCss", async done => {
   gulp
     .src(paths.scss.src)
     .pipe(maps.init())
@@ -188,13 +198,16 @@ gulp.task("bundleCss", async () => {
     .pipe(maps.write("./"))
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.css.dest))
+    done();
 });
 
-gulp.task("copyImg", async () => {
+gulp.task("copyImg", async done => {
   gulp
     .src(paths.images.src)
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img/'));
+    done();
 });
 
+// gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss"));
 gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss", "copyImg"));

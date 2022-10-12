@@ -8,7 +8,7 @@ const bannerData =
   }
 %>
 
-<%- include ('layout/head', {title: "Ruleta en Vivo" , css: "ruleta", header: "has-header" }) %>
+<%- include ('layout/head', {title: "Ruleta en Vivo" , css: "ruleta" }) %>
 
 <%- include ('modules/deposit') %>
 
@@ -20,6 +20,8 @@ const bannerData =
 
     <%- include ('modules/banner', { data: bannerData }) %>
 
+    <%- include ('objects/footer-ruleta') %>
+
     <%- include ('modules/finder-ruleta') %>
 
     <%- include ('modules/text-block') %>
@@ -30,4 +32,4 @@ const bannerData =
 
 </main>
 
-<%- include ('layout/scripts', { script: 'ruleta' }) %>
+<%- include ('layout/scripts', { script: 'ruleta', screen: 'casino' }) %>

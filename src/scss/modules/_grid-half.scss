@@ -21,11 +21,11 @@
   padding: rem(10) $sm;
   height: 100%;
 
-  background-color: setcolor("black");
+  background-color: setcolor("black", "dark2");
   border-radius: rem(5);
 
   @include tablet {
-    padding: $lg;
+    padding: $md;
   }
   @include screen-sm {
     padding: $sm;

@@ -1,8 +1,10 @@
 import JustValidate from "just-validate";
+import Alert from '../js/modules/alert';
 
 const recoverBtn = document.querySelector(".login__recoverBtn");
 const loginBlocks = document.querySelectorAll(".login__block");
 const loginSignIn = document.querySelector(".login__signIn");
+const loginSubmitBtn = document.querySelector(".login__submit");
 const loginRecover = document.querySelector(".login__recover");
 
 recoverBtn.addEventListener("click", () => {
@@ -12,10 +14,9 @@ recoverBtn.addEventListener("click", () => {
   loginRecover.classList.add("active");
 });
 
-const nameValue = document.querySelector('input[name="user"]').value;
-const passValue = document.querySelector('input[name="password"]').value;
-
-console.log(nameValue);
+const nameEl = document.getElementById('user');
+const passEl = document.getElementById('password');
+const alertMgr = Alert();
 
 const validation = new JustValidate(".login__form", {
   errorFieldCssClass: "is-invalid",
@@ -33,27 +34,33 @@ const validation = new JustValidate(".login__form", {
 validation
   .addField("#user", [
     {
-      rule: "minLength",
-      value: 5,
-      errorMessage: "Requiere mínimo 5 caracteres",
-    },
-    {
-      rule: "maxLength",
-      value: 20,
-      errorMessage: "No puede tener más de 20 caracteres",
-    },
-    {
       rule: "required",
       errorMessage: "Este campo es obligatorio",
     },
   ])
   .addField("#password", [
     {
-      rule: "password",
-      errorMessage: "La contraseña debe estar formada por al menos una letra y un número",
-    },
-    {
       rule: "required",
       errorMessage: "Este campo es obligatorio",
     },
-  ]);
+  ])
+  .onSuccess(async () => {
+    try {
+      setFormLoading(true);
+      alertMgr.removeAll();
+      const res = await handleLogin(nameEl.value, passEl.value);
+      console.log(res)
+    } catch (error) {
+      alertMgr.add(error, "error");
+    } finally {
+      setFormLoading(false);
+    }
+  });
+
+function setFormLoading(isLoading) {
+  const submitTextEl = loginSubmitBtn.querySelector('span');
+  loginSubmitBtn.classList.toggle('loading', isLoading);
+  isLoading ? submitTextEl.innerText = "CARGANDO..." : submitTextEl.innerText = "ENTRAR";
+}
+
+export { Alert }; 

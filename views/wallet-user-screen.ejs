@@ -19,13 +19,11 @@
 
     <%- include ('layout/header', { mode: "header--light"}) %>
 
-    <section class="userScreen">
+    <section class="userScreen has-header">
 
         <%- include ('objects/user/user-menu', { nav: nav }) %>
 
-        <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
-
-        <section class="userContent has-header">
+        <section class="userContent">
             <div class="userContent__block">
                 <%- include ('objects/user/wallet') %>
             </div>
@@ -34,4 +32,4 @@
 
 </main>
 
-<%- include ('layout/scripts', { script: 'wallet'})%>
+<%- include ('layout/scripts', { script: 'wallet', screen: 'user' })%>

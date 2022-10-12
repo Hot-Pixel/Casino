@@ -13,24 +13,25 @@
     background: linear-gradient(to bottom, setcolor('primary'), setcolor('primary') 20%, transparent 20%);
   }
 
-  button {
-    height: $xl;
-    width: 100%;
-
-  }
-
   &__wrapper {
     @extend %margin_horizontal_main;
   }
 
   &__bg {
-    @extend %margin_top_medium;
+    margin-top: $xl;
 
     img {
       object-fit: contain;
       filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 0.4));
       width: 100%;
     }
+  }
+
+  &__cta {
+    display: flex;
+    margin: $lg 0;
+    height: $xl;
+    width: 100%;
   }
 
   &__title {
@@ -60,15 +61,6 @@
       @extend .u-f--h1, .u-f--bold;
       max-width: 80%;
       padding: $sm 0;
-    }
-
-    &-btn {
-      display: block;
-      margin: $md 0 $sm;
-
-      @include screen-sm {
-        display: none;
-      }
     }
   }
 
@@ -155,20 +147,6 @@
     p {
       color: setcolor('gray', 'dark1');
       padding-bottom: $sm;
-      max-width: 100%;
-
-      @include screen-sm {
-        max-width: 50%;
-      }
-    }
-
-    &-btn {
-      display: none;
-      margin: $lg 0;
-
-      @include screen-sm {
-        display: block;
-      }
     }
   }
 }

@@ -9,13 +9,15 @@ const bannerData =
   const activeTab =
   {
     home: "",
-    pc: "is-active",
+    pc: "active",
     mobile: "",
-    tour: ""
+    tour: "",
+    howTo: "",
+    online: ""
   }
 %>
 
-<%- include ('layout/head', {title: "Poker" , css: "poker", header: "has-header" }) %>
+<%- include ('layout/head', {title: "Poker" , css: "poker" }) %>
 
 <%- include ('modules/deposit') %>
 
@@ -31,11 +33,7 @@ const bannerData =
 
     <section class="poker">
 
-      <section class="poker__pc poker__section tab-on">
-
-        <%- include ('modules/block-poker-pc') %>
-
-      </section>
+      <%- include ('modules/block-poker-pc') %>
 
     </section>
 
@@ -47,4 +45,4 @@ const bannerData =
 
 </main>
 
-<%- include ('layout/scripts', { script: 'poker' }) %>
+<%- include ('layout/scripts', { script: 'poker', screen: 'casino' }) %>

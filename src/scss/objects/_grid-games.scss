@@ -5,14 +5,10 @@
 .gridGames {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: rem(5);
+  gap: rem(10);
   height: fit-content;
 
   @include tablet {
-    grid-template-columns: repeat(3, 1fr);
-    gap: rem(10);
-  }
-  @include screen-md {
     grid-template-columns: repeat(4, 1fr);
   }
   @include screen-lg {
@@ -38,23 +34,6 @@
 
       width: 100%;
       object-fit: contain;
-    }
-
-    &-favourite {
-      cursor: pointer;
-
-      position: absolute;
-      top: 7%;
-      right: 7%;
-      z-index: 10;
-
-      &.fav {
-
-        svg g path {
-          fill: setcolor("primary");
-          opacity: 1;
-        }
-      }
     }
 
     &:hover {

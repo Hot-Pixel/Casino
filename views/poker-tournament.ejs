@@ -11,12 +11,14 @@ const bannerData =
     home: "",
     pc: "",
     mobile: "",
-    tour: "is-active"
+    tour: "active",
+    howTo: "",
+    online: ""
   }
 
 %>
 
-<%- include ('layout/head', {title: "Poker" , css: "poker", header: "has-header" }) %>
+<%- include ('layout/head', {title: "Poker" , css: "poker" }) %>
 
 <%- include ('modules/deposit') %>
 
@@ -32,13 +34,9 @@ const bannerData =
 
     <section class="poker">
 
-      <section class="poker__tour poker__section tab-on">
+      <%- include ('modules/txt-2Cols') %>
 
-        <%- include ('modules/txt-2Cols') %>
-
-        <%- include ('modules/grid-poker-torneos') %>
-
-      </section>
+      <%- include ('modules/grid-poker-torneos') %>
 
     </section>
 
@@ -50,4 +48,4 @@ const bannerData =
 
 </main>
 
-<%- include ('layout/scripts', { script: 'poker' }) %>
+<%- include ('layout/scripts', { script: 'poker', screen: 'casino' }) %>

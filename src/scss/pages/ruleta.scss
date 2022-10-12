@@ -18,6 +18,7 @@
 // OBJECTS
 @use '../objects/filter-base';
 @use '../objects/grid-ruleta';
+@use '../objects/footer-ruleta';
 @use '../objects/user/deposit';
 @use '../objects/user/deposit__step1';
 @use '../objects/user/deposit__step2';
@@ -30,6 +31,7 @@
 @use '../layout/splide';
 @use '../layout/popUp-balance';
 @use '../layout/menu-header';
+@use '../layout/menu-user';
 
 // MODULES
 @use '../modules/header-promo';

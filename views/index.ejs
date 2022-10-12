@@ -225,7 +225,7 @@ const gridHalfRight =
   ]
 %>
 
-<%- include ('layout/head', {title: "Home" , css: "home", header: "has-header" }) %>
+<%- include ('layout/head', {title: "Home" , css: "home" }) %>
 
 <%- include ('modules/deposit') %>
 
@@ -239,13 +239,15 @@ const gridHalfRight =
 
     <%- include ('modules/search-bar-home') %>
 
-    <section class="grids__container">
+    <% if(player.isLogged){ %>
+      <section class="grids__container">
 
-    <%- include ('modules/grid-half', {data: gridHalfLeft}) %>
+      <%- include ('modules/grid-half', {data: gridHalfLeft}) %>
 
-    <%- include ('modules/grid-half', {data: gridHalfRight}) %>
+      <%- include ('modules/grid-half', {data: gridHalfRight}) %>
 
-    </section>
+      </section>
+    <% } %>
 
     <%- include ('modules/icons-red') %>
 
@@ -269,4 +271,4 @@ const gridHalfRight =
 
 </main>
 
-<%- include ('layout/scripts', { script: 'home' }) %>
+<%- include ('layout/scripts', { script: 'home', screen: 'casino' }) %>

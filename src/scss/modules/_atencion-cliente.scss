@@ -2,109 +2,101 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 .atencionCliente {
-	@extend %margin_top_large;
-	@extend %padding_horizontal_main;
+  padding-top: $md;
+  padding-bottom: $md;
+  @extend %padding_horizontal_main;
 
+  @include screen-sm {
+	padding-top: $lg;
+	padding-bottom: $lg;
+  }
 
+  // Title
 
-	// Title
+  &__title {
+    @extend .u-f--h1;
+    @extend .u-f--bold;
+    text-align: center;
 
-	&__title {
-		@extend .u-f--h1;
-		@extend .u-f--bold;
-		text-align: center;
+    margin-bottom: $md;
 
-		@include screen-sm {
-			text-align: left;
-		}
-	}
+    @include screen-sm {
+      text-align: left;
+    }
+  }
 
+  // Columns
 
+  &__columns {
+    display: grid;
+    column-gap: rem(10);
+    row-gap: rem(45);
 
-	// Columns
+    @include screen-sm {
+      grid-template-columns: repeat(3, 1fr);
+    }
 
-	&__columns {
-		display: grid;
-		column-gap: $lg;
-		row-gap: rem(45);
-		@extend %margin_top_medium;
+    &-column {
+      p {
+        @extend .u-f--h3;
+        @extend .u-f--bold;
+      }
+    }
+  }
 
-		@include screen-sm {
-			grid-template-columns: repeat(3, 1fr);
-		}
+  // Columns design
 
+  &__box {
+    padding: rem(30) rem(25) 0;
+    border-radius: rem(10);
+    background-color: setcolor("black", "dark2");
 
-		&-column {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    justify-content: space-between;
 
+    @include screen-sm {
+      padding: rem(50) rem(40) 0;
+    }
 
-			p {
-				@extend .u-f--h4;
-			}
-		}
-	}
+    p {
+      opacity: 0.6;
+    }
 
+    &-button {
+      padding: $sm rem(40);
+      transform: translateY(50%);
 
+      span {
+        text-transform: uppercase;
 
-	// Columns design
+        & + img {
+          margin-left: $sm;
+        }
+      }
+    }
+  }
 
-	&__box {
-		padding: rem(30) rem(25) 0;
-		border-radius: rem(10);
-		background-color: setcolor("black", "dark2");
+  &__not-box {
+    margin-left: $md;
+    p {
+      text-align: center;
 
-		display: flex;
-		flex-direction: column;
-		gap: rem(20);
-		justify-content: space-between;
+      @include screen-sm {
+        text-align: left;
+      }
 
-		@include screen-sm {
-			padding: rem(50) rem(40) 0;
-		}
+      & + p {
+        margin-top: $sm;
+      }
+    }
 
-
-		p {
-			opacity: .6;
-		}
-
-
-		&-button {
-			padding: $sm rem(40);
-			transform: translateY(50%);
-
-
-			span {
-				text-transform: uppercase;
-
-				& + img {
-					margin-left: $sm;
-				}
-			}
-		}
-	}
-
-
-	&__not-box {
-
-
-		p {
-			text-align: center;
-
-			@include screen-sm {
-				text-align: left;
-			}
-
-			& + p {
-				margin-top: $sm;
-			}
-		}
-
-
-		small {
-			@extend .u-f--h4;
-			text-align: left;
-			opacity: .6;
-		}
-	}
+    small {
+      @extend .u-f--h4;
+      text-align: left;
+      opacity: 0.6;
+    }
+  }
 }

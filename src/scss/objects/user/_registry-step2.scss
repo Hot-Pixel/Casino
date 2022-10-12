@@ -3,7 +3,31 @@
 @use "../tools" as *;
 
 .stepTwo {
-  background-image: url("../img/images/img-bg-register2.jpg");
+  background-image: url("../img/user/img/img-registry-bg.jpg");
+  background-position: left;
+  background-repeat: no-repeat;
+
+  @include screen-sm {
+    background-image: url("../img/images/img-bg-register2.jpg");
+  }
+
+  &__input {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    gap: rem(10);
+
+    padding-bottom: $md;
+
+    @include screen-sm {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    div {
+      width: 100%;
+    }
+  }
 
   &__radios {
     display: flex;
@@ -62,15 +86,23 @@
     column-gap: rem(10);
 
     &-cp {
-      width: 33%;
+      width: 34%;
     }
 
     &-city {
-      width: 64%;
+      width: 66%;
     }
   }
 
   &__region {
-    grid-column: 1 / 3;
+    @include screen-sm {
+      grid-column: 1 / 3;
+    }
+  }
+
+  &__nationality, &__province, &__region, &__address {
+    select, input {
+      width: 100%;
+    }
   }
 }

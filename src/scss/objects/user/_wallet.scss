@@ -96,6 +96,68 @@
           }
         }
       }
+
+      .bonds__promo {
+        margin-top: $sm;
+        margin-bottom: $md;
+        padding: $md $md 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: setcolor('gray', 'light1');
+        border-radius: rem(40);
+        box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
+
+        @include screen-sm {
+          margin-bottom: 0;
+        }
+
+        &-title, &-input {
+          color: setcolor('black', 'dark1');
+          @extend .u-f--bold;
+        }
+
+        &-title {
+          @extend .u-f--h4;
+          padding-bottom: $sm;
+        }
+
+        &-subtitle, &-terms {
+          color: setcolor('black', 'dark1');
+          padding-bottom: $md;
+          text-align: center;
+        }
+
+        &-terms {
+          padding-bottom: 0;
+
+          @include screen-sm {
+            padding-bottom: $md;
+          }
+        }
+
+        &-input {
+          width: 100%;
+          height: rem(45);
+          margin-bottom: $md;
+
+          text-align: center;
+          background-color: setcolor('gray', 'light2');
+          opacity: 1;
+
+          &::placeholder {
+            opacity: 1;
+          }
+        }
+
+        &-btn {
+          padding: $sm rem(45);
+          height: rem(45);
+          transform: translateY(50%);
+        }
+      }
     }
 
     .wallet__btns {

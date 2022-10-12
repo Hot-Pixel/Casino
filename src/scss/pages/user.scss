@@ -19,6 +19,8 @@
 @use '../components/user';
 @use '../components/checkboxes';
 @use '../components/radios';
+@use '../components/calendar';
+@use '../components/gradients';
 
 // OBJECTS
 @use '../objects/user/data';
@@ -32,6 +34,7 @@
 @use '../objects/user/deposit__step1';
 @use '../objects/user/deposit__step2';
 @use '../objects/user/deposit__step3';
+@use '../objects/user/game';
 @use '../objects/user/common';
 
 //LAYOUT
@@ -40,6 +43,8 @@
 @use '../layout/splide';
 @use '../layout/popUp-balance';
 @use '../layout/menu-header';
+@use '../layout/menu-user';
+@use '../layout/flatpickr';
 
 // MODULES
 @use '../modules/user-screen';

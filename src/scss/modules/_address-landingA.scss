@@ -1,0 +1,22 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.addressLandingA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @extend %padding_horizontal_main, %margin_top_medium;
+  padding-bottom: $md;
+
+  p {
+    @extend .u-f--h2, .u-f--bold;
+    padding-bottom: $md;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+}

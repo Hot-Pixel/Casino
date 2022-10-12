@@ -4,11 +4,17 @@
 
 .support {
   &__content {
-    width: 100%;
     margin-top: $md;
+    max-width: 100%;
 
     @include screen-sm {
-      width: 50%;
+      max-width: 70%;
+    }
+    @include screen-md {
+      max-width: 60%;
+    }
+    @include screen-lg {
+      max-width: 50%;
     }
 
     & > p {

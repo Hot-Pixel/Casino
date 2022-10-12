@@ -1,0 +1,47 @@
+<%
+const bannerData =
+  {
+    img: "poker",
+    icon: "banner-poker",
+    title: "¡Cómo jugar!",
+    breadcrumb: "Cómo jugar"
+  }
+  const activeTab =
+  {
+    home: "",
+    pc: "",
+    mobile: "",
+    tour: "",
+    howTo: "active",
+    online: ""
+  }
+
+%>
+
+<%- include ('layout/head', {title: "Cómo jugar" , css: "poker" }) %>
+
+<%- include ('modules/deposit') %>
+
+<main class="pageContainer">
+
+  <%- include ('layout/header', { mode: ""}) %>
+
+  <section class="has-header">
+
+    <%- include ('modules/banner', { data: bannerData }) %>
+
+    <%- include ('objects/menu-poker', { data: activeTab }) %>
+
+    <section class="howTo__block poker">
+
+      <%- include ('modules/poker-howTo-texas') %>
+
+    </section>
+
+    <%- include ('layout/footer') %>
+
+  </section>
+
+</main>
+
+<%- include ('layout/scripts', { script: 'poker', screen: 'casino' }) %>

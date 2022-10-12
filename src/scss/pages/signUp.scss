@@ -12,6 +12,7 @@
 
 // COMPONENTS
 @use '../components/buttons';
+@use '../components/alert';
 
 // OBJECTS
 @use '../objects/user/login';
@@ -19,6 +20,7 @@
 @use '../objects/user/registry-step1';
 @use '../objects/user/registry-step2';
 @use '../objects/user/registry-step3';
+@use '../objects/user/registry-step4';
 
 //LAYOUT
 

@@ -1,0 +1,10 @@
+<svg id="icon-exchange-wallet" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <circle id="Elipse_753" data-name="Elipse 753" cx="15" cy="15" r="15" fill="#13171d" opacity="0.2"/>
+  <g id="Icon" transform="translate(5 5)">
+    <circle id="Elipse_777" data-name="Elipse 777" cx="10" cy="10" r="10" fill="#fff"/>
+    <g id="Grupo_732" data-name="Grupo 732" transform="translate(4 5.329)">
+      <path id="Trazado_5386" data-name="Trazado 5386" d="M7.882,2.62,5.34.086a.289.289,0,0,0-.494.205V1.735a.072.072,0,0,1-.072.072H2.289A.289.289,0,0,0,2,2.1V3.541a.289.289,0,0,0,.289.289H4.774a.072.072,0,0,1,.072.072V5.347a.289.289,0,0,0,.494.205L7.882,3.01a.289.289,0,0,0,0-.407Z" transform="translate(3.072 0)" fill="#00d1bc"/>
+      <path id="Trazado_5387" data-name="Trazado 5387" d="M2.084,2.62,4.626.086A.289.289,0,0,1,5.12.291V1.736a.072.072,0,0,0,.072.072H7.677a.289.289,0,0,1,.289.289V3.541a.289.289,0,0,1-.289.289H5.192A.072.072,0,0,0,5.12,3.9V5.347a.289.289,0,0,1-.494.205L2.084,3.01a.289.289,0,0,1,0-.407Z" transform="translate(-2 3.709)" fill="#00d1bc"/>
+    </g>
+  </g>
+</svg>

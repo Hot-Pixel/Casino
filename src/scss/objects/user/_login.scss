@@ -2,14 +2,6 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.login__block {
-  display: none;
-
-  &.active {
-    display: block;
-  }
-}
-
 .is-invalid {
   border: 1px solid setcolor('warning');
 }
@@ -41,7 +33,11 @@
     align-items: center;
 
     margin-top: rem(120);
-    min-width: 30%;
+    min-width: 100%;
+
+    @include screen-sm {
+      min-width: 30%;
+    }
 
     h2 {
       @extend .u-f--h2, .u-f--bold;
@@ -59,7 +55,14 @@
     border-radius: rem(30);
 
     width: 100%;
-    padding: 0 $lg;
+    padding: 0 $sm;
+
+    @include tablet {
+      padding: 0 $md;
+    }
+    @include screen-sm {
+      padding: 0 $lg;
+    }
   }
 
   &__badge {
@@ -100,6 +103,12 @@
     button, a {
       height: rem(50);
       width: 50%;
+
+      &.loading {
+        opacity: .5;
+        pointer-events: none;
+        background-color: setcolor("gray", "mid");
+      }
     }
 
     a {
@@ -111,16 +120,16 @@
   &__footer{
     cursor: pointer;
     margin-top: $md;
+    text-align: center;
 
-    p {
+    p, a {
       color: setcolor("black", "dark1");
       margin: rem(5) 0;
-      text-align: center;
 
-      &:last-of-type {
-        @extend .u-f--bold;
-        color: setcolor("secondary");
-      }
+    }
+    a {
+      @extend .u-f--bold;
+      color: setcolor("secondary");
     }
   }
 }

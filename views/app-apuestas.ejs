@@ -1,4 +1,4 @@
-<%- include ('layout/head', {title: 'App Apuestas' , css: 'app-apuestas', header: 'has-header' }) %>
+<%- include ('layout/head', {title: "App Apuestas" , css: "app-apuestas" }) %>
 
 <%- include ('modules/deposit') %>
 
@@ -6,7 +6,7 @@
 
 	<%- include ('layout/header', { mode: ''}) %>
 
-	<main class="has-header">
+	<section class="has-header">
 
 		<%- include ('modules/banner-app-apuestas') %>
 
@@ -14,9 +14,9 @@
 
 		<%- include ('layout/footer') %>
 
-	</main>
+	</section>
 
 </main>
 
 
-<%- include ('layout/scripts',  { script: 'app-apuestas' }) %>
+<%- include ('layout/scripts',  { script: 'app-apuestas', screen: 'casino' }) %>

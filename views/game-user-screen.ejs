@@ -1,0 +1,41 @@
+<%
+    let nav = {
+        data: '',
+        docs: '',
+        wallet: '',
+        hist: '',
+        pref: '',
+        supp: '',
+        game: 'nav-active'
+    }
+%>
+
+<%- include ('layout/head', {title: "Juego Responsable" , css: "user" }) %>
+
+<%- include ('modules/deposit') %>
+
+<main class="pageContainer">
+
+    <%- include ('layout/header', { mode: "header--light"}) %>
+
+    <section class="userScreen has-header">
+
+        <%- include ('objects/user/user-menu', { nav: nav }) %>
+
+        <section class="userContent ">
+            <div class="gameBlock gameHomeBlock block-active">
+                <%- include ('objects/user/game') %>
+            </div>
+            <div class="gameBlock gameLimitBlock ">
+                <%- include ('objects/user/game-limit') %>
+            </div>
+            <div class="gameBlock gameExclBlock">
+                <%- include ('objects/user/game-exclusion') %>
+            </div>
+        </section>
+
+    </section>
+
+</main>
+
+<%- include ('layout/scripts', { script: 'game', screen: 'user' })%>

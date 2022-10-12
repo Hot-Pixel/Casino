@@ -1,26 +1,46 @@
 <section class="gridRoulette">
-	<% data.forEach( e=> { %>
-		<article class="card">
-			<div class="card__image">
-				<img src="img/images/<%= e.img %>" alt="">
+
+		<div class="gridRoulette__grid">
+			<div class="gridRoulette__image imgIzq">
+				<img src="img/images/img-ruleta-2col-1.png" alt="">
 			</div>
-			<div class="card__content">
-				<div class="card__content-txt">
-					<p class="card__content-title">
-						<%= e.title %>
+			<div class="gridRoulette__image imgDrch">
+				<img src="img/images/img-ruleta-2col-2.png" alt="">
+			</div>
+			<div class="gridRoulette__content contIzq">
+				<div class="gridRoulette__content-txt">
+					<p class="gridRoulette__content-title">
+						Ruleta en vivo
 					</p>
-					<p class="card__content-subtitle">
-						<%= e.subtitle %>
+					<p class="gridRoulette__content-subtitle">
+						En nuestra web pueden acceder al mayor catálogo de ruletas en vivo del momento.
 					</p>
-					<p class="card__content-desc">
-						<%= e.body %>
+					<p class="gridRoulette__content-desc">
+						En ellas, contarás con crupiers las 24 horas del día con un chat al alcance de tu mano para comunicarte con ellos.
 					</p>
 				</div>
-				<button class="card__footer btn__red">
+				<button class="gridRoulette__footer btn__red">
 					<span>¡JUEGA AHORA!</span>
 					<img src="img/icons/icon-btn-arrow.svg" alt="">
 				</button>
 			</div>
-		</article>
-		<% }) %>
+			<div class="gridRoulette__content contDrch">
+				<div class="gridRoulette__content-txt">
+					<p class="gridRoulette__content-title">
+						Juegos de mesa
+					</p>
+					<p class="gridRoulette__content-subtitle">
+						En CasinoBarcelona.es te ofrecemos juegos de casino online desde los más tradicionales, hasta los más innovadores.
+					</p>
+					<p class="gridRoulette__content-desc">
+						Nuestro objetivo no es otro que el de darte la mejor oferta posible para que siempre tengas opciones para elegir lo que más te guste.
+					</p>
+				</div>
+				<button class="gridRoulette__footer btn__red">
+					<span>¡JUEGA AHORA!</span>
+					<img src="img/icons/icon-btn-arrow.svg" alt="">
+				</button>
+			</div>
+		</div>
+
 </section>

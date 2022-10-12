@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 function depositCopy() {
   const iban = document.querySelector("#iban");
   const copyBtn = document.querySelector(".depositTransfer__table-copy");
+  
+  if(!copyBtn) return;
 
   copyBtn.addEventListener("click", () => {
     gsap

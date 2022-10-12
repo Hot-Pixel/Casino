@@ -1,0 +1,55 @@
+// SETTINGS
+// variables y config
+@use '../settings';
+
+// TOOLS
+// Mixins, extend and functions
+@use '../tools';
+
+// GENERIC
+// Resets, normalize y genericos
+@use '../base';
+
+// COMPONENTS
+// Piezas de UI
+@use '../components/header__user';
+@use '../components/buttons';
+@use '../components/breadcrumbs';
+@use '../components/splide-arrows';
+@use '../components/gradients';
+@use '../components/header-module';
+@use '../components/deposits';
+@use '../components/user';
+@use '../components/hover';
+
+
+// OBJECTS
+// Contenedores, wrappers o layouts
+@use '../objects/user/deposit';
+@use '../objects/user/deposit__step1';
+@use '../objects/user/deposit__step2';
+@use '../objects/user/deposit__step3';
+@use '../objects/user/common';
+
+//LAYOUT
+@use '../layout/header';
+@use '../layout/footer';
+@use '../layout/splide';
+@use '../layout/popUp-balance';
+@use '../layout/menu-header';
+@use '../layout/menu-user';
+
+// MODULES
+@use '../modules/text-block';
+@use '../modules/banner-landingA';
+@use '../modules/steps-landingA';
+@use '../modules/grid-landingA';
+@use '../modules/logos-landingA';
+@use '../modules/cta-landingA';
+@use '../modules/background-landingA';
+@use '../modules/address-landingA';
+
+
+// HELPER
+// Clases de ayuda, textos, colores y demás
+@use '../helper';

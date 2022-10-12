@@ -12,14 +12,15 @@
             <div class="login__container">
                 <img src="img/icons/icon-header-login.svg" alt="" class="login__badge">
                 <h2>Inicia sesión</h2>
-                    <fieldset class="login__input">
-                        <input type="text" id="user" name="user" required placeholder="usuario">
-                    </fieldset>
-                    <fieldset class="login__input">
-                        <input type="password" id="password" name="password" required placeholder="contraseña">
-                    </fieldset>
+                <div class="alert__wrapper" id="alert-login"></div>
+                <fieldset class="login__input">
+                    <input type="text" id="user" name="user" required placeholder="usuario">
+                </fieldset>
+                <fieldset class="login__input">
+                    <input type="password" id="password" name="password" required placeholder="contraseña">
+                </fieldset>
                 <div class="login__btns">
-                    <button class="btn__blue" type="submit">
+                    <button class="btn__blue login__submit" type="submit">
                         <span>ENTRAR</span>
                         <img src="img/icons/icon-arrow-white.svg" alt="">
                     </button>
@@ -32,7 +33,7 @@
         </form>
         <div class="login__footer">
             <p>¿Has olvidado la contraseña?</p>
-            <p class="login__recoverBtn">Recuperar contraseña</p>
+            <a href="/recover-password" class="login__recoverBtn">Recuperar contraseña</a>
         </div>
     </section>
 </section>

@@ -7,16 +7,18 @@ const bannerData =
     breadcrumb: "Poker"
   }
 
-const activeTab =
+	const activeTab =
   {
     home: "",
     pc: "",
-    mobile: "is-active",
-    tour: ""
+    mobile: "active",
+    tour: "",
+    howTo: "",
+    online: ""
   }
 %>
 
-<%- include ('layout/head', {title: "Poker" , css: "poker", header: "has-header" }) %>
+<%- include ('layout/head', {title: "Poker" , css: "poker" }) %>
 
 <%- include ('modules/deposit') %>
 
@@ -32,13 +34,9 @@ const activeTab =
 
     <section class="poker">
 
-      <section class="poker__mobile poker__section tab-on">
+      <%- include ('modules/block-poker-mobile') %>
 
-        <%- include ('modules/block-poker-mobile') %>
-
-        <%- include ('modules/accordion') %>
-
-      </section>
+      <%- include ('modules/accordion') %>
 
     </section>
 
@@ -52,4 +50,4 @@ const activeTab =
 
 
 
-<%- include ('layout/scripts', { script: 'poker' }) %>
+<%- include ('layout/scripts', { script: 'poker', screen: 'casino' }) %>

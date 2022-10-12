@@ -4,6 +4,8 @@ function accordionDeposit() {
     const accorArrows = document.getElementsByClassName("accorArrowDepo");
     const accorBody = document.getElementsByClassName("tc__body");
 
+    if(!accorArrows) return;
+
     for (let n = 0; n < accorArrows.length; n++) {
       accorArrows[n].addEventListener("click", () => {
         if (accorBody[n].classList.contains("active")) {

@@ -1,16 +1,19 @@
-<section class="login stepThree registry">
-    <div class="login__header">
-        <a href="/" class="login__header-logo">
+<section class="stepThree registry">
+    <div class="registry__bg">
+        <img src="img/user/img/img-registry-zeus.png" alt="">
+    </div>
+    <div class="registry__header">
+        <a href="/" class="registry__header-logo">
             <img src="img/icons/icon-logo-black.svg" alt="">
         </a>
-        <a href="/" class="login__header-close">
+        <a href="/" class="registry__header-close">
             <img src="img/icons/icon-close-register.svg" alt="">
         </a>
     </div>
-    <section class="login__layout registry__layout">
-        <form action="" method="post" class="login__form registry__form">
+    <section class="registry__layout">
+        <form action="" method="post" class="registry__form">
             <h2>¡Abre tu cuenta gratis y en tan solo 30 segundos!</h2>
-            <div class="login__container registry__container">
+            <div class="registry__container">
                 <div class="registry__steps">
                     <div class="registry__step active">
                         <p><span>1</span></p>
@@ -22,7 +25,7 @@
                         <p><span>3</span></p>
                     </div>
                 </div>
-                <div class="stepThree__input registry__input">
+                <div class="stepThree__input">
                     <input type="text" name="username" id="" required placeholder="Nombre de usuario">
                     <select name="" id="">
                         <option selected disabled value="">Pregunta de seguridad</option>
@@ -44,8 +47,20 @@
                 </div>
             </div>
         </form>
-        <div class="login__footer">
-            <p>¿Ya estás registrado?<a href="#">Inicia sesión aquí</a></p>
+        <div class="registry__login">
+            <p>¿Ya estás registrado?<a href="/sign-in">Inicia sesión aquí</a></p>
         </div>
     </section>
+
+    <section class="registry__footer">
+        <button type="button" class="btn__white btn__back registry__btnStep2-back">
+            <img src="img/icons/icon-arrow-black.svg" alt="">
+            <span>ATRÁS</span>
+        </button>
+        <button type="button" class="btn__blue registry__btnStep4">
+            <span>CONTINUAR</span>
+            <img src="img/icons/icon-arrow-white.svg" alt="">
+        </button>
+    </section>
+
 </section>

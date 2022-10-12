@@ -1,0 +1,195 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.gameBlock {
+  display: none;
+
+  &.block-active {
+    display: block;
+  }
+
+  .game {
+    &__screen {
+      max-width: 100%;
+
+      @include screen-sm {
+        max-width: 70%;
+      }
+      @include screen-md {
+        max-width: 60%;
+      }
+      @include screen-lg {
+        max-width: 50%;
+      }
+    }
+
+    &__header {
+      @extend .u-f--h4, .u-f--bold;
+      color: setcolor("black", "dark1");
+      margin: $lg 0 $md;
+    }
+
+    &__container {
+      padding: $md $md 0;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:last-of-type {
+        margin-top: rem(45);
+      }
+
+      .title {
+        @extend .u-f--h3;
+        padding-bottom: $sm;
+      }
+
+      .title,
+      .titleSm {
+        @extend .u-f--bold;
+        color: setcolor("black", "dark1");
+      }
+
+      .body {
+        color: setcolor("gray", "mid");
+        padding-bottom: $sm;
+      }
+
+      .game__limitBtn {
+        padding: $sm rem(40);
+      }
+
+      button {
+        transform: translateY(50%);
+        width: 100%;
+
+        @include screen-sm {
+          width: max-content;
+        }
+      }
+
+      &-limit {
+        padding: $md 0 0 !important;
+      }
+    }
+
+    &__limit {
+      width: 100%;
+      border-top: 1px solid #d2d4d7;
+      padding: $md;
+
+      &:first-of-type {
+        margin-top: $sm;
+      }
+
+      &-title {
+        color: setcolor("black", "dark1");
+        padding-bottom: $sm;
+      }
+
+      .limit_input {
+        width: 100%;
+      }
+    }
+
+    &__limit--last {
+      display: flex;
+      justify-content: center;
+
+      width: 100%;
+      border-top: 1px solid #d2d4d7;
+      padding: $md $md 0;
+
+      .game__limit-saveBtn {
+        padding: $sm rem(45);
+      }
+    }
+
+    &__exclusion {
+      width: 100%;
+      border-top: 1px solid #d2d4d7;
+      margin-top: $sm;
+      padding: $md $sm $sm;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-title {
+        color: setcolor("black", "dark1");
+        padding-bottom: $sm;
+      }
+
+      &-inputs {
+        display: flex;
+        justify-content: center;
+        column-gap: rem(10);
+        width: 100%;
+      }
+
+      &-saveBtn {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 0 $sm;
+
+        button {
+          width: 100%;
+          padding: $sm rem(45);
+
+          @include screen-sm {
+            width: max-content;
+          }
+        }
+      }
+
+      .exclusion_input,
+      .exclusion_select {
+        width: 50%;
+
+        @include screen-sm {
+          width: 25%;
+        }
+      }
+
+      .exclusion_select {
+        padding: 0 $sm;
+        appearance: none;
+        background: transparent;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg id='icon-select-arrow' transform='translate(14) rotate(90)'%3E%3Cpath id='Trazado_97' data-name='Trazado 97' d='M14 7a7 7 0 1 0-7 7A7 7 0 0 0 14 7ZM5.29 10.71A1 1 0 0 1 5.284 9.3L5.29 9.29 7.41 7.18a.25.25 0 0 0 .007-.354L7.41 6.82 5.29 4.71A1 1 0 0 1 6.71 3.29l3 3A1 1 0 0 1 9.716 7.7L9.71 7.71l-3 3a1 1 0 0 1-1.414.006Z' transform='translate(0 0)' fill='%23868b92'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position-x: 92%;
+        background-position-y: 50%;
+      }
+    }
+
+    .limit_input,
+    .exclusion_input {
+      background: transparent;
+    }
+    .limit_input,
+    .exclusion_input,
+    .exclusion_select {
+      @extend .u-f--bold;
+      text-align: center;
+      height: rem(45);
+      border: 1px solid #d4d6d9;
+      color: setcolor("gray", "mid");
+      border-radius: rem(30);
+    }
+
+    &__backBtn {
+      margin-top: $md;
+      width: 100%;
+
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

@@ -102,14 +102,14 @@
   }
 
   .withdrawDetail {
-    width: 50%;
+    width: 100%;
 
     display: flex;
     justify-content: center;
     flex-direction: column;
 
     @include screen-sm {
-
+      width: 50%;
     }
 
     &__card {
@@ -126,7 +126,7 @@
       position: relative;
       margin-top: calc(rem(60) + $md);
       margin-bottom: $sm;
-      padding: $xl 0 $md;
+      padding: $xl $sm $md;
       flex-direction: column;
 
       .withdrawDetail__logo {
@@ -147,10 +147,10 @@
           @extend .u-f--bold;
         }
       }
-      .withdrawDetail__ammount {
+      .withdrawDetail__amount {
         @extend .u-f--h3, .u-f--bold;
 
-        width: 50%;
+        width: 100%;
         margin-top: $sm;
         padding: $sm 0;
 
@@ -160,6 +160,10 @@
         text-align: center;
 
         appearance: none;
+
+        @include screen-sm {
+          width: 50%;
+        }
       }
 
       input::-webkit-outer-spin-button,
@@ -174,9 +178,13 @@
     }
 
     &--bottom {
-      padding: $lg;
+      padding: $md $sm;
       display: flex;
       justify-content: center;
+
+      @include screen-sm {
+        padding: $lg;
+      }
 
       .withdrawDetail__item {
         &:nth-of-type(2) {

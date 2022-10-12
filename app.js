@@ -2,6 +2,7 @@ import express from "express";
 const app = express();
 import createError from "http-errors";
 import path from "path";
+
 import home from "./routes/home.js";
 import about from "./routes/about.js";
 import layout from "./routes/layout.js";
@@ -25,16 +26,24 @@ import wallet from "./routes/cartera.js";
 import preferences from "./routes/preferencias.js";
 import support from "./routes/soporte.js";
 import user from "./routes/user.js";
+import recoverPassword from "./routes/recoverPassword.js";
 import signIn from "./routes/signIn.js";
 import signUp from "./routes/signUp.js";
 import appApuestas from "./routes/appApuestas.js";
 import error404 from "./routes/error404.js";
 import atencionCliente from "./routes/atencionCliente.js";
+import game from "./routes/juegoResponsable.js";
+import verify from "./routes/verify.js";
+import howTo from "./routes/pokerHowTo.js";
+import texas from "./routes/pokerTexas.js";
+import omaha from "./routes/pokerOmaha.js";
 import pokerSatelitesOnline from "./routes/pokerSatelitesOnline.js";
 import pokerSatelitesCEP from "./routes/pokerSatelitesCEP.js";
-import favorites from "./routes/favorites.js";
+import pokerSatelitesNavidad from "./routes/pokerSatelitesNavidad.js";
+import favourites from "./routes/favourites.js";
 import boardGame from "./routes/boardGame.js";
 import affiliates from "./routes/affiliates.js";
+import landingAffiliates from "./routes/landingAfiliados.js";
 import landingSEO from "./routes/landingSEO.js";
 import {fileURLToPath} from 'url';
 
@@ -74,16 +83,24 @@ app.use("/soporte", support);
 app.use("/screen-game", screenGame);
 app.use("/user", user);
 app.use("/sign-in", signIn);
+app.use("/recover-password", recoverPassword);
 app.use("/sign-up", signUp);
-app.use("/appApuestas", appApuestas);
-app.use("/error404", error404);
-app.use("/atencionCliente", atencionCliente);
-app.use("/pokerSatelitesOnline", pokerSatelitesOnline);
-app.use("/pokerSatelitesCEP", pokerSatelitesCEP);
-app.use("/favorites", favorites);
-app.use("/boardGame", boardGame);
-app.use("/affiliates", affiliates);
-app.use("/landingSEO", landingSEO);
+app.use("/app-apuestas", appApuestas);
+app.use("/error-404", error404);
+app.use("/atencion-cliente", atencionCliente);
+app.use("/satelites-online", pokerSatelitesOnline);
+app.use("/satelites-cep", pokerSatelitesCEP);
+app.use("/satelites-navidad", pokerSatelitesNavidad);
+app.use("/favoritos", favourites);
+app.use("/tabla-juegos", boardGame);
+app.use("/afiliados", affiliates);
+app.use("/juego-responsable", game);
+app.use("/verificacion", verify);
+app.use("/como-jugar", howTo);
+app.use("/como-jugar-texas", texas);
+app.use("/como-jugar-omaha", omaha);
+app.use("/landing-afiliados", landingAffiliates);
+app.use("/landing-seo", landingSEO);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -100,5 +117,11 @@ app.use(function (err, req, res, next) {
 	res.status(err.status || 500);
 	res.render("error");
 });
+
+app.locals = {
+  player: {
+    isLogged: true
+  }
+};
 
 export default app;

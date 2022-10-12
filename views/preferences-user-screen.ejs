@@ -17,13 +17,11 @@
 
     <%- include ('layout/header', { mode: "header--light"}) %>
 
-    <main class="userScreen">
+    <main class="userScreen has-header">
 
         <%- include ('objects/user/user-menu', { nav: nav }) %>
 
-        <%- include ('objects/user/user-menu-mobile', { nav: nav }) %>
-
-        <section class="userContent has-header">
+        <section class="userContent">
 
             <div class="userContent__block">
                 <%- include ('objects/user/preferences') %>
@@ -35,5 +33,5 @@
 
 </main>
 
-<%- include ('layout/scripts', { script: 'preferences'})%>
+<%- include ('layout/scripts', { script: 'preferences', screen: 'user' })%>
 

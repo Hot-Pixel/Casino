@@ -1,11 +1,13 @@
 <%
-const activeTab =
-	{
-		home: 'is-active',
-		pc: '',
-		mobile: '',
-		tour: ''
-	}
+  const activeTab =
+  {
+    home: "",
+    pc: "",
+    mobile: "",
+    tour: "",
+    howTo: "",
+    online: "active"
+  }
 %>
 
 <%- include ('layout/head', {title: 'Poker' , css: 'poker', header: 'has-header' }) %>
@@ -41,4 +43,4 @@ const activeTab =
 </main>
 
 
-<%- include ('layout/scripts',  { script: 'poker' }) %>
+<%- include ('layout/scripts',  { script: 'poker', screen: 'casino' }) %>

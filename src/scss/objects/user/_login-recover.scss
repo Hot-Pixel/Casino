@@ -3,6 +3,9 @@
 @use "../tools" as *;
 
 .password {
+    p {
+      color: black;
+    }
     .password__container {
       display: flex;
       flex-direction: column;
@@ -19,19 +22,32 @@
         @extend .u-f--h4;
         color: black;
         text-align: center;
-        max-width: 75%;
+        max-width: 100%;
+
+        @include tablet {
+          max-width: 75%;
+        }
       }
 
       p {
         color: #868b92;
         text-align: center;
-        max-width: 75%;
+        max-width: 100%;
+
+        @include tablet {
+          max-width: 75%;
+        }
       }
 
       .password__input {
-        width: 75%;
         margin-top: $lg;
         margin-bottom: rem(10);
+
+        width: 100%;
+
+        @include tablet {
+          width: 75%;
+        }
 
         input[type="text"] {
           height: rem(45);
@@ -41,6 +57,14 @@
           border: rem(2) solid #868b92;
 
           text-align: center;
+        }
+      }
+
+      button {
+        width: 100%;
+
+        @include tablet {
+          width: fit-content;
         }
       }
     }
