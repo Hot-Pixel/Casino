@@ -5,11 +5,11 @@
 
 .affiliatesContentBenefits {
 	display: grid;
-	gap: rem(20);
+	gap: $sm;
 	@extend %margin_top_medium, %margin_horizontal_main;
 
 	@include screen-sm {
-		column-gap: rem(60);
+		column-gap: $lg;
 		grid-template-columns: 1fr 2fr;
 	}
 
@@ -39,7 +39,7 @@
 
 	&__benefits {
 		display: grid;
-		gap: rem(20);
+		gap: $sm;
 
 		@include screen-sm {
 			grid-column: 2 / 3;
@@ -54,14 +54,12 @@
 			gap: rem(10);
 
 			@include screen-sm {
-				gap: rem(20);
+				gap: $sm;
 				flex-direction: column;
 			}
 
 
 			&-image {
-				width: 1em;
-				height: 1em;
 				font-size: rem(38);
 			}
 

@@ -2,134 +2,67 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 .error404 {
-	position: relative;
-	display: flex;
-	@extend .u-f--bold;
-	flex-direction: column;
-	justify-content: space-between;
-	@extend %margin_top_large;
-	@extend %padding_horizontal_main;
+  @extend .u-f--bold;
+  height: 100%;
 
-	@include screen-sm {
-		display: block;
-	}
+  &__wrapper {
+    position: relative;
+    width: 100%;
+  }
 
+  &__content {
+    @extend %padding_horizontal_main;
+	padding-top: $lg;
 
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+  }
 
-	// Header
+  &__header {
+    &-title {
+      @extend .u-f--h1;
+    }
 
-	&__header {
-		position: relative;
-		z-index: 1;
+    &-subtitle {
+      margin-top: rem(10);
+      @extend .u-f--h3;
+    }
+  }
 
-		@include screen-sm {
-			max-width: 50%;
-		}
+  &__banner {
+    position: relative;
+    z-index: 0;
+    top: 0;
+    left: 0;
 
+    img {
+      object-fit: contain;
+      float: right;
+    }
+  }
 
-		&-title {
-			@extend .u-f--h1;
-		}
+  &__menu {
 
+    &-wanted {
+		margin: $lg 0 $sm;
+    }
 
-		&-subtitle {
-			margin-top: rem(10);
-			@extend .u-f--h3;
-		}
-	}
+    a {
+      display: flex;
+      align-items: center;
 
+	  margin-bottom: rem(10);
+	  width: fit-content;
 
-
-	// Menu
-
-	&__menu {
-		position: relative;
-		z-index: 1;
-		margin-top: rem(380);
-
-		@include tablet-h {
-			margin-top: rem(400);
-		}
-
-		@include screen-sm {
-			margin-top: $lg;
-			max-width: rem(5);
-		}
-
-
-		&-wanted {
-			width: rem(216);
-			max-width: 100%;
-
-			@include screen-sm {
-				width: initial;
-			}
-		}
-
-
-		img + ul {
-			margin-top: rem(25);
-		}
-
-
-		li + li {
-			margin-top: $sm;
-		}
-
-
-		a {
-			display: flex;
-			gap: rem(5);
-			align-items: center;
-			@extend .u-f--h3;
-			text-transform: uppercase;
-			color: setcolor("primary");
-
-			@include screen-sm {
-				gap: rem(15);
-			}
-
-
-			img {
-				width: rem(14);
-				height: rem(14);
-
-				@include screen-sm {
-					width: rem(18);
-					height: rem(18);
-				}
-			}
-		}
-	}
-
-
-
-	// Banner
-
-	&__banner {
-		position: absolute;
-		overflow: hidden;
-		z-index: 0;
-		top: 0;
-		right: 0;
-		left: 0;
-		height: rem(484);
-		background-image: url('../img/images/img-404-background.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		@include screen-sm {
-			height: rem(715);
-		}
-
-
-		&-image {
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			max-width: 90%
-		}
-	}
+	  p {
+		display: inline-block;
+		padding-left: rem(10);
+		color: setcolor("primary");
+		@extend .u-f--h3;
+	  }
+    }
+  }
 }

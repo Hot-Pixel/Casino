@@ -2,147 +2,131 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 .appApuestas {
-	background-image: url('../img/images/img-app-apuestas-content-bg.jpg');
-	background-repeat: no-repeat;
-	background-position: bottom center;
-	background-size: cover;
+  background-image: url("../img/images/img-app-apuestas-content-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
 
+  // Commons
 
-	// Commons
+  &__title {
+    @extend .u-f--bold;
+    text-align: center;
+  }
 
-	&__title {
-		@extend .u-f--bold;
-		text-align: center;
-	}
-
-	&__columns {
-		display: grid;
-		gap: rem(40);
-		grid-template-columns: repeat(1, 1fr);
-		@extend %margin_top_small;
-		margin-right: auto;
-		margin-left: auto;
-	}
+  &__columns {
+    display: grid;
+	row-gap: rem(20);
+	column-gap: rem(10);
+    grid-template-columns: repeat(1, 1fr);
+    @extend %margin_top_small;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
-
 
 // Top
 
 .appApuestas__top {
-	@extend %margin_horizontal_main, %margin_top_medium;
+  @extend %margin_horizontal_main, %margin_top_medium;
 
+  .appApuestas__title {
+    @extend .u-f--h2;
+  }
 
-	.appApuestas__title {
-		@extend .u-f--h2;
-	}
+  .appApuestas__columns {
+    grid-template-columns: repeat(2, 1fr);
 
-
-	.appApuestas__columns {
-		grid-template-columns: repeat(2, 1fr);
-
-		@include screen-sm {
-			grid-template-columns: repeat(4, 1fr);
-			max-width: rem(1120);
-		}
-	}
+    @include screen-sm {
+      grid-template-columns: repeat(4, 1fr);
+      max-width: rem(1120);
+    }
+  }
 }
-
 
 .appApuestas__star {
-	text-align: center;
+  text-align: center;
 
+  &-image {
+    margin: auto;
+    max-width: 100%;
 
-	&-image {
-		margin: auto;
-		max-width: 100%;
+    @include screen-sm {
+      max-width: rem(250);
+    }
+  }
 
-		@include screen-sm {
-			max-width: rem(250);
-		}
-	}
+  &-title {
+    @extend .u-f--h4;
+    @extend .u-f--bold;
+  }
 
-
-	&-title {
-		@extend .u-f--h4;
-		@extend .u-f--bold;
-	}
-
-
-	&-subtitle {
-		margin-top: rem(10);
-	}
+  &-subtitle {
+    margin-top: rem(10);
+  }
 }
-
 
 // Bottom
 
 .appApuestas__bottom {
-	position: relative;
-	bottom: rem(-180);
-	margin: rem(-90) auto rem(180);
-	padding: rem(30);
-	width: 100%;
-	max-width: calc( 100% - rem(40) );
-	border-radius: rem(10);
-	background-color: setcolor("black");
+  position: relative;
+  bottom: rem(-180);
+  margin: rem(-90) auto rem(180);
+  padding: rem(30);
+  width: 100%;
+  max-width: calc(100% - rem(40));
+  border-radius: rem(10);
+  background-color: setcolor("black");
 
-	@include tablet {
-		max-width: rem(796);
-	}
+  @include tablet {
+    max-width: rem(796);
+  }
 
-	@include screen-sm {
-		bottom: rem(-300);
-		margin: rem(-190) auto rem(360);
-		padding: rem(60);
-	}
+  @include screen-sm {
+    bottom: rem(-300);
+    margin: rem(-190) auto rem(360);
+    padding: rem(60);
+  }
 
+  .appApuestas__title {
+    @extend .u-f--h4;
+  }
 
-	.appApuestas__title {
-		@extend .u-f--h4;
-	}
+  .appApuestas__columns {
+    gap: rem(5);
 
-
-	.appApuestas__columns {
-		gap: rem(5);
-
-		@include screen-sm {
-			gap: rem(20);
-			grid-template-columns: repeat(2, 1fr);
-			max-width: rem(1120);
-		}
-	}
+    @include screen-sm {
+      gap: rem(20);
+      grid-template-columns: repeat(2, 1fr);
+      max-width: rem(1120);
+    }
+  }
 }
 
-
 .appApuestas__qr {
+  &-image {
+    display: none;
 
+    @include screen-sm {
+      display: block;
+      margin-bottom: $sm;
+      border-radius: rem(10);
+      background-color: setcolor("black", "dark5");
+    }
+  }
 
-	&-image {
-		display: none;
+  &-button {
+    display: flex;
+    gap: rem(10);
+    justify-content: space-between;
+    padding: rem(12) rem(16) rem(12) rem(50);
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
 
-		@include screen-sm {
-			display: block;
-			margin-bottom: $sm;
-			border-radius: rem(10);
-			background-color: setcolor("black", "dark5");
-		}
-	}
-
-
-	&-button {
-		display: flex;
-		gap: rem(10);
-		justify-content: space-between;
-		padding: rem(12) rem(16) rem(12) rem(50);
-		width: 100%;
-		text-align: center;
-		text-transform: uppercase;
-
-
-		span {
-			width: 100%;
-		}
-	}
+    span {
+      width: 100%;
+    }
+  }
 }

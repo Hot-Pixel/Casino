@@ -48,7 +48,9 @@ const paths = {
 };
 
 const pagesArr = [
+  "affiliates",
   "appApuestas",
+  "boardGame",
   "casino",
   "data",
   "docs",

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="icon-affiliates-send-red" transform="translate(-7.5)">
+    <circle id="Elipse_778" data-name="Elipse 778" cx="15" cy="15" r="15" transform="translate(7.5)" fill="#13171d" opacity="0.2"/>
+    <circle id="Elipse_779" data-name="Elipse 779" cx="11" cy="11" r="11" transform="translate(11.5 4)" fill="#fff"/>
+    <path id="Trazado_5481" data-name="Trazado 5481" d="M10.135.083a1.389,1.389,0,0,1,1.781,1.781L8.851,11.051h0a1.388,1.388,0,0,1-1,.916,1.371,1.371,0,0,1-1.3-.372L4.9,9.959l-1.727.893a.429.429,0,0,1-.626-.392L2.618,7.73,8.66,3.341a.536.536,0,1,0-.63-.867L1.886,6.937.4,5.453h0A1.371,1.371,0,0,1,.027,4.211,1.389,1.389,0,0,1,.944,3.15h0Z" transform="translate(16.5 8.997)" fill="#ff293e" fill-rule="evenodd"/>
+  </g>
+</svg>
