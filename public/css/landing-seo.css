@@ -968,6 +968,10 @@ h5 {
   display: inline-flex;
 }
 
+.btn__fontSm span {
+  font-size: 0.75rem !important;
+}
+
 .btn__red {
   color: #ffffff;
   background-color: #ff293e;

@@ -3,6 +3,12 @@
 @use "../tools" as *;
 
 .support {
+
+  strong {
+    @extend .u-f--bold;
+    color: black;
+  }
+
   &__content {
     margin-top: $md;
     max-width: 100%;
@@ -23,18 +29,6 @@
     }
   }
 
-  span {
-    @extend .u-f--bold;
-    color: black;
-  }
-
-  button {
-    padding: rem(10) $sm rem(10) rem(10) !important;
-    span {
-      color: white !important;
-    }
-  }
-
   &__form {
     position: relative;
     margin-bottom: $lg;
@@ -42,7 +36,7 @@
 
     display: flex;
     flex-direction: column;
-    padding: $md $md $lg !important;
+    padding: $md $md 0 !important;
 
     p {
       color: setcolor("black", "dark1");
@@ -52,6 +46,7 @@
     p:first-of-type {
       @extend .u-f--h2, .u-f--bold;
     }
+
 
     input {
       margin-bottom: rem(10);
@@ -82,7 +77,7 @@
 
   &__card {
     position: relative;
-    padding: $md $md $lg !important;
+    padding: $md $md 0 !important;
 
     &:not(:last-of-type) {
       margin-bottom: $lg;
@@ -101,11 +96,18 @@
   }
 
   &__btn {
-    position: absolute;
-    bottom: rem(-22);
-    left: $md;
+    display: flex;
+    justify-content: center;
+
+    transform: translateY(50%);
+
+    @include screen-sm {
+      justify-content: flex-start;
+    }
+
     button {
-      padding: $sm $md;
+      padding: 0 rem(45);
+      height: rem(45);
       box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
     }
   }

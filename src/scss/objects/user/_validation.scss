@@ -1,0 +1,36 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.validation {
+
+    &--pass {
+        position: relative;
+
+        input {
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        img {
+            position: absolute;
+            top: rem(10);
+            right: rem(10);
+        }
+    }
+
+    &--warning {
+        input {
+            border: 2px solid setcolor('warning') !important;
+            color: setcolor('warning') !important;
+        }
+
+        label {
+            color: setcolor('warning') !important;
+            padding: $md $sm 0;
+        }
+    }
+}

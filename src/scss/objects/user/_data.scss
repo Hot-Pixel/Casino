@@ -123,9 +123,14 @@
     }
 
     .data__last {
+      text-align: center;
       border-top: 1px solid #c9cdd0;
       margin-top: $md;
       padding-top: $md;
+
+      @include screen-sm {
+        text-align: left;
+      }
 
       p {
         color: setcolor("black", "dark1");
@@ -186,12 +191,14 @@
           }
 
           .data__saveBtn {
-            width: fit-content;
-            padding: rem(5) $sm;
+            width: 100%;
+            padding: 0 rem(45);
+            height: rem(45);
 
             @include screen-sm {
-              padding: rem(10) $sm;
+              width: fit-content;
             }
+
           }
         }
       }

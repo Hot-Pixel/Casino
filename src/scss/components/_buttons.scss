@@ -4,6 +4,12 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+.btn__fontSm {
+  span {
+    font-size: rem(12) !important;
+  }
+}
+
 // button normal red
 .btn__red {
   @extend %buttons;
