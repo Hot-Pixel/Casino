@@ -1,0 +1,13 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+.affiliatesContent {
+	padding-bottom: rem(30);
+	background: transparent linear-gradient( 180deg, rgba( setcolor( 'black', 'dark4' ), 0 ) 60%, setcolor( 'black', 'dark4' ) 100% ) 0% 0% no-repeat padding-box;
+
+	@include screen-sm {
+		padding-bottom: rem(100);
+	}
+}

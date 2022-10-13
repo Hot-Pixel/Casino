@@ -1,5 +1,7 @@
 <section class="boardGame">
 
+	<img src="img/user/icon/icon-menu-close.svg" alt="" class="boardGame__btn-close">
+
 	<header class="boardGame__header">
 		<p class="boardGame__header-title">Configuración de sesión</p>
 		<p class="boardGame__header-subtitle">Estás a punto de comenzar una sesión de máquinas de azar. Por favor, introduce los parámetros de sesión.</p>
@@ -10,42 +12,50 @@
 
 		<p class="boardGame__board-text">¿Cuánto tiempo quieres jugar?</p>
 		<div class="boardGame__board-numbers">
-			<div class="boardGame__board-number is-active">
-				<div class="boardGame__board-number-top">30</div>
-				<div class="boardGame__board-number-bottom">min</div>
-			</div>
-			<div class="boardGame__board-number">
-				<div class="boardGame__board-number-top">1</div>
-				<div class="boardGame__board-number-bottom">horas</div>
-			</div>
-			<div class="boardGame__board-number">
-				<div class="boardGame__board-number-top">2</div>
-				<div class="boardGame__board-number-bottom">horas</div>
-			</div>
-			<div class="boardGame__board-number">
-				<div class="boardGame__board-number-top">4</div>
-				<div class="boardGame__board-number-bottom">horas</div>
-			</div>
-			<div class="boardGame__board-number">
-				<div class="boardGame__board-number-top">6</div>
-				<div class="boardGame__board-number-bottom">horas</div>
-			</div>
+			<input class="boardGame__board-number" type="radio" id="game-time-30-min" name="game-time" value="30-min">
+			<label class="boardGame__board-number" for="game-time-30-min">
+				<span class="boardGame__board-number-top">30</span>
+				<span class="boardGame__board-number-bottom">min</span>
+			</label>
+			<input class="boardGame__board-number" type="radio" id="game-time-60-min" name="game-time" value="60-min">
+			<label class="boardGame__board-number" for="game-time-60-min">
+				<span class="boardGame__board-number-top">1</span>
+				<span class="boardGame__board-number-bottom">horas</span>
+			</label>
+			<input class="boardGame__board-number" type="radio" id="game-time-120-min" name="game-time" value="120-min">
+			<label class="boardGame__board-number" for="game-time-120-min">
+				<span class="boardGame__board-number-top">2</span>
+				<span class="boardGame__board-number-bottom">horas</span>
+			</label>
+			<input class="boardGame__board-number" type="radio" id="game-time-240-min" name="game-time" value="240-min">
+			<label class="boardGame__board-number" for="game-time-240-min">
+				<span class="boardGame__board-number-top">4</span>
+				<span class="boardGame__board-number-bottom">horas</span>
+			</label>
+			<input class="boardGame__board-number" type="radio" id="game-time-360-min" name="game-time" value="360-min">
+			<label class="boardGame__board-number" for="game-time-360-min">
+				<span class="boardGame__board-number-top">6</span>
+				<span class="boardGame__board-number-bottom">horas</span>
+			</label>
 		</div>
 
 		<p class="boardGame__board-text">¿Con qué frecuencia quieres que te avisemos?</p>
 		<div class="boardGame__board-numbers">
-			<div class="boardGame__board-number">
-				<div class="boardGame__board-number-top">5</div>
-				<div class="boardGame__board-number-bottom">min</div>
-			</div>
-			<div class="boardGame__board-number is-active">
-				<div class="boardGame__board-number-top">10</div>
-				<div class="boardGame__board-number-bottom">min</div>
-			</div>
-			<div class="boardGame__board-number">
-				<div class="boardGame__board-number-top">15</div>
-				<div class="boardGame__board-number-bottom">min</div>
-			</div>
+			<input class="boardGame__board-number" type="radio" id="game-reminder-5-min" name="game-reminder" value="5-min">
+			<label class="boardGame__board-number" for="game-reminder-5-min">
+				<span class="boardGame__board-number-top">5</span>
+				<span class="boardGame__board-number-bottom">min</span>
+			</label>
+			<input class="boardGame__board-number" type="radio" id="game-reminder-10-min" name="game-reminder" value="10-min">
+			<label class="boardGame__board-number" for="game-reminder-10-min">
+				<span class="boardGame__board-number-top">10</span>
+				<span class="boardGame__board-number-bottom">min</span>
+			</label>
+			<input class="boardGame__board-number" type="radio" id="game-reminder-15-min" name="game-reminder" value="15-min">
+			<label class="boardGame__board-number" for="game-reminder-15-min">
+				<span class="boardGame__board-number-top">15</span>
+				<span class="boardGame__board-number-bottom">min</span>
+			</label>
 		</div>
 
 	</div>
@@ -53,7 +63,7 @@
 
 	<footer class="boardGame__footer">
 		<p class="boardGame__footer-title">¿Con cuánto saldo quieres jugar?</p>
-		<p class="boardGame__footer-import">1€ máximo para este juego</p>
+		<input class="boardGame__footer-input" type="number" step="any" placeholder="1€ máximo para este juego">
 		<select class="boardGame__footer-time" name="select">
 			<option selected>Tiempo mínimo para la próxima sesión</option>
 			<option value="value1">Value 1</option>

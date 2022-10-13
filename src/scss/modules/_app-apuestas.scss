@@ -40,10 +40,7 @@
 
 
 	.appApuestas__columns {
-
-		@include tablet {
-			grid-template-columns: repeat(2, 1fr);
-		}
+		grid-template-columns: repeat(2, 1fr);
 
 		@include screen-sm {
 			grid-template-columns: repeat(4, 1fr);
@@ -59,7 +56,11 @@
 
 	&-image {
 		margin: auto;
-		max-width: rem(250);
+		max-width: 100%;
+
+		@include screen-sm {
+			max-width: rem(250);
+		}
 	}
 
 
@@ -81,16 +82,20 @@
 	position: relative;
 	bottom: rem(-180);
 	margin: rem(-90) auto rem(180);
-	padding: rem(75) rem(75) rem(85);
+	padding: rem(30);
 	width: 100%;
-	max-width: rem(796);
+	max-width: calc( 100% - rem(40) );
 	border-radius: rem(10);
 	background-color: setcolor("black");
 
+	@include tablet {
+		max-width: rem(796);
+	}
+
 	@include screen-sm {
 		bottom: rem(-300);
-		margin-top: rem(-190);
-		margin-bottom: rem(360);
+		margin: rem(-190) auto rem(360);
+		padding: rem(60);
 	}
 
 
@@ -100,8 +105,10 @@
 
 
 	.appApuestas__columns {
+		gap: rem(5);
 
 		@include screen-sm {
+			gap: rem(20);
 			grid-template-columns: repeat(2, 1fr);
 			max-width: rem(1120);
 		}

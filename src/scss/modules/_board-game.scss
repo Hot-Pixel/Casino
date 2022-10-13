@@ -11,6 +11,14 @@
 
 	// Header
 
+	&__btn-close {
+		position: absolute;
+		right: rem(40);
+	}
+
+
+	// Header
+
 	&__header {
 
 
@@ -42,7 +50,7 @@
 		width: 100%;
 		max-width: rem(740);
 		border-radius: rem(10);
-		background-color: setcolor("black", "dark5");
+		background-color: setcolor("black", "dark2");
 
 		@include screen-sm {
 			padding: rem(55) rem(65);
@@ -66,87 +74,114 @@
 			justify-content: center;
 			align-items: center;
 		}
+	}
+}
 
 
-		&-number {
-			padding: rem(23) rem(33);
-			@extend .u-f--bold;
-			border-radius: rem(10);
-			color: setcolor("white");
-			background-color: setcolor("black", "dark4");
+input.boardGame__board-number {
+	display: none;
+}
 
 
-			&-top {
-				@extend .u-f--h2;
-			}
+label.boardGame__board-number {
+	flex: 1;
+	padding: rem(23) rem(33);
+	@extend .u-f--bold;
+	border-radius: rem(10);
+	color: setcolor("white");
+	background-color: setcolor("black", "dark4");
+	cursor: pointer;
+}
 
 
-			&-bottom {
-				@extend .u-f--h4;
-			}
+.boardGame__board-number {
 
 
-			&.is-active {
-				color: setcolor("black");
-				background-color: setcolor("primary");
-			}
+	&-top {
+		display: block;
+		@extend .u-f--h2;
+	}
+
+
+	&-bottom {
+		display: block;
+		@extend .u-f--h4;
+	}
+}
+
+
+input.boardGame__board-number[type="radio"]:checked + label.boardGame__board-number {
+	color: setcolor("black");
+	background-color: setcolor("primary");
+}
+
+
+
+
+
+// Footer
+
+.boardGame__footer {
+
+
+	&-title {
+		@extend .u-f--h4;
+		@extend .u-f--bold;
+		opacity: .6;
+	}
+
+
+	&-input {
+		display: block;
+		margin: $sm auto 0;
+		padding: rem(30);
+		width: 100%;
+		max-width: rem(540);
+		@extend .u-f--bold;
+		text-align: center;
+		color: setcolor("white");
+		background-color: transparent;
+		border: 2px solid rgba( setcolor("white"), .6 );
+		border-radius: 3em;
+
+		&::placeholder {
+			color: rgba( setcolor("white"), .6 );
+		}
+
+		&:focus {
+			border-color: setcolor("white");
 		}
 	}
 
 
-	// Board
-
-	&__footer {
-
-
-		&-title {
-			@extend .u-f--h4;
-			@extend .u-f--bold;
-			opacity: .6;
-		}
-
-
-		&-import {
-			margin: $sm auto 0;
-			padding: rem(30);
-			max-width: rem(540);
-			@extend .u-f--bold;
-			color: setcolor("white");
-			border: 2px solid setcolor("white");
-			border-radius: 3em;
-			opacity: .6;
-		}
+	&-time {
+		margin: $sm auto 0;
+		padding: rem(15) rem(30);
+		width: 100%;
+		max-width: rem(540);
+		@extend .u-f--bold;
+		border: none;
+		border-radius: 2em;
+		background-color: setcolor("black", "dark2");
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg id='icon-select-arrow' transform='translate(14) rotate(90)'%3E%3Cpath id='Trazado_97' data-name='Trazado 97' d='M14 7a7 7 0 1 0-7 7A7 7 0 0 0 14 7ZM5.29 10.71A1 1 0 0 1 5.284 9.3L5.29 9.29 7.41 7.18a.25.25 0 0 0 .007-.354L7.41 6.82 5.29 4.71A1 1 0 0 1 6.71 3.29l3 3A1 1 0 0 1 9.716 7.7L9.71 7.71l-3 3a1 1 0 0 1-1.414.006Z' transform='translate(0 0)' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E");
+		background-repeat: no-repeat;
+		background-position-y: 50%;
+		background-position-x: calc( 100% - rem(30) );
+		appearance: none;
+	}
 
 
-		&-time {
-			margin: $sm auto 0;
-			padding: rem(15) rem(30);
-			width: 100%;
-			max-width: rem(540);
-			@extend .u-f--bold;
-			border: none;
-			border-radius: 2em;
-			background-color: setcolor("black", "dark2");
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cg id='icon-select-arrow' transform='translate(14) rotate(90)'%3E%3Cpath id='Trazado_97' data-name='Trazado 97' d='M14 7a7 7 0 1 0-7 7A7 7 0 0 0 14 7ZM5.29 10.71A1 1 0 0 1 5.284 9.3L5.29 9.29 7.41 7.18a.25.25 0 0 0 .007-.354L7.41 6.82 5.29 4.71A1 1 0 0 1 6.71 3.29l3 3A1 1 0 0 1 9.716 7.7L9.71 7.71l-3 3a1 1 0 0 1-1.414.006Z' transform='translate(0 0)' fill='%23ffffff'/%3E%3C/g%3E%3C/svg%3E");
-			background-repeat: no-repeat;
-			background-position-y: 50%;
-			background-position-x: calc( 100% - rem(30) );
-			appearance: none;
-		}
+	&-button {
+		margin: rem(40) auto 0;
+		width: fit-content;
 
 
-		&-button {
-			margin: rem(40) auto 0;
-			width: fit-content;
+		span {
+			text-transform: uppercase;
 
 
-			span {
-				text-transform: uppercase;
-
-
-				& + img {
-					margin-left: $sm;
-				}
+			& + img {
+				margin-left: $sm;
 			}
 		}
 	}
