@@ -3,8 +3,10 @@
 @use "../tools" as *;
 
 .landingSEOThemes {
-
-  @extend %padding_horizontal_main, %margin_medium;
+	// @extend %margin_medium;
+	padding-top: rem(15);
+	padding-bottom: rem(15);
+	@extend %padding_horizontal_main;
   background: transparent
     linear-gradient(
       180deg,
