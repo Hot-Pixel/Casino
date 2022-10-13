@@ -93,7 +93,7 @@ gulp.task("sass", async done => {
     .pipe(maps.write("./"))
     .pipe(gulp.dest(paths.scss.dest))
     .pipe(server.stream());
-    done();
+  done();
 });
 
 /* Gulp task to minify images */
@@ -103,7 +103,7 @@ gulp.task("imageMin", async done => {
     .pipe(plumber())
     .pipe(imagemin())
     .pipe(gulp.dest(paths.images.dest));
-    done();
+  done();
 });
 
 gulp.task("js", async done => {
@@ -140,13 +140,20 @@ gulp.task("watch", async done => {
     browser: "chrome",
     online: false,
     tunnel: false,
+    reloadDelay: 1000,
   });
-  watch(paths.scss.watcher).on("change", gulp.series("sass", server.reload));
-  watch(paths.scripts.watcher).on("change", gulp.series("js", server.reload));
+  watch(paths.scss.watcher).on("change", gulp.series("sass", 'reload'));
+  watch(paths.scripts.watcher).on("change", gulp.series("js", 'reload'));
   watch(paths.images.watcher).on("add", gulp.series("imageMin"));
-  watch(paths.ejs.watcher).on("change", server.reload);
+  watch(paths.ejs.watcher).on("change", gulp.series('reload'));
   done();
 });
+
+gulp.task('reload', async done => {
+  server.notify("Compiling, please wait...");
+  server.reload();
+  done();
+})
 
 /*---------------------------------------------------*/
 
@@ -161,7 +168,7 @@ gulp.task("bundleEjs", async done => {
     }))
     .pipe(rename({ extname: ".html" }))
     .pipe(gulp.dest(paths.ejs.dest));
-    done();
+  done();
 });
 
 gulp.task("bundleJs", async done => {
@@ -200,7 +207,7 @@ gulp.task("bundleCss", async done => {
     .pipe(maps.write("./"))
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.css.dest))
-    done();
+  done();
 });
 
 gulp.task("copyImg", async done => {
@@ -208,7 +215,7 @@ gulp.task("copyImg", async done => {
     .src(paths.images.src)
     .pipe(imagemin())
     .pipe(gulp.dest('dist/img/'));
-    done();
+  done();
 });
 
 // gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss"));
