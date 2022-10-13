@@ -15,6 +15,10 @@
     }
   }
 
+  &-breadcrumb {
+    padding: rem(10) 0 $sm;
+  }
+
   &-content {
     height: 100%;
     position: relative;

@@ -9,13 +9,13 @@
   grid-auto-flow: row;
   width: 100%;
 
-  column-gap: rem(20);
+  column-gap: rem(10);
   row-gap: $md;
   margin-top: $md;
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: rem(20);
+    column-gap: rem(10);
     row-gap: $md;
   }
   @include screen-sm {
@@ -152,8 +152,8 @@
         }
       }
     }
- 
-    &__title { 
+
+    &__title {
       @extend .u-f--h2, .u-f--bold;
     }
   }

@@ -2,7 +2,6 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 .history {
   margin-right: rem(-15);
 
@@ -85,6 +84,7 @@
 
         p:first-of-type {
           @extend .u-f--h3, .u-f--bold;
+
           color: setcolor("black", "dark1");
           padding-bottom: $sm;
         }
@@ -147,7 +147,8 @@
         transform: translateY(50%);
 
         button {
-          padding: rem(10);
+          padding: 0 rem(45);
+          height: rem(45);
         }
       }
     }

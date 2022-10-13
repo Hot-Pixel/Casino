@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .filter__promo {
-  margin: $lg;
+  margin: $sm 0 $md;
 
   display: flex;
   align-items: center;

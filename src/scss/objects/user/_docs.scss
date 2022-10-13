@@ -42,6 +42,7 @@
     &-card {
       position: relative;
       width: 100%;
+      height: max-content;
       padding-bottom: $lg !important;
 
       @include screen-sm {

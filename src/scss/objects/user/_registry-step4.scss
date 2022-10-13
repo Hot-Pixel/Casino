@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .stepFour {
-  padding: 0 $sm;
+  padding: 0 $sm $xl;
 
   p {
     text-align: center;
@@ -80,6 +80,8 @@
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: row;
 
+    gap: rem(10);
+
     width: 100%;
 
     @include screen-sm {
@@ -90,6 +92,7 @@
     img {
         object-fit: cover;
         width: 100%;
+        border-radius: rem(5);
     }
   }
 }

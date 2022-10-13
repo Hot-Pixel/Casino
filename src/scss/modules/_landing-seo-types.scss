@@ -1,0 +1,63 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.landingSEOTypes {
+  @extend %padding_horizontal_main, %padding_medium;
+
+  &__title {
+    margin-bottom: $md;
+    @extend .u-f--h3;
+    @extend .u-f--bold;
+    text-align: center;
+  }
+
+  &__grid {
+    display: grid;
+    column-gap: $sm;
+    row-gap: $lg;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include tablet {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &-item {
+      &-image {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: calc(100% - rem(15) - rem(15));
+
+        @include screen-sm {
+          max-width: calc(100% - rem(60) - rem(60));
+        }
+      }
+
+      &-title {
+        margin-top: $md;
+        margin-bottom: $sm;
+        @extend .u-f--h3;
+        @extend .u-f--bold;
+        text-align: center;
+      }
+
+      &-button {
+        background-color: setcolor("black", "dark4");
+
+        &:hover {
+          background-color: setcolor("black", "dark3");
+        }
+
+        span + img {
+          margin-left: rem(10);
+        }
+
+        img {
+          width: 1em;
+          height: 1em;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

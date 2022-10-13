@@ -29,12 +29,26 @@
                     </div>
                 </div>
                 <div class="stepOne__input">
-                    <input type="text" name="name" id="name" placeholder="Nombre">
-                    <input type="text" name="dni" id="dni" placeholder="DNI">
-                    <input type="text" name="surname" id="firstSurname" placeholder="Primer apellido">
-                    <input type="text" name="email" id="email" placeholder="Email">
-                    <input type="text" name="second-surname" id="secondSurname" placeholder="Segundo apellido">
-                    <input type="text" name="phone" id="phone" placeholder="Teléfono">
+                    <fieldset class="validation validation--pass">
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+                        <img src="img/user/icon/icon-validation-pass.svg" alt="">
+                    </fieldset>
+                    <fieldset class="validation validation--warning">
+                        <input type="text" name="dni" id="dni" placeholder="DNI">
+                        <label for="dni">El DNI no es correcto</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" name="surname" id="firstSurname" placeholder="Primer apellido">
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" name="email" id="email" placeholder="Email">
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" name="second-surname" id="secondSurname" placeholder="Segundo apellido">
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" name="phone" id="phone" placeholder="Teléfono">
+                    </fieldset>
                 </div>
                 <div class="stepOne__accept">
                     <div class="stepOne__checkbox">

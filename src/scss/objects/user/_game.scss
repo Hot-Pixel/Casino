@@ -27,7 +27,7 @@
     &__header {
       @extend .u-f--h4, .u-f--bold;
       color: setcolor("black", "dark1");
-      margin: $lg 0 $md;
+      margin: $md 0 $md;
     }
 
     &__container {

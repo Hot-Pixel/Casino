@@ -242,6 +242,7 @@
       color: setcolor('black', 'dark1');
       margin: $md 0;
       max-width: 60%;
+      text-align: center;
 
       @include tablet {
         max-width: 100%;

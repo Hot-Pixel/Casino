@@ -1,0 +1,24 @@
+<%
+    const data = [
+        "El Casino más famoso de Europa",
+        "Compromiso con el Juego Responsable",
+        "Atención personalizada",
+        "Máxima seguridad en tus pagos",
+        "Más de 1.700 Slots y Ruletas de todo tipo",
+        "Sala de Poker con torneos exclusivos"
+    ]
+%>
+
+<section class="gridLandingA">
+    <div class="gridLandingA__header">
+        <p class="gridLandingA__header-title">¿Por qué CasinoBarcelona?</p>
+    </div>
+    <div class="gridLandingA__grid">
+        <% for( let i = 0; i < data.length; i++ ) { %>
+            <div class="gridLandingA__grid-item">
+                <img class="gridLandingA__grid-icon" src="img/icons/icon-landing-checked-grey.svg" alt="">
+                <p class="gridLandingA__grid-title"><%= data[i] %></p>
+            </div>
+        <% } %>
+    </div>
+</section>

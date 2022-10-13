@@ -24,12 +24,14 @@
     input {
       margin: 0 !important;
       text-align: center;
+      width: 100%;
 
       @include screen-sm {
         text-align: left;
       }
     }
   }
+
   &__accept {
     display: flex;
 

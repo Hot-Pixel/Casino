@@ -18,7 +18,7 @@
   }
 
   &__bg {
-    @extend %margin_top_medium;
+    margin-top: $xl;
 
     img {
       object-fit: contain;
@@ -29,7 +29,7 @@
 
   &__cta {
     display: flex;
-    margin: $md 0 $sm;
+    margin: $lg 0;
     height: $xl;
     width: 100%;
   }

@@ -1,0 +1,19 @@
+<section class="logosLandingA">
+    <div class="logosLandingA__header">
+        <p class="logosLandingA__header-title">Métodos de Depósito</p>
+    </div>
+    <div class="logosLandingA__flex">
+        <% for( let i = 1; i < 9; i++ ) { %>
+            <img class="logosLandingA__flex-logo" src="img/logos/logo-landing-<%= i %>.svg" alt="">
+        <% } %>
+    </div>
+    <div class="logosLandingA__slider splide">
+        <div class="splide__track">
+            <div class="splide__list">
+                <% for( let i = 1; i < 9; i++ ) { %>
+                    <img class="splide__slide logosLandingA__flex-logo" src="img/logos/logo-landing-<%= i %>.svg" alt="">
+                <% } %>
+            </div>
+        </div>
+    </div>
+</section>

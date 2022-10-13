@@ -149,6 +149,10 @@ header {
 
     padding: $sm rem(20);
 
+    @include tablet {
+      padding: $md;
+    }
+
     .menuHeader__openBtn {
       cursor: pointer;
     }
