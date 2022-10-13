@@ -1,10 +1,13 @@
 import { gsap } from "gsap";
 
-const menuHeaderOpenBtn = document.querySelector(".menuHeader__openBtn");
-const menuHeaderCloseBtn = document.querySelector(".menuHeader__closeBtn");
-const menuHeader = document.querySelector(".menuHeader");
 
 function menuHeaderMobile() {
+  const menuHeaderOpenBtn = document.querySelector(".menuHeader__openBtn");
+  const menuHeaderCloseBtn = document.querySelector(".menuHeader__closeBtn");
+  const menuHeader = document.querySelector(".menuHeader");
+
+  if(!menuHeader) return;
+
   menuHeaderOpenBtn.addEventListener("click", () => {
     menuHeader.style.display = "flex";
     gsap.to(menuHeader, { left: "0", opacity: 1, duration: 0.7 });
