@@ -45,6 +45,13 @@ import boardGame from "./routes/boardGame.js";
 import affiliates from "./routes/affiliates.js";
 import landingAffiliates from "./routes/landingAfiliados.js";
 import landingSEO from "./routes/landingSEO.js";
+import mpuDeposit from "./routes/mpuDeposit.js";
+import mpuSkrill from "./routes/mpuSkrill.js";
+import mpuDebit from "./routes/mpuDebit.js";
+import mpuPaypal from "./routes/mpuPaypal.js";
+import mpuNeteller from "./routes/mpuNeteller.js";
+import mpuTransfer from "./routes/mpuTransfer.js";
+import mpuPaysafe from "./routes/mpuPaysafe.js";
 import {fileURLToPath} from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -100,6 +107,13 @@ app.use("/como-jugar", howTo);
 app.use("/como-jugar-texas", texas);
 app.use("/como-jugar-omaha", omaha);
 app.use("/landing-afiliados", landingAffiliates);
+app.use("/mpu-deposit", mpuDeposit);
+app.use("/mpu-skrill", mpuSkrill);
+app.use("/mpu-debit", mpuDebit);
+app.use("/mpu-neteller", mpuNeteller);
+app.use("/mpu-paypal", mpuPaypal);
+app.use("/mpu-transfer", mpuTransfer);
+app.use("/mpu-paysafe", mpuPaysafe);
 app.use("/landing-seo", landingSEO);
 
 // catch 404 and forward to error handler

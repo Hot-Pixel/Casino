@@ -1,0 +1,113 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+body.mpu-open {
+    height: 100vh;
+    overflow: hidden;
+}
+.mpu {
+    width: 100%;
+    height: 100vh;
+    overflow-x: auto;
+    padding-bottom: $md;
+
+    background-color: setcolor("gray", "light2");
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.2s ease-in-out;
+
+    &--open {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: flex-start;
+        min-height: 100%;
+        @extend %margin_horizontal_main;
+    }
+
+    &__header {
+        width: 100%;
+        padding: $sm 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color: setcolor("gray", "light2");
+
+        img:first-of-type {
+            object-fit: cover;
+            max-width: 60%;
+        }
+    }
+
+    &__block {
+        display: none;
+        width: 100%;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        color: setcolor("black", "dark1");
+        justify-content: center;
+        flex: 1 1 auto;
+
+        p,
+        span {
+            color: setcolor("black", "dark1");
+        }
+        p {
+            padding-bottom: $sm;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @extend .u-f--bold, .u-f--h1;
+        color: setcolor("black", "dark1");
+
+        img {
+            margin-right: rem(10);
+        }
+    }
+
+    &__btn-close {
+        cursor: pointer;
+        width: rem(16);
+        object-fit: cover;
+
+        @include screen-sm {
+            width: rem(22);
+        }
+    }
+
+    &__step2-method {
+        display: none;
+
+        &.active {
+            display: flex;
+        }
+    }
+}

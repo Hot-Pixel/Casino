@@ -1,0 +1,72 @@
+<script>
+    function initBackBtn() {
+        var step2BackBtn = document.querySelectorAll(".depositStep2__backBtn");
+        if (step2BackBtn.length === 0) return;
+        step2BackBtn.forEach((btn) => {
+            btn.addEventListener("click", e => {
+                e.preventDefault();
+                mpu(e.currentTarget.dataset.url);
+            });
+        });
+    }
+
+    function initAmountSelector() {
+        var btnsAmount = document.querySelectorAll(".btnAmmount");
+        if (btnsAmount.length === 0) return;
+        btnsAmount.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                let input = document.querySelector(e.currentTarget.dataset.input);
+                input.value = e.currentTarget.dataset.amount;
+            });
+        })
+    }
+
+    function initBonoSelector() {
+        var btnBono = document.querySelectorAll(".depositDetail__select-type .item, .depositDetail__select-noBond .item");
+        var bonoList = document.querySelector(".depositDetail__select-content");
+        if (btnBono.length === 0) return;
+        btnBono.forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                let input = btn.querySelector('input');
+                input.checked = true;
+                bonoList.innerHTML = '';
+
+                let isBono = btn.closest('.depositDetail__select-type') ? true : false;
+                if (isBono) {
+                    fetchBono()
+                        .then(bonos => {
+                            bonos.forEach(bono => {
+                                bonoList.innerHTML += `<p>${bono}</p>`;
+                            });
+                        })
+                }
+            });
+        })
+    }
+
+    async function fetchBono() {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve([
+                    "Bono hasta 300€, consigue un: 300%",
+                    "Disfruta del Bono de hasta 200€, consigue lorem ipsum hasta un: 200%",
+                    "Bono hasta 500€, consigue un: 200%",
+                    "Bono hasta 200€, recárgate hasta un: 300%"
+                ]);
+            }, 1000);
+        })
+    }
+
+    function initCopyIban() {
+        const iban = document.querySelector("#iban");
+        const copyBtn = document.querySelector(".depositTransfer__table-copy");
+        if (!iban) return;
+
+        navigator.clipboard.writeText(iban.innerText);
+    }
+    initBackBtn();
+    initAmountSelector();
+    initBonoSelector();
+    initCopyIban();
+    accordionDeposit();
+</script>
