@@ -1,44 +1,51 @@
 <section class="depositTransfer deposit__step2-method deposit__wrapper">
-    <p class="deposit__title"><img src="img/user/icon/icon-deposit-title.svg" alt="">Depositar</p>
-    <div class="depositDetail">
-        <div class="depositTransfer__card depositDetail__card">
-            <div class="depositTransfer--top depositDetail__card-top">
-                <div class="depositDetail__logo">
-                    <img src="img/user/logo/logo-retirar-transferencia.png" alt="">
-                </div>
-                <p>Realiza una transferencia por el importe solicitado desde tu cuenta bancaria.</p>
-                <p>No olvides indicar tu NOMBRE DE USUARIO y tu DNI en las observaciones/concepto de la transferencia para agilizar la gestión.</p>
-                <div class="depositTransfer__table">
-                    <p class="depositTransfer__table-header">Titular</p>
-                    <p class="depositTransfer__table-body">Casino Barcelona S.A.</p>
-                </div>
-                <div class="depositTransfer__table">
-                    <div class="depositTransfer__table-row">
-                        <p class="depositTransfer__table-header">IBAN</p>
-                        <div class="depositTransfer__table-copy">
-                            <span>Copiar</span>
-                            <img src="img/user/icon/icon-deposit-copy.svg" alt="">
-                        </div>
+    <div class="mpu__title">
+        <img src="img/user/icon/icon-deposit-title.svg" alt="">Depositar
+    </div>
+    <div class="mpu__body">
+        <div class="depositDetail">
+            <div class="depositTransfer__card depositDetail__card">
+                <div class="depositTransfer--top depositDetail__card-top">
+                    <div class="depositDetail__logo">
+                        <img src="img/user/logo/logo-retirar-transferencia.png" alt="">
                     </div>
-                    <p class="depositTransfer__table-body" id="iban">ES69 0030 2550 5500 0140 4271</p>
+                    <p>Realiza una transferencia por el importe solicitado desde tu cuenta bancaria.</p>
+                    <p>No olvides indicar tu NOMBRE DE USUARIO y tu DNI en las observaciones/concepto de la
+                        transferencia para agilizar la gestión.</p>
+                    <div class="depositTransfer__table">
+                        <p class="depositTransfer__table-header">Titular</p>
+                        <p class="depositTransfer__table-body">Casino Barcelona S.A.</p>
+                    </div>
+                    <div class="depositTransfer__table">
+                        <div class="depositTransfer__table-row">
+                            <p class="depositTransfer__table-header">IBAN</p>
+                            <div class="depositTransfer__table-copy">
+                                Copiar
+                                <img src="img/user/icon/icon-deposit-copy.svg" alt="">
+                            </div>
+                        </div>
+                        <p class="depositTransfer__table-body" id="iban">ES69 0030 2550 5500 0140 4271</p>
+                    </div>
+                </div>
+                <div class="depositTransfer--bottom">
+                    <p>Información</p>
+                    <p>El importe mínimo por transferencia bancaria es de 10€.
+                    </p>
+                    <p>Las transferencias realizadas en fin de semana o festivo, se acreditarán al siguiente día hábil.
+                    </p>
+                    <p>No es un método de depósito inmediato. Las transferencias recibidas entre semana, se acreditan al
+                        día siguiente.
+                    </p>
+                    <p>Si usas un método de pago de otro titular la cuenta será suspendida.</p>
                 </div>
             </div>
-            <div class="depositTransfer--bottom">
-                <p>Información</p>
-                <p>El importe mínimo por transferencia bancaria es de 10€.
-                </p>
-                <p>Las transferencias realizadas en fin de semana o festivo, se acreditarán al siguiente día hábil.
-                </p>
-                <p>No es un método de depósito inmediato. Las transferencias recibidas entre semana, se acreditan al día siguiente.
-                </p>
-                <p>Si usas un método de pago de otro titular la cuenta será suspendida.</p>
+            <div class="depositDetail__btn depositTransfer__btn">
+                <button class="btn__white depositStep2__backBtn depositStep2__backBtn" type='button' data-url="/mpu-deposit">
+                    <img src="img/icons/icon-arrow-black.svg" alt="">
+                    <span>ATRÁS</span>
+                </button>
             </div>
-        </div>
-        <div class="depositDetail__btn depositTransfer__btn">
-            <button class="btn__white depositStep2__backBtn" type='button'>
-                <img src="img/icons/icon-arrow-black.svg" alt="">
-                <span>ATRÁS</span>
-            </button>
         </div>
     </div>
 </section>
+<%- include ('deposit-step2-scripts') %>

@@ -20,6 +20,11 @@ import { terser } from "rollup-plugin-terser";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 
+import glob from 'glob';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+
 const paths = {
   scss: {
     src: "src/scss/pages/*.scss",
@@ -47,42 +52,6 @@ const paths = {
   },
 };
 
-const pagesArr = [
-  "appApuestas",
-  "casino",
-  "data",
-  "docs",
-  "favourites",
-  "game",
-  "history",
-  "home",
-  "layout",
-  "poker",
-  "preferences",
-  "promocion",
-  "promociones",
-  "ruleta",
-  "screens",
-  "recoverPassword",
-  "signIn",
-  "signUp",
-  "slots",
-  "slotsAll",
-  "support",
-  "user",
-  "wallet",
-  "shared/common",
-  "shared/commonLogged",
-  "shared/userArea",
-];
-
-const globalModules = {
-  Alert: "Alert",
-  Session: "Session",
-  mpu: "mpu",
-  closeMpu: "closeMpu"
-}
-
 /* Gulp Pipe for compiling SASS main file */
 gulp.task("sass", async done => {
   gulp
@@ -107,29 +76,30 @@ gulp.task("imageMin", async done => {
 });
 
 gulp.task("js", async done => {
-  pagesArr.forEach((e) => {
-    return rollup
-      .rollup({
-        input: [`src/js/${e}.js`],
-        plugins: [
-          commonjs({
-            include: [
-              "node_modules/mixitup/dist/mixitup.js",
-              "src/js/modules/mixitup-multifilter.js",
-            ],
-          }),
-          nodeResolve(),
-        ],
-      })
-      .then((bundle) => {
-        return bundle.write({
-          file: `public/js/${e}.js`,
-          format: "iife",
-          name: 'CBAR',
-          globals: globalModules
-        });
+  return rollup
+    .rollup({
+      input: Object.fromEntries(
+        glob.sync('src/js/**/*.js').map(file => [
+          path.relative('src', file.slice(0, file.length - path.extname(file).length)),
+          fileURLToPath(new URL(file, import.meta.url))
+        ])
+      ),
+      plugins: [
+        commonjs({
+          include: [
+            "node_modules/mixitup/dist/mixitup.js",
+            "src/js/modules/mixitup-multifilter.js",
+          ],
+        }),
+        nodeResolve(),
+      ],
+    })
+    .then((bundle) => {
+      return bundle.write({
+        dir: `public`,
+        format: "es",
       });
-  });
+    });
   done();
 });
 
@@ -172,30 +142,31 @@ gulp.task("bundleEjs", async done => {
 });
 
 gulp.task("bundleJs", async done => {
-  pagesArr.forEach((e) => {
-    return rollup
-      .rollup({
-        input: [`src/js/${e}.js`],
-        plugins: [
-          commonjs({
-            include: [
-              "node_modules/mixitup/dist/mixitup.js",
-              "src/js/modules/mixitup-multifilter.js",
-            ],
-          }),
-          nodeResolve(),
-        ],
-      })
-      .then((bundle) => {
-        return bundle.write({
-          file: `dist/js/${e}.js`,
-          format: "iife",
-          plugins: [terser()],
-          name: 'CBAR',
-          globals: globalModules
-        });
+  return rollup
+    .rollup({
+      input: Object.fromEntries(
+        glob.sync('src/js/**/*.js').map(file => [
+          path.relative('src', file.slice(0, file.length - path.extname(file).length)),
+          fileURLToPath(new URL(file, import.meta.url))
+        ])
+      ),
+      plugins: [
+        commonjs({
+          include: [
+            "node_modules/mixitup/dist/mixitup.js",
+            "src/js/modules/mixitup-multifilter.js",
+          ],
+        }),
+        nodeResolve(),
+      ],
+    })
+    .then((bundle) => {
+      return bundle.write({
+        dir: `dist/js/`,
+        format: "es",
+        plugins: [terser()],
       });
-  });
+    });
   done();
 });
 

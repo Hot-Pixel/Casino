@@ -1,114 +1,132 @@
 <section class="depositSkrill deposit__step2-method deposit__wrapper">
-    <p class="deposit__title"><img src="img/user/icon/icon-deposit-title.svg" alt="">Depositar</p>
-    <form class="depositDetail">
-        <div class="depositDetail__card">
-            <div class="depositDetail__card-top">
-                <div class="depositDetail__logo">
-                    <img src="img/user/logo/logo-retirar-skrill.png" alt="">
-                </div>
-                <p>Indica la cantidad a depositar</p>
-                <p>(Min: 10.00€ - Max:600.00€)</p>
-                <input type="number" placeholder="0€" min="10" max="600" class="depositDetail__amount" id="skrillInput">
-                <div class="depositDetail__fixed">
-                    <div class="btn__blue btnAmmount btnAmmount__20" data-input="#skrillInput">
-                        <span>20€</span>
+    <div class="mpu__title">
+        <img src="img/user/icon/icon-deposit-title.svg" alt="">Depositar
+    </div>
+    <div class="mpu__body">
+        <form class="depositDetail">
+            <div class="depositDetail__card">
+                <div class="depositDetail__card-top">
+                    <div class="depositDetail__logo">
+                        <img src="img/user/logo/logo-retirar-skrill.png" alt="">
                     </div>
-                    <div class="btn__blue btnAmmount btnAmmount__50" data-input="#skrillInput">
-                        <span>50€</span>
-                    </div>
-                    <div class="btn__blue btnAmmount btnAmmount__100" data-input="#skrillInput">
-                        <span>100€</span>
-                    </div>
-                </div>
-            </div>
-            <div class="depositDetail__card-tc">
-                <div class="tc__header">
-                    <p>Condiciones</p>
-                    <img class="accorArrowDepo" src="img/icons/icon-arrow-down.svg" alt="">
-                </div>
-                <div class="tc__body">
-                    <p>No están permitidos los depósitos con cuentas Skrill de otro titular.
-                    </p>
-                    <p>Si se detectan depósitos desde una cuenta Skrill donde no eres titular, la cuenta será
-                        suspendida.
-                    </p>
-                    <p>¿No tienes cuenta en Skrill? Crea una pulsando <a href="#">aquí</a>.</p>
-                </div>
-            </div>
-        </div>
-        <div class="depositDetail__select">
-            <p class="user__card-title">Selecciona tu bono</p>
-            <div class="depositDetail__select-type">
-                <div class="item">
-                    <input type="radio" name="bondType" id="">
-                    <div class="item__wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="27.824" height="31" viewBox="0 0 27.824 31">
-                            <path id="icon-deposit-bond-1" d="M26.375,2.4,25.262,1.062A1.887,1.887,0,0,0,22.987.588a12.041,12.041,0,0,1-5.15,1.25,9.235,9.235,0,0,1-3.812-.85A10.315,10.315,0,0,0,9.762,0,9.524,9.524,0,0,0,5.2,1.125a.262.262,0,0,1-.237,0A.326.326,0,0,1,4.775,1a1.875,1.875,0,0,0-1.65-1H1.875A1.875,1.875,0,0,0,0,1.875v8.75A1.875,1.875,0,0,0,1.875,12.5H3.212A1.862,1.862,0,0,0,5.05,10.975a3.3,3.3,0,0,1,3.375-2.5A9.234,9.234,0,0,1,11.2,9.25a11.527,11.527,0,0,0,3.95,1.012.475.475,0,0,1,.362.787A29.325,29.325,0,0,0,8.275,28.012a1.926,1.926,0,0,0,.513,1.4A1.875,1.875,0,0,0,10.15,30h7.413a1.875,1.875,0,0,0,1.863-1.675c.675-6.337,5.725-20,7.262-24.062A1.9,1.9,0,0,0,26.375,2.4" transform="translate(0.5 0.5)" fill="#868b92" stroke="rgba(0,0,0,0)" stroke-width="1"/>
-                          </svg>
-                        <p>Casino</p>
-                        <div class="radio">
-                            <span></span>
+                    <div class="depositDetail__hint">Indica la cantidad a depositar</div>
+                    <div class="depositDetail__minmax">(Min: 10.00€ - Max:600.00€)</div>
+                    <input type="number" placeholder="0€" min="10" max="600" class="depositDetail__amount"
+                        id="skrillInput">
+                    <div class="depositDetail__fixed">
+                        <div class="btn__blue btnAmmount btnAmmount__20" data-input="#skrillInput" data-amount="20">
+                            20€
+                        </div>
+                        <div class="btn__blue btnAmmount btnAmmount__50" data-input="#skrillInput" data-amount="50">
+                            50€
+                        </div>
+                        <div class="btn__blue btnAmmount btnAmmount__100" data-input="#skrillInput" data-amount="100">
+                            100€
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <input type="radio" name="bondType" id="">
-                    <div class="item__wrapper">
-                        <svg id="icon-deposit-bond-2" xmlns="http://www.w3.org/2000/svg" width="29.96" height="30" viewBox="0 0 29.96 30">
-                            <path id="Trazado_5364" data-name="Trazado 5364" d="M112.217,33.016a.705.705,0,0,0-.771-.257,9.621,9.621,0,0,0,0,15.729.705.705,0,0,0,.771-.257,15,15,0,0,0,0-15.386Z" transform="translate(-84.38 -25.709)" fill="#868b92"/>
-                            <path id="Trazado_5365" data-name="Trazado 5365" d="M7.037,41.023a9.686,9.686,0,0,0-4.071-7.864.557.557,0,0,0-.407,0,.557.557,0,0,0-.343.171,15,15,0,0,0,0,15.386.557.557,0,0,0,.364.257.557.557,0,0,0,.407,0,9.686,9.686,0,0,0,4.05-7.95Z" transform="translate(-0.093 -26.023)" fill="#868b92"/>
-                            <path id="Trazado_5366" data-name="Trazado 5366" d="M79.79,15a11.893,11.893,0,0,1,4.821-9.557.45.45,0,0,0,.214-.386.493.493,0,0,0-.15-.407A15,15,0,0,0,75.569,0a.664.664,0,0,0-.429.15.493.493,0,0,0-.171.471V29.378a.493.493,0,0,0,.171.386.664.664,0,0,0,.429.15A15,15,0,0,0,84.74,25.35a.493.493,0,0,0,.15-.407.45.45,0,0,0-.214-.386A11.893,11.893,0,0,1,79.79,15Z" transform="translate(-58.918 0)" fill="#868b92"/>
-                            <path id="Trazado_5367" data-name="Trazado 5367" d="M28.612.621A.493.493,0,0,0,28.44.236.664.664,0,0,0,28.012,0,15,15,0,0,0,18.84,4.65a.493.493,0,0,0-.15.407.45.45,0,0,0,.214.386,11.836,11.836,0,0,1,.064,19.114.45.45,0,0,0-.214.386.493.493,0,0,0,.15.407A15,15,0,0,0,28.012,30a.664.664,0,0,0,.429-.15.493.493,0,0,0,.171-.386Z" transform="translate(-14.703 0)" fill="#868b92"/>
-                          </svg>
-                        <p>Apuestas</p>
-                        <div class="radio">
-                            <span></span>
-                        </div>
+                <div class="depositDetail__card-tc">
+                    <div class="tc__header">
+                        <div class="tc__title">Condiciones</div>
+                        <img class="accorArrowDepo" src="img/icons/icon-arrow-down.svg" alt="">
                     </div>
-                </div>
-                <div class="item">
-                    <input type="radio" name="bondType" id="">
-                    <div class="item__wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="31" viewBox="0 0 25 31">
-                            <path id="icon-deposit-bond-3" d="M20.667,0H3.333A3.333,3.333,0,0,0,0,3.333V26.667A3.333,3.333,0,0,0,3.333,30H20.667A3.333,3.333,0,0,0,24,26.667V3.333A3.333,3.333,0,0,0,20.667,0M4.631,6.239A1.609,1.609,0,1,1,6.239,4.631,1.609,1.609,0,0,1,4.631,6.239M16,15.555,12.833,20a1,1,0,0,1-1.667,0L8,15.555a1,1,0,0,1,0-1.11L11.167,10a1,1,0,0,1,1.667,0L16,14.445a1,1,0,0,1,0,1.11m4.125,12.179a1.609,1.609,0,1,1,1.609-1.609,1.609,1.609,0,0,1-1.609,1.609" transform="translate(0.5 0.5)" fill="#868b92" stroke="rgba(0,0,0,0)" stroke-width="1"/>
-                          </svg>
-                        <p>Poker</p>
-                        <div class="radio">
-                            <span></span>
+                    <div class="tc__body">
+                        <div class="tc__body-content">
+                            <p>No están permitidos los depósitos con cuentas Skrill de otro titular.
+                            </p>
+                            <p>Si se detectan depósitos desde una cuenta Skrill donde no eres titular, la cuenta será
+                                suspendida.
+                            </p>
+                            <p>¿No tienes cuenta en Skrill? Crea una pulsando <a href="#">aquí</a>.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="depositDetail__select-content">
-                <p>Bono hasta 300€, consigue un: 300%</p>
-                <p>Disfruta del Bono de hasta 200€, consigue lorem ipsum hasta un: 200%</p>
-                <p>Bono hasta 500€, consigue un: 200%</p>
-                <p>Bono hasta 200€, recárgate hasta un: 300%</p>
-            </div>
-            <div class="depositDetail__select-noBond">
-                <div class="item">
-                    <input type="radio" name="bondType" id="">
-                    <div class="item__wrapper">
-                        <p>No quiero bono</p>
-                        <div class="radio">
-                            <span></span>
+            <div class="depositDetail__select">
+                <p class="user__card-title">Selecciona tu bono</p>
+                <div class="depositDetail__select-type">
+                    <div class="item">
+                        <input type="radio" name="bondType" id="">
+                        <div class="item__wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27.824" height="31" viewBox="0 0 27.824 31">
+                                <path id="icon-deposit-bond-1"
+                                    d="M26.375,2.4,25.262,1.062A1.887,1.887,0,0,0,22.987.588a12.041,12.041,0,0,1-5.15,1.25,9.235,9.235,0,0,1-3.812-.85A10.315,10.315,0,0,0,9.762,0,9.524,9.524,0,0,0,5.2,1.125a.262.262,0,0,1-.237,0A.326.326,0,0,1,4.775,1a1.875,1.875,0,0,0-1.65-1H1.875A1.875,1.875,0,0,0,0,1.875v8.75A1.875,1.875,0,0,0,1.875,12.5H3.212A1.862,1.862,0,0,0,5.05,10.975a3.3,3.3,0,0,1,3.375-2.5A9.234,9.234,0,0,1,11.2,9.25a11.527,11.527,0,0,0,3.95,1.012.475.475,0,0,1,.362.787A29.325,29.325,0,0,0,8.275,28.012a1.926,1.926,0,0,0,.513,1.4A1.875,1.875,0,0,0,10.15,30h7.413a1.875,1.875,0,0,0,1.863-1.675c.675-6.337,5.725-20,7.262-24.062A1.9,1.9,0,0,0,26.375,2.4"
+                                    transform="translate(0.5 0.5)" fill="#868b92" stroke="rgba(0,0,0,0)"
+                                    stroke-width="1" />
+                            </svg>
+                            <div class="item__type">Casino</div>
+                            <div class="radio">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input type="radio" name="bondType" id="">
+                        <div class="item__wrapper">
+                            <svg id="icon-deposit-bond-2" xmlns="http://www.w3.org/2000/svg" width="29.96" height="30"
+                                viewBox="0 0 29.96 30">
+                                <path id="Trazado_5364" data-name="Trazado 5364"
+                                    d="M112.217,33.016a.705.705,0,0,0-.771-.257,9.621,9.621,0,0,0,0,15.729.705.705,0,0,0,.771-.257,15,15,0,0,0,0-15.386Z"
+                                    transform="translate(-84.38 -25.709)" fill="#868b92" />
+                                <path id="Trazado_5365" data-name="Trazado 5365"
+                                    d="M7.037,41.023a9.686,9.686,0,0,0-4.071-7.864.557.557,0,0,0-.407,0,.557.557,0,0,0-.343.171,15,15,0,0,0,0,15.386.557.557,0,0,0,.364.257.557.557,0,0,0,.407,0,9.686,9.686,0,0,0,4.05-7.95Z"
+                                    transform="translate(-0.093 -26.023)" fill="#868b92" />
+                                <path id="Trazado_5366" data-name="Trazado 5366"
+                                    d="M79.79,15a11.893,11.893,0,0,1,4.821-9.557.45.45,0,0,0,.214-.386.493.493,0,0,0-.15-.407A15,15,0,0,0,75.569,0a.664.664,0,0,0-.429.15.493.493,0,0,0-.171.471V29.378a.493.493,0,0,0,.171.386.664.664,0,0,0,.429.15A15,15,0,0,0,84.74,25.35a.493.493,0,0,0,.15-.407.45.45,0,0,0-.214-.386A11.893,11.893,0,0,1,79.79,15Z"
+                                    transform="translate(-58.918 0)" fill="#868b92" />
+                                <path id="Trazado_5367" data-name="Trazado 5367"
+                                    d="M28.612.621A.493.493,0,0,0,28.44.236.664.664,0,0,0,28.012,0,15,15,0,0,0,18.84,4.65a.493.493,0,0,0-.15.407.45.45,0,0,0,.214.386,11.836,11.836,0,0,1,.064,19.114.45.45,0,0,0-.214.386.493.493,0,0,0,.15.407A15,15,0,0,0,28.012,30a.664.664,0,0,0,.429-.15.493.493,0,0,0,.171-.386Z"
+                                    transform="translate(-14.703 0)" fill="#868b92" />
+                            </svg>
+                            <div class="item__type">Apuestas</div>
+                            <div class="radio">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <input type="radio" name="bondType" id="">
+                        <div class="item__wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="31" viewBox="0 0 25 31">
+                                <path id="icon-deposit-bond-3"
+                                    d="M20.667,0H3.333A3.333,3.333,0,0,0,0,3.333V26.667A3.333,3.333,0,0,0,3.333,30H20.667A3.333,3.333,0,0,0,24,26.667V3.333A3.333,3.333,0,0,0,20.667,0M4.631,6.239A1.609,1.609,0,1,1,6.239,4.631,1.609,1.609,0,0,1,4.631,6.239M16,15.555,12.833,20a1,1,0,0,1-1.667,0L8,15.555a1,1,0,0,1,0-1.11L11.167,10a1,1,0,0,1,1.667,0L16,14.445a1,1,0,0,1,0,1.11m4.125,12.179a1.609,1.609,0,1,1,1.609-1.609,1.609,1.609,0,0,1-1.609,1.609"
+                                    transform="translate(0.5 0.5)" fill="#868b92" stroke="rgba(0,0,0,0)"
+                                    stroke-width="1" />
+                            </svg>
+                            <div class="item__type">Poker</div>
+                            <div class="radio">
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="depositDetail__select-content"></div>
+                <div class="depositDetail__select-noBond">
+                    <div class="item">
+                        <input type="radio" name="bondType" id="">
+                        <div class="item__wrapper">
+                            <div class="item__type">No quiero bono</div>
+                            <div class="radio">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="depositDetail__select-email">
+                    <input type="email" name="" id="" placeholder="Introduce tu mail de Skrill">
+                </div>
             </div>
-            <div class="depositDetail__select-email">
-                <input type="email" name="" id="" placeholder="Introduce tu mail de Skrill">
+            <div class="depositDetail__btn">
+                <button class="btn__white depositStep2__backBtn" type='button' data-url="/mpu-deposit">
+                    <img src="img/icons/icon-arrow-black.svg" alt="">
+                    <span>ATRÁS</span>
+                </button>
+                <button class="btn__blue btn__icons depositStep3__Btn" type="button">
+                    <img src="img/icons/icon-plus-btn.svg" alt="">
+                    <span>DEPOSITAR</span>
+                </button>
             </div>
-        </div>
-        <div class="depositDetail__btn">
-            <button class="btn__white depositStep2__backBtn" type='button'>
-                <img src="img/icons/icon-arrow-black.svg" alt="">
-                <span>ATRÁS</span>
-            </button>
-            <button class="btn__blue btn__icons depositStep3__Btn" type="button">
-                <img src="img/icons/icon-plus-btn.svg" alt="">
-                <span>DEPOSITAR</span>
-            </button>
-        </div>
-    </form>
+        </form>
+    </div>
 </section>
+<%- include ('deposit-step2-scripts') %>

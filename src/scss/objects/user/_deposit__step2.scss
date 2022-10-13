@@ -9,10 +9,6 @@
   justify-content: center;
   flex-direction: column;
 
-  @include screen-sm {
-    width: 50%;
-  }
-
   &__card {
     width: 100%;
     margin-top: calc(rem(60) + $md);
@@ -44,12 +40,12 @@
         padding: $md;
       }
 
-      p {
+      .depositDetail__hint {
         color: setcolor("black", "dark1");
+      }
 
-        &:last-of-type {
-          color: #868b92;
-        }
+      .depositDetail__minmax {
+        color: #868b92;
       }
 
       .depositDetail__amount {
@@ -91,36 +87,53 @@
 
     &-tc {
       border-radius: 0 0 rem(10) rem(10);
-      padding: $sm;
       background-color: #e99c00;
+      color: white;
 
+      .tc__title {
+        @extend .u-f--bold;
+      }
+      
+      .accorArrowDepo {
+        transform: rotate(-90deg);
+      }
+      
       .tc__header {
+        cursor: pointer;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        p {
-          @extend .u-f--bold;
-        }
-
-        .accorArrowDepo {
-          cursor: pointer;
-          transform: rotate(-90deg);
-        }
+        padding: $sm;
       }
 
       .tc__body {
-        padding: 0;
-        height: 0;
+        max-height: 0;
         opacity: 0;
+        transition: all 500ms linear;
+
+        &-content {
+          padding: $sm;
+        }
 
         p {
           padding-bottom: rem(10);
+          color: white;
         }
 
         a {
           @extend .u-f--bold;
           color: white;
+        }
+      }
+
+      &.active {
+        .accorArrowDepo {
+          transform: rotate(0deg);
+        }
+
+        .tc__body {
+          max-height: 100vh;
+          opacity: 1;
         }
       }
     }
@@ -205,25 +218,9 @@
     position: relative;
     z-index: 0;
     width: 100%;
-    aspect-ratio: 1 / 2;
-
-    @include screen-sm {
-      aspect-ratio: 1 / 0.8;
-    }
 
     input {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
-
-      width: 100%;
-      height: 100%;
-      padding: 0;
-
-      appearance: none;
-      margin: 0;
-      background-color: transparent;
+      display: none;
 
       &:checked ~ .item__wrapper {
         background-color: white;
@@ -251,14 +248,8 @@
     }
 
     &__wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 0;
-
-      width: 100%;
       height: 100%;
-
+      padding: $md;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -272,7 +263,7 @@
         max-height: rem(30);
       }
 
-      p {
+      & .item__type {
         color: #868b92;
         margin: $sm 0;
       }
@@ -428,13 +419,20 @@
       display: flex;
       align-items: center;
       padding: $sm $md;
+      gap: rem(5);
 
       cursor: pointer;
-      span {
-        color: setcolor("secondary");
-        @extend .u-f--bold;
-        padding-right: rem(5);
+      color: setcolor("secondary");
+      @extend .u-f--bold;
+      
+      &:not(:active) {
+        transition: transform 200ms;
       }
+
+      &:active {
+        transform: scale(1.1);
+      }
+      
     }
   }
 

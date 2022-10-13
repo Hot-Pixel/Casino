@@ -63,4 +63,4 @@ function setFormLoading(isLoading) {
   isLoading ? submitTextEl.innerText = "CARGANDO..." : submitTextEl.innerText = "ENTRAR";
 }
 
-export { Alert }; 
+window.Alert = Alert;

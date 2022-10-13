@@ -1,12 +1,12 @@
-<script type="text/javascript" src="js/shared/common.js"></script>
+<script type="module" src="js/shared/common.js"></script>
 <% if(player.isLogged) { %>
-    <script type="text/javascript" src="js/shared/commonLogged.js"></script>
+    <script type="module" src="js/shared/commonLogged.js"></script>
 <% } %>
 <% if(screen && screen === 'user') { %>
-    <script type="text/javascript" src="js/shared/userArea.js"></script>
+    <script type="module" src="js/shared/userArea.js"></script>
 <% } %>
 
-<script type="text/javascript" src="js/<%= script %>.js"></script>
+<script type="module" src="js/<%= script %>.js"></script>
 
 </body>
 
