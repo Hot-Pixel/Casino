@@ -162,7 +162,7 @@ gulp.task("bundleJs", async done => {
     })
     .then((bundle) => {
       return bundle.write({
-        dir: `dist/js/`,
+        dir: `dist`,
         format: "es",
         plugins: [terser()],
       });

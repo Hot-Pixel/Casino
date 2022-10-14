@@ -68,5 +68,16 @@ function closeMpu() {
     }, ANIMATION_DURATION);
 }
 
+function mpuDataTriggers() {
+    const mpuOpenBtns = document.querySelectorAll('[data-mpu-url]');
+    console.log(mpuOpenBtns);
+    mpuOpenBtns.forEach(btn => {
+        btn.addEventListener("click", e => {
+            e.preventDefault();
+            mpu(e.currentTarget.dataset.mpuUrl);
+        });
+    });
+}
+
 export default mpu;
-export { closeMpu };
+export { closeMpu, mpuDataTriggers };
