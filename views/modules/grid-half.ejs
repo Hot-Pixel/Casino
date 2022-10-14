@@ -23,15 +23,7 @@
         <% data.grid.forEach( item => { %>
             <div class="gridHalf__grid-item">
                 <img src="img/images/img-grid-<%= n %>.jpg" alt="">
-                <div class="gridHalf__grid-item--hover">
-                    <a href="#">
-                        <button class="btn__red btn__red--glow">
-                            <span>¡JUEGA!</span>
-                            <img src="img/icons/icon-play-white.svg" alt="">
-                        </button>
-                    </a>
-                    <p>PRUÉBALO</p>
-                </div>
+                <%- include ('../components/hover') %>
             </div>
             <% n++ %>
         <% }) %>

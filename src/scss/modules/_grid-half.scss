@@ -130,9 +130,11 @@
         border-radius: rem(10);
       }
 
-      &:hover .gridHalf__grid-item--hover {
-        opacity: 1;
-        transition: all 0.3s ease;
+      &:hover {
+        .gridHover {
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
       }
 
       &--hover {
