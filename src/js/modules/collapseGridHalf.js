@@ -17,12 +17,14 @@ function collapseGrid() {
             .timeline()
             .to(arrowArr[n], { rotation: -90, duration: 0.3 })
             .to(gridArr[n], { opacity: 0, duration: 0.6 })
-            .to(gridArr[n], { height: 0, duration: 0.3 });
+            .to(gridArr[n], { height: 0, duration: 0.3 })
+            .to(gridArr[n], { display: "none", duration: 0 });
           gridArr[n].classList.remove("active");
         } else {
           gsap
             .timeline()
             .to(arrowArr[n], { rotation: 0, duration: 0.3 })
+            .to(gridArr[n], { display: "grid", duration: 0 })
             .to(gridArr[n], { height: "auto", duration: 0.3 })
             .to(gridArr[n], { opacity: 1, duration: 0.6 });
           gridArr[n].classList.add("active");
@@ -37,12 +39,14 @@ function collapseGrid() {
             .timeline()
             .to(arrowArr[n], { rotation: -90, duration: 0.3 })
             .to(gridArr[n], { opacity: 0, duration: 0.6 })
-            .to(gridArr[n], { height: 0, duration: 0.3 });
+            .to(gridArr[n], { height: 0, duration: 0.3 })
+            .to(gridArr[n], { display: "none", duration: 0 });
           gridArr[n].classList.remove("active");
         } else {
           gsap
             .timeline()
             .to(arrowArr[n], { rotation: 0, duration: 0.3 })
+            .to(gridArr[n], { display: "grid", duration: 0 })
             .to(gridArr[n], { height: "auto", duration: 0.3 })
             .to(gridArr[n], { opacity: 1, duration: 0.6 });
           gridArr[n].classList.add("active");

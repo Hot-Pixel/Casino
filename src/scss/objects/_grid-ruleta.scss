@@ -90,9 +90,14 @@
         display: flex;
         justify-content: space-between;
 
-        svg {
+        .card__content-header {
+          width: calc(100% - rem(30));
+        }
+
+        .card__content-heart {
           transition: all 0.4s ease;
           align-self: flex-start;
+          width: rem(30);
 
           &.fav path {
             transition: all 0.4s ease;

@@ -11,12 +11,14 @@ function accordion() {
             .timeline()
             .to(accorArrows[n], { rotation: -90, duration: 0.3 })
             .to(accorBody[n], { opacity: 0, duration: 0.3 })
-            .to(accorBody[n], { height: 0, padding:0, duration: 0.3 });
+            .to(accorBody[n], { height: 0, padding:0, duration: 0.3 })
+            .to(accorBody[n], { display: "none", duration: 0 });
           accorBody[n].classList.remove("active");
         } else {
           gsap
             .timeline()
             .to(accorArrows[n], { rotation: 0, duration: 0.3 })
+            .to(accorBody[n], { display: "grid", duration: 0 })
             .to(accorBody[n], { height: "auto", padding: 15, duration: 0.3 })
             .to(accorBody[n], { opacity: 1, duration: 0.3 });
           accorBody[n].classList.add("active");
