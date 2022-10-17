@@ -1,14 +1,11 @@
 <%- include ('../objects/user/deposit-step1') %>
 
-    
-
-
-    <script>
-        var depositItems = document.querySelectorAll('.deposit__item');
-        depositItems.forEach(item => {
-            item.addEventListener('click', () => {
-                const url = item.getAttribute('data-url');
-                mpu(url);
-            });
+<script>
+    var depositItems = document.querySelectorAll('.deposit__item');
+    depositItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const url = item.getAttribute('data-url');
+            mpu(url);
         });
-    </script>
+    });
+</script>

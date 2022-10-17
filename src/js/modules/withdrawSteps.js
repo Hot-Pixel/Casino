@@ -13,7 +13,6 @@ function withdrawSteps() {
   const pageContainer = document.querySelector(".pageContainer");
   const step2BackBtn = document.querySelectorAll(".withdraw__step2BackBtn");
   const step3Btn = document.querySelectorAll(".withdraw__step3Btn");
-  console.log(whithdrawStep1);
 
   withdrawOpenBtn.addEventListener("click", () => {
     whithdrawBlocks.forEach((block) => {
@@ -37,7 +36,6 @@ function withdrawSteps() {
 
   withdrawMethodBtns.forEach((methodBtn) => {
     methodBtn.addEventListener("click", (e) => {
-      console.log(e.currentTarget);
       whithdrawBlocks.forEach((block) => {
         block.classList.remove("active");
       });

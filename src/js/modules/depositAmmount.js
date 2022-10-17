@@ -6,7 +6,6 @@ function depositAmmount() {
 
   btnsArr20.forEach((btn20) => {
     btn20.addEventListener("click", (e) => {
-      console.log(e.currentTarget)
         let input = document.querySelector(e.currentTarget.dataset.input);
         input.value = 20;
       });

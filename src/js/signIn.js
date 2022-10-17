@@ -49,7 +49,6 @@ validation
       setFormLoading(true);
       alertMgr.removeAll();
       const res = await handleLogin(nameEl.value, passEl.value);
-      console.log(res)
     } catch (error) {
       alertMgr.add(error, "error");
     } finally {
