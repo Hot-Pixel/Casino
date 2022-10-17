@@ -70,7 +70,6 @@ function closeMpu() {
 
 function mpuDataTriggers() {
     const mpuOpenBtns = document.querySelectorAll('[data-mpu-url]');
-    console.log(mpuOpenBtns);
     mpuOpenBtns.forEach(btn => {
         btn.addEventListener("click", e => {
             e.preventDefault();

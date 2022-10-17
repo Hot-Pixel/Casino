@@ -36,7 +36,6 @@ const filterSlotsAll = () => {
   const container = document.querySelector(".slotsFinder");
 
   if (window.innerWidth < 1280) {
-    console.log("boob");
     const mixerSlots = mixitup(container, {
       multifilter: {
         enable: true,

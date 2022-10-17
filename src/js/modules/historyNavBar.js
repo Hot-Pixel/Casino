@@ -12,7 +12,6 @@ function historyNavBar() {
       });
       e.currentTarget.classList.add("is-active");
       let dataBlock = e.currentTarget.dataset.block;
-      console.log(dataBlock);
       let target = document.querySelector(dataBlock);
       target.classList.add("active-block");
     });
