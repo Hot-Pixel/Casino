@@ -13,8 +13,12 @@
 
 
 	&-inner {
-		background: setcolor('black', 'dark2');
+		background: transparent;
 		border-radius: rem(10);
+
+		@include screen-sm {
+			background: setcolor('black', 'dark2');
+		}
 	}
 
 
@@ -25,7 +29,11 @@
 
 	.gridFullSeo {
 		margin: 0;
-		padding: rem(10);
+		padding: 0;
 		max-width: initial;
+
+		@include screen-sm {
+			padding: rem(10);
+		}
 	}
 }

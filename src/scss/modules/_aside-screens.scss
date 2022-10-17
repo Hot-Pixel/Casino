@@ -301,6 +301,13 @@
 
       border-radius: rem(5);
 
+      &:hover {
+        .gridHover {
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+      }
+
       img {
         object-fit: contain;
         width: 100%;

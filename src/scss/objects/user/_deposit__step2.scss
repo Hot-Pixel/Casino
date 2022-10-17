@@ -93,11 +93,11 @@
       .tc__title {
         @extend .u-f--bold;
       }
-      
+
       .accorArrowDepo {
         transform: rotate(-90deg);
       }
-      
+
       .tc__header {
         cursor: pointer;
         display: flex;
@@ -300,6 +300,19 @@
     }
   }
 
+  .itemCard {
+    margin-bottom: rem(5);
+    .item__wrapper {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: $sm;
+
+      .radio {
+        margin-right: $md;
+      }
+    }
+  }
+
   &__btn {
     margin-top: $sm;
 
@@ -309,27 +322,29 @@
       margin-top: $md;
     }
 
-    button {
-      &:first-of-type {
-        margin-right: rem(5);
-        width: 30%;
+    .btn__white {
+      margin-right: rem(5);
+      width: 30%;
 
-        @include screen-sm {
-          width: 20%;
-        }
+      @include screen-sm {
+        width: 20%;
       }
-      &:last-of-type {
-        margin-left: rem(5);
-        width: 70%;
 
-        @include screen-sm {
-          width: 80%;
-        }
+      img {
+        transform: rotate(90deg);
       }
     }
 
-    .btn__white img {
-      transform: rotate(90deg);
+    .btn__blue  {
+      margin-left: rem(5);
+      width: 70%;
+
+      @include screen-sm {
+        width: 80%;
+      }
+      span {
+        color: white;
+      }
     }
   }
 }
@@ -424,7 +439,7 @@
       cursor: pointer;
       color: setcolor("secondary");
       @extend .u-f--bold;
-      
+
       &:not(:active) {
         transition: transform 200ms;
       }
@@ -432,7 +447,6 @@
       &:active {
         transform: scale(1.1);
       }
-      
     }
   }
 

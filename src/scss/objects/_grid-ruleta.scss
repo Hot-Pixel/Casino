@@ -23,27 +23,17 @@
   }
 
   .card {
+
     &__img {
       position: relative;
       z-index: 0;
       width: 100%;
       aspect-ratio: 1 / 0.5;
 
-      &.nuevo {
-        &::before {
-          position: absolute;
-          content: 'NUEVO';
-          z-index: 3;
-          top: 0;
-          left: 0;
-
-          padding: rem(10);
-
-          font-size: rem(12);
-          font-weight: 700;
-          background-color: setcolor('primary');
-          border-radius: rem(10) 0 rem(10) 0;
-          box-shadow: 0 0 0 rem(7) setcolor("black", "dark1");
+      &:hover {
+        .gridHover--ruleta {
+          opacity: 1;
+          transition: all 0.3s ease;
         }
       }
 

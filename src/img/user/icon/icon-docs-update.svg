@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="icon-docs-update" transform="translate(-7.5 -7.5)">
+    <circle id="Elipse_778" data-name="Elipse 778" cx="15" cy="15" r="15" transform="translate(7.5 7.5)" fill="#13171d" opacity="0.2"/>
+    <circle id="Elipse_779" data-name="Elipse 779" cx="11" cy="11" r="11" transform="translate(11.5 11.5)" fill="#fff"/>
+    <g id="Grupo_678" data-name="Grupo 678" transform="translate(12.387 20.858) rotate(-30)">
+      <path id="Trazado_5417" data-name="Trazado 5417" d="M123.05,31.861a5.732,5.732,0,0,0-9.959,3.871" transform="translate(-110.856 -29.252)" fill="none" stroke="#00d1bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Trazado_5418" data-name="Trazado 5418" d="M187.549,323.835A5.732,5.732,0,0,0,197.541,320" transform="translate(-183.842 -313.521)" fill="none" stroke="#00d1bc" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Trazado_5419" data-name="Trazado 5419" d="M1.927,250.55l2.718-2.822L0,247.137Z" transform="translate(0 -242.098)" fill="#00d1bc"/>
+      <path id="Trazado_5420" data-name="Trazado 5420" d="M570.816,219.88,568.1,222.7l4.645.59Z" transform="translate(-556.868 -215.38)" fill="#00d1bc"/>
+    </g>
+  </g>
+</svg>

@@ -12,20 +12,60 @@ header {
   left: 0;
   z-index: 8;
   width: 100%;
-  padding: $sm rem(20);
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
-  background-color: setcolor("black", "dark1");
 
   display: none;
+  flex-direction: column;
 
   @include screen-sm {
-    padding: rem(20) $md;
     display: flex;
+  }
+
+  &.verify .verifyBanner {
+    display: flex;
+  }
+
+  .verifyBanner {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: rem(10);
+    background-color: setcolor("warning");
+
+    &__text {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: flex;
+        align-items: center;
+        margin-left: rem(5);
+
+        span {
+          @extend .u-f--bold;
+        }
+
+        img {
+          margin-left: rem(5);
+        }
+      }
+    }
+  }
+
+  &__container {
+    padding: $sm rem(20);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: setcolor("black", "dark1");
+
+    @include screen-sm {
+      padding: rem(20) $md;
+    }
   }
 
   &__wrapper {
@@ -112,7 +152,6 @@ header {
       margin-left: $sm;
     }
   }
-
 }
 
 .header__mobile {
@@ -194,8 +233,11 @@ header {
 }
 
 .header.header--light {
-  transition: all 0.4s ease;
-  background-color: setcolor("gray", "light1");
+
+  .header__container {
+    transition: all 0.4s ease;
+    background-color: setcolor("gray", "light1");
+  }
 
   .header__logo svg g path:not(#Trazado_1, #Trazado_2) {
     fill: setcolor("black", "dark1");

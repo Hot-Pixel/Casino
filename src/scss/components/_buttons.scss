@@ -98,6 +98,15 @@
   }
 }
 
+.btn__verify--ghost {
+  @extend %buttons;
+  background-color: transparent;
+  border: 2px solid setcolor("gray", "mid");
+  span {
+    color: setcolor("gray", "mid");
+  }
+}
+
 .btn__white {
   @extend %buttons;
   background-color: white;

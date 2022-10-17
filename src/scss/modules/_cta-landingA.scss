@@ -34,7 +34,7 @@
     }
 
     &__title {
-        @extend .u-f--h1;
+        @extend .u-f--h1, .u-f--bold;
         color: setcolor('primary');
         text-align: center;
     }

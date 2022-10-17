@@ -6,7 +6,7 @@
 .affiliatesContentBenefits {
 	display: grid;
 	gap: $sm;
-	@extend %margin_top_medium, %margin_horizontal_main;
+	@extend %padding_medium, %margin_horizontal_main;
 
 	@include screen-sm {
 		column-gap: $lg;
@@ -51,6 +51,7 @@
 
 		&-item {
 			display: flex;
+			align-items: center;
 			gap: rem(10);
 
 			@include screen-sm {
@@ -60,7 +61,8 @@
 
 
 			&-image {
-				font-size: rem(38);
+				width: rem(38);
+				height: rem(38);
 			}
 
 

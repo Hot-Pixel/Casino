@@ -1,0 +1,33 @@
+<%
+const banner =
+  {
+    img: "apuestasVirtuales",
+    icon: "banner-apuestasVirtuales",
+    title: "Apuestas Virtuales",
+    breadcrumb: "Apuestas Virtuales"
+  }
+%>
+
+<%- include ('layout/head', {title: "Apuestas Virtuales" , css: "apuestas-virtuales" }) %>
+
+<main class="pageContainer">
+
+  <%- include ('layout/header', { mode: ""}) %>
+
+  <main class="has-header">
+
+    <%- include ('modules/banner', { data: banner }) %>
+
+    <%- include ('modules/grid-apuestas') %>
+
+    <%- include ('modules/text-block') %>
+
+    <%- include ('layout/footer') %>
+
+  </main>
+
+</main>
+
+
+<%- include ('modules/mpu') %>
+<%- include ('layout/scripts',  { script: 'apuestasVirtuales', screen: 'casino' }) %>
