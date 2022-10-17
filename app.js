@@ -45,6 +45,7 @@ import boardGame from "./routes/boardGame.js";
 import affiliates from "./routes/affiliates.js";
 import landingAffiliates from "./routes/landingAfiliados.js";
 import landingSEO from "./routes/landingSEO.js";
+import apuestasVirtuales from "./routes/apuestasVirtuales.js";
 import mpuDeposit from "./routes/mpuDeposit.js";
 import mpuSkrill from "./routes/mpuSkrill.js";
 import mpuDebit from "./routes/mpuDebit.js";
@@ -115,6 +116,7 @@ app.use("/mpu-paypal", mpuPaypal);
 app.use("/mpu-transfer", mpuTransfer);
 app.use("/mpu-paysafe", mpuPaysafe);
 app.use("/landing-seo", landingSEO);
+app.use("/apuestas-virtuales", apuestasVirtuales);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

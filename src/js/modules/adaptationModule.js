@@ -1,5 +1,8 @@
 function adaptationModule(selector) {
+
   let containers = document.querySelectorAll(selector);
+  heightMatch()
+  window.addEventListener("resize", heightMatch);
 
   function heightMatch() {
     let heights = [];
@@ -21,7 +24,6 @@ function adaptationModule(selector) {
     });
   }
 
-  window.addEventListener("resize", heightMatch);
 }
 
 export default adaptationModule;

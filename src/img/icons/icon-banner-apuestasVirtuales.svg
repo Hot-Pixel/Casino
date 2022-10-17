@@ -1,0 +1,13 @@
+<svg id="icon-banner-apuestasVirtuales" xmlns="http://www.w3.org/2000/svg" width="124.679" height="127.062" viewBox="0 0 124.679 127.062">
+  <g id="slot__white-outline__big" transform="translate(15.146 18.086)">
+    <circle id="Elipse_715" data-name="Elipse 715" cx="55" cy="55" r="55" transform="translate(-8 -8)" fill="#ff293e" opacity="0.65"/>
+    <path id="Star" d="M124.679,63.531h0c0-.794-1.588-1.191-1.588-1.191C95.3,54,71.869,31.765,64.722,5.559L63.531,1.191S63.134,0,62.34,0s-1.191,1.191-1.191,1.191L59.957,5.559C52.81,31.765,29.383,54,1.588,62.34c0,0-1.588.4-1.588,1.191s1.588,1.191,1.588,1.191C29.383,73.06,52.81,95.3,59.957,121.5l1.191,4.368s.4,1.191,1.191,1.191,1.191-1.191,1.191-1.191l1.191-4.368C71.869,95.3,95.3,73.06,123.091,64.722c-.4.4,1.191,0,1.588-1.191" transform="translate(-15.146 -18.086)" fill="#ff293e"/>
+    <g id="Icon" transform="translate(2.987 4.899)">
+      <g id="Grupo_753" data-name="Grupo 753" transform="translate(24.159 20.693)">
+        <path id="Trazado_5479" data-name="Trazado 5479" d="M73.041,43.8,62.573,33.334a5.628,5.628,0,0,1-3.79,1.624,4.915,4.915,0,0,1-3.79-1.624L33.334,54.992a5.628,5.628,0,0,1,1.624,3.79,4.916,4.916,0,0,1-1.624,3.79L43.8,73.041a5.628,5.628,0,0,1,3.79-1.624,4.916,4.916,0,0,1,3.79,1.624L73.041,51.383a5.234,5.234,0,0,1,0-7.58Z" transform="translate(-33.334 -33.334)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+        <rect id="Rectángulo_258" data-name="Rectángulo 258" width="20.395" height="10.288" transform="translate(9.008 23.554) rotate(-45)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+        <line id="Línea_216" data-name="Línea 216" x2="7.219" y2="7.219" transform="translate(18.049 14.439)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

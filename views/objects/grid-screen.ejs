@@ -6,6 +6,7 @@
         <% for( let index = 1; index < 10; index++ ) { %>
             <div class="gridScreen__item">
                 <img src="img/images/img-grid-<%= index %>.jpg" alt="">
+                <%- include ('../components/hover') %>
             </div>
         <% } %>
     </div>

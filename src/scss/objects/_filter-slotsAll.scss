@@ -15,6 +15,12 @@
     display: flex;
   }
 
+  &__container {
+    padding: $sm;
+    border-radius: rem(10);
+    background-color: setcolor('black', 'dark2');
+  }
+
   &--left {
     width: 33%;
     height: 100%;

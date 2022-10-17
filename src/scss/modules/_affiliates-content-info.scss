@@ -2,47 +2,42 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 .affiliatesContentInfo {
-	display: grid;
-	gap: rem(30);
-	@extend %margin_top_medium, %margin_horizontal_main;
+  overflow: hidden;
+  display: grid;
+  gap: $md;
+  @extend %padding_medium, %margin_horizontal_main;
 
-	@include screen-sm {
-		column-gap: rem(100);
-		grid-template-columns: 3fr 7fr;
-		align-items: center;
-	}
+  @include screen-sm {
+    column-gap: $xl;
+    grid-template-columns: 3fr 7fr;
+    align-items: center;
+  }
 
+  &__content {
+    &-title {
+      @extend .u-f--h1;
+      @extend .u-f--bold;
+    }
 
-	&__content {
+    &-subtitle {
+      margin-top: $sm;
+      margin-bottom: rem(10);
+      @extend .u-f--h4;
+      @extend .u-f--bold;
+    }
 
+    &-text {
+      opacity: 0.6;
+    }
+  }
 
-		&-title {
-			@extend .u-f--h1;
-			@extend .u-f--bold;
-		}
+  &__image {
+	width: 100%;
+    transform: translateX(rem(50));
 
-
-		&-subtitle {
-			margin-top: rem(20);
-			margin-bottom: rem(10);
-			@extend .u-f--h4;
-			@extend .u-f--bold;
-		}
-
-
-		&-text {
-			opacity: .6;
-		}
-	}
-
-
-	&__image {
-		width: 125%;
-
-		@include screen-sm {
-			max-width: 100%;
-		}
-	}
+    @include screen-sm {
+      max-width: 100%;
+    }
+  }
 }

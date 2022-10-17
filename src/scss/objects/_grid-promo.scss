@@ -48,13 +48,13 @@
 
   &-body {
     color: setcolor("gray", "mid");
-    padding-bottom: $md;
+    padding-bottom: $lg;
   }
 
   &-btn {
     display: flex;
     justify-content: center;
-    transform: translateY(50%);
+    transform: translateY(-50%);
 
     a {
       width: 70%;

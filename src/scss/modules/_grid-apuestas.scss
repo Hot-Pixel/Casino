@@ -1,0 +1,29 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.gridApuestas {
+    @extend %margin_horizontal_main, %margin_top_medium;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row;
+    gap: rem(10);
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include screen-sm {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @include screen-lg {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    &__item {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

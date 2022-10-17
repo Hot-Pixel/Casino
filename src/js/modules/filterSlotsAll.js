@@ -22,12 +22,12 @@ const filterSlotsAll = () => {
       if (e.currentTarget.classList.contains("mixitup-control-active")) {
         e.currentTarget.firstElementChild.setAttribute(
           "src",
-          "img/icon-filter-noActive.svg"
+          "img/icons/icon-filter-noActive.svg"
         );
       } else {
         e.currentTarget.firstElementChild.setAttribute(
           "src",
-          "img/icon-filter-active.svg"
+          "img/icons/icon-filter-active.svg"
         );
       }
     });

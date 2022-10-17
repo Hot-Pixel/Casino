@@ -1,0 +1,37 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.validation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: rem(45);
+  width: 100%;
+  padding: 0 rem(10) 0 $md;
+
+  border-width: 4px;
+  border-style: solid;
+  border-radius:  rem(100);
+
+  &__text {
+    @extend .u-f--bold;
+    font-size: rem(12);
+  }
+
+  &--alert {
+    border-color: setcolor("danger", "light");
+    background-color: setcolor("danger");
+  }
+
+  &--success {
+    border-color: setcolor("success", "light");
+    background-color: setcolor("success");
+  }
+
+  &--warning {
+    border-color: setcolor("warning", "light");
+    background-color: setcolor("warning");
+  }
+}
