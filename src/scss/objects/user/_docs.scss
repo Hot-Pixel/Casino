@@ -19,13 +19,13 @@
       }
     }
 
-    &.accept p {
+    &--accept p {
       color: setcolor("secondary");
     }
-    &.alert p {
+    &--alert p {
       color: setcolor("danger");
     }
-    &.warning p {
+    &--warning p {
       color: setcolor("warning");
     }
   }
@@ -83,9 +83,9 @@
         position: absolute;
         bottom: rem(-50);
         left: 50%;
+        transform: translateX(-50%);
 
-        button {
-          transform: translateX(-50%);
+        a {
           display: flex;
           align-items: center;
 
@@ -184,6 +184,10 @@
         justify-content: flex-start !important;
         margin-bottom: rem(5);
       }
+    }
+
+    &-qr {
+      max-width: 100%;
     }
 
     &-expired {
