@@ -34,6 +34,17 @@
                         <p>Puedes consultar el historial que te interesa con los filtros que presenta el siguiente formulario de búsqueda</p>
                     </div>
                     <form action="">
+                        <input id="day" name="day" type="hidden" value="" maxlength="2">
+                        <input name="month" id="month" type="hidden" value="">
+                        <input id="year" name="year" type="hidden" value="" maxlength="4">
+                        <input id="day_end" name="day_end" type="hidden" value="" maxlength="2">
+                        <input name="month_end" id="month_end" type="hidden" value="">
+                        <input id="year_end" name="year_end" type="hidden" value="" maxlength="4">
+                        <input type="hidden" value="1" name="page">
+                        <input type="hidden" value="1" name="last_page">
+                        <input type="hidden" value="0" name="balance_type">
+                        <input type="hidden" value="0" name="serviceId">
+                        <input type="hidden" value="0" name="roomId">
                         <div class="history__inputs">
                             <input class="input__date" type="text" name="" id="startDate" placeholder="Fecha de Inicio">
                             <input class="input__date" type="text" name="" id="endDate" placeholder="Fecha de fin" readonly>
