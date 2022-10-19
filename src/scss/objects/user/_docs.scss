@@ -19,13 +19,13 @@
       }
     }
 
-    &.accept p {
+    &--accept p {
       color: setcolor("secondary");
     }
-    &.alert p {
+    &--alert p {
       color: setcolor("danger");
     }
-    &.warning p {
+    &--warning p {
       color: setcolor("warning");
     }
   }
@@ -83,9 +83,9 @@
         position: absolute;
         bottom: rem(-50);
         left: 50%;
+        transform: translateX(-50%);
 
-        button {
-          transform: translateX(-50%);
+        a {
           display: flex;
           align-items: center;
 
@@ -184,6 +184,10 @@
         justify-content: flex-start !important;
         margin-bottom: rem(5);
       }
+    }
+
+    &-qr {
+      max-width: 100%;
     }
 
     &-expired {
@@ -411,7 +415,7 @@
 
   .docsVerify__steps—success {
     p {
-      color: setcolor('secondary');
+      color: setcolor("secondary");
     }
     .spinner {
       display: none;
@@ -420,7 +424,7 @@
 
   .docsVerify__steps—loading {
     p {
-      color: setcolor('black','dark1');
+      color: setcolor("black", "dark1");
     }
     svg {
       display: none;
@@ -432,7 +436,7 @@
 
   .docsVerify__steps—base {
     p {
-      color: setcolor('black','dark1');
+      color: setcolor("black", "dark1");
     }
     svg {
       display: none;
@@ -444,7 +448,7 @@
 
   .docsVerify__steps—error {
     p {
-      color: setcolor('warning');
+      color: setcolor("warning");
     }
     svg {
       display: none;
@@ -603,10 +607,23 @@
         color: setcolor("black", "dark1");
       }
 
-      button {
-        width: auto;
+      .file__name {
+        color: setcolor("black", "dark1");
+        margin-top: $sm;
+      }
+
+      .file__label {
         margin-top: $sm;
         padding: $sm;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+
+        input {
+          position: absolute;
+          opacity: 0;
+          left: 0;
+        }
       }
     }
 

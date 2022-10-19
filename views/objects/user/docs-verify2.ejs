@@ -13,30 +13,49 @@
                 <p>Vamos a verificar tu cuenta en dos sencillos pasos. Sólo debes enviarnos tu documentación.</p>
             </div>
         </div>
-        <form action="">
+        <form action="/members/my-uploads2.html" id="upload-attachment" enctype="multipart/form-data" method="post">
             <div class="idForm user__card">
                 <div class="idForm__select">
                     <p>Tipo de documento:</p>
                     <div class="idForm__radio">
-                        <%- include ('../../components/radio') %>
+                        <div class="radioBtn">
+                            <input type="radio" name="type" value="test1" id="test1" checked>
+                            <div class="container">
+                                <span></span>
+                            </div>
+                        </div>
                         <p>DNI</p>
                     </div>
                     <div class="idForm__radio">
-                        <%- include ('../../components/radio') %>
+                        <div class="radioBtn">
+                            <input type="radio" name="type" value="test2" id="test2">
+                            <div class="container">
+                                <span></span>
+                            </div>
+                        </div>
                         <p>Pasaporte</p>
                     </div>
                     <div class="idForm__radio">
-                        <%- include ('../../components/radio') %>
+                        <div class="radioBtn">
+                            <input type="radio" name="type" value="test3" id="test3">
+                            <div class="container">
+                                <span></span>
+                            </div>
+                        </div>
                         <p>Lorem Ipsum</p>
                     </div>
                 </div>
                 <div class="idForm__upload">
                     <p>Adjunta el documento</p>
                     <p>(Máximo 5Mb)</p>
-                    <button class="btn__blue">SELECCIONAR ARCHIVO</button>
+                    <label for="file" class="file__label btn__blue">
+                        SELECCIONAR ARCHIVO
+                        <input type="file" id="file" name="file" size="60" accept="image/*" required>
+                    </label>
+                    <div class="file__name"></div>
                 </div>
                 <div class="idForm__message">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <textarea name="descriptionEnter" id="descriptionEnter" cols="30" rows="10" placeholder="Mensaje"></textarea>
                 </div>
                 <div class="idForm__submit">
                     <button class="btn__blue " type="submit">
