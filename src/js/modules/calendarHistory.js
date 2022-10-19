@@ -17,11 +17,11 @@ function calendarHistory() {
     disableMobile: "true",
     onChange: function(selectedDates, dateStr, instance) {
       inputStartDay.value = selectedDates[0].getDate();
-      inputStartMonth.value = selectedDates[0].getMonth() + 1;
+      inputStartMonth.value = selectedDates[0].getMonth();
       inputStartYear.value = selectedDates[0].getFullYear();
       if (selectedDates[1]) {
         inputEndDay.value = selectedDates[1].getDate();
-        inputEndMonth.value = selectedDates[1].getMonth() + 1;
+        inputEndMonth.value = selectedDates[1].getMonth();
         inputEndYear.value = selectedDates[1].getFullYear();
       }
     }
