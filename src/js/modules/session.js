@@ -47,7 +47,13 @@ function Session() {
                 console.log('Result ' + data.result);
                 quering = false;
                 if (!data.result) {
-                    mpu('/inactividadWeb.htm');
+                    mpu({ 
+                        title: 'Sesión caducada', 
+                        body: 'Por tu seguridad hemos procedido a desconectarte debido al prolongado estado de inactividad.', 
+                        onClose: () => { 
+                            window.location.href = '/logout.jsp'; 
+                        } 
+                    });
                 }
             })
             .catch(err => {
