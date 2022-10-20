@@ -70,13 +70,11 @@
 
   &__progress {
     position: relative;
-    z-index: 1;
-    width: 100%;
+    
     height: rem(25);
-
     background-color: #bcc0c4;
     border-radius: rem(30);
-    overflow: hidden;
+    display: flex;
 
     span {
       position: absolute;
@@ -85,6 +83,23 @@
       height: 100%;
 
       border-radius: rem(30);
+    }
+
+    &-bar {
+      flex: 1 1 auto;
+      appearance: none;
+      height: 100%;
+      border-radius: 1.875rem;
+      overflow: hidden;
+      
+      &::-webkit-progress-bar {
+        background-color: #868b92;
+      }
+      
+      &::-webkit-progress-value {
+        border-radius: 1.875rem;
+        background: linear-gradient(to right, #2074fe, setcolor("secondary"));
+      }
     }
 
     &--gradient {
@@ -100,11 +115,9 @@
     p {
       @extend .u-f--bold;
 
-      position: absolute;
-      z-index: 5;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 3%;
+      flex: 0 1 auto;
+      padding: 0 0.4rem;
+      align-self: center;
     }
   }
 }
