@@ -89,6 +89,7 @@ function Mpu() {
 
     return {
         mpu,
+        mpuDataTriggers,
         closeMpu
     }
 }
