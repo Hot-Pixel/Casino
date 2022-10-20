@@ -125,18 +125,26 @@ body.mpu-open {
 
         &--confirm {
             background-color: setcolor("secondary");
+
+            &:hover {
+                background-color: setcolor("secondary", "dark");
+            }
         }
         
         &--deny {
             background-color: setcolor("warning");
+
+            &:hover {
+                background-color: setcolor("warning", "dark");
+            }
         }
         
         &--cancel {
             background-color: setcolor("primary");
-        }
 
-        &:hover {
-            background-color: setcolor("gray", "light1");
+            &:hover {
+                background-color: setcolor("primary", "dark");
+            }
         }
     }
 }
