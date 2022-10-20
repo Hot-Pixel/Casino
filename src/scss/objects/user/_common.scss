@@ -9,6 +9,11 @@
   border-radius: rem(10);
   box-shadow: 3px 3px 10px 0px rgba(122, 122, 122, 0.1);
   background-color: setcolor("gray", "light1");
+  color: setcolor("black", "dark1");
+
+  p {
+    color: setcolor("black", "dark1");
+  }
 
   &-title {
     @extend .u-f--h2, .u-f--bold;
