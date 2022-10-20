@@ -30,7 +30,7 @@
   @extend %buttons;
   color: setcolor("white");
   background-color: setcolor("secondary");
-  padding: 0;
+  // padding: 0;
 
   &:hover {
     color: setcolor("gray", "lighter");

@@ -4,23 +4,23 @@
         <p>Mi Historial</p>
     </section>
     <section class="history__navbar history__navbar-desktop">
-        <button class="history__nav is-active" data-block=".detailBlock">Informe detallado</button>
-        <button class="history__nav" data-block=".freespinsBlock">Freespins</button>
-        <button class="history__nav" data-block=".movementsBlock">Depósitos y retiradas</button>
-        <button class="history__nav" data-block=".annualBlock">Resumen anual</button>
-        <button class="history__nav" data-block=".bondsBlock">Bonos</button>
-        <button class="history__nav" data-block=".slotsBlock">Slots</button>
+        <a href="#" class="history__nav is-active" data-block=".detailBlock">Informe detallado</a>
+        <a href="#" class="history__nav" data-block=".freespinsBlock">Freespins</a>
+        <a href="#" class="history__nav" data-block=".movementsBlock">Depósitos y retiradas</a>
+        <a href="#" class="history__nav" data-block=".annualBlock">Resumen anual</a>
+        <a href="#" class="history__nav" data-block=".bondsBlock">Bonos</a>
+        <a href="#" class="history__nav" data-block=".slotsBlock">Slots</a>
     </section>
     <section class="history__navbar history__navbar-mobile splide">
         <div class="splide__gradient--light"></div>
         <div class="splide__track">
             <div class="splide__list">
-                <button class="splide__slide history__nav is-active" data-block=".detailBlock">Informe detallado</button>
-                <button class="splide__slide history__nav" data-block=".freespinsBlock">Freespins</button>
-                <button class="splide__slide history__nav" data-block=".movementsBlock">Depósitos y retiradas</button>
-                <button class="splide__slide history__nav" data-block=".annualBlock">Resumen anual</button>
-                <button class="splide__slide history__nav" data-block=".bondsBlock">Bonos</button>
-                <button class="splide__slide history__nav" data-block=".slotsBlock">Slots</button>
+                <a href="#" class="splide__slide history__nav is-active" data-block=".detailBlock">Informe detallado</a>
+                <a href="#" class="splide__slide history__nav" data-block=".freespinsBlock">Freespins</a>
+                <a href="#" class="splide__slide history__nav" data-block=".movementsBlock">Depósitos y retiradas</a>
+                <a href="#" class="splide__slide history__nav" data-block=".annualBlock">Resumen anual</a>
+                <a href="#" class="splide__slide history__nav" data-block=".bondsBlock">Bonos</a>
+                <a href="#" class="splide__slide history__nav" data-block=".slotsBlock">Slots</a>
             </div>
         </div>
     </section>
@@ -34,6 +34,17 @@
                         <p>Puedes consultar el historial que te interesa con los filtros que presenta el siguiente formulario de búsqueda</p>
                     </div>
                     <form action="">
+                        <input id="day" name="day" type="hidden" value="" maxlength="2">
+                        <input name="month" id="month" type="hidden" value="">
+                        <input id="year" name="year" type="hidden" value="" maxlength="4">
+                        <input id="day_end" name="day_end" type="hidden" value="" maxlength="2">
+                        <input name="month_end" id="month_end" type="hidden" value="">
+                        <input id="year_end" name="year_end" type="hidden" value="" maxlength="4">
+                        <input type="hidden" value="1" name="page">
+                        <input type="hidden" value="1" name="last_page">
+                        <input type="hidden" value="0" name="balance_type">
+                        <input type="hidden" value="0" name="serviceId">
+                        <input type="hidden" value="0" name="roomId">
                         <div class="history__inputs">
                             <input class="input__date" type="text" name="" id="startDate" placeholder="Fecha de Inicio">
                             <input class="input__date" type="text" name="" id="endDate" placeholder="Fecha de fin" readonly>
@@ -111,6 +122,9 @@
                             <p>04/03/2022 12:20:14</p>
                             <p>0</p>
                         </div>
+                    </div>
+                    <div class="history__download-wrapper">
+                        <a href="#" class="download__btn btn__blue">DESCARGAR</a>
                     </div>
                 </div>
             </section>

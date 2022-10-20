@@ -3,6 +3,8 @@ function historyNavBar() {
   const historyBlock = document.querySelectorAll(".block");
 
   historyNav.forEach((nav) => {
+    if(nav.getAttribute('href') !== "#") return;
+
     nav.addEventListener("click", (e) => {
       historyBlock.forEach((block) => {
         block.classList.remove("active-block");
