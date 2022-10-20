@@ -27,8 +27,14 @@ function Mpu() {
             fullscreen: true,
             title: '',
             body: '',
+            confirmText: '',
+            cancelText: '',
+            denyText: '',
             onOpen: () => {},
-            onClose: () => {}
+            onClose: () => {},
+            onConfirm: () => closeMpu(),
+            onCancel: () => closeMpu(),
+            onDeny: () => closeMpu()
         };
 
         settings = Object.assign({}, defaults, options);
@@ -42,6 +48,29 @@ function Mpu() {
         } else {
             mpu.querySelector('.mpu__title').innerHTML = settings.title;
             mpu.querySelector('.mpu__body').innerHTML = settings.body; 
+            if(!settings.confirmText && !settings.cancelText && !settings.denyText) {
+                mpu.querySelector('.mpu__actions').remove();
+            } else {
+                if (settings.confirmText) {
+                    mpu.querySelector('.mpu__btn--confirm').innerHTML = settings.confirmText;
+                    mpu.querySelector('.mpu__btn--confirm').addEventListener('click', settings.onConfirm);
+                } else {
+                    mpu.querySelector('.mpu__btn--confirm').remove();
+                }
+                if (settings.cancelText) {
+                    mpu.querySelector('.mpu__btn--cancel').innerHTML = settings.cancelText;
+                    mpu.querySelector('.mpu__btn--cancel').addEventListener('click', settings.onCancel);
+                } else {
+                    mpu.querySelector('.mpu__btn--cancel').remove();
+                }
+                if (settings.denyText) {
+                    mpu.querySelector('.mpu__btn--deny').innerHTML = settings.denyText;
+                    mpu.querySelector('.mpu__btn--deny').addEventListener('click', settings.onDeny);
+                } else {
+                    mpu.querySelector('.mpu__btn--deny').remove();
+                }
+            }
+
         }
         
         mpu.querySelector('.mpu__btn-close').addEventListener('click', closeMpu);
@@ -73,7 +102,7 @@ function Mpu() {
         setTimeout(() => {
             mpu.remove();
             document.body.classList.toggle('mpu-open', false);
-            settings.onClose();
+            if (typeof settings.onClose === "function") settings.onClose();
         }, ANIMATION_DURATION);
     }
     

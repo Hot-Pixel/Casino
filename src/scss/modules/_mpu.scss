@@ -111,4 +111,32 @@ body.mpu-open {
             display: flex;
         }
     }
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: $sm;
+    }
+
+    &__btn {
+        @extend %buttons;
+        text-transform: uppercase;
+
+        &--confirm {
+            background-color: setcolor("secondary");
+        }
+        
+        &--deny {
+            background-color: setcolor("warning");
+        }
+        
+        &--cancel {
+            background-color: setcolor("primary");
+        }
+
+        &:hover {
+            background-color: setcolor("gray", "light1");
+        }
+    }
 }
