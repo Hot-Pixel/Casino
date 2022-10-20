@@ -1,10 +1,10 @@
 <%
-const banner =
+const breadcrumb =
   {
-    img: "casino",
-    icon: "banner-casino",
-    title: "Juegos de Casino",
-    breadcrumb: "Slots"
+    first: "Casino de Barcelona",
+    second: undefined,
+    third: undefined,
+    current: "Promociones"
   }
 %>
 
@@ -18,7 +18,7 @@ const banner =
 
   <section class="has-header">
 
-    <%- include ('modules/header-promo') %>
+    <%- include ('modules/header-promo', { bc: breadcrumb }) %>
 
     <%- include ('modules/finder-promo')%>
 

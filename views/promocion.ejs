@@ -1,6 +1,14 @@
+<%
+const breadcrumb =
+  {
+    first: "Casino de Barcelona",
+    second: "Promociones",
+    third: undefined,
+    current: "La estela del campeón"
+  }
+%>
+
 <%- include ('layout/head', { title: "Promocion" , css: "promocion" }) %>
-
-
 
 <main class="pageContainer">
 
@@ -8,7 +16,7 @@
 
     <section class="has-header">
 
-        <%- include ('modules/block-promo') %>
+        <%- include ('modules/block-promo', {bc: breadcrumb}) %>
 
         <%- include ('modules/countdown') %>
 

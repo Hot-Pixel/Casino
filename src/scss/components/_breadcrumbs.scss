@@ -3,16 +3,32 @@
 @use "../tools" as *;
 
 .breadcrumbs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  a {
+  @include screen-sm {
+    justify-content: flex-start
+  }
+
+  a span {
     @extend .u-f--h5;
   }
 
-  svg {
+  a span:not(.breadcrumbs__current) {
+    color: white;
+  }
+
+  img {
     margin: 0 rem(10);
   }
 
-  span:last-of-type {
+  &__current {
     color: setcolor("gray", "dark1");
+    @extend .u-f--h5;
   }
+}
+
+.bannerFavorites__breadcrumb .breadcrumbs {
+  justify-content: center !important;
 }

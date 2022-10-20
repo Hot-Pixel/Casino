@@ -62,19 +62,19 @@
         display: none;
 
         @include screen-sm {
-          display: block;
+          display: flex;
         }
       }
     }
 
-    img {
+    .banner__icon {
       margin-bottom: rem(20);
       width: rem(85);
       height: rem(85);
 
       @include screen-sm {
-        width: 95px;
-        height: 95px;
+        width: $xl;
+        height: $xl;
         margin-bottom: 0;
         margin-right: $sm;
       }
@@ -83,10 +83,6 @@
 }
 
 .bannerFooter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   background-color: setcolor('black');
   padding: $sm 0;
 
