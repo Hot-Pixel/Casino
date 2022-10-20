@@ -210,4 +210,10 @@
   .active-block {
     display: grid !important;
   }
+
+  &__download-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: $sm;
+  }
 }
