@@ -52,6 +52,12 @@
             color: setcolor("secondary");
             @extend .u-f--bold;
           }
+
+          &--unverified {
+            p {
+              color: setcolor("danger");
+            }
+          }
         }
       }
 
