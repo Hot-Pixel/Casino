@@ -125,7 +125,7 @@ gulp.task("watch", gulp.series("sass", "js", "copyImg", async done => {
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", 'reload'));
   watch(paths.scripts.watcher).on("change", gulp.series("js", 'reload'));
-  watch(paths.images.watcher).on("add", gulp.series("imageMin"));
+  watch(paths.images.watcher).on("add", gulp.series("copyImg"));
   watch(paths.ejs.watcher).on("change", gulp.series('reload'));
   done();
 }));
