@@ -1,3 +1,4 @@
+import ZenDesk from "../modules/zenDesk";
 import marginHeader from "../modules/marginHeader";
 import menuHeaderMobile from "../modules/menuHeaderMobile";
 import Mpu from "../modules/mpu";
@@ -8,6 +9,7 @@ menuHeaderMobile();
 userMenuMobile();
 
 Mpu().mpuDataTriggers();
+ZenDesk().start();
 
 window.Mpu = Mpu;
 window.mpu = Mpu().mpu;
