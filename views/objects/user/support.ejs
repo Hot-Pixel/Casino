@@ -11,8 +11,8 @@
             <div class="alert__wrapper"></div>
             <p>Puedes escribirnos un email a través de <strong>soporte@casinobarcelona.es</strong></p>
             <p>Si lo prefieres, puedes contactarnos desde este formulario:</p>
-            <input type="text" placeholder="Asunto" id="supportForm">
-            <textarea name="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+            <input type="text" placeholder="Asunto" id="supportForm" required>
+            <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
             <div class="support__btn">
                 <button class="btn__blue btn__icons btn__fontSm" type="submit">
                     <img src="img/user/icon/icon-docs-send-btn.svg" alt="">
@@ -26,7 +26,7 @@
                 <p>Habla diréctamente con un agente mediante nuestro chat</p>
             </div>
             <div class="support__btn">
-                <button class="btn__blue btn__icons btn__fontSm" type="submit">
+                <button class="btn__blue btn__icons btn__fontSm" id="openChat">
                     <img src="img/user/icon/icons-support-chat.svg" alt="">
                     <span>ESCRÍBENOS</span>
                 </button>
@@ -41,10 +41,10 @@
                 <p><strong>De 10:00 a 24:00</strong></p>
             </div>
             <div class="support__btn">
-                <button class="btn__blue btn__icons btn__fontSm">
+                <a href="tel:+34900354354" class="btn__blue btn__icons btn__fontSm">
                     <img src="img/user/icon/icon-support-phone.svg" alt="">
                     <span>LLÁMANOS</span>
-                </button>
+                </a>
             </div>
         </div>
     </section>
