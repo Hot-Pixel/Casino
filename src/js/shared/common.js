@@ -4,7 +4,6 @@ import menuHeaderMobile from "../modules/menuHeaderMobile";
 import Mpu from "../modules/mpu";
 import userMenuMobile from "../modules/userMenuMobile";
 
-marginHeader();
 menuHeaderMobile();
 userMenuMobile();
 
@@ -14,3 +13,7 @@ ZenDesk().start();
 window.Mpu = Mpu;
 window.mpu = Mpu().mpu;
 window.closeMpu = Mpu().closeMpu;
+
+window.addEventListener("load", () => {
+    marginHeader();
+});
