@@ -51,4 +51,10 @@ const bannerData =
 </main>
 
 <%- include ('modules/mpu') %>
+<script type="text/javascript" src="https://login.casinobarcelona.es/jswrapper/integration.js.php?casino=casinobarcelona.es"></script>
 <%- include ('layout/scripts', { script: 'poker', screen: 'casino' }) %>
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    PlaytechPoker({ isMobile: true, externalId: "", sessionId: ""});
+  });
+</script>
