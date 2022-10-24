@@ -122,7 +122,7 @@ export function bindLogoutButtons() {
     logoutButtons.forEach(function (button) {
         button.addEventListener('click', function (e) {
             e.preventDefault();
-            lastSessionInfo();
+            Session().lastSessionInfo();
         });
     });
 }
