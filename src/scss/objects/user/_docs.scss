@@ -299,6 +299,12 @@
       }
     }
   }
+  
+  .verificacion-automatica-btn {
+    @include screen-sm {
+      display: none;
+    }
+  }
 }
 
 .docsVerify {
