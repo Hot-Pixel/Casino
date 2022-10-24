@@ -6,18 +6,18 @@ function marginHeader() {
 
   if (window.innerWidth < 1280) {
     contentBlocks.forEach((block) => {
-      block.style.marginTop = `${headerMobile.offsetHeight}px`;
+      block.style.paddingTop = `${headerMobile.offsetHeight}px`;
 
       window.addEventListener("resize", () => {
-        block.style.marginTop = `${headerMobile.offsetHeight}px`;
+        block.style.paddingTop = `${headerMobile.offsetHeight}px`;
       });
     });
   } else {
     contentBlocks.forEach((block) => {
-      block.style.marginTop = `${header.offsetHeight}px`;
+      block.style.paddingTop = `${header.offsetHeight}px`;
 
       window.addEventListener("resize", () => {
-        block.style.marginTop = `${header.offsetHeight}px`;
+        block.style.paddingTop = `${header.offsetHeight}px`;
       });
     });
 
