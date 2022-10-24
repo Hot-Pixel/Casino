@@ -13,6 +13,7 @@ import cleanCSS from "gulp-clean-css";
 import rename from "gulp-rename";
 import ejsCompiler from "gulp-ejs";
 import esbuild from "esbuild";
+import beautify from "gulp-beautify";
 
 import * as rollup from "rollup";
 import { babel } from "@rollup/plugin-babel";
@@ -139,6 +140,14 @@ gulp.task('reload', async done => {
 /*---------------------------------------------------*/
 
 /* Bundle Tasks */
+gulp.task('beautify-html', function() {
+  return gulp
+    .src(paths.ejs.dest + '*.html')
+    .pipe(beautify.html({ max_preserve_newlines: 1, indent_with_tabs: true }))
+    .pipe(gulp.dest(paths.ejs.dest));
+});
+
+
 gulp.task("bundleEjs", async done => {
   gulp
     .src(paths.ejs.src)
@@ -200,4 +209,4 @@ gulp.task("bundleCss", async done => {
 //   done();
 // });
 
-gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss", "bundleImg"));
+gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss", "bundleImg", "beautify-html"));
