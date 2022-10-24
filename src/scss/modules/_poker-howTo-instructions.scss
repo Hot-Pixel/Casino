@@ -51,4 +51,14 @@
   li {
     padding-bottom: rem(5);
   }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    margin: $sm auto;
+    
+    @include screen-sm {
+      max-width: 50%;
+    }
+  }
 }
