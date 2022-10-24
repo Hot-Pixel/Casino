@@ -18,7 +18,7 @@ function initAutoexclusion() {
     });
 }
 
-function initLimits() {
+function initLimits({ questionarieUrl }) {
     const limitsForm = document.getElementById('limitsForm');
     if (!limitsForm) return;
 
@@ -38,7 +38,7 @@ function initLimits() {
         }
         
         if(limitsIncreased()) {
-            Mpu().mpu('/mpu-questionarie');
+            Mpu().mpu(questionarieUrl);
             return;
         }
         
@@ -57,8 +57,6 @@ function showConfirmation(form) {
         }
     })
 }
-
-window.showConfirmation = showConfirmation;
 
 function limitsChanged() {
     const initialDaily = document.getElementById('initialDailyLimit').value;
@@ -100,5 +98,6 @@ function limitsIncreased() {
     return false;
 }
 
-initAutoexclusion();
-initLimits();
+window.showConfirmation = showConfirmation;
+window.initLimits = initLimits;
+window.initAutoexclusion = initAutoexclusion;
