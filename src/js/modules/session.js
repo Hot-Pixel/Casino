@@ -47,12 +47,12 @@ function Session() {
                 console.log('Result ' + data.result);
                 quering = false;
                 if (!data.result) {
-                    mpu({ 
-                        title: 'Sesión caducada', 
-                        body: 'Por tu seguridad hemos procedido a desconectarte debido al prolongado estado de inactividad.', 
-                        onClose: () => { 
-                            window.location.href = '/logout.jsp'; 
-                        } 
+                    mpu({
+                        title: 'Sesión caducada',
+                        body: 'Por tu seguridad hemos procedido a desconectarte debido al prolongado estado de inactividad.',
+                        onClose: () => {
+                            window.location.href = '/logout.jsp';
+                        }
                     });
                 }
             })
@@ -62,71 +62,69 @@ function Session() {
             });
     }
 
-    function lastSessionInfo() {
-        window.open('/logout.jsp', '_self');
+    function logout() {
+        if (window.location.href.includes("sportncoheader")) {
+            console.log("Sending CLOSING message");
+            parent.postMessage({ "method": "CLOSING" }, "https://apuestas.casinobarcelona.es/");
+        }
+        window.location.href = '/logout.jsp';
     }
 
     // TODO: Make lastSessionInfo popup
-    /*
     function lastSessionInfo() {
 
-        if (!String.prototype.startsWith) {
-            String.prototype.startsWith = function (search, pos) {
-                return this.substr(!pos || pos < 0 ? 0 : +pos, search.length) === search;
-            };
-        }
-        url = "/servlet/sessionSummary?rnd=" + new Date();
-        $.ajax({
-            dataType: "json",
-            data: "",
-            url: url,
-            success: function (json) {
-                console.log("|lastSessionInfo|");
+        const url = "/servlet/sessionSummary?rnd=" + new Date();
+        fetch(url, {
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+            .then(res => res.json())
+            .then(json => {
                 console.log(json);
                 if (json.result == "ok" && json.data.length > 0) {
-    
-                    if (window.location.href.startsWith("https://www.casinobarcelona.es/sportncoheader-apuestas2.html")) {
+                    if (window.location.href.includes("sportncoheader")) {
                         console.log("Sending OPENING message");
                         parent.postMessage({ "method": "OPENING" }, "https://apuestas.casinobarcelona.es/");
                     }
-    
-                    var table = "<div id='tablecontainer'><table class='tables' id='resumenSession'><thead>";
+                    let table = "<div id='tablecontainer'><table class='tables' id='resumenSession'><thead>";
                     table += "<tr><th>Juego</th><th>Apostado</th><th>Ganado</th></tr></thead><tbody>";
                     for (var i = 0; i < json.data.length; i++) {
                         var wagers = json.data[i].wagers;
                         var winnings = json.data[i].winnings;
-    
+
                         table += "<tr><td title='Juego'>" + json.data[i].room_name + "</td><td title='Apostado'>" + wagers.formatMoney(2) + "</td><td title='Ganado'>" + winnings.formatMoney(2) + "</td></tr>";
                     }
                     table += "</tbody></table></div>";
-                    $('#summaryData').html(table);
-    
-                    $("#lastSlotSessionInfo").show();
-                    window.scrollTo(0, 0);
-                    eraseCookie('logueado');
-    
+                    mpu({
+                        title: 'Resumen de la sesión',
+                        body: table,
+                        onClose: () => {
+                            logout();
+                        }
+                    });
                 } else {
-    
-                    eraseCookie('logueado');
-    
-                    if (window.location.href.startsWith("https://www.casinobarcelona.es/sportncoheader-apuestas2.html")) {
-                        console.log("Sending LOGOUT message");
-                        parent.postMessage({ "method": "LOGOUT" }, "https://apuestas.casinobarcelona.es/");
-                        window.open('/logout.jsp', '_parent');
-                    } else {
-                        window.open('/logout.jsp', '_self');
-                    }
+                    logout();
                 }
-            }
-        });
+            });
     }
-    */
 
     return {
         startTimeWeb1,
-        lastSessionInfo
+        lastSessionInfo,
+        logout
     };
+    
+}
 
+export function bindLogoutButtons() {
+    let logoutButtons = document.querySelectorAll('[data-logout]');
+    logoutButtons.forEach(function (button) {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            lastSessionInfo();
+        });
+    });
 }
 
 export default Session;
