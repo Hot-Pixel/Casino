@@ -2,172 +2,53 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+.table__wrapper {
+	overflow-x: auto;
+	border-radius: 5px 5px 0 0;
 
-.table {
-	margin-top: 30px;
+	.table {
+		margin-top: 30px;
+		width: 100%;
+		border: none;
+		border-collapse: collapse;
+		text-align: center;
+		border-radius: rem(5);
+		overflow: hidden;
+		min-width: rem(400);
 
-
-	&__title {
-		margin-bottom: 5px;
-		padding: 40px 30px;
-		border-radius: rem(10);
-		background-color: setcolor('black', 'dark4');
-		background-image: linear-gradient(to right, setcolor('black', 'dark4') 50%, setcolor('black', 'dark2'));
-
-		span {
-			@extend .u-f--h3;
-			@extend .u-f--bold;
-
-			& + span {
-				margin-left: 20px;
+		thead {
+			tr {
+				@extend .u-f--bold;
+				background-color: setcolor("black", "dark4");
+				color: setcolor("white");
+				text-transform: uppercase;
 			}
 		}
-	}
 
+		tbody {
+			tr {
+				background-color: setcolor("black");
+				color: setcolor("white");
+				border-top: setcolor("black", "dark1") 1px solid;
+				transition: all 200ms;
 
-	&__wrapper {
-		overflow-x: auto;
-		border-radius: 5px 5px 0 0;
-	}
-
-
-	&__table {
-		width: max-content;
-		min-width: 100%;
-	}
-
-
-	&__header,
-	&__row {
-		display: grid;
-		gap: rem(20);
-		grid-template-columns: repeat( 5, auto );
-		align-items: center;
-		padding-right: 30px;
-		padding-left: 30px;
-
-		@include screen-sm {
-			grid-template-columns: 1fr 8fr 2fr 5fr;
-		}
-	}
-
-
-	&__header {
-		padding-top: 15px;
-		padding-bottom: 15px;
-		@extend .u-f--bold;
-		text-transform: uppercase;
-		background-color: setcolor('black', 'dark4');
-
-
-		span {
-
-			&:nth-of-type(1) {}
-
-			&:nth-of-type(2) {}
-
-			&:nth-of-type(3) {
-				text-align: right;
-			}
-
-			&:nth-of-type(4) {
-				text-align: right;
+				&:hover {
+					background-color: setcolor("black", "dark2");
+				}
 			}
 		}
-	}
 
-
-	&__row {
-		margin-top: 1px;
-		padding-top: 40px;
-		padding-bottom: 40px;
-		background-color: setcolor('black');
-
-
-		span {
-
-			&:nth-of-type(1) {
-				@extend .u-f--bold;
-			}
-
-			&:nth-of-type(2) {}
-
-			&:nth-of-type(3) {
-				@extend .u-f--h3;
-				@extend .u-f--bold;
-				text-align: right;
-			}
-
-			&:nth-of-type(4) {
-				@extend .u-f--h3;
-				@extend .u-f--bold;
-				text-align: right;
-			}
-		}
-	}
-}
-
-
-
-// Table Big ==================================================
-
-.tableBig {
-	margin-top: 30px;
-
-
-	&__wrapper {
-		overflow-x: auto;
-	}
-
-
-	&__table {
-		width: max-content;
-		min-width: 100%;
-	}
-
-
-	&__row {
-		display: grid;
-		gap: rem(20);
-		grid-template-columns: repeat( 5, auto );
-		align-items: center;
-		padding: 35px 30px;
-		border-radius: rem(10);
-		background-color: setcolor('black', 'dark4');
-
-		@include screen-sm {
-			grid-template-columns: 2fr 1fr 1fr 5fr 6fr;
+		td,
+		th {
+			padding: $sm;
 		}
 
-		& + & {
-			margin-top: 5px;
+		.left {
+			text-align: left;
 		}
 
-
-		span {
-
-			&:nth-of-type(1) {
-				@extend .u-f--h3;
-				@extend .u-f--bold;
-			}
-
-			&:nth-of-type(2) {
-				@extend .u-f--bold;
-			}
-
-			&:nth-of-type(3) {}
-
-			&:nth-of-type(4) {
-				@extend .u-f--h3;
-				@extend .u-f--bold;
-				text-align: right;
-			}
-
-			&:nth-of-type(5) {
-				@extend .u-f--h3;
-				@extend .u-f--bold;
-				text-align: right;
-			}
+		.right {
+			text-align: right;
 		}
 	}
 }

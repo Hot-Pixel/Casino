@@ -1,0 +1,37 @@
+// SETTINGS
+@use '../settings';
+
+// TOOLS
+@use '../tools';
+
+// GENERIC
+@use '../base';
+
+// COMPONENTS
+@use '../components/header__user';
+@use '../components/buttons';
+@use '../components/breadcrumbs';
+@use '../components/deposits';
+@use '../components/user';
+@use '../components/table';
+
+// OBJECTS
+@use '../objects/user/deposit';
+@use '../objects/user/deposit__step1';
+@use '../objects/user/deposit__step2';
+@use '../objects/user/deposit__step3';
+@use '../objects/user/common';
+
+//LAYOUT
+@use '../layout/header';
+@use '../layout/footer';
+@use '../layout/popUp-balance';
+@use '../layout/menu-header';
+@use '../layout/menu-user';
+
+// MODULES
+@use '../modules/generic';
+@use '../modules/accordion';
+
+// HELPER
+@use '../helper';

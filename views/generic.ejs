@@ -1,0 +1,18 @@
+<%- include ('layout/head', {title: "Generic" , css: "generic" }) %>
+
+<main class="pageContainer">
+
+  <%- include ('layout/header', { mode: ""}) %>
+
+  <main class="has-header">
+
+    <%- include ('modules/generic') %>
+
+    <%- include ('layout/footer') %>
+
+  </main>
+
+</main>
+
+<%- include ('modules/mpu') %>
+<%- include ('layout/scripts', { script: 'generic', screen: 'casino' }) %>
