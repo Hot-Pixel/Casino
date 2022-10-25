@@ -203,7 +203,7 @@
 
     button {
       @extend .u-f--bold, .u-f--h5;
-      width: 33%;
+      flex: 1 1 auto;
       color: white;
       display: flex;
       justify-content: center;

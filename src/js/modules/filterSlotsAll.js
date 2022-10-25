@@ -5,6 +5,11 @@ mixitup.use(mixitupMultifilter);
 const filterSlotsAll = () => {
   const tags = document.querySelectorAll(".filterSlots__tag");
   const hearts = document.querySelectorAll(".gridGames__item-favourite");
+  const btnSlotsMenuOpen = document.querySelector(".btn__openFilterMenu");
+  const btnSlotsMenuClose = document.querySelector(".btn__closeFilterMenu");
+  const filterSlotsMenu = document.querySelector(".filterSlotsM__menu");
+  const filterSlotsActions = document.querySelectorAll(".filterSlotsM__action");
+
   let mixerSlots = null;
 
   hearts.forEach((heart) => {
@@ -54,6 +59,7 @@ const filterSlotsAll = () => {
         enable: false,
       },
       callbacks: {
+
         onMixClick: function () {
           // Reset the search if a filter is clicked
 
@@ -77,16 +83,18 @@ const filterSlotsAll = () => {
     }
   });
 
-  const btnSlotsMenuOpen = document.querySelector(".btn__openFilterMenu");
-  const btnSlotsMenuClose = document.querySelector(".btn__closeFilterMenu");
-  const filterSoltsMenu = document.querySelector(".filterSlotsM__menu");
-
   btnSlotsMenuOpen.addEventListener("click", () => {
-    filterSoltsMenu.classList.add("open");
+    filterSlotsMenu.classList.add("open");
   });
 
   btnSlotsMenuClose.addEventListener("click", () => {
-    filterSoltsMenu.classList.remove("open");
+    filterSlotsMenu.classList.remove("open");
+  });
+
+  filterSlotsActions.forEach((action) => {
+    action.addEventListener("click", () => {
+      filterSlotsMenu.classList.remove("open");
+    });
   });
 };
 
