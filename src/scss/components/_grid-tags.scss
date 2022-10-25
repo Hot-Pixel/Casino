@@ -9,6 +9,9 @@
     z-index: 5;
     font-size: rem(12);
     font-weight: 700;
+    top: 0;
+    right: 0;
+    border-radius: 0 rem(10) 0 rem(10);
   }
 }
 
@@ -16,19 +19,14 @@
   &::before {
     top: 0;
     left: 0;
+    right: auto;
     border-radius: rem(10) 0 rem(10) 0;
   }
 }
 
-.tag--right {
-  &::before {
-    top: 0;
-    right: 0;
-    border-radius: 0 rem(10) 0 rem(10);
-  }
-}
-
 .tag--new-ruleta {
+  @extend .tag;
+
   &::before {
     content: "NUEVO";
     background-color: setcolor("primary");
@@ -38,6 +36,8 @@
 }
 
 .tag--new {
+  @extend .tag;
+  
   &::before {
     content: "Nuevo";
     background-color: setcolor("primary");
@@ -46,6 +46,8 @@
 }
 
 .tag--promo {
+  @extend .tag;
+
   &::before {
     content: "Promo";
     background-color: #0089c7;
@@ -54,24 +56,11 @@
 }
 
 .tag--exclusive {
+  @extend .tag;
+  
   &::before {
     content: "Exclusiva";
     background-color: #a2c900;
     padding: rem(5);
-  }
-}
-
-.tag--money {
-  &::before {
-    bottom: 0;
-    left: 0;
-    padding: $sm;
-
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    content: "192.721,93 €";
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: rem(14);
   }
 }
