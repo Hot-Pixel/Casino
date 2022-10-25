@@ -5,6 +5,7 @@ mixitup.use(mixitupMultifilter);
 const filterSlotsAll = () => {
   const tags = document.querySelectorAll(".filterSlots__tag");
   const hearts = document.querySelectorAll(".gridGames__item-favourite");
+  let mixerSlots = null;
 
   hearts.forEach((heart) => {
     heart.addEventListener("click", () => {
@@ -17,26 +18,10 @@ const filterSlotsAll = () => {
     });
   });
 
-  tags.forEach((tag) => {
-    tag.addEventListener("click", (e) => {
-      if (e.currentTarget.classList.contains("mixitup-control-active")) {
-        e.currentTarget.firstElementChild.setAttribute(
-          "src",
-          "img/icons/icon-filter-noActive.svg"
-        );
-      } else {
-        e.currentTarget.firstElementChild.setAttribute(
-          "src",
-          "img/icons/icon-filter-active.svg"
-        );
-      }
-    });
-  });
-
   const container = document.querySelector(".slotsFinder");
 
   if (window.innerWidth < 1280) {
-    const mixerSlots = mixitup(container, {
+    mixerSlots = mixitup(container, {
       multifilter: {
         enable: true,
         parseOn: "submit",
@@ -58,7 +43,7 @@ const filterSlotsAll = () => {
       },
     });
   } else {
-    const mixerSlots = mixitup(container, {
+    mixerSlots = mixitup(container, {
       multifilter: {
         enable: true,
       },

@@ -278,12 +278,23 @@
     align-items: center;
     padding: rem(5);
 
-    img {
-      margin-right: 10px;
-    }
-
     span {
       color: #a8a9ac;
+    }
+    
+    &::before {
+      content: "";
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+      background-image: url('../img/icons/icon-filter-noActive.svg');
+
+    }
+    
+    &.mixitup-control-active {
+      &::before{
+        background-image: url('../img/icons/icon-filter-active.svg');
+      }
     }
   }
 }
