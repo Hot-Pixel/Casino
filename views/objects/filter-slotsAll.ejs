@@ -202,113 +202,114 @@
     </div>
 
     <form class="filterSlotsM__menu">
-
-        <div class="filterSlotsM__header">
-            <div>
-                <img src="img/icons/icon-funnel-red.svg" alt="">
-                <span>Filtro</span>
+        <div class="filterSlotsM__content">
+            <div class="filterSlotsM__header">
+                <div class="filterSlotsM__header__title">
+                    <img src="img/icons/icon-funnel-red.svg" alt="">
+                    <span>Filtro</span>
+                </div>
+                <img class="btn__closeFilterMenu" src="img/icons/icon-slots-cross-btn.svg" alt="">
             </div>
-            <img class="btn__closeFilterMenu" src="img/icons/icon-slots-cross-btn.svg" alt="">
-        </div>
 
-        <div class="filterSlotsM__container">
-            <fieldset data-filter-group class="filterSlotsM__search">
-                <img src="img/icons/icon-lupa-big.svg" alt="">
-                <input type="text" id="nameSearch" data-search-attribute="data-name" placeholder="Busca por nombre...">
-            </fieldset>
+            <div class="filterSlotsM__container">
+                <fieldset data-filter-group class="filterSlotsM__search">
+                    <img src="img/icons/icon-lupa-big.svg" alt="">
+                    <input type="text" id="nameSearch" data-search-attribute="data-name"
+                        placeholder="Busca por nombre...">
+                </fieldset>
 
-            <fieldset data-filter-group class="filterSlotsM__general">
-                <button class="btn__block" data-toggle=".novedad">Novedad</button>
-                <button class="btn__block" data-toggle=".promo">Promoción</button>
-                <button class="btn__block" data-toggle=".favorito">
-                    <img src="img/icons/icon-heart-white-big.svg" alt="">
+                <fieldset data-filter-group class="filterSlotsM__general">
+                    <button class="btn__block" data-toggle=".novedad">Novedad</button>
+                    <button class="btn__block" data-toggle=".promo">Promoción</button>
+                    <button class="btn__block" data-toggle=".favorito">
+                        <img src="img/icons/icon-heart-white-big.svg" alt="">
+                    </button>
+                </fieldset>
+
+                <div class="filterSlotsM__filter">
+                    <div class="filterSlotsM__title head">
+                        <p>Proveedor</p>
+                        <img class="accorArrow" src="img/icons/icon-arrow-down-grey.svg" alt="">
+                    </div>
+                    <fieldset class="filterSlotsM__wrapper body active" data-filter-group>
+                        <div class="filterSlotsM__tag" data-toggle=".proveedor-uno">
+                            <span>Proveedor Uno</span>
+                        </div>
+                        <div class="filterSlotsM__tag" data-toggle=".proveedor-dos">
+                            <span>Proveedor Dos</span>
+                        </div>
+                        <div class="filterSlotsM__tag" data-toggle=".proveedor-tres">
+                            <span>Proveedor Tres</span>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="filterSlotsM__filter">
+                    <div class="filterSlotsM__title head">
+                        <p>Tipo</p>
+                        <img class="accorArrow" src="img/icons/icon-arrow-down-grey.svg" alt="">
+                    </div>
+                    <fieldset class="filterSlotsM__wrapper body active" data-filter-group>
+                        <div class="filterSlotsM__tag" data-toggle=".tipo-uno">
+                            <span>Tipo Uno</span>
+                        </div>
+                        <div class="filterSlotsM__tag" data-toggle=".tipo-uno">
+                            <span>Tipo Dos</span>
+                        </div>
+                        <div class="filterSlotsM__tag" data-toggle=".tipo-uno">
+                            <span>Tipo Tres</span>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="filterSlotsM__filter">
+                    <div class="filterSlotsM__title head">
+                        <p>Líneas</p>
+                        <img class="accorArrow" src="img/icons/icon-arrow-down-grey.svg" alt="">
+                    </div>
+                    <fieldset class="filterSlotsM__wrapper body active" data-filter-group>
+                        <div class="filterSlotsM__tag" data-toggle=".linea-uno">
+                            <span>Línea Uno</span>
+                        </div>
+                        <div class="filterSlotsM__tag" data-toggle=".linea-uno">
+                            <span>Línea Dos</span>
+                        </div>
+                        <div class="filterSlotsM__tag" data-toggle=".linea-uno">
+                            <span>Línea Tres</span>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="filterSlotsM__filter">
+                    <div class="filterSlotsM__title head">
+                        <p>Apuesta mínima</p>
+                        <img class="accorArrow" src="img/icons/icon-arrow-down-grey.svg" alt="">
+                    </div>
+                    <fieldset class="filterSlotsM__wrapper body active" data-filter-group>
+                        <div class="filterSlotsM__tag" data-toggle=".apuesta-uno">
+                            <span>Apuesta Uno</span>
+                        </div>
+                        <div class="filterSlotsM__tag" data-toggle=".apuesta-dos">
+                            <span>Apuesta Dos</span>
+                        </div>
+                        <div class="filterSlotsM__tag" data-toggle=".apuesta-tres">
+                            <span>Apuesta Tres</span>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="filterSlotsM__btns">
+                <button type="reset" class="btn__darkGrey">
+                    <span>BORRAR FILTROS</span>
+
+                    <img src="img/icons/icon-btn-arrow.svg" alt="">
                 </button>
-            </fieldset>
-
-            <div class="filterSlotsM__filter">
-                <div class="filterSlotsM__title head">
-                    <p>Proveedor</p>
-                    <img class="accorArrow" src="img/icons/icon-arrow-down-grey.svg" alt="">
-                </div>
-                <fieldset class="filterSlotsM__wrapper body active" data-filter-group>
-                    <div class="filterSlotsM__tag" data-toggle=".proveedor-uno">
-                        <span>Proveedor Uno</span>
-                    </div>
-                    <div class="filterSlotsM__tag" data-toggle=".proveedor-dos">
-                        <span>Proveedor Dos</span>
-                    </div>
-                    <div class="filterSlotsM__tag" data-toggle=".proveedor-tres">
-                        <span>Proveedor Tres</span>
-                    </div>
-                </fieldset>
-            </div>
-
-            <div class="filterSlotsM__filter">
-                <div class="filterSlotsM__title head">
-                    <p>Tipo</p>
-                    <img class="accorArrow" src="img/icons/icon-arrow-down-grey.svg" alt="">
-                </div>
-                <fieldset class="filterSlotsM__wrapper body active" data-filter-group>
-                    <div class="filterSlotsM__tag" data-toggle=".tipo-uno">
-                        <span>Tipo Uno</span>
-                    </div>
-                    <div class="filterSlotsM__tag" data-toggle=".tipo-uno">
-                        <span>Tipo Dos</span>
-                    </div>
-                    <div class="filterSlotsM__tag" data-toggle=".tipo-uno">
-                        <span>Tipo Tres</span>
-                    </div>
-                </fieldset>
-            </div>
-
-            <div class="filterSlotsM__filter">
-                <div class="filterSlotsM__title head">
-                    <p>Líneas</p>
-                    <img class="accorArrow" src="img/icons/icon-arrow-down-grey.svg" alt="">
-                </div>
-                <fieldset class="filterSlotsM__wrapper body active" data-filter-group>
-                    <div class="filterSlotsM__tag" data-toggle=".linea-uno">
-                        <span>Línea Uno</span>
-                    </div>
-                    <div class="filterSlotsM__tag" data-toggle=".linea-uno">
-                        <span>Línea Dos</span>
-                    </div>
-                    <div class="filterSlotsM__tag" data-toggle=".linea-uno">
-                        <span>Línea Tres</span>
-                    </div>
-                </fieldset>
-            </div>
-
-            <div class="filterSlotsM__filter">
-                <div class="filterSlotsM__title head">
-                    <p>Apuesta mínima</p>
-                    <img class="accorArrow" src="img/icons/icon-arrow-down-grey.svg" alt="">
-                </div>
-                <fieldset class="filterSlotsM__wrapper body active" data-filter-group>
-                    <div class="filterSlotsM__tag" data-toggle=".apuesta-uno">
-                        <span>Apuesta Uno</span>
-                    </div>
-                    <div class="filterSlotsM__tag" data-toggle=".apuesta-dos">
-                        <span>Apuesta Dos</span>
-                    </div>
-                    <div class="filterSlotsM__tag" data-toggle=".apuesta-tres">
-                        <span>Apuesta Tres</span>
-                    </div>
-                </fieldset>
+                <button type="submit" class="btn__red">
+                    <span>APLICAR FILTROS</span>
+                    <img src="img/icons/icon-btn-arrow.svg" alt="">
+                </button>
             </div>
         </div>
-
-        <div class="filterSlotsM__btns">
-            <button type="reset" class="btn__darkGrey">
-                <span>BORRAR FILTROS</span>
-
-                <img src="img/icons/icon-btn-arrow.svg" alt="">
-            </button>
-            <button type="submit" class="btn__red">
-                <span>APLICAR FILTROS</span>
-                <img src="img/icons/icon-btn-arrow.svg" alt="">
-            </button>
-        </div>
-
     </form>
 </section>

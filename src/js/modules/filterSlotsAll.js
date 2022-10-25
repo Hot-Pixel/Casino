@@ -69,6 +69,7 @@ const filterSlotsAll = () => {
 
   container.addEventListener("mixEnd", () => {
     const state = mixerSlots.getState();
+    console.log(state)
     if (state.totalShow < state.totalTargets) {
       resetBtn.classList.add("visible");
     } else {

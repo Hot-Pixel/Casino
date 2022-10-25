@@ -6,22 +6,22 @@
   @extend %margin_horizontal_main;
   @extend %margin_top_medium;
 
-  display: flex;
-  flex-direction: column;
-
+  display: grid;
+  grid-template-columns: 1fr;
+  
   @include screen-sm {
-    flex-direction: row;
+    grid-template-columns: rem(320) 1fr;
   }
 
   .filterSlots {
-    width: 25%;
+    // width: 25%;
   }
 
   .gridGames {
     width: 100%;
 
     @include screen-sm {
-      width: 75%;
+      // width: 75%;
       margin-left: $md;
     }
   }
