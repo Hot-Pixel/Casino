@@ -39,10 +39,10 @@ function carouselGrid(gridFull) {
         perPage: 3,
       },
       1280: {
-        perPage: 2,
+        perPage: 3,
       },
       991: {
-        perPage: 1,
+        perPage: 2,
         arrows: false,
         padding: { left: 0, right: 50 },
         drag: "free",
@@ -50,6 +50,9 @@ function carouselGrid(gridFull) {
           dimensions: arrDimMobile,
         },
       },
+      450: {
+        perPage: 1,
+      }
     },
   });
 
