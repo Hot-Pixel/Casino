@@ -6,7 +6,7 @@ import favHeart from "./modules/favHeart.js";
 document.addEventListener('DOMContentLoaded', () => {
   carouselJackpot();
   collapseGrid();
-  favHeart();
+  favHeart().init();
   document.querySelectorAll('.gridFull .splide').forEach(grid => {
     carouselGrid(grid);
   });

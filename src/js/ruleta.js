@@ -6,7 +6,7 @@ import adaptationModule from "./modules/adaptationModule.js";
 adaptationModule(".card__content--top");
 
 document.addEventListener('DOMContentLoaded', () => {
-  favHeart()
+  favHeart().init();
   filterWheel()
   LiveRoulette();
 })
