@@ -11,7 +11,7 @@ function favHeart() {
   });
 
   function setFavStatus(roomId, isFav) {
-    let url = '/';
+    let url = '/servlet/RankingServlet?';
     const params = {
       room: roomId, 
       favourite: isFav ? 1 : 0
