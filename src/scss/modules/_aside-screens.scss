@@ -108,20 +108,38 @@
 
     &__breadcrumbs {
       background-color: setcolor("black");
-      // width: 150%;
-      padding: $sm 0 $sm $sm;
       background-image: linear-gradient(to right, transparent, #13171d);
-
-      @include mobile {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
+      overflow-x: auto;
+      
       @include screen-sm {
         display: none;
       }
+
+      span {
+        color: setcolor("gray", "mid");
+      }
+
+      a {
+        span {
+          color: setcolor("white");
+        }
+      }
+      
+      &-content {
+        padding: $sm 0 $sm $sm;
+        display: flex;
+        align-items: center;
+        gap: $sm;
+        
+        & > * {
+          white-space: nowrap;
+        }
+        
+        & > svg {
+          flex: 1 0 auto;
+        }
+      }
+
 
     }
 
