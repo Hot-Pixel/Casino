@@ -49,6 +49,7 @@ export default function gameLauncher() {
     function startGame(demo = false) {
         document.body.classList.add('game-mode');
         if (demo) document.body.classList.add('game-mode--demo');
+        triggerResize();
         gameIframe.src = "https://atoom.space";
     }
     

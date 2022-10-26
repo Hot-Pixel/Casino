@@ -9,7 +9,7 @@
   
   &.aside-open {
     @include screen-sm {
-      grid-template-columns: 1fr rem(400);
+      grid-template-columns: 1fr rem(500);
     }
 
     .asideSlots {
@@ -20,15 +20,12 @@
 
 
   .screen {
-    display: none;
+    display: flex;
     background-color: setcolor("black");
-
-    @include screen-sm {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-    }
+    padding: $md $sm;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
     img {
       object-fit: contain;
@@ -37,11 +34,16 @@
     }
 
     &__btns {
-      display: flex;
-      justify-content: center;
-      margin-top: $md;
-      gap: $sm;
+      display: none;
+      
+      @include screen-sm {
+        display: flex;
+        justify-content: center;
+        margin-top: $md;
+        gap: $sm;
+      }
     }
+    
 
     &--online {
       display: none;
@@ -106,7 +108,7 @@
 
     &__breadcrumbs {
       background-color: setcolor("black");
-      width: 150%;
+      // width: 150%;
       padding: $sm 0 $sm $sm;
       background-image: linear-gradient(to right, transparent, #13171d);
 
@@ -116,6 +118,11 @@
         justify-content: center;
         align-items: center;
       }
+
+      @include screen-sm {
+        display: none;
+      }
+
     }
 
     &--bottom {
@@ -124,11 +131,15 @@
 
       background-color: setcolor("black");
       border-radius: rem(10);
+
+      @include screen-sm {
+        display: none;
+      }
     }
 
     &__title {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
 
       p {

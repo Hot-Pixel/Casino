@@ -6,6 +6,8 @@
 
 .game-mode {
   .screen {
+    padding: 0;
+
     &--offline {
       display: none;
     }
@@ -34,6 +36,10 @@
 
     .pageContainer > section {
       padding-top: 0!important;
+    }
+
+    .screensBar__brand {
+      display: block;
     }
   }
 
