@@ -10,9 +10,21 @@
 
         <%- include ('objects/screens-bar') %>
 
-        <section class="screens">
-            <section class="screen">
-                <img src="img/images/img-screen.jpg" alt="">
+        <section class="screens aside-open">
+            <section class="screen screen--offline">
+                <img src="img/images/img-screen-brand.png" alt="">
+                <div class="screen__btns">
+                    <button class="btn__red btn__red--glow play-btn" data-opener="slotPlaytech" data-room-id="2005066" data-extra="&session=wfcdhwszycqbxwbohuhruuuenklzyhggdtynvftpvtctwfhrwd">
+                        <span>¡Juega!</span>
+                        <img src="img/icons/icon-play-white.svg" alt="">
+                    </button>
+                    <button class="btn__darkGrey demo-btn" data-opener="slotPlaytech" data-room-id="2005066" data-extra="">
+                        <span>Pruébalo</span>
+                    </button>
+                </div>
+            </section>
+            <section class="screen screen--online">
+                <iframe frameborder="0" hspace="0" vspace="0" marginheight="0" marginwidth="0"  width="100%" class="screen__iframe" id="gameIframe" allow="fullscreen" ></iframe>
             </section>
 
             <%- include ('modules/aside-slots') %>

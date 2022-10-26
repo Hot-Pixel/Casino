@@ -3,19 +3,48 @@
 @use "../tools" as *;
 
 .screens {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  
+  &.aside-open {
+    @include screen-sm {
+      grid-template-columns: 1fr rem(400);
+    }
+
+    .asideSlots {
+      display: block;
+    }
+  }
+
+
 
   .screen {
-    width: 70%;
     display: none;
+    background-color: setcolor("black");
 
     @include screen-sm {
-      display: block;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
     }
 
     img {
-      object-fit: cover;
+      object-fit: contain;
       width: 100%;
+      max-width: rem(600);
+    }
+
+    &__btns {
+      display: flex;
+      justify-content: center;
+      margin-top: $md;
+      gap: $sm;
+    }
+
+    &--online {
+      display: none;
     }
   }
 
@@ -29,24 +58,26 @@
     fill: setcolor("primary");
   }
 
-  .asideSlots, .asideCasino {
+  .asideSlots,
+  .asideCasino {
     display: none;
-    width: 30%;
     padding: $md $md;
+    overflow-y: auto;
 
-    @include screen-sm {
-      display: block;
-    }
-    @include screen-lg {
-      padding: $md $lg;
-    }
+    // @include screen-sm {
+    //   display: block;
+    // }
+    // @include screen-lg {
+    //   padding: $md $lg;
+    // }
 
     .aside__title {
       @extend .u-f--h2, .u-f--bold;
     }
   }
 
-  .asideSlots__mobile, .asideCasino__mobile {
+  .asideSlots__mobile,
+  .asideCasino__mobile {
     display: block;
     width: 100%;
     padding: 0;
@@ -206,7 +237,7 @@
       padding: $sm;
 
       .grey {
-        color: setcolor('gray', 'mid');
+        color: setcolor("gray", "mid");
       }
 
       &:nth-of-type(odd) {
@@ -279,7 +310,7 @@
 
     @include screen-sm {
       margin: 0;
-      margin-top: $md
+      margin-top: $md;
     }
 
     &__header p {

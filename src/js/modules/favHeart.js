@@ -23,22 +23,22 @@ function favHeart() {
     });
   }
 
-  function setFavStatus(roomId, isFav) {
-    let url = '/servlet/RankingServlet?';
-    const params = {
-      room: roomId, 
-      favourite: isFav ? 1 : 0
-    }
-    url += new URLSearchParams(params).toString();
-    fetch(url)
-      .then(res => res.json())
-      .catch(error => console.error('Fav error:', error))
-  }
-
   return {
     init,
     initFavourites
   }
+}
+
+export function setFavStatus(roomId, isFav) {
+  let url = '/servlet/RankingServlet?';
+  const params = {
+    room: roomId, 
+    favourite: isFav ? 1 : 0
+  }
+  url += new URLSearchParams(params).toString();
+  fetch(url)
+    .then(res => res.json())
+    .catch(error => console.error('Fav error:', error))
 }
 
 export default favHeart;

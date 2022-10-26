@@ -42,6 +42,10 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
+      
+      &.hide {
+        display: none;
+      }
     }
 
     button:not(.screensBar__btn--last) {
@@ -62,6 +66,30 @@
       margin: 0;
       width: $lg;
       background-color: setcolor("black");
+    }
+  }
+
+  #fav__btn.active {
+    path {
+      fill: setcolor("primary");
+    }
+  }
+
+  #minimize__btn,
+  #close__btn {
+    display: none;
+  }
+
+  #toggle-aside__btn {
+    img {
+      transition: all 0.3s ease;
+      transform: rotate(180deg);
+    }
+
+    &.open {
+      img {
+        transform: rotate(0deg);
+      }
     }
   }
 }
