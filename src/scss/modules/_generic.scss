@@ -2,66 +2,68 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 // Layout
 
 .generic {
-	@extend %margin_horizontal_main, %margin_top_large;
+  @extend %margin_horizontal_main, %margin_top_large;
 
-	h1 {
-		font-size: rem(28);
-		@include tablet {
-			font-size: rem(32);
-		}
-		@include screen-sm {
-			font-size: rem(40);
-		}
-	}
+  h1 {
+    font-size: rem(28);
+    @include tablet {
+      font-size: rem(32);
+    }
+    @include screen-sm {
+      font-size: rem(40);
+    }
+  }
 
-	h2 {
-		font-size: rem(24);
-		@include tablet {
-			font-size: rem(28);
-		}
-		@include screen-sm {
-			font-size: rem(36);
-		}
-	}
+  h2 {
+    font-size: rem(24);
+    @include tablet {
+      font-size: rem(28);
+    }
+    @include screen-sm {
+      font-size: rem(36);
+    }
+  }
 
-	h3 {
-		font-size: rem(20);
-		@include tablet {
-			font-size: rem(24);
-		}
-		@include screen-sm {
-			font-size: rem(32);
-		}
-	}
+  h3 {
+    font-size: rem(20);
+    @include tablet {
+      font-size: rem(24);
+    }
+    @include screen-sm {
+      font-size: rem(32);
+    }
+  }
 
-	h4, h5, h6 {
-		font-size: rem(16);
-		@include tablet {
-			font-size: rem(20);
-		}
-		@include screen-sm {
-			font-size: rem(28);
-		}
-	}
+  h4,
+  h5,
+  h6 {
+    font-size: rem(16);
+    @include tablet {
+      font-size: rem(20);
+    }
+    @include screen-sm {
+      font-size: rem(28);
+    }
+  }
 
-	p {
-		padding-bottom: $sm;
-		color: setcolor("gray", "dark1");
-	}
-	
-	li {
+  p {
+    padding-bottom: $sm;
+    color: setcolor("gray", "dark1");
+  }
 
-	}
+  li {
+    padding-bottom: $sm;
+    color: setcolor("gray", "dark1");
+  }
 
-	a {
-		color: setcolor("white");
-		text-decoration: none;
-		&:hover {
-			color: setcolor("primary");
-		}
-	}
+  a {
+    color: setcolor("white");
+    text-decoration: none;
+    &:hover {
+      color: setcolor("primary");
+    }
+  }
 }

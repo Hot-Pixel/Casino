@@ -2,66 +2,73 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.faq, .pokerHowAccord {
-    @extend %margin_horizontal_main, %margin_top_medium;
+.faq,
+.pokerHowAccord {
+  @extend %margin_horizontal_main, %margin_top_medium;
 
-    &__title {
-        @extend .u-f--h2, .u-f--bold;
-        padding-bottom: $sm;
-    }
+  &__title {
+    @extend .u-f--h2, .u-f--bold;
+    padding-bottom: $sm;
+  }
 
-    &__subtitle {
-        color: setcolor('gray', 'mid');
-        padding-bottom: $sm;
-    }
+  &__subtitle {
+    color: setcolor("gray", "mid");
+    padding-bottom: $sm;
+  }
 
-    &__accordion {
-        &-item {
-            background-color: setcolor('black', 'dark2');
-            border-radius: rem(5);
-            margin-bottom: rem(5);
+  &__accordion {
+    &-item {
+      background-color: setcolor("black", "dark2");
+      border-radius: rem(5);
+      margin-bottom: rem(5);
 
-            .head {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-                padding: $sm;
+        padding: $sm;
 
-                p {
-                    @extend .u-f--bold;
-                    margin: 0;
-                    padding: 0;
-                }
-
-                .accorArrow {
-                    cursor: pointer;
-                    transform: rotate(-90deg);
-                }
-            }
-
-            .body {
-                height: 0;
-                opacity: 0;
-                padding: 0;
-                border-top: 1px solid setcolor('black', 'dark1');
-                overflow: hidden;
-
-                p {
-                    color: #7f8285;
-                    max-width: 100%;
-
-                    @include screen-sm {
-                        max-width: 66%;
-                    }
-                    @include screen-md {
-                        max-width: 50%;
-                    }
-                    @include screen-lg {
-                        max-width: 33%;
-                    }
-                }
-            }
+        p {
+          @extend .u-f--bold;
+          margin: 0;
+          padding: 0;
         }
+
+        .accorArrow {
+          cursor: pointer;
+          transform: rotate(-90deg);
+        }
+      }
+
+      .body {
+        height: 0;
+        opacity: 0;
+        padding: 0;
+        border-top: 1px solid setcolor("black", "dark1");
+        overflow: hidden;
+
+        p {
+          color: #7f8285;
+          max-width: 100%;
+
+          @include screen-sm {
+            max-width: 66%;
+          }
+          @include screen-md {
+            max-width: 50%;
+          }
+          @include screen-lg {
+            max-width: 33%;
+          }
+        }
+
+        &--fullwidth {
+          p {
+            max-width: 100%;
+          }
+        }
+      }
     }
+  }
 }
