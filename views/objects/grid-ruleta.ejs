@@ -1,6 +1,6 @@
 <section class="gridRuleta">
     <% data.forEach( e => { %>
-        <div class="gridRuleta__item card mix <%= e.crupier %> <%= e.proveedor %>" data-lobby-id="<%= e.id %>">
+        <div class="gridRuleta__item card mix <%= e.crupier %> <%= e.proveedor %>" data-lobby-id="<%= e.id %>" data-game-id="1">
             <div class="card__img tag tag--left tag--new-ruleta">
                 <img class="card__img-bg" src="img/images/<%= e.imgBg %>" alt="">
                 <img class="card__img-crupier" src="img/images/<%= e.imgCru %>" alt="">

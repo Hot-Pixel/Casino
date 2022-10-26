@@ -3,18 +3,24 @@ function favHeart() {
 
   hearts.forEach((heart) => {
     heart.addEventListener("click", () => {
-      heart.classList.toggle("fav");
-      if (heart.classList.contains("fav")) {
-        heart.parentElement.parentElement.parentElement.classList.add(
-          "favorito"
-        );
-      } else {
-        heart.parentElement.parentElement.parentElement.classList.remove(
-          "favorito"
-        );
-      }
+      const item = heart.closest('.gridGames__item, .item');
+      const isFav = item.classList.contains("fav");
+      item.classList.toggle("fav");
+      setFavStatus(item.dataset.gameId, !isFav);
     });
   });
+
+  function setFavStatus(roomId, isFav) {
+    let url = '/';
+    const params = {
+      room: roomId, 
+      favourite: isFav ? 1 : 0
+    }
+    url += new URLSearchParams(params).toString();
+    fetch(url)
+      .then(res => res.json())
+      .catch(error => console.error('Fav error:', error))
+  }
 }
 
 export default favHeart;

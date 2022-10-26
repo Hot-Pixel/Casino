@@ -1,6 +1,6 @@
 <ul class="gridFavorites container">
 	<% data.forEach( el => { %>
-		<li class="gridFavorites__item mix <%= el.juego %>">
+		<li class="gridFavorites__item mix <%= el.juego %>" data-game-id="1">
 			<img class="gridFavorites__item-image" src="img/images/img-grid-<%= el.img %>.jpg" alt="">
 			<%- include ('../components/hover-favoritos') %>
 		</li>

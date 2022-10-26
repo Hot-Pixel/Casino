@@ -1,0 +1,10 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+[data-game-id].fav {
+  path {
+    fill: setcolor("primary");
+    opacity: 1;
+  }
+}
