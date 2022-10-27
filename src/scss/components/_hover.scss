@@ -28,9 +28,17 @@
     align-self: flex-start;
   }
 
-  a {
+  &__btn {
     justify-self: center;
     align-self: center;
+
+    span {
+      display: none;
+
+      @include screen-lg {
+        display: inline;
+      }
+    }
   }
 }
 
@@ -57,6 +65,14 @@
   &-btn {
     justify-self: center;
     align-self: center;
+
+    span {
+      display: none;
+
+      @include screen-lg {
+        display: inline;
+      }
+    }
   }
 
   &-logo {
@@ -88,5 +104,13 @@
   &-btn {
     justify-self: center;
     align-self: center;
+
+    span {
+      display: none;
+
+      @include screen-lg {
+        display: inline;
+      }
+    }
   }
 }

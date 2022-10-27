@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
   carouselBanner();
   carouselJackpot();
   // carouselBets();
-  collapseGrid();
   favHeart().init();
-  
+  collapseGrid();
+
   document.querySelectorAll('.gridFull .splide').forEach(grid => {
     carouselGrid(grid);
   });

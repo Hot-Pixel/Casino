@@ -9,11 +9,13 @@
   height: fit-content;
 
   @include tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include screen-md {
     grid-template-columns: repeat(4, 1fr);
   }
   @include screen-lg {
     grid-template-columns: repeat(5, 1fr);
-
   }
 
   &__item {
