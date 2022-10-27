@@ -6,21 +6,24 @@ function depositAmmount() {
 
   btnsArr20.forEach((btn20) => {
     btn20.addEventListener("click", (e) => {
-        let input = document.querySelector(e.currentTarget.dataset.input);
-        input.value = 20;
-      });
+      let input = document.querySelector(e.currentTarget.dataset.input);
+      input.value = 20;
+      input.dispatchEvent(new Event('input'));
+    });
   })
   btnsArr50.forEach((btn50) => {
     btn50.addEventListener("click", (e) => {
       let input = document.querySelector(e.currentTarget.dataset.input);
       input.value = 50;
-      });
+      input.dispatchEvent(new Event('input'));
+    });
   })
   btnsArr100.forEach((btn100) => {
     btn100.addEventListener("click", (e) => {
       let input = document.querySelector(e.currentTarget.dataset.input);
       input.value = 100;
-      });
+      input.dispatchEvent(new Event('input'));
+    });
   })
 
 }
