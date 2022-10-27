@@ -61,5 +61,3 @@ function setFormLoading(isLoading) {
   loginSubmitBtn.classList.toggle('loading', isLoading);
   isLoading ? submitTextEl.innerText = "CARGANDO..." : submitTextEl.innerText = "ENTRAR";
 }
-
-window.Alert = Alert;
