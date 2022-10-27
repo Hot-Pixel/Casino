@@ -1,0 +1,58 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+
+
+.game-mode {
+  .screen {
+    padding: 0;
+
+    &--offline {
+      display: none;
+    }
+    &--online {
+      display: flex;
+    }
+
+    &__iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  }
+
+  &--maximized {
+    #minimize__btn {
+      display: block;
+    }
+    #maximize__btn {
+      display: none;
+    }
+
+    .pageContainer > header {
+      display: none;
+    }
+
+    .pageContainer > section {
+      padding-top: 0!important;
+    }
+
+    .screensBar__brand {
+      display: block;
+    }
+  }
+
+  &--minimized {
+    #minimize__btn {
+      display: none;
+    }
+    #maximize__btn {
+      display: block;
+    }
+  }
+
+  #close__btn {
+    display: block;
+  }
+}

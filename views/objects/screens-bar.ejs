@@ -1,6 +1,6 @@
 <section class="screensBar">
     <div class="screensBar__wrapper screensBar--left">
-        <a href="#" class="screensBar__item">
+        <!-- <a href="#" class="screensBar__item">
             <img src="img/icons/icon-info.svg" alt="">
         </a>
         <div class="screensBar__item">
@@ -22,25 +22,32 @@
         <div class="screensBar__item">
             <p>Tiempo</p>
             <p>0,00 €</p>
+        </div> -->
+        <div class="screensBar__brand">
+            <img src="img/logos/logo-casinobarcelona.svg" alt="CasinoBarcelona.es">
         </div>
     </div>
     <div class="screensBar__wrapper screensBar--right">
-        <button>
-            <img src="img/icons/icon-heart-grey.svg" alt="" >
+        <button id="fav__btn" class="" data-game-id="2000">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18.83" viewBox="0 0 22 18.83">
+                <path
+                  d="M21.76,14.67A6.283,6.283,0,0,0,17.3,10.225a6.55,6.55,0,0,0-6.016,2.026.393.393,0,0,1-.534,0,6.55,6.55,0,0,0-6.016-2.026A6.283,6.283,0,0,0,.272,14.67a6.126,6.126,0,0,0,1.571,6.079l8.671,8a.8.8,0,0,0,1.068,0l8.686-8.027A6.079,6.079,0,0,0,21.76,14.67Z"
+                  transform="translate(-0.024 -10.118)" fill="#fff" />
+              </svg>
         </button>
-        <button>
+        <!-- <button id="new-window__btn">
             <img src="img/icons/icon-new-window.svg" alt="" >
-        </button>
-        <button>
+        </button> -->
+        <button id="maximize__btn">
             <img src="img/icons/icon-fullscreen.svg" alt="" >
         </button>
-        <button>
+        <button id="minimize__btn">
             <img src="img/icons/icon-miniscreen.svg" alt="" >
         </button>
-        <button>
+        <button id="close__btn" class="">
             <img src="img/icons/icon-close-white.svg" alt="" >
         </button>
-        <button class="screensBar__btn--last">
+        <button class="screensBar__btn--last open" id="toggle-aside__btn">
             <img src="img/icons/icon-arrow-left.svg" alt="">
         </button>
     </div>

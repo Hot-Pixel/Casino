@@ -43,23 +43,5 @@
       }
     }
 
-    .jackpot__container {
-      display: none;
-      bottom: 0;
-      left: 0;
-      padding: $sm;
-      justify-content: center;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      font-size: rem(14);
-      position: absolute;
-    }
-    
-    &.jackpot {
-      
-      .jackpot__container {
-        display: flex;
-      }
-    }
   }
 }

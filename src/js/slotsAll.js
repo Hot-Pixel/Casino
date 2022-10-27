@@ -5,5 +5,5 @@ import favHeart from "./modules/favHeart.js";
 document.addEventListener("DOMContentLoaded", () => {
   accordion();
   filterSlotsAll();
-  favHeart();
+  favHeart().init();
 });

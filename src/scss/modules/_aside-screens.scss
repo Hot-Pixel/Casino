@@ -3,19 +3,50 @@
 @use "../tools" as *;
 
 .screens {
-  display: flex;
-
-  .screen {
-    width: 70%;
-    display: none;
-
+  display: grid;
+  grid-template-columns: 1fr;
+  
+  
+  &.aside-open {
     @include screen-sm {
-      display: block;
+      grid-template-columns: 1fr rem(500);
     }
 
+    .asideSlots {
+      display: block;
+    }
+  }
+
+
+
+  .screen {
+    display: flex;
+    background-color: setcolor("black");
+    padding: $md $sm;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
     img {
-      object-fit: cover;
+      object-fit: contain;
       width: 100%;
+      max-width: rem(600);
+    }
+
+    &__btns {
+      display: none;
+      
+      @include screen-sm {
+        display: flex;
+        justify-content: center;
+        margin-top: $md;
+        gap: $sm;
+      }
+    }
+    
+
+    &--online {
+      display: none;
     }
   }
 
@@ -29,24 +60,26 @@
     fill: setcolor("primary");
   }
 
-  .asideSlots, .asideCasino {
+  .asideSlots,
+  .asideCasino {
     display: none;
-    width: 30%;
     padding: $md $md;
+    overflow-y: auto;
 
-    @include screen-sm {
-      display: block;
-    }
-    @include screen-lg {
-      padding: $md $lg;
-    }
+    // @include screen-sm {
+    //   display: block;
+    // }
+    // @include screen-lg {
+    //   padding: $md $lg;
+    // }
 
     .aside__title {
       @extend .u-f--h2, .u-f--bold;
     }
   }
 
-  .asideSlots__mobile, .asideCasino__mobile {
+  .asideSlots__mobile,
+  .asideCasino__mobile {
     display: block;
     width: 100%;
     padding: 0;
@@ -75,16 +108,39 @@
 
     &__breadcrumbs {
       background-color: setcolor("black");
-      width: 150%;
-      padding: $sm 0 $sm $sm;
       background-image: linear-gradient(to right, transparent, #13171d);
-
-      @include mobile {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      overflow-x: auto;
+      
+      @include screen-sm {
+        display: none;
       }
+
+      span {
+        color: setcolor("gray", "mid");
+      }
+
+      a {
+        span {
+          color: setcolor("white");
+        }
+      }
+      
+      &-content {
+        padding: $sm 0 $sm $sm;
+        display: flex;
+        align-items: center;
+        gap: $sm;
+        
+        & > * {
+          white-space: nowrap;
+        }
+        
+        & > svg {
+          flex: 1 0 auto;
+        }
+      }
+
+
     }
 
     &--bottom {
@@ -93,11 +149,15 @@
 
       background-color: setcolor("black");
       border-radius: rem(10);
+
+      @include screen-sm {
+        display: none;
+      }
     }
 
     &__title {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
 
       p {
@@ -206,7 +266,7 @@
       padding: $sm;
 
       .grey {
-        color: setcolor('gray', 'mid');
+        color: setcolor("gray", "mid");
       }
 
       &:nth-of-type(odd) {
@@ -279,7 +339,7 @@
 
     @include screen-sm {
       margin: 0;
-      margin-top: $md
+      margin-top: $md;
     }
 
     &__header p {

@@ -3,21 +3,28 @@
 @use "../tools" as *;
 
 .screensBar {
-  padding-left: $lg;
   height: $lg;
 
-  display: none;
+  display: flex;
   justify-content: space-between;
 
   background-color: setcolor("black", "dark2");
 
-  @include screen-sm {
-    display: flex;
-  }
-
   &__wrapper {
     display: flex;
     align-items: center;
+  }
+
+  &__brand {
+    padding: $sm;
+    display: none;
+    align-self: flex-start;
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      max-width: rem(200);
+    }
   }
 
   &__item {
@@ -42,6 +49,10 @@
       background-color: transparent;
       border: none;
       cursor: pointer;
+      
+      &.hide {
+        display: none;
+      }
     }
 
     button:not(.screensBar__btn--last) {
@@ -54,14 +65,40 @@
     }
 
     .screensBar__btn--last {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
-
+      
       height: 100%;
       margin: 0;
       width: $lg;
       background-color: setcolor("black");
+      
+      @include screen-sm {
+        display: flex;
+      }
+
+      img {
+        transition: all 0.3s ease;
+        transform: rotate(180deg);
+      }
+
+      &.open {
+        img {
+          transform: rotate(0deg);
+        }
+      }
     }
+  }
+
+  #fav__btn.active {
+    path {
+      fill: setcolor("primary");
+    }
+  }
+
+  #minimize__btn,
+  #close__btn {
+    display: none;
   }
 }
