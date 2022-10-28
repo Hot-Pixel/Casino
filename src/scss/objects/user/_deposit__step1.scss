@@ -30,6 +30,7 @@
 
     img {
       object-fit: contain;
+      max-width: 100%;
 
       @include screen-sm {
         object-fit: cover;

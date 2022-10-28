@@ -299,7 +299,7 @@
       }
     }
   }
-  
+
   .verificacion-automatica-btn {
     @include screen-sm {
       display: none;
@@ -401,13 +401,18 @@
       color: setcolor("black", "dark1");
     }
 
-    p:first-of-type {
+    .docsVerify__steps—step {
       @extend .u-f--h3;
       padding: $sm $md;
       border-right: 2px solid #dddfe2;
     }
-    p:last-of-type {
+
+    .docsVerify__steps-message {
       padding-left: $sm;
+
+      .subtitle {
+        font-weight: 400 !important;
+      }
     }
 
     & > div {

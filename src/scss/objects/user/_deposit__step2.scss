@@ -211,6 +211,13 @@
         color: setcolor("gray", "mid");
       }
     }
+
+    &-card {
+      & > p {
+        text-align: center;
+      }
+
+    }
   }
 
   .item {
