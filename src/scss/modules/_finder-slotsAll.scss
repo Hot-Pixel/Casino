@@ -8,20 +8,22 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  
+
   @include screen-sm {
-    grid-template-columns: rem(320) 1fr;
+    grid-template-columns: minmax(rem(375), 24vw) 1fr;
   }
 
   .filterSlots {
-    // width: 25%;
+    width: 100%;
   }
 
   .gridGames {
     width: 100%;
 
     @include screen-sm {
-      // width: 75%;
+      margin-left: rem(5);
+    }
+    @include screen-md {
       margin-left: $md;
     }
   }

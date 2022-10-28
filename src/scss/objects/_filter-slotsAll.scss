@@ -108,20 +108,20 @@
   }
   &__content {
     padding: 0 $sm $sm;
-    
+
     .filterSlotsM {
       &__header {
         height: $lg;
         width: 100%;
         background-color: setcolor("black", "dark2");
-        
+
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+
         &__title {
           display: flex;
-  
+
           span {
             @extend .u-f--h3, .u-f--bold;
             padding-left: rem(5);
@@ -283,12 +283,12 @@
 
     display: flex;
     align-items: center;
-    padding: rem(5);
+    padding: rem(5) $sm rem(5);
 
     span {
       color: #a8a9ac;
     }
-    
+
     &::before {
       content: "";
       margin-right: 10px;
@@ -297,7 +297,7 @@
       background-image: url('../img/icons/icon-filter-noActive.svg');
       flex: 0 0 auto;
     }
-    
+
     &.mixitup-control-active {
       &::before{
         background-image: url('../img/icons/icon-filter-active.svg');

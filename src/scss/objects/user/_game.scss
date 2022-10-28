@@ -30,6 +30,10 @@
       margin: $md 0 $md;
     }
 
+    &__title {
+      padding: $md;
+    }
+
     &__container {
       padding: $md $md 0;
       text-align: center;
@@ -55,7 +59,6 @@
 
       .body {
         color: setcolor("gray", "mid");
-        padding-bottom: $sm;
       }
 
       .game__limitBtn {
@@ -73,7 +76,7 @@
       }
 
       &-limit {
-        padding: $md 0 0 !important;
+        padding: 0 !important;
       }
     }
 

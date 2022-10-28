@@ -4,27 +4,24 @@ function marginHeader() {
   const contentBlocks = document.querySelectorAll(".has-header");
   const userMenus = document.querySelectorAll(".userMenu");
 
-  if (window.innerWidth < 1280) {
-    contentBlocks.forEach((block) => {
-      block.style.paddingTop = `${headerMobile.offsetHeight}px`;
+  marginAction();
+  window.addEventListener('resize', marginAction);
 
-      window.addEventListener("resize", () => {
+  function marginAction() {
+    if (window.innerWidth < 1280) {
+      contentBlocks.forEach((block) => {
         block.style.paddingTop = `${headerMobile.offsetHeight}px`;
       });
-    });
-  } else {
-    contentBlocks.forEach((block) => {
-      block.style.paddingTop = `${header.offsetHeight}px`;
-
-      window.addEventListener("resize", () => {
+    } else {
+      contentBlocks.forEach((block) => {
         block.style.paddingTop = `${header.offsetHeight}px`;
       });
-    });
 
-    userMenus.forEach((menu) => {
-      menu.style.top = `${header.offsetHeight}px`;
-      menu.style.height = `calc(100vh - ${header.offsetHeight}px)`;
-    });
+      userMenus.forEach((menu) => {
+        menu.style.top = `${header.offsetHeight}px`;
+        menu.style.height = `calc(100vh - ${header.offsetHeight}px)`;
+      });
+    }
   }
 }
 
