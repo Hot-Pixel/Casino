@@ -1,7 +1,9 @@
 function adaptationModule(selector) {
 
   let containers = document.querySelectorAll(selector);
-  heightMatch()
+  if(window.innerWidth > 1280) {
+    heightMatch()
+  }
   window.addEventListener("resize", heightMatch);
 
   function heightMatch() {
