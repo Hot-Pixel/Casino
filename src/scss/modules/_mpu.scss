@@ -2,6 +2,8 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
+@use '../components/alert';
+
 body.mpu-open {
     height: 100vh;
     overflow: hidden;
