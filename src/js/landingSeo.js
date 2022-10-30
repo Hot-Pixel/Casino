@@ -7,5 +7,7 @@ window.addEventListener("load", () => {
   document.querySelectorAll('.gridFull .splide').forEach(grid => {
     carouselGrid(grid);
   });
+  LobbyApi();
   carouselLandingSEO();
+
 });
