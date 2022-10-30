@@ -1,3 +1,5 @@
+import carouselGrid from "./carouselGrid";
+
 const LobbyApi = () => {
     const API_URL = 'https://api.casinobarcelona.es/api';
     const selector = ".lobby-api";
@@ -30,6 +32,7 @@ const LobbyApi = () => {
     }
 
     function postFetchApi(element) {
+        carouselGrid(element.closest('.splide'));
     }
 
     function getTemplate() {
@@ -42,12 +45,10 @@ const LobbyApi = () => {
 
         const roomsHtml = rooms.map(room => {
             const item = getTemplate();
-
-            item.dataset.gameId = room.room_id;
+            item.querySelector('.item').dataset.gameId = room.room_id;
             item.querySelector('.item__image').src = room.name.toLowerCase().replace(/ /g, '-').replace(/'/g, '').replace(/"/g, '').replace(/:/g, '').replace('---', '-') + '.webp';
-            return item;
-        }).join('');
-        element.innerHTML = roomsHtml;
+            element.appendChild(item);
+        });
     }
 }
-LobbyApi();
+export default LobbyApi;
