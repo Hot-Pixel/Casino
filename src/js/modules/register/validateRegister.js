@@ -349,13 +349,10 @@ export default function validateRegister() {
         const city = document.querySelector('#city');
         const state = document.querySelector('#state');
         const jsonStates = JSON.parse(document.querySelector('#json-states').textContent);
-        console.log(jsonStates);
         const citiesArray = data.records.map(record => record.fields.place_name);
         const statesArray = data.records.map(record => record.fields.admin_name2);
         const cities = [...new Set(citiesArray)];
         const states = [...new Set(statesArray)];
-        console.log(cities);
-        console.log(states);
 
         let cityOptions = '<option value="" disabled>Localidad</option>';
         let stateOptions = '<option value="" disabled>Província</option>';
@@ -365,7 +362,6 @@ export default function validateRegister() {
         });
         states.forEach(state => {
             const jsonState = jsonStates.find(jsonState => jsonState.name.toLowerCase().includes(state.toLowerCase()));
-            console.log(jsonState);
             stateOptions += `<option value="${jsonState.id}">${state}</option>`;
         });
         city.innerHTML = cityOptions;
