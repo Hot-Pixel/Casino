@@ -1,0 +1,466 @@
+<%- include ('layout/head', {title: "Proceso de registro" , css: "register" }) %>
+    <script>
+        async function checkIfDniExists(field) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (field.value === '12345678Z') {
+                        resolve(false);
+                    }
+                    resolve(true);
+                }, 1000);
+            })
+        }
+
+        async function checkIfEmailExists(field) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (field.value === 'test@test.com') {
+                        resolve({ responseStatus: 'ack' });
+                    }
+                    resolve({ responseStatus: 'nok', errorMessage: 'email already in use' });
+                }, 1000);
+            });
+        }
+
+        async function checkIfUserExists(field) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (field.value === 'test') {
+                        resolve({ responseStatus: 'ack' });
+                    }
+                    resolve({ responseStatus: 'nok', errorMessage: 'Error validating request fields', proposedAlias: ["test1", "test2"], fieldErrors: { user: 'No disponible' } });
+                }, 1000);
+            });
+        }
+
+        function savePreregister() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve({ responseStatus: 'ack' });
+                }, 1000);
+            });
+        }
+
+        function register() {
+            var url = "/restapi/RegisterService/register";
+            var formData = new FormData(document.getElementById('register'));
+            var data = {};
+            var suscriptions = [];
+            formData.forEach((value, key) => {
+                if (key.endsWith("subscription", 12)) {
+                    suscriptions.push(key.substr(12));
+                }
+                data[key] = value;
+            })
+            data["subscriptions"] = suscriptions;
+            return fetch(url, {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+        }
+    </script>
+
+    <div class="register">
+
+        <div class="register__header">
+            <a href="/" class="register__header-logo">
+                <img src="img/logos/logo-casino-large.svg" alt="">
+            </a>
+            <a href="/" class="register__header-close">
+                <img src="img/icons/icon-close-register.svg" alt="">
+            </a>
+        </div>
+
+        <div class="register__content">
+            <div class="register__title">¡Abre tu cuenta gratis y en tan solo 30 segundos!</div>
+
+            <form id="register" action="/" method="post" novalidate>
+                <input type="hidden" name="docType" value="0" id="docType">
+                <input type="hidden" name="birthday" value="" id="birthday">
+                <input type="hidden" name="currency" value="1" id="currency">
+                <input type="hidden" name="phonecountry" value="34" id="phonecountry">
+                <input type="hidden" name="phonearea" value="" id="phonearea">
+                <input type="hidden" name="phonenumber" value="" id="phonenumber">
+                <input type="hidden" name="nomulti" value="on" id="nomulti">
+                <input type="hidden" name="subscription1" value="on" id="subscription1">
+                <input type="hidden" name="subscription2" value="on" id="subscription2">
+                <input type="hidden" name="subscription3" value="on" id="subscription3">
+                <input type="hidden" value="199" name="tax_country" id="tax_country">
+                <div class="register__window" data-current-step="1">
+                    <div class="register__steps">
+                        <div class="register__step" data-step="1">1</div>
+                        <div class="register__step" data-step="2">2</div>
+                        <div class="register__step" data-step="3">3</div>
+                    </div>
+                    <div class="register__pages">
+                        <div class="register__spinner-wrapper">
+                            <div class="register__spinner"></div>
+                        </div>
+                        <div class="register__page" data-step="1">
+                            <div class="register__inputs">
+                                <fieldset class="register__fieldset register__fieldset--select" data-status="idle">
+                                    <label for="nationality" class="register__label">Nacionalidad</label>
+                                    <select name="nationality" id="nationality" class="register__input" required
+                                        autocomplete="country-name">
+                                        <option value="50">Eslovenia</option>
+                                        <option value="199" selected>España</option>
+                                        <option value="60">Etiopía</option>
+                                    </select>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--select" data-status="idle">
+                                    <label for="country" class="register__label">País de residencia</label>
+                                    <select name="country" id="country" class="register__input" required
+                                        autocomplete="country-name">
+                                        <option value="50">Andorra</option>
+                                        <option value="199" selected>España</option>
+                                    </select>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="name" class="register__label">Nombre</label>
+                                    <input type="text" name="name" id="name" class="register__input"
+                                        autocomplete="given-name" placeholder="Nombre tal y como aparece en tu DNI"
+                                        pattern="[A-zÀ-ž\s]*" required data-value-missing="Este campo es obligatorio"
+                                        data-pattern-mismatch="El formato del nombre no es correcto">
+                                    <div class="register__hint">Introduce tu nombre exactamente igual que aparece en tu
+                                        DNI o NIE</div>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="middlename" class="register__label">Primer apellido</label>
+                                    <input type="text" name="middlename" id="middlename" class="register__input"
+                                        autocomplete="additional-name"
+                                        placeholder="Primer apellido como aparece en tu DNI" required
+                                        pattern="[A-zÀ-ž\s]*" data-value-missing="Este campo es obligatorio"
+                                        data-pattern-mismatch="El formato del primer apellido no es correcto">
+                                    <div class="register__hint">Introduce tu primer apellido exactamente igual que
+                                        aparece en tu DNI o NIE</div>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="surname" class="register__label">Segundo apellido (Opcional)</label>
+                                    <input type="text" name="surname" id="surname" autocomplete="family-name"
+                                        class="register__input" placeholder="Segundo apellido como aparece en tu DNI"
+                                        required pattern="[A-zÀ-ž\s]*" data-value-missing="Este campo es obligatorio"
+                                        data-pattern-mismatch="El formato del segundo apellido no es correcto">
+                                    <div class="register__hint">Introduce tu segundo apellido exactamente igual que
+                                        aparece en tu DNI o NIE</div>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="nationalId" class="register__label">Documento de identidad</label>
+                                    <input type="text" name="nationalId" id="nationalId" class="register__input"
+                                        placeholder="12345678A" required pattern="([0-9]{8}[A-Z])|[XYZ][0-9]{7}[A-Z]"
+                                        data-value-missing="Este campo es obligatorio"
+                                        data-pattern-mismatch="El formato del DNI/NIE no es correcto">
+                                    <div class="register__hint">Introduce tu DNI o NIE</div>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="e_mail" class="register__label">Email</label>
+                                    <input type="email" name="e_mail" id="e_mail" class="register__input"
+                                        autocomplete="email" placeholder="Tu correo electrónico" required
+                                        data-value-missing="Este campo es obligatorio"
+                                        data-type-mismatch="El formato del email no es correcto">
+                                    <div class="register__hint">Introduce un correo electrónico válido</div>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="phone" class="register__label">Teléfono</label>
+                                    <input type="text" name="phone" id="phone" class="register__input"
+                                        autocomplete="tel-national" placeholder="600000000" required pattern="[0-9]{9}"
+                                        data-value-missing="Este campo es obligatorio"
+                                        data-pattern-mismatch="El teléfono debe tener 9 dígitos">
+                                    <div class="register__hint">Introduce tu número de teléfono móvil, sin prefijo de
+                                        país</div>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--check register__fieldset--span"
+                                    data-status="idle">
+                                    <div class="register__check-wrapper">
+                                        <input type="checkbox" name="c18old" id="c18old" class="register__input"
+                                            required
+                                            data-value-missing="Debes aceptar la política de privacidad para continuar">
+                                        <label for="c18old" class="register__label">He leído y acepto los Términos y
+                                            condiciones y Política de privacidad y la Política de Bonos, y quiero
+                                            recibir comunicaciones promocionales en base a mis intereses y
+                                            preferencias*. Además, confirmo que no estoy afectado por ninguna causa de
+                                            prohibición subjetiva relacionada a la participación en el juego.</label>
+                                    </div>
+                                    <div class="register__messages"></div>
+                            </div>
+                        </div>
+                        <div class="register__page" data-step="2">
+                            <div class="register__inputs">
+                                <fieldset class="register__fieldset register__fieldset--radio" data-status="idle">
+                                    <label class="register__label">Sexo</label>
+                                    <div class="register__grouped">
+                                        <div class="register__group">
+                                            <input type="radio" name="gender" value="1" class="register__input"
+                                                id="gender1" checked />
+                                            <label for="gender1">Hombre</label>
+                                        </div>
+                                        <div class="register__group">
+                                            <input type="radio" name="gender" value="2" class="register__input"
+                                                id="gender2" />
+                                            <label for="gender2">Mujer</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--select" data-status="idle">
+                                    <label class="register__label">Fecha de nacimiento</label>
+                                    <div class="register__grouped">
+                                        <div class="register__group">
+                                            <select name="day" id="day" class="register__input" required
+                                                autocomplete="bday-day" data-value-missing="Este
+                                                campo es obligatorio">
+                                                <option value="">Día</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                                <option value="21">21</option>
+                                                <option value="22">22</option>
+                                                <option value="23">23</option>
+                                                <option value="24">24</option>
+                                                <option value="25">25</option>
+                                                <option value="26">26</option>
+                                                <option value="27">27</option>
+                                                <option value="28">28</option>
+                                                <option value="29">29</option>
+                                                <option value="30">30</option>
+                                                <option value="31">31</option>
+                                            </select>
+                                        </div>
+                                        <div class="register__group">
+                                            <select name="month" id="month" class="register__input"
+                                                autocomplete="bday-month" required data-value-missing="Este
+                                                campo es obligatorio">
+                                                <option value="">Mes</option>
+                                                <option value="1">Enero</option>
+                                                <option value="2">Febrero</option>
+                                                <option value="3">Marzo</option>
+                                                <option value="4">Abril</option>
+                                                <option value="5">Mayo</option>
+                                                <option value="6">Junio</option>
+                                                <option value="7">Julio</option>
+                                                <option value="8">Agosto</option>
+                                                <option value="9">Septiembre</option>
+                                                <option value="10">Octubre</option>
+                                                <option value="11">Noviembre</option>
+                                                <option value="12">Diciembre</option>
+                                            </select>
+                                        </div>
+                                        <div class="register__group">
+                                            <select name="year" id="year" class="register__input"
+                                                autocomplete="bday-year" required data-value-missing="Este
+                                                campo es obligatorio">
+                                                <option value="">Año</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2017">2017</option>
+                                                <option value="2016">2016</option>
+                                                <option value="2015">2015</option>
+                                                <option value="2014">2014</option>
+                                                <option value="2013">2013</option>
+                                                <option value="2012">2012</option>
+                                                <option value="2011">2011</option>
+                                                <option value="2010">2010</option>
+                                                <option value="2009">2009</option>
+                                                <option value="2008">2008</option>
+                                                <option value="2007">2007</option>
+                                                <option value="2006">2006</option>
+                                                <option value="2005">2005</option>
+                                                <option value="2004">2004</option>
+                                                <option value="2003">2003</option>
+                                                <option value="2002">2002</option>
+                                                <option value="2001">2001</option>
+                                                <option value="2000">2000</option>
+                                                <option value="1999">1999</option>
+                                                <option value="1998">1998</option>
+                                                <option value="1997">1997</option>
+                                                <option value="1996">1996</option>
+                                                <option value="1995">1995</option>
+                                                <option value="1994">1994</option>
+                                                <option value="1993">1993</option>
+                                                <option value="1992">1992</option>
+                                                <option value="1991">1991</option>
+                                                <option value="1990">1990</option>
+                                                <option value="1989">1989</option>
+                                                <option value="1988">1988</option>
+                                                <option value="1987">1987</option>
+                                                <option value="1986">1986</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="address" class="register__label">Domicilio</label>
+                                    <input type="text" name="address" id="address" class="register__input"
+                                        autocomplete="street-address" placeholder="P. ej. C/ Dorama 3, 2º 1ª" required
+                                        data-value-missing="Este campo es obligatorio">
+                                    <div class="register__hint">Introduce la dirección que aparece en tu
+                                        DNI o NIE</div>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <div class="register__grouped-fieldsets">
+                                    <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                        <label for="zipcode" class="register__label">Código postal</label>
+                                        <input type="text" name="zipcode" id="zipcode" class="register__input"
+                                            autocomplete="postal-code" placeholder="P. ej. 08005" required
+                                            data-value-missing="Este campo es obligatorio">
+                                        <div class="register__hint">Introduce el código postal que aparece en tu
+                                            DNI o NIE</div>
+                                        <div class="register__messages"></div>
+                                    </fieldset>
+                                </div>
+                                <fieldset class="register__fieldset register__fieldset--select" data-status="idle">
+                                    <label for="city" class="register__label">Localidad</label>
+                                    <select name="city" id="city" class="register__input" required
+                                        data-value-missing="Este campo es obligatorio">
+                                        <option value="" selected disabled>Localidad</option>
+                                    </select>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--select" data-status="idle">
+                                    <label for="state" class="register__label">Província</label>
+                                    <select name="state" id="state" class="register__input" required
+                                        data-value-missing="Este campo es obligatorio">
+                                        <option value="" selected disabled>Província</option>
+                                    </select>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--span register__fieldset--select"
+                                    data-status="idle">
+                                    <label for="tax_state" class="register__label">Región fiscal</label>
+                                    <select name="tax_state" id="tax_state" class="register__input" required
+                                        data-value-missing="Este campo es obligatorio">
+                                        <option value="" selected disabled>Región fiscal</option>
+                                        <option value="17">Álava</option>
+                                        <option value="1">Andalucía</option>
+                                        <option value="2">Aragón</option>
+                                        <option value="3">Asturias</option>
+                                        <option value="5">Cantabria</option>
+                                        <option value="6">Castilla la Mancha</option>
+                                        <option value="7">Castilla y León</option>
+                                        <option value="8">Cataluña</option>
+                                        <option value="20">Ceuta</option>
+                                        <option value="13">Comunidad de Madrid</option>
+                                        <option value="15">Comunidad de Valencia</option>
+                                        <option value="9">Extremadura</option>
+                                        <option value="10">Galicia</option>
+                                        <option value="18">Guipúzcoa</option>
+                                        <option value="11">Islas Baleares</option>
+                                        <option value="4">Islas Canarias</option>
+                                        <option value="12">La Rioja</option>
+                                        <option value="21">Melilla</option>
+                                        <option value="16">Navarra</option>
+                                        <option value="22">Otros</option>
+                                        <option value="14">Región de Murcia</option>
+                                        <option value="19">Vizcaya</option>
+                                    </select>
+                                    <div class="register__messages"></div>
+
+                            </div>
+                        </div>
+                        <div class="register__page" data-step="3">
+                            <div class="register__inputs">
+                                <fieldset class="register__fieldset register__fieldset--text register__fieldset--span"
+                                    data-status="idle">
+                                    <label for="user" class="register__label">Nombre de usuario</label>
+                                    <input type="text" name="user" id="user" class="register__input"
+                                        autocomplete="username" placeholder="Nombre de usuario" required
+                                        pattern="^[A-Za-z][A-Za-z0-9]*" data-value-missing="Este campo es obligatorio"
+                                        data-pattern-mismatch="El formato no es correcto"
+                                        data-too-short="El nombre de usuario debe tener al menos 3 caracteres"
+                                        data-too-long="El nombre de usuario debe tener como máximo 16 caracteres"
+                                        minlength="3" maxlength="16">
+                                    <div class="register__hint">De 3 a 16 letras. Por favor, no uses nada ofensivo</div>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="pwdField" class="register__label">Contraseña</label>
+                                    <input type="password" name="pwdField" id="pwdField" class="register__input"
+                                        autocomplete="new-password" placeholder="Contraseña"
+                                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" required
+                                        data-value-missing="Este campo es obligatorio"
+                                        data-pattern-mismatch="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, una minúscula y una mayúscula">
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="re_password" class="register__label">Confirmación de contraseña</label>
+                                    <input type="password" name="re_password" id="re_password" class="register__input"
+                                        autocomplete="new-password" placeholder="Confirmación de contraseña" required
+                                        data-value-missing="Este campo es obligatorio"
+                                        data-pattern-mismatch="La contraseña debe tener entre 8 y 16 caracteres, al menos un dígito, una minúscula y una mayúscula">
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--select" data-status="idle">
+                                    <label for="securityQuestion" class="register__label">Pregunta de seguridad</label>
+                                    <select name="securityQuestion" id="securityQuestion" class="register__input"
+                                        required>
+                                        <option value="" selected>Pregunta de seguridad</option>
+                                        <option value="¿Cuál era el nombre de tu primera mascota?">¿Cuál era el nombre
+                                            de tu
+                                            primera mascota?</option>
+                                        <option value="¿Dónde naciste?">¿Dónde naciste?</option>
+                                        <option value="¿Quién era tu mejor amigo de la infancia?">¿Quién era tu mejor
+                                            amigo
+                                            de la infancia?</option>
+                                        <option value="¿Cuál es tu grupo de música preferido?">¿Cuál es tu grupo de
+                                            música
+                                            preferido?</option>
+                                    </select>
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text" data-status="idle">
+                                    <label for="securityResponse" class="register__label">Respuesta de seguridad</label>
+                                    <input type="text" name="securityResponse" id="securityResponse"
+                                        class="register__input" placeholder="Respuesta de seguridad" required
+                                        data-value-missing="Este campo es obligatorio">
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                                <fieldset class="register__fieldset register__fieldset--text register__fieldset--span"
+                                    data-status="idle">
+                                    <label for="bonus" class="register__label">Respuesta de seguridad</label>
+                                    <input type="text" name="bonus" id="bonus" class="register__input"
+                                        placeholder="Código promocional">
+                                    <div class="register__messages"></div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="register__actions">
+                        <button class="btn register__action btn__white register__action--prev">Volver</button>
+                        <button class="register__action register__action--next btn__red"><span>Continuar</span> <img
+                                src="img/icons/icon-btn-arrow.svg" /></button>
+                        <button type="submit" class="register__action btn__red register__action--submit"
+                            form="form"><span>Registrarme</span> <img src="img/icons/icon-btn-arrow.svg" /></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <%- include ('modules/mpu') %>
+        <%- include ('layout/scripts', { script: 'register' , screen: 'register' })%>

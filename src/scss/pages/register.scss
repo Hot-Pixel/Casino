@@ -1,0 +1,438 @@
+// SETTINGS
+// variables y config
+@use "../settings" as *;
+
+// TOOLS
+// Mixins, extend and functions
+@use "../tools" as *;
+
+// GENERIC
+// Resets, normalize y genericos
+@use "../base";
+
+// COMPONENTS
+@use "../components/buttons";
+@use "../components/alert";
+
+// OBJECTS
+@use "../objects/user/login";
+@use "../objects/user/validation";
+
+//LAYOUT
+
+// MODULES
+// @use '../modules/user-screen';
+
+// HELPER
+// Clases de ayuda, textos, colores y demás
+@use "../helper" as *;
+
+.register {
+    background: setcolor("black", "dark1");
+    min-height: 100vh;
+
+    @include tablet {
+        background-image: linear-gradient(45deg, setcolor("primary") 25%, setcolor("black", "dark1") 75%);
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: $md;
+
+        &-logo {
+            width: 100%;
+            max-width: rem(200);
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: setcolor("white");
+        font-size: rem(24);
+        margin: 0;
+        padding: $md;
+        max-width: 60%;
+        margin-bottom: $md;
+        align-self: flex-start;
+        
+        @include tablet {
+            max-width: rem(400);
+            font-size: rem(24);
+            text-align: center;
+            align-self: center;
+        }
+    }
+
+    &__window {
+        width: 100%;
+        max-width: rem(800);
+        background-color: setcolor("black");
+        box-shadow: 0 0 rem(70) rem(10) setcolor("black", "dark1");
+        
+        @include tablet {
+            border-radius: $md;
+        }
+
+        &--loading {
+            .register__spinner-wrapper {
+                display: flex;
+            }
+            .register__page,
+            .register__actions {
+                opacity: 0.3;
+                pointer-events: none;
+            }
+        }
+    }
+
+    &__spinner-wrapper {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__spinner {
+        width: 48px;
+        height: 48px;
+        border: 5px solid #fff;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+    }
+
+    &__steps {
+        display: flex;
+        gap: rem(5);
+        transform: translateY(-50%);
+        margin-left: $sm;
+        align-items: center;
+        
+        @include tablet {
+            justify-content: center;
+            margin-left: 0;
+        }
+        
+    }
+
+    &__step {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: rem(48);
+        height: rem(48);
+        border-radius: 50%;
+        border: solid rem(10) setcolor("black");
+        color: setcolor("white");
+        font-size: 0.8rem;
+        font-weight: 100;
+        position: relative;
+        z-index: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: setcolor("black", "dark2");
+            z-index: -1;
+            border: solid 1px setcolor("white");
+            box-shadow: 0 0 0 rem(4) setcolor("black", "dark2");
+        }
+
+        &--active {
+            &::before {
+                background-color: setcolor("primary");
+                box-shadow: 0 0 0 rem(4) setcolor("primary");
+            }
+        }
+
+        &[data-step="1"] {
+            [data-current-step="1"] & {
+                @extend .register__step--active;
+            }
+        }
+        &[data-step="1"],
+        &[data-step="2"] {
+            [data-current-step="2"] & {
+                @extend .register__step--active;
+            }
+        }
+        &[data-step="1"],
+        &[data-step="2"],
+        &[data-step="3"] {
+            [data-current-step="3"] & {
+                @extend .register__step--active;
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(10);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: setcolor("black", "dark5");
+        padding: $sm;
+        
+        @include tablet {
+            position: initial;
+            background-color: transparent;
+            transform: translateY(50%);
+            padding: 0;
+        }
+    }
+
+    &__action {
+        display: none;
+        text-transform: uppercase;
+
+        &--active {
+            display: flex;
+        }
+
+        &--prev {
+            [data-current-step="2"] &,
+            [data-current-step="3"] & {
+                @extend .register__action--active;
+            }
+        }
+        &--next {
+            [data-current-step="1"] &,
+            [data-current-step="2"] & {
+                @extend .register__action--active;
+            }
+        }
+        &--submit {
+            [data-current-step="3"] & {
+                @extend .register__action--active;
+            }
+        }
+    }
+
+    &__pages {
+        position: relative;
+    }
+
+    &__page {
+        display: none;
+        padding: $sm;
+        padding-bottom: rem(90);
+
+        @include tablet {
+            padding: $md $lg;
+        }
+
+        &--active {
+            display: block;
+        }
+
+        &[data-step="1"] {
+            [data-current-step="1"] & {
+                @extend .register__page--active;
+            }
+        }
+        &[data-step="2"] {
+            [data-current-step="2"] & {
+                @extend .register__page--active;
+            }
+        }
+        &[data-step="3"] {
+            [data-current-step="3"] & {
+                @extend .register__page--active;
+            }
+        }
+    }
+
+    &__inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: rem(16);
+
+        @include tablet {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__input {
+        appearance: none;
+        background-color: setcolor("black", "dark5");
+        border: solid 2px setcolor("black", "dark5");
+        padding: rem(15) rem(20);
+        border-radius: rem(100);
+        color: setcolor("white");
+
+        &::placeholder {
+            color: setcolor("white", "light");
+        }
+    }
+
+    &__hint {
+        padding-left: $sm;
+        color: setcolor("white", "light");
+        display: none;
+    }
+
+    &__fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: rem(8);
+
+        &--select {
+
+            select {
+                background-image: url(../../img/icons/icon-arrow-down-opacity.svg);
+                background-size: 14px;
+                background-repeat: no-repeat;
+                background-position: center right rem(20);
+                padding-right: rem(40);
+                width: 100%;
+            }
+        }
+
+        &--check {
+            input {
+                appearance: none;
+                background-color: setcolor("black", "dark5");
+                border-radius: rem(3);
+                border: solid 2px setcolor("black", "dark5");
+                height: 1rem;
+                aspect-ratio: 1;
+                padding: 0;
+
+                &:checked {
+                    background: url("../../img/icons/icon-check.svg") no-repeat setcolor("white", "light");
+                    background-size: contain;
+                }
+            }
+
+            label {
+                color: setcolor("white", "light");
+                cursor: pointer;
+            }
+        }
+
+        &--radio {
+            .register__group {
+                display: flex;
+                gap: rem(8);
+                @extend .register__input;
+                
+                label {
+                    font-family: $secondary_font_family;
+                    font-weight: setfont("weight", "bold");
+                    padding: 0;
+                    font-size: rem(14);
+                    color: setcolor("white", "light");
+                }
+
+                input:checked ~ label {
+                    color: setcolor("white");
+                } 
+            }
+
+
+            input {
+                appearance: none;
+                background-color: setcolor("black");
+                border-radius: 50%;
+                border: solid 4px setcolor("black");
+                height: 1rem;
+                aspect-ratio: 1;
+                padding: 0;
+
+                &:checked {
+                    background-color: setcolor("white");
+                }
+            }
+        }
+
+        &--active {
+            .register__hint {
+                display: block;
+            }
+        }
+
+        &[data-status="invalid"] {
+            .register__input {
+                border: solid 2px setcolor("warning");
+                color: setcolor("warning");
+            }
+
+            .register__messages {
+                display: block;
+            }
+        }
+
+        &--span {
+            @include tablet {
+                grid-column: 1 / span 2;
+            }
+        }
+    }
+
+    &__label {
+        color: setcolor("white");
+        font-size: rem(12);
+        font-family: $secondary_font_family;
+        font-weight: setfont("weight", "book");
+        padding-left: $sm;
+    }
+
+    &__messages {
+        display: none;
+        padding: 0 $sm;
+        color: setcolor("warning");
+    }
+
+    &__check-wrapper {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    &__grouped {
+        display: flex;
+        flex-direction: row;
+        gap: rem(8);
+    }
+
+    &__group {
+        width: 100%;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

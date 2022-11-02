@@ -110,6 +110,7 @@
 .btn__white {
   @extend %buttons;
   background-color: white;
+  color: setcolor("black");
 
   &:hover {
     background-color: setcolor("gray");

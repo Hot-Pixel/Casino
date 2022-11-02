@@ -51,6 +51,11 @@ const paths = {
     watcher: "views/**/*.ejs",
     dest: "dist/",
   },
+  fonts: {
+    src: "src/fonts/**/*",
+    watcher: "src/fonts/**/*",
+    dest: "public/fonts/",
+  }
 };
 
 /* Gulp Pipe for compiling SASS main file */
@@ -112,11 +117,18 @@ gulp.task("copyImg", async done => {
   done();
 });
 
+gulp.task("copyFonts", async done => {
+  gulp
+    .src(paths.fonts.src)
+    .pipe(gulp.dest(paths.fonts.dest));
+  done();
+});
+
 /* Keep imageMiin task for legacy */
 gulp.task("imageMin", gulp.series("copyImg"));
 
 /* Gulp Watch */
-gulp.task("watch", gulp.series("sass", "js", "copyImg", async done => {
+gulp.task("watch", gulp.series("sass", "js", "copyImg", "copyFonts", async done => {
   server.init({
     proxy: "http://localhost:3000",
     browser: "chrome",
@@ -126,6 +138,7 @@ gulp.task("watch", gulp.series("sass", "js", "copyImg", async done => {
   });
   watch(paths.scss.watcher).on("change", gulp.series("sass", 'reload'));
   watch(paths.scripts.watcher).on("change", gulp.series("js", 'reload'));
+  watch(paths.images.watcher).on("add", gulp.series("copyImg"));
   watch(paths.images.watcher).on("add", gulp.series("copyImg"));
   watch(paths.ejs.watcher).on("change", gulp.series('reload'));
   done();
