@@ -55,6 +55,7 @@ const paths = {
     src: "src/fonts/**/*",
     watcher: "src/fonts/**/*",
     dest: "public/fonts/",
+    dist: "dist/fonts/",
   }
 };
 
@@ -121,6 +122,13 @@ gulp.task("copyFonts", async done => {
   gulp
     .src(paths.fonts.src)
     .pipe(gulp.dest(paths.fonts.dest));
+  done();
+});
+
+gulp.task("bundleFonts", async done => {
+  gulp
+    .src(paths.fonts.src)
+    .pipe(gulp.dest(paths.fonts.dist));
   done();
 });
 
@@ -222,4 +230,4 @@ gulp.task("bundleCss", async done => {
 //   done();
 // });
 
-gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss", "bundleImg", "beautify-html"));
+gulp.task("build", gulp.series("bundleJs", "bundleEjs", "bundleCss", "bundleFonts", "bundleImg", "beautify-html"));
