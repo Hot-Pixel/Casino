@@ -348,6 +348,8 @@ export default function validateRegister() {
     function fillLocationInputs(data) {
         const city = document.querySelector('#city');
         const state = document.querySelector('#state');
+        const jsonStates = JSON.parse(document.querySelector('#json-states').textContent);
+        console.log(jsonStates);
         const citiesArray = data.records.map(record => record.fields.place_name);
         const statesArray = data.records.map(record => record.fields.admin_name2);
         const cities = [...new Set(citiesArray)];
@@ -362,7 +364,9 @@ export default function validateRegister() {
             cityOptions += `<option value="${city}">${city}</option>`;
         });
         states.forEach(state => {
-            stateOptions += `<option value="${state}">${state}</option>`;
+            const jsonState = jsonStates.find(jsonState => jsonState.name.toLowerCase().includes(state.toLowerCase()));
+            console.log(jsonState);
+            stateOptions += `<option value="${jsonState.id}">${state}</option>`;
         });
         city.innerHTML = cityOptions;
         state.innerHTML = stateOptions;
