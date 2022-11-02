@@ -226,12 +226,12 @@ export default function validateRegister() {
             );
         }
         return false;
-    
+
     }
-    
+
     function nif(dni) {
         const expresion_regular_dni = /^\d{8}[a-zA-Z]$/;
-    
+
         if (expresion_regular_dni.test(dni) == true) {
             let numero = dni.substr(0, dni.length - 1);
             const letra = dni.substr(dni.length - 1, 1);
@@ -246,7 +246,7 @@ export default function validateRegister() {
             return false;
         }
     }
-    
+
     function validateNieNif(dni) {
         if (currentDoctype === DOCTYPE_DNINIE) {
             if (!nif(dni) && !nie(dni)) {
@@ -261,7 +261,7 @@ export default function validateRegister() {
 
     async function validateNationalId(field) {
         field.setCustomValidity("");
-        if(!validateNieNif(field.value)){
+        if (!validateNieNif(field.value)) {
             field.setCustomValidity("El DNI/NIE no es válido");
             return false;
         }
@@ -339,18 +339,23 @@ export default function validateRegister() {
         field.dataset.value = field.value;
 
         const country = document.querySelector('#country');
-        const countryCode = currentDoctype === DOCTYPE_DNINIE ? 'ES' : 'AD';
+        const countryCode = country.value === '199' ? 'ES' : 'AD';
         fetch(`https://data.opendatasoft.com/api/records/1.0/search/?dataset=geonames-postal-code%40public&q=&facet=country_code&facet=admin_name1&facet=admin_code1&facet=admin_name2&facet=postal_code&refine.country_code=${countryCode}&refine.postal_code=${field.value}`)
             .then(response => response.json())
-            .then(data => fillLocationInputs(data));
+            .then(data => fillLocationInputs(data, countryCode));
     }
 
-    function fillLocationInputs(data) {
+    function fillLocationInputs(data, countryCode) {
         const city = document.querySelector('#city');
         const state = document.querySelector('#state');
         const jsonStates = JSON.parse(document.querySelector('#json-states').textContent);
         const citiesArray = data.records.map(record => record.fields.place_name);
-        const statesArray = data.records.map(record => record.fields.admin_name2);
+        const statesArray = data.records.map(record => {
+            if (countryCode === 'ES') {
+                return record.fields.admin_name2;
+            }
+            return record.fields.admin_name1;
+        });
         const cities = [...new Set(citiesArray)];
         const states = [...new Set(statesArray)];
 
