@@ -13,13 +13,19 @@ export default function gameLauncher() {
 
     playBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            startGame();
+            const roomId = btn.dataset.roomId;
+            const opener = btn.dataset.opener;
+            const extra = btn.dataset.extra;
+            startGame(opener, roomId, extra);
         });
     });
 
     demoBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-            startGame(true);
+            const roomId = btn.dataset.roomId;
+            const opener = btn.dataset.opener;
+            const extra = btn.dataset.extra;
+            startGame(opener, roomId, extra, true);
         });
     });
 
@@ -46,13 +52,26 @@ export default function gameLauncher() {
         triggerResize();
     });
 
-    function startGame(demo = false) {
+    function startGame(opener, roomId, extra = "", demo = false) {
         document.body.classList.add('game-mode');
         if (demo) document.body.classList.add('game-mode--demo');
         triggerResize();
-        gameIframe.src = "https://atoom.space";
+
+        if (demo) {
+            if (typeof openUniversalDemo === "function") {
+                openUniversalDemo(opener, roomId, "");
+                return;
+            }
+        } 
+        
+        if (typeof openUniversal === "function") {
+            openUniversal(opener, roomId, extra);
+            return;
+        }
+
+        gameIframe.src = "https://example.com";
     }
-    
+
     function closeGame() {
         document.body.classList.remove('game-mode', 'game-mode--demo', 'game-mode--maximized');
         gameIframe.src = "";
@@ -63,7 +82,7 @@ export default function gameLauncher() {
         window.dispatchEvent(new Event('resize'));
         triggerResize();
     }
-    
+
     function minimize() {
         document.body.classList.remove('game-mode--maximized');
         triggerResize();
