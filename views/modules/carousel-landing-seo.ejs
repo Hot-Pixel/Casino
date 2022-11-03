@@ -21,7 +21,9 @@
 			<ul class="splide__list">
 				<% data.forEach( e=> { %>
 					<li class="splide__slide carouselLandingSEO__carousel-item">
-						<img class="carouselLandingSEO__carousel-item-logo" src="img/images/<%= e.logo %>">
+            <div class="carouselLandingSEO__carousel-item-container">
+						  <img class="carouselLandingSEO__carousel-item-logo" src="img/images/<%= e.logo %>">
+            </div>
 						<a href="<%= e.btnHref %>" class="carouselLandingSEO__carousel-item-button btn__red">
 							<span><%= e.btnLabel %></span>
 							<img src="img/icons/icon-arrow-circle-white.svg" alt="">

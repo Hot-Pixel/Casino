@@ -59,9 +59,16 @@
 
 		&-item {
 
-
+      &-container{
+        max-width:100%;
+        height:70%;
+        background-color: aliceblue;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+      }
 			&-logo {
-				max-width: 100%;
+				max-width: 90%;
 			}
 
 
