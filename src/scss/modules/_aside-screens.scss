@@ -265,10 +265,6 @@
 
       padding: $sm;
 
-      .grey {
-        color: setcolor("gray", "mid");
-      }
-
       &:nth-of-type(odd) {
         background-color: #282b31;
       }
@@ -295,25 +291,26 @@
 
   .termsScreen {
     margin: $sm;
-
+    
     @include tablet {
       margin: $md;
     }
-
+    
     @include screen-sm {
       margin: 0;
       margin-top: $md;
     }
-
+    
     p {
+      color: setcolor("gray", "mid");
       padding-bottom: $sm;
     }
 
-    .title-big {
+    h2 {
       @extend .u-f--h2;
     }
 
-    .title {
+    h3 {
       @extend .u-f--h3;
     }
 
