@@ -48,6 +48,24 @@
     &--online {
       display: none;
     }
+
+    &--disabled {
+      padding: $lg;
+
+    }
+    
+    &__message {
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    &__actions {
+      margin-top: $md;
+      text-transform: uppercase;
+    }
+
+    
   }
 
   .heart g path {
@@ -376,5 +394,11 @@
         right: 5%;
       }
     }
+  }
+}
+
+.screen--disabled {
+  .headerScreen--bottom {
+    display: none;
   }
 }
