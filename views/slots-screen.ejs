@@ -12,7 +12,7 @@
 
         <section class="screens aside-open">
             <section class="screen screen--offline">
-                <img src="img/images/img-screen-brand.png" alt="">
+                <img class="screen__image" src="img/images/img-screen-brand.png" alt="">
                 <div class="screen__btns">
                     <button class="btn__red btn__red--glow play-btn" data-opener="slotPlaytech" data-room-id="2005066" data-extra="&session=wfcdhwszycqbxwbohuhruuuenklzyhggdtynvftpvtctwfhrwd">
                         <span>¡Juega!</span>
@@ -24,6 +24,15 @@
                 </div>
             </section>
             <section class="screen screen--online">
+                <div class="demo-bar">
+                    <div class="demo-bar__message">Jugando en <a href="#" class="demo-bar__info-btn"> modo demo <img src="img/icons/icon-info-white.svg"></a></div>
+                    <div class="demo-bar__actions">
+                        <a href="/slots-screen" class="demo-bar__action demo-bar__action--real">Ir a real</a>
+                    </div>
+                    <div class="demo-bar__tooltip">No olvides que estás jugando al modo demostración de esta slot. La finalidad es que pruebes y averiguar si te gusta o no el juego, la temática o el margen de apuestas antes de jugar con dinero real. Con este modo, podrás jugar de forma gratuita, aprender a jugar o descubrir nuevos títulos sin tener que depositar tu dinero. Las reglas son las mismas que en el modo real, la única diferencia es el saldo y los premios (siendo ambos ficticios en este modo, al no utilizar el saldo de tu monedero real).
+                        <div class="demo-bar__arrow" data-popper-arrow></div>
+                    </div>
+                </div>
                 <iframe frameborder="0" hspace="0" vspace="0" marginheight="0" marginwidth="0"  width="100%" class="screen__iframe" id="gameIframe" allow="fullscreen" ></iframe>
             </section>
 

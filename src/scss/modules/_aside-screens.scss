@@ -22,15 +22,16 @@
   .screen {
     display: flex;
     background-color: setcolor("black");
-    padding: $md $sm;
+    padding: 0 $sm;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 
-    img {
+    &__image {
       object-fit: contain;
       width: 100%;
       max-width: rem(600);
+      margin: $lg;
     }
 
     &__btns {

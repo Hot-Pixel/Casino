@@ -1,0 +1,75 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.demo-bar {
+  background-color: setcolor("warning");
+  align-self: normal;
+  display: flex;
+  justify-content: space-between;
+  padding: $xs $sm;
+
+  &__message {
+    display: flex;
+  }
+
+  &__info-btn {
+    display: flex;
+    margin-left: rem(3);
+    font-weight: setfont("weight", "bold");
+    text-transform: uppercase;
+    
+    img {
+      margin-left: rem(3);
+      width: 1rem;
+    }
+  }
+
+  &__action {
+    text-transform: uppercase;
+  }
+
+  &__tooltip {
+    max-width: 30em;
+    padding: 1rem;
+    background-color: #ea9c00;
+    border-radius: 5px;
+    display: none;
+    font-size: .8rem;
+
+    &.active {
+      display: block;
+    }
+
+    &[data-popper-placement^='top'] > .demo-bar__arrow {
+      bottom: -4px;
+    }
+    &[data-popper-placement^='bottom'] > .demo-bar__arrow {
+      top: -4px;
+    }
+    &[data-popper-placement^='left'] > .demo-bar__arrow {
+      right: -4px;
+    }
+    &[data-popper-placement^='right'] > .demo-bar__arrow {
+      left: -4px;
+    }
+  }
+
+  &__arrow {
+    visibility: hidden;
+
+    &,
+    &::before {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: inherit;
+    }
+
+    &::before {
+      visibility: visible;
+      content: "";
+      transform: rotate(45deg);
+    }
+  }
+}
