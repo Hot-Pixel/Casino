@@ -5,9 +5,13 @@
 .demo-bar {
   background-color: setcolor("warning");
   align-self: normal;
-  display: flex;
   justify-content: space-between;
   padding: $xs $sm;
+  display: none;
+
+  .game-mode--demo & {
+    display: flex;
+  }
 
   &__message {
     display: flex;
