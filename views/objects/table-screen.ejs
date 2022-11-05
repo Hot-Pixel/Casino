@@ -1,57 +1,59 @@
-<%
-const tableArray = [
-    {
-        cubiertos: "1",
-        apuestas: "Pleno",
-        pago: "29-499:1"
-    },
-    {
-        cubiertos: "2",
-        apuestas: "Dividir",
-        pago: "11:1"
-    },
-    {
-        cubiertos: "3",
-        apuestas: "Transversal",
-        pago: "8:1"
-    },
-    {
-        cubiertos: "4",
-        apuestas: "Cuadro",
-        pago: "5:1"
-    },
-    {
-        cubiertos: "6",
-        apuestas: "Seisena",
-        pago: "2:1"
-    },
-    {
-        cubiertos: "12",
-        apuestas: "Apuesta a columna o docena",
-        pago: "1:1"
-    },
-    {
-        cubiertos: "18",
-        apuestas: "Apuesta a rojo/negro, par/impar, 1-18/19-36",
-        pago: "1:1"
-    },
-]
-%>
+<% const tableArray=[ { cubiertos: "1" , apuestas: "Pleno" , pago: "29-499:1" }, { cubiertos: "2" , apuestas: "Dividir"
+    , pago: "11:1" }, { cubiertos: "3" , apuestas: "Transversal" , pago: "8:1" }, { cubiertos: "4" , apuestas: "Cuadro"
+    , pago: "5:1" }, { cubiertos: "6" , apuestas: "Seisena" , pago: "2:1" }, { cubiertos: "12" ,
+    apuestas: "Apuesta a columna o docena" , pago: "1:1" }, { cubiertos: "18" ,
+    apuestas: "Apuesta a rojo/negro, par/impar, 1-18/19-36" , pago: "1:1" }, ] %>
 
-<section class="tableScreen">
-    <p class="aside__title">Slot Age of The Gods: Wonder Warriors</p>
-    <div class="tableScreen__grid">
-        <div class="tableScreen__item">
-            <p class="">Números cubiertos</p>
-            <p class="">Tipo de apuesta</p>
-            <p class="">Pago</p>
-        </div>
-        <% tableArray.forEach( e => { %>
-            <div class="tableScreen__item">
-                <p class="grey"><%= e.cubiertos %> </p>
-                <p class="grey"><%= e.apuestas %> </p>
-                <p class=""><%= e.pago %> </p>
-            </div>
-        <% }) %>
+    <div class="table__wrapper">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>N&uacute;meros Cubiertos</th>
+                    <th>T&eacute;rmino</th>
+                    <th>Paga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1 n&uacute;mero</td>
+                    <td>Apuesta a Un N&uacute;mero</td>
+                    <td>35 a 1</td>
+                </tr>
+                <tr>
+                    <td>2 n&uacute;meros</td>
+                    <td>Apuesta Dividida</td>
+                    <td>17 a 1</td>
+                </tr>
+                <tr>
+                    <td>3 n&uacute;meros</td>
+                    <td>Apuesta Transversal</td>
+                    <td>11 a 1</td>
+                </tr>
+                <tr>
+                    <td>4 n&uacute;meros</td>
+                    <td>Apuesta a la Esquina</td>
+                    <td>8 a 1</td>
+                </tr>
+                <tr>
+                    <td>5 n&uacute;meros</td>
+                    <td>Apuesta a Cinco</td>
+                    <td>6 a 1</td>
+                </tr>
+                <tr>
+                    <td>6 n&uacute;meros</td>
+                    <td>Apuesta a la L&iacute;nea</td>
+                    <td>5 a 1</td>
+                </tr>
+                <tr>
+                    <td>12 n&uacute;meros</td>
+                    <td>Apuesta a la Docena o a la Columna</td>
+                    <td>2 a 1</td>
+                </tr>
+                <tr>
+                    <td>18 n&uacute;meros</td>
+                    <td>Apuestas a Rojo/Negro, Pares/Impares, Altos/Bajos</td>
+                    <td>1 a 1</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-</section>

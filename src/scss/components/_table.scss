@@ -2,53 +2,58 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.table__wrapper {
-	overflow-x: auto;
-	border-radius: 5px 5px 0 0;
+.table {
+	margin-top: 30px;
+	width: 100%;
+	border: none;
+	border-collapse: collapse;
+	text-align: center;
+	border-radius: rem(5);
+	overflow: hidden;
+	min-width: rem(400);
 
-	.table {
-		margin-top: 30px;
-		width: 100%;
-		border: none;
-		border-collapse: collapse;
-		text-align: center;
-		border-radius: rem(5);
-		overflow: hidden;
-		min-width: rem(400);
+	&__wrapper {
+		overflow-x: auto;
+		border-radius: 5px 5px 0 0;
+	}
 
-		thead {
-			tr {
-				@extend .u-f--bold;
-				background-color: setcolor("black", "dark4");
-				color: setcolor("white");
-				text-transform: uppercase;
-			}
-		}
-
-		tbody {
-			tr {
-				background-color: setcolor("black");
-				color: setcolor("white");
-				border-top: setcolor("black", "dark1") 1px solid;
-				transition: all 200ms;
-
-				&:hover {
-					background-color: setcolor("black", "dark2");
-				}
-			}
-		}
-
-		td,
+	thead {
 		th {
-			padding: $sm;
+			font-weight: setfont("weight", "book");
 		}
+		tr {
+			background-color: setcolor("black", "dark4");
+			color: setcolor("white");
+		}
+	}
 
-		.left {
-			text-align: left;
-		}
+	tbody {
+		tr {
+			background-color: setcolor("black");
+			color: setcolor("white");
+			border-top: setcolor("black", "dark1") 1px solid;
+			transition: all 200ms;
 
-		.right {
-			text-align: right;
+			&:nth-of-type(odd) {
+				background-color: #282b31;
+			}
+
+			&:nth-of-type(even) {
+				background-color: #23272d;
+			}
 		}
+	}
+
+	td,
+	th {
+		padding: $sm;
+	}
+
+	.left {
+		text-align: left;
+	}
+
+	.right {
+		text-align: right;
 	}
 }

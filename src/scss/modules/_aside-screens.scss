@@ -256,57 +256,6 @@
     }
   }
 
-  .tableScreen {
-    margin: $sm;
-
-    @include tablet {
-      margin: $md;
-    }
-
-    @include screen-sm {
-      margin: 0;
-      margin-top: $md;
-    }
-
-    &__grid {
-      display: flex;
-      flex-direction: column;
-
-      margin-top: $md;
-      border-radius: rem(5);
-      overflow: hidden;
-    }
-
-    &__item {
-      display: grid;
-      grid-template-columns: 2fr 2fr 1fr;
-
-      padding: $sm;
-
-      &:nth-of-type(odd) {
-        background-color: #282b31;
-      }
-
-      &:nth-of-type(even) {
-        background-color: #23272d;
-      }
-
-      &:first-of-type {
-        background-color: #30343a;
-      }
-
-      p {
-        margin: 0;
-
-        &:nth-child(2),
-        &:nth-child(3) {
-          text-align: right;
-          justify-self: flex-end;
-        }
-      }
-    }
-  }
-
   .termsScreen {
     margin: $sm;
     
