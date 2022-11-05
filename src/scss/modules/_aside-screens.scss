@@ -185,7 +185,7 @@
 
     &__btns {
       transform: translateY(rem(25));
-      button {
+      button, a {
         height: rem(50);
         width: 100%;
 
@@ -257,6 +257,7 @@
   }
 
   .termsScreen {
+    color: setcolor("gray", "mid");
     margin: $sm;
     
     @include tablet {
@@ -272,13 +273,26 @@
       color: setcolor("gray", "mid");
       padding-bottom: $sm;
     }
-
+    
     h2 {
       @extend .u-f--h2;
+      color: setcolor("white");
     }
-
+    
     h3 {
       @extend .u-f--h3;
+      color: setcolor("white");
+    }
+
+    ul, ol {
+      padding: revert;
+      margin: revert;
+
+      li {
+        padding: revert;
+        margin: revert;
+        list-style: revert;
+      }
     }
 
     .bold {
