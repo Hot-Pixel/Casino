@@ -29,10 +29,12 @@ export default function gameLauncher() {
         });
     });
 
-    heartBtn.addEventListener('click', e => {
-        heartBtn.classList.toggle('active');
-        setFavStatus(e.target.dataset.gameId, heartBtn.classList.contains('active'));
-    });
+    if (heartBtn) {
+        heartBtn.addEventListener('click', e => {
+            heartBtn.classList.toggle('active');
+            setFavStatus(e.target.dataset.gameId, heartBtn.classList.contains('active'));
+        });
+    }
 
     maximizeBtn.addEventListener('click', () => {
         maximize();
@@ -62,8 +64,8 @@ export default function gameLauncher() {
                 openUniversalDemo(opener, roomId, "");
                 return;
             }
-        } 
-        
+        }
+
         if (typeof openUniversal === "function") {
             openUniversal(opener, roomId, extra);
             return;
