@@ -59,6 +59,7 @@ import mpuPaysafe from "./routes/mpuPaysafe.js";
 import mpuQuestionarie from "./routes/mpuQuestionarie.js";
 import {fileURLToPath} from 'url';
 import generic from "./routes/generic.js";
+import rtp from "./routes/rtp.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -127,6 +128,7 @@ app.use("/mpu-questionarie", mpuQuestionarie);
 app.use("/landing-seo", landingSEO);
 app.use("/apuestas-virtuales", apuestasVirtuales);
 app.use("/generic", generic);
+app.use("/rtp", rtp);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
