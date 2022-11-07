@@ -18,7 +18,10 @@ const LobbyApi = () => {
     function fetchApi(element) {
         const filters = JSON.parse(element.dataset.filters);
         const filtersString = new URLSearchParams(filters).toString();
-        fetch(`${API_URL}/rooms?${filtersString}`, { 'headers': { 'Accept': 'application/json' } })
+        const baseUrl = `${API_URL}/room_slots?${filtersString}&page=`;
+        let currentPage = 1;
+        
+        fetch(`${baseUrl+currentPage}`, { 'headers': { 'Accept': 'application/json' } })
             .then(response => response.json())
             .then(data => {
                 renderData(element, data);
