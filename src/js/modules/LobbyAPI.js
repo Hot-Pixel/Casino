@@ -52,7 +52,7 @@ const LobbyApi = () => {
             item.querySelector('.item').dataset.gameId = room.roomId;
             item.querySelector('.item__image').src = 'https://revamp.casinobarcelona.es/img/cbar-logos/all/thumb/' + imagename;
             let itemImage = item.querySelector('.item__image');
-            itemImage.onerror = ()=>{itemImage.onerror=null;itemImage.src=`${room.thumb.replace('.jpg','.webp').replace('.png','.webp')}`};
+            itemImage.onerror = ()=>{itemImage.onerror=null;itemImage.src=`${room.thumb}`};
             element.appendChild(item);
         });
     }
