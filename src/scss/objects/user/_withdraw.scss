@@ -73,9 +73,13 @@
     align-items: center;
 
     cursor: pointer;
+    
+    &--greyed {
+      opacity: 0.4;
+    }
 
     img {
-      object-fit: cover;
+      max-width: 109px;
     }
   }
 }

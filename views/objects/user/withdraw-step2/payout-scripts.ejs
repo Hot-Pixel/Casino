@@ -10,5 +10,16 @@
         });
     }
 
+    function initDisabledBtns() {
+        var mpuBtns = document.querySelectorAll("[data-mpu-body]");
+
+        mpuBtns.forEach((btn) => {
+            btn.addEventListener("click", e => {
+                e.preventDefault();
+                mpu({ title: "Verifica el método de pago", body: e.currentTarget.dataset.mpuBody });
+            });
+        });
+    }
+
     initUrlDataBtns();
 </script>

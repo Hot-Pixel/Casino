@@ -1,13 +1,3 @@
 <div class="withdraw">
     <%- include ('../objects/user/withdraw-step1') %>
 </div>
-
-<script>
-    var payoutItems = document.querySelectorAll('.withdraw__item');
-    payoutItems.forEach(item => {
-        item.addEventListener('click', () => {
-            const url = item.getAttribute('data-url');
-            mpu(url);
-        });
-    });
-</script>
