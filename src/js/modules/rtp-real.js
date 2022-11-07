@@ -35,7 +35,6 @@ function fillRtpReal() {
     fetch('https://api.casinobarcelona.es/api/slots?pagination=false', { headers: { 'Accept': 'application/json' } })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             data.sort(compare);
             document.querySelector('.rtp-loading').remove();
             for (var i = 0; i < data.length; i++) {
