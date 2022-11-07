@@ -49,8 +49,9 @@ function Mpu() {
             mpu.querySelector('.mpu__title').innerHTML = settings.title;
             mpu.querySelector('.mpu__body').innerHTML = settings.body; 
             if(!settings.confirmText && !settings.cancelText && !settings.denyText) {
-                mpu.querySelector('.mpu__actions').remove();
+                mpu.querySelector('.mpu__actions').classList.remove('mpu__actions--open');
             } else {
+                mpu.querySelector('.mpu__actions').classList.add('mpu__actions--open');
                 if (settings.confirmText) {
                     mpu.querySelector('.mpu__btn--confirm').innerHTML = settings.confirmText;
                     mpu.querySelector('.mpu__btn--confirm').addEventListener('click', settings.onConfirm);

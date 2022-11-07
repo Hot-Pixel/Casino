@@ -115,10 +115,14 @@ body.mpu-open {
     }
 
     &__actions {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         gap: $sm;
+
+        &--open {
+            display: flex;
+        }
     }
 
     &__btn {
