@@ -18,7 +18,13 @@ function Mpu() {
     }
     
     async function openMpuOptions(options) {
-        let mpu = document.querySelector('.mpu') || getTemplate();
+        let mpu = document.querySelector('.mpu');
+        let animateEnter = true;
+        if(mpu) {
+            animateEnter = false;
+            mpu.remove();
+        } 
+        mpu = getTemplate();
         
         if (!mpu) return;
     
@@ -74,6 +80,9 @@ function Mpu() {
 
         }
         
+        if(animateEnter) {
+            mpu.querySelector('.mpu').classList.add('mpu--animate-enter');
+        }
         mpu.querySelector('.mpu__btn-close').addEventListener('click', closeMpu);
     
         document.body.classList.toggle('mpu-open', true);
@@ -81,7 +90,7 @@ function Mpu() {
         setTimeout(() => {
             document.querySelector('.mpu').classList.add('mpu--open');
             settings.onOpen();
-        }, ANIMATION_DELAY);
+        }, animateEnter ? ANIMATION_DELAY : 0);
     }
     
     function getTemplate() {

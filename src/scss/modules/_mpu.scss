@@ -21,7 +21,10 @@ body.mpu-open {
     z-index: 10;
     opacity: 0;
     transform: translateY(100%);
-    transition: all 0.2s ease-in-out;
+
+    &--animate-enter {
+        transition: all 0.2s ease-in-out;
+    }
 
     &--open {
         opacity: 1;
