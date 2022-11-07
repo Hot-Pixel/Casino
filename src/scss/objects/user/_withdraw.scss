@@ -2,255 +2,229 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.withdrawScreen {
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
+.withdraw {
+  @extend %margin_horizontal_main;
+  height: 100%;
 
-  width: 100vw;
-  height: 100vh;
-  opacity: 0;
+  &__header {
+    width: 100%;
+    padding: $sm 0;
 
-  background-color: setcolor("gray", "light2");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  .withdraw {
-    @extend %margin_horizontal_main;
-    height: 100%;
-
-    &__header {
-      width: 100%;
-      padding: $sm 0;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      img:first-of-type {
-        object-fit: cover;
-        max-width: 60%;
-      }
-
-      .withdraw__btn-close {
-        cursor: pointer;
-        width: rem(16);
-        object-fit: cover;
-
-        @include screen-sm {
-          width: rem(22);
-        }
-      }
+    img:first-of-type {
+      object-fit: cover;
+      max-width: 60%;
     }
 
-    &__block {
-      display: none;
-      height: 100%;
-      width: 100%;
-
-      &.active {
-        display: block;
-      }
-    }
-
-    &__step2-methods {
-      display: none;
-
-      &.active {
-        display: flex;
-      }
-    }
-
-    &__wrapper {
-      flex-direction: column;
-      align-items: center;
-
-      margin-top: rem(120);
-    }
-
-    &__title {
-      @extend .u-f--bold, .u-f--h1;
-      text-align: center;
-      color: setcolor("black", "dark1");
-    }
-
-    &__grid {
-      margin-top: $md;
-
-      display: grid;
-      grid-template-columns: min-content min-content;
-      grid-auto-flow: row;
-      gap: rem(10);
-
-      justify-content: center;
-    }
-
-    &__item {
-      background-color: white;
-      border-radius: rem(5);
-      padding: $md;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+    .withdraw__btn-close {
       cursor: pointer;
+      width: rem(16);
+      object-fit: cover;
 
-      img {
-        object-fit: cover;
+      @include screen-sm {
+        width: rem(22);
       }
     }
   }
 
-  .withdrawDetail {
+  &__block {
+    height: 100%;
     width: 100%;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  
+
+  &__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    @extend .u-f--bold, .u-f--h1;
+    text-align: center;
+    color: setcolor("black", "dark1");
+  }
+
+  &__grid {
+    margin-top: $md;
+
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-auto-flow: row;
+    gap: rem(10);
+
+    justify-content: center;
+  }
+
+  &__item {
+    background-color: white;
+    border-radius: rem(5);
+    padding: $md;
 
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    img {
+      object-fit: cover;
+    }
+  }
+}
+
+.withdrawDetail {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__card {
+    width: 100%;
+    background-color: setcolor("gray", "light1");
+    border-radius: rem(10);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--top {
+    position: relative;
+    margin-top: calc(rem(60) + $md);
+    margin-bottom: $sm;
+    padding: $xl $sm $md;
     flex-direction: column;
 
-    @include screen-sm {
-      width: 50%;
-    }
+    .withdrawDetail__logo {
+      position: absolute;
+      top: rem(-60);
+      left: 50%;
+      transform: translateX(-50%);
 
-    &__card {
-      width: 100%;
-      background-color: setcolor("gray", "light1");
+      background-color: white;
       border-radius: rem(10);
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: $md;
     }
 
-    &--top {
-      position: relative;
-      margin-top: calc(rem(60) + $md);
-      margin-bottom: $sm;
-      padding: $xl $sm $md;
-      flex-direction: column;
+    p {
+      color: setcolor("black", "dark1");
 
-      .withdrawDetail__logo {
-        position: absolute;
-        top: rem(-60);
-        left: 50%;
-        transform: translateX(-50%);
+      &:first-of-type {
+        @extend .u-f--bold;
+      }
+    }
+    .withdrawDetail__amount {
+      @extend .u-f--h3, .u-f--bold;
 
-        background-color: white;
-        border-radius: rem(10);
-        padding: $md;
+      width: 100%;
+      margin-top: $sm;
+      padding: $sm 0;
+
+      background-color: setcolor("gray", "light2");
+      border-radius: rem(100);
+      color: #868b92;
+      text-align: center;
+
+      appearance: none;
+
+      @include screen-sm {
+        width: 50%;
+      }
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  }
+
+  &--bottom {
+    padding: $md $sm;
+    display: flex;
+    justify-content: center;
+
+    @include screen-sm {
+      padding: $lg;
+    }
+
+    .withdrawDetail__item {
+      &:nth-of-type(2) {
+        margin: 0 $md;
       }
 
       p {
         color: setcolor("black", "dark1");
-
-        &:first-of-type {
-          @extend .u-f--bold;
-        }
-      }
-      .withdrawDetail__amount {
-        @extend .u-f--h3, .u-f--bold;
-
-        width: 100%;
-        margin-top: $sm;
-        padding: $sm 0;
-
-        background-color: setcolor("gray", "light2");
-        border-radius: rem(100);
-        color: #868b92;
         text-align: center;
 
-        appearance: none;
-
-        @include screen-sm {
-          width: 50%;
-        }
-      }
-
-      input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
-
-      input[type="number"] {
-        -moz-appearance: textfield;
-      }
-    }
-
-    &--bottom {
-      padding: $md $sm;
-      display: flex;
-      justify-content: center;
-
-      @include screen-sm {
-        padding: $lg;
-      }
-
-      .withdrawDetail__item {
-        &:nth-of-type(2) {
-          margin: 0 $md;
-        }
-
-        p {
-          color: setcolor("black", "dark1");
-          text-align: center;
-
-          &:last-of-type {
-            @extend .u-f--h2, .u-f--bold;
-          }
-        }
-      }
-    }
-
-    &__btn {
-      margin-top: $sm;
-
-      display: flex;
-
-      button {
-        width: 50%;
-
-        &:first-of-type {
-          margin-right: rem(5);
-        }
         &:last-of-type {
-          margin-left: rem(5);
+          @extend .u-f--h2, .u-f--bold;
         }
-      }
-
-      .btn__white img {
-        transform: rotate(90deg);
       }
     }
   }
 
-  .withdraw__step3 {
-    & > section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+  &__btn {
+    margin-top: $sm;
 
-    .withdraw__logo {
-      height: $xl;
-      width: $xl;
-    }
+    display: flex;
 
-    .withdraw__body {
-      @extend .u-f--h3, .u-f--bold;
-      color: setcolor('black', 'dark1');
-      margin: $md 0;
-      max-width: 60%;
-      text-align: center;
+    button {
+      width: 50%;
 
-      @include tablet {
-        max-width: 100%;
+      &:first-of-type {
+        margin-right: rem(5);
+      }
+      &:last-of-type {
+        margin-left: rem(5);
       }
     }
 
-    .withdrawStep3__btn {
-      padding: $sm $lg;
+    .btn__white img {
+      transform: rotate(90deg);
     }
+  }
+}
+
+.withdraw__step3 {
+  & > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .withdraw__logo {
+    height: $xl;
+    width: $xl;
+  }
+
+  .withdraw__body {
+    @extend .u-f--h3, .u-f--bold;
+    color: setcolor("black", "dark1");
+    margin: $md 0;
+    max-width: 60%;
+    text-align: center;
+
+    @include tablet {
+      max-width: 100%;
+    }
+  }
+
+  .withdrawStep3__btn {
+    padding: $sm $lg;
   }
 }

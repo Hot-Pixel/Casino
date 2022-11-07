@@ -1,0 +1,14 @@
+<script>
+    function initUrlDataBtns() {
+        var mpuBtns = document.querySelectorAll("[data-url]");
+
+        mpuBtns.forEach((btn) => {
+            btn.addEventListener("click", e => {
+                e.preventDefault();
+                mpu(e.currentTarget.dataset.url);
+            });
+        });
+    }
+
+    initUrlDataBtns();
+</script>
