@@ -49,8 +49,10 @@ const LobbyApi = () => {
         const roomsHtml = rooms.map(room => {
             const item = getTemplate();
             const imagename = room.name.toLowerCase().replace(/ /g, '-').replace(/'/g, '').replace(/"/g, '').replace(/:/g, '').replace('---', '-') + '.webp';
-            item.querySelector('.item').dataset.gameId = room.room_id;
+            item.querySelector('.item').dataset.gameId = room.roomId;
             item.querySelector('.item__image').src = 'https://revamp.casinobarcelona.es/img/cbar-logos/all/thumb/' + imagename;
+            let itemImage = item.querySelector('.item__image');
+            itemImage.onerror = ()=>{itemImage.onerror=null;itemImage.src=`${room.thumb.replace('.jpg','.webp').replace('.png','.webp')}`};
             element.appendChild(item);
         });
     }
