@@ -79,7 +79,7 @@
     }
 
     img {
-      max-width: 109px;
+      max-width: rem(100);
     }
   }
 }
@@ -109,14 +109,16 @@
     flex-direction: column;
 
     .withdrawDetail__logo {
-      position: absolute;
-      top: rem(-60);
-      left: 50%;
-      transform: translateX(-50%);
-
       background-color: white;
       border-radius: rem(10);
       padding: $md;
+
+      margin-top: -50%;
+      margin-bottom: 1rem;
+
+      img {
+        max-width: rem(100);
+      }
     }
 
     p {
