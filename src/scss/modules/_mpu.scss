@@ -21,7 +21,10 @@ body.mpu-open {
     z-index: 10;
     opacity: 0;
     transform: translateY(100%);
-    transition: all 0.2s ease-in-out;
+
+    &--animate-enter {
+        transition: all 0.2s ease-in-out;
+    }
 
     &--open {
         opacity: 1;
@@ -115,10 +118,14 @@ body.mpu-open {
     }
 
     &__actions {
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         gap: $sm;
+
+        &--open {
+            display: flex;
+        }
     }
 
     &__btn {

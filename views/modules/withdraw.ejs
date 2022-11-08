@@ -1,29 +1,3 @@
-<section class="withdrawScreen">
-
-    <div class="withdraw">
-
-        <section class="withdraw__header">
-            <img src="img/user/logo/logo-casino-dark.png" alt="">
-            <img src="img/user/icon/icon-menu-close.svg" alt="" class="withdraw__btn-close">
-        </section>
-
-        <div class="withdraw__block withdraw__step1">
-            <%- include ('../objects/user/withdraw-step1') %>
-        </div>
-
-        <div class="withdraw__block withdraw__step2">
-            <%- include ('../objects/user/withdraw-step2/withdraw-skrill') %>
-            <%- include ('../objects/user/withdraw-step2/withdraw-paypal') %>
-            <%- include ('../objects/user/withdraw-step2/withdraw-visa') %>
-            <%- include ('../objects/user/withdraw-step2/withdraw-transfer') %>
-            <%- include ('../objects/user/withdraw-step2/withdraw-paysafe') %>
-            <%- include ('../objects/user/withdraw-step2/withdraw-neteller') %>
-        </div>
-
-        <div class="withdraw__block withdraw__step3">
-            <%- include ('../objects/user/withdraw-step3') %>
-        </div>
-
-    </div>
-
-</section>
+<div class="withdraw">
+    <%- include ('../objects/user/withdraw-step1') %>
+</div>

@@ -1,0 +1,33 @@
+<script>
+    function initUrlDataBtns() {
+        var mpuBtns = document.querySelectorAll("[data-url]");
+
+        mpuBtns.forEach((btn) => {
+            btn.addEventListener("click", e => {
+                e.preventDefault();
+                mpu(e.currentTarget.dataset.url);
+            });
+        });
+    }
+
+    function initDisabledBtns() {
+        var mpuBtns = document.querySelectorAll("[data-mpu-body]");
+
+        mpuBtns.forEach((btn) => {
+            btn.addEventListener("click", e => {
+                e.preventDefault();
+                mpu({ 
+                    title: "Verifica el método de pago", 
+                    body: e.currentTarget.dataset.mpuBody,
+                    confirmText: "Adjuntar documentación",
+                    onConfirm: () => {
+                        window.location.href = "/members/my-uploads.html";
+                    }
+                });
+            });
+        });
+    }
+
+    initUrlDataBtns();
+    initDisabledBtns();
+</script>
