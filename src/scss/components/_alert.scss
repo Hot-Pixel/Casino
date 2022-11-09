@@ -4,7 +4,7 @@
 
 .alert {
   
-    padding: $sm $md;
+    padding: $sm $lg;
     font-family: setfont("family", "secondary");
     font-weight: setfont("weight", "bold");
     font-size: .75rem;
@@ -34,6 +34,9 @@
     &--closable{
       position:relative;
       &__button{
+        height:1.37rem;
+        width:1.37rem;
+        background-image: url("/img/icons/icon-close-white.svg");
         position:absolute;
         right:1em;
         top: .69rem;        

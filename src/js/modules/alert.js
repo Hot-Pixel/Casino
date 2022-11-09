@@ -15,9 +15,8 @@ function Alert(options = {}) {
             .replace("{index}", alertIndex)
             .replace("{message}", message)
         const alertEl = stringToElement(alertStr);
-        if(closable) {
-            const imageX = document.createElement("img");            
-            imageX.src = "https://cbar.netlify.app/img/icons/icon-close-white.svg";
+        if(closable) {          
+            const imageX = document.createElement("div");
             imageX.classList.add("alert--closable__button");
             alertEl.appendChild(imageX);
             imageX.addEventListener("click", () => remove(alertEl.dataset.index))           
