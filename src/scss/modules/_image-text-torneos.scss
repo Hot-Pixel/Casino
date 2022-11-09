@@ -58,10 +58,7 @@
     width: 100%;
 
     @include screen-sm {
-      position: absolute;
-      right: 0;
-      top: -80px;
-      z-index: 1;
+      padding: $lg;
       width: 60%;
     }
 
