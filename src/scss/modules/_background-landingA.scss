@@ -5,13 +5,9 @@
 .bgLandingA {
   position: relative;
   z-index: 0;
-  padding-top: 15vh;
 
   background-color: setcolor("black", "dark2");
-
-  @include screen-sm {
-    padding-top: 0;
-  }
+  padding-top: $lg;
 
   &__bg {
     width: 100%;

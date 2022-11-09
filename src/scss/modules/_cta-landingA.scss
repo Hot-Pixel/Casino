@@ -10,8 +10,10 @@
     display: flex;
     justify-content: center;
 
-    @extend %padding_horizontal_main;
-    transform: translateY(50%);
+    @extend %padding_horizontal_main, %margin_top_large;
+
+    background: linear-gradient(to bottom,  setcolor("black", "dark1") 0%,setcolor("black", "dark1") 50%, setcolor("black", "dark2") 50%, setcolor("black", "dark2") 100%);
+
 
     &__container {
         display: flex;
