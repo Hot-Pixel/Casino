@@ -30,6 +30,7 @@
 .register {
     background: setcolor("black", "dark1");
     min-height: 100vh;
+    padding-bottom: $lg;
 
     @include tablet {
         background-image: linear-gradient(45deg, setcolor("primary") 25%, setcolor("black", "dark1") 75%);
@@ -60,12 +61,12 @@
 
     &__title {
         color: setcolor("white");
-        font-size: rem(24);
         margin: 0;
         padding: $md;
         max-width: 60%;
         margin-bottom: $md;
         align-self: flex-start;
+        @extend .u-f--h3, .u-f--bold;
         
         @include tablet {
             max-width: rem(400);
