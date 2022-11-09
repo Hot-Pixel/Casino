@@ -8,11 +8,17 @@
 
 
 	&__bgImage {
-		height: 294px;
-		background-image: url('../img/images/img-banner-favorites-bg.jpg');
+		aspect-ratio: 1250/625;
+		background-image: url('../img/images/favorites-section-bg-mobile.jpg');
 		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+		background-position: bottom center;
+		background-size: contain;
+		background-color: setcolor("black");
+		
+		@include screen-sm {
+			aspect-ratio: 1920/415;
+			background-image: url('../img/images/favorites-section-bg.jpg');
+		}
 	}
 
 

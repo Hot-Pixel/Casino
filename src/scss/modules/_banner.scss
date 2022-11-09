@@ -5,10 +5,15 @@
 .banner {
   position: relative;
   z-index: 1;
-  background-position: right;
+  background-position: center bottom;
   background-repeat: no-repeat;
-
-
+  background-size: contain;
+  background-color: setcolor("black", "base");
+  
+  @include screen-sm {
+    background-position: right bottom;
+  }
+  
   &::before {
     content: "";
     position: absolute;
@@ -17,11 +22,52 @@
     z-index: 2;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #13171dae 20%, transparent);
+    background-image: linear-gradient(to bottom, setcolor("black", "dark1") 0%, transparent 50%);
     background-size: cover;
-
+    
     @include screen-sm {
-      background-image: linear-gradient(to right, #13171dae 20%, transparent);
+      background-image: linear-gradient(to right, setcolor("black", "dark1") 0%, transparent 50%);
+    }
+
+  }
+  
+  &--slot {
+    background-image: url('../img/images/slot-section-bg-mobile.jpg');
+    
+    @include screen-sm {
+      background-image: url('../img/images/slot-section-bg.jpg');
+    }
+  }
+
+  &--ruleta {
+    background-image: url('../img/images/ruleta-section-bg-mobile.jpg');
+    
+    @include screen-sm {
+      background-image: url('../img/images/ruleta-section-bg.jpg');
+    }
+  }
+
+  &--casino {
+    background-image: url('../img/images/casino-section-bg-mobile.jpg');
+    
+    @include screen-sm {
+      background-image: url('../img/images/casino-section-bg.jpg');
+    }
+  }
+
+  &--apuestasVirtuales {
+    background-image: url('../img/images/apuestas-virtuales-section-bg-mobile.jpg');
+    
+    @include screen-sm {
+      background-image: url('../img/images/apuestas-virtuales-section-bg.jpg');
+    }
+  }
+
+  &--poker {
+    background-image: url('../img/images/poker-section-bg-mobile.jpg');
+    
+    @include screen-sm {
+      background-image: url('../img/images/poker-section-bg.jpg');
     }
   }
 
@@ -30,8 +76,8 @@
     z-index: 3;
     width: 100%;
     height: 100%;
-    padding-top: $lg;
-    padding-bottom: $lg;
+    padding-top: $md;
+    padding-bottom: $xxl;
 
     @extend %padding_horizontal_main;
 
@@ -41,7 +87,7 @@
 
     @include tablet {
       padding-top: $lg;
-      padding-bottom: $xl;
+      padding-bottom: $xxl;
     }
     @include screen-sm {
       display: flex;
