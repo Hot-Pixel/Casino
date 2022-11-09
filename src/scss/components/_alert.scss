@@ -4,13 +4,13 @@
 
 .alert {
   
-    padding: $sm;
+    padding: $sm $md;
     font-family: setfont("family", "secondary");
     font-weight: setfont("weight", "bold");
     font-size: .75rem;
     color: setcolor("white", "base");
     width: 80%;   
-    border-radius: 100px;
+    border-radius: 25px;
     text-transform: uppercase;
     margin: $sm auto;
 
@@ -36,7 +36,7 @@
       &__button{
         position:absolute;
         right:1em;
-        top: .8em;
+        top: .69rem;        
         cursor: pointer;
       }
     }
