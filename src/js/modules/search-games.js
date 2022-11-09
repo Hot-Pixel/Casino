@@ -1,4 +1,5 @@
 import algoliasearch from 'https://cdn.jsdelivr.net/npm/algoliasearch@4.14.2/dist/algoliasearch-lite.esm.browser.js';
+import debounce from './debounce';
 
 function searchGames() {
 
@@ -7,19 +8,22 @@ function searchGames() {
     const searchResults = document.querySelector('[algolia-search-results]');
     const index = searchClient.initIndex('prod_RoomSlots');
 
-    searchBox.addEventListener('input', async (e) => {
+    const debouncedOnInput = debounce((e) => onInput(e));
+    
+    searchBox.addEventListener('input', debouncedOnInput);
+
+    async function onInput(e) {
         const value = e.target.value;
-        if(value.length == 0) {
+        if (value.length == 0) {
             searchResults.innerHTML = '';
             searchResults.classList.remove('search-results--active');
             return;
-        } 
+        }
         searchResults.classList.add('search-results--active');
         const games = await queryGames(e.target.value);
-        console.log(games)
         parseResults(games)
-    });
-    
+    }
+
     async function queryGames(query) {
         const { hits } = await index.search(query, {
             hitsPerPage: 10,
@@ -27,7 +31,7 @@ function searchGames() {
 
         return hits;
     }
-    
+
     function parseResults(hits) {
         console.log(hits)
         let output = '<ul>';
@@ -38,6 +42,5 @@ function searchGames() {
         searchResults.innerHTML = output;
     }
 }
-
 
 export default searchGames;
