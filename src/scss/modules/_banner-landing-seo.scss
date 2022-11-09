@@ -4,7 +4,7 @@
 
 
 .landingSEO {
-	@extend %margin_top_medium, %padding_horizontal_main;
+	@extend %padding_horizontal_main;
 	background: transparent linear-gradient(150deg, rgba( setcolor('primary'), 0 ) 0%, setcolor( 'primary' ) 100%) 0% 0% no-repeat padding-box;
 
 	@include screen-sm {
