@@ -18,7 +18,7 @@ header {
   display: none;
   flex-direction: column;
 
-  @include screen-sm {
+  @include screen-md {
     display: flex;
   }
 
@@ -88,25 +88,31 @@ header {
   }
 
   &__logo {
-    width: rem(195);
+    width: rem(304);
     margin-bottom: rem(10);
-
+    
     @include screen-sm {
-      width: rem(190);
       margin-right: $sm;
     }
     @include screen-md {
-      width: rem(240);
+      width: rem(280);
     }
     @include screen-lg {
-      width: auto;
       margin-right: rem(20);
     }
 
-    svg {
-      width: 100%;
-      object-fit: cover;
+    &--light {
+      display: none;
     }
+    
+    .header--light & {
+      display: none;
+
+      &--light {
+        display: block;
+      }
+    }
+
   }
 
   &__navBar ul {
@@ -158,7 +164,7 @@ header {
   position: relative;
   width: 100%;
 
-  @include screen-sm {
+  @include screen-md {
     display: none;
   }
 
@@ -170,9 +176,20 @@ header {
 
   &-logo {
     margin: 0 rem(45);
-    svg {
+    img {
       width: 100%;
-      object-fit: cover;
+    }
+
+    &--light {
+      display: none;
+    }
+
+    .header--light & {
+      display: none;
+
+      &--light {
+        display: block;
+      }
     }
   }
 
