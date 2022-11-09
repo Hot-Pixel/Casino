@@ -62,7 +62,7 @@
       z-index: 1;
       background-color: setcolor("black");
       border-radius: 0 0 rem(10) rem(10);
-      height: 8rem;
+      height: 7rem;
 
       text-align: center;
 
@@ -86,14 +86,26 @@
         padding: rem(20);
         padding-bottom: 0;
       }
-
-      p:last-of-type {
-        @extend .u-f--h3, .u-f--bold;
+      div{
+        p {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 177px;
+          display: inline-block;
+        }
+        p:last-of-type {
+          @extend .u-f--h3, .u-f--bold;
+        } 
       }
+      
 
       .jackpot__link {
         transform: translateY(50%);
         width: 80%;
+        position: absolute;
+        bottom: 0.5rem;
 
         @include screen-md {
           width: 80%;
