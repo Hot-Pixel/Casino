@@ -7,7 +7,7 @@ export default function validateRegister() {
     const checkInputs = document.querySelectorAll('.register__fieldset--check input');
     const form = document.querySelector('#register');
     const submitBtn = document.querySelector('.register__action--submit');
-    const registerWindow = document.querySelector('.register__window');
+    const registerContent = document.querySelector('.register__content');
     let isValidatingStep = false;
     const DOCTYPE_DNINIE = 0;
     const DOCTYPE_PASSPORT = 1;
@@ -120,7 +120,7 @@ export default function validateRegister() {
         const errorStep = fieldEl.closest('.register__page').dataset.step;
         fieldParent.dataset.status = 'invalid';
         errorWrapper.innerHTML = errors[0];
-        registerWindow.dataset.currentStep = errorStep;
+        registerContent.dataset.currentStep = errorStep;
     }
 
     async function validateField(field) {
@@ -461,7 +461,7 @@ export default function validateRegister() {
     }
 
     function setLoading(isLoading) {
-        registerWindow.classList.toggle('register__window--loading', isLoading);
+        registerContent.classList.toggle('register__window--loading', isLoading);
     }
 
     function start() {

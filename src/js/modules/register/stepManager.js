@@ -1,8 +1,8 @@
 import validateRegister from "./validateRegister";
 
 export default function stepManager() {
-    const registerWindow = document.querySelector('.register__window');
-    let currentStep = parseInt(registerWindow.dataset.currentStep);
+    const registerContent = document.querySelector('.register__content');
+    let currentStep = parseInt(registerContent.dataset.currentStep);
     const nextBtn = document.querySelector('.register__action--next');
     const prevBtn = document.querySelector('.register__action--prev');
 
@@ -14,12 +14,12 @@ export default function stepManager() {
         if(currentStep === 1) savePreregister();
 
         currentStep++;
-        registerWindow.dataset.currentStep = currentStep;
+        registerContent.dataset.currentStep = currentStep;
     });
 
     prevBtn.addEventListener('click', e => {
         e.preventDefault();
         currentStep--;
-        registerWindow.dataset.currentStep = currentStep;
+        registerContent.dataset.currentStep = currentStep;
     });
 }

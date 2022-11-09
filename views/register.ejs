@@ -74,22 +74,48 @@
             </a>
         </div>
 
-        <div class="register__content">
-            <div class="register__title">¡Abre tu cuenta gratis y en tan solo 30 segundos!</div>
+        <div class="register__content" data-current-step="1">
+            <div class="register__top">
+                <div class="register__title">¡Abre tu cuenta gratis y en tan solo 30 segundos!</div>
+            </div>
 
-            <form id="register" action="/" method="post" novalidate>
-                <input type="hidden" name="docType" value="0" id="docType">
-                <input type="hidden" name="birthday" value="" id="birthday">
-                <input type="hidden" name="currency" value="1" id="currency">
-                <input type="hidden" name="phonecountry" value="34" id="phonecountry">
-                <input type="hidden" name="phonearea" value="" id="phonearea">
-                <input type="hidden" name="phonenumber" value="" id="phonenumber">
-                <input type="hidden" name="nomulti" value="on" id="nomulti">
-                <input type="hidden" name="subscription1" value="on" id="subscription1">
-                <input type="hidden" name="subscription2" value="on" id="subscription2">
-                <input type="hidden" name="subscription3" value="on" id="subscription3">
-                <input type="hidden" value="199" name="tax_country" id="tax_country">
-                <div class="register__window" data-current-step="2">
+            <div class="register__window">
+                <form id="register" action="/" method="post" novalidate>
+                    <input type="hidden" name="docType" value="0" id="docType">
+                    <input type="hidden" name="birthday" value="" id="birthday">
+                    <input type="hidden" name="currency" value="1" id="currency">
+                    <input type="hidden" name="phonecountry" value="34" id="phonecountry">
+                    <input type="hidden" name="phonearea" value="" id="phonearea">
+                    <input type="hidden" name="phonenumber" value="" id="phonenumber">
+                    <input type="hidden" name="nomulti" value="on" id="nomulti">
+                    <input type="hidden" name="subscription1" value="on" id="subscription1">
+                    <input type="hidden" name="subscription2" value="on" id="subscription2">
+                    <input type="hidden" name="subscription3" value="on" id="subscription3">
+                    <input type="hidden" value="199" name="tax_country" id="tax_country">
+                    <div class="register__characters register__characters--step-1">
+                        <div class="register__character register__character--start">
+                            <img src="img/images/register/step-1-1.png" alt="">
+                        </div>
+                        <div class="register__character register__character--end">
+                            <img src="img/images/register/step-1-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="register__characters register__characters--step-2">
+                        <div class="register__character register__character--start">
+                            <img src="img/images/register/step-2-1.png" alt="">
+                        </div>
+                        <div class="register__character register__character--end">
+                            <img src="img/images/register/step-2-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="register__characters register__characters--step-3">
+                        <div class="register__character register__character--start">
+                            <img src="img/images/register/step-3-1.png" alt="">
+                        </div>
+                        <div class="register__character register__character--end">
+                            <img src="img/images/register/step-3-2.png" alt="">
+                        </div>
+                    </div>
                     <div class="register__steps">
                         <div class="register__step" data-step="1">1</div>
                         <div class="register__step" data-step="2">2</div>
@@ -460,8 +486,8 @@
                         <button type="submit" class="register__action btn__red register__action--submit"
                             form="form"><span>Registrarme</span> <img src="img/icons/icon-btn-arrow.svg" /></button>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 

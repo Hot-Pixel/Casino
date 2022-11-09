@@ -31,9 +31,12 @@
     background: setcolor("black", "dark1");
     min-height: 100vh;
     padding-bottom: $lg;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
 
     @include tablet {
-        background-image: linear-gradient(45deg, setcolor("primary") 25%, setcolor("black", "dark1") 75%);
+        background-image: linear-gradient(45deg, setcolor("primary") 0%, setcolor("black", "dark1") 75%);
     }
 
     &__header {
@@ -59,6 +62,33 @@
         align-items: center;
     }
 
+    &__top {
+        align-self: stretch;
+        display: flex;
+        background: url("../../img/images/register/step-1-mobile.png") no-repeat bottom right transparent;
+        background-size: contain;
+        position: relative;
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, setcolor("black", "dark1") 0%, transparent 50%);
+            
+            @include tablet {
+                content: none;
+            }
+        }
+        
+        @include tablet {
+            justify-content: center;
+            background-image: none;
+        }
+    }
+    
     &__title {
         color: setcolor("white");
         margin: 0;
@@ -67,6 +97,7 @@
         margin-bottom: $md;
         align-self: flex-start;
         @extend .u-f--h3, .u-f--bold;
+        z-index: 1;
         
         @include tablet {
             max-width: rem(400);
@@ -80,9 +111,10 @@
         width: 100%;
         max-width: rem(800);
         background-color: setcolor("black");
-        box-shadow: 0 0 rem(70) rem(10) setcolor("black", "dark1");
-        
+        position: relative;
+
         @include tablet {
+            box-shadow: 0 0 rem(70) rem(10) setcolor("black", "dark1");
             border-radius: $md;
         }
 
@@ -96,6 +128,59 @@
                 pointer-events: none;
             }
         }
+    }
+
+    &__character {
+        position: absolute;
+        z-index: -1;
+        width: 30rem;
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
+
+        &--start {
+            left: 0;
+            top: 0;
+            transform: translate(-75%, -20%);
+
+            [data-current-step="2"] & {
+                left: auto;
+                right: 0;
+                transform: translate(80%, -20%);
+            }
+        }
+
+
+
+        &--end {
+            right: 0;
+            bottom: 0;
+            transform: translate(80%, 20%);
+
+            [data-current-step="2"] & {
+                right: auto;
+                left: 0;
+                transform: translate(-75%, 20%);
+            }
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__characters {
+        display: none;
+
+        [data-current-step="1"] &--step-1,
+        [data-current-step="2"] &--step-2,
+        [data-current-step="3"] &--step-3 {
+            display: block;
+        }
+
     }
 
     &__spinner-wrapper {
@@ -127,12 +212,11 @@
         transform: translateY(-50%);
         margin-left: $sm;
         align-items: center;
-        
+
         @include tablet {
             justify-content: center;
             margin-left: 0;
         }
-        
     }
 
     &__step {
@@ -201,7 +285,7 @@
         right: 0;
         background-color: setcolor("black", "dark5");
         padding: $sm;
-        
+
         @include tablet {
             position: initial;
             background-color: transparent;
@@ -306,7 +390,6 @@
         gap: rem(8);
 
         &--select {
-
             select {
                 background-image: url(../../img/icons/icon-arrow-down-opacity.svg);
                 background-size: 14px;
@@ -344,7 +427,7 @@
                 display: flex;
                 gap: rem(8);
                 @extend .register__input;
-                
+
                 label {
                     font-family: $secondary_font_family;
                     font-weight: setfont("weight", "bold");
@@ -355,9 +438,8 @@
 
                 input:checked ~ label {
                     color: setcolor("white");
-                } 
+                }
             }
-
 
             input {
                 appearance: none;
