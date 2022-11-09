@@ -1,0 +1,30 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.search-results {
+	display: flex;
+    justify-content: center;
+
+	ul {
+		padding: $sm;
+		@extend %margin_horizontal_main;
+		background-color: setcolor("black");
+		border-radius: rem(10);
+		margin-top: $sm;
+		border: solid 2px setcolor("black", "dark5");
+		display: inline-flex;
+    	box-shadow: 0 17px 40px -2px setcolor("black");
+		gap: $sm;
+
+		li {
+
+			img {
+				width: rem(100);
+				height: rem(100);
+				border-radius: rem(5);
+				object-fit: cover;
+			}
+		}
+	}
+}

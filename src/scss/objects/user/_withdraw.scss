@@ -39,8 +39,6 @@
     }
   }
 
-  
-
   &__wrapper {
     flex-direction: column;
     align-items: center;
@@ -73,13 +71,13 @@
     align-items: center;
 
     cursor: pointer;
-    
+
     &--greyed {
       opacity: 0.4;
     }
 
     img {
-      max-width: 109px;
+      max-width: rem(100);
     }
   }
 }
@@ -109,14 +107,16 @@
     flex-direction: column;
 
     .withdrawDetail__logo {
-      position: absolute;
-      top: rem(-60);
-      left: 50%;
-      transform: translateX(-50%);
-
       background-color: white;
       border-radius: rem(10);
       padding: $md;
+
+      margin-top: -50%;
+      margin-bottom: 1rem;
+
+      img {
+        max-width: rem(100);
+      }
     }
 
     p {
@@ -160,6 +160,7 @@
     padding: $md $sm;
     display: flex;
     justify-content: center;
+    margin-bottom: $sm;
 
     @include screen-sm {
       padding: $lg;
@@ -199,6 +200,109 @@
 
     .btn__white img {
       transform: rotate(90deg);
+    }
+  }
+
+  .item {
+    cursor: pointer;
+
+    position: relative;
+    z-index: 0;
+    width: 100%;
+
+    input {
+      display: none;
+
+      &:checked ~ .item__wrapper {
+        background-color: white;
+        transition: all 0.3s ease;
+
+        svg path {
+          fill: black;
+          transition: all 0.3s ease;
+        }
+
+        p {
+          color: setcolor("black", "dark1");
+        }
+        .radio {
+          transition: all 0.3s ease;
+          border: 2px solid setcolor("black", "dark1");
+
+          span {
+            transition: all 0.3s ease;
+            border: 4px solid setcolor("black", "dark1");
+            background-color: transparent;
+          }
+        }
+      }
+    }
+
+    &__wrapper {
+      height: 100%;
+      padding: $md;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      background-color: #f4f6f8;
+      border-radius: rem(5);
+
+      svg {
+        object-fit: contain;
+        max-height: rem(30);
+      }
+
+      & .item__type {
+        color: #868b92;
+        margin: $sm 0;
+      }
+
+      .radio {
+        position: relative;
+        z-index: 0;
+        border: 2px solid #868b92;
+        background-color: transparent;
+        border-radius: 1000px;
+
+        height: rem(32);
+        width: rem(32);
+
+        transition: all 0.3s ease;
+
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+
+          border: none;
+          background-color: #868b92;
+          border-radius: 1000px;
+
+          height: rem(16);
+          width: rem(16);
+
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .itemCard {
+    margin-bottom: rem(5);
+    display: block;
+    
+    .item__wrapper {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: $sm;
+
+      .radio {
+        margin-right: $md;
+      }
     }
   }
 }
