@@ -1,8 +1,9 @@
-function Alert(options = {}) {
+function Alert(options = {}) { 
     const defaultOptions = {
         wrapperSelector: '.alert__wrapper',
         itemTemplate: '<div class="alert alert--{type} alert--{closable}" data-index="{index}">{message}</div>'
     };
+
     options = Object.assign({}, defaultOptions, options);
     const wrapperEl = document.querySelector(options.wrapperSelector);
     let alertIndex = 0;
@@ -14,8 +15,11 @@ function Alert(options = {}) {
             .replace("{index}", alertIndex)
             .replace("{message}", message)
         const alertEl = stringToElement(alertStr);
-        if(closable) {
-            alertEl.addEventListener("click", () => remove(alertEl.dataset.index))
+        if(closable) {          
+            const imageX = document.createElement("div");
+            imageX.classList.add("alert--closable__button");
+            alertEl.appendChild(imageX);
+            imageX.addEventListener("click", () => remove(alertEl.dataset.index))           
         }
         wrapperEl.append(alertEl);
         alertIndex++;

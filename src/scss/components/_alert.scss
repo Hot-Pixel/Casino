@@ -3,23 +3,45 @@
 @use "../tools" as *;
 
 .alert {
-    padding: 1rem;
+  
+    padding: $sm $lg;
+    font-family: setfont("family", "secondary");
+    font-weight: setfont("weight", "bold");
+    font-size: .75rem;
+    color: setcolor("white", "base");
+    width: 80%;   
+    border-radius: 25px;
+    text-transform: uppercase;
+    margin: $sm auto;
 
     &--error {
-        color: setcolor("danger", "base");
-        background-color: setcolor("danger", "light");
-        border: solid 1px setcolor("danger", "base");
+        
+        background-color: setcolor("danger", "base");
+        border: solid 4px setcolor("danger", "light");
     }
     
     &--warning {
-        color: setcolor("warning", "base");
-        background-color: setcolor("warning", "light");
-        border: solid 1px setcolor("warning", "base");
+        
+        background-color: setcolor("warning", "base");
+        border: solid 4px setcolor("warning", "light");
     }
     &--success {
-        color: setcolor("secondary", "base");
-        background-color: setcolor("secondary", "light");
-        border: solid 1px setcolor("secondary", "base");
+        
+        background-color: setcolor("success", "base");
+        border: solid 4px setcolor("success", "light");
         
     }
-}
+    &--closable{
+      position:relative;
+      &__button{
+        height:1.37rem;
+        width:1.37rem;
+        background-image: url("/img/icons/icon-close-white.svg");
+        position:absolute;
+        right:1em;
+        top: .69rem;        
+        cursor: pointer;
+      }
+    }
+} 
+
