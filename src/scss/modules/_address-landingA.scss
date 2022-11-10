@@ -17,6 +17,9 @@
 
   img {
     object-fit: cover;
-    width: 100%;
+    width: 90%;
+    @include tablet {
+      width: 50%;
+    }
   }
 }
