@@ -62,7 +62,8 @@
           padding: 0 rem(20);
         }
 
-        &:focus, &:active, &.mixitup-control-active {
+        &[type="reset"]:focus,
+        &:active, &.mixitup-control-active {
           background-color: #2d3239;
           color: white;
         }
