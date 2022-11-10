@@ -5,6 +5,7 @@
 
 
 .game-mode {
+
   .screen {
     padding: 0;
 
@@ -23,6 +24,9 @@
   }
 
   &--maximized {
+    .has-header {
+      padding-top: 0;
+    }
     #minimize__btn {
       display: block;
     }
