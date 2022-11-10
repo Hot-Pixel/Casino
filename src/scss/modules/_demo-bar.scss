@@ -22,9 +22,9 @@
     margin-left: rem(3);
     font-weight: setfont("weight", "bold");
     text-transform: uppercase;
-    
+
     img {
-      margin-left: rem(3);
+      margin-left: rem(8);
       width: 1rem;
     }
   }
@@ -35,39 +35,44 @@
 
   &__tooltip {
     max-width: 30em;
-    padding: 1rem;
-    background-color: #ea9c00;
-    border-radius: 5px;
+    padding: 0 $sm;
+
     display: none;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     &.active {
       display: block;
     }
 
-    &[data-popper-placement^='top'] > .demo-bar__arrow {
+    &[data-popper-placement^="top"] > .demo-bar__arrow {
       bottom: -4px;
     }
-    &[data-popper-placement^='bottom'] > .demo-bar__arrow {
+    &[data-popper-placement^="bottom"] > .demo-bar__arrow {
       top: -4px;
     }
-    &[data-popper-placement^='left'] > .demo-bar__arrow {
+    &[data-popper-placement^="left"] > .demo-bar__arrow {
       right: -4px;
     }
-    &[data-popper-placement^='right'] > .demo-bar__arrow {
+    &[data-popper-placement^="right"] > .demo-bar__arrow {
       left: -4px;
+    }
+
+    &-inner {
+      padding: 1rem;
+      background-color: setcolor("warning");
+      border-radius: 5px;
     }
   }
 
   &__arrow {
     visibility: hidden;
-
+    
     &,
     &::before {
       position: absolute;
       width: 8px;
       height: 8px;
-      background: inherit;
+      background-color: setcolor("warning");
     }
 
     &::before {
