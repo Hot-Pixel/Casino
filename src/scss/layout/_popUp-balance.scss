@@ -89,22 +89,20 @@
       position: relative;
       width: 80%;
       height: rem(12);
-
-      background-color: setcolor("black", "dark4");
-      border-radius: $xl;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        width: 73%;
-        height: rem(12);
-
-        background: linear-gradient(to right, #1f78fb, #00d1bc);
+      appearance: none;
+      
+      &::-webkit-progress-bar {
         border-radius: $xl;
+        background-color: setcolor("black", "dark4");
       }
+
+      &::-webkit-progress-value {
+        border-radius: $xl;
+        height: rem(12);
+        background: linear-gradient(to right, #2074fe, setcolor("secondary"));
+      }
+
+      
     }
   }
 
