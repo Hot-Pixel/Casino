@@ -19,6 +19,11 @@
       display: flex;
     }
 
+    .sessionTime {
+      text-align: right;
+      width: rem(63);
+    }
+
     p {
       color: setcolor("secondary");
       margin: 0;
