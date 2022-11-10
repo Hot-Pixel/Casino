@@ -228,7 +228,7 @@
     //   margin-right: $sm;
     // }
 
-    button:last-of-type {
+    button.btn__block--favorite {
       transition: all 0.4s ease;
       background-color: setcolor("black");
 
