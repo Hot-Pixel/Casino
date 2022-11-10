@@ -17,7 +17,7 @@
 
   &__container {
     padding: $sm;
-    border-radius: rem(10);
+    border-radius: 0 rem(10) rem(10) rem(10);
     background-color: setcolor('black', 'dark2');
   }
 
@@ -47,12 +47,13 @@
 
     div {
       cursor: pointer;
-
+      
       background-color: setcolor("black", "dark4");
       height: 34px;
       width: 34px;
-
-      display: flex;
+      
+      // display: flex;
+      display: none;
       justify-content: center;
       align-items: center;
 
@@ -107,7 +108,7 @@
     }
   }
   &__content {
-    padding: 0 $sm $sm;
+    padding: 0 $sm rem(85);
 
     .filterSlotsM {
       &__header {
@@ -134,7 +135,13 @@
       display: flex;
       justify-content: space-between;
       column-gap: $sm;
-      padding-top: $sm;
+      padding: $sm;
+
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: setcolor("black", "dark2");
 
       button {
         width: 50%;
