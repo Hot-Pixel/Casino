@@ -217,7 +217,7 @@
       color: #a8a9ac;
     }
 
-    button:not(:last-of-type).mixitup-control-active {
+    button.mixitup-control-active {
       transition: all 0.4s ease;
       background-color: setcolor("black", "dark4");
       color: white;
@@ -228,7 +228,7 @@
     //   margin-right: $sm;
     // }
 
-    button:last-of-type {
+    button.btn__block--favorite {
       transition: all 0.4s ease;
       background-color: setcolor("black");
 
