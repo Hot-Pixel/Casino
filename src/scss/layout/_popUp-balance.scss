@@ -66,6 +66,10 @@
     .title {
       color: #a4a5a8;
       line-height: 1.5em;
+      max-width: rem(160);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .total {
