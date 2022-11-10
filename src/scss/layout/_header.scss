@@ -373,3 +373,19 @@ header {
     }
   }
 }
+
+.has-header {
+  padding-top: rem(68);
+
+  @include tablet {
+    padding-top: rem(134);
+  }
+  
+  @include screen-sm {
+    padding-top: rem(98);
+  }
+  
+  @include screen-md {
+    padding-top: rem(81);
+  }
+}
