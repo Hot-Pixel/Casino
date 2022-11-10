@@ -1,4 +1,5 @@
 function marginHeader() {
+  return; 
   const header = document.querySelector(".header");
   const headerMobile = document.querySelector(".header__mobile--top");
   const contentBlocks = document.querySelectorAll(".has-header");
