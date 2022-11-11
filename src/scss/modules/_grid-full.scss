@@ -22,7 +22,7 @@
 }
 
 .gridFull {
-  @extend %margin_horizontal_main, %margin_top_medium;
+  @extend %margin_horizontal_main, %margin_top_small;
   position: relative;
   overflow: hidden;
 

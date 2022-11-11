@@ -4,7 +4,7 @@
 
 // Layout
 .jackpot {
-  @extend %margin_horizontal_main, %margin_top_medium;
+  @extend %margin_horizontal_main, %margin_top_small;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

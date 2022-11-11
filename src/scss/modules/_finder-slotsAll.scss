@@ -4,7 +4,7 @@
 
 .slotsFinder {
   @extend %margin_horizontal_main;
-  @extend %margin_top_medium;
+  @extend %margin_top_small;
 
   display: grid;
   grid-template-columns: 1fr;
