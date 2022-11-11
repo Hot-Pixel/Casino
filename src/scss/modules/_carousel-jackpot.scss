@@ -103,16 +103,8 @@
 
       .jackpot__link {
         transform: translateY(50%);
-        // width: 80%;
         position: absolute;
         bottom: 0.5rem;
-
-        @include screen-md {
-          width: 80%;
-        }
-        @include screen-lg {
-          width: 100%;
-        }
 
         img {
           display: none;
