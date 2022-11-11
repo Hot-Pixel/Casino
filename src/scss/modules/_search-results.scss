@@ -6,25 +6,58 @@
 	display: flex;
     justify-content: center;
 
-	ul {
-		padding: $sm;
+	&__content {
 		@extend %margin_horizontal_main;
-		background-color: setcolor("black");
-		border-radius: rem(10);
+		
+	}
+
+	&__head {
+
+	}
+
+	ul {
+
 		margin-top: $sm;
-		border: solid 2px setcolor("black", "dark5");
-		display: inline-flex;
-    	box-shadow: 0 17px 40px -2px setcolor("black");
-		gap: $sm;
+		display: flex;
+		gap: $xs;
+		flex-wrap: wrap;
 
 		li {
 
-			img {
-				width: rem(100);
-				height: rem(100);
-				border-radius: rem(5);
-				object-fit: cover;
+			.search-result {
+				background-color: setcolor("black", "base");
+				border-radius: rem(3);
+				width: 168px;
+				display: block;
+				height: 100%;
+				overflow: hidden;
+
+				&__info {
+					padding: $sm;
+				}
+
+				&__name {
+					font-size: 18px;
+					font-weight: 700;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					margin-bottom: 5px;
+				}
+
+				&__provider {
+					font-size: 14px;
+					color: rgba($color: #fff, $alpha: 0.5);
+					font-family: "Gotham";
+				}
+
+				&__image {
+					width: 100%;
+					aspect-ratio: 1;
+					object-fit: cover;
+				}
 			}
+
 		}
 	}
 }

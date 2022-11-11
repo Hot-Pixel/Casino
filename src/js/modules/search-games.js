@@ -26,7 +26,7 @@ function searchGames() {
 
     async function queryGames(query) {
         const { hits } = await index.search(query, {
-            hitsPerPage: 10,
+            hitsPerPage: 14,
         });
 
         return hits;
@@ -34,11 +34,19 @@ function searchGames() {
 
     function parseResults(hits) {
         console.log(hits)
-        let output = '<ul>';
+        let output = '<div class="search-results__content"><ul>';
         hits.forEach(hit => {
-            output += `<li><a href="${hit.link}"><img src="https://revamp.casinobarcelona.es${hit.thumb}" alt="${hit.name}"></a></li>`;
+            output += `<li>
+                            <a href="${hit.link}" class="search-result">
+                                <img src="https://revamp.casinobarcelona.es${hit.thumb}" alt="${hit.name}" class="search-result__image">
+                                <div class="search-result__info">
+                                    <div class="search-result__name">${hit.name}</div>
+                                    <div class="search-result__provider">${hit.provider}</div>
+                                </div>
+                            </a>
+                        </li>`;
         });
-        output += '</ul>';
+        output += '</ul></div>';
         searchResults.innerHTML = output;
     }
 }
