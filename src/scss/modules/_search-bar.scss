@@ -7,15 +7,11 @@
 
   padding: $sm 0;
 
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 
   border-bottom: 2px solid setcolor("black", "dark5");
-
-  @include screen-sm {
-    display: flex;
-  }
 
   .search__input {
     width: 50%;
@@ -42,9 +38,13 @@
   }
 
   .search__wrapper {
-    display: flex;
+    display: none;
     justify-content: flex-end;
     align-items: center;
+    
+    @include screen-sm {
+      display: flex;
+    }
 
     &--home {
       img {

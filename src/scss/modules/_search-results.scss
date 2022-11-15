@@ -3,30 +3,70 @@
 @use "../tools" as *;
 
 .search-results {
-	display: flex;
     justify-content: center;
+	flex-direction: column;
+	@extend %margin_horizontal_main;
+	display: none;
 
-	&__content {
-		@extend %margin_horizontal_main;
-		
+	&--active {
+		display: flex;
+	}
+
+	&__summary {
+		display: flex;
+		font-family: setfont("family", "gotham");
+		font-weight: setfont("weight", "book");
+		padding: $sm 0 0;
+		gap: $sm;
+
+		&-query {
+
+			span {
+				font-weight: setfont("weight", "bold");
+			}
+		}
+
+		&-count {
+			color: setcolor("white", "light");
+			
+			span {
+				color: setcolor("white", "light");
+			}
+		}
 	}
 
 	ul {
 
 		margin-top: $sm;
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: $xs;
-		flex-wrap: wrap;
+		
+		@include mobile {
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+		}
+
+		@include tablet {
+			grid-template-columns: repeat(5, minmax(0, 1fr));
+		}
+
+		@include screen-sm {
+			grid-template-columns: repeat(7, minmax(0, 1fr));
+		}
 
 		li {
 
 			.search-result {
 				background-color: setcolor("black", "base");
 				border-radius: rem(3);
-				width: 168px;
 				display: block;
 				height: 100%;
 				overflow: hidden;
+
+				em {
+					text-decoration: underline;
+					font-style: normal;
+				}
 
 				&__info {
 					padding: $sm;
