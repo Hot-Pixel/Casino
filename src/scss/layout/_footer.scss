@@ -99,7 +99,7 @@
       padding-bottom: rem(10);
 
       a {
-        color: white;
+        color: setcolor("white", base);
       }
     }
   }
@@ -128,7 +128,24 @@
         }
       }
     }
-
+    .policies {
+      margin:auto;
+      ul{        
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: $xs;
+        li {
+          text-align: center;
+          margin: 5px 10px 0 5px;
+        }
+        
+        @include mobile {
+          flex-direction: row;
+        }
+      }
+    }
     .payments {
       ul {
         display: flex;
