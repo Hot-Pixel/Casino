@@ -22,25 +22,27 @@
     justify-items: flex-start;
     align-items: flex-start;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
     grid-template-areas:
       "casino"
+      "slots"
+      "promos"
       "info"
-      "follow"
       "client";
 
     @include tablet {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto auto;
       grid-template-areas:
-      "casino info"
-      "follow client";
+      "casino slots"
+      "promos info"
+      "client";
     }
 
     @include screen-sm {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       grid-template-rows: 1fr;
-      grid-template-areas: "casino info follow client";
+      grid-template-areas: "casino slots promos info client";
     }
 
     &-item:nth-of-type(1) {
@@ -48,11 +50,11 @@
     }
 
     &-item:nth-of-type(2) {
-      grid-area: "info";
+      grid-area: "slots";
     }
 
     &-item:nth-of-type(3) {
-      grid-area: "follow";
+      grid-area: "promos";
 
       li a {
         display: flex;
@@ -70,7 +72,7 @@
     }
 
     &-item:nth-of-type(4) {
-      grid-area: "client";
+      grid-area: "info";
 
       ul {
         height: 100%;
@@ -90,6 +92,10 @@
       }
     }
 
+     &-item:nth-of-type(5) {
+       grid-area: "client";
+     }
+
     p {
       font-weight: 700;
       padding-bottom: $md;
@@ -103,6 +109,24 @@
       }
     }
   }
+  
+  &__siguenos {
+    width: 100vw;
+    margin-top: $lg;
+    &--container{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center
+    }
+    &--list{
+      display:flex;
+      flex-direction: row;
+      li {
+        margin: 0 0 0 $xs;
+      }
+    }
+  }
 
   &__brands {
     @extend %margin_horizontal_main;
@@ -110,10 +134,10 @@
     display: flex;
     flex-direction: column;
 
-    margin-top: $lg;
+    margin-top: $xs;
 
     @include screen-sm {
-      margin-top: rem(120);
+      margin-top: $xs;//rem(120);
     }
 
     &-logo {
@@ -237,6 +261,7 @@
 
     & > div {
       margin-top: rem(20);
+      padding-bottom: $md;
 
       @include screen-sm {
         margin-top: rem(40);
