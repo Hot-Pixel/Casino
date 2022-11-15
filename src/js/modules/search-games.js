@@ -47,6 +47,7 @@ function searchGames() {
         hits.map((hit, arrayIndex) => {
             output += `<li>
                             <a 
+                                data-algolia-hit
                                 data-insights-object-id="${hit.objectID}"
                                 data-insights-position="${arrayIndex + 1}"
                                 data-insights-query-id="${queryID}"
