@@ -10,6 +10,9 @@
   height: 100%;
   margin: 0 !important;
   padding: 0 !important;
+  &--home-jackpot{
+    width:85%;
+  }
 }
 .splide.is-initialized:not(.is-active) .splide__list {
   display: block;
