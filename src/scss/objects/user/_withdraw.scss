@@ -152,6 +152,86 @@
     input[type="number"] {
       appearance: textfield;
     }
+
+    &__select {
+      margin-top: $md;
+  
+      & > p {
+        text-align: center;
+      }
+  
+      &-type {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: rem(10);
+      }
+  
+      &-content {
+        margin-top: rem(10);
+        border-radius: rem(5);
+        background-color: white;
+  
+        p {
+          color: setcolor("black", "dark1");
+          padding: $sm;
+  
+          &:not(:last-of-type) {
+            border-bottom: 1px solid #e7e7e8;
+          }
+        }
+      }
+  
+      &-noBond {
+        width: 100%;
+        margin-top: rem(10);
+  
+        .item {
+          aspect-ratio: unset !important;
+          height: rem(150);
+  
+          @include screen-sm {
+            height: rem(200);
+          }
+        }
+      }
+  
+      &-email {
+        margin-top: rem(10);
+        background-color: #f4f6f8;
+        border-radius: rem(5);
+        padding: $md;
+  
+        input {
+          @extend .u-f--bold;
+  
+          width: 100%;
+          padding: $sm 0;
+  
+          text-align: center;
+          background-color: #eaedef;
+          color: #868b92;
+        }
+      }
+  
+      &-save {
+        margin-top: $md;
+        p:first-of-type {
+          @extend .u-f--h5, .u-f--bold;
+          color: setcolor("black", "dark1");
+          margin-bottom: $sm;
+        }
+        p:last-of-type {
+          color: setcolor("gray", "mid");
+        }
+      }
+  
+      &-card {
+        & > p {
+          text-align: center;
+        }
+  
+      }
+    }
   }
 
   &--bottom {
