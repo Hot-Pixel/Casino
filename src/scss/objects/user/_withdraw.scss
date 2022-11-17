@@ -3,7 +3,6 @@
 @use "../tools" as *;
 
 .withdraw {
-  @extend %margin_horizontal_main;
   height: 100%;
 
   &__header {
@@ -103,7 +102,7 @@
     position: relative;
     margin-top: calc(rem(60) + $md);
     margin-bottom: $sm;
-    padding: $xl $sm $md;
+    padding: 0 $sm $md;
     flex-direction: column;
 
     .withdrawDetail__logo {
@@ -111,8 +110,7 @@
       border-radius: rem(10);
       padding: $md;
 
-      margin-top: -50%;
-      margin-bottom: 1rem;
+      transform: translateY(-50%);
 
       img {
         max-width: rem(100);
