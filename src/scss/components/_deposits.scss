@@ -43,6 +43,14 @@
     }
   }
 
+  &__balance-value {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+  }
+
   svg {
     margin: 0 rem(15) 0 rem(5);
   }
