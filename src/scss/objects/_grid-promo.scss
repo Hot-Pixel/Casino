@@ -32,6 +32,7 @@
       background-color: setcolor("black");
       padding: $md $sm 0;
       border-radius: 0 0 rem(10) rem(10);
+      position: relative;
 
       @include screen-sm {
         padding: rem(45) rem(45) 0;
@@ -58,10 +59,13 @@
   &-btn {
     display: flex;
     justify-content: center;
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    bottom: -3rem;
+    left: 50%;
 
     a {
-      width: 70%;
+      width: 100%;
       img {
         display: none;
         @include screen-sm {
