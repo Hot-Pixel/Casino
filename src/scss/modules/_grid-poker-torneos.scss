@@ -62,6 +62,12 @@
       }
 
       &-table {
+        &--tournament {
+          position: absolute;
+          bottom: 15px;
+          width: 70%;
+        }
+        
         hr {
           margin: rem(10) 0;
           border-color: setcolor("black", "dark5");
