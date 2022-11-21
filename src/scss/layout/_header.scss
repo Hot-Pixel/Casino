@@ -145,6 +145,7 @@ header {
         @extend .u-f--h5, .u-f--bold;
         margin: 0;
         padding-left: rem(5);
+        white-space: nowrap;
       }
     }
   }

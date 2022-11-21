@@ -45,6 +45,7 @@
 
   &__balance-value {
     display: none;
+    white-space: nowrap;
 
     @include mobile {
       display: block;
