@@ -41,6 +41,12 @@
           margin-bottom: rem(10);
         }
 
+        .nav__title-userid > p {
+           @extend .u-f--bold;
+           color: setcolor("black", "dark1");          
+
+        }
+
         .nav__title-verify {
           display: flex;
           img {

@@ -87,8 +87,13 @@
         padding-left: $sm;
         & > p {
           @extend .u-f--h3, .u-f--bold;
-          color: setcolor("black", "dark1");
-          margin-bottom: rem(10);
+          color: setcolor("black", "dark1");          
+        }
+
+         &-userid > p {
+           @extend .u-f--bold;
+           color: setcolor("black", "dark1");
+           margin-bottom: rem(10);
         }
 
         &-verify {
