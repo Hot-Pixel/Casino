@@ -24,6 +24,9 @@
 
   .card {
 
+    display: flex;
+    flex-direction: column;
+
     &__img {
       position: relative;
       z-index: 0;
@@ -57,10 +60,12 @@
 
 
     &__content {
+      flex-grow: 1;
       display: flex;
       align-items: center;
       flex-direction: column;
       background-color: setcolor("black", "dark4");
+      justify-content: space-between;
 
       border-radius: 0 0 rem(5) rem(5);
 
@@ -71,7 +76,7 @@
       &--top {
         width: 100%;
         padding: rem(10) rem(20);
-        border-bottom: 1px solid setcolor("black", "dark2");
+        
 
         display: flex;
         justify-content: space-between;
@@ -95,6 +100,7 @@
       &--bottom {
         width: 100%;
         padding: rem(10) rem(20);
+        border-top: 1px solid setcolor("black", "dark2");
 
         display: flex;
         justify-content: space-between;
