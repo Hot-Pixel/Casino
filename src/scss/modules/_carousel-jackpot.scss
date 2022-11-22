@@ -17,6 +17,12 @@
     margin-bottom: 25px;
   }
 
+  &-counter {
+    @include screen-md {
+      font-size: 3.3rem;
+    }
+  }
+  
   &__text {
     display: flex;
     flex-direction: column;
@@ -55,7 +61,7 @@
         object-fit: cover;
         width: 100%;
       }
-    }
+    }  
 
     &-content {
       position: relative;
