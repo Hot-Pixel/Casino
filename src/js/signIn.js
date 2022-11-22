@@ -58,3 +58,5 @@ validation
 function setFormLoading(isLoading) {
   loginSubmitBtn.classList.toggle('btn--loading', isLoading);
 }
+
+window.setFormLoading = setFormLoading;
