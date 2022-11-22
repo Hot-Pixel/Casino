@@ -48,16 +48,13 @@ validation
     try {
       setFormLoading(true);
       alertMgr.removeAll();
-      const res = await handleLogin(nameEl.value, passEl.value);
+      await handleLogin(nameEl.value, passEl.value);
     } catch (error) {
       alertMgr.add(error, "error");
-    } finally {
       setFormLoading(false);
     }
   });
 
 function setFormLoading(isLoading) {
-  const submitTextEl = loginSubmitBtn.querySelector('span');
-  loginSubmitBtn.classList.toggle('loading', isLoading);
-  isLoading ? submitTextEl.innerText = "CARGANDO..." : submitTextEl.innerText = "ENTRAR";
+  loginSubmitBtn.classList.toggle('btn--loading', isLoading);
 }
