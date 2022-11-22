@@ -171,6 +171,12 @@
           height: rem(45);
           transform: translateY(50%);
         }
+
+        a {
+          color: setcolor("black", "dark1");        
+          font-weight: 700;  
+        }
+
       }
     }
 

@@ -23,9 +23,11 @@
   transition: all 0.3s ease;
 
   &__header {
+    width: 100%;
     display: flex;
     justify-self: flex-end;
     align-self: flex-start;
+    justify-content: space-between;
   }
 
   &__btn {
