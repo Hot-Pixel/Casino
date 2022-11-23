@@ -24,12 +24,22 @@
         background-color: setcolor("warning", "base");
         border: solid 4px setcolor("warning", "light");
     }
+
     &--success {
         
         background-color: setcolor("success", "base");
         border: solid 4px setcolor("success", "light");
         
     }
+
+    &--closed {
+      animation: fadeOut .5s;
+      @keyframes fadeOut {
+        0% {opacity: 100%;};
+        100% {opacity: 0%;};
+      }
+    }
+
     &--closable{
       position:relative;
       &__button{
@@ -42,5 +52,7 @@
         cursor: pointer;
       }
     }
+
+
 } 
 
