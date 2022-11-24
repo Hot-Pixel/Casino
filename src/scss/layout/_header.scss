@@ -13,7 +13,7 @@ header {
   z-index: 8;
   width: 100%;
   
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
 
   display: none;
   flex-direction: column;
@@ -225,7 +225,7 @@ header {
     top: 0;
     width: 100%;
 
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -243,7 +243,7 @@ header {
     bottom: 0;
     width: 100%;
 
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
 
     height: auto;
     padding: rem(10) rem(20);
@@ -296,6 +296,15 @@ header {
     }
   }
 
+  .menuHeader__openBtn svg {
+    circle {
+      fill: #d4d7da;
+    }
+    g line {
+      stroke: black;
+    }
+  }
+
   .deposits {
     background-color: setcolor("gray", "light2");
     &__total {
@@ -322,7 +331,6 @@ header {
 
     .deposits__btn {
       background-color: setcolor("secondary") !important;
-      box-shadow: 0px 0px rem(20) 0px setcolor("secondary") !important;
     }
   }
 
@@ -386,7 +394,6 @@ header {
 
         .deposits__btn {
           background-color: setcolor("secondary") !important;
-          box-shadow: 0px 0px rem(20) 0px setcolor("secondary") !important;
         }
       }
 
@@ -407,10 +414,7 @@ header {
   }
   
   @include screen-sm {
-    padding-top: rem(98);
+    padding-top: rem(80);
   }
   
-  @include screen-md {
-    padding-top: rem(81);
-  }
 }

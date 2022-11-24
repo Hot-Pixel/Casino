@@ -10,6 +10,8 @@ function userMenuMobile() {
   if(!userMenuMobile) return;
 
   userMenuMobileOpen.addEventListener("click", e => {
+    if(window.innerWidth > 1280) return;
+    
     e.preventDefault();
     userMenuMobile.style.display = "flex";
     gsap.to(userMenuMobile, { right: "0", opacity: 1, duration: 0.7 });
