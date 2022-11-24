@@ -89,7 +89,6 @@ header {
 
   &__logo {
     width: rem(304);
-    margin-bottom: rem(10);
     
     @include screen-sm {
       margin-right: $sm;
@@ -176,7 +175,7 @@ header {
   }
 
   &-logo {
-    margin: 0 rem(45);
+    margin: 0 $sm;
     img {
       width: 100%;
     }
