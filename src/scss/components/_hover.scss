@@ -24,10 +24,14 @@
 
   &__header {
     width: 100%;
-    display: flex;
+    display: none;
     justify-self: flex-end;
     align-self: flex-start;
     justify-content: space-between;
+    
+    @include screen-sm {
+      display: flex;
+    }
   }
 
   &__btn {

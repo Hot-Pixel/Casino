@@ -20,6 +20,13 @@ function carouselGrid(gridFull) {
     [3, 2],
   ];
 
+  const arrDimMobileXs = [
+    [3, 3],
+    [3, 3],
+    [3, 3],
+    [3, 3],
+  ];
+
   arrDim.splice(order, 0, item);
 
   const splide = new Splide(gridFull, {
@@ -39,19 +46,40 @@ function carouselGrid(gridFull) {
         perPage: 3,
       },
       1280: {
-        perPage: 3,
+        perPage: 1,
+        grid: {
+          dimensions: [
+            [3, 6],
+            [3, 6],
+            [3, 6],
+            [3, 6],
+            [3, 6],
+            [3, 6],
+          ]
+        },
+
       },
       991: {
-        perPage: 2,
+        perPage: 1,
         arrows: false,
         padding: { left: 0, right: 50 },
         drag: "free",
         grid: {
-          dimensions: arrDimMobile,
+          dimensions: [
+            [3, 5],
+            [3, 5],
+            [3, 5],
+            [3, 5],
+            [3, 5],
+            [3, 5],
+          ]
         },
       },
       450: {
         perPage: 1,
+        grid: {
+          dimensions: arrDimMobileXs,
+        },
       }
     },
   });
