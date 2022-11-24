@@ -11,6 +11,7 @@
   &__name {
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 7rem;
   }
 
   &__wrapper {
@@ -49,7 +50,6 @@
     @extend .u-f--h3, .u-f--bold;
     text-overflow: ellipsis;
     overflow: hidden;
-    max-width: 7rem;
   }
   &__sessionTime {
     @extend .u-f--h4;
