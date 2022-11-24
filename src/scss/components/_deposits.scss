@@ -12,6 +12,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   &.reverse {
     flex-direction: row-reverse;
@@ -25,19 +26,6 @@
     display: flex;
     align-items: center;
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 0;
-      left: 0;
-
-      width: 100%;
-      height: 100%;
-
-      background: linear-gradient(to right, transparent 70%, setcolor("black", "dark4"));
-    }
-
     img {
       margin-right: rem(5);
     }
@@ -46,16 +34,20 @@
   &__balance-value {
     display: none;
     white-space: nowrap;
-
+    margin-left: $xs;
+    max-width: 5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
     @include mobile {
       display: block;
     }
   }
 
-  svg {
-    margin: 0 rem(15) 0 rem(5);
+  &__arrow-icon {
+    margin: 0 $xs; 
   }
-
+  
   &__btn {
     position: relative;
     width: auto;
