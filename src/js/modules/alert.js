@@ -1,3 +1,5 @@
+let alertGlobal = 0;
+
 function Alert(options = {}) { 
     const defaultOptions = {
         wrapperSelector: '.alert__wrapper',
@@ -12,7 +14,7 @@ function Alert(options = {}) {
         const alertStr = options.itemTemplate
             .replace("{type}", type)
             .replace("{closable}", closable ? "closable" : "fixed")
-            .replace("{index}", alertIndex)
+            .replace("{index}", `${alertGlobal}-${alertIndex}`)
             .replace("{message}", message)
         const alertEl = stringToElement(alertStr);
         if(closable) {          
@@ -27,7 +29,8 @@ function Alert(options = {}) {
 
     function remove(index) {
         const alert = wrapperEl.querySelector(`[data-index="${index}"]`);
-        alert.remove();
+        alert.classList.add("alert--closed");
+        setTimeout(()=>{alert.remove();}, 450);
     }
 
     function removeAll() {
@@ -40,11 +43,14 @@ function Alert(options = {}) {
         return tmp.firstChild;
     }
 
+    alertGlobal++;
+    
     return {
         add,
         remove,
         removeAll
     };
+    
 }
 
 export default Alert;
