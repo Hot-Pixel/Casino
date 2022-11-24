@@ -42,9 +42,6 @@ function carouselGrid(gridFull) {
       },
     },
     breakpoints: {
-      1400: {
-        perPage: 3,
-      },
       1280: {
         perPage: 1,
         grid: {
@@ -75,7 +72,7 @@ function carouselGrid(gridFull) {
           ]
         },
       },
-      450: {
+      576: {
         perPage: 1,
         grid: {
           dimensions: arrDimMobileXs,

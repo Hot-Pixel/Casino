@@ -2,7 +2,6 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-
 .grids__container {
   @extend %margin_horizontal_main, %margin_top_small;
   display: flex;
@@ -18,17 +17,13 @@
 
 .gridHalf {
   width: 100%;
-  padding: rem(10) $sm;
+  padding: $sm;
   height: 100%;
 
   background-color: setcolor("black", "dark2");
   border-radius: rem(5);
 
-  @include tablet {
-    padding: $md;
-  }
   @include screen-sm {
-    padding: $sm;
   }
   @include screen-md {
     width: 50%;
@@ -40,7 +35,10 @@
     align-items: center;
     width: 100%;
 
-    padding: 10px 0;
+    
+    @include screen-sm {
+      padding: 0 0 $sm;
+    }
 
     .js-arrow__grid {
       cursor: pointer;
@@ -104,21 +102,25 @@
   &__grid {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    overflow: hidden;
 
     height: 0;
     opacity: 0;
 
-    @include tablet {
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: auto auto;
+    @include mobile {
+      grid-template-columns: repeat(5, 1fr);
     }
 
     @include screen-sm {
+      grid-template-columns: repeat(4, 1fr);
       height: 100%;
       opacity: 1;
+    }
+    
+    @include screen-md {
+      grid-template-columns: repeat(5, 1fr);
     }
 
     &-item {

@@ -14,29 +14,41 @@
 
   background: linear-gradient(
     to bottom,
-    setcolor("black", "dark5"),
+    setcolor("black"),
     transparent
   );
-  padding-top: $md;
-
+  padding: $sm;
+  
+  
   @include screen-sm {
+    padding: 0;
+    margin-left: var(--horizontal-main-xl);
+    margin-right: var(--horizontal-main-xl);
+
     grid-template-columns: 6fr 5fr;
     grid-template-rows: auto;
     grid-template-areas: "icons title";
 
-    margin-left: rem(120);
-    margin-right: rem(120);
-
     background: none;
   }
+
   @include screen-md {
-    margin-left: rem(140);
-    margin-right: rem(140);
+    margin-left: var(--horizontal-main-2xl);
+    margin-right: var(--horizontal-main-2xl);
   }
+
   @include screen-lg {
-    margin-left: rem(150);
-    margin-right: rem(150);
+    margin-left: var(--horizontal-main-3xl);
+    margin-right: var(--horizontal-main-3xl);
   }
+
+  @include screen-xl {
+    max-width: $max_width;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+  
 
   p {
     @extend .u-f--bold;
@@ -49,18 +61,22 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
+      flex: 0 1 0;
 
       img {
-        width: rem(80);
+        width: rem(56);
+
+        @include mobile {
+          width: rem(104);
+        }
 
         @include tablet {
-          width: rem(100);
+          width: rem(148);
+          padding: $sm;
         }
-        @include screen-lg {
-          width: rem(150);
-        }
-        @include screen-xl {
-          width: rem(170);
+        
+        @include screen-sm {
+          width: rem(144);
         }
       }
 
@@ -81,17 +97,17 @@
 
     &--left {
       grid-area: icons;
-      justify-self: flex-start;
-
+      justify-content: center;
+      
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      width: 100%;
-
+      gap: $sm;
+      flex-wrap: wrap;
+      
       @include screen-sm {
-        width: auto;
-        justify-self: flex-start;
+        justify-content: flex-start;
       }
+
     }
 
     &--right {
@@ -101,14 +117,12 @@
       flex-direction: column;
       text-align: center;
       margin-bottom: $md;
+      padding-top: $md;
 
-      @include tablet {
-        margin-bottom: $lg;
-      }
       @include screen-sm {
         margin-bottom: 0;
         margin-left: $lg;
-        align-items: flex-start;
+        align-items: flex-end;
         text-align: left;
       }
 

@@ -13,11 +13,16 @@
 
   border-bottom: 2px solid setcolor("black", "dark5");
 
-  .search__input {
-    width: 50%;
-
+  &__input {
+    width: 100%;
+    
     display: flex;
     align-items: center;
+    overflow: hidden;
+    
+    @include screen-sm {
+      width: 50%;
+    }
 
     img {
       height: rem(45);
