@@ -1,30 +1,20 @@
-import { gsap } from "gsap";
-
 function accordion() {
-    const accorArrows = document.getElementsByClassName("accorArrow");
-    const accorBody = document.getElementsByClassName("body");
+  const accordions = document.querySelectorAll("[data-accordion]");
 
-    for (let n = 0; n < accorArrows.length; n++) {
-      accorArrows[n].addEventListener("click", () => {
-        if (accorBody[n].classList.contains("active")) {
-          gsap
-            .timeline()
-            .to(accorArrows[n], { rotation: 0, duration: 0.3 })
-            .to(accorBody[n], { opacity: 0, duration: 0.3 })
-            .to(accorBody[n], { height: 0, padding:0, duration: 0.3 })
-            .to(accorBody[n], { display: "none", duration: 0 });
-          accorBody[n].classList.remove("active");
-        } else {
-          gsap
-            .timeline()
-            .to(accorArrows[n], { rotation: 90, duration: 0.3 })
-            .to(accorBody[n], { display: "grid", duration: 0 })
-            .to(accorBody[n], { height: "auto", padding: 15, duration: 0.3 })
-            .to(accorBody[n], { opacity: 1, duration: 0.3 });
-          accorBody[n].classList.add("active");
-        }
-      });
-    }
-  }
+  accordions.forEach((accordion) => {
+    const trigger = accordion.querySelector("[data-accordion-trigger]");
+    const content = accordion.querySelector("[data-accordion-content]");
+    accordion.classList.add("accordion");
+    content.classList.add("accordion__content");
+    trigger.addEventListener("click", () => {
+      if(accordion.classList.contains("accordion--active")) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+      accordion.classList.toggle("accordion--active");
+    });
+  });
+}
 
-  export default accordion;
+export default accordion;

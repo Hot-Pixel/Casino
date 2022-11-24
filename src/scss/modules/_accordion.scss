@@ -26,6 +26,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
 
         padding: $sm;
 
@@ -34,19 +35,14 @@
           margin: 0;
           padding: 0;
         }
-
-        .accorArrow {
-          cursor: pointer;
-          transform: rotate(0deg);
-        }
       }
 
       .body {
-        height: 0;
-        opacity: 0;
-        padding: 0;
         border-top: 1px solid setcolor("black", "dark1");
-        overflow: hidden;
+
+        &__wrapper {
+          padding: $sm;
+        }
 
         p {
           color: #7f8285;
@@ -70,5 +66,26 @@
         }
       }
     }
+  }
+}
+
+.accordion {
+  &__arrow {
+    transform: rotate(-90deg);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  &--active &__arrow {
+    transform: rotate(0deg);
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  &--active &__content {
+    max-height: none;
   }
 }
