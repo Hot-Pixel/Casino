@@ -77,6 +77,7 @@
   span {
     text-transform: uppercase;
     font-weight: setfont("weight", "bold");
+    display: block;
     
     @include screen-sm {
       text-transform: none;

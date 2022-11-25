@@ -3,7 +3,8 @@
 @use "../tools" as *;
 
 .favoritesGames {
-	background-image: url('../img/images/img-favourites-bg.svg');
+	@extend %margin_horizontal_main;
+	background-image: url("../img/images/img-favourites-bg.svg");
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: 100vw auto;
@@ -14,12 +15,10 @@
 	width: fit-content;
 
 	&__types {
-
-
 		button {
 			padding: rem(12) $sm;
-			color: rgba( setcolor('white'), .6);
-			background-color: setcolor('black');
+			color: rgba(setcolor("white"), 0.6);
+			background-color: setcolor("black");
 			cursor: pointer;
 
 			& + & {
@@ -33,12 +32,11 @@
 				border-radius: 0 rem(5) rem(5) 0;
 			}
 
-
 			&:focus,
 			&:active,
 			&.mixitup-control-active {
-				color: setcolor('white');
-				background-color: setcolor('black', 'dark4');
+				color: setcolor("white");
+				background-color: setcolor("black", "dark4");
 			}
 		}
 	}
