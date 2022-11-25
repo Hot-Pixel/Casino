@@ -16,8 +16,10 @@
   @include mobile-sm {
     padding: $xs;
   }
+  
   @include screen-sm {
-    display: none;
+    padding: 0;
+    background: none;
   }
 
   &::after,
