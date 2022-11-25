@@ -10,14 +10,20 @@
     grid-auto-flow: row;
     gap: rem(10);
 
-    @include tablet {
+    @include mobile-sm {
         grid-template-columns: repeat(3, 1fr);
     }
-    @include screen-sm {
+    @include mobile {
         grid-template-columns: repeat(4, 1fr);
     }
-    @include screen-lg {
+    @include tablet {
         grid-template-columns: repeat(5, 1fr);
+    }
+    @include screen-md {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @include screen-lg {
+        grid-template-columns: repeat(6, 1fr);
     }
 
     &__item {

@@ -7,15 +7,21 @@
   grid-template-columns: repeat(2, 1fr);
   gap: rem(10);
   height: fit-content;
-
-  @include tablet {
+  
+  @include mobile-sm {
     grid-template-columns: repeat(3, 1fr);
   }
-  @include screen-md {
+  @include mobile {
     grid-template-columns: repeat(4, 1fr);
   }
-  @include screen-lg {
+  @include tablet {
     grid-template-columns: repeat(5, 1fr);
+  }
+  @include screen-md {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  @include screen-lg {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   &__item {

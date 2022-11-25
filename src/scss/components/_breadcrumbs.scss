@@ -6,17 +6,80 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+
+  padding: $xs 0;
+  background: linear-gradient(to right, setcolor("black", "dark2") 0%, setcolor("black", "dark1") 100%);
+  position: relative;
+  overflow: hidden;
+
+  @include mobile-sm {
+    padding: $xs;
+  }
+  @include screen-sm {
+    display: none;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 4rem;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      setcolor("black", "dark1") 100%
+    );
+
+    @include mobile-sm {
+      content: none;
+    }
+  }
+
+  &::before {
+    right: auto;
+    left: 0;
+    background: linear-gradient(
+      to left,
+      transparent 0%,
+      setcolor("black", "dark1") 100%
+    );
+  }
 
   @include screen-sm {
-    justify-content: flex-start
+    justify-content: flex-start;
   }
 
-  a span {
-    @extend .u-f--h5;
+  & > * {
+    white-space: nowrap;
+
+    &:last-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 
-  a span:not(.breadcrumbs__current) {
-    color: white;
+  a {
+    span {
+      @extend .u-f--h5;
+    }
+
+    span:not(.breadcrumbs__current) {
+      color: white;
+    }
+  }
+
+  span {
+    text-transform: uppercase;
+    font-weight: setfont("weight", "bold");
+    
+    @include screen-sm {
+      text-transform: none;
+      font-weight: setfont("weight", "book");
+    }
   }
 
   img {

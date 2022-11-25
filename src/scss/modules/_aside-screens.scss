@@ -5,8 +5,7 @@
 .screens {
   display: grid;
   grid-template-columns: 1fr;
-  
-  
+
   &.aside-open {
     @include screen-sm {
       grid-template-columns: 1fr rem(500);
@@ -17,8 +16,6 @@
     }
   }
 
-
-
   .screen {
     display: flex;
     background-color: setcolor("black");
@@ -26,7 +23,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    
+
     @include screen-sm {
       position: sticky;
     }
@@ -40,7 +37,7 @@
 
     &__btns {
       display: none;
-      
+
       @include screen-sm {
         display: flex;
         justify-content: center;
@@ -48,7 +45,6 @@
         gap: $sm;
       }
     }
-    
 
     &--online {
       display: none;
@@ -56,9 +52,8 @@
 
     &--disabled {
       padding: $lg;
-
     }
-    
+
     &__message {
       a {
         text-decoration: underline;
@@ -69,8 +64,6 @@
       margin-top: $md;
       text-transform: uppercase;
     }
-
-    
   }
 
   .heart g path {
@@ -130,40 +123,11 @@
     }
 
     &__breadcrumbs {
-      background-color: setcolor("black");
-      background-image: linear-gradient(to right, transparent, #13171d);
-      overflow-x: auto;
-      
+      overflow: hidden;
+
       @include screen-sm {
         display: none;
       }
-
-      span {
-        color: setcolor("gray", "mid");
-      }
-
-      a {
-        span {
-          color: setcolor("white");
-        }
-      }
-      
-      &-content {
-        padding: $sm 0 $sm $sm;
-        display: flex;
-        align-items: center;
-        gap: $sm;
-        
-        & > * {
-          white-space: nowrap;
-        }
-        
-        & > svg {
-          flex: 0 0 auto;
-        }
-      }
-
-
     }
 
     &--bottom {
@@ -190,7 +154,8 @@
 
     &__btns {
       transform: translateY(rem(25));
-      button, a {
+      button,
+      a {
         height: rem(50);
         width: 100%;
 
@@ -264,32 +229,33 @@
   .termsScreen {
     color: setcolor("gray", "mid");
     margin: $sm;
-    
+
     @include tablet {
       margin: $md;
     }
-    
+
     @include screen-sm {
       margin: 0;
       margin-top: $md;
     }
-    
+
     p {
       color: setcolor("gray", "mid");
       padding-bottom: $sm;
     }
-    
+
     h2 {
       @extend .u-f--h2;
       color: setcolor("white");
     }
-    
+
     h3 {
       @extend .u-f--h3;
       color: setcolor("white");
     }
 
-    ul, ol {
+    ul,
+    ol {
       padding: revert;
       margin: revert;
 

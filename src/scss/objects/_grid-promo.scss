@@ -10,13 +10,19 @@
     column-gap: $sm;
     row-gap: rem(50);
 
-    @include tablet {
+    @include mobile-sm {
       grid-template-columns: repeat(2, 1fr);
       column-gap: $sm;
       row-gap: rem(50);
     }
-    @include screen-sm {
+
+    @include tablet {
       grid-template-columns: repeat(3, 1fr);
+      column-gap: $sm;
+      row-gap: rem(50);
+    }
+    @include screen-sm {
+      grid-template-columns: repeat(4, 1fr);
       column-gap: $sm;
       row-gap: rem(50);
     }
@@ -30,12 +36,12 @@
 
     &--bottom {
       background-color: setcolor("black");
-      padding: $md $sm 0;
+      padding: $sm $sm 0;
       border-radius: 0 0 rem(10) rem(10);
       position: relative;
-
-      @include screen-sm {
-        padding: rem(45) rem(45) 0;
+      
+      @include tablet-h {
+        padding: $md $md 0;
       }
     }
   }

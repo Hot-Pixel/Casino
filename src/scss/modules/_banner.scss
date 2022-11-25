@@ -131,13 +131,6 @@
 }
 
 .bannerFooter {
-  background-color: setcolor('black');
-  padding: $sm 0;
-
-  span {
-    text-transform: uppercase;
-    @extend .u-f--bold;
-  }
 
   @include screen-sm {
     display: none;

@@ -73,15 +73,14 @@ header {
     align-items: center;
     overflow: hidden;
     gap: $sm;
+    
+    
+    // &.header__logged {
+    // }
 
     .header__noLog-btn {
       margin: 0;
-      margin-left: rem(10);
       padding: $sm rem(40);
-
-      @include screen-md {
-        margin-left: rem(10);
-      }
 
       &:first-of-type span {
         color: black;
@@ -169,7 +168,7 @@ header {
   }
 
   .nav__promo {
-    padding-right: 0;
+    padding: 0;
     display: none;
 
     @include screen-md {
@@ -409,10 +408,6 @@ header {
 .has-header {
   padding-top: rem(68);
 
-  @include tablet {
-    padding-top: rem(134);
-  }
-  
   @include screen-sm {
     padding-top: rem(80);
   }

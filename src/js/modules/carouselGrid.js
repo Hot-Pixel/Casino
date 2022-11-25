@@ -77,6 +77,17 @@ function carouselGrid(gridFull) {
         grid: {
           dimensions: arrDimMobileXs,
         },
+      },
+      376: {
+        perPage: 1,
+        grid: {
+          dimensions: [
+            [3, 2],
+            [3, 2],
+            [3, 2],
+            [3, 2],
+          ],
+        },
       }
     },
   });
