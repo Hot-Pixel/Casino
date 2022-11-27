@@ -65,11 +65,8 @@
   &-btn {
     display: flex;
     justify-content: center;
-    transform: translateY(-50%) translateX(-50%);
-    position: absolute;
-    bottom: -3rem;
-    left: 50%;
-
+    transform: translateY(50%);
+    
     a {
       width: 100%;
       img {

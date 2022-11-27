@@ -5,7 +5,7 @@
 .gridDl {
   @extend %margin_horizontal_main;
   margin-top: rem(60);
-  margin-bottom: rem(100);
+  margin-bottom: $lg;
 
   display: grid;
   justify-content: center;
@@ -14,13 +14,12 @@
   justify-items: center;
   grid-template-columns: 1fr;
   grid-auto-flow: row;
-  column-gap: $lg;
-  row-gap: rem(100);
+  gap: $xl $sm;
 
-  @include screen-sm {
+  @include tablet {
     grid-template-columns: 1fr 1fr;
     margin-top: rem(100);
-    margin-bottom: rem(140);
+    
   }
 
   .card {
@@ -56,12 +55,9 @@
       background-color: setcolor("black");
       border-radius: 0 0 rem(10) rem(10);
       padding: $md $md 0;
-
-
-      @include screen-sm {
-        padding: 0;
-        padding-top: $lg;
-
+      
+      @include screen-md {
+        padding: $lg $lg 0;
       }
 
       &-content {
@@ -71,11 +67,6 @@
 
         text-align: center;
         margin: 0 auto;
-
-      @include screen-sm {
-        padding-bottom: $md;
-        max-width: 80%;
-      }
 
         p:first-of-type {
           @extend .u-f--h2, .u-f--bold;
@@ -97,7 +88,8 @@
         flex-direction: column;
         align-items: center;
 
-        button, a {
+        button,
+        a {
           height: rem(65);
           width: 100%;
           padding: $sm;
@@ -113,7 +105,8 @@
           }
         }
 
-        button:first-of-type, a:first-of-type {
+        button:first-of-type,
+        a:first-of-type {
           margin-bottom: rem(10);
         }
       }

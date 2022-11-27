@@ -3,22 +3,24 @@
 @use "../tools" as *;
 
 .oneCol {
-  @extend %margin_horizontal_main, %margin_top_medium;
+  @extend %margin_horizontal_main;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding: $md 0;
   background-color: setcolor("black", "dark2");
+  border-radius: rem(10);
+  padding: $md;
+  margin-top: $sm;
 
   @include screen-sm {
-    padding: rem(80) 0;
+    padding: rem(80);
   }
   @include screen-md {
-    padding: rem(120) 0;
+    padding: rem(120);
   }
   @include screen-lg {
-    padding: rem(150) 0;
+    padding: rem(150);
   }
 
   &__wrapper {
@@ -32,11 +34,6 @@
 
   p {
     @extend .u-f--bold;
-    max-width: 80%;
-
-    @include screen-sm {
-      max-width: 50%;
-    }
   }
 
   &__title {

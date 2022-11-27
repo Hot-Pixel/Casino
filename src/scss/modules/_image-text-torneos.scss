@@ -3,26 +3,22 @@
 @use "../tools" as *;
 
 .imageTextTorneo {
-  @extend %margin_horizontal_main, %margin_top_large;
-
-  padding: $lg;
+  @extend %margin_horizontal_main, %margin_top_small;
 
   position: relative;
   z-index: 0;
 
-  background-image: linear-gradient(
-    to right,
-    setcolor("black", "dark1"),
-    setcolor("black")
-  );
+  background-image: linear-gradient(to right, setcolor("black", "dark1"), setcolor("black"));
   border-radius: rem(10);
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
+  padding: $md;
+  
   @include screen-sm {
+    padding: $lg;
     flex-direction: row;
     padding: 0;
   }
@@ -48,9 +44,8 @@
     }
 
     p:last-of-type {
-      color: setcolor('gray', 'dark1');
+      color: setcolor("gray", "dark1");
     }
-
   }
 
   &__image {
