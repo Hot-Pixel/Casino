@@ -12,12 +12,12 @@
 
   p {
     @extend .u-f--h2, .u-f--bold;
-    padding-bottom: $md;
   }
 
   img {
     object-fit: cover;
     width: 90%;
+    padding-bottom: $sm;
     @include tablet {
       width: 50%;
     }

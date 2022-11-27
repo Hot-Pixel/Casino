@@ -3,7 +3,7 @@
 @use "../tools" as *;
 
 .gridLandingA {
-    @extend %padding_horizontal_main, %margin_top_large;
+    @extend %padding_horizontal_main, %margin_top_medium;
 
     &__header {
         display: flex;

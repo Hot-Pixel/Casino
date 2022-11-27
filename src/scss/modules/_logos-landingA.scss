@@ -3,7 +3,9 @@
 @use "../tools" as *;
 
 .logosLandingA {
-  @extend %padding_horizontal_main, %margin_top_large;
+  @extend %padding_horizontal_main, %margin_top_medium;
+
+  padding-bottom: $md;
 
   &__header {
     display: flex;

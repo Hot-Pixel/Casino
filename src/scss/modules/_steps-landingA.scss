@@ -9,7 +9,7 @@
   background-color: setcolor("black");
 
   @include screen-sm {
-    height: 12vh;
+    height: 6rem;
   }
 
   &__container {
@@ -27,10 +27,9 @@
     position: relative;
     top: 0;
     left: 0;
-    height: 12vh;
+    height: 6rem;
     width: 100%;
-
-    border-bottom: 1px solid setcolor("black", "dark1");
+    border-bottom: solid 1px setcolor("black", "dark1");
 
     @include screen-sm {
       border: none;
@@ -42,7 +41,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 12vh;
+      height: 6rem;
 
       display: flex;
       align-items: center;
@@ -53,15 +52,13 @@
       align-items: center;
       justify-content: flex-start;
 
-      height: 12vh;
       width: 100%;
       padding-left: 0;
-
+      
       background-color: setcolor("black");
-
+      
       @include screen-sm {
-        justify-content: center;
-        padding-left: $md;
+        height: 6rem;
         width: 85%;
       }
     }
@@ -74,7 +71,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      height: 12vh;
+      height: 6rem;
       background-image: linear-gradient(to right, black 70%, transparent);
 
       @include screen-sm {
@@ -118,7 +115,7 @@
     &-path {
       display: none;
 
-      height: 12vh;
+      height: 6rem;
       width: rem(45);
 
       clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 0% 0%);
