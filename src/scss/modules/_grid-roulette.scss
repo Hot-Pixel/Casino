@@ -7,13 +7,12 @@
 
   &__grid {
     display: grid;
-    gap: $lg;
+    gap: $sm;
 
     grid-template-columns: 1fr;
 
     @include screen-sm {
       grid-template-columns: 1fr 1fr;
-      
     }
   }
 

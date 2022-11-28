@@ -41,8 +41,12 @@
       padding-bottom: $sm;
 
       p {
-        @extend .u-f--h3, .u-f--bold;
+        @extend .u-f--bold;
         padding-left: rem(10);
+
+        @include mobile-sm {
+          font-size: 1.25rem;
+        }
       }
     }
   }

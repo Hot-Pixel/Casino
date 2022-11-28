@@ -4,7 +4,7 @@
 
 .bannerAppApuestas {
   position: relative;
-  @extend %margin_top_medium, %padding_horizontal_main;
+  @extend %padding_horizontal_main;
   padding-top: $sm;
   padding-bottom: rem(200);
   background-image: url("../img/images/img-app-apuestas-header-bg.jpg");
