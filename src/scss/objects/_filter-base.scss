@@ -21,7 +21,7 @@
         display: block;
       }
 
-      button {
+      button, a:link, a:visited {
         cursor: pointer;
         &:first-of-type {
           border-radius: rem(5) 0 0 rem(5);
@@ -39,10 +39,15 @@
         margin: 0;
         padding: 0;
       }
-
+      a {
+        display:inline-block;
+        line-height: rem(45);
+      }
+        
       button,
-      select {
+      select, a:link, a:visited {
         @extend .u-f--h5;
+       
         background-color: #25292f;
         color: setcolor("gray", "dark1");
         font-weight: 700;
@@ -54,7 +59,7 @@
         }
       }
 
-      button {
+      button, a:link, a:visited {
         margin: 0;
         padding: 0 rem(10);
 
