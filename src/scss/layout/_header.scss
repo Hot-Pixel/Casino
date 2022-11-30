@@ -133,12 +133,7 @@
   }
 
   .nav__item {
-    @include screen-sm {
-      padding-right: rem(10);
-    }
-    @include screen-lg {
-      padding-right: $sm;
-    }
+    padding-right: $sm;
 
     a {
       display: flex;

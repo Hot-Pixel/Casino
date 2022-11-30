@@ -65,20 +65,20 @@
   }
 
   a {
-    span {
-      @extend .u-f--h5;
-    }
-
     span:not(.breadcrumbs__current) {
       color: white;
     }
   }
-
+  
   span {
+    font-size: 0.7rem;
     text-transform: uppercase;
     font-weight: setfont("weight", "bold");
     display: block;
     
+    @include mobile {
+      font-size: $body_font_size;
+    }
     @include screen-sm {
       text-transform: none;
       font-weight: setfont("weight", "book");

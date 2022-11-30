@@ -4,7 +4,7 @@
 
 .gridPoker {
   @extend %margin_horizontal_main;
-  margin-top: rem(180);
+  margin-top: $xl;
 
   &__grid {
     display: grid;
