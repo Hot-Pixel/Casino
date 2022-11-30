@@ -32,7 +32,7 @@
     @include screen-sm {
       display: flex;
 
-      button {
+      button, a:link, a:visited {
         padding: 0 $sm;
         margin: 0 rem(2);
       }
@@ -40,7 +40,7 @@
   }
 
   &-wrapper {
-    button {
+    button, a:link, a:visited {
       cursor: pointer;
       background-color: setcolor("black");
       height: rem(45);
@@ -64,11 +64,11 @@
       }
     }
 
-    button:first-of-type {
+    button:first-of-type, a:first-of-type {
       border-radius: rem(5) 0 0 rem(5);
     }
 
-    button:last-of-type {
+    button:last-of-type, a:last-of-type {
       border-radius: 0 rem(5) rem(5) 0;
     }
   }

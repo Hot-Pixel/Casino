@@ -29,16 +29,24 @@
   }
 
   &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+
     &--top img {
       width: 100%;
       object-fit: contain;
     }
 
     &--bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;      
       background-color: setcolor("black");
       padding: $sm $sm 0;
       border-radius: 0 0 rem(10) rem(10);
       position: relative;
+      height: -webkit-fill-available;   
       
       @include tablet-h {
         padding: $md $md 0;
