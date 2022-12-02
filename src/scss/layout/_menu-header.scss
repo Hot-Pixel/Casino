@@ -13,14 +13,20 @@
   width: 90vw;
   height: 100vh;
   overflow: hidden;
-
+  
   opacity: 0;
-
+  
   padding: $sm;
   background-color: setcolor("black", "dark1");
-
+  
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 0px 60px rgb(0 0 0 / 80%);
+  
+  @include tablet {
+    width: auto;
+    padding-right: $lg;
+  }
 
   &__close {
     cursor: pointer;
@@ -35,8 +41,12 @@
       padding-bottom: $sm;
 
       p {
-        @extend .u-f--h3, .u-f--bold;
+        @extend .u-f--bold;
         padding-left: rem(10);
+
+        @include mobile-sm {
+          font-size: 1.25rem;
+        }
       }
     }
   }

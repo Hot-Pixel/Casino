@@ -10,7 +10,7 @@
     padding: 0 $sm;
     img {
       object-fit: cover;
-      width: 100%
+      width: 100%;
     }
   }
 
@@ -34,9 +34,9 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto auto;
       grid-template-areas:
-      "casino slots"
-      "promos info"
-      "client";
+        "casino slots"
+        "promos info"
+        "client";
     }
 
     @include screen-sm {
@@ -61,7 +61,6 @@
         align-items: center;
 
         span {
-          @extend .u-f--h4;
           margin: 0;
         }
 
@@ -92,9 +91,9 @@
       }
     }
 
-     &-item:nth-of-type(5) {
-       grid-area: "client";
-     }
+    &-item:nth-of-type(5) {
+      grid-area: "client";
+    }
 
     p {
       font-weight: 700;
@@ -109,18 +108,18 @@
       }
     }
   }
-  
+
   &__siguenos {
     width: 100vw;
     margin-top: $lg;
-    &--container{
+    &--container {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      align-items: center
+      align-items: center;
     }
-    &--list{
-      display:flex;
+    &--list {
+      display: flex;
       flex-direction: row;
       li {
         margin: 0 0 0 $xs;
@@ -137,7 +136,7 @@
     margin-top: $xs;
 
     @include screen-sm {
-      margin-top: $xs;//rem(120);
+      margin-top: $xs; //rem(120);
     }
 
     &-logo {
@@ -153,18 +152,19 @@
       }
     }
     .policies {
-      margin:auto;
-      ul{        
-        display:flex;
+      margin: auto;
+      ul {
+        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        font-size: $xs;
+        gap: rem(5);
+
         li {
           text-align: center;
           margin: 5px 10px 0 5px;
         }
-        
+
         @include mobile {
           flex-direction: row;
         }
@@ -234,7 +234,7 @@
         height: rem(65);
         margin: rem(2);
 
-        background-color: setcolor('black');
+        background-color: setcolor("black");
         border-radius: rem(10);
 
         @include screen-sm {

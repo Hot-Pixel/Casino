@@ -2,23 +2,19 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-header {
-  position: relative;
+.pageContainer > header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 8;
-  width: 100%;
-
-  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
 
   display: none;
   flex-direction: column;
 
-  @include screen-md {
+  @include tablet-h {
     display: flex;
   }
 
@@ -71,25 +67,34 @@ header {
   &__wrapper {
     display: flex;
     align-items: center;
+    overflow: hidden;
+    gap: $sm;
+    
+    
+    // &.header__logged {
+    // }
 
     .header__noLog-btn {
       margin: 0;
-      margin-left: rem(10);
       padding: $sm rem(40);
-
-      @include screen-md {
-        margin-left: rem(10);
-      }
 
       &:first-of-type span {
         color: black;
+      }
+    }
+
+    .menuHeader__openBtn {
+      cursor: pointer;
+      display: flex;
+
+      @include screen-md {
+        display: none;
       }
     }
   }
 
   &__logo {
     width: rem(304);
-    margin-bottom: rem(10);
     
     @include screen-sm {
       margin-right: $sm;
@@ -115,24 +120,27 @@ header {
 
   }
 
-  &__navBar ul {
-    display: flex;
+  &__navBar {
+    display: none;
+
+    @include screen-md {
+      display: flex;
+    }
+
+    ul {
+      display: flex;
+    }
   }
 
   .nav__item {
-    @include screen-sm {
-      padding-right: rem(10);
-    }
-    @include screen-lg {
-      padding-right: $sm;
-    }
+    padding-right: $sm;
 
     a {
       display: flex;
       align-items: center;
 
       svg {
-        display: none;
+        // display: none;
         height: rem(14);
         width: rem(14);
 
@@ -142,7 +150,7 @@ header {
       }
 
       p {
-        @extend .u-f--h5, .u-f--bold;
+        @extend .u-f--bold;
         margin: 0;
         padding-left: rem(5);
         white-space: nowrap;
@@ -151,12 +159,20 @@ header {
   }
 
   .nav__promo {
-    padding-right: 0;
+    padding: 0;
+    display: none;
+
+    @include screen-md {
+      display: flex;
+    }
   }
 
   .header__logged {
     &-item {
-      margin-left: $sm;
+      
+      &.user {
+        overflow: hidden;
+      }
     }
   }
 }
@@ -165,18 +181,18 @@ header {
   position: relative;
   width: 100%;
 
-  @include screen-md {
+  @include tablet-h {
     display: none;
   }
 
   &-wrapper {
     z-index: 8;
     left: 0;
-    background-color: setcolor("black");
+    background-color: setcolor("black", "dark1");
   }
 
   &-logo {
-    margin: 0 rem(45);
+    margin: 0 $sm;
     img {
       width: 100%;
     }
@@ -195,23 +211,16 @@ header {
   }
 
   &--top {
-    position: fixed;
-    top: 0;
-    width: 100%;
-
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: $sm rem(20);
-
-    @include tablet {
-      padding: $md;
-    }
+    padding: $sm;
 
     .menuHeader__openBtn {
       cursor: pointer;
+      display: flex;
     }
   }
 
@@ -220,7 +229,7 @@ header {
     bottom: 0;
     width: 100%;
 
-    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
 
     height: auto;
     padding: rem(10) rem(20);
@@ -273,6 +282,15 @@ header {
     }
   }
 
+  .menuHeader__openBtn svg {
+    circle {
+      fill: #d4d7da;
+    }
+    g line {
+      stroke: black;
+    }
+  }
+
   .deposits {
     background-color: setcolor("gray", "light2");
     &__total {
@@ -299,7 +317,6 @@ header {
 
     .deposits__btn {
       background-color: setcolor("secondary") !important;
-      box-shadow: 0px 0px rem(20) 0px setcolor("secondary") !important;
     }
   }
 
@@ -363,7 +380,6 @@ header {
 
         .deposits__btn {
           background-color: setcolor("secondary") !important;
-          box-shadow: 0px 0px rem(20) 0px setcolor("secondary") !important;
         }
       }
 
@@ -373,21 +389,5 @@ header {
         }
       }
     }
-  }
-}
-
-.has-header {
-  padding-top: rem(68);
-
-  @include tablet {
-    padding-top: rem(134);
-  }
-  
-  @include screen-sm {
-    padding-top: rem(98);
-  }
-  
-  @include screen-md {
-    padding-top: rem(81);
   }
 }

@@ -3,23 +3,20 @@
 @use "../tools" as *;
 
 .grid3Cols {
-  @extend %margin_horizontal_main, %margin_top_large;
+  @extend %margin_horizontal_main, %margin_top_medium;
 
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
-  row-gap: $md;
+  gap: $sm;
 
-  @include tablet {
-    row-gap: $lg;
-  }
   @include screen-sm {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: rem(10);
   }
 
   &__container {
+    padding: $md;
     position: relative;
     background-color: setcolor("black", "dark2");
     border-radius: rem(10);
@@ -30,26 +27,7 @@
       align-items: center;
     }
 
-    &.regular {
-      padding: $sm;
-
-      @include tablet-h {
-        padding: $lg;
-      }
-      @include screen-sm {
-        padding: $sm;
-      }
-      @include screen-lg {
-        padding: $lg;
-      }
-    }
-
-    &.wImg {
-      padding: $sm;
-    }
-
     &.wBtn {
-      padding: $sm;
       padding-bottom: 0;
       margin-bottom: $md;
 
@@ -57,18 +35,8 @@
       flex-direction: column;
       justify-content: space-between;
 
-      @include tablet-h {
-        padding: $lg;
-        padding-bottom: 0;
-      }
       @include screen-sm {
-        padding: $sm;
-        padding-bottom: 0;
         margin-bottom: 0;
-      }
-      @include screen-lg {
-        padding: $lg;
-        padding-bottom: 0;
       }
     }
 
@@ -83,7 +51,7 @@
 
     &-title {
       @extend .u-f--bold, .u-f--h2;
-      padding-bottom: rem(40);
+      padding-bottom: $md;
     }
 
     &-step {
@@ -162,5 +130,11 @@
         transform: translateY(0);
       }
     }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }

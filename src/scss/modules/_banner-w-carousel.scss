@@ -4,19 +4,19 @@
 
 .bannerCarousel {
   padding-top: $sm;
-  aspect-ratio: 480/500;
+  // aspect-ratio: 480/500;
 
   @include screen-sm {
     padding-top: $md;
-    aspect-ratio: 1540/440;
+    // aspect-ratio: 1540/440;
   }
 
   @include screen-md {
-    aspect-ratio: 1540/410;
+    // aspect-ratio: 1540/410;
   }
 
   @include screen-lg {
-    aspect-ratio: 1540/380;
+    // aspect-ratio: 1540/380;
   }
 
   background-image: url("../img/images/img-banner-stars-bg.svg");

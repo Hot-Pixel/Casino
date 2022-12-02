@@ -14,7 +14,7 @@
 }
 
 .menuPoker {
-  padding: rem(25) 0;
+  padding: $sm 0;
   background-color: setcolor("black", "dark1");
   box-shadow: rem(1) rem(17) rem(22) rem(2) rgba(0, 0, 0, 1);
 
@@ -99,9 +99,9 @@
 
     img {
       position: absolute;
-      bottom: rem(-30);
+      bottom: calc(0rem - $sm);
       left: 50%;
-      transform: translateX(-50%);
+      transform: translate(-50%, 50%);
       opacity: 0;
     }
   }

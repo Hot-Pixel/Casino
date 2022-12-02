@@ -13,7 +13,7 @@
 
   padding: $sm;
 
-  display: grid;
+  display: none;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 
@@ -22,12 +22,20 @@
   opacity: 0;
   transition: all 0.3s ease;
 
+  @include tablet {
+    display: grid;
+  }
+
   &__header {
     width: 100%;
-    display: flex;
+    display: none;
     justify-self: flex-end;
     align-self: flex-start;
     justify-content: space-between;
+    
+    @include screen-sm {
+      display: flex;
+    }
   }
 
   &__btn {

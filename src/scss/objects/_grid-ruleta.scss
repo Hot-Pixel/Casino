@@ -9,14 +9,10 @@
   grid-auto-flow: row;
   width: 100%;
 
-  column-gap: rem(10);
-  row-gap: $md;
-  margin-top: $md;
+  gap: rem(10);
 
   @include tablet {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: rem(10);
-    row-gap: $md;
   }
   @include screen-sm {
     grid-template-columns: repeat(3, 1fr);
@@ -49,10 +45,10 @@
       .card__img-crupier {
         position: absolute;
         bottom: 0;
-        right: 10%;
+        right: rem(30);
         z-index: 2;
 
-        height: 110%;
+        height: 90%;
         object-position: bottom;
       }
     }

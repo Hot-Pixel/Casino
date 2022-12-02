@@ -1,10 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="208.209" height="212.188" viewBox="0 0 208.209 212.188">
-  <g id="Icon" transform="translate(0 -103.34)">
-    <path id="Star" d="M208.209,106.094h0c0-1.326-2.652-1.989-2.652-1.989C159.141,90.18,120.019,53.047,108.083,9.283l-1.989-7.294S105.431,0,104.1,0s-1.989,1.989-1.989,1.989l-1.989,7.294C88.19,53.047,49.068,90.18,2.652,104.1c0,0-2.652.663-2.652,1.989s2.652,1.989,2.652,1.989c46.416,13.925,85.538,51.058,97.473,94.821l1.989,7.294s.663,1.989,1.989,1.989,1.989-1.989,1.989-1.989l1.989-7.294c11.936-43.764,51.058-80.9,97.473-94.821-.663.663,1.989,0,2.652-1.989" transform="translate(0 103.34)" fill="#ff293e"/>
-    <g id="Group_808" data-name="Group 808" transform="translate(83.519 187.382)">
-      <circle id="Ellipse_790" data-name="Ellipse 790" cx="40" cy="40" r="40" transform="translate(-19.415 -17.542)" fill="#fff" opacity="0.2"/>
-      <circle id="Ellipse_791" data-name="Ellipse 791" cx="30" cy="30" r="30" transform="translate(-9.414 -7.542)" fill="#fff" opacity="0.2"/>
-      <text id="_3" data-name="3" transform="translate(20.585 33.958)" fill="#fff" font-size="32" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="-9.203" y="0">3</tspan></text>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 208.2 212.2" style="enable-background:new 0 0 208.2 212.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF293E;}
+	.st1{opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
+	.st2{enable-background:new    ;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g id="Icon" transform="translate(0 -103.34)">
+	<path id="Star" class="st0" d="M208.2,209.4L208.2,209.4c0-1.3-2.7-2-2.7-2c-46.4-13.9-85.5-51.1-97.5-94.8l-2-7.3c0,0-0.7-2-2-2
+		s-2,2-2,2l-2,7.3c-11.9,43.8-51.1,80.9-97.5,94.8c0,0-2.7,0.7-2.7,2c0,1.3,2.7,2,2.7,2c46.4,13.9,85.5,51.1,97.5,94.8l2,7.3
+		c0,0,0.7,2,2,2s2-2,2-2l2-7.3c11.9-43.8,51.1-80.9,97.5-94.8C204.9,212.1,207.5,211.4,208.2,209.4"/>
+	<g id="Group_808" transform="translate(83.519 187.382)">
+		<circle id="Ellipse_790" class="st1" cx="20.6" cy="22.5" r="40"/>
+		<circle id="Ellipse_791" class="st1" cx="20.6" cy="22.5" r="30"/>
+		<g class="st2">
+			<path class="st3" d="M20.6,34.3c-1.8,0-3.4-0.4-4.8-1.1c-1.4-0.8-2.6-2.1-3.7-3.9l3.9-2.5c0.5,0.7,1,1.3,1.5,1.8
+				c0.5,0.4,1,0.8,1.6,1c0.5,0.2,1.1,0.3,1.7,0.3c0.6,0,1.1-0.1,1.6-0.4s0.9-0.6,1.2-1.1c0.3-0.5,0.5-1,0.5-1.7
+				c0-0.7-0.1-1.2-0.4-1.7c-0.3-0.5-0.7-0.8-1.2-1c-0.5-0.2-1.1-0.4-1.8-0.4c-0.3,0-0.7,0-1,0.1c-0.4,0.1-0.7,0.2-1.2,0.3
+				s-0.8,0.3-1.2,0.5l-1.2-3.2l5.4-5.9l1.5,0.8l-9.3-0.2v-4.6h13.8l1,2L21,21.3l-1.3-1.5c0.2-0.1,0.5-0.2,0.8-0.2
+				c0.4-0.1,0.8-0.1,1.1-0.1c1,0,1.9,0.2,2.8,0.5c0.9,0.4,1.7,0.9,2.3,1.5c0.7,0.6,1.2,1.4,1.6,2.3c0.4,0.9,0.6,1.8,0.6,2.8
+				c0,1.5-0.4,2.8-1.1,4s-1.8,2.1-3.1,2.8S22.1,34.3,20.6,34.3z"/>
+		</g>
+	</g>
+</g>
 </svg>

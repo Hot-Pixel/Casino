@@ -8,10 +8,17 @@
 
   cursor: pointer;
 
+  &__name {
+    @extend .u-f--bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 7rem;
+  }
+
   &__wrapper {
-    display: none;
+    display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    overflow: hidden;
 
     margin-right: rem(10);
 
@@ -21,16 +28,11 @@
 
     .sessionTime {
       text-align: right;
-      width: rem(63);
     }
 
     p {
       color: setcolor("secondary");
       margin: 0;
-
-      &:first-of-type {
-        @extend .u-f--h4, .u-f--bold;
-      }
     }
   }
 }
@@ -42,12 +44,11 @@
   overflow: hidden;
 
   &__name {
-    @extend .u-f--h3, .u-f--bold;
+    @extend .u-f--bold;
     text-overflow: ellipsis;
     overflow: hidden;
   }
   &__sessionTime {
-    @extend .u-f--h4;
     color: setcolor("secondary");
   }
 }

@@ -1,0 +1,13 @@
+@use "../settings" as *;
+@use "../helper" as *;
+@use "../tools" as *;
+
+.breadcrumbs {
+  background: none;
+
+  span {
+    text-transform: none;
+    font-weight: setfont("weight", "book");
+  }
+
+}

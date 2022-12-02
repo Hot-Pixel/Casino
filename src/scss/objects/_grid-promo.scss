@@ -10,32 +10,46 @@
     column-gap: $sm;
     row-gap: rem(50);
 
-    @include tablet {
+    @include mobile-sm {
       grid-template-columns: repeat(2, 1fr);
       column-gap: $sm;
       row-gap: rem(50);
     }
-    @include screen-sm {
+
+    @include tablet {
       grid-template-columns: repeat(3, 1fr);
+      column-gap: $sm;
+      row-gap: rem(50);
+    }
+    @include screen-sm {
+      grid-template-columns: repeat(4, 1fr);
       column-gap: $sm;
       row-gap: rem(50);
     }
   }
 
   &-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+
     &--top img {
       width: 100%;
       object-fit: contain;
     }
 
     &--bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;      
       background-color: setcolor("black");
-      padding: $md $sm 0;
+      padding: $sm $sm 0;
       border-radius: 0 0 rem(10) rem(10);
       position: relative;
-
-      @include screen-sm {
-        padding: rem(45) rem(45) 0;
+      height: -webkit-fill-available;   
+      
+      @include tablet-h {
+        padding: $md $md 0;
       }
     }
   }
@@ -59,11 +73,8 @@
   &-btn {
     display: flex;
     justify-content: center;
-    transform: translateY(-50%) translateX(-50%);
-    position: absolute;
-    bottom: -3rem;
-    left: 50%;
-
+    transform: translateY(50%);
+    
     a {
       width: 100%;
       img {

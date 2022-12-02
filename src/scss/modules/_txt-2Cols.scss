@@ -7,21 +7,10 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-
   gap: $sm;
-
-  grid-template-areas:
-    "title"
-    "body"
-    "btn";
 
   @include screen-sm {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas:
-      "title body"
-      "btn .";
   }
 
   &__title p {
@@ -30,5 +19,9 @@
 
   &__body p {
     padding-bottom: rem(10);
+  }
+
+  &__btn {
+    margin-top: $sm;
   }
 }

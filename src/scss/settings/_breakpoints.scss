@@ -2,6 +2,7 @@
 @use "sass:map";
 
 $breakpoints: (
+  mobile-sm: 376px,
   mobile: 576px,
   tablet: 768px,
   tablet-h: 1024px,
@@ -10,6 +11,12 @@ $breakpoints: (
   screen-lg: 1600px,
   screen-xl: 1900px,
 );
+
+@mixin mobile-sm {
+  @media only screen and (min-width: #{map.get($breakpoints, 'mobile-sm')}) {
+    @content;
+  }
+}
 
 @mixin mobile {
   @media only screen and (min-width: #{map.get($breakpoints, 'mobile')}) {

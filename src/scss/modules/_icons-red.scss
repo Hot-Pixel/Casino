@@ -18,17 +18,35 @@
     transparent
   );
   padding: $sm;
-
-  @extend %margin_horizontal_main;
-
+  
+  
   @include screen-sm {
+    padding: 0;
+    margin-left: var(--horizontal-main-xl);
+    margin-right: var(--horizontal-main-xl);
+
     grid-template-columns: 6fr 5fr;
     grid-template-rows: auto;
     grid-template-areas: "icons title";
 
-    
-
     background: none;
+  }
+
+  @include screen-md {
+    margin-left: var(--horizontal-main-2xl);
+    margin-right: var(--horizontal-main-2xl);
+  }
+
+  @include screen-lg {
+    margin-left: var(--horizontal-main-3xl);
+    margin-right: var(--horizontal-main-3xl);
+  }
+
+  @include screen-xl {
+    max-width: $max_width;
+    margin-left: 0;
+    margin-right: 0;
+    margin: 0 auto;
   }
   
 
@@ -79,13 +97,16 @@
 
     &--left {
       grid-area: icons;
-      justify-content: flex-start;
-
+      justify-content: center;
+      
       display: flex;
       flex-direction: row;
-      justify-content: center;
       gap: $sm;
       flex-wrap: wrap;
+      
+      @include screen-sm {
+        justify-content: flex-start;
+      }
 
     }
 
@@ -101,7 +122,7 @@
       @include screen-sm {
         margin-bottom: 0;
         margin-left: $lg;
-        align-items: flex-start;
+        align-items: flex-end;
         text-align: left;
       }
 

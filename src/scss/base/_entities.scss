@@ -15,28 +15,17 @@ body {
 
     font-family: $body_font_family;
     font-weight: $body_font_weight;
-    font-size: $body_font-size;
+    font-size: $body_font_size;
 
     background: $body_bg;
     color: $body_color;
-
-    @include tablet {
-        font-size: $body_font_size_ipad;
-    }
-
-    @include tablet-h {
-        font-size: $body_font_size_desktop;
-    }
 
 }
 
 // paragrapgh
 p, span, button, textarea, select {
-    @extend .u-f--p;
     font-family: $body_font_family;
     font-weight: $body_font_weight;
-
-    color: $body_color;
 
     margin-bottom: 0;
 }

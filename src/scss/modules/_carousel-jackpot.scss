@@ -17,11 +17,11 @@
     margin-bottom: 25px;
   }
 
-  &-counter {
-    @include screen-md {
-      font-size: 3.3rem;
-    }
-  }
+  // &-counter {
+  //   @include screen-md {
+  //     font-size: 3.3rem;
+  //   }
+  // }
   
   &__text {
     display: flex;
@@ -102,7 +102,7 @@
           display: inline-block;
         }
         p:last-of-type {
-          @extend .u-f--h3, .u-f--bold;
+          @extend .u-f--h4, .u-f--bold;
         } 
       }
       

@@ -8,7 +8,7 @@
   grid-template-columns:  1fr;
   grid-template-rows: auto auto;
 
-  column-gap: rem(130);
+  gap: $md;
   grid-template-areas:
   "img"
   "content";
@@ -41,7 +41,7 @@
 
     .title {
       @extend .u-f--bold, .u-f--h1;
-      padding-bottom: $md;
+      padding-bottom: $sm;
     }
     .subtitle {
       @extend .u-f--bold, .u-f--h3;
@@ -59,7 +59,6 @@
       align-items: center;
 
       @include screen-sm {
-        margin-top: $lg;
         align-items: flex-start;
       }
 

@@ -20,21 +20,16 @@
 		max-width: 80%;
 	}
 
-
 	&__breadcrumbs {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		position: absolute;
 		bottom: 0;
-		padding: 15px 40px;
 		width: 100%;
 		background-color: setcolor("black", "dark1");
 
 		@include screen-sm {
 			position: relative;
 			margin-top: rem(10);
-			padding: 5px 20px;
+			padding: $xs;
 			width: initial;
 			border-radius: rem(10);
 		}
