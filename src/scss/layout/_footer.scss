@@ -6,6 +6,17 @@
   @extend %margin_top_small;
   width: 100%;
 
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
   &__trama {
     padding: 0 $sm;
     img {
