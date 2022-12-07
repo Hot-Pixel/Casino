@@ -260,6 +260,7 @@ export default function validateRegister() {
     }
 
     async function validateNationalId(field) {
+        field.value = field.value.toUpperCase();
         field.setCustomValidity("");
         if (!validateNieNif(field.value)) {
             field.setCustomValidity("El DNI/NIE no es válido");
