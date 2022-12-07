@@ -3,7 +3,8 @@ let alertGlobal = 0;
 function Alert(options = {}) { 
     const defaultOptions = {
         wrapperSelector: '.alert__wrapper',
-        itemTemplate: '<div class="alert alert--{type} alert--{closable}" data-index="{index}">{message}</div>'
+        itemTemplate: '<div class="alert alert--{type} alert--{closable}" data-index="{index}">{message}</div>',
+        autoclose: 5000
     };
 
     options = Object.assign({}, defaultOptions, options);
@@ -24,11 +25,18 @@ function Alert(options = {}) {
             imageX.addEventListener("click", () => remove(alertEl.dataset.index))           
         }
         wrapperEl.append(alertEl);
+        if(options.autoclose > 0) {
+            setTimeout(() => {
+                remove(alertEl.dataset.index);
+            }, options.autoclose);
+        }
         alertIndex++;
     }
 
     function remove(index) {
         const alert = wrapperEl.querySelector(`[data-index="${index}"]`);
+        if(!alert) return;
+        
         alert.classList.add("alert--closed");
         setTimeout(()=>{alert.remove();}, 450);
     }
