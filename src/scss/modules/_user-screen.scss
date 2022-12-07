@@ -2,10 +2,6 @@
 @use "../helper" as *;
 @use "../tools" as *;
 
-.pageContainer {
-  overflow: hidden;
-}
-
 .withdrawScreen,
 .depositScreen {
   display: none;
