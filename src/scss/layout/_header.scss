@@ -8,6 +8,53 @@
   z-index: 10;
 }
 
+.verifyBanner {
+  justify-content: space-between;
+  align-items: center;
+
+  padding: rem(10);
+  background-color: setcolor("warning");
+
+  &--show {
+    display: flex;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+
+    &--desktop {
+      display: none;
+
+      @include tablet {
+        display: flex;
+      }
+    }
+    
+    &--mobile {
+      display: flex;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      margin-left: rem(5);
+
+      span {
+        @extend .u-f--bold;
+      }
+
+      img {
+        margin-left: rem(5);
+      }
+    }
+  }
+}
+
 .header {
   box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 20%);
 
@@ -29,38 +76,6 @@
     display: flex;
   }
 
-  &.verify .verifyBanner {
-    display: flex;
-  }
-
-  .verifyBanner {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: rem(10);
-    background-color: setcolor("warning");
-
-    &__text {
-      display: flex;
-      align-items: center;
-
-      a {
-        display: flex;
-        align-items: center;
-        margin-left: rem(5);
-
-        span {
-          @extend .u-f--bold;
-        }
-
-        img {
-          margin-left: rem(5);
-        }
-      }
-    }
-  }
-
   &__container {
     padding: $sm rem(20);
 
@@ -80,8 +95,7 @@
     align-items: center;
     overflow: hidden;
     gap: $sm;
-    
-    
+
     // &.header__logged {
     // }
 
@@ -106,7 +120,7 @@
 
   &__logo {
     width: rem(304);
-    
+
     @include screen-sm {
       margin-right: $sm;
     }
@@ -120,7 +134,7 @@
     &--light {
       display: none;
     }
-    
+
     .header--light & {
       display: none;
 
@@ -128,7 +142,6 @@
         display: block;
       }
     }
-
   }
 
   &__navBar {
@@ -180,7 +193,6 @@
 
   .header__logged {
     &-item {
-      
       &.user {
         overflow: hidden;
       }
@@ -272,7 +284,6 @@
 }
 
 .header.header--light {
-
   .header__container {
     transition: all 0.4s ease;
     background-color: setcolor("gray", "light1");
@@ -306,11 +317,7 @@
     background-color: setcolor("gray", "light2");
     &__total {
       &::before {
-        background: linear-gradient(
-          to right,
-          transparent 70%,
-          setcolor("gray", "light2")
-        );
+        background: linear-gradient(to right, transparent 70%, setcolor("gray", "light2"));
       }
 
       span {
@@ -369,11 +376,7 @@
         background-color: setcolor("gray", "light2");
         &__total {
           &::before {
-            background: linear-gradient(
-              to right,
-              transparent 70%,
-              setcolor("gray", "light2")
-            );
+            background: linear-gradient(to right, transparent 70%, setcolor("gray", "light2"));
           }
 
           span {
