@@ -114,6 +114,14 @@
 
         &-content {
           padding: $sm;
+
+          p {
+            font-size: $body_font_size;
+          }
+
+          ul, li {
+            margin-top: 0;
+          }
         }
 
         p {
