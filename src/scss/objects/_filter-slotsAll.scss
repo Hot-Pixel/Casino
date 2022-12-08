@@ -303,15 +303,17 @@
       height: 24px;
       background-image: url("../img/icons/icon-filter-noActive.svg");
       flex: 0 0 auto;
+      opacity: 0.5;
     }
-
+    
     &.mixitup-control-active {
       span {
         color: setcolor("white");
       }
-
+      
       &::before {
         background-image: url("../img/icons/icon-filter-active.svg");
+        opacity: 1;
       }
     }
   }
