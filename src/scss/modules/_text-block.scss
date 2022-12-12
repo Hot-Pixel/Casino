@@ -12,6 +12,10 @@
 		padding-bottom: $sm;
 	}
 
+	a, li {
+		font-weight: 100;
+	}
+
 	.title-big {
 		@extend .u-f--h2;
 	}
