@@ -1,3 +1,4 @@
+import { savePreregister } from "./preregister";
 import validateRegister from "./validateRegister";
 
 export default function stepManager() {
