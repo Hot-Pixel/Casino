@@ -32,7 +32,7 @@ function filterWheel() {
 
   container.addEventListener("mixEnd", () => {
     const state = mixerRuleta.getState();
-    if (state.totalShow < state.totalTargets) {
+    if (state.totalShow <= state.totalTargets) {
       resetBtn.classList.add("visible");
     } else {
       resetBtn.classList.remove("visible");

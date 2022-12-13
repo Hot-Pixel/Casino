@@ -3,9 +3,9 @@
 @use "../tools" as *;
 
 .userMenuMobile {
-  position: fixed;
-  bottom: 0;
-  right: -90vw;
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 10;
 
   height: 100vh;
