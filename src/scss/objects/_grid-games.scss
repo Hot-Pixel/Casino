@@ -6,6 +6,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: rem(10);
+  padding: 0;
   
   @include mobile-sm {
     grid-template-columns: repeat(3, 1fr);
