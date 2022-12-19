@@ -5,7 +5,7 @@
 .blockPromo {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 
   &__gradient {
     background: linear-gradient(to right, setcolor("primary"),setcolor("primary") 20vw, transparent 73vw);
@@ -59,6 +59,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    &-bcrumbs {
+      width: 100vw;
+    }
 
     &-badge {
       transform: translateY(-50%);

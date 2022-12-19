@@ -185,9 +185,14 @@
       margin-top: $md;
 
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       column-gap: $md;
       row-gap: $sm;
+
+      @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+        gap: $sm;
+      }
 
       @include screen-sm {
         grid-template-columns: repeat(3, 1fr);

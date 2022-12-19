@@ -265,7 +265,7 @@
 
     &__wrapper {
       height: 100%;
-      padding: $md;
+      padding: $sm;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -273,6 +273,10 @@
 
       background-color: #f4f6f8;
       border-radius: rem(5);
+
+      @include tablet {
+        padding: $md;
+      }
 
       svg {
         object-fit: contain;

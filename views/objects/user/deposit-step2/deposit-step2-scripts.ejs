@@ -1,4 +1,46 @@
 <script>
+
+var depositInput = document.querySelector(".depositDetail__amount");
+var hiddenInput = document.querySelector(".depositDetail__amount--hidden");
+
+var frontFocused = false;
+
+function copyValues() {
+        const formatter = new Intl.NumberFormat('es-ES', { 
+            style: 'currency', 
+            currency: "EUR"
+        });
+        
+        if(!frontFocused) {
+            depositInput.value = formatter.format(hiddenInput.value);
+        }
+       
+    }
+
+depositInput.addEventListener("input", event => {
+            if(event.type = "deleteContentBackward"){
+                hiddenInput.value = event.target.value;
+            }else{
+                var isNumber = /^\d+$/;
+                if(event.data && isNumber.test(event.data)) {
+                    hiddenInput.value = event.target.value;
+                    return;
+                };
+            };
+             copyValues();
+        });
+
+depositInput.addEventListener("focus", e => {
+            frontFocused = true;
+            e.target.value = hiddenInput.value;
+        });
+        
+depositInput.addEventListener("blur", e => {
+            frontFocused = false;
+    
+            copyValues();
+        });
+
     function initBackBtn() {
         var step2BackBtn = document.querySelectorAll(".depositStep2__backBtn");
         if (step2BackBtn.length === 0) return;
@@ -16,7 +58,8 @@
         btnsAmount.forEach((btn) => {
             btn.addEventListener("click", (e) => {
                 let input = document.querySelector(e.currentTarget.dataset.input);
-                input.value = e.currentTarget.dataset.amount;
+                input.value = e.currentTarget.dataset.amount;  
+                depositInput.focus();                           
             });
         })
     }
